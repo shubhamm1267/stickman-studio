@@ -1,0 +1,1664 @@
+{
+  "renderFps": 60,
+  "productionMode": "silent-sfx",
+  "humorProfile": "adult-relatable",
+  "hook": {
+    "sceneId": "flight_v8",
+    "beatIndices": [
+      0,
+      1
+    ],
+    "start": 0,
+    "end": 2.2,
+    "evidence": "Flight and straining lead to a visible brown lump falling onto the unsuspecting man by2.2 seconds."
+  },
+  "comedy": {
+    "hook": "The proud hero releases a mess directly above a pedestrian.",
+    "goal": "The man wants the flying culprit to answer for his mess.",
+    "escalation": [
+      "A gross surprise lands on his head.",
+      "He delivers a fast angry gibberish rant.",
+      "The arrogant superhero lands and punches twice."
+    ],
+    "payoff": "The third punch flicks the mess back onto the hero: an immediate return gift.",
+    "callback": "The same brown bonnet now sits on the culprit while his victim smirks."
+  },
+  "title": "Superhero ka Return Gift",
+  "story": "A flying superhero makes a mess on a man. The man mutters angrily in incomprehensible cartoon gibberish. The arrogant hero lands and throws three punches. The man ducks the third: it flicks the poop into the air and back onto the hero’s own head. The man gives him a satisfied look. The hero ends with an embarrassed deadpan blink.",
+  "characters": [
+    {
+      "id": "Hero",
+      "name": "Captain Udaan",
+      "rigVersion": 2,
+      "kind": "man",
+      "artStyle": "pencil",
+      "hairStyle": "sidepart",
+      "faceShape": "square",
+      "costume": "superhero",
+      "capeColor": "#c95047",
+      "bootColor": "#bf4640",
+      "wardrobe": "shirt",
+      "skin": "#e9d8b9",
+      "outfit": "#387fae",
+      "hair": "#343b39",
+      "headWidth": 0.98,
+      "headHeight": 0.95
+    },
+    {
+      "id": "Man",
+      "name": "Sharma ji",
+      "rigVersion": 2,
+      "kind": "man",
+      "artStyle": "pencil",
+      "hairStyle": "bald",
+      "faceShape": "long",
+      "wardrobe": "shirt",
+      "accessory": "moustache",
+      "skin": "#e1d2b1",
+      "outfit": "#b6a17b",
+      "hair": "#61533c",
+      "headWidth": 0.95,
+      "headHeight": 1.04
+    }
+  ],
+  "propDesigns": [
+    {
+      "id": "poop",
+      "name": "Non-graphic brown cartoon poop",
+      "type": "drawing",
+      "color": "#8b6244",
+      "nodes": [
+        {
+          "kind": "ellipse",
+          "center": [
+            0,
+            -3
+          ],
+          "radius": [
+            31,
+            8
+          ],
+          "fill": "#8b6244",
+          "stroke": "#3f4939",
+          "width": 2
+        },
+        {
+          "kind": "path",
+          "d": "M-27 -7 C-37 -24 -17 -27 -12 -27 C-22 -39 -2 -42 4 -39 Q-2 -47 7 -52 Q13 -35 22 -30 C41 -26 32 -14 27 -11 Q34 0 0 2 Q-29 2 -27 -7Z",
+          "fill": "#926747",
+          "stroke": "#3f4939",
+          "width": 2
+        },
+        {
+          "kind": "path",
+          "d": "M-22 -17 Q1 -9 24 -18 M-10 -30 Q3 -25 16 -31",
+          "fill": "none",
+          "stroke": "#6b4b37",
+          "width": 2
+        }
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "id": "flight_v8",
+      "summary": "A proudly flying hero drops a cartoon lump onto a pedestrian; the man freezes, looks up and fumes.",
+      "duration": 4.3,
+      "background": "custom",
+      "backgroundNodes": [
+        {
+          "kind": "path",
+          "d": "M-180 788 L900 788",
+          "fill": "none",
+          "stroke": "#b5bba2",
+          "width": 2
+        },
+        {
+          "kind": "path",
+          "d": "M-150 560 L-150 450 L-10 450 L-10 788 M-10 560 L110 560 L110 788 M450 788 L450 530 L650 530 L650 788",
+          "fill": "none",
+          "stroke": "#c3c8b2",
+          "width": 1.2
+        }
+      ],
+      "motions": [
+        {
+          "targetId": "poop",
+          "timing": "gravity",
+          "impactOnEnd": true,
+          "start": 1.25,
+          "duration": 0.95,
+          "to": [
+            350,
+            380.8
+          ],
+          "arc": 0,
+          "angle": 0
+        }
+      ],
+      "cast": [
+        {
+          "rigVersion": 2,
+          "shadow": false,
+          "characterId": "Hero",
+          "initialPose": {
+            "position": [
+              15,
+              225
+            ],
+            "headScale": [
+              1,
+              1
+            ],
+            "handScale": 1.15,
+            "head": [
+              0,
+              -405
+            ],
+            "hip": [
+              0,
+              -160
+            ],
+            "leftHand": [
+              -45,
+              -205
+            ],
+            "rightHand": [
+              0,
+              -480
+            ],
+            "leftFoot": [
+              -30,
+              0
+            ],
+            "rightFoot": [
+              35,
+              -10
+            ],
+            "bodyAngle": 90,
+            "headAngle": -90,
+            "muscle": 0.85
+          },
+          "emotion": "annoyed",
+          "x": 15,
+          "y": 780,
+          "scale": 0.55,
+          "facing": 1
+        },
+        {
+          "rigVersion": 2,
+          "characterId": "Man",
+          "emotion": "calm",
+          "x": 350,
+          "y": 780,
+          "scale": 0.8,
+          "facing": 1
+        }
+      ],
+      "props": [
+        {
+          "appearAt": 1.25,
+          "attachAt": 2.2,
+          "attachment": {
+            "actorId": "Man",
+            "bone": "head",
+            "offset": [
+              0,
+              -94
+            ]
+          },
+          "designId": "poop",
+          "open": 0,
+          "angle": 0,
+          "x": 185,
+          "y": 285,
+          "scale": 0.8125
+        }
+      ],
+      "beats": [
+        {
+          "motionEffect": "flight",
+          "actorId": "Hero",
+          "kind": "perform",
+          "start": 0,
+          "duration": 2.8,
+          "hand": "right",
+          "amount": 1,
+          "keyframes": [
+            {
+              "at": 0,
+              "pose": {
+                "position": [
+                  15,
+                  225
+                ],
+                "headScale": [
+                  1,
+                  1
+                ],
+                "handScale": 1.15,
+                "head": [
+                  0,
+                  -405
+                ],
+                "hip": [
+                  0,
+                  -160
+                ],
+                "leftHand": [
+                  -45,
+                  -205
+                ],
+                "rightHand": [
+                  0,
+                  -480
+                ],
+                "leftFoot": [
+                  -30,
+                  0
+                ],
+                "rightFoot": [
+                  35,
+                  -10
+                ],
+                "bodyAngle": 90,
+                "headAngle": -90,
+                "muscle": 0.85
+              },
+              "emotion": "confident"
+            },
+            {
+              "at": 0.25,
+              "pose": {
+                "position": [
+                  45,
+                  225
+                ],
+                "eyeOpen": 0.2
+              },
+              "emotion": "strain"
+            },
+            {
+              "at": 0.45,
+              "pose": {
+                "position": [
+                  75,
+                  225
+                ],
+                "eyeOpen": 0
+              },
+              "emotion": "extreme"
+            },
+            {
+              "at": 0.6,
+              "pose": {
+                "position": [
+                  95,
+                  225
+                ],
+                "eyeOpen": 1
+              },
+              "emotion": "smug"
+            },
+            {
+              "at": 1,
+              "pose": {
+                "position": [
+                  170,
+                  205
+                ]
+              },
+              "emotion": "confident"
+            }
+          ],
+          "intent": "Fly in, briefly strain and release, then cruise off."
+        },
+        {
+          "actorId": "Man",
+          "kind": "perform",
+          "start": 2.2,
+          "duration": 1.4,
+          "hand": "right",
+          "amount": 1,
+          "keyframes": [
+            {
+              "at": 0,
+              "pose": {
+                "headScale": [
+                  1,
+                  1
+                ],
+                "eyeOpen": 1,
+                "head": [
+                  0,
+                  -405
+                ]
+              },
+              "emotion": "shock"
+            },
+            {
+              "at": 0.07,
+              "pose": {
+                "headScale": [
+                  1.15,
+                  0.85
+                ],
+                "eyeOpen": 0,
+                "head": [
+                  0,
+                  -395
+                ]
+              },
+              "emotion": "strain"
+            },
+            {
+              "at": 0.2,
+              "pose": {
+                "headScale": [
+                  1,
+                  1
+                ],
+                "eyeOpen": 1,
+                "head": [
+                  0,
+                  -405
+                ]
+              },
+              "emotion": "jawdrop"
+            },
+            {
+              "at": 0.53,
+              "pose": {
+                "mouthOpen": 0.7,
+                "gaze": [
+                  0,
+                  -10
+                ]
+              }
+            },
+            {
+              "at": 0.7,
+              "pose": {
+                "eyeOpen": 0.45,
+                "headAngle": -6
+              },
+              "emotion": "annoyed"
+            },
+            {
+              "at": 1,
+              "pose": {
+                "gaze": [
+                  -5,
+                  -10
+                ],
+                "headAngle": -6
+              },
+              "emotion": "annoyed"
+            }
+          ],
+          "intent": "The landing compresses his face; a still beat lets the realization read before anger."
+        }
+      ],
+      "shots": [
+        {
+          "start": 0,
+          "end": 1.2,
+          "focus": [
+            275,
+            390
+          ],
+          "zoom": 1.1,
+          "detail": "full"
+        },
+        {
+          "start": 1.2,
+          "end": 2.23,
+          "focus": [
+            300,
+            350
+          ],
+          "zoom": 1.35,
+          "detail": "full"
+        },
+        {
+          "start": 2.23,
+          "end": 2.8,
+          "focus": [
+            350,
+            430
+          ],
+          "zoom": 3.25,
+          "detail": "full",
+          "actorIds": [
+            "Man"
+          ]
+        },
+        {
+          "start": 2.8,
+          "end": 4.3,
+          "focus": [
+            350,
+            438
+          ],
+          "zoom": 4.1,
+          "detail": "full",
+          "actorIds": [
+            "Man"
+          ]
+        }
+      ],
+      "sounds": [
+        {
+          "playbackRate": 1,
+          "trimSilence": false,
+          "start": 1.23,
+          "query": "fartshort cartoon effect",
+          "volume": 0.2,
+          "duration": 0.28,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "fartshort"
+        },
+        {
+          "playbackRate": 1,
+          "category": "plop",
+          "trimSilence": false,
+          "start": 2.2,
+          "query": "pop cartoon effect",
+          "volume": 0.18,
+          "duration": 0.4,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "wet-plop"
+        },
+        {
+          "playbackRate": 1,
+          "trimSilence": false,
+          "start": 0,
+          "query": "flight air rush",
+          "volume": 0.11,
+          "duration": 2.8,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "flight-wind"
+        }
+      ],
+      "dialogue": []
+    },
+    {
+      "id": "scold_v8",
+      "summary": "The furious man points, shakes a fist and chatters unintelligible gibberish; the hero hears it.",
+      "duration": 3.4,
+      "background": "custom",
+      "backgroundNodes": [
+        {
+          "kind": "path",
+          "d": "M-180 788 L900 788",
+          "fill": "none",
+          "stroke": "#b5bba2",
+          "width": 2
+        },
+        {
+          "kind": "path",
+          "d": "M-150 560 L-150 450 L-10 450 L-10 788 M-10 560 L110 560 L110 788 M450 788 L450 530 L650 530 L650 788",
+          "fill": "none",
+          "stroke": "#c3c8b2",
+          "width": 1.2
+        }
+      ],
+      "motions": [],
+      "cast": [
+        {
+          "rigVersion": 2,
+          "shadow": false,
+          "characterId": "Hero",
+          "initialPose": {
+            "position": [
+              170,
+              205
+            ],
+            "headScale": [
+              1,
+              1
+            ],
+            "handScale": 1.15,
+            "head": [
+              0,
+              -405
+            ],
+            "hip": [
+              0,
+              -160
+            ],
+            "leftHand": [
+              -45,
+              -205
+            ],
+            "rightHand": [
+              0,
+              -480
+            ],
+            "leftFoot": [
+              -30,
+              0
+            ],
+            "rightFoot": [
+              35,
+              -10
+            ],
+            "bodyAngle": 90,
+            "headAngle": -90,
+            "muscle": 0.85
+          },
+          "emotion": "annoyed",
+          "x": 170,
+          "y": 780,
+          "scale": 0.55,
+          "facing": 1
+        },
+        {
+          "rigVersion": 2,
+          "characterId": "Man",
+          "emotion": "annoyed",
+          "x": 350,
+          "y": 780,
+          "scale": 0.8,
+          "facing": 1
+        }
+      ],
+      "props": [
+        {
+          "attachment": {
+            "actorId": "Man",
+            "bone": "head",
+            "offset": [
+              0,
+              -94
+            ]
+          },
+          "designId": "poop",
+          "open": 0,
+          "angle": 0,
+          "x": 350,
+          "y": 380.8,
+          "scale": 0.8125
+        }
+      ],
+      "beats": [
+        {
+          "actorId": "Man",
+          "kind": "scold",
+          "start": 0.05,
+          "duration": 3.05,
+          "hand": "right",
+          "amount": 1,
+          "intent": "An asymmetric angry rant: point, open palm, fist, disbelief, then a final pointed accusation."
+        },
+        {
+          "motionEffect": "flight",
+          "actorId": "Hero",
+          "kind": "perform",
+          "start": 2.9,
+          "duration": 0.5,
+          "hand": "right",
+          "amount": 1,
+          "keyframes": [
+            {
+              "at": 0,
+              "pose": {
+                "eyeOpen": 0.9,
+                "gaze": [
+                  0,
+                  3
+                ]
+              },
+              "emotion": "calm"
+            },
+            {
+              "at": 0.4,
+              "pose": {
+                "eyeOpen": 0.4,
+                "gaze": [
+                  -9,
+                  5
+                ]
+              }
+            },
+            {
+              "at": 1,
+              "pose": {
+                "eyeOpen": 0.4,
+                "gaze": [
+                  -9,
+                  5
+                ]
+              },
+              "emotion": "annoyed"
+            }
+          ],
+          "intent": "The hero hears the muttering and shoots an irritated sideways look."
+        }
+      ],
+      "shots": [
+        {
+          "start": 0,
+          "end": 1.2,
+          "focus": [
+            350,
+            490
+          ],
+          "zoom": 2.65,
+          "detail": "full",
+          "actorIds": [
+            "Man"
+          ]
+        },
+        {
+          "start": 1.2,
+          "end": 2.9,
+          "focus": [
+            350,
+            435
+          ],
+          "zoom": 3.7,
+          "detail": "full",
+          "actorIds": [
+            "Man"
+          ]
+        },
+        {
+          "start": 2.9,
+          "end": 3.4,
+          "focus": [
+            393,
+            205
+          ],
+          "zoom": 4.3,
+          "detail": "full",
+          "actorIds": [
+            "Hero"
+          ]
+        }
+      ],
+      "sounds": [
+        {
+          "playbackRate": 1,
+          "category": "gibberish",
+          "actorId": "Man",
+          "role": "nonverbal",
+          "trimSilence": false,
+          "start": 0.15000000000000002,
+          "query": "angry gibberish mumbling",
+          "volume": 0.35,
+          "duration": 2.9499999999999997,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "scolding"
+        },
+        {
+          "playbackRate": 1,
+          "trimSilence": false,
+          "start": 2.9,
+          "query": "flight air rush",
+          "volume": 0.11,
+          "duration": 0.5,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "flight-wind"
+        }
+      ],
+      "dialogue": []
+    },
+    {
+      "id": "landing_v8",
+      "summary": "The caped hero drops beside the man, compresses into his landing and rises. The man immediately regrets complaining.",
+      "duration": 2,
+      "background": "custom",
+      "backgroundNodes": [
+        {
+          "kind": "path",
+          "d": "M-180 788 L900 788",
+          "fill": "none",
+          "stroke": "#b5bba2",
+          "width": 2
+        },
+        {
+          "kind": "path",
+          "d": "M-150 560 L-150 450 L-10 450 L-10 788 M-10 560 L110 560 L110 788 M450 788 L450 530 L650 530 L650 788",
+          "fill": "none",
+          "stroke": "#c3c8b2",
+          "width": 1.2
+        }
+      ],
+      "motions": [],
+      "cast": [
+        {
+          "rigVersion": 2,
+          "characterId": "Hero",
+          "initialPose": {
+            "position": [
+              220,
+              410
+            ],
+            "headScale": [
+              1,
+              1
+            ],
+            "handScale": 1.15,
+            "head": [
+              0,
+              -405
+            ],
+            "hip": [
+              0,
+              -160
+            ],
+            "leftHand": [
+              -70,
+              -170
+            ],
+            "rightHand": [
+              65,
+              -150
+            ],
+            "leftFoot": [
+              -30,
+              0
+            ],
+            "rightFoot": [
+              35,
+              0
+            ],
+            "bodyAngle": 0,
+            "headAngle": 0,
+            "muscle": 0.85
+          },
+          "emotion": "annoyed",
+          "x": 220,
+          "y": 780,
+          "scale": 0.88,
+          "facing": 1
+        },
+        {
+          "rigVersion": 2,
+          "characterId": "Man",
+          "emotion": "annoyed",
+          "x": 350,
+          "y": 780,
+          "scale": 0.8,
+          "facing": -1
+        }
+      ],
+      "props": [
+        {
+          "attachment": {
+            "actorId": "Man",
+            "bone": "head",
+            "offset": [
+              0,
+              -94
+            ]
+          },
+          "designId": "poop",
+          "open": 0,
+          "angle": 0,
+          "x": 350,
+          "y": 380.8,
+          "scale": 0.8125
+        }
+      ],
+      "beats": [
+        {
+          "accent": "impact",
+          "actorId": "Hero",
+          "kind": "perform",
+          "start": 0,
+          "duration": 1.4,
+          "hand": "right",
+          "amount": 1,
+          "contactAt": 0.57,
+          "keyframes": [
+            {
+              "at": 0,
+              "pose": {
+                "position": [
+                  220,
+                  410
+                ],
+                "head": [
+                  0,
+                  -405
+                ],
+                "hip": [
+                  0,
+                  -160
+                ]
+              },
+              "emotion": "annoyed"
+            },
+            {
+              "at": 0.46,
+              "pose": {
+                "position": [
+                  220,
+                  745
+                ]
+              }
+            },
+            {
+              "at": 0.57,
+              "pose": {
+                "position": [
+                  220,
+                  780
+                ],
+                "eyeOpen": 0.1,
+                "head": [
+                  0,
+                  -355
+                ],
+                "hip": [
+                  0,
+                  -125
+                ],
+                "leftFoot": [
+                  -45,
+                  0
+                ],
+                "rightFoot": [
+                  45,
+                  0
+                ]
+              },
+              "emotion": "strain"
+            },
+            {
+              "at": 0.76,
+              "pose": {
+                "eyeOpen": 1,
+                "head": [
+                  0,
+                  -416
+                ],
+                "hip": [
+                  0,
+                  -167
+                ]
+              },
+              "emotion": "annoyed"
+            },
+            {
+              "at": 0.9,
+              "pose": {
+                "head": [
+                  0,
+                  -400
+                ],
+                "hip": [
+                  0,
+                  -157
+                ]
+              }
+            },
+            {
+              "at": 1,
+              "pose": {
+                "head": [
+                  0,
+                  -405
+                ],
+                "hip": [
+                  0,
+                  -160
+                ],
+                "leftFoot": [
+                  -30,
+                  0
+                ],
+                "rightFoot": [
+                  35,
+                  0
+                ]
+              }
+            }
+          ],
+          "intent": "Fast descent, planted boots, squash and damped recovery."
+        },
+        {
+          "actorId": "Man",
+          "kind": "perform",
+          "start": 1.1,
+          "duration": 0.8,
+          "hand": "right",
+          "amount": 1,
+          "keyframes": [
+            {
+              "at": 0,
+              "pose": {
+                "eyeOpen": 0.45,
+                "gaze": [
+                  -10,
+                  0
+                ]
+              },
+              "emotion": "annoyed"
+            },
+            {
+              "at": 0.3,
+              "pose": {
+                "headScale": [
+                  0.96,
+                  1.06
+                ],
+                "eyeOpen": 1
+              },
+              "emotion": "shock"
+            },
+            {
+              "at": 1,
+              "pose": {
+                "headScale": [
+                  1,
+                  1
+                ],
+                "leftHand": [
+                  -50,
+                  -150
+                ],
+                "rightHand": [
+                  50,
+                  -150
+                ]
+              },
+              "emotion": "defeat"
+            }
+          ],
+          "intent": "His eyebrows lift at the broad chest; his accusing hand shrinks back."
+        }
+      ],
+      "shots": [
+        {
+          "start": 0,
+          "end": 1.1,
+          "focus": [
+            285,
+            520
+          ],
+          "zoom": 1.15,
+          "detail": "full"
+        },
+        {
+          "start": 1.1,
+          "end": 2,
+          "focus": [
+            350,
+            445
+          ],
+          "zoom": 3.3,
+          "detail": "full",
+          "actorIds": [
+            "Man"
+          ]
+        }
+      ],
+      "sounds": [
+        {
+          "playbackRate": 1,
+          "trimSilence": false,
+          "start": 0.15,
+          "query": "air-swish cartoon effect",
+          "volume": 0.12,
+          "duration": 0.25,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "air-swish"
+        },
+        {
+          "beatIndex": 0,
+          "syncTo": "contact",
+          "playbackRate": 1,
+          "trimSilence": false,
+          "start": 0,
+          "query": "impact cartoon effect",
+          "volume": 0.2,
+          "duration": 0.3,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "impact"
+        }
+      ],
+      "dialogue": []
+    },
+    {
+      "id": "return_v8",
+      "summary": "Two rapid cartoon punches. The man ducks the third, which flicks the poop up. It arcs back onto the hero’s own head. The victim smiles at the return gift.",
+      "duration": 6.8,
+      "background": "custom",
+      "backgroundNodes": [
+        {
+          "kind": "path",
+          "d": "M-180 788 L900 788",
+          "fill": "none",
+          "stroke": "#b5bba2",
+          "width": 2
+        },
+        {
+          "kind": "path",
+          "d": "M-150 560 L-150 450 L-10 450 L-10 788 M-10 560 L110 560 L110 788 M450 788 L450 530 L650 530 L650 788",
+          "fill": "none",
+          "stroke": "#c3c8b2",
+          "width": 1.2
+        }
+      ],
+      "motions": [
+        {
+          "targetId": "poop",
+          "timing": "linear",
+          "impactOnEnd": true,
+          "start": 2.694,
+          "duration": 0.82,
+          "to": [
+            220,
+            340.88
+          ],
+          "arc": 140,
+          "angle": -360
+        }
+      ],
+      "cast": [
+        {
+          "rigVersion": 2,
+          "characterId": "Hero",
+          "initialPose": {
+            "headScale": [
+              1,
+              1
+            ],
+            "handScale": 1.15,
+            "head": [
+              0,
+              -405
+            ],
+            "hip": [
+              0,
+              -160
+            ],
+            "leftHand": [
+              -70,
+              -170
+            ],
+            "rightHand": [
+              65,
+              -150
+            ],
+            "leftFoot": [
+              -30,
+              0
+            ],
+            "rightFoot": [
+              35,
+              0
+            ],
+            "bodyAngle": 0,
+            "headAngle": 0,
+            "muscle": 0.85
+          },
+          "emotion": "annoyed",
+          "x": 220,
+          "y": 780,
+          "scale": 0.88,
+          "facing": 1
+        },
+        {
+          "rigVersion": 2,
+          "characterId": "Man",
+          "emotion": "shock",
+          "x": 350,
+          "y": 780,
+          "scale": 0.8,
+          "facing": -1
+        }
+      ],
+      "props": [
+        {
+          "attachmentEvents": [
+            {
+              "at": 2.694,
+              "attachment": null
+            },
+            {
+              "at": 3.514,
+              "attachment": {
+                "actorId": "Hero",
+                "bone": "head",
+                "offset": [
+                  0,
+                  -94
+                ]
+              }
+            }
+          ],
+          "attachment": {
+            "actorId": "Man",
+            "bone": "head",
+            "offset": [
+              0,
+              -94
+            ]
+          },
+          "designId": "poop",
+          "open": 0,
+          "angle": 0,
+          "x": 350,
+          "y": 380.8,
+          "scale": 0.8125
+        }
+      ],
+      "beats": [
+        {
+          "actorId": "Hero",
+          "targetActorId": "Man",
+          "kind": "punch",
+          "start": 0.3,
+          "duration": 0.65,
+          "hand": "right",
+          "amount": 1,
+          "intent": "First fist lands on the cheek, holds briefly, then retracts."
+        },
+        {
+          "actorId": "Hero",
+          "targetActorId": "Man",
+          "kind": "punch",
+          "start": 1.35,
+          "duration": 0.65,
+          "hand": "right",
+          "amount": 1,
+          "intent": "Second sharp wind-up and contact; the man recoils."
+        },
+        {
+          "actorId": "Hero",
+          "hit": false,
+          "kind": "punch",
+          "start": 2.4,
+          "duration": 0.7,
+          "to": [
+            350,
+            476.8
+          ],
+          "hand": "right",
+          "amount": 1,
+          "intent": "The third punch misses the ducking face and flicks the brown bonnet upward."
+        },
+        {
+          "actorId": "Man",
+          "kind": "duck",
+          "start": 2.4,
+          "duration": 0.24,
+          "hand": "right",
+          "emotion": "shock",
+          "amount": 1,
+          "intent": "He spots the third swing and ducks his face beneath it."
+        },
+        {
+          "actorId": "Hero",
+          "kind": "perform",
+          "start": 3.514,
+          "duration": 0.9,
+          "hand": "right",
+          "amount": 1,
+          "keyframes": [
+            {
+              "at": 0,
+              "pose": {
+                "eyeOpen": 1,
+                "head": [
+                  0,
+                  -405
+                ]
+              },
+              "emotion": "shock"
+            },
+            {
+              "at": 0.09,
+              "pose": {
+                "headScale": [
+                  1.16,
+                  0.84
+                ],
+                "eyeOpen": 0,
+                "head": [
+                  0,
+                  -396
+                ]
+              },
+              "emotion": "strain"
+            },
+            {
+              "at": 0.25,
+              "pose": {
+                "headScale": [
+                  1,
+                  1
+                ],
+                "eyeOpen": 1,
+                "gaze": [
+                  0,
+                  -11
+                ],
+                "head": [
+                  0,
+                  -405
+                ]
+              },
+              "emotion": "jawdrop"
+            },
+            {
+              "at": 0.7,
+              "pose": {
+                "eyeOpen": 0.45,
+                "mouthOpen": 0.6
+              },
+              "emotion": "defeat"
+            },
+            {
+              "at": 1,
+              "pose": {
+                "eyeOpen": 0.45,
+                "mouthOpen": 0.6
+              },
+              "emotion": "defeat"
+            }
+          ],
+          "intent": "His own mess lands on his head. He freezes, squashes, then looks upward in disbelief."
+        },
+        {
+          "actorId": "Man",
+          "kind": "stand",
+          "start": 3.6,
+          "duration": 0.5,
+          "hand": "right",
+          "emotion": "smug",
+          "amount": 1,
+          "intent": "He stands upright again, safe from the third punch."
+        },
+        {
+          "actorId": "Man",
+          "kind": "perform",
+          "start": 4.25,
+          "duration": 1.4,
+          "hand": "right",
+          "amount": 1,
+          "keyframes": [
+            {
+              "at": 0,
+              "pose": {
+                "rightHand": [
+                  55,
+                  -150
+                ],
+                "headAngle": 0
+              },
+              "emotion": "smug",
+              "rightHandShape": "point"
+            },
+            {
+              "at": 0.25,
+              "pose": {
+                "rightHand": [
+                  -75,
+                  -345
+                ],
+                "headAngle": -4
+              }
+            },
+            {
+              "at": 0.5,
+              "pose": {
+                "headAngle": 0
+              }
+            },
+            {
+              "at": 0.7,
+              "pose": {
+                "leftHand": [
+                  65,
+                  -275
+                ],
+                "rightHand": [
+                  -85,
+                  -280
+                ]
+              },
+              "emotion": "smug",
+              "leftHandShape": "open",
+              "rightHandShape": "open"
+            },
+            {
+              "at": 1,
+              "pose": {
+                "leftHand": [
+                  -60,
+                  -150
+                ],
+                "rightHand": [
+                  55,
+                  -150
+                ],
+                "headAngle": 0
+              }
+            }
+          ],
+          "intent": "He calmly points at the hero’s new brown hat, then gives a tiny satisfied shrug."
+        },
+        {
+          "actorId": "Hero",
+          "kind": "perform",
+          "start": 5.8,
+          "duration": 0.8,
+          "hand": "right",
+          "amount": 1,
+          "keyframes": [
+            {
+              "at": 0,
+              "pose": {
+                "eyeOpen": 0.45,
+                "mouthOpen": 0.45
+              },
+              "emotion": "defeat"
+            },
+            {
+              "at": 0.35,
+              "pose": {
+                "eyeOpen": 0
+              }
+            },
+            {
+              "at": 0.6,
+              "pose": {
+                "eyeOpen": 0.45
+              }
+            },
+            {
+              "at": 1,
+              "pose": {
+                "eyeOpen": 0.45,
+                "gaze": [
+                  -8,
+                  5
+                ]
+              },
+              "emotion": "defeat"
+            }
+          ],
+          "intent": "An embarrassed deadpan blink closes the reversal."
+        }
+      ],
+      "shots": [
+        {
+          "start": 0,
+          "end": 0.39,
+          "focus": [
+            285,
+            520
+          ],
+          "zoom": 1.5,
+          "detail": "full"
+        },
+        {
+          "start": 0.39,
+          "end": 1.1,
+          "focus": [
+            320,
+            440
+          ],
+          "zoom": 2.7,
+          "detail": "full"
+        },
+        {
+          "start": 1.1,
+          "end": 2.1,
+          "focus": [
+            305,
+            470
+          ],
+          "zoom": 2.05,
+          "detail": "full"
+        },
+        {
+          "start": 2.1,
+          "end": 2.74,
+          "focus": [
+            285,
+            515
+          ],
+          "zoom": 1.65,
+          "detail": "full"
+        },
+        {
+          "start": 2.74,
+          "end": 3.534,
+          "focus": [
+            285,
+            370
+          ],
+          "zoom": 1.7,
+          "detail": "full"
+        },
+        {
+          "start": 3.534,
+          "end": 4.25,
+          "focus": [
+            220,
+            405
+          ],
+          "zoom": 4,
+          "detail": "full",
+          "actorIds": [
+            "Hero"
+          ]
+        },
+        {
+          "start": 4.25,
+          "end": 5.8,
+          "focus": [
+            350,
+            445
+          ],
+          "zoom": 3.5,
+          "detail": "full",
+          "actorIds": [
+            "Man"
+          ]
+        },
+        {
+          "start": 5.8,
+          "end": 6.8,
+          "focus": [
+            220,
+            410
+          ],
+          "zoom": 4.3,
+          "detail": "full",
+          "actorIds": [
+            "Hero"
+          ]
+        }
+      ],
+      "sounds": [
+        {
+          "playbackRate": 1,
+          "trimSilence": false,
+          "start": 2.694,
+          "query": "pop cartoon effect",
+          "volume": 0.16,
+          "duration": 0.17,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "pop"
+        },
+        {
+          "playbackRate": 1,
+          "category": "plop",
+          "trimSilence": false,
+          "start": 3.514,
+          "query": "pop cartoon effect",
+          "volume": 0.18,
+          "duration": 0.4,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "wet-plop"
+        },
+        {
+          "beatIndex": 0,
+          "syncTo": "contact",
+          "playbackRate": 1,
+          "category": "punch",
+          "trimSilence": false,
+          "start": 0.573,
+          "query": "cartoon fist body impact",
+          "volume": 0.24,
+          "duration": 0.38,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "impact"
+        },
+        {
+          "beatIndex": 0,
+          "playbackRate": 1,
+          "category": "whoosh",
+          "trimSilence": false,
+          "start": 0.42299999999999993,
+          "query": "fast fist swish",
+          "volume": 0.14,
+          "duration": 0.2,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "air-swish"
+        },
+        {
+          "beatIndex": 1,
+          "syncTo": "contact",
+          "playbackRate": 1,
+          "category": "punch",
+          "trimSilence": false,
+          "start": 1.6230000000000002,
+          "query": "cartoon fist body impact",
+          "volume": 0.24,
+          "duration": 0.38,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "impact"
+        },
+        {
+          "beatIndex": 1,
+          "playbackRate": 1,
+          "category": "whoosh",
+          "trimSilence": false,
+          "start": 1.4730000000000003,
+          "query": "fast fist swish",
+          "volume": 0.14,
+          "duration": 0.2,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "air-swish"
+        },
+        {
+          "beatIndex": 2,
+          "playbackRate": 1,
+          "category": "whoosh",
+          "trimSilence": false,
+          "start": 2.544,
+          "query": "fast fist swish",
+          "volume": 0.14,
+          "duration": 0.2,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "air-swish"
+        }
+      ],
+      "dialogue": []
+    }
+  ],
+  "coverage": [
+    {
+      "storyEvent": "A proudly flying hero drops a cartoon lump onto a pedestrian; the man freezes, looks up and fumes.",
+      "sceneId": "flight_v8",
+      "beatIndices": [
+        0,
+        1
+      ]
+    },
+    {
+      "storyEvent": "The furious man points, shakes a fist and chatters unintelligible gibberish; the hero hears it.",
+      "sceneId": "scold_v8",
+      "beatIndices": [
+        0,
+        1
+      ]
+    },
+    {
+      "storyEvent": "The caped hero drops beside the man, compresses into his landing and rises. The man immediately regrets complaining.",
+      "sceneId": "landing_v8",
+      "beatIndices": [
+        0,
+        1
+      ]
+    },
+    {
+      "storyEvent": "Two rapid cartoon punches. The man ducks the third, which flicks the poop up. It arcs back onto the hero’s own head. The victim smiles at the return gift.",
+      "sceneId": "return_v8",
+      "beatIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  ],
+  "seo": {
+    "titles": [
+      "Superhero Ka Return Gift 😂"
+    ],
+    "description": "A fast original silent cartoon: a flying hero, an angry gibberish rant, two comic punches and a brown return gift. CC0 recorded gibberish and contextual effects; no intelligible dialogue or spoken impact words.",
+    "tags": [
+      "superhero cartoon",
+      "slapstick comedy",
+      "Hindi cartoon",
+      "dishoom",
+      "flying hero"
+    ],
+    "hashtags": [
+      "#CartoonComedy",
+      "#Slapstick"
+    ],
+    "pinnedComment": "Sharma ji ki galti sirf complaint karna thi?",
+    "thumbnailText": "RETURN GIFT!"
+  },
+  "blockedReasons": [],
+  "version": 1,
+  "format": "shorts",
+  "language": "hi",
+  "review": {
+    "method": "authored-example",
+    "planHash": "25452d34503bf87e5bafbbcae52bf9dc058daeec9c005e7ea85acc09346a526c",
+    "summary": "V9 authored sample: visible connected reaching forearms, semantic flight air and wind streaks, gravity drop and contact particles, cheek-local punch flash; recorded CC0 gibberish. Not a live Gemini output."
+  }
+}

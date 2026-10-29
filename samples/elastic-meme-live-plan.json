@@ -1,0 +1,724 @@
+{
+  "schemaVersion": 2,
+  "seed": 123456789,
+  "provenance": {
+    "origin": "generated",
+    "sourceSchemaVersion": 1
+  },
+  "generatedAssetRefs": [],
+  "replay": {
+    "schemaVersion": 1,
+    "planHash": "1b582281a518379237ca094335c8a06a7daa6d337a9952ad8b559eacbf3c754d",
+    "seed": 123456789,
+    "fps": 60,
+    "totalFrames": 600,
+    "frameRounding": "nearest",
+    "evaluator": "sticklaugh-frame-evaluator-v1"
+  },
+  "durationMode": "auto",
+  "renderFps": 60,
+  "referenceStyle": "elastic-meme",
+  "planningMode": "dynamic",
+  "productionMode": "silent-sfx",
+  "category": "adult-comedy",
+  "comedySettings": {
+    "innuendo": "off",
+    "profanity": "off",
+    "physicalIntensity": "medium"
+  },
+  "adultModeAcknowledged": true,
+  "humorProfile": "adult-relatable",
+  "hook": {
+    "sceneId": "scene1",
+    "beatIndices": [
+      0
+    ],
+    "partRefs": [
+      {
+        "entityId": "fan1",
+        "nodeId": "bladesGroup"
+      }
+    ],
+    "start": 0,
+    "end": 2,
+    "evidence": "An adult woman boasts silently beside a tiny desk fan."
+  },
+  "comedy": {
+    "hook": "An adult woman boasts beside a tiny desk fan.",
+    "goal": "Express supreme confidence in the miniature appliance.",
+    "escalation": [
+      "The tiny fan's three blades start spinning up.",
+      "The woman opens her mouth in exaggerated shock at the wind power."
+    ],
+    "payoff": "The fan stops and she gives it a very serious bow.",
+    "callback": "Respecting the small machinery's sudden halt."
+  },
+  "title": "The Mighty Desk Fan",
+  "story": "An adult woman boasts silently beside a tiny desk fan. As its three blades start spinning she opens her mouth in exaggerated shock, then gives the fan a very serious bow when it stops.",
+  "sourceIdea": "An adult woman boasts silently beside a tiny desk fan. As its three blades start spinning she opens her mouth in exaggerated shock, then gives the fan a very serious bow when it stops. Keep one scene.",
+  "requirements": [
+    {
+      "description": "Adult woman standing proudly beside a desk fan",
+      "sceneId": "scene1",
+      "characterId": "woman1"
+    },
+    {
+      "description": "Tiny desk fan with three blades",
+      "sceneId": "scene1",
+      "propId": "fan1"
+    }
+  ],
+  "characters": [
+    {
+      "id": "woman1",
+      "name": "Eleanor",
+      "rigVersion": 2,
+      "shoulderWidth": 30,
+      "kind": "woman",
+      "visualSpec": {
+        "renderMode": "overlay",
+        "silhouetteFamily": "humanoid",
+        "geometryRecipe": [],
+        "normalizedDimensions": {
+          "width": 100,
+          "height": 100
+        },
+        "material": "flat",
+        "paint": {
+          "fill": "none",
+          "stroke": "#293329",
+          "outlineThickness": 1.5
+        },
+        "palette": [
+          "#f6f1da",
+          "#a2b6a6",
+          "#655f4d",
+          "#293329"
+        ],
+        "facialComponents": [],
+        "apparel": [],
+        "accessories": [],
+        "decorativeMarks": [],
+        "proceduralComponents": [],
+        "motionAnchors": [],
+        "zIndex": 0
+      },
+      "ageYears": 30,
+      "artStyle": "classic",
+      "hairStyle": "bob",
+      "faceShape": "round",
+      "costume": "everyday",
+      "build": "average",
+      "skin": "#f6f1da",
+      "outfit": "#a2b6a6",
+      "hair": "#655f4d",
+      "headWidth": 1,
+      "headHeight": 1
+    }
+  ],
+  "propDesigns": [
+    {
+      "visualAssetRequest": {
+        "description": "A small electric desk fan featuring a circular cage and three rotating blades.",
+        "requiredFeatures": [
+          "circular cage",
+          "three blades",
+          "small base"
+        ],
+        "style": "2d-cartoon"
+      },
+      "objectAffordances": [
+        "press",
+        "hold"
+      ],
+      "visualSpec": {
+        "renderMode": "replace",
+        "silhouetteFamily": "custom-vector",
+        "geometryRecipe": [
+          {
+            "id": "fanRoot",
+            "kind": "group",
+            "position": [
+              0,
+              0
+            ],
+            "children": [
+              {
+                "id": "base",
+                "kind": "roundedRect",
+                "rect": [
+                  -20,
+                  30,
+                  40,
+                  15
+                ],
+                "cornerRadius": 5,
+                "fill": "#444444",
+                "stroke": "#111111"
+              },
+              {
+                "id": "stem",
+                "kind": "roundedRect",
+                "rect": [
+                  -4,
+                  10,
+                  8,
+                  25
+                ],
+                "cornerRadius": 2,
+                "fill": "#555555",
+                "stroke": "#111111"
+              },
+              {
+                "id": "cage",
+                "kind": "group",
+                "position": [
+                  0,
+                  -20
+                ],
+                "children": [
+                  {
+                    "id": "outerRing",
+                    "kind": "ellipse",
+                    "center": [
+                      0,
+                      0
+                    ],
+                    "radius": [
+                      35,
+                      35
+                    ],
+                    "fill": "none",
+                    "stroke": "#222222",
+                    "width": 3
+                  },
+                  {
+                    "id": "bladesGroup",
+                    "kind": "group",
+                    "animation": [
+                      {
+                        "sceneId": "scene1",
+                        "playback": "once",
+                        "keys": [
+                          {
+                            "at": 0,
+                            "rotation": 0,
+                            "easing": "smooth"
+                          },
+                          {
+                            "at": 3,
+                            "rotation": 0,
+                            "easing": "smooth"
+                          },
+                          {
+                            "at": 3.5,
+                            "rotation": 180,
+                            "easing": "smooth"
+                          },
+                          {
+                            "at": 7,
+                            "rotation": 2160,
+                            "easing": "smooth"
+                          },
+                          {
+                            "at": 7.5,
+                            "rotation": 2220,
+                            "easing": "smooth"
+                          },
+                          {
+                            "at": 10,
+                            "rotation": 2220,
+                            "easing": "hold"
+                          }
+                        ]
+                      }
+                    ],
+                    "position": [
+                      0,
+                      0
+                    ],
+                    "pivot": [
+                      0,
+                      0
+                    ],
+                    "rotation": 0,
+                    "children": [
+                      {
+                        "id": "blade1",
+                        "kind": "ellipse",
+                        "center": [
+                          0,
+                          -15
+                        ],
+                        "radius": [
+                          4,
+                          15
+                        ],
+                        "fill": "#666666",
+                        "stroke": "#222222"
+                      },
+                      {
+                        "id": "blade2",
+                        "kind": "group",
+                        "pivot": [
+                          0,
+                          0
+                        ],
+                        "rotation": 120,
+                        "children": [
+                          {
+                            "kind": "ellipse",
+                            "center": [
+                              13,
+                              8
+                            ],
+                            "radius": [
+                              4,
+                              15
+                            ],
+                            "fill": "#666666",
+                            "stroke": "#222222"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "blade3",
+                        "kind": "group",
+                        "pivot": [
+                          0,
+                          0
+                        ],
+                        "rotation": 240,
+                        "children": [
+                          {
+                            "kind": "ellipse",
+                            "center": [
+                              -13,
+                              8
+                            ],
+                            "radius": [
+                              4,
+                              15
+                            ],
+                            "fill": "#666666",
+                            "stroke": "#222222"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "centerCap",
+                        "kind": "ellipse",
+                        "center": [
+                          0,
+                          0
+                        ],
+                        "radius": [
+                          6,
+                          6
+                        ],
+                        "fill": "#222222",
+                        "stroke": "#000000"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "normalizedDimensions": {
+          "width": 100,
+          "height": 100
+        },
+        "material": "metal",
+        "paint": {
+          "fill": "none",
+          "stroke": "#293329",
+          "outlineThickness": 1.5
+        },
+        "palette": [
+          "#333333",
+          "#444444",
+          "#555555",
+          "#666666",
+          "#222222",
+          "#111111",
+          "#000000"
+        ],
+        "facialComponents": [],
+        "apparel": [],
+        "accessories": [],
+        "decorativeMarks": [],
+        "proceduralComponents": [],
+        "motionAnchors": [],
+        "zIndex": 0
+      },
+      "id": "fan1",
+      "name": "Tiny Desk Fan",
+      "type": "drawing",
+      "color": "#333333",
+      "nodes": []
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene1",
+      "summary": "Eleanor boasts beside a tiny desk fan, reacts to its spinning blades with shock, and bows when it stops.",
+      "duration": 10,
+      "background": "office",
+      "backgroundNodes": [
+        {
+          "id": "desk",
+          "kind": "roundedRect",
+          "rect": [
+            150,
+            680,
+            240,
+            100
+          ],
+          "cornerRadius": 4,
+          "fill": "#d3c4a9",
+          "stroke": "#293329",
+          "width": 1.5
+        }
+      ],
+      "motions": [],
+      "cast": [
+        {
+          "id": "ir_actor_fc23ac8bc5694c",
+          "rigVersion": 2,
+          "shoulderWidth": 30,
+          "shadow": true,
+          "species": "woman",
+          "characterId": "woman1",
+          "initialPose": {
+            "eyeOpen": 1,
+            "mouthOpen": 0.2,
+            "mouthCurve": 0.5,
+            "bodyAngle": -5,
+            "headAngle": 5
+          },
+          "emotion": "confident",
+          "x": 220,
+          "y": 780,
+          "scale": 1,
+          "facing": 1
+        }
+      ],
+      "props": [
+        {
+          "id": "ir_placement_f7f1550d93015e",
+          "designId": "fan1",
+          "layer": "front",
+          "open": 0,
+          "angle": 0,
+          "x": 270,
+          "y": 645,
+          "scale": 1
+        }
+      ],
+      "beats": [
+        {
+          "id": "ir_action_52937f9a77ea77",
+          "actorId": "woman1",
+          "kind": "perform",
+          "start": 0,
+          "duration": 3,
+          "hand": "right",
+          "emotion": "confident",
+          "amount": 1,
+          "pose": {
+            "eyeOpen": 1,
+            "mouthOpen": 0,
+            "mouthCurve": 0.5,
+            "bodyAngle": -5,
+            "headAngle": 5
+          },
+          "keyframes": [
+            {
+              "at": 0,
+              "pose": {
+                "eyeOpen": 1,
+                "mouthOpen": 0,
+                "bodyAngle": -5,
+                "headAngle": 5
+              },
+              "emotion": "confident"
+            },
+            {
+              "at": 1,
+              "pose": {
+                "eyeOpen": 1,
+                "mouthOpen": 0.2,
+                "bodyAngle": 0,
+                "headAngle": 0
+              },
+              "emotion": "confident"
+            }
+          ],
+          "intent": "Boast proudly beside the tiny fan"
+        },
+        {
+          "id": "ir_action_8c8841588f5971",
+          "actorId": "woman1",
+          "kind": "perform",
+          "start": 3,
+          "duration": 4,
+          "hand": "right",
+          "emotion": "shock",
+          "amount": 1,
+          "pose": {
+            "eyeOpen": 1,
+            "mouthOpen": 1,
+            "mouthCurve": -0.5,
+            "mouthAperture": 1,
+            "bodyAngle": 5,
+            "headAngle": -10
+          },
+          "keyframes": [
+            {
+              "at": 0,
+              "pose": {
+                "mouthOpen": 0.2,
+                "bodyAngle": 0,
+                "headAngle": 0
+              },
+              "emotion": "shock"
+            },
+            {
+              "at": 0.5,
+              "pose": {
+                "mouthOpen": 1,
+                "bodyAngle": 5,
+                "headAngle": -10
+              },
+              "emotion": "shock"
+            },
+            {
+              "at": 1,
+              "pose": {},
+              "emotion": "shock"
+            }
+          ],
+          "intent": "Open mouth in shock as blades start spinning"
+        },
+        {
+          "id": "ir_action_9adaa4b3ec8cdf",
+          "actorId": "woman1",
+          "kind": "perform",
+          "start": 7,
+          "duration": 3,
+          "hand": "right",
+          "emotion": "calm",
+          "amount": 1,
+          "pose": {
+            "eyeOpen": 1,
+            "mouthOpen": 0,
+            "mouthCurve": 0,
+            "bodyAngle": 25,
+            "headAngle": 15
+          },
+          "keyframes": [
+            {
+              "at": 0,
+              "pose": {
+                "mouthOpen": 0.5,
+                "bodyAngle": 5,
+                "headAngle": -5
+              },
+              "emotion": "calm"
+            },
+            {
+              "at": 1,
+              "pose": {
+                "mouthOpen": 0,
+                "bodyAngle": 25,
+                "headAngle": 15
+              },
+              "emotion": "calm"
+            }
+          ],
+          "intent": "Bow seriously when the fan stops"
+        }
+      ],
+      "shots": [
+        {
+          "id": "shot1",
+          "start": 0,
+          "end": 10,
+          "focus": [
+            240,
+            700
+          ],
+          "zoom": 0.7845371588925447,
+          "detail": "full",
+          "actorIds": [
+            "woman1"
+          ]
+        }
+      ],
+      "sounds": [
+        {
+          "id": "ir_sound_3bafb939cd9c4d",
+          "playbackRate": 1,
+          "category": "whoosh",
+          "role": "effect",
+          "trimSilence": true,
+          "start": 3,
+          "query": "electric fan humming wind",
+          "volume": 0.3,
+          "duration": 4,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "fx1"
+        },
+        {
+          "id": "ir_sound_a63184e07d66ce",
+          "playbackRate": 1,
+          "category": "gibberish",
+          "actorId": "woman1",
+          "role": "nonverbal",
+          "trimSilence": true,
+          "start": 3.2,
+          "query": "gasp shock",
+          "volume": 0.4,
+          "duration": 0.8,
+          "required": false,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "fx2",
+          "mouthCues": [
+            {
+              "time": 0,
+              "open": 0.561848358360094
+            },
+            {
+              "time": 0.05,
+              "open": 0.9329174423660155
+            },
+            {
+              "time": 0.1,
+              "open": 1
+            },
+            {
+              "time": 0.15,
+              "open": 0.6803364792097711
+            },
+            {
+              "time": 0.2,
+              "open": 0.5671656943511898
+            },
+            {
+              "time": 0.25,
+              "open": 0.43725784515589894
+            },
+            {
+              "time": 0.3,
+              "open": 0.22155763554116
+            },
+            {
+              "time": 0.35,
+              "open": 0
+            },
+            {
+              "time": 0.4,
+              "open": 0
+            },
+            {
+              "time": 0.45,
+              "open": 0
+            },
+            {
+              "time": 0.5,
+              "open": 0.21932124831871253
+            },
+            {
+              "time": 0.55,
+              "open": 0
+            },
+            {
+              "time": 0.6,
+              "open": 0
+            },
+            {
+              "time": 0.65,
+              "open": 0
+            },
+            {
+              "time": 0.7,
+              "open": 0
+            },
+            {
+              "time": 0.75,
+              "open": 0
+            }
+          ]
+        }
+      ],
+      "dialogue": [],
+      "sceneSeed": 2015182213,
+      "canonicalFrame": {
+        "fps": 60,
+        "startFrame": 0,
+        "endFrame": 600,
+        "interval": "[startFrame,endFrame)"
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "storyEvent": "An adult woman boasts silently beside a tiny desk fan.",
+      "sceneId": "scene1",
+      "beatIndices": [
+        0
+      ]
+    },
+    {
+      "storyEvent": "As its three blades start spinning she opens her mouth in exaggerated shock",
+      "sceneId": "scene1",
+      "beatIndices": [
+        1
+      ]
+    },
+    {
+      "storyEvent": "then gives the fan a very serious bow when it stops.",
+      "sceneId": "scene1",
+      "beatIndices": [
+        2
+      ]
+    }
+  ],
+  "seo": {
+    "titles": [
+      "The Mighty Desk Fan",
+      "Eleanor and the Mini Fan",
+      "Serious Desk Fan Bow"
+    ],
+    "description": "An adult woman boasts beside a tiny desk fan, gets blown away by its blades, and gives it a respectful bow.",
+    "tags": [
+      "cartoon",
+      "comedy",
+      "desk fan",
+      "animation",
+      "slapstick"
+    ],
+    "hashtags": [
+      "#cartoon",
+      "#comedy",
+      "#animation"
+    ],
+    "pinnedComment": "Never underestimate the power of a tiny desk fan!",
+    "thumbnailText": "MIGHTY FAN"
+  },
+  "blockedReasons": [],
+  "storyId": "story_641e3b0753bc86",
+  "review": {
+    "method": "gemini",
+    "planHash": "22608fb83f8f17f76c06a863168d36e9c5ea538640ae860f0fb97c8232b1077f",
+    "summary": "The JSON plan for 'The Mighty Desk Fan' has been validated against all criteria. The adult woman (Eleanor) and the custom vector desk fan are properly configured with 2D cartoon geometry, appropriate scaling, and clear bone/group hierarchies. All scene beats, keyframe performances (boast, shock, bow), prop animations (fan blade rotation sequence), sound effects, and cameraframing align precisely with the user's requested narrative without any unsupported features or unauthorized substitutions."
+  },
+  "version": 1,
+  "format": "landscape",
+  "language": "en"
+}

@@ -1,0 +1,260 @@
+{
+  "renderFps": 60,
+  "productionMode": "silent-sfx",
+  "comedy": {
+    "hook": "A man treats an ordinary lantern as a guest.",
+    "goal": "Get a greeting from the lantern.",
+    "escalation": [
+      "He bows and waits.",
+      "The lantern remains silent."
+    ],
+    "payoff": "He squints at his silent guest.",
+    "callback": "The lantern never changes."
+  },
+  "title": "Hand-authored prop exchange fixture",
+  "story": "Asha picks up a small parcel, carries it to Bala, transfers it hand to hand, and places it down. Both characters react.",
+  "sourceIdea": "Asha picks up a small parcel, carries it to Bala, transfers it hand to hand, and places it down. Both characters react.",
+  "characters": [
+    {
+      "id": "asha",
+      "name": "Asha",
+      "kind": "man",
+      "artStyle": "pencil",
+      "hairStyle": "sidepart",
+      "faceShape": "long",
+      "wardrobe": "default",
+      "skin": "#eee8cc",
+      "outfit": "#8db5a8",
+      "hair": "#565846",
+      "headWidth": 1.05,
+      "headHeight": 0.92
+    },
+    {
+      "id": "bala",
+      "name": "Bala",
+      "kind": "man",
+      "artStyle": "pencil",
+      "hairStyle": "curly",
+      "faceShape": "long",
+      "wardrobe": "default",
+      "skin": "#eee8cc",
+      "outfit": "#bd91a8",
+      "hair": "#565846",
+      "headWidth": 1.05,
+      "headHeight": 0.92
+    }
+  ],
+  "propDesigns": [
+    {
+      "id": "parcel",
+      "name": "Hand-drawn exchange parcel",
+      "type": "drawing",
+      "color": "#d79a52",
+      "interactionAnchors": [
+        {
+          "id": "handle",
+          "position": [
+            0,
+            -42
+          ]
+        }
+      ],
+      "nodes": [
+        {
+          "kind": "group",
+          "position": [
+            0,
+            0
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "children": [
+            {
+              "kind": "path",
+              "d": "M-42 -27 L42 -27 L42 29 L-42 29 Z",
+              "fill": "#d79a52",
+              "stroke": "#293329",
+              "width": 3
+            },
+            {
+              "kind": "path",
+              "d": "M-42 -12 L42 -12 M0 -27 L0 29",
+              "fill": "none",
+              "stroke": "#8b512c",
+              "width": 5
+            },
+            {
+              "kind": "path",
+              "d": "M-17 -27 C-17 -55 17 -55 17 -27",
+              "fill": "none",
+              "stroke": "#8b512c",
+              "width": 5
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "id": "propExchange",
+      "summary": "Two characters pick up, carry, transfer, and place a custom parcel, then react.",
+      "duration": 4,
+      "background": "room",
+      "backgroundNodes": [],
+      "motions": [],
+      "cast": [
+        {
+          "rigVersion": 2,
+          "characterId": "asha",
+          "emotion": "curious",
+          "x": 200,
+          "y": 780,
+          "scale": 0.8,
+          "facing": 1,
+          "initialPose": {
+            "rightHand": [
+              110,
+              -250
+            ],
+            "wristAngle": 12
+          }
+        },
+        {
+          "rigVersion": 2,
+          "characterId": "bala",
+          "emotion": "curious",
+          "x": 372,
+          "y": 780,
+          "scale": 0.7,
+          "facing": -1,
+          "initialPose": {
+            "leftHand": [
+              -120,
+              -285.7142857142857
+            ],
+            "leftWristAngle": 12
+          }
+        }
+      ],
+      "props": [
+        {
+          "designId": "parcel",
+          "open": 0,
+          "angle": 0,
+          "x": 288,
+          "y": 580,
+          "scale": 0.55,
+          "attachmentEvents": [
+            {
+              "at": 0.5,
+              "attachment": {
+                "actorId": "asha",
+                "bone": "rightHand",
+                "offset": [
+                  0,
+                  0
+                ],
+                "propAnchorId": "handle"
+              }
+            },
+            {
+              "at": 1.6,
+              "attachment": {
+                "actorId": "bala",
+                "bone": "leftHand",
+                "offset": [
+                  0,
+                  0
+                ],
+                "propAnchorId": "handle"
+              }
+            },
+            {
+              "at": 2.7,
+              "attachment": null,
+              "position": [
+                385,
+                748
+              ],
+              "angle": 0
+            }
+          ]
+        }
+      ],
+      "beats": [
+        {
+          "actorId": "asha",
+          "kind": "react",
+          "start": 2.85,
+          "duration": 0.6,
+          "emotion": "shock",
+          "amount": 1,
+          "intent": "Asha reacts visibly after placing the parcel."
+        },
+        {
+          "actorId": "bala",
+          "kind": "react",
+          "start": 3.1,
+          "duration": 0.6,
+          "emotion": "laugh",
+          "amount": 1,
+          "intent": "Bala smiles and laughs at the successful exchange."
+        }
+      ],
+      "shots": [
+        {
+          "start": 0,
+          "end": 4,
+          "focus": [
+            300,
+            555
+          ],
+          "zoom": 1.05,
+          "detail": "full",
+          "actorIds": [
+            "asha",
+            "bala"
+          ]
+        }
+      ],
+      "sounds": [],
+      "dialogue": []
+    }
+  ],
+  "coverage": [
+    {
+      "storyEvent": "Asha and Bala visibly react after the parcel exchange.",
+      "sceneId": "propExchange",
+      "beatIndices": [
+        0,
+        1
+      ]
+    }
+  ],
+  "seo": {
+    "titles": [
+      "Machhar Bacha, Thappad Khud Ko",
+      "One Mosquito. Three Self-Slaps."
+    ],
+    "description": "One tiny mosquito. Three careful attempts. Every slap lands on the wrong target. An original 20-second silent pencil cartoon using the reusable StickLaugh Studio v6 motion engine.",
+    "tags": [
+      "mosquito comedy",
+      "silent cartoon",
+      "self slap",
+      "visual comedy"
+    ],
+    "hashtags": [
+      "#CartoonComedy",
+      "#SilentComedy"
+    ],
+    "pinnedComment": "Machhar ko maarte hue kabhi khud ko thappad maara hai?",
+    "thumbnailText": "GALAT TARGET!"
+  },
+  "blockedReasons": [],
+  "version": 1,
+  "format": "shorts",
+  "language": "hi"
+}

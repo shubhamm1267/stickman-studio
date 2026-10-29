@@ -1,0 +1,220 @@
+<aside><a class="brand" (click)="tab.set('create')"><span class="brand-icon">s.</span> sticklaugh<span
+            class="beta">STUDIO</span></a>
+    <p class="nav-label">YOUR WORKSPACE</p>
+    <nav><button [class.selected]="tab()==='create'" (click)="tab.set('create')"><span>✦</span> Create a
+            story</button><button [class.selected]="tab()==='director'" (click)="tab.set('director')"><span>▣</span>
+            Scene director</button><button [class.selected]="tab()==='publish'"
+            (click)="tab.set('publish')"><span>↗</span> Creator pack</button><button [class.selected]="tab()==='jobs'"
+            (click)="tab.set('jobs');refresh()"><span>◷</span> Render history</button><button
+            [class.selected]="tab()==='settings'" (click)="tab.set('settings')"><span>⚙</span> Connections</button>
+    </nav>
+    <div class="aside-bottom">
+        <div class="status-dot"></div> Local rendering <small>Remotion + FFmpeg</small><button
+            (click)="tab.set('settings')">⚙ API connections</button>
+    </div>
+</aside>
+<main>
+    <header>
+        <div>YOUR IDEAS, IN MOTION <span>/ {{tab()==='create'?'New project':tab()}}</span></div><span class="pill">●
+            {{health()?.ffmpeg?'Renderer available':'Checking renderer'}}</span>
+    </header>
+    <div class="toast error" *ngIf="error()" role="alert">{{error()}} <button (click)="error.set('')">×</button></div>
+    <div class="toast" *ngIf="notice()" role="status">{{notice()}}<button (click)="notice.set('')">×</button></div>
+    <section *ngIf="tab()==='create'">
+        <div class="eyebrow">THE DIRECTOR'S CHAIR</div>
+        <h1>A little story.<br><em>A big laugh.</em></h1>
+        <p class="intro">Turn your idea into an original animated comedy.<br>Give your characters something worth
+            reacting to.</p>
+        <div class="create-grid">
+            <article class="panel">
+                <div class="section-heading">
+                    <h2>What's the story?</h2><span>01 / CONCEPT</span>
+                </div><label for="story">Your idea (optional)</label><textarea id="story" class="story"
+                    [(ngModel)]="story"
+                    placeholder="One mosquito. One careful swat. One slap on the wrong face…"></textarea>
+                <div class="hint">Visual storytelling first. No captions. Coloured props and physical scene labels.
+                    Sounds carry the action.</div>
+                <div class="form-row"><label>Video length<select id="length-mode" [(ngModel)]="durationMode">
+                            <option value="auto">Automatic · let the story decide</option>
+                            <option value="manual">Manual · target seconds</option>
+                        </select></label><label *ngIf="durationMode==='manual'">Target seconds<input id="target-seconds"
+                            type="number" min="10" max="1200" [(ngModel)]="duration"></label></div>
+                <fieldset class="production-modes">
+                    <legend>Reference style</legend>
+                    <label class="check"><input type="radio" name="referenceStyle" value="silent-slapstick" [checked]="referenceStyle==='silent-slapstick'" (change)="setMode('silent-slapstick')">1 · Silent slapstick — selective colour, expressive close-ups, CC0 SFX</label>
+                    <label class="check"><input type="radio" name="referenceStyle" value="coloured-cartoon" [checked]="referenceStyle==='coloured-cartoon'" (change)="setMode('coloured-cartoon')">2 · Coloured cartoon — colourful characters, visual comedy, CC0 SFX</label>
+                    <label class="check"><input type="radio" name="referenceStyle" value="elastic-meme" [checked]="referenceStyle==='elastic-meme'" (change)="setMode('elastic-meme')">3 · Elastic meme cartoon — ink outlines, big reactions, snappy action, CC0 SFX</label>
+                </fieldset><label>Frame rate<select id="create-fps" [(ngModel)]="renderFps">
+                        <option [ngValue]="60">60 fps</option>
+                        <option [ngValue]="120">120 fps</option>
+                    </select></label>
+                <p class="hint">All three styles use Gemini + Freesound. No spoken dialogue. Story direction, review and rendering run automatically.</p>
+                <div class="actions"><button class="primary" [disabled]="busy()" (click)="generate()">Generate comedy video <span>↗</span></button><button class="secondary" *ngIf="resultId" [disabled]="!readyDownloadUrl() || videoExpired()" (click)="downloadVideo()">Download video ↓</button></div>
+            </article>
+            <div class="right-stack">
+                <article class="panel">
+                    <div class="section-heading">
+                        <h2>Pick your canvas</h2><span>02 / FORMAT</span>
+                    </div>
+                    <div class="formats"><button [class.chosen]="format==='shorts'" (click)="format='shorts'"><i
+                                class="ratio tall"></i><strong>Shorts</strong><small>9:16 ·
+                                1080p</small></button><button [class.chosen]="format==='landscape'"
+                            (click)="format='landscape'"><i class="ratio wide"></i><strong>YouTube</strong><small>16:9 ·
+                                1080p</small></button><button [class.chosen]="format==='square'"
+                            (click)="format='square'"><i class="ratio square"></i><strong>Square</strong><small>1:1 ·
+                                1080p</small></button></div>
+                </article>
+                <article class="paper-card">
+                    <div class="paper-badge">BUILT FOR THE PUNCHLINE</div><svg viewBox="0 0 320 180" aria-hidden="true">
+                        <g fill="none" stroke="#293329" stroke-width="3.5" stroke-linecap="round">
+                            <path
+                                d="M95 135 L80 172 M95 135 L119 172 M95 98 L95 135 M95 105 L61 115 L48 85 M97 105 L131 117 L151 90" />
+                            <path fill="#f5f2dc" d="M73 42 Q95 20 116 43 L122 79 Q98 108 73 79Z" />
+                            <ellipse cx="87" cy="55" rx="10" ry="14" />
+                            <ellipse cx="108" cy="55" rx="10" ry="14" />
+                            <path d="M87 80 Q99 90 113 76" />
+                            <path fill="#c78f78" d="M184 105 L244 105 L244 119 L184 119Z" />
+                            <path fill="#c5d5ad" d="M190 120 L238 120 L238 166 L190 166Z" />
+                            <path d="M151 73 l7 -10 M170 86 l14 -4" />
+                        </g>
+                    </svg>
+                    <h3>The action is the joke.</h3>
+                    <p>Expressive faces. Physical poses. Sound effects that belong to the scene.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section *ngIf="tab()==='settings'">
+        <div class="eyebrow">CONNECTIONS</div>
+        <h1>Your creative toolkit.</h1>
+        <p class="intro">Keys stay in this browser session unless you choose to remember them.</p>
+        <article class="panel settings">
+            <div class="form-row"><label>Gemini API key<input type="password" autocomplete="off"
+                        [(ngModel)]="keys.gemini"></label><label>Gemini model<input
+                        [(ngModel)]="keys.geminiModel"></label></div><label>Freesound API key<input type="password"
+                    autocomplete="off" [(ngModel)]="keys.freesound"></label>
+            <label>Studio access token (if configured)<input type="password" [(ngModel)]="token"></label><label
+                class="check"><input type="checkbox" [(ngModel)]="remember"> Remember keys on this device
+                (localStorage)</label>
+            <div class="actions"><button class="primary" (click)="saveKeys()">Save connections</button><button
+                    class="secondary" (click)="clearKeys()">Forget keys</button></div>
+        </article>
+    </section>
+    <section *ngIf="tab()==='director'">
+        <div class="eyebrow">SCENE DIRECTOR</div>
+        <h1>{{plan()?.title||'Your next scene starts here.'}}</h1>
+        <p class="intro" *ngIf="!plan()">Create a story to begin.</p>
+        <div class="director-grid" *ngIf="plan()">
+            <article class="panel preview-panel">
+                <div class="preview-stage" [class.landscape]="format==='landscape'" [class.square]="format==='square'">
+                    <img *ngIf="preview()" [src]="preview()" alt="Actual animation frame preview"></div><label>Preview
+                    frame · {{previewTime|number:'1.1-1'}}s / {{total()}}s<input type="range" min="0"
+                        [max]="total()-.05" step="0.1" [(ngModel)]="previewTime" (change)="updatePreview()"></label>
+                <div class="form-row"><label>Export canvas<select [(ngModel)]="format" (change)="updatePreview()">
+                            <option value="shorts">Shorts 9:16</option>
+                            <option value="landscape">YouTube 16:9</option>
+                            <option value="square">Square 1:1</option>
+                        </select></label><label>Export frame rate<select id="export-fps" [(ngModel)]="renderFps"
+                            (change)="updatePreview()">
+                            <option [ngValue]="60">60 fps</option>
+                            <option [ngValue]="120">120 fps</option>
+                        </select></label><label>Quality<select [(ngModel)]="quality">
+                            <option value="full">Full 1080p</option>
+                            <option value="draft">Draft 540p</option>
+                        </select></label></div><button class="secondary full"
+                    *ngIf="active()?.kind==='render' && active()?.status==='failed' && active()?.videoExpiresAt && !videoExpired()"
+                    [disabled]="busy()" (click)="reviewExistingVideo()">Review saved video again</button><button
+                    class="primary full" [disabled]="busy()" (click)="render()">Render video + creator pack ↗</button>
+                <p class="hint">{{mode==='bundled'?'Bundled demo sounds — no keys needed.':'New story — Freesound key
+                    required. No speech provider needed.'}}</p>
+            </article>
+            <div class="right-stack">
+                <article class="panel" *ngIf="report() as r">
+                    <div class="section-heading">
+                        <h2>Animation preflight</h2><span>{{r.ok?'PASSED':'FIX NEEDED'}}</span>
+                    </div>
+                    <p *ngIf="r.hook?.present">Opening hook: {{r.hook.timingPassed && r.hook.visiblePassed?'within 3s
+                        and visible':'needs repair'}}</p>
+                    <p>{{r.samples}} geometry samples · {{r.checks.length}} check groups</p>
+                    <p class="hint">Story review: {{r.storyReview}} · {{r.reviewCurrent?'current plan':'review needed
+                        after edits'}}</p>
+                    <p *ngFor="let i of r.issues" class="hint">{{i.severity}} · {{i.sceneId}} · {{i.message}}</p><button
+                        class="secondary" [disabled]="busy()" (click)="review()">Review story &amp; repair with
+                        Gemini</button>
+                    <p class="hint">Checks catch structural mistakes. Review the preview for timing and comedy.</p>
+                </article>
+                <article class="panel">
+                    <div class="section-heading">
+                        <h2>Story beats</h2><span>{{plan().scenes.length}} SCENES</span>
+                    </div><button class="scene-card" *ngFor="let s of plan().scenes;let i=index"
+                        (click)="chapter(i)"><span
+                            class="scene-index">{{i+1|number:'2.0-0'}}</span><span><strong>{{s.background}} ·
+                                {{s.duration}}s</strong><small>{{s.summary}}</small></span><span>↗</span></button>
+                </article>
+                <article class="panel"><h2>Cast</h2><p *ngFor="let c of plan().characters">{{c.name}}</p></article>
+                <details class="panel">
+                    <summary>Listen to this scene’s sounds</summary>
+                    <p class="hint">Check the actual clipped recording before rendering.</p>
+                    <div class="sound-audition" *ngFor="let c of soundCues()"><strong>{{c.role==='nonverbal'?'Cartoon
+                            gibberish':c.query}}</strong><small>{{c.start|number:'1.1-1'}}s</small><audio controls
+                            preload="none" [src]="soundUrl(c)"></audio></div>
+                </details>
+                <details class="panel">
+                    <summary>Advanced scene JSON</summary>
+                    <p class="hint">Edit characters, custom vector props, poses, camera shots and sound queries.
+                        Validation runs before preview and render.</p><textarea class="code" rows="16"
+                        [(ngModel)]="raw"></textarea>
+                    <div class="actions"><button class="secondary" (click)="applyJson()">Validate &
+                            preview</button><button class="secondary" (click)="downloadJson()">Export JSON</button>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+    <section *ngIf="tab()==='publish'">
+        <div class="eyebrow">READY FOR YOUR CHANNEL</div>
+        <h1>The creator pack.</h1>
+        <p class="intro" *ngIf="!resultId">Render a film to get your video, thumbnail and publishing details.</p>
+        <div *ngIf="resultId" class="director-grid">
+            <article class="panel">
+                <p class="hint" role="status">{{expiryText()}}</p><video *ngIf="!videoExpired()" controls
+                    [src]="readyDownloadUrl() || asset('video.mp4')" style="width:100%;max-height:570px"></video>
+                <p role="status">{{downloadStatus()}}</p><div class="actions" *ngIf="!videoExpired()"><button class="primary" [disabled]="!readyDownloadUrl()" (click)="downloadVideo()">Download video ↓</button><a class="secondary" [href]="downloadFile('thumbnail.png')"
+                        download>Thumbnail</a></div><img *ngIf="!videoExpired()" class="thumbnail"
+                    [src]="file('thumbnail.png')" alt="Generated thumbnail">
+                <div class="downloads"><a
+                        *ngFor="let f of ['creator-pack.json','description.txt','plan.json','sound-credits.json','render-report.json','encoded-quality-report.json','video-review.json','quality-report.json']"
+                        [href]="downloadFile(f)" download>{{f}} ↓</a></div>
+            </article>
+            <article class="panel" *ngIf="active()?.result?.seo as seo">
+                <h2>Title options</h2><button class="title-option" *ngFor="let title of seo.titles"
+                    (click)="copy(title)">{{title}} <span>⧉</span></button><label>Description<textarea readonly rows="8"
+                        [value]="seo.description"></textarea></label><button class="secondary"
+                    (click)="copy(seo.description)">Copy description</button>
+                <h3>Tags</h3>
+                <div class="tags"><span *ngFor="let tag of seo.tags">{{tag}}</span></div><button class="secondary"
+                    (click)="copy(seo.tags.join(', '))">Copy tags</button>
+                <h3>Pinned comment</h3>
+                <p>{{seo.pinnedComment}}</p>
+                <p class="hint">Titles and tags describe your film; reach and clicks are not guaranteed.</p>
+            </article>
+        </div>
+    </section>
+    <section *ngIf="tab()==='jobs'">
+        <div class="eyebrow">YOUR RENDER ROOM</div>
+        <h1>Made, in progress.</h1>
+        <p class="intro">Jobs are stored locally and survive a server restart.</p>
+        <article class="panel">
+            <p *ngIf="!jobs().length">No jobs yet. Start with a story.</p><button class="job" [attr.data-job-id]="j.id"
+                *ngFor="let j of jobs()" (click)="openJob(j)"><span><strong>{{j.kind==='plan'?'Story direction':'Video
+                        render'}}</strong><small>{{j.createdAt|date:'medium'}}</small></span><span
+                    class="pill">{{j.status}}</span><span>{{j.error||j.message}}</span></button>
+        </article>
+    </section>
+    <div class="render-bar" *ngIf="busy()"><span class="spinner"></span>
+        <div><strong>{{active()?.message||'Starting…'}}</strong><small>{{active()?.progress||0}}% · You can keep
+                reviewing your plan.</small></div><progress max="100" [value]="active()?.progress||0"></progress><button
+            (click)="cancel()">Cancel</button>
+    </div>
+    <footer>ORIGINAL STORIES. SMALL CHARACTERS. BIG REACTIONS.<span>StickLaugh Studio · Local edition</span></footer>
+</main>

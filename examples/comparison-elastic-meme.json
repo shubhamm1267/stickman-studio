@@ -1,0 +1,1098 @@
+{
+  "schemaVersion": 2,
+  "seed": 4038857749,
+  "provenance": {
+    "origin": "legacy-migration",
+    "sourceSchemaVersion": 1,
+    "generator": "legacy-import"
+  },
+  "generatedAssetRefs": [],
+  "renderFps": 60,
+  "referenceStyle": "elastic-meme",
+  "productionMode": "silent-sfx",
+  "humorProfile": "clean",
+  "hook": {
+    "sceneId": "prank",
+    "beatIndices": [
+      0,
+      1
+    ],
+    "start": 0.2,
+    "end": 2.6,
+    "evidence": "The yellow peel flies toward the dog; the labelled bin and the wasteful throw are visible together."
+  },
+  "comedy": {
+    "hook": "A man aims his banana peel at a dog despite a bin right beside him.",
+    "goal": "The man wants a cheap laugh at the dog.",
+    "escalation": [
+      "The dog calmly steps aside.",
+      "The man struts into his own discarded peel.",
+      "He becomes the rubbish in the bin."
+    ],
+    "payoff": "The litterer is photographed inside the USE ME bin.",
+    "callback": "The peel finally lands inside the bin, beside the litterer."
+  },
+  "title": "Banana Karma — 25 second sample",
+  "story": "A smug man throws his yellow banana peel at a dog instead of the green USE ME bin. The dog steps aside. The man laughs at his own prank, struts towards the bin and slips on his own peel. He tumbles headfirst into the bin. Only his embarrassed head peeks out. A woman takes a photo of the litterer in the USE ME bin, while the dog calmly guards the peel. The man tries a proud pose for the photo, then the dog slides the peel into the bin next to his face.",
+  "sourceIdea": "Adapted from the bundled Banana Bin comedy. Added a three-second final reaction hold. Authored sample, not proof of arbitrary dynamic generation.",
+  "characters": [
+    {
+      "id": "hero",
+      "name": "Selfie king",
+      "kind": "man",
+      "artStyle": "classic",
+      "hairStyle": "sidepart",
+      "faceShape": "long",
+      "wardrobe": "shirt",
+      "skin": "#f3e6c9",
+      "outfit": "#ca7458",
+      "hair": "#564838",
+      "headWidth": 1,
+      "headHeight": 1
+    },
+    {
+      "id": "dog",
+      "name": "Inspector Biscuit",
+      "kind": "dog",
+      "artStyle": "classic",
+      "pattern": "spots",
+      "skin": "#bc8b55",
+      "outfit": "#569e99",
+      "hair": "#765036",
+      "headWidth": 1,
+      "headHeight": 1
+    },
+    {
+      "id": "woman",
+      "name": "Park visitor",
+      "kind": "woman",
+      "artStyle": "classic",
+      "hairStyle": "bob",
+      "faceShape": "round",
+      "skin": "#f3e6c9",
+      "outfit": "#6596bd",
+      "hair": "#564838",
+      "headWidth": 0.9,
+      "headHeight": 1
+    }
+  ],
+  "propDesigns": [
+    {
+      "id": "banana",
+      "name": "banana",
+      "type": "banana",
+      "color": "#f3cc43",
+      "nodes": []
+    },
+    {
+      "id": "peel",
+      "name": "peel",
+      "type": "peel",
+      "color": "#f3cc43",
+      "nodes": []
+    },
+    {
+      "id": "bin",
+      "name": "bin",
+      "label": "USE ME",
+      "type": "dustbin",
+      "color": "#439c80",
+      "nodes": []
+    },
+    {
+      "id": "phone",
+      "name": "phone",
+      "type": "phone",
+      "color": "#d78783",
+      "nodes": []
+    }
+  ],
+  "scenes": [
+    {
+      "sceneSeed": 1345382821,
+      "canonicalFrame": {
+        "fps": 60,
+        "startFrame": 0,
+        "endFrame": 420,
+        "interval": "[startFrame,endFrame)"
+      },
+      "id": "prank",
+      "summary": "The man tosses a peel at the dog instead of the labelled bin; the dog steps aside.",
+      "duration": 7,
+      "background": "park",
+      "backgroundNodes": [],
+      "motions": [
+        {
+          "targetId": "banana",
+          "start": 0.1,
+          "duration": 0.25,
+          "to": [
+            160,
+            497
+          ],
+          "arc": 0,
+          "angle": 0,
+          "scale": 0.02
+        },
+        {
+          "targetId": "peel",
+          "start": 0.55,
+          "duration": 0.65,
+          "to": [
+            320,
+            771
+          ],
+          "arc": 110,
+          "angle": 250
+        }
+      ],
+      "cast": [
+        {
+          "characterId": "hero",
+          "x": 140,
+          "y": 780,
+          "scale": 0.78,
+          "facing": 1
+        },
+        {
+          "species": "dog",
+          "characterId": "dog",
+          "x": 350,
+          "y": 780,
+          "scale": 0.7,
+          "facing": -1
+        }
+      ],
+      "props": [
+        {
+          "designId": "banana",
+          "open": 0,
+          "angle": 0,
+          "x": 160,
+          "y": 497,
+          "scale": 0.55
+        },
+        {
+          "designId": "peel",
+          "open": 0,
+          "angle": 0,
+          "x": 188,
+          "y": 590,
+          "scale": 0.57
+        },
+        {
+          "designId": "bin",
+          "open": 0,
+          "angle": 0,
+          "x": 460,
+          "y": 790,
+          "scale": 0.8
+        }
+      ],
+      "beats": [
+        {
+          "timing": "snappy",
+          "actorId": "hero",
+          "kind": "custom",
+          "start": 0.15,
+          "duration": 0.4,
+          "hand": "right",
+          "emotion": "smug",
+          "amount": 1,
+          "pose": {
+            "rightHand": [
+              85,
+              -280
+            ],
+            "headAngle": -9
+          },
+          "intent": "Wind up the peel prank."
+        },
+        {
+          "timing": "snappy",
+          "actorId": "hero",
+          "kind": "custom",
+          "start": 0.55,
+          "duration": 0.35,
+          "hand": "right",
+          "emotion": "laugh",
+          "amount": 1,
+          "pose": {
+            "rightHand": [
+              135,
+              -220
+            ],
+            "headAngle": 5
+          },
+          "intent": "Release the peel towards the dog."
+        },
+        {
+          "timing": "snappy",
+          "actorId": "dog",
+          "kind": "walk",
+          "start": 1,
+          "duration": 0.65,
+          "to": [
+            410,
+            780
+          ],
+          "hand": "right",
+          "emotion": "calm",
+          "amount": 1,
+          "intent": "Step aside from the falling peel."
+        },
+        {
+          "timing": "snappy",
+          "actorId": "dog",
+          "kind": "react",
+          "start": 1.8,
+          "duration": 0.35,
+          "hand": "right",
+          "emotion": "annoyed",
+          "amount": 1,
+          "intent": "Look back at the discarded peel."
+        },
+        {
+          "timing": "snappy",
+          "actorId": "hero",
+          "kind": "laugh",
+          "start": 2.1,
+          "duration": 1,
+          "hand": "right",
+          "amount": 1,
+          "intent": "Laugh at his own cheap prank."
+        },
+        {
+          "timing": "snappy",
+          "actorId": "hero",
+          "kind": "custom",
+          "start": 2.9,
+          "duration": 0.3,
+          "hand": "right",
+          "emotion": "smug",
+          "amount": 1,
+          "pose": {
+            "leftHand": [
+              -80,
+              -170
+            ],
+            "rightHand": [
+              45,
+              -300
+            ]
+          },
+          "intent": "Dismiss the bin and proudly point at himself."
+        },
+        {
+          "timing": "snappy",
+          "actorId": "dog",
+          "kind": "react",
+          "start": 4.2,
+          "duration": 0.3,
+          "hand": "right",
+          "emotion": "calm",
+          "amount": 1,
+          "intent": "Deadpan the audience."
+        },
+        {
+          "timing": "gentle",
+          "actorId": "hero",
+          "kind": "walk",
+          "start": 4.8,
+          "duration": 1.8,
+          "to": [
+            285,
+            780
+          ],
+          "hand": "right",
+          "emotion": "confident",
+          "amount": 1,
+          "intent": "Strut towards the peel without looking down."
+        }
+      ],
+      "shots": [
+        {
+          "start": 0,
+          "end": 2.2,
+          "focus": [
+            280,
+            605
+          ],
+          "zoom": 1.04,
+          "detail": "full"
+        },
+        {
+          "start": 2.2,
+          "end": 3.3,
+          "focus": [
+            140,
+            482
+          ],
+          "zoom": 1.65,
+          "detail": "full",
+          "actorIds": [
+            "hero"
+          ]
+        },
+        {
+          "start": 3.3,
+          "end": 3.95,
+          "focus": [
+            140,
+            482
+          ],
+          "zoom": 1.65,
+          "detail": "full",
+          "actorIds": [
+            "hero"
+          ]
+        },
+        {
+          "start": 3.95,
+          "end": 4.65,
+          "focus": [
+            410,
+            690
+          ],
+          "zoom": 2.3,
+          "detail": "full",
+          "actorIds": [
+            "dog"
+          ]
+        },
+        {
+          "start": 4.65,
+          "end": 7,
+          "focus": [
+            300,
+            605
+          ],
+          "zoom": 1.12,
+          "detail": "full"
+        }
+      ],
+      "sounds": [
+        {
+          "playbackRate": 1,
+          "trimSilence": true,
+          "start": 0.58,
+          "query": "paper crinkle",
+          "volume": 0.12,
+          "duration": 0.38,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "paper"
+        },
+        {
+          "playbackRate": 1,
+          "trimSilence": true,
+          "start": 1.1,
+          "query": "footsteps",
+          "volume": 0.11,
+          "duration": 0.18,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "steps"
+        },
+        {
+          "playbackRate": 1,
+          "trimSilence": true,
+          "start": 1.38,
+          "query": "footsteps",
+          "volume": 0.1,
+          "duration": 0.18,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "steps"
+        },
+        {
+          "playbackRate": 1,
+          "trimSilence": true,
+          "start": 2.4,
+          "query": "effort grunt",
+          "volume": 0.12,
+          "duration": 0.3,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "grunt"
+        },
+        {
+          "playbackRate": 1,
+          "trimSilence": true,
+          "start": 5.25,
+          "query": "footsteps",
+          "volume": 0.12,
+          "duration": 0.18,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "steps"
+        },
+        {
+          "playbackRate": 1,
+          "trimSilence": true,
+          "start": 5.85,
+          "query": "footsteps",
+          "volume": 0.12,
+          "duration": 0.18,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "steps"
+        },
+        {
+          "playbackRate": 1,
+          "trimSilence": true,
+          "start": 6.4,
+          "query": "footsteps",
+          "volume": 0.12,
+          "duration": 0.18,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "steps"
+        }
+      ],
+      "dialogue": []
+    },
+    {
+      "sceneSeed": 3575479863,
+      "canonicalFrame": {
+        "fps": 60,
+        "startFrame": 420,
+        "endFrame": 720,
+        "interval": "[startFrame,endFrame)"
+      },
+      "id": "karma",
+      "summary": "His shoe reaches the peel, he flails, then tumbles into the bin.",
+      "duration": 5,
+      "background": "park",
+      "backgroundNodes": [],
+      "motions": [],
+      "cast": [
+        {
+          "characterId": "hero",
+          "x": 285,
+          "y": 780,
+          "scale": 0.78,
+          "facing": 1
+        },
+        {
+          "species": "dog",
+          "characterId": "dog",
+          "x": 410,
+          "y": 780,
+          "scale": 0.7,
+          "facing": -1
+        }
+      ],
+      "props": [
+        {
+          "designId": "peel",
+          "open": 0,
+          "angle": 250,
+          "x": 320,
+          "y": 771,
+          "scale": 0.57
+        },
+        {
+          "designId": "bin",
+          "layer": "front",
+          "open": 1,
+          "angle": 0,
+          "x": 460,
+          "y": 790,
+          "scale": 0.8
+        }
+      ],
+      "beats": [
+        {
+          "timing": "snappy",
+          "actorId": "hero",
+          "kind": "walk",
+          "start": 0,
+          "duration": 0.5,
+          "to": [
+            310,
+            780
+          ],
+          "hand": "right",
+          "emotion": "smug",
+          "amount": 1,
+          "intent": "The next step lands on his own peel."
+        },
+        {
+          "timing": "snappy",
+          "actorId": "hero",
+          "kind": "slip",
+          "start": 0.5,
+          "duration": 1.15,
+          "to": [
+            180,
+            735
+          ],
+          "hand": "right",
+          "emotion": "shock",
+          "amount": 1,
+          "intent": "Feet shoot out and he tumbles towards the open bin."
+        },
+        {
+          "timing": "snappy",
+          "actorId": "hero",
+          "kind": "custom",
+          "start": 1.65,
+          "duration": 0.65,
+          "hand": "right",
+          "emotion": "jawdrop",
+          "amount": 1,
+          "pose": {
+            "head": [
+              0,
+              -340
+            ],
+            "leftFoot": [
+              -100,
+              -80
+            ],
+            "rightFoot": [
+              100,
+              -110
+            ],
+            "bodyAngle": 78
+          },
+          "intent": "Head and torso tip into the bin opening."
+        },
+        {
+          "timing": "snappy",
+          "actorId": "dog",
+          "kind": "react",
+          "start": 1.7,
+          "duration": 0.4,
+          "hand": "right",
+          "emotion": "curious",
+          "amount": 1,
+          "intent": "The dog watches the exact consequence."
+        }
+      ],
+      "shots": [
+        {
+          "start": 0,
+          "end": 0.55,
+          "focus": [
+            320,
+            748
+          ],
+          "zoom": 1.8,
+          "detail": "full"
+        },
+        {
+          "start": 0.55,
+          "end": 3.1,
+          "focus": [
+            340,
+            645
+          ],
+          "zoom": 1.03,
+          "detail": "full"
+        },
+        {
+          "start": 3.1,
+          "end": 5,
+          "focus": [
+            410,
+            690
+          ],
+          "zoom": 2.2,
+          "detail": "full",
+          "actorIds": [
+            "dog"
+          ]
+        }
+      ],
+      "sounds": [
+        {
+          "playbackRate": 1,
+          "trimSilence": true,
+          "start": 0.58,
+          "query": "rubber stretch",
+          "volume": 0.18,
+          "duration": 0.65,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "stretch"
+        },
+        {
+          "playbackRate": 1,
+          "trimSilence": true,
+          "start": 0.85,
+          "query": "cartoon spring boing",
+          "volume": 0.22,
+          "duration": 0.7,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "boing"
+        },
+        {
+          "playbackRate": 1,
+          "trimSilence": true,
+          "start": 1.6,
+          "query": "cartoon impact slap",
+          "volume": 0.25,
+          "duration": 0.25,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "slap"
+        },
+        {
+          "playbackRate": 1,
+          "trimSilence": true,
+          "start": 2.2,
+          "query": "paper crinkle",
+          "volume": 0.18,
+          "duration": 0.65,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "paper"
+        },
+        {
+          "playbackRate": 1,
+          "trimSilence": true,
+          "start": 3.25,
+          "query": "surprised gulp",
+          "volume": 0.12,
+          "duration": 0.6,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "gulp"
+        }
+      ],
+      "dialogue": []
+    },
+    {
+      "sceneSeed": 2259002303,
+      "canonicalFrame": {
+        "fps": 60,
+        "startFrame": 720,
+        "endFrame": 1500,
+        "interval": "[startFrame,endFrame)"
+      },
+      "id": "photo",
+      "summary": "A woman photographs the litterer inside the USE ME bin. The dog finally puts the peel in with him.",
+      "duration": 13,
+      "background": "park",
+      "backgroundNodes": [],
+      "motions": [
+        {
+          "targetId": "peel",
+          "start": 7.3,
+          "duration": 0.7,
+          "to": [
+            368,
+            632
+          ],
+          "arc": 100,
+          "angle": 360
+        }
+      ],
+      "cast": [
+        {
+          "shadow": false,
+          "characterId": "hero",
+          "initialPose": {
+            "head": [
+              0,
+              -365
+            ],
+            "hip": [
+              0,
+              -170
+            ],
+            "leftHand": [
+              -60,
+              -315
+            ],
+            "rightHand": [
+              60,
+              -315
+            ],
+            "leftFoot": [
+              -25,
+              -230
+            ],
+            "rightFoot": [
+              25,
+              -230
+            ]
+          },
+          "emotion": "defeat",
+          "x": 366,
+          "y": 900,
+          "scale": 0.78,
+          "facing": 1
+        },
+        {
+          "species": "dog",
+          "characterId": "dog",
+          "x": 145,
+          "y": 780,
+          "scale": 0.65,
+          "facing": 1
+        },
+        {
+          "characterId": "woman",
+          "x": 90,
+          "y": 780,
+          "scale": 0.72,
+          "facing": 1
+        }
+      ],
+      "props": [
+        {
+          "designId": "bin",
+          "layer": "front",
+          "open": 1,
+          "angle": 0,
+          "x": 366,
+          "y": 790,
+          "scale": 1.05
+        },
+        {
+          "designId": "phone",
+          "open": 0,
+          "angle": 0,
+          "x": 144,
+          "y": 565,
+          "scale": 0.65
+        },
+        {
+          "designId": "peel",
+          "open": 0,
+          "angle": 250,
+          "x": 187,
+          "y": 770,
+          "scale": 0.57
+        }
+      ],
+      "beats": [
+        {
+          "timing": "gentle",
+          "actorId": "hero",
+          "kind": "custom",
+          "start": 0.2,
+          "duration": 0.6,
+          "hand": "right",
+          "emotion": "defeat",
+          "amount": 1,
+          "pose": {
+            "headAngle": -8
+          },
+          "intent": "Slow embarrassed blink above the bin rim."
+        },
+        {
+          "timing": "snappy",
+          "actorId": "woman",
+          "kind": "pick",
+          "start": 0.2,
+          "duration": 0.45,
+          "targetId": "phone",
+          "hand": "right",
+          "emotion": "smug",
+          "amount": 1,
+          "intent": "Raise the phone for a photo."
+        },
+        {
+          "timing": "gentle",
+          "actorId": "woman",
+          "kind": "custom",
+          "start": 1,
+          "duration": 0.7,
+          "hand": "right",
+          "emotion": "laugh",
+          "amount": 1,
+          "pose": {
+            "rightHand": [
+              75,
+              -300
+            ]
+          },
+          "intent": "Frame the litterer inside the bin."
+        },
+        {
+          "timing": "snappy",
+          "actorId": "hero",
+          "kind": "custom",
+          "start": 3,
+          "duration": 0.4,
+          "hand": "right",
+          "emotion": "smug",
+          "amount": 1,
+          "pose": {
+            "leftHand": [
+              -70,
+              -350
+            ],
+            "rightHand": [
+              70,
+              -350
+            ],
+            "headAngle": 12
+          },
+          "intent": "Try to save face with a proud photo pose."
+        },
+        {
+          "timing": "snappy",
+          "actorId": "woman",
+          "kind": "laugh",
+          "start": 5.4,
+          "duration": 1,
+          "hand": "right",
+          "amount": 1,
+          "intent": "The attempt to pose makes the photo worse."
+        },
+        {
+          "timing": "snappy",
+          "actorId": "dog",
+          "kind": "pawPress",
+          "start": 6.8,
+          "duration": 1,
+          "targetId": "peel",
+          "hand": "right",
+          "emotion": "calm",
+          "amount": 1,
+          "intent": "Nudge the discarded peel towards its proper place."
+        },
+        {
+          "timing": "snappy",
+          "actorId": "hero",
+          "kind": "custom",
+          "start": 8,
+          "duration": 0.4,
+          "hand": "right",
+          "emotion": "shock",
+          "amount": 1,
+          "pose": {
+            "headAngle": 0
+          },
+          "intent": "The peel lands beside his face, completing the karma."
+        },
+        {
+          "timing": "snappy",
+          "actorId": "hero",
+          "kind": "custom",
+          "start": 8.5,
+          "duration": 0.4,
+          "hand": "right",
+          "emotion": "defeat",
+          "amount": 1,
+          "pose": {
+            "leftHand": [
+              -55,
+              -320
+            ],
+            "rightHand": [
+              55,
+              -320
+            ],
+            "headAngle": -10
+          },
+          "intent": "Hold the final embarrassed photo."
+        }
+      ],
+      "shots": [
+        {
+          "start": 0,
+          "end": 2.8,
+          "focus": [
+            245,
+            593
+          ],
+          "zoom": 1.1,
+          "detail": "full"
+        },
+        {
+          "start": 2.8,
+          "end": 4,
+          "focus": [
+            366,
+            568
+          ],
+          "zoom": 1.8,
+          "detail": "full",
+          "actorIds": [
+            "hero"
+          ]
+        },
+        {
+          "start": 4,
+          "end": 5.3,
+          "focus": [
+            95,
+            470
+          ],
+          "zoom": 1.7,
+          "detail": "full",
+          "actorIds": [
+            "woman"
+          ]
+        },
+        {
+          "start": 5.3,
+          "end": 8.1,
+          "focus": [
+            260,
+            625
+          ],
+          "zoom": 1.06,
+          "detail": "full"
+        },
+        {
+          "start": 8.1,
+          "end": 13,
+          "focus": [
+            364,
+            600
+          ],
+          "zoom": 1.7,
+          "detail": "full",
+          "actorIds": [
+            "hero"
+          ]
+        }
+      ],
+      "sounds": [
+        {
+          "playbackRate": 1,
+          "trimSilence": true,
+          "start": 1.9,
+          "query": "camera shutter",
+          "volume": 0.15,
+          "duration": 0.16,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "tap"
+        },
+        {
+          "playbackRate": 1,
+          "trimSilence": true,
+          "start": 3.15,
+          "query": "balloon pop",
+          "volume": 0.09,
+          "duration": 0.16,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "pop"
+        },
+        {
+          "playbackRate": 1,
+          "trimSilence": true,
+          "start": 7.4,
+          "query": "paper crinkle",
+          "volume": 0.12,
+          "duration": 0.5,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "paper"
+        },
+        {
+          "playbackRate": 1,
+          "trimSilence": true,
+          "start": 8.25,
+          "query": "surprised gulp",
+          "volume": 0.16,
+          "duration": 0.45,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "gulp"
+        }
+      ],
+      "dialogue": []
+    }
+  ],
+  "coverage": [
+    {
+      "storyEvent": "The man tosses a peel at the dog instead of the labelled bin; the dog steps aside.",
+      "sceneId": "prank",
+      "beatIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "storyEvent": "His shoe reaches the peel, he flails, then tumbles into the bin.",
+      "sceneId": "karma",
+      "beatIndices": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "storyEvent": "A woman photographs the litterer inside the USE ME bin. The dog finally puts the peel in with him.",
+      "sceneId": "photo",
+      "beatIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  ],
+  "seo": {
+    "titles": [
+      "Banana Peel Ka Karma 😂 | Silent Cartoon Comedy"
+    ],
+    "description": "He aimed a banana peel at the dog. The bin had other plans. An original silent cartoon about the most expensive cheap laugh. Procedural character animation, coloured props and precisely timed physical comedy.",
+    "tags": [
+      "banana peel",
+      "funny cartoon",
+      "dog comedy",
+      "karma",
+      "silent comedy",
+      "animated shorts"
+    ],
+    "hashtags": [
+      "#CartoonComedy",
+      "#SilentComedy",
+      "#Shorts"
+    ],
+    "pinnedComment": "Kaun zyada smart nikla? 😂",
+    "thumbnailText": "USE ME?!"
+  },
+  "blockedReasons": [],
+  "version": 1,
+  "format": "shorts",
+  "language": "hi",
+  "replay": {
+    "schemaVersion": 1,
+    "planHash": "9a8434ec1aebe6441e764d99f382eea3300de93a91eb8f1d6f9cce7fc59a296d",
+    "seed": 4038857749,
+    "fps": 60,
+    "totalFrames": 1500,
+    "frameRounding": "nearest",
+    "evaluator": "sticklaugh-frame-evaluator-v1"
+  }
+}

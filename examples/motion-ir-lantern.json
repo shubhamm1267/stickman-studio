@@ -1,0 +1,333 @@
+{
+  "renderFps": 60,
+  "productionMode": "silent-sfx",
+  "comedy": {
+    "hook": "A man treats an ordinary lantern as a guest.",
+    "goal": "Get a greeting from the lantern.",
+    "escalation": [
+      "He bows and waits.",
+      "The lantern remains silent."
+    ],
+    "payoff": "He squints at his silent guest.",
+    "callback": "The lantern never changes."
+  },
+  "title": "A very polite lantern",
+  "story": "An adult politely bows to a turquoise hexagonal lantern, waits for an answer, then tilts his head in bewilderment.",
+  "sourceIdea": "HAND-AUTHORED RUNTIME FIXTURE: An adult politely bows to a turquoise hexagonal lantern, waits for an answer, then tilts his head in bewilderment.",
+  "characters": [
+    {
+      "id": "man",
+      "name": "Raghu",
+      "kind": "man",
+      "artStyle": "pencil",
+      "hairStyle": "sidepart",
+      "faceShape": "long",
+      "wardrobe": "default",
+      "skin": "#eee8cc",
+      "outfit": "#9ab4a4",
+      "hair": "#565846",
+      "headWidth": 1.05,
+      "headHeight": 0.92
+    }
+  ],
+  "propDesigns": [
+    {
+      "id": "lantern",
+      "name": "Turquoise hexagonal lantern",
+      "type": "drawing",
+      "color": "#27a9a2",
+      "nodes": [
+        {
+          "kind": "group",
+          "position": [
+            0,
+            0
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "rotation": 6,
+          "scale": [
+            1.05,
+            0.95
+          ],
+          "opacity": 0.9,
+          "children": [
+            {
+              "kind": "path",
+              "d": "M-38 -30 L0 -52 L38 -30 L38 25 L0 47 L-38 25 Z",
+              "fill": "#27a9a2",
+              "stroke": "#293329",
+              "width": 3
+            },
+            {
+              "kind": "group",
+              "position": [
+                0,
+                -3
+              ],
+              "pivot": [
+                0,
+                0
+              ],
+              "children": [
+                {
+                  "kind": "ellipse",
+                  "center": [
+                    0,
+                    0
+                  ],
+                  "radius": [
+                    17,
+                    24
+                  ],
+                  "fill": "#ffe587",
+                  "stroke": "#293329",
+                  "width": 2
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "motionIR": {
+        "schemaVersion": 1,
+        "seed": 18473,
+        "units": {
+          "space": "stage-y-down",
+          "time": "seconds",
+          "angle": "degrees",
+          "pose": "actor-local"
+        },
+        "tracks": [
+          {
+            "id": "motion_0",
+            "actorId": "man",
+            "start": 0,
+            "duration": 2,
+            "keyframes": [
+              {
+                "at": 0,
+                "pose": {
+                  "gaze": [
+                    7,
+                    0
+                  ],
+                  "rightHand": [
+                    60,
+                    -130
+                  ],
+                  "bodyAngle": 0,
+                  "headAngle": 0
+                }
+              },
+              {
+                "at": 0.35,
+                "pose": {
+                  "gaze": [
+                    10,
+                    4
+                  ],
+                  "rightHand": [
+                    90,
+                    -255
+                  ],
+                  "bodyAngle": 10,
+                  "headAngle": 18
+                }
+              },
+              {
+                "at": 0.65,
+                "pose": {
+                  "rightHand": [
+                    90,
+                    -255
+                  ],
+                  "bodyAngle": 10,
+                  "headAngle": 18
+                }
+              },
+              {
+                "at": 1,
+                "pose": {
+                  "rightHand": [
+                    60,
+                    -130
+                  ],
+                  "bodyAngle": 0,
+                  "headAngle": 0
+                }
+              }
+            ],
+            "constraints": [
+              {
+                "kind": "ground",
+                "points": [
+                  "leftFoot",
+                  "rightFoot"
+                ],
+                "floorY": 780
+              }
+            ]
+          },
+          {
+            "id": "motion_1",
+            "actorId": "man",
+            "start": 2,
+            "duration": 2,
+            "keyframes": [
+              {
+                "at": 0,
+                "pose": {
+                  "eyeOpen": 1,
+                  "gaze": [
+                    10,
+                    0
+                  ],
+                  "headAngle": 0
+                }
+              },
+              {
+                "at": 0.4,
+                "pose": {
+                  "eyeOpen": 0.35,
+                  "gaze": [
+                    11,
+                    -2
+                  ],
+                  "headAngle": -15
+                }
+              },
+              {
+                "at": 0.7,
+                "pose": {
+                  "eyeOpen": 0.35,
+                  "headAngle": -15
+                }
+              },
+              {
+                "at": 1,
+                "pose": {
+                  "eyeOpen": 1,
+                  "gaze": [
+                    10,
+                    0
+                  ],
+                  "headAngle": 5
+                }
+              }
+            ],
+            "constraints": []
+          }
+        ]
+      },
+      "id": "lanternScene",
+      "summary": "An adult politely bows to a turquoise hexagonal lantern, waits for an answer, then tilts his head in bewilderment.",
+      "duration": 4,
+      "background": "room",
+      "backgroundNodes": [],
+      "motions": [],
+      "cast": [
+        {
+          "rigVersion": 2,
+          "characterId": "man",
+          "emotion": "curious",
+          "x": 220,
+          "y": 780,
+          "scale": 0.8,
+          "facing": 1
+        }
+      ],
+      "props": [
+        {
+          "designId": "lantern",
+          "open": 0,
+          "angle": 0,
+          "x": 365,
+          "y": 560,
+          "scale": 0.8
+        }
+      ],
+      "beats": [
+        {
+          "actorId": "man",
+          "kind": "perform",
+          "start": 0,
+          "duration": 2,
+          "hand": "right",
+          "amount": 1,
+          "motionTrackId": "motion_0",
+          "intent": "Politely bow toward the unusual lantern, then wait."
+        },
+        {
+          "actorId": "man",
+          "kind": "perform",
+          "start": 2,
+          "duration": 2,
+          "hand": "right",
+          "amount": 1,
+          "motionTrackId": "motion_1",
+          "intent": "Look at the silent lantern, squint, and tilt the head."
+        }
+      ],
+      "shots": [
+        {
+          "start": 0,
+          "end": 4,
+          "focus": [
+            270,
+            550
+          ],
+          "zoom": 1.3,
+          "detail": "full"
+        }
+      ],
+      "sounds": [],
+      "dialogue": []
+    }
+  ],
+  "coverage": [
+    {
+      "storyEvent": "Politely bow toward the unusual lantern, then wait.",
+      "sceneId": "lanternScene",
+      "beatIndices": [
+        0
+      ]
+    },
+    {
+      "storyEvent": "Look at the silent lantern, squint, and tilt the head.",
+      "sceneId": "lanternScene",
+      "beatIndices": [
+        1
+      ]
+    }
+  ],
+  "seo": {
+    "titles": [
+      "Machhar Bacha, Thappad Khud Ko",
+      "One Mosquito. Three Self-Slaps."
+    ],
+    "description": "One tiny mosquito. Three careful attempts. Every slap lands on the wrong target. An original 20-second silent pencil cartoon using the reusable StickLaugh Studio v6 motion engine.",
+    "tags": [
+      "mosquito comedy",
+      "silent cartoon",
+      "self slap",
+      "visual comedy"
+    ],
+    "hashtags": [
+      "#CartoonComedy",
+      "#SilentComedy"
+    ],
+    "pinnedComment": "Machhar ko maarte hue kabhi khud ko thappad maara hai?",
+    "thumbnailText": "GALAT TARGET!"
+  },
+  "blockedReasons": [],
+  "version": 1,
+  "format": "shorts",
+  "language": "hi"
+}

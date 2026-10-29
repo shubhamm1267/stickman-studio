@@ -1,0 +1,1261 @@
+{
+  "renderFps": 120,
+  "productionMode": "dialogue-toon",
+  "humorProfile": "clean",
+  "hook": {
+    "sceneId": "heat",
+    "beatIndices": [
+      0
+    ],
+    "start": 0,
+    "end": 1.2000000000000002,
+    "evidence": "Visible sweat streams and urgent fanning under the red COOL label establish the contradiction immediately."
+  },
+  "comedy": {
+    "hook": "A sweating man wears a red COOL cap while desperately fanning himself.",
+    "goal": "Raju wants to feel cool without taking off his fashionable cap.",
+    "escalation": [
+      "The Pepsi sip does not fix the heat.",
+      "He trusts the COOL label literally.",
+      "The cap hides a fried egg on his overheated bald head."
+    ],
+    "payoff": "He turns the embarrassing heat into free breakfast.",
+    "callback": "The useless COOL cap remains in Mina’s raised hand while he proudly eats the egg."
+  },
+  "title": "COOL topi — revised hands and delivery",
+  "story": "Raju wears a red cap with COOL written on it, sweats in the heat and actually drinks from a blue Pepsi can. Mina asks why he is wearing a cap in the heat. He proudly points to COOL. She lifts the cap: an egg has fried on his bald head. She calls it a tawa. He eats the egg and proudly announces breakfast is ready. The friend facepalms.",
+  "requirements": [
+    {
+      "description": "Raju wears the requested red labelled cap",
+      "sceneId": "heat",
+      "characterId": "Raju",
+      "propId": "cap",
+      "color": "#dd4642",
+      "label": "COOL",
+      "worn": true
+    },
+    {
+      "description": "Raju really drinks Pepsi rather than only holding a decorative can",
+      "sceneId": "heat",
+      "characterId": "Raju",
+      "propId": "cola",
+      "color": "#186bb4",
+      "label": "Pepsi",
+      "action": "drink"
+    }
+  ],
+  "characters": [
+    {
+      "id": "Raju",
+      "name": "Raju",
+      "rigVersion": 2,
+      "kind": "man",
+      "artStyle": "toon",
+      "hairStyle": "bald",
+      "faceShape": "round",
+      "build": "round",
+      "wardrobe": "shirt",
+      "skin": "#e9bb89",
+      "outfit": "#8b5ca9",
+      "hair": "#36313b",
+      "headWidth": 1.07,
+      "headHeight": 0.94
+    },
+    {
+      "id": "Mina",
+      "name": "Mina",
+      "rigVersion": 2,
+      "kind": "woman",
+      "artStyle": "toon",
+      "hairStyle": "ponytail",
+      "faceShape": "long",
+      "build": "slim",
+      "accessory": "glasses",
+      "skin": "#bb815d",
+      "outfit": "#219a9d",
+      "hair": "#292735",
+      "headWidth": 0.92,
+      "headHeight": 1.08
+    }
+  ],
+  "propDesigns": [
+    {
+      "id": "cap",
+      "name": "Red branded COOL cap",
+      "label": "COOL",
+      "type": "cap",
+      "color": "#dd4642",
+      "nodes": []
+    },
+    {
+      "id": "cola",
+      "name": "Blue Pepsi can",
+      "label": "Pepsi",
+      "stock": 1,
+      "type": "can",
+      "color": "#186bb4",
+      "nodes": []
+    },
+    {
+      "gripOffset": [
+        -30,
+        18
+      ],
+      "id": "egg",
+      "name": "Fried egg on the overheated bald head",
+      "type": "drawing",
+      "color": "#fff6cf",
+      "nodes": [
+        {
+          "kind": "path",
+          "d": "M-30 0 Q-44 -14 -23 -20 Q-14 -35 5 -24 Q29 -35 37 -18 Q57 -5 38 8 Q19 21 -1 11 Q-26 25 -30 0Z",
+          "fill": "#fff6cf",
+          "stroke": "#483b37",
+          "width": 1.8
+        },
+        {
+          "kind": "ellipse",
+          "center": [
+            5,
+            -6
+          ],
+          "radius": [
+            15,
+            12
+          ],
+          "fill": "#f2b92e",
+          "stroke": "#483b37",
+          "width": 1.5
+        }
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "id": "heat",
+      "summary": "Raju sweats under his red COOL cap and drinks from a labelled Pepsi can. Mina notices the absurd hat.",
+      "duration": 6.4,
+      "background": "street",
+      "backgroundNodes": [
+        {
+          "kind": "path",
+          "d": "M-900 788 L1600 788",
+          "fill": "none",
+          "stroke": "#916d5b",
+          "width": 3
+        }
+      ],
+      "motions": [],
+      "cast": [
+        {
+          "rigVersion": 2,
+          "characterId": "Raju",
+          "initialPose": {
+            "sweat": 1,
+            "rightHand": [
+              80,
+              -205
+            ]
+          },
+          "emotion": "strain",
+          "x": 195,
+          "y": 780,
+          "scale": 0.85,
+          "facing": 1
+        },
+        {
+          "rigVersion": 2,
+          "characterId": "Mina",
+          "emotion": "curious",
+          "x": 390,
+          "y": 780,
+          "scale": 0.9,
+          "facing": -1
+        }
+      ],
+      "props": [
+        {
+          "attachment": {
+            "actorId": "Raju",
+            "bone": "head",
+            "offset": [
+              0,
+              -95
+            ]
+          },
+          "designId": "egg",
+          "open": 0,
+          "angle": 0,
+          "x": 195,
+          "y": 360,
+          "scale": 0.8
+        },
+        {
+          "attachment": {
+            "actorId": "Raju",
+            "bone": "head",
+            "offset": [
+              0,
+              -78
+            ]
+          },
+          "designId": "cap",
+          "open": 0,
+          "angle": 0,
+          "x": 195,
+          "y": 360,
+          "scale": 1.05
+        },
+        {
+          "attachment": {
+            "actorId": "Raju",
+            "bone": "rightHand",
+            "offset": [
+              0,
+              0
+            ]
+          },
+          "designId": "cola",
+          "open": 0,
+          "angle": 0,
+          "x": 263,
+          "y": 606,
+          "scale": 0.82
+        }
+      ],
+      "beats": [
+        {
+          "actorId": "Raju",
+          "kind": "perform",
+          "start": 0,
+          "duration": 1.2000000000000002,
+          "hand": "right",
+          "amount": 1,
+          "keyframes": [
+            {
+              "at": 0,
+              "pose": {
+                "sweat": 1,
+                "leftHand": [
+                  -70,
+                  -340
+                ]
+              },
+              "emotion": "strain",
+              "leftHandShape": "open"
+            },
+            {
+              "at": 0.2,
+              "pose": {
+                "leftHand": [
+                  -110,
+                  -290
+                ],
+                "headAngle": 4
+              }
+            },
+            {
+              "at": 0.4,
+              "pose": {
+                "leftHand": [
+                  -70,
+                  -340
+                ],
+                "headAngle": 0
+              }
+            },
+            {
+              "at": 0.6,
+              "pose": {
+                "leftHand": [
+                  -110,
+                  -290
+                ],
+                "headAngle": 4
+              }
+            },
+            {
+              "at": 1,
+              "pose": {
+                "leftHand": [
+                  -70,
+                  -340
+                ],
+                "headAngle": 0
+              }
+            }
+          ],
+          "intent": "He fans his visibly sweating face while holding the blue Pepsi can."
+        },
+        {
+          "actorId": "Raju",
+          "kind": "drink",
+          "start": 1.2800000000000002,
+          "duration": 1.6800000000000002,
+          "targetId": "cola",
+          "hand": "right",
+          "amount": 0.4,
+          "intent": "He actually raises and tilts the Pepsi can to his mouth, then lowers it."
+        },
+        {
+          "actorId": "Mina",
+          "kind": "perform",
+          "start": 3.2,
+          "duration": 0.7200000000000001,
+          "hand": "right",
+          "amount": 1,
+          "keyframes": [
+            {
+              "at": 0,
+              "pose": {
+                "rightHand": [
+                  70,
+                  -150
+                ]
+              },
+              "emotion": "curious",
+              "rightHandShape": "point"
+            },
+            {
+              "at": 1,
+              "pose": {
+                "rightHand": [
+                  -70,
+                  -360
+                ],
+                "headAngle": 6
+              }
+            }
+          ],
+          "intent": "She points to the hot red cap, asking why he is wearing it."
+        },
+        {
+          "actorId": "Raju",
+          "kind": "perform",
+          "start": 4.4,
+          "duration": 1.4400000000000002,
+          "hand": "right",
+          "amount": 1,
+          "keyframes": [
+            {
+              "at": 0,
+              "pose": {
+                "leftHand": [
+                  -70,
+                  -340
+                ]
+              },
+              "emotion": "confident",
+              "leftHandShape": "point"
+            },
+            {
+              "at": 0.35,
+              "pose": {
+                "leftHand": [
+                  -70,
+                  -430
+                ],
+                "headAngle": -6
+              }
+            },
+            {
+              "at": 0.7,
+              "pose": {
+                "headAngle": 3
+              }
+            },
+            {
+              "at": 1,
+              "pose": {
+                "leftHand": [
+                  -70,
+                  -430
+                ],
+                "headAngle": 0
+              }
+            }
+          ],
+          "intent": "He proudly points at the COOL label, assuming it will keep him cool."
+        }
+      ],
+      "shots": [
+        {
+          "start": 0,
+          "end": 1.2800000000000002,
+          "focus": [
+            195,
+            450
+          ],
+          "zoom": 2.5600000000000005,
+          "detail": "full",
+          "actorIds": [
+            "Raju"
+          ]
+        },
+        {
+          "start": 1.2800000000000002,
+          "end": 3.04,
+          "focus": [
+            215,
+            455
+          ],
+          "zoom": 2.4800000000000004,
+          "detail": "full",
+          "actorIds": [
+            "Raju"
+          ]
+        },
+        {
+          "start": 3.04,
+          "end": 4.32,
+          "focus": [
+            390,
+            450
+          ],
+          "zoom": 2.64,
+          "detail": "full",
+          "actorIds": [
+            "Mina"
+          ]
+        },
+        {
+          "start": 4.32,
+          "end": 6.4,
+          "focus": [
+            195,
+            420
+          ],
+          "zoom": 2.4000000000000004,
+          "detail": "full",
+          "actorIds": [
+            "Raju"
+          ]
+        }
+      ],
+      "sounds": [
+        {
+          "playbackRate": 1,
+          "role": "nonverbal",
+          "trimSilence": true,
+          "start": 0.08000000000000002,
+          "query": "strain cartoon",
+          "volume": 0.1,
+          "duration": 0.30400000000000005,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "strain"
+        },
+        {
+          "beatIndex": 1,
+          "syncTo": "contact",
+          "playbackRate": 1,
+          "trimSilence": true,
+          "start": 0,
+          "query": "gulp cartoon",
+          "volume": 0.23,
+          "duration": 0.48,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "gulp"
+        }
+      ],
+      "dialogue": [
+        {
+          "actorId": "Mina",
+          "start": 3,
+          "text": "इतनी गर्मी में टोपी?",
+          "fixture": "mutter-b"
+        },
+        {
+          "actorId": "Raju",
+          "start": 4.8,
+          "text": "कूल लिखा है!",
+          "fixture": "mutter-a"
+        }
+      ]
+    },
+    {
+      "id": "reveal",
+      "summary": "Mina lifts the red cap and reveals that the heat has fried an egg on Raju’s bald head.",
+      "duration": 6.4,
+      "background": "street",
+      "backgroundNodes": [
+        {
+          "kind": "path",
+          "d": "M-900 788 L1600 788",
+          "fill": "none",
+          "stroke": "#916d5b",
+          "width": 3
+        }
+      ],
+      "motions": [],
+      "cast": [
+        {
+          "rigVersion": 2,
+          "characterId": "Raju",
+          "initialPose": {
+            "sweat": 1,
+            "rightHand": [
+              80,
+              -205
+            ]
+          },
+          "emotion": "strain",
+          "x": 195,
+          "y": 780,
+          "scale": 0.85,
+          "facing": 1
+        },
+        {
+          "rigVersion": 2,
+          "characterId": "Mina",
+          "emotion": "curious",
+          "x": 390,
+          "y": 780,
+          "scale": 0.9,
+          "facing": -1
+        }
+      ],
+      "props": [
+        {
+          "attachment": {
+            "actorId": "Raju",
+            "bone": "head",
+            "offset": [
+              0,
+              -95
+            ]
+          },
+          "designId": "egg",
+          "open": 0,
+          "angle": 0,
+          "x": 195,
+          "y": 360,
+          "scale": 0.8
+        },
+        {
+          "designId": "cap",
+          "open": 0,
+          "angle": 0,
+          "x": 195,
+          "y": 369.45,
+          "scale": 0.8925
+        },
+        {
+          "attachment": {
+            "actorId": "Raju",
+            "bone": "rightHand",
+            "offset": [
+              0,
+              0
+            ]
+          },
+          "designId": "cola",
+          "open": 0,
+          "angle": 0,
+          "x": 263,
+          "y": 606,
+          "scale": 0.82
+        }
+      ],
+      "beats": [
+        {
+          "actorId": "Mina",
+          "kind": "perform",
+          "start": 0,
+          "duration": 0.8,
+          "hand": "right",
+          "amount": 1,
+          "keyframes": [
+            {
+              "at": 0,
+              "pose": {
+                "head": [
+                  0,
+                  -405
+                ],
+                "rightHand": [
+                  -70,
+                  -360
+                ]
+              },
+              "emotion": "curious",
+              "rightHandShape": "open"
+            },
+            {
+              "at": 1,
+              "pose": {
+                "position": [
+                  375,
+                  780
+                ],
+                "head": [
+                  0,
+                  -405
+                ],
+                "rightHand": [
+                  -70,
+                  -350
+                ],
+                "headAngle": 0
+              }
+            }
+          ],
+          "intent": "She leans in and raises an open hand toward the cap, curious about the heat."
+        },
+        {
+          "actorId": "Mina",
+          "kind": "pick",
+          "start": 0.8,
+          "duration": 0.6000000000000001,
+          "targetId": "cap",
+          "hand": "right",
+          "amount": 1,
+          "intent": "She grips the cap at its centre before lifting it off his head."
+        },
+        {
+          "actorId": "Mina",
+          "kind": "perform",
+          "start": 1.4400000000000002,
+          "duration": 0.8800000000000001,
+          "hand": "right",
+          "amount": 1,
+          "keyframes": [
+            {
+              "at": 0,
+              "pose": {
+                "head": [
+                  0,
+                  -405
+                ],
+                "rightHand": [
+                  -118.683333,
+                  -453.191667
+                ]
+              },
+              "emotion": "curious",
+              "rightHandShape": "grip"
+            },
+            {
+              "at": 1,
+              "pose": {
+                "head": [
+                  0,
+                  -405
+                ],
+                "rightHand": [
+                  -10,
+                  -490
+                ],
+                "headAngle": 0
+              },
+              "emotion": "shock"
+            }
+          ],
+          "intent": "She raises the cap above him to expose the cooked egg underneath."
+        },
+        {
+          "actorId": "Raju",
+          "kind": "perform",
+          "start": 2.4000000000000004,
+          "duration": 0.8800000000000001,
+          "hand": "right",
+          "amount": 1,
+          "keyframes": [
+            {
+              "at": 0,
+              "pose": {
+                "eyeOpen": 0.7,
+                "gaze": [
+                  0,
+                  0
+                ]
+              },
+              "emotion": "calm"
+            },
+            {
+              "at": 0.35,
+              "pose": {
+                "headScale": [
+                  1.08,
+                  0.95
+                ],
+                "eyeOpen": 1,
+                "gaze": [
+                  0,
+                  -12
+                ]
+              },
+              "emotion": "shock"
+            },
+            {
+              "at": 1,
+              "pose": {
+                "headScale": [
+                  1,
+                  1
+                ],
+                "gaze": [
+                  0,
+                  -12
+                ],
+                "leftHand": [
+                  -90,
+                  -340
+                ]
+              },
+              "emotion": "jawdrop"
+            }
+          ],
+          "intent": "He looks up and realizes an egg has fried on his head."
+        },
+        {
+          "actorId": "Mina",
+          "kind": "perform",
+          "start": 3.6,
+          "duration": 1.1199999999999999,
+          "hand": "right",
+          "amount": 1,
+          "keyframes": [
+            {
+              "at": 0,
+              "pose": {
+                "leftHand": [
+                  -60,
+                  -130
+                ]
+              },
+              "emotion": "smug",
+              "leftHandShape": "point"
+            },
+            {
+              "at": 0.5,
+              "pose": {
+                "leftHand": [
+                  -80,
+                  -400
+                ]
+              }
+            },
+            {
+              "at": 1,
+              "pose": {
+                "headAngle": -6
+              }
+            }
+          ],
+          "intent": "She points from the useless COOL label to the fried egg and gives a dry amused look."
+        },
+        {
+          "actorId": "Raju",
+          "kind": "perform",
+          "start": 4.960000000000001,
+          "duration": 0.96,
+          "hand": "right",
+          "amount": 1,
+          "keyframes": [
+            {
+              "at": 0,
+              "pose": {
+                "gaze": [
+                  0,
+                  -12
+                ]
+              },
+              "emotion": "shock"
+            },
+            {
+              "at": 1,
+              "pose": {
+                "sweat": 0.5,
+                "gaze": [
+                  0,
+                  9
+                ],
+                "headAngle": 9
+              },
+              "emotion": "defeat"
+            }
+          ],
+          "intent": "The embarrassed man lowers his eyes and slumps, still holding his Pepsi."
+        }
+      ],
+      "shots": [
+        {
+          "start": 0,
+          "end": 1.4400000000000002,
+          "focus": [
+            268,
+            480
+          ],
+          "zoom": 1.1,
+          "detail": "full"
+        },
+        {
+          "start": 1.4400000000000002,
+          "end": 2.4000000000000004,
+          "focus": [
+            220,
+            375
+          ],
+          "zoom": 1.65,
+          "detail": "full"
+        },
+        {
+          "start": 2.4000000000000004,
+          "end": 3.6,
+          "focus": [
+            195,
+            440
+          ],
+          "zoom": 2.5600000000000005,
+          "detail": "full",
+          "actorIds": [
+            "Raju"
+          ]
+        },
+        {
+          "start": 3.6,
+          "end": 4.960000000000001,
+          "focus": [
+            300,
+            430
+          ],
+          "zoom": 1.25,
+          "detail": "full"
+        },
+        {
+          "start": 4.960000000000001,
+          "end": 6.4,
+          "focus": [
+            195,
+            440
+          ],
+          "zoom": 2.5600000000000005,
+          "detail": "full",
+          "actorIds": [
+            "Raju"
+          ]
+        }
+      ],
+      "sounds": [
+        {
+          "playbackRate": 1,
+          "trimSilence": true,
+          "start": 1.8800000000000001,
+          "query": "pop cartoon",
+          "volume": 0.18,
+          "duration": 0.2,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "pop"
+        },
+        {
+          "playbackRate": 1,
+          "trimSilence": true,
+          "start": 2.68,
+          "query": "boing cartoon",
+          "volume": 0.18,
+          "duration": 0.48,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "boing"
+        }
+      ],
+      "dialogue": [
+        {
+          "actorId": "Mina",
+          "start": 3.6799999999999997,
+          "text": "कूल नहीं, तवा है!",
+          "fixture": "mutter-b"
+        }
+      ]
+    },
+    {
+      "id": "breakfast",
+      "summary": "Raju turns the embarrassing fried egg into breakfast; Mina reacts, then the red cap goes over the can instead.",
+      "duration": 4.800000000000001,
+      "background": "street",
+      "backgroundNodes": [
+        {
+          "kind": "path",
+          "d": "M-900 788 L1600 788",
+          "fill": "none",
+          "stroke": "#916d5b",
+          "width": 3
+        }
+      ],
+      "motions": [],
+      "cast": [
+        {
+          "rigVersion": 2,
+          "characterId": "Raju",
+          "initialPose": {
+            "sweat": 1,
+            "rightHand": [
+              80,
+              -205
+            ]
+          },
+          "emotion": "strain",
+          "x": 195,
+          "y": 780,
+          "scale": 0.85,
+          "facing": 1
+        },
+        {
+          "rigVersion": 2,
+          "characterId": "Mina",
+          "initialPose": {
+            "rightHand": [
+              -10,
+              -490
+            ]
+          },
+          "emotion": "smug",
+          "x": 375,
+          "y": 780,
+          "scale": 0.9,
+          "facing": -1
+        }
+      ],
+      "props": [
+        {
+          "disappearAt": 1.2800000000000002,
+          "attachment": {
+            "actorId": "Raju",
+            "bone": "head",
+            "offset": [
+              0,
+              -95
+            ]
+          },
+          "designId": "egg",
+          "open": 0,
+          "angle": 0,
+          "x": 195,
+          "y": 360,
+          "scale": 0.8
+        },
+        {
+          "attachment": {
+            "actorId": "Mina",
+            "bone": "rightHand",
+            "offset": [
+              -81.316667,
+              -2.975
+            ]
+          },
+          "designId": "cap",
+          "open": 0,
+          "angle": 0,
+          "x": 293.8,
+          "y": 336.8,
+          "scale": 0.9916666667
+        },
+        {
+          "attachment": {
+            "actorId": "Raju",
+            "bone": "rightHand",
+            "offset": [
+              0,
+              0
+            ]
+          },
+          "designId": "cola",
+          "open": 0,
+          "angle": 0,
+          "x": 263,
+          "y": 606,
+          "scale": 0.82
+        }
+      ],
+      "beats": [
+        {
+          "actorId": "Raju",
+          "kind": "pick",
+          "start": 0,
+          "duration": 0.6400000000000001,
+          "targetId": "egg",
+          "hand": "left",
+          "amount": 1,
+          "intent": "He picks up the cooked egg from his own bald head with his free left hand."
+        },
+        {
+          "actorId": "Raju",
+          "kind": "perform",
+          "start": 0.7200000000000001,
+          "duration": 0.7200000000000001,
+          "hand": "right",
+          "amount": 1,
+          "keyframes": [
+            {
+              "at": 0,
+              "pose": {
+                "leftHand": [
+                  -24.000000000000007,
+                  -485.59999999999997
+                ]
+              },
+              "emotion": "curious",
+              "leftHandShape": "grip"
+            },
+            {
+              "at": 0.6,
+              "pose": {
+                "eyeOpen": 0.2,
+                "leftHand": [
+                  -22,
+                  -354
+                ]
+              },
+              "emotion": "confident"
+            },
+            {
+              "at": 1,
+              "pose": {
+                "eyeOpen": 1,
+                "leftHand": [
+                  -22,
+                  -354
+                ]
+              },
+              "emotion": "smug"
+            }
+          ],
+          "intent": "He brings the fried egg to his mouth and takes a cartoon bite."
+        },
+        {
+          "actorId": "Mina",
+          "kind": "perform",
+          "start": 2,
+          "duration": 1.04,
+          "hand": "right",
+          "amount": 1,
+          "keyframes": [
+            {
+              "at": 0,
+              "pose": {
+                "leftHand": [
+                  -60,
+                  -130
+                ]
+              },
+              "emotion": "shock"
+            },
+            {
+              "at": 0.3,
+              "pose": {
+                "headAngle": -10
+              }
+            },
+            {
+              "at": 0.6,
+              "pose": {
+                "leftHand": [
+                  -22,
+                  -373
+                ],
+                "headAngle": 7
+              },
+              "emotion": "laugh",
+              "leftHandShape": "open"
+            },
+            {
+              "at": 1,
+              "pose": {
+                "headAngle": 0
+              }
+            }
+          ],
+          "intent": "She double-takes at his ridiculous breakfast solution, then laughs with her free hand over her face."
+        },
+        {
+          "actorId": "Raju",
+          "kind": "perform",
+          "start": 3.12,
+          "duration": 1.2000000000000002,
+          "hand": "right",
+          "amount": 1,
+          "keyframes": [
+            {
+              "at": 0,
+              "pose": {
+                "leftHand": [
+                  -22,
+                  -354
+                ]
+              },
+              "emotion": "confident"
+            },
+            {
+              "at": 0.4,
+              "pose": {
+                "leftHand": [
+                  -100,
+                  -275
+                ],
+                "headAngle": -6
+              }
+            },
+            {
+              "at": 1,
+              "pose": {
+                "headAngle": 0
+              },
+              "emotion": "smug"
+            }
+          ],
+          "intent": "He shrugs proudly: his overheated cap has at least made breakfast."
+        }
+      ],
+      "shots": [
+        {
+          "start": 0,
+          "end": 0.7200000000000001,
+          "focus": [
+            195,
+            395
+          ],
+          "zoom": 2.4800000000000004,
+          "detail": "full",
+          "actorIds": [
+            "Raju"
+          ]
+        },
+        {
+          "start": 0.7200000000000001,
+          "end": 2,
+          "focus": [
+            195,
+            450
+          ],
+          "zoom": 2.5600000000000005,
+          "detail": "full",
+          "actorIds": [
+            "Raju"
+          ]
+        },
+        {
+          "start": 2,
+          "end": 3.12,
+          "focus": [
+            375,
+            420
+          ],
+          "zoom": 2.5600000000000005,
+          "detail": "full",
+          "actorIds": [
+            "Mina"
+          ]
+        },
+        {
+          "start": 3.12,
+          "end": 4.800000000000001,
+          "focus": [
+            260,
+            480
+          ],
+          "zoom": 1.2,
+          "detail": "full"
+        }
+      ],
+      "sounds": [
+        {
+          "playbackRate": 1,
+          "trimSilence": true,
+          "start": 1.16,
+          "query": "gulp cartoon",
+          "volume": 0.18,
+          "duration": 0.27999999999999997,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "gulp"
+        },
+        {
+          "playbackRate": 1,
+          "trimSilence": true,
+          "start": 3.64,
+          "query": "boing cartoon",
+          "volume": 0.13,
+          "duration": 0.36000000000000004,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "boing"
+        }
+      ],
+      "dialogue": [
+        {
+          "actorId": "Raju",
+          "start": 3.2,
+          "text": "नाश्ता तैयार!",
+          "fixture": "mutter-a"
+        }
+      ]
+    }
+  ],
+  "coverage": [
+    {
+      "storyEvent": "Raju sweats under his red COOL cap and drinks from a labelled Pepsi can. Mina notices the absurd hat.",
+      "sceneId": "heat",
+      "beatIndices": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "storyEvent": "Mina lifts the red cap and reveals that the heat has fried an egg on Raju’s bald head.",
+      "sceneId": "reveal",
+      "beatIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "storyEvent": "Raju turns the embarrassing fried egg into breakfast; Mina reacts, then the red cap goes over the can instead.",
+      "sceneId": "breakfast",
+      "beatIndices": [
+        0,
+        1,
+        2,
+        3
+      ]
+    }
+  ],
+  "seo": {
+    "titles": [
+      "COOL Topi Ka Garam Nashta 😂"
+    ],
+    "description": "Original coloured cartoon sample: a red COOL cap, a Pepsi sip and a ridiculous fried-egg reveal. Bundled audio is explicitly nonverbal CC0 preview vocals; the included Hindi dialogue renders through Cartesia when the user supplies a key and cast voice IDs.",
+    "tags": [
+      "cartoon comedy",
+      "funny cartoon"
+    ],
+    "hashtags": [
+      "#CartoonComedy"
+    ],
+    "pinnedComment": "Topi cool thi ya tawa?",
+    "thumbnailText": "COOL YA TAWA?"
+  },
+  "blockedReasons": [],
+  "version": 1,
+  "format": "shorts",
+  "language": "hi",
+  "review": {
+    "method": "authored-example",
+    "planHash": "b364936487ee3673dfea4ba827dc54fd9bb229143b0aab5ce1108411711922a4",
+    "summary": "V9 authored sample: visible connected reaching forearms, semantic flight air and wind streaks, gravity drop and contact particles, cheek-local punch flash; recorded CC0 gibberish. Not a live Gemini output."
+  }
+}

@@ -1,0 +1,10 @@
+node_modules/
+.remotion/
+.env
+.angular/
+web/.angular/
+data/
+public/
+web/dist/
+deliverables/
+*.log

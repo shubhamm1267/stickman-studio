@@ -1,0 +1,158 @@
+{
+  "generatedBy": "scripts/render-point12-fixtures.mjs",
+  "renderer": "svgFrame + Chromium",
+  "providerTesting": "OFFLINE",
+  "viewport": {
+    "width": 540,
+    "height": 960,
+    "deviceScaleFactor": 1
+  },
+  "frameTimeSeconds": 0.5,
+  "fixtures": [
+    {
+      "id": "appleFixture",
+      "category": "food",
+      "description": "Ruby apple with a curved stem and a single leaf",
+      "dimensions": {
+        "width": 86,
+        "height": 100
+      },
+      "material": "organic",
+      "colors": [
+        "#d9473f",
+        "#f27658",
+        "#39834a"
+      ],
+      "filename": "appleFixture.png",
+      "sha256": "5bfa880aced3e54922768702e235462ff3fbcbabe5ea751e16e02a8a064b16e9",
+      "bytes": 7870
+    },
+    {
+      "id": "pearFixture",
+      "category": "food",
+      "description": "Tall golden pear with a dimple, stem, and scattered skin marks",
+      "dimensions": {
+        "width": 72,
+        "height": 116
+      },
+      "material": "organic",
+      "colors": [
+        "#d3ad3d",
+        "#4a7e3f",
+        "#775331"
+      ],
+      "filename": "pearFixture.png",
+      "sha256": "1e9ee22ec1932b2895798975aa57fd44057ade6ebfdf5ce25112a3efd47d629e",
+      "bytes": 7987
+    },
+    {
+      "id": "sandwichFixture",
+      "category": "food",
+      "description": "Triangular layered sandwich with a toasted crust and visible filling",
+      "dimensions": {
+        "width": 112,
+        "height": 84
+      },
+      "material": "paper",
+      "colors": [
+        "#e7c98a",
+        "#527e3e",
+        "#c74c3e",
+        "#f2dfaa"
+      ],
+      "filename": "sandwichFixture.png",
+      "sha256": "9742dab456a5a02877536cc7e977fa321103b05dd34f0de4c1e41f29323080a3",
+      "bytes": 9530
+    },
+    {
+      "id": "teapotFixture",
+      "category": "household",
+      "description": "Blue ceramic teapot with arched handle, spout, lid, and glaze bands",
+      "dimensions": {
+        "width": 118,
+        "height": 102
+      },
+      "material": "glass",
+      "colors": [
+        "#397da5",
+        "#9bd0d0",
+        "#e1c87b"
+      ],
+      "filename": "teapotFixture.png",
+      "sha256": "06473953a907af0e129cddd2d353767489d50964064c34dbe0952f19290c3df9",
+      "bytes": 9762
+    },
+    {
+      "id": "lampFixture",
+      "category": "household",
+      "description": "Warm fabric-shaded table lamp on a narrow brass stem and heavy base",
+      "dimensions": {
+        "width": 88,
+        "height": 132
+      },
+      "material": "fabric",
+      "colors": [
+        "#e4b861",
+        "#a77c42",
+        "#f5df9d"
+      ],
+      "filename": "lampFixture.png",
+      "sha256": "a877ade1a61a9b3610b1938e15fba08c0dae0290df78669c5cf23e8d82d01ae7",
+      "bytes": 6533
+    },
+    {
+      "id": "basketFixture",
+      "category": "household",
+      "description": "Woven storage basket with a wide rim and alternating woven strips",
+      "dimensions": {
+        "width": 112,
+        "height": 92
+      },
+      "material": "fabric",
+      "colors": [
+        "#b9814b",
+        "#d1a269",
+        "#875c37"
+      ],
+      "filename": "basketFixture.png",
+      "sha256": "050d79b482b73d8fd78210909a42dd580d18fb64d3cc8e8de175637fb14d3b34",
+      "bytes": 7408
+    },
+    {
+      "id": "stopMarkerFixture",
+      "category": "sign",
+      "description": "Red octagonal warning sign with a double border and central exclamation mark",
+      "dimensions": {
+        "width": 108,
+        "height": 108
+      },
+      "material": "metal",
+      "colors": [
+        "#c93e3c",
+        "#fff5dc",
+        "#693d35"
+      ],
+      "filename": "stopMarkerFixture.png",
+      "sha256": "4a86b9b21967ef6588502ccf1d70c65db2fae87fd28976ac7d515c8b99a2ed4a",
+      "bytes": 6604
+    },
+    {
+      "id": "arrowSignFixture",
+      "category": "sign",
+      "description": "Wide teal direction sign with a pointed right end, two inset stripes, and a mounting post",
+      "dimensions": {
+        "width": 138,
+        "height": 78
+      },
+      "material": "metal",
+      "colors": [
+        "#378b83",
+        "#e8d78f",
+        "#203d42"
+      ],
+      "filename": "arrowSignFixture.png",
+      "sha256": "7f0d1fd1b0750e2bdf39173206fa06d23c81490e3a4d72c1537c7e7dfe7f2345",
+      "bytes": 5293
+    }
+  ]
+}

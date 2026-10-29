@@ -1,0 +1,513 @@
+{
+  "schemaVersion": 2,
+  "generatedAssetRefs": [],
+  "renderFps": 60,
+  "referenceStyle": "elastic-meme",
+  "productionMode": "silent-sfx",
+  "comedy": {
+    "hook": "A man treats an ordinary lantern as a guest.",
+    "goal": "Get a greeting from the lantern.",
+    "escalation": [
+      "He bows and waits.",
+      "The lantern remains silent."
+    ],
+    "payoff": "He squints at his silent guest.",
+    "callback": "The lantern never changes."
+  },
+  "title": "The polite lantern — supported acting",
+  "story": "An adult waves to a lantern, bows with both feet planted, and looks surprised when it gives no answer.",
+  "sourceIdea": "An adult waves to a lantern, bows with both feet planted, and looks surprised when it gives no answer.",
+  "requirements": [],
+  "characters": [
+    {
+      "id": "man",
+      "name": "Raghu",
+      "kind": "man",
+      "artStyle": "pencil",
+      "hairStyle": "sidepart",
+      "faceShape": "long",
+      "wardrobe": "default",
+      "skin": "#eee8cc",
+      "outfit": "#9ab4a4",
+      "hair": "#565846",
+      "headWidth": 1.05,
+      "headHeight": 0.92
+    }
+  ],
+  "propDesigns": [
+    {
+      "id": "lantern",
+      "name": "Turquoise hexagonal lantern",
+      "type": "drawing",
+      "color": "#27a9a2",
+      "nodes": [
+        {
+          "kind": "group",
+          "position": [
+            0,
+            0
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "rotation": 6,
+          "scale": [
+            1.05,
+            0.95
+          ],
+          "opacity": 0.9,
+          "children": [
+            {
+              "kind": "ellipse",
+              "center": [
+                0,
+                -64
+              ],
+              "radius": [
+                15,
+                14
+              ],
+              "fill": "none",
+              "stroke": "#293329",
+              "width": 4
+            },
+            {
+              "kind": "path",
+              "d": "M-38 -30 L0 -52 L38 -30 L38 25 L0 47 L-38 25 Z",
+              "fill": "#27a9a2",
+              "stroke": "#293329",
+              "width": 3
+            },
+            {
+              "kind": "group",
+              "position": [
+                0,
+                -3
+              ],
+              "pivot": [
+                0,
+                0
+              ],
+              "children": [
+                {
+                  "kind": "ellipse",
+                  "center": [
+                    0,
+                    0
+                  ],
+                  "radius": [
+                    17,
+                    24
+                  ],
+                  "fill": "#ffe587",
+                  "stroke": "#293329",
+                  "width": 2
+                }
+              ]
+            },
+            {
+              "kind": "path",
+              "d": "M-25 -35 L-25 26 M25 -35 L25 26 M-32 28 L32 28 M-25 38 L25 38",
+              "fill": "none",
+              "stroke": "#293329",
+              "width": 3
+            },
+            {
+              "kind": "path",
+              "d": "M-8 3 L8 3 L8 27 L-8 27 Z",
+              "fill": "#fff4c1",
+              "stroke": "#293329",
+              "width": 2
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "motionIR": {
+        "schemaVersion": 1,
+        "seed": 18473,
+        "units": {
+          "space": "stage-y-down",
+          "time": "seconds",
+          "angle": "degrees",
+          "pose": "actor-local"
+        },
+        "tracks": [
+          {
+            "id": "greeting",
+            "actorId": "man",
+            "start": 0,
+            "duration": 2,
+            "keyframes": [
+              {
+                "at": 0,
+                "pose": {
+                  "rightHand": [
+                    60,
+                    -130
+                  ]
+                },
+                "emotion": "curious",
+                "rightHandShape": "open"
+              },
+              {
+                "at": 0.3,
+                "pose": {
+                  "rightHand": [
+                    115,
+                    -330
+                  ]
+                },
+                "emotion": "confident"
+              },
+              {
+                "at": 0.45,
+                "pose": {
+                  "rightHand": [
+                    145,
+                    -325
+                  ]
+                }
+              },
+              {
+                "at": 0.6,
+                "pose": {
+                  "rightHand": [
+                    110,
+                    -340
+                  ]
+                }
+              },
+              {
+                "at": 0.75,
+                "pose": {
+                  "rightHand": [
+                    145,
+                    -325
+                  ]
+                }
+              },
+              {
+                "at": 1,
+                "pose": {
+                  "rightHand": [
+                    60,
+                    -130
+                  ]
+                }
+              }
+            ],
+            "constraints": [
+              {
+                "kind": "plant",
+                "points": [
+                  "leftFoot",
+                  "rightFoot"
+                ],
+                "floorY": 780
+              }
+            ]
+          },
+          {
+            "id": "bow",
+            "actorId": "man",
+            "start": 2,
+            "duration": 2.2,
+            "keyframes": [
+              {
+                "at": 0,
+                "pose": {
+                  "hip": [
+                    0,
+                    -160
+                  ],
+                  "spineAngle": 0
+                }
+              },
+              {
+                "at": 0.2,
+                "pose": {
+                  "hip": [
+                    -2,
+                    -157
+                  ],
+                  "spineAngle": -5
+                }
+              },
+              {
+                "at": 0.48,
+                "pose": {
+                  "eyeOpen": 0.3,
+                  "hip": [
+                    -24,
+                    -145
+                  ],
+                  "leftHand": [
+                    35,
+                    -140
+                  ],
+                  "rightHand": [
+                    105,
+                    -130
+                  ],
+                  "spineAngle": 50,
+                  "headAngle": 20
+                },
+                "timing": "snappy"
+              },
+              {
+                "at": 0.7,
+                "pose": {
+                  "eyeOpen": 0.3,
+                  "hip": [
+                    -24,
+                    -145
+                  ],
+                  "spineAngle": 50,
+                  "headAngle": 20
+                }
+              },
+              {
+                "at": 1,
+                "pose": {
+                  "eyeOpen": 1,
+                  "hip": [
+                    0,
+                    -160
+                  ],
+                  "leftHand": [
+                    -60,
+                    -130
+                  ],
+                  "rightHand": [
+                    60,
+                    -130
+                  ],
+                  "spineAngle": 0,
+                  "headAngle": 0
+                }
+              }
+            ],
+            "constraints": [
+              {
+                "kind": "plant",
+                "points": [
+                  "leftFoot",
+                  "rightFoot"
+                ],
+                "floorY": 780
+              }
+            ]
+          },
+          {
+            "id": "reaction",
+            "actorId": "man",
+            "start": 4.2,
+            "duration": 1.8,
+            "keyframes": [
+              {
+                "at": 0,
+                "pose": {
+                  "mouthAperture": 0,
+                  "headAngle": 0
+                }
+              },
+              {
+                "at": 0.22,
+                "pose": {
+                  "headScale": [
+                    0.85,
+                    1.18
+                  ],
+                  "mouthAperture": 1,
+                  "headAngle": -12
+                },
+                "emotion": "jawdrop",
+                "rightHandShape": "open"
+              },
+              {
+                "at": 0.5,
+                "pose": {
+                  "headScale": [
+                    1.08,
+                    0.94
+                  ],
+                  "mouthAperture": 0.8,
+                  "headAngle": 8
+                }
+              },
+              {
+                "at": 1,
+                "pose": {
+                  "headScale": [
+                    1,
+                    1
+                  ],
+                  "mouthAperture": 0,
+                  "headAngle": 12
+                },
+                "emotion": "defeat"
+              }
+            ],
+            "constraints": []
+          }
+        ]
+      },
+      "id": "lanternScene",
+      "summary": "An adult waves to a lantern, bows with both feet planted, and looks surprised when it gives no answer.",
+      "duration": 6,
+      "background": "room",
+      "backgroundNodes": [],
+      "motions": [],
+      "cast": [
+        {
+          "rigVersion": 2,
+          "characterId": "man",
+          "emotion": "curious",
+          "x": 220,
+          "y": 780,
+          "scale": 0.8,
+          "facing": 1
+        }
+      ],
+      "props": [
+        {
+          "designId": "lantern",
+          "open": 0,
+          "angle": 0,
+          "x": 450,
+          "y": 590,
+          "scale": 0.8
+        }
+      ],
+      "beats": [
+        {
+          "actorId": "man",
+          "kind": "perform",
+          "start": 0,
+          "duration": 2,
+          "hand": "right",
+          "amount": 1,
+          "motionTrackId": "greeting",
+          "intent": "greeting"
+        },
+        {
+          "actorId": "man",
+          "kind": "perform",
+          "start": 2,
+          "duration": 2.2,
+          "hand": "right",
+          "amount": 1,
+          "motionTrackId": "bow",
+          "intent": "Supported hip and spine bow, planted feet."
+        },
+        {
+          "actorId": "man",
+          "kind": "perform",
+          "start": 4.2,
+          "duration": 1.8,
+          "hand": "right",
+          "amount": 1,
+          "motionTrackId": "reaction",
+          "intent": "reaction"
+        }
+      ],
+      "shots": [
+        {
+          "start": 0,
+          "end": 4.2,
+          "focus": [
+            310,
+            560
+          ],
+          "zoom": 1.1,
+          "detail": "full"
+        },
+        {
+          "start": 4.2,
+          "end": 6,
+          "focus": [
+            230,
+            485
+          ],
+          "zoom": 2,
+          "detail": "full"
+        }
+      ],
+      "sounds": [],
+      "dialogue": [],
+      "sceneSeed": 1707423111,
+      "canonicalFrame": {
+        "fps": 60,
+        "startFrame": 0,
+        "endFrame": 360,
+        "interval": "[startFrame,endFrame)"
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "storyEvent": "greeting",
+      "sceneId": "lanternScene",
+      "beatIndices": [
+        0
+      ]
+    },
+    {
+      "storyEvent": "Supported hip and spine bow, planted feet.",
+      "sceneId": "lanternScene",
+      "beatIndices": [
+        1
+      ]
+    },
+    {
+      "storyEvent": "reaction",
+      "sceneId": "lanternScene",
+      "beatIndices": [
+        2
+      ]
+    }
+  ],
+  "seo": {
+    "titles": [
+      "Machhar Bacha, Thappad Khud Ko",
+      "One Mosquito. Three Self-Slaps."
+    ],
+    "description": "One tiny mosquito. Three careful attempts. Every slap lands on the wrong target. An original 20-second silent pencil cartoon using the reusable StickLaugh Studio v6 motion engine.",
+    "tags": [
+      "mosquito comedy",
+      "silent cartoon",
+      "self slap",
+      "visual comedy"
+    ],
+    "hashtags": [
+      "#CartoonComedy",
+      "#SilentComedy"
+    ],
+    "pinnedComment": "Machhar ko maarte hue kabhi khud ko thappad maara hai?",
+    "thumbnailText": "GALAT TARGET!"
+  },
+  "blockedReasons": [],
+  "version": 1,
+  "format": "shorts",
+  "language": "hi",
+  "seed": 630348300,
+  "provenance": {
+    "origin": "legacy-migration",
+    "sourceSchemaVersion": 1,
+    "generator": "legacy-import"
+  },
+  "replay": {
+    "schemaVersion": 1,
+    "planHash": "d66ec268674b02cb697dcd41415de08d4bdb11299ba7f52d9d1234c9b76b0c93",
+    "seed": 630348300,
+    "fps": 60,
+    "totalFrames": 360,
+    "frameRounding": "nearest",
+    "evaluator": "sticklaugh-frame-evaluator-v1"
+  }
+}

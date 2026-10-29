@@ -1,0 +1,170 @@
+[
+  {
+    "id": "appleFixture",
+    "category": "food",
+    "description": "Ruby apple with a curved stem and a single leaf",
+    "silhouetteFamily": "organic",
+    "normalizedDimensions": { "width": 86, "height": 100 },
+    "material": "organic",
+    "paint": { "fill": "none", "stroke": "#552c2a", "outlineThickness": 2.2 },
+    "palette": ["#d9473f", "#f27658", "#39834a"],
+    "geometryRecipe": [
+      { "kind": "path", "d": "M0 -29 C-13 -43 -35 -39 -41 -17 C-49 7 -27 38 0 42 C27 38 49 7 41 -17 C35 -39 13 -43 0 -29Z", "fill": "#d9473f", "stroke": "#552c2a", "width": 2.2 },
+      { "kind": "path", "d": "M0 -29 Q-4 -44 2 -50", "fill": "none", "stroke": "#68422d", "width": 4 },
+      { "kind": "path", "d": "M2 -43 Q19 -55 28 -43 Q15 -32 2 -43Z", "fill": "#39834a", "stroke": "#245b35", "width": 1.4 },
+      { "kind": "line", "from": [-22, -12], "to": [-28, 2], "stroke": "#f8a184", "width": 2 }
+    ],
+    "motionAnchors": [{ "id": "stemTip", "position": [5, -46] }],
+    "interactionAnchors": [{ "id": "grip", "position": [0, 10] }],
+    "assetSource": { "kind": "procedural-svg", "rightsStatus": "original" }
+  },
+  {
+    "id": "pearFixture",
+    "category": "food",
+    "description": "Tall golden pear with a dimple, stem, and scattered skin marks",
+    "silhouetteFamily": "organic",
+    "normalizedDimensions": { "width": 72, "height": 116 },
+    "material": "organic",
+    "paint": { "fill": "none", "stroke": "#65512b", "outlineThickness": 2 },
+    "palette": ["#d3ad3d", "#4a7e3f", "#775331"],
+    "geometryRecipe": [
+      { "kind": "path", "d": "M0 -47 C-7 -33 -10 -23 -22 -15 C-43 -1 -39 31 -20 43 C-9 50 9 50 20 43 C39 31 43 -1 22 -15 C10 -23 7 -33 0 -47Z", "fill": "#d3ad3d", "stroke": "#65512b", "width": 2 },
+      { "kind": "path", "d": "M0 -45 Q-4 -57 1 -62", "fill": "none", "stroke": "#775331", "width": 3.5 },
+      { "kind": "path", "d": "M1 -56 Q14 -66 22 -57 Q13 -48 1 -56Z", "fill": "#4a7e3f", "stroke": "#345b32", "width": 1 },
+      { "kind": "ellipse", "center": [-18, 4], "radius": [1.6, 2.1], "fill": "#8e7337" },
+      { "kind": "ellipse", "center": [18, 15], "radius": [1.5, 2], "fill": "#8e7337" },
+      { "kind": "ellipse", "center": [-10, 29], "radius": [1.4, 1.8], "fill": "#8e7337" },
+      { "kind": "ellipse", "center": [11, -2], "radius": [1.3, 1.8], "fill": "#8e7337" }
+    ],
+    "motionAnchors": [{ "id": "stemTip", "position": [1, -60] }],
+    "interactionAnchors": [{ "id": "grip", "position": [0, 18] }],
+    "assetSource": { "kind": "procedural-svg", "rightsStatus": "original" }
+  },
+  {
+    "id": "sandwichFixture",
+    "category": "food",
+    "description": "Triangular layered sandwich with a toasted crust and visible filling",
+    "silhouetteFamily": "custom-vector",
+    "normalizedDimensions": { "width": 112, "height": 84 },
+    "material": "paper",
+    "paint": { "fill": "none", "stroke": "#60452e", "outlineThickness": 2 },
+    "palette": ["#e7c98a", "#527e3e", "#c74c3e", "#f2dfaa"],
+    "geometryRecipe": [
+      { "kind": "polygon", "points": [[-49, 28], [-5, -35], [51, 26]], "fill": "#e7c98a", "stroke": "#60452e", "width": 2 },
+      { "kind": "polygon", "points": [[-40, 20], [-5, -25], [42, 19]], "fill": "#f2dfaa", "stroke": "#b38b51", "width": 1.4 },
+      { "kind": "path", "d": "M-40 20 Q-20 12 -4 18 Q17 26 42 19 L46 25 Q15 31 -4 24 Q-25 17 -44 27Z", "fill": "#527e3e", "stroke": "#34582f", "width": 1 },
+      { "kind": "path", "d": "M-24 7 Q-5 2 12 9 Q25 14 35 17 L31 21 Q11 17 -3 13 Q-15 10 -28 13Z", "fill": "#c74c3e", "stroke": "#873a31", "width": 1 },
+      { "kind": "line", "from": [-31, 15], "to": [-20, 18], "stroke": "#bd9156", "width": 1.2 },
+      { "kind": "line", "from": [8, -18], "to": [20, -4], "stroke": "#bd9156", "width": 1.2 }
+    ],
+    "motionAnchors": [{ "id": "corner", "position": [0, -32] }],
+    "interactionAnchors": [{ "id": "grip", "position": [0, 26] }],
+    "assetSource": { "kind": "procedural-svg", "rightsStatus": "original" }
+  },
+  {
+    "id": "teapotFixture",
+    "category": "household",
+    "description": "Blue ceramic teapot with arched handle, spout, lid, and glaze bands",
+    "silhouetteFamily": "custom-vector",
+    "normalizedDimensions": { "width": 118, "height": 102 },
+    "material": "glass",
+    "paint": { "fill": "none", "stroke": "#263d54", "outlineThickness": 2 },
+    "palette": ["#397da5", "#9bd0d0", "#e1c87b"],
+    "geometryRecipe": [
+      { "kind": "path", "d": "M-34 -8 C-34 -31 -17 -40 5 -38 C30 -36 38 -20 34 7 C31 32 17 39 -7 37 C-31 35 -40 15 -34 -8Z", "fill": "#397da5", "stroke": "#263d54", "width": 2 },
+      { "kind": "path", "d": "M-32 -13 Q-53 -17 -57 -2 Q-54 10 -35 8", "fill": "none", "stroke": "#263d54", "width": 5 },
+      { "kind": "path", "d": "M31 -13 L51 -24 Q60 -24 56 -14 L37 1", "fill": "#397da5", "stroke": "#263d54", "width": 2 },
+      { "kind": "path", "d": "M-18 -39 Q-15 -48 0 -47 Q15 -46 18 -38Z", "fill": "#397da5", "stroke": "#263d54", "width": 1.8 },
+      { "kind": "ellipse", "center": [0, -48], "radius": [5, 3], "fill": "#e1c87b", "stroke": "#263d54", "width": 1 },
+      { "kind": "path", "d": "M-31 8 Q0 17 33 7", "fill": "none", "stroke": "#9bd0d0", "width": 3 },
+      { "kind": "line", "from": [-21, -24], "to": [-16, -18], "stroke": "#bce5e2", "width": 2 }
+    ],
+    "motionAnchors": [{ "id": "handleTop", "position": [-48, -12] }],
+    "interactionAnchors": [{ "id": "handle", "position": [-47, -4] }],
+    "assetSource": { "kind": "procedural-svg", "rightsStatus": "original" }
+  },
+  {
+    "id": "lampFixture",
+    "category": "household",
+    "description": "Warm fabric-shaded table lamp on a narrow brass stem and heavy base",
+    "silhouetteFamily": "custom-vector",
+    "normalizedDimensions": { "width": 88, "height": 132 },
+    "material": "fabric",
+    "paint": { "fill": "none", "stroke": "#55412e", "outlineThickness": 2 },
+    "palette": ["#e4b861", "#a77c42", "#f5df9d"],
+    "geometryRecipe": [
+      { "kind": "polygon", "points": [[-32, -54], [32, -54], [45, -7], [-45, -7]], "fill": "#e4b861", "stroke": "#55412e", "width": 2 },
+      { "kind": "line", "from": [-18, -48], "to": [-11, -12], "stroke": "#f5df9d", "width": 2 },
+      { "kind": "line", "from": [0, -50], "to": [0, -10], "stroke": "#f5df9d", "width": 2 },
+      { "kind": "line", "from": [18, -48], "to": [11, -12], "stroke": "#f5df9d", "width": 2 },
+      { "kind": "roundedRect", "rect": [-4, -7, 8, 49], "cornerRadius": 3, "fill": "#a77c42", "stroke": "#55412e", "width": 1.4 },
+      { "kind": "roundedRect", "rect": [-26, 40, 52, 11], "cornerRadius": 5, "fill": "#a77c42", "stroke": "#55412e", "width": 1.7 }
+    ],
+    "motionAnchors": [{ "id": "shadeTop", "position": [0, -51] }],
+    "interactionAnchors": [{ "id": "base", "position": [0, 47] }],
+    "assetSource": { "kind": "procedural-svg", "rightsStatus": "original" }
+  },
+  {
+    "id": "basketFixture",
+    "category": "household",
+    "description": "Woven storage basket with a wide rim and alternating woven strips",
+    "silhouetteFamily": "custom-vector",
+    "normalizedDimensions": { "width": 112, "height": 92 },
+    "material": "fabric",
+    "paint": { "fill": "none", "stroke": "#5f442d", "outlineThickness": 2 },
+    "palette": ["#b9814b", "#d1a269", "#875c37"],
+    "geometryRecipe": [
+      { "kind": "path", "d": "M-42 -26 L42 -26 L33 38 Q0 47 -33 38Z", "fill": "#b9814b", "stroke": "#5f442d", "width": 2 },
+      { "kind": "roundedRect", "rect": [-48, -32, 96, 12], "cornerRadius": 4, "fill": "#d1a269", "stroke": "#5f442d", "width": 2 },
+      { "kind": "line", "from": [-30, -16], "to": [-26, 36], "stroke": "#875c37", "width": 3 },
+      { "kind": "line", "from": [-10, -17], "to": [-8, 41], "stroke": "#d9b17c", "width": 3 },
+      { "kind": "line", "from": [10, -17], "to": [8, 41], "stroke": "#875c37", "width": 3 },
+      { "kind": "line", "from": [30, -16], "to": [26, 36], "stroke": "#d9b17c", "width": 3 },
+      { "kind": "line", "from": [-39, -2], "to": [39, -2], "stroke": "#875c37", "width": 2.5 },
+      { "kind": "line", "from": [-37, 16], "to": [37, 16], "stroke": "#d9b17c", "width": 2.5 }
+    ],
+    "motionAnchors": [{ "id": "rimCenter", "position": [0, -27] }],
+    "interactionAnchors": [{ "id": "rim", "position": [0, -24] }],
+    "assetSource": { "kind": "procedural-svg", "rightsStatus": "original" }
+  },
+  {
+    "id": "stopMarkerFixture",
+    "category": "sign",
+    "description": "Red octagonal warning sign with a double border and central exclamation mark",
+    "silhouetteFamily": "custom-vector",
+    "normalizedDimensions": { "width": 108, "height": 108 },
+    "material": "metal",
+    "paint": { "fill": "none", "stroke": "#542d2d", "outlineThickness": 2 },
+    "palette": ["#c93e3c", "#fff5dc", "#693d35"],
+    "geometryRecipe": [
+      { "kind": "polygon", "points": [[-24, -48], [24, -48], [48, -24], [48, 24], [24, 48], [-24, 48], [-48, 24], [-48, -24]], "fill": "#c93e3c", "stroke": "#542d2d", "width": 2 },
+      { "kind": "polygon", "points": [[-20, -40], [20, -40], [40, -20], [40, 20], [20, 40], [-20, 40], [-40, 20], [-40, -20]], "fill": "none", "stroke": "#fff5dc", "width": 2 },
+      { "kind": "roundedRect", "rect": [-4, -25, 8, 31], "cornerRadius": 4, "fill": "#fff5dc" },
+      { "kind": "ellipse", "center": [0, 17], "radius": [4, 4], "fill": "#fff5dc" },
+      { "kind": "line", "from": [0, 48], "to": [0, 62], "stroke": "#693d35", "width": 3 }
+    ],
+    "motionAnchors": [{ "id": "postTop", "position": [0, 48] }],
+    "interactionAnchors": [{ "id": "post", "position": [0, 55] }],
+    "assetSource": { "kind": "procedural-svg", "rightsStatus": "original" }
+  },
+  {
+    "id": "arrowSignFixture",
+    "category": "sign",
+    "description": "Wide teal direction sign with a pointed right end, two inset stripes, and a mounting post",
+    "silhouetteFamily": "custom-vector",
+    "normalizedDimensions": { "width": 138, "height": 78 },
+    "material": "metal",
+    "paint": { "fill": "none", "stroke": "#234d50", "outlineThickness": 2 },
+    "palette": ["#378b83", "#e8d78f", "#203d42"],
+    "geometryRecipe": [
+      { "kind": "polygon", "points": [[-62, -25], [34, -25], [62, 0], [34, 25], [-62, 25]], "fill": "#378b83", "stroke": "#234d50", "width": 2 },
+      { "kind": "line", "from": [-48, -13], "to": [20, -13], "stroke": "#e8d78f", "width": 3 },
+      { "kind": "line", "from": [-48, 0], "to": [29, 0], "stroke": "#e8d78f", "width": 3 },
+      { "kind": "line", "from": [-48, 13], "to": [20, 13], "stroke": "#e8d78f", "width": 3 },
+      { "kind": "line", "from": [-38, 25], "to": [-38, 46], "stroke": "#203d42", "width": 4 }
+    ],
+    "motionAnchors": [{ "id": "postTop", "position": [-38, 25] }],
+    "interactionAnchors": [{ "id": "post", "position": [-38, 38] }],
+    "assetSource": { "kind": "procedural-svg", "rightsStatus": "original" }
+  }
+]

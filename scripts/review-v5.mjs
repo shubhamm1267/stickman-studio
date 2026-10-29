@@ -1,0 +1,6 @@
+import fs from'node:fs/promises';import path from'node:path';import os from'node:os';import{chromium}from'playwright';import{svgFrame}from'../renderer/engine.mjs';import{validatePlan}from'../shared/schema.mjs';import{findBrowser}from'../server/browser.mjs';
+const plan=validatePlan(JSON.parse(await fs.readFile(new URL('../examples/headphone-mask.json',import.meta.url))));const dir=path.resolve(process.env.QA_DIR||path.join(os.tmpdir(),'sticklaugh-v5'));await fs.mkdir(dir,{recursive:true});
+const browser=await chromium.launch({executablePath:await findBrowser(),headless:true,args:['--no-sandbox']});const page=await browser.newPage({viewport:{width:540,height:960}});
+for(const t of[.5,1.9,2.8,4.4,6.7,8.4,10.3,10.9,11.7,12.7,13.8,14.8,16.4,17.5,18.7,20.6]){await page.setContent(`<body style="margin:0;width:540px;height:960px">${svgFrame(plan,t)}</body>`);await page.screenshot({path:path.join(dir,`frame-${t}.png`)});}
+for(const format of['landscape','square']){await page.setViewportSize({width:format==='landscape'?960:540,height:540});await page.setContent(`<body style="margin:0;height:540px">${svgFrame(plan,10.9,{format})}</body>`);await page.screenshot({path:path.join(dir,format+'.png')});}
+await browser.close();console.log(dir);

@@ -1,0 +1,840 @@
+{
+  "schemaVersion": 2,
+  "seed": 362704308,
+  "provenance": {
+    "origin": "legacy-migration",
+    "sourceSchemaVersion": 1,
+    "generator": "legacy-import"
+  },
+  "generatedAssetRefs": [],
+  "renderFps": 60,
+  "referenceStyle": "elastic-meme",
+  "productionMode": "silent-sfx",
+  "comedy": {
+    "hook": "A man treats an ordinary lantern as a guest.",
+    "goal": "Get a greeting from the lantern.",
+    "escalation": [
+      "He bows and waits.",
+      "The lantern remains silent."
+    ],
+    "payoff": "He squints at his silent guest.",
+    "callback": "The lantern never changes."
+  },
+  "title": "Eight-arm greeting",
+  "story": "An original eight-armed creature waves two front tentacles and blinks.",
+  "sourceIdea": "Hand-authored different-anatomy fixture: An original eight-armed creature waves two front tentacles and blinks.",
+  "requirements": [],
+  "characters": [
+    {
+      "id": "creature",
+      "name": "Ocho",
+      "kind": "man",
+      "visualSpec": {
+        "renderMode": "replace",
+        "silhouetteFamily": "custom-vector",
+        "geometryRecipe": [
+          {
+            "id": "tentacle0",
+            "kind": "group",
+            "animation": [
+              {
+                "playback": "once",
+                "keys": [
+                  {
+                    "at": 0,
+                    "rotation": 0,
+                    "easing": "smooth"
+                  },
+                  {
+                    "at": 1,
+                    "rotation": -30,
+                    "easing": "smooth"
+                  },
+                  {
+                    "at": 2,
+                    "rotation": 20,
+                    "easing": "smooth"
+                  },
+                  {
+                    "at": 3,
+                    "rotation": -20,
+                    "easing": "smooth"
+                  },
+                  {
+                    "at": 4,
+                    "rotation": 0,
+                    "easing": "smooth"
+                  }
+                ]
+              }
+            ],
+            "position": [
+              -49,
+              -75
+            ],
+            "pivot": [
+              0,
+              0
+            ],
+            "children": [
+              {
+                "id": "curve0",
+                "kind": "path",
+                "d": "M0 0 Q-30 28 -40 51 Q-65 78 -70 48",
+                "fill": "none",
+                "stroke": "#20251f",
+                "width": 15
+              },
+              {
+                "id": "inner0",
+                "kind": "path",
+                "d": "M0 0 Q-30 28 -40 51 Q-65 78 -70 48",
+                "fill": "none",
+                "stroke": "#b7c5ae",
+                "width": 10
+              }
+            ]
+          },
+          {
+            "id": "tentacle1",
+            "kind": "group",
+            "animation": [
+              {
+                "playback": "once",
+                "keys": [
+                  {
+                    "at": 0,
+                    "rotation": 0,
+                    "easing": "smooth"
+                  },
+                  {
+                    "at": 1,
+                    "rotation": -30,
+                    "easing": "smooth"
+                  },
+                  {
+                    "at": 2,
+                    "rotation": 20,
+                    "easing": "smooth"
+                  },
+                  {
+                    "at": 3,
+                    "rotation": -20,
+                    "easing": "smooth"
+                  },
+                  {
+                    "at": 4,
+                    "rotation": 0,
+                    "easing": "smooth"
+                  }
+                ]
+              }
+            ],
+            "position": [
+              -35,
+              -75
+            ],
+            "pivot": [
+              0,
+              0
+            ],
+            "children": [
+              {
+                "id": "curve1",
+                "kind": "path",
+                "d": "M0 0 Q-33 28 -46 51 Q-69 78 -74 48",
+                "fill": "none",
+                "stroke": "#20251f",
+                "width": 15
+              },
+              {
+                "id": "inner1",
+                "kind": "path",
+                "d": "M0 0 Q-33 28 -46 51 Q-69 78 -74 48",
+                "fill": "none",
+                "stroke": "#b7c5ae",
+                "width": 10
+              }
+            ]
+          },
+          {
+            "id": "tentacle2",
+            "kind": "group",
+            "animation": [
+              {
+                "playback": "once",
+                "keys": [
+                  {
+                    "at": 0,
+                    "rotation": 0,
+                    "easing": "smooth"
+                  },
+                  {
+                    "at": 1,
+                    "rotation": 0,
+                    "easing": "smooth"
+                  },
+                  {
+                    "at": 2,
+                    "rotation": 0,
+                    "easing": "smooth"
+                  },
+                  {
+                    "at": 3,
+                    "rotation": 0,
+                    "easing": "smooth"
+                  },
+                  {
+                    "at": 4,
+                    "rotation": 0,
+                    "easing": "smooth"
+                  }
+                ]
+              }
+            ],
+            "position": [
+              -21,
+              -75
+            ],
+            "pivot": [
+              0,
+              0
+            ],
+            "children": [
+              {
+                "id": "curve2",
+                "kind": "path",
+                "d": "M0 0 Q-36 28 -52 51 Q-73 78 -78 48",
+                "fill": "none",
+                "stroke": "#20251f",
+                "width": 15
+              },
+              {
+                "id": "inner2",
+                "kind": "path",
+                "d": "M0 0 Q-36 28 -52 51 Q-73 78 -78 48",
+                "fill": "none",
+                "stroke": "#b7c5ae",
+                "width": 10
+              }
+            ]
+          },
+          {
+            "id": "tentacle3",
+            "kind": "group",
+            "animation": [
+              {
+                "playback": "once",
+                "keys": [
+                  {
+                    "at": 0,
+                    "rotation": 0,
+                    "easing": "smooth"
+                  },
+                  {
+                    "at": 1,
+                    "rotation": 0,
+                    "easing": "smooth"
+                  },
+                  {
+                    "at": 2,
+                    "rotation": 0,
+                    "easing": "smooth"
+                  },
+                  {
+                    "at": 3,
+                    "rotation": 0,
+                    "easing": "smooth"
+                  },
+                  {
+                    "at": 4,
+                    "rotation": 0,
+                    "easing": "smooth"
+                  }
+                ]
+              }
+            ],
+            "position": [
+              -7,
+              -75
+            ],
+            "pivot": [
+              0,
+              0
+            ],
+            "children": [
+              {
+                "id": "curve3",
+                "kind": "path",
+                "d": "M0 0 Q-39 28 -58 51 Q-77 78 -82 48",
+                "fill": "none",
+                "stroke": "#20251f",
+                "width": 15
+              },
+              {
+                "id": "inner3",
+                "kind": "path",
+                "d": "M0 0 Q-39 28 -58 51 Q-77 78 -82 48",
+                "fill": "none",
+                "stroke": "#b7c5ae",
+                "width": 10
+              }
+            ]
+          },
+          {
+            "id": "tentacle4",
+            "kind": "group",
+            "animation": [
+              {
+                "playback": "once",
+                "keys": [
+                  {
+                    "at": 0,
+                    "rotation": 0,
+                    "easing": "smooth"
+                  },
+                  {
+                    "at": 1,
+                    "rotation": 0,
+                    "easing": "smooth"
+                  },
+                  {
+                    "at": 2,
+                    "rotation": 0,
+                    "easing": "smooth"
+                  },
+                  {
+                    "at": 3,
+                    "rotation": 0,
+                    "easing": "smooth"
+                  },
+                  {
+                    "at": 4,
+                    "rotation": 0,
+                    "easing": "smooth"
+                  }
+                ]
+              }
+            ],
+            "position": [
+              7,
+              -75
+            ],
+            "pivot": [
+              0,
+              0
+            ],
+            "children": [
+              {
+                "id": "curve4",
+                "kind": "path",
+                "d": "M0 0 Q42 28 64 51 Q81 78 86 48",
+                "fill": "none",
+                "stroke": "#20251f",
+                "width": 15
+              },
+              {
+                "id": "inner4",
+                "kind": "path",
+                "d": "M0 0 Q42 28 64 51 Q81 78 86 48",
+                "fill": "none",
+                "stroke": "#b7c5ae",
+                "width": 10
+              }
+            ]
+          },
+          {
+            "id": "tentacle5",
+            "kind": "group",
+            "animation": [
+              {
+                "playback": "once",
+                "keys": [
+                  {
+                    "at": 0,
+                    "rotation": 0,
+                    "easing": "smooth"
+                  },
+                  {
+                    "at": 1,
+                    "rotation": 0,
+                    "easing": "smooth"
+                  },
+                  {
+                    "at": 2,
+                    "rotation": 0,
+                    "easing": "smooth"
+                  },
+                  {
+                    "at": 3,
+                    "rotation": 0,
+                    "easing": "smooth"
+                  },
+                  {
+                    "at": 4,
+                    "rotation": 0,
+                    "easing": "smooth"
+                  }
+                ]
+              }
+            ],
+            "position": [
+              21,
+              -75
+            ],
+            "pivot": [
+              0,
+              0
+            ],
+            "children": [
+              {
+                "id": "curve5",
+                "kind": "path",
+                "d": "M0 0 Q45 28 70 51 Q85 78 90 48",
+                "fill": "none",
+                "stroke": "#20251f",
+                "width": 15
+              },
+              {
+                "id": "inner5",
+                "kind": "path",
+                "d": "M0 0 Q45 28 70 51 Q85 78 90 48",
+                "fill": "none",
+                "stroke": "#b7c5ae",
+                "width": 10
+              }
+            ]
+          },
+          {
+            "id": "tentacle6",
+            "kind": "group",
+            "animation": [
+              {
+                "playback": "once",
+                "keys": [
+                  {
+                    "at": 0,
+                    "rotation": 0,
+                    "easing": "smooth"
+                  },
+                  {
+                    "at": 1,
+                    "rotation": 0,
+                    "easing": "smooth"
+                  },
+                  {
+                    "at": 2,
+                    "rotation": 0,
+                    "easing": "smooth"
+                  },
+                  {
+                    "at": 3,
+                    "rotation": 0,
+                    "easing": "smooth"
+                  },
+                  {
+                    "at": 4,
+                    "rotation": 0,
+                    "easing": "smooth"
+                  }
+                ]
+              }
+            ],
+            "position": [
+              35,
+              -75
+            ],
+            "pivot": [
+              0,
+              0
+            ],
+            "children": [
+              {
+                "id": "curve6",
+                "kind": "path",
+                "d": "M0 0 Q48 28 76 51 Q89 78 94 48",
+                "fill": "none",
+                "stroke": "#20251f",
+                "width": 15
+              },
+              {
+                "id": "inner6",
+                "kind": "path",
+                "d": "M0 0 Q48 28 76 51 Q89 78 94 48",
+                "fill": "none",
+                "stroke": "#b7c5ae",
+                "width": 10
+              }
+            ]
+          },
+          {
+            "id": "tentacle7",
+            "kind": "group",
+            "animation": [
+              {
+                "playback": "once",
+                "keys": [
+                  {
+                    "at": 0,
+                    "rotation": 0,
+                    "easing": "smooth"
+                  },
+                  {
+                    "at": 1,
+                    "rotation": 0,
+                    "easing": "smooth"
+                  },
+                  {
+                    "at": 2,
+                    "rotation": 0,
+                    "easing": "smooth"
+                  },
+                  {
+                    "at": 3,
+                    "rotation": 0,
+                    "easing": "smooth"
+                  },
+                  {
+                    "at": 4,
+                    "rotation": 0,
+                    "easing": "smooth"
+                  }
+                ]
+              }
+            ],
+            "position": [
+              49,
+              -75
+            ],
+            "pivot": [
+              0,
+              0
+            ],
+            "children": [
+              {
+                "id": "curve7",
+                "kind": "path",
+                "d": "M0 0 Q51 28 82 51 Q93 78 98 48",
+                "fill": "none",
+                "stroke": "#20251f",
+                "width": 15
+              },
+              {
+                "id": "inner7",
+                "kind": "path",
+                "d": "M0 0 Q51 28 82 51 Q93 78 98 48",
+                "fill": "none",
+                "stroke": "#b7c5ae",
+                "width": 10
+              }
+            ]
+          },
+          {
+            "id": "mantle",
+            "kind": "ellipse",
+            "center": [
+              0,
+              -130
+            ],
+            "radius": [
+              65,
+              70
+            ],
+            "fill": "#b7c5ae",
+            "stroke": "#20251f",
+            "width": 3
+          },
+          {
+            "id": "eyeL",
+            "kind": "group",
+            "animation": [
+              {
+                "playback": "once",
+                "keys": [
+                  {
+                    "at": 0,
+                    "scale": [
+                      1,
+                      1
+                    ],
+                    "easing": "smooth"
+                  },
+                  {
+                    "at": 2.4,
+                    "scale": [
+                      1,
+                      1
+                    ],
+                    "easing": "smooth"
+                  },
+                  {
+                    "at": 2.5,
+                    "scale": [
+                      1,
+                      0.06
+                    ],
+                    "easing": "smooth"
+                  },
+                  {
+                    "at": 2.65,
+                    "scale": [
+                      1,
+                      1
+                    ],
+                    "easing": "smooth"
+                  },
+                  {
+                    "at": 5,
+                    "scale": [
+                      1,
+                      1
+                    ],
+                    "easing": "smooth"
+                  }
+                ]
+              }
+            ],
+            "position": [
+              -23,
+              -143
+            ],
+            "children": [
+              {
+                "kind": "ellipse",
+                "center": [
+                  0,
+                  0
+                ],
+                "radius": [
+                  22,
+                  28
+                ],
+                "fill": "#ffffff",
+                "stroke": "#20251f",
+                "width": 2
+              },
+              {
+                "kind": "ellipse",
+                "center": [
+                  4,
+                  0
+                ],
+                "radius": [
+                  5,
+                  10
+                ],
+                "fill": "#20251f"
+              }
+            ]
+          },
+          {
+            "id": "eyeR",
+            "kind": "group",
+            "animation": [
+              {
+                "playback": "once",
+                "keys": [
+                  {
+                    "at": 0,
+                    "scale": [
+                      1,
+                      1
+                    ],
+                    "easing": "smooth"
+                  },
+                  {
+                    "at": 2.4,
+                    "scale": [
+                      1,
+                      1
+                    ],
+                    "easing": "smooth"
+                  },
+                  {
+                    "at": 2.5,
+                    "scale": [
+                      1,
+                      0.06
+                    ],
+                    "easing": "smooth"
+                  },
+                  {
+                    "at": 2.65,
+                    "scale": [
+                      1,
+                      1
+                    ],
+                    "easing": "smooth"
+                  },
+                  {
+                    "at": 5,
+                    "scale": [
+                      1,
+                      1
+                    ],
+                    "easing": "smooth"
+                  }
+                ]
+              }
+            ],
+            "position": [
+              23,
+              -143
+            ],
+            "children": [
+              {
+                "kind": "ellipse",
+                "center": [
+                  0,
+                  0
+                ],
+                "radius": [
+                  22,
+                  28
+                ],
+                "fill": "#ffffff",
+                "stroke": "#20251f",
+                "width": 2
+              },
+              {
+                "kind": "ellipse",
+                "center": [
+                  4,
+                  0
+                ],
+                "radius": [
+                  5,
+                  10
+                ],
+                "fill": "#20251f"
+              }
+            ]
+          },
+          {
+            "id": "smile",
+            "kind": "path",
+            "d": "M-24 -106 Q0 -80 24 -106",
+            "fill": "none",
+            "stroke": "#20251f",
+            "width": 3
+          }
+        ],
+        "normalizedDimensions": {
+          "width": 100,
+          "height": 100
+        },
+        "material": "flat",
+        "paint": {},
+        "palette": [],
+        "facialComponents": [],
+        "apparel": [],
+        "accessories": [],
+        "decorativeMarks": [],
+        "proceduralComponents": [],
+        "motionAnchors": [],
+        "zIndex": 0
+      },
+      "artStyle": "classic",
+      "skin": "#b7c5ae",
+      "outfit": "#b7c5ae",
+      "hair": "#20251f",
+      "headWidth": 1,
+      "headHeight": 1
+    }
+  ],
+  "propDesigns": [],
+  "scenes": [
+    {
+      "id": "creatureScene",
+      "summary": "An original eight-armed creature waves two front tentacles and blinks.",
+      "duration": 5,
+      "background": "custom",
+      "backgroundNodes": [],
+      "motions": [],
+      "cast": [
+        {
+          "shadow": false,
+          "characterId": "creature",
+          "x": 270,
+          "y": 720,
+          "scale": 1.2,
+          "facing": 1
+        }
+      ],
+      "props": [],
+      "beats": [
+        {
+          "actorId": "creature",
+          "kind": "idle",
+          "start": 0,
+          "duration": 5,
+          "hand": "right",
+          "amount": 1,
+          "intent": "An original eight-armed creature waves two front tentacles and blinks."
+        }
+      ],
+      "shots": [
+        {
+          "start": 0,
+          "end": 5,
+          "focus": [
+            270,
+            560
+          ],
+          "zoom": 1.1,
+          "detail": "full"
+        }
+      ],
+      "sounds": [],
+      "dialogue": [],
+      "sceneSeed": 198356397,
+      "canonicalFrame": {
+        "fps": 60,
+        "startFrame": 0,
+        "endFrame": 300,
+        "interval": "[startFrame,endFrame)"
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "storyEvent": "An original eight-armed creature waves two front tentacles and blinks.",
+      "sceneId": "creatureScene",
+      "beatIndices": [
+        0
+      ]
+    }
+  ],
+  "seo": {
+    "titles": [
+      "Machhar Bacha, Thappad Khud Ko",
+      "One Mosquito. Three Self-Slaps."
+    ],
+    "description": "One tiny mosquito. Three careful attempts. Every slap lands on the wrong target. An original 20-second silent pencil cartoon using the reusable StickLaugh Studio v6 motion engine.",
+    "tags": [
+      "mosquito comedy",
+      "silent cartoon",
+      "self slap",
+      "visual comedy"
+    ],
+    "hashtags": [
+      "#CartoonComedy",
+      "#SilentComedy"
+    ],
+    "pinnedComment": "Machhar ko maarte hue kabhi khud ko thappad maara hai?",
+    "thumbnailText": "GALAT TARGET!"
+  },
+  "blockedReasons": [],
+  "version": 1,
+  "format": "shorts",
+  "language": "hi",
+  "replay": {
+    "schemaVersion": 1,
+    "planHash": "88e069ea7e78f8b134e6de74e8a6c5213827fdac607eecdc8a0fd470d1369677",
+    "seed": 362704308,
+    "fps": 60,
+    "totalFrames": 300,
+    "frameRounding": "nearest",
+    "evaluator": "sticklaugh-frame-evaluator-v1"
+  }
+}

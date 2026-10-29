@@ -1,0 +1,18 @@
+Naya update: pehle UPDATE-START-HERE.md padhein.
+
+npm ci
+npm run build
+npm start
+
+Server jo local URL print kare use open karein (default port 3001).
+Chrome na ho to PowerShell:
+$env:RENDER_ENGINE='resvg'; npm start
+
+.env original bytes ke saath rakhi gayi hai. Is file ko public repository mein share na karein.
+
+Videos + exact plans: deliverables/
+Reference analysis: docs/THIRD-STYLE-REFERENCE-STUDY.md
+Kya implement hua / kya abhi pending hai: docs/UPDATE-STATUS.md
+Tests, provider checks, contact diagnostics: deliverables/verification/
+
+Important: sabhi requirements complete hone ka claim nahi hai. Nayi live story Gemini 503 par ruki. Kuch encoded story-fidelity reviews fail hue; actual reports include hain. Full test suite pass hona reference-quality animation ki guarantee nahi hai.

@@ -1,0 +1,64 @@
+{
+  "name": "sticklaugh-studio",
+  "version": "9.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.12.0 <23 || >=24.0.0 <25"
+  },
+  "workspaces": [
+    "web"
+  ],
+  "scripts": {
+    "setup": "node scripts/setup.mjs",
+    "doctor": "node scripts/doctor.mjs",
+    "smoke:render": "node scripts/smoke-render.mjs",
+    "start": "node server/index.mjs",
+    "dev": "concurrently -k \"node --watch server/index.mjs\" \"npm run start -w web\"",
+    "build": "npm run build -w web",
+    "test": "node --test tests/*.test.mjs && python3 -m unittest discover -s tests -p 'test_*.py' -v",
+    "test:point12": "node --test tests/point12-asset-ready.test.mjs tests/scene-graph.test.mjs tests/visual-geometry.test.mjs && node scripts/render-point12-fixtures.mjs && python3 scripts/check-point12-raster.py",
+    "test:point13": "node --test tests/point13-asset-factory.test.mjs tests/canonical-story-ir.test.mjs tests/point12-asset-ready.test.mjs tests/scene-graph.test.mjs tests/visual-geometry.test.mjs",
+    "smoke:point13-assets": "node scripts/smoke-point13-assets.mjs",
+    "checkpoint:validate": "python3 scripts/validate_checkpoint.py",
+    "sample": "npm run samples",
+    "render:plan": "node scripts/render-plan.mjs",
+    "check": "npm test && npm run build",
+    "samples": "node scripts/render-production-samples.mjs",
+    "samples:legacy": "node scripts/render-v9-samples.mjs",
+    "demo:plans": "node scripts/make-expressive-demos.mjs && node scripts/make-creature-demo.mjs",
+    "samples:v4": "node scripts/render-v4-samples.mjs",
+    "samples:v5": "node scripts/render-v5-sample.mjs",
+    "samples:v6": "node scripts/render-v6-sample.mjs",
+    "review:v6": "node scripts/review-v6.mjs",
+    "sample:hero": "node scripts/render-v9-samples.mjs superhero-v9",
+    "review:v8": "node scripts/review-v8.mjs",
+    "smoke:providers": "node scripts/provider-smoke.mjs",
+    "smoke:download": "node scripts/smoke-story-download.mjs",
+    "smoke:audio-clock": "node scripts/smoke-audio-clock.mjs",
+    "test:point14": "node --test tests/point14-asset-providers.test.mjs tests/point13-asset-factory.test.mjs tests/canonical-story-ir.test.mjs tests/point12-asset-ready.test.mjs tests/scene-graph.test.mjs tests/visual-geometry.test.mjs",
+    "smoke:point14-assets": "node scripts/smoke-point14-assets.mjs",
+    "test:dynamic": "node --test tests/dynamic-parts.test.mjs tests/dynamic-director.test.mjs",
+    "fixtures:dynamic": "node scripts/make-dynamic-fixtures.mjs",
+    "smoke:dynamic:live": "node scripts/smoke-dynamic-live.mjs"
+  },
+  "dependencies": {
+    "@resvg/resvg-js": "2.6.2",
+    "@remotion/bundler": "4.0.536",
+    "@remotion/renderer": "4.0.536",
+    "remotion": "4.0.536",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "express": "5.1.0",
+    "helmet": "8.1.0",
+    "express-rate-limit": "8.1.0",
+    "zod": "4.1.12",
+    "dotenv": "17.2.3"
+  },
+  "devDependencies": {
+    "concurrently": "9.2.1",
+    "@types/react": "19.1.16",
+    "typescript": "5.9.3",
+    "playwright": "1.56.1"
+  }
+}

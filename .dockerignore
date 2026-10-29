@@ -1,0 +1,10 @@
+.git
+**/.env
+**/.env.*
+**/node_modules
+.angular
+web/dist
+data
+public
+deliverables
+*.log

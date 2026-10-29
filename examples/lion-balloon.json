@@ -1,0 +1,923 @@
+{
+  "humorProfile": "clean",
+  "hook": {
+    "sceneId": "brave",
+    "beatIndices": [
+      0
+    ],
+    "start": 0.1,
+    "end": 2.8,
+    "evidence": "The large lion stalks towards the small cat and its bright red balloon in one wide shot."
+  },
+  "comedy": {
+    "hook": "An enormous lion approaches a tiny cat with a red balloon.",
+    "goal": "The lion wants to intimidate the smallest animal.",
+    "escalation": [
+      "The balloon makes the lion freeze.",
+      "The tiny cat deliberately pops it.",
+      "The enormous lion hides behind the tiny cat."
+    ],
+    "payoff": "The cat becomes the brave bodyguard; the dog never even flinches.",
+    "callback": "A second much smaller balloon scares the lion away again."
+  },
+  "title": "Sher Ka Balloon Test",
+  "story": "A proud lion stalks towards a tiny cat and its red balloon. The cat and a spotted dog watch him. He makes a threatening face, then sees the balloon and freezes. The cat strolls up, calmly presses the balloon with its paw, and pops it. The enormous lion panics, jumps backwards and hides behind the tiny cat. The dog does not flinch. The cat reveals a second tiny balloon: the lion flees again, while the dog gives the cat a deadpan look.",
+  "characters": [
+    {
+      "id": "lion",
+      "name": "Raja",
+      "kind": "lion",
+      "skin": "#d4ac68",
+      "outfit": "#569e99",
+      "hair": "#8e603b",
+      "headWidth": 1.1,
+      "headHeight": 1
+    },
+    {
+      "id": "cat",
+      "name": "Chutki",
+      "kind": "cat",
+      "pattern": "tabby",
+      "skin": "#dfa06b",
+      "outfit": "#569e99",
+      "hair": "#8d6647",
+      "headWidth": 1,
+      "headHeight": 1
+    },
+    {
+      "id": "dog",
+      "name": "Deadpan Biscuit",
+      "kind": "dog",
+      "pattern": "spots",
+      "skin": "#bf925f",
+      "outfit": "#569e99",
+      "hair": "#66503c",
+      "headWidth": 1,
+      "headHeight": 1
+    }
+  ],
+  "propDesigns": [
+    {
+      "id": "balloon",
+      "name": "balloon",
+      "tether": false,
+      "type": "balloon",
+      "color": "#dd6d68",
+      "nodes": []
+    },
+    {
+      "id": "small",
+      "name": "small",
+      "tether": false,
+      "type": "balloon",
+      "color": "#719fbd",
+      "nodes": []
+    }
+  ],
+  "scenes": [
+    {
+      "id": "brave",
+      "summary": "The proud lion approaches the cat but freezes at its bright balloon. The dog calmly watches.",
+      "duration": 9,
+      "background": "park",
+      "backgroundNodes": [],
+      "motions": [],
+      "cast": [
+        {
+          "species": "lion",
+          "characterId": "lion",
+          "x": 415,
+          "y": 780,
+          "scale": 1,
+          "facing": -1
+        },
+        {
+          "species": "cat",
+          "characterId": "cat",
+          "x": 155,
+          "y": 780,
+          "scale": 0.72,
+          "facing": 1
+        },
+        {
+          "species": "dog",
+          "characterId": "dog",
+          "x": 65,
+          "y": 780,
+          "scale": 0.65,
+          "facing": 1
+        }
+      ],
+      "props": [
+        {
+          "designId": "balloon",
+          "open": 0,
+          "angle": 0,
+          "x": 242,
+          "y": 749,
+          "scale": 0.55
+        }
+      ],
+      "beats": [
+        {
+          "timing": "gentle",
+          "actorId": "lion",
+          "kind": "walk",
+          "start": 0.1,
+          "duration": 1.6,
+          "to": [
+            360,
+            780
+          ],
+          "hand": "right",
+          "emotion": "smug",
+          "amount": 1,
+          "intent": "Stalk towards the small animals."
+        },
+        {
+          "timing": "snappy",
+          "actorId": "cat",
+          "kind": "react",
+          "start": 1.6,
+          "duration": 0.3,
+          "hand": "right",
+          "emotion": "curious",
+          "amount": 1,
+          "intent": "The cat notices the lion."
+        },
+        {
+          "timing": "snappy",
+          "actorId": "lion",
+          "kind": "roar",
+          "start": 2,
+          "duration": 1.3,
+          "hand": "right",
+          "emotion": "annoyed",
+          "amount": 1,
+          "intent": "Silent threatening grimace, a short cartoony effort grunt."
+        },
+        {
+          "timing": "snappy",
+          "actorId": "cat",
+          "kind": "react",
+          "start": 3.6,
+          "duration": 0.3,
+          "hand": "right",
+          "emotion": "calm",
+          "amount": 1,
+          "intent": "The cat looks at the balloon, unimpressed."
+        },
+        {
+          "timing": "snappy",
+          "actorId": "lion",
+          "kind": "cower",
+          "start": 4,
+          "duration": 0.6,
+          "hand": "right",
+          "emotion": "shock",
+          "amount": 1,
+          "intent": "Suddenly notice the balloon."
+        },
+        {
+          "timing": "snappy",
+          "actorId": "lion",
+          "kind": "walk",
+          "start": 5.4,
+          "duration": 1.1,
+          "to": [
+            410,
+            780
+          ],
+          "hand": "right",
+          "emotion": "shock",
+          "amount": 1,
+          "intent": "Retreat one embarrassed step."
+        },
+        {
+          "timing": "snappy",
+          "actorId": "cat",
+          "kind": "walk",
+          "start": 6.7,
+          "duration": 1,
+          "to": [
+            200,
+            780
+          ],
+          "hand": "right",
+          "emotion": "smug",
+          "amount": 1,
+          "intent": "Walk confidently to the red balloon."
+        },
+        {
+          "timing": "snappy",
+          "actorId": "dog",
+          "kind": "react",
+          "start": 7.7,
+          "duration": 0.3,
+          "hand": "right",
+          "emotion": "calm",
+          "amount": 1,
+          "intent": "The dog is entirely unimpressed."
+        }
+      ],
+      "shots": [
+        {
+          "start": 0,
+          "end": 2,
+          "focus": [
+            270,
+            658
+          ],
+          "zoom": 1.1,
+          "detail": "full"
+        },
+        {
+          "start": 2,
+          "end": 3.5,
+          "focus": [
+            350,
+            601
+          ],
+          "zoom": 1.75,
+          "detail": "full",
+          "actorIds": [
+            "lion"
+          ]
+        },
+        {
+          "start": 3.5,
+          "end": 5.3,
+          "focus": [
+            285,
+            678
+          ],
+          "zoom": 1.25,
+          "detail": "full"
+        },
+        {
+          "start": 5.3,
+          "end": 9,
+          "focus": [
+            260,
+            660
+          ],
+          "zoom": 1.12,
+          "detail": "full"
+        }
+      ],
+      "sounds": [
+        {
+          "playbackRate": 1,
+          "trimSilence": true,
+          "start": 0.45,
+          "query": "footsteps",
+          "volume": 0.12,
+          "duration": 0.2,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "steps"
+        },
+        {
+          "playbackRate": 1,
+          "trimSilence": true,
+          "start": 1.1,
+          "query": "footsteps",
+          "volume": 0.11,
+          "duration": 0.2,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "steps"
+        },
+        {
+          "playbackRate": 1,
+          "trimSilence": true,
+          "start": 2.4,
+          "query": "effort grunt",
+          "volume": 0.16,
+          "duration": 0.5,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "grunt"
+        },
+        {
+          "playbackRate": 1,
+          "trimSilence": true,
+          "start": 4.2,
+          "query": "surprised gulp",
+          "volume": 0.18,
+          "duration": 0.55,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "gulp"
+        },
+        {
+          "playbackRate": 1,
+          "trimSilence": true,
+          "start": 5.7,
+          "query": "footsteps",
+          "volume": 0.12,
+          "duration": 0.17,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "steps"
+        },
+        {
+          "playbackRate": 1,
+          "trimSilence": true,
+          "start": 7.05,
+          "query": "footsteps",
+          "volume": 0.1,
+          "duration": 0.17,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "steps"
+        }
+      ],
+      "dialogue": []
+    },
+    {
+      "id": "pop",
+      "summary": "The cat punctures the balloon; the lion leaps back and flees while the cat and dog stay still.",
+      "duration": 7,
+      "background": "park",
+      "backgroundNodes": [],
+      "motions": [
+        {
+          "targetId": "balloon",
+          "start": 0.8,
+          "duration": 0.16,
+          "to": [
+            242,
+            749
+          ],
+          "arc": 0,
+          "angle": 0,
+          "scale": 0.02
+        }
+      ],
+      "cast": [
+        {
+          "species": "lion",
+          "characterId": "lion",
+          "emotion": "shock",
+          "x": 410,
+          "y": 780,
+          "scale": 1,
+          "facing": -1
+        },
+        {
+          "species": "cat",
+          "characterId": "cat",
+          "x": 200,
+          "y": 780,
+          "scale": 0.72,
+          "facing": 1
+        },
+        {
+          "species": "dog",
+          "characterId": "dog",
+          "x": 65,
+          "y": 780,
+          "scale": 0.65,
+          "facing": 1
+        }
+      ],
+      "props": [
+        {
+          "designId": "balloon",
+          "open": 0,
+          "angle": 0,
+          "x": 242,
+          "y": 749,
+          "scale": 0.55
+        }
+      ],
+      "beats": [
+        {
+          "timing": "snappy",
+          "actorId": "cat",
+          "kind": "pawPress",
+          "start": 0.2,
+          "duration": 1.2,
+          "targetId": "balloon",
+          "hand": "right",
+          "emotion": "calm",
+          "amount": 1,
+          "intent": "Press the balloon with a deliberate paw, exactly on the pop."
+        },
+        {
+          "timing": "snappy",
+          "actorId": "lion",
+          "kind": "jump",
+          "start": 0.82,
+          "duration": 0.8,
+          "hand": "right",
+          "emotion": "shock",
+          "amount": 1,
+          "intent": "The loud pop launches the huge lion into the air."
+        },
+        {
+          "timing": "snappy",
+          "actorId": "lion",
+          "kind": "run",
+          "start": 1.65,
+          "duration": 1,
+          "to": [
+            150,
+            780
+          ],
+          "hand": "right",
+          "emotion": "shock",
+          "amount": 1,
+          "intent": "Run from the tiny balloon."
+        },
+        {
+          "timing": "snappy",
+          "actorId": "cat",
+          "kind": "react",
+          "start": 2.8,
+          "duration": 0.3,
+          "hand": "right",
+          "emotion": "smug",
+          "amount": 1,
+          "intent": "The smallest animal is the bravest."
+        },
+        {
+          "timing": "snappy",
+          "actorId": "dog",
+          "kind": "react",
+          "start": 3.4,
+          "duration": 0.3,
+          "hand": "right",
+          "emotion": "calm",
+          "amount": 1,
+          "intent": "The dog has not moved an inch."
+        },
+        {
+          "timing": "gentle",
+          "actorId": "cat",
+          "kind": "walk",
+          "start": 4.3,
+          "duration": 1.8,
+          "to": [
+            275,
+            780
+          ],
+          "hand": "right",
+          "emotion": "calm",
+          "amount": 1,
+          "intent": "The cat calmly leads the way."
+        }
+      ],
+      "shots": [
+        {
+          "start": 0,
+          "end": 1.65,
+          "focus": [
+            290,
+            681
+          ],
+          "zoom": 1.15,
+          "detail": "full"
+        },
+        {
+          "start": 1.65,
+          "end": 2.7,
+          "focus": [
+            410,
+            662
+          ],
+          "zoom": 1.02,
+          "detail": "full"
+        },
+        {
+          "start": 2.7,
+          "end": 4.3,
+          "focus": [
+            110,
+            690
+          ],
+          "zoom": 1.95,
+          "detail": "full",
+          "actorIds": [
+            "cat",
+            "dog"
+          ]
+        },
+        {
+          "start": 4.3,
+          "end": 7,
+          "focus": [
+            245,
+            672
+          ],
+          "zoom": 1.18,
+          "detail": "full"
+        }
+      ],
+      "sounds": [
+        {
+          "playbackRate": 1,
+          "trimSilence": true,
+          "start": 0.8,
+          "query": "balloon pop",
+          "volume": 0.35,
+          "duration": 0.35,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "pop"
+        },
+        {
+          "playbackRate": 1,
+          "trimSilence": true,
+          "start": 0.95,
+          "query": "cartoon spring boing",
+          "volume": 0.19,
+          "duration": 0.7,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "boing"
+        },
+        {
+          "playbackRate": 1,
+          "trimSilence": true,
+          "start": 1.9,
+          "query": "footsteps",
+          "volume": 0.12,
+          "duration": 0.15,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "steps"
+        },
+        {
+          "playbackRate": 1,
+          "trimSilence": true,
+          "start": 2.2,
+          "query": "footsteps",
+          "volume": 0.12,
+          "duration": 0.15,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "steps"
+        },
+        {
+          "playbackRate": 1,
+          "trimSilence": true,
+          "start": 4.9,
+          "query": "footsteps",
+          "volume": 0.08,
+          "duration": 0.15,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "steps"
+        },
+        {
+          "playbackRate": 1,
+          "trimSilence": true,
+          "start": 5.5,
+          "query": "footsteps",
+          "volume": 0.08,
+          "duration": 0.15,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "steps"
+        }
+      ],
+      "dialogue": []
+    },
+    {
+      "id": "bodyguard",
+      "summary": "The lion hides behind the cat. A second tiny balloon sends him fleeing again, as the dog gives the cat a deadpan look.",
+      "duration": 8,
+      "background": "park",
+      "backgroundNodes": [],
+      "motions": [
+        {
+          "targetId": "small",
+          "start": 3.2,
+          "duration": 0.5,
+          "to": [
+            340,
+            765
+          ],
+          "arc": 15,
+          "angle": 0,
+          "scale": 0.27
+        }
+      ],
+      "cast": [
+        {
+          "species": "lion",
+          "characterId": "lion",
+          "x": 165,
+          "y": 780,
+          "scale": 0.9,
+          "facing": 1
+        },
+        {
+          "species": "cat",
+          "characterId": "cat",
+          "x": 295,
+          "y": 780,
+          "scale": 0.72,
+          "facing": 1
+        },
+        {
+          "species": "dog",
+          "characterId": "dog",
+          "x": 460,
+          "y": 780,
+          "scale": 0.65,
+          "facing": -1
+        }
+      ],
+      "props": [
+        {
+          "designId": "small",
+          "open": 0,
+          "angle": 0,
+          "x": 340,
+          "y": 765,
+          "scale": 0.1
+        }
+      ],
+      "beats": [
+        {
+          "timing": "snappy",
+          "actorId": "lion",
+          "kind": "cower",
+          "start": 0,
+          "duration": 0.6,
+          "hand": "right",
+          "emotion": "shock",
+          "amount": 1,
+          "intent": "Hide the huge lion behind the tiny cat."
+        },
+        {
+          "timing": "snappy",
+          "actorId": "cat",
+          "kind": "react",
+          "start": 0.8,
+          "duration": 0.3,
+          "hand": "right",
+          "emotion": "curious",
+          "amount": 1,
+          "intent": "Notice the enormous bodyguard hiding behind her."
+        },
+        {
+          "timing": "snappy",
+          "actorId": "dog",
+          "kind": "react",
+          "start": 1.3,
+          "duration": 0.3,
+          "hand": "right",
+          "emotion": "calm",
+          "amount": 1,
+          "intent": "Look directly at the cowardly lion."
+        },
+        {
+          "timing": "snappy",
+          "actorId": "cat",
+          "kind": "react",
+          "start": 3.1,
+          "duration": 0.3,
+          "hand": "right",
+          "emotion": "smug",
+          "amount": 1,
+          "intent": "Reveal a much smaller second balloon."
+        },
+        {
+          "timing": "snappy",
+          "actorId": "lion",
+          "kind": "react",
+          "start": 3.7,
+          "duration": 0.2,
+          "hand": "right",
+          "emotion": "shock",
+          "amount": 1,
+          "intent": "The lion spots the tiny balloon."
+        },
+        {
+          "timing": "snappy",
+          "actorId": "lion",
+          "kind": "run",
+          "start": 4.1,
+          "duration": 1.2,
+          "to": [
+            -300,
+            780
+          ],
+          "hand": "right",
+          "emotion": "shock",
+          "amount": 1,
+          "intent": "Run away from an even smaller balloon."
+        },
+        {
+          "timing": "snappy",
+          "actorId": "cat",
+          "kind": "react",
+          "start": 5.6,
+          "duration": 0.4,
+          "hand": "right",
+          "emotion": "smug",
+          "amount": 1,
+          "intent": "Cat and dog hold a deadpan final look."
+        },
+        {
+          "timing": "snappy",
+          "actorId": "dog",
+          "kind": "react",
+          "start": 6,
+          "duration": 0.3,
+          "hand": "right",
+          "emotion": "calm",
+          "amount": 1,
+          "intent": "The dog remains unimpressed."
+        }
+      ],
+      "shots": [
+        {
+          "start": 0,
+          "end": 3.1,
+          "focus": [
+            260,
+            655
+          ],
+          "zoom": 1.2,
+          "detail": "full"
+        },
+        {
+          "start": 3.1,
+          "end": 5.5,
+          "focus": [
+            255,
+            667
+          ],
+          "zoom": 1.2,
+          "detail": "full"
+        },
+        {
+          "start": 5.5,
+          "end": 8,
+          "focus": [
+            375,
+            686
+          ],
+          "zoom": 1.5,
+          "detail": "full",
+          "actorIds": [
+            "cat",
+            "dog"
+          ]
+        }
+      ],
+      "sounds": [
+        {
+          "playbackRate": 1,
+          "trimSilence": true,
+          "start": 0.7,
+          "query": "surprised gulp",
+          "volume": 0.15,
+          "duration": 0.6,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "gulp"
+        },
+        {
+          "playbackRate": 1,
+          "trimSilence": true,
+          "start": 3.25,
+          "query": "rubber stretch",
+          "volume": 0.12,
+          "duration": 0.6,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "stretch"
+        },
+        {
+          "playbackRate": 1,
+          "trimSilence": true,
+          "start": 3.8,
+          "query": "surprised gulp",
+          "volume": 0.16,
+          "duration": 0.4,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "gulp"
+        },
+        {
+          "playbackRate": 1,
+          "trimSilence": true,
+          "start": 4.5,
+          "query": "footsteps",
+          "volume": 0.12,
+          "duration": 0.15,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "steps"
+        },
+        {
+          "playbackRate": 1,
+          "trimSilence": true,
+          "start": 4.8,
+          "query": "footsteps",
+          "volume": 0.12,
+          "duration": 0.15,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "steps"
+        }
+      ],
+      "dialogue": []
+    }
+  ],
+  "coverage": [
+    {
+      "storyEvent": "The proud lion approaches the cat but freezes at its bright balloon. The dog calmly watches.",
+      "sceneId": "brave",
+      "beatIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "storyEvent": "The cat punctures the balloon; the lion leaps back and flees while the cat and dog stay still.",
+      "sceneId": "pop",
+      "beatIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "storyEvent": "The lion hides behind the cat. A second tiny balloon sends him fleeing again, as the dog gives the cat a deadpan look.",
+      "sceneId": "bodyguard",
+      "beatIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  ],
+  "seo": {
+    "titles": [
+      "Sher vs Balloon 😂 | The Smallest Bodyguard"
+    ],
+    "description": "The king of the jungle meets one red balloon. A tiny cat conducts the bravery test. An original silent animal cartoon with a lion, cat and dog, hand drawn vector rigs and timed physical comedy.",
+    "tags": [
+      "lion cartoon",
+      "funny cat",
+      "dog comedy",
+      "balloon pop",
+      "silent comedy",
+      "animal animation"
+    ],
+    "hashtags": [
+      "#CartoonComedy",
+      "#SilentComedy",
+      "#Shorts"
+    ],
+    "pinnedComment": "Kaun zyada smart nikla? 😂",
+    "thumbnailText": "KING OF WHAT?"
+  },
+  "blockedReasons": [],
+  "review": {
+    "method": "authored-example",
+    "planHash": "e9da8fc3b89e9dbc50d0dd11007be1be7d1b6dc188fa322b035f30bb0665ef9f",
+    "summary": "Original offline authored story and shot plan using the same reusable renderer, schema, motion engine and API as live Gemini plans. No live Gemini generation claimed."
+  },
+  "version": 1,
+  "format": "shorts",
+  "language": "hi"
+}

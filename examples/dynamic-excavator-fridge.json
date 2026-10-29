@@ -1,0 +1,713 @@
+{
+  "schemaVersion": 2,
+  "generatedAssetRefs": [],
+  "renderFps": 60,
+  "planningMode": "dynamic",
+  "productionMode": "silent-sfx",
+  "category": "slapstick",
+  "title": "The floating fridge",
+  "story": "An adult superhero watches an excavator lift a refrigerator, lower it gently, and reacts in surprise.",
+  "sourceIdea": "HAND-AUTHORED engine fixture: articulated machine and carried refrigerator; not a Gemini-generated result.",
+  "characters": [
+    {
+      "id": "hero",
+      "name": "Green powerhouse",
+      "rigVersion": 2,
+      "kind": "man",
+      "ageYears": 30,
+      "artStyle": "toon",
+      "costume": "superhero",
+      "build": "broad",
+      "skin": "#61ae68",
+      "outfit": "#775096",
+      "hair": "#655f4d",
+      "headWidth": 1,
+      "headHeight": 1
+    }
+  ],
+  "propDesigns": [
+    {
+      "visualSpec": {
+        "renderMode": "replace",
+        "silhouetteFamily": "custom-vector",
+        "geometryRecipe": [
+          {
+            "id": "base",
+            "kind": "roundedRect",
+            "rect": [
+              -100,
+              -30,
+              132,
+              35
+            ],
+            "cornerRadius": 5,
+            "fill": "#f7b731",
+            "stroke": "#23344b",
+            "width": 2
+          },
+          {
+            "id": "cab",
+            "kind": "roundedRect",
+            "rect": [
+              -75,
+              -100,
+              66,
+              75
+            ],
+            "cornerRadius": 5,
+            "fill": "#f7b731",
+            "stroke": "#23344b",
+            "width": 2
+          },
+          {
+            "id": "glass",
+            "kind": "roundedRect",
+            "rect": [
+              -66,
+              -90,
+              46,
+              48
+            ],
+            "cornerRadius": 5,
+            "fill": "#b9e4ef",
+            "stroke": "#23344b",
+            "width": 2
+          },
+          {
+            "id": "rear",
+            "kind": "group",
+            "animation": [
+              {
+                "playback": "loop",
+                "keys": [
+                  {
+                    "at": 0,
+                    "rotation": 0,
+                    "easing": "linear"
+                  },
+                  {
+                    "at": 2,
+                    "rotation": 360,
+                    "easing": "linear"
+                  }
+                ]
+              }
+            ],
+            "position": [
+              -75,
+              8
+            ],
+            "children": [
+              {
+                "id": "rearTire",
+                "kind": "ellipse",
+                "center": [
+                  0,
+                  0
+                ],
+                "radius": [
+                  30,
+                  30
+                ],
+                "fill": "#23344b",
+                "stroke": "#23344b",
+                "width": 2
+              },
+              {
+                "id": "rearRim",
+                "kind": "ellipse",
+                "center": [
+                  0,
+                  0
+                ],
+                "radius": [
+                  18.6,
+                  18.6
+                ],
+                "fill": "#dce4e9",
+                "stroke": "#23344b",
+                "width": 2
+              },
+              {
+                "id": "rearSpoke",
+                "kind": "line",
+                "from": [
+                  -15,
+                  0
+                ],
+                "to": [
+                  15,
+                  0
+                ],
+                "stroke": "#23344b",
+                "width": 3
+              },
+              {
+                "id": "rearSpoke2",
+                "kind": "line",
+                "from": [
+                  0,
+                  -15
+                ],
+                "to": [
+                  0,
+                  15
+                ],
+                "stroke": "#23344b",
+                "width": 3
+              }
+            ]
+          },
+          {
+            "id": "front",
+            "kind": "group",
+            "animation": [
+              {
+                "playback": "loop",
+                "keys": [
+                  {
+                    "at": 0,
+                    "rotation": 0,
+                    "easing": "linear"
+                  },
+                  {
+                    "at": 2,
+                    "rotation": 360,
+                    "easing": "linear"
+                  }
+                ]
+              }
+            ],
+            "position": [
+              11,
+              8
+            ],
+            "children": [
+              {
+                "id": "frontTire",
+                "kind": "ellipse",
+                "center": [
+                  0,
+                  0
+                ],
+                "radius": [
+                  25,
+                  25
+                ],
+                "fill": "#23344b",
+                "stroke": "#23344b",
+                "width": 2
+              },
+              {
+                "id": "frontRim",
+                "kind": "ellipse",
+                "center": [
+                  0,
+                  0
+                ],
+                "radius": [
+                  15.5,
+                  15.5
+                ],
+                "fill": "#dce4e9",
+                "stroke": "#23344b",
+                "width": 2
+              },
+              {
+                "id": "frontSpoke",
+                "kind": "line",
+                "from": [
+                  -12.5,
+                  0
+                ],
+                "to": [
+                  12.5,
+                  0
+                ],
+                "stroke": "#23344b",
+                "width": 3
+              },
+              {
+                "id": "frontSpoke2",
+                "kind": "line",
+                "from": [
+                  0,
+                  -12.5
+                ],
+                "to": [
+                  0,
+                  12.5
+                ],
+                "stroke": "#23344b",
+                "width": 3
+              }
+            ]
+          },
+          {
+            "id": "boom",
+            "kind": "group",
+            "animation": [
+              {
+                "playback": "once",
+                "keys": [
+                  {
+                    "at": 0,
+                    "rotation": -30,
+                    "easing": "smooth"
+                  },
+                  {
+                    "at": 3,
+                    "rotation": -85,
+                    "easing": "smooth"
+                  },
+                  {
+                    "at": 6,
+                    "rotation": -45,
+                    "easing": "smooth"
+                  },
+                  {
+                    "at": 10,
+                    "rotation": -30,
+                    "easing": "smooth"
+                  }
+                ]
+              }
+            ],
+            "position": [
+              15,
+              -50
+            ],
+            "rotation": -30,
+            "children": [
+              {
+                "id": "arm",
+                "kind": "roundedRect",
+                "rect": [
+                  0,
+                  -9,
+                  95,
+                  18
+                ],
+                "cornerRadius": 5,
+                "fill": "#f7b731",
+                "stroke": "#23344b",
+                "width": 2
+              },
+              {
+                "id": "stick",
+                "kind": "group",
+                "animation": [
+                  {
+                    "playback": "once",
+                    "keys": [
+                      {
+                        "at": 0,
+                        "rotation": 45,
+                        "easing": "smooth"
+                      },
+                      {
+                        "at": 3,
+                        "rotation": 80,
+                        "easing": "smooth"
+                      },
+                      {
+                        "at": 6,
+                        "rotation": 35,
+                        "easing": "smooth"
+                      },
+                      {
+                        "at": 10,
+                        "rotation": 45,
+                        "easing": "smooth"
+                      }
+                    ]
+                  }
+                ],
+                "position": [
+                  95,
+                  0
+                ],
+                "rotation": 45,
+                "children": [
+                  {
+                    "id": "stickMetal",
+                    "kind": "roundedRect",
+                    "rect": [
+                      0,
+                      -7,
+                      65,
+                      14
+                    ],
+                    "cornerRadius": 5,
+                    "fill": "#f7b731",
+                    "stroke": "#23344b",
+                    "width": 2
+                  },
+                  {
+                    "id": "bucket",
+                    "kind": "group",
+                    "animation": [
+                      {
+                        "playback": "once",
+                        "keys": [
+                          {
+                            "at": 0,
+                            "rotation": 20,
+                            "easing": "smooth"
+                          },
+                          {
+                            "at": 3,
+                            "rotation": -20,
+                            "easing": "smooth"
+                          },
+                          {
+                            "at": 6,
+                            "rotation": 30,
+                            "easing": "smooth"
+                          },
+                          {
+                            "at": 10,
+                            "rotation": 20,
+                            "easing": "smooth"
+                          }
+                        ]
+                      }
+                    ],
+                    "position": [
+                      65,
+                      0
+                    ],
+                    "children": [
+                      {
+                        "id": "bucketShape",
+                        "kind": "path",
+                        "d": "M-8 -8 L35 -8 L45 20 L-8 20 Z",
+                        "fill": "#f7b731",
+                        "stroke": "#23344b",
+                        "width": 3
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "normalizedDimensions": {
+          "width": 100,
+          "height": 100
+        },
+        "material": "flat",
+        "paint": {},
+        "palette": [],
+        "facialComponents": [],
+        "apparel": [],
+        "accessories": [],
+        "decorativeMarks": [],
+        "proceduralComponents": [],
+        "motionAnchors": [],
+        "zIndex": 0
+      },
+      "id": "excavator",
+      "name": "Articulated excavator",
+      "type": "drawing",
+      "color": "#b3bda3",
+      "nodes": []
+    },
+    {
+      "visualSpec": {
+        "renderMode": "replace",
+        "silhouetteFamily": "custom-vector",
+        "geometryRecipe": [
+          {
+            "id": "shell",
+            "kind": "roundedRect",
+            "rect": [
+              -43,
+              -100,
+              86,
+              150
+            ],
+            "cornerRadius": 5,
+            "fill": "#dce4e9",
+            "stroke": "#23344b",
+            "width": 2
+          },
+          {
+            "id": "inside",
+            "kind": "roundedRect",
+            "rect": [
+              -35,
+              -90,
+              70,
+              130
+            ],
+            "cornerRadius": 5,
+            "fill": "#91b7c5",
+            "stroke": "#23344b",
+            "width": 2
+          },
+          {
+            "id": "shelf",
+            "kind": "line",
+            "from": [
+              -34,
+              -25
+            ],
+            "to": [
+              34,
+              -25
+            ],
+            "stroke": "#23344b",
+            "width": 3
+          },
+          {
+            "id": "food",
+            "kind": "roundedRect",
+            "rect": [
+              -25,
+              -65,
+              20,
+              35
+            ],
+            "cornerRadius": 5,
+            "fill": "#f29f55",
+            "stroke": "#23344b",
+            "width": 2
+          },
+          {
+            "id": "door",
+            "kind": "group",
+            "pivot": [
+              -42,
+              0
+            ],
+            "children": [
+              {
+                "id": "doorPanel",
+                "kind": "roundedRect",
+                "rect": [
+                  -42,
+                  -99,
+                  84,
+                  148
+                ],
+                "cornerRadius": 5,
+                "fill": "#e9f1f5",
+                "stroke": "#23344b",
+                "width": 2
+              },
+              {
+                "id": "seam",
+                "kind": "line",
+                "from": [
+                  -40,
+                  -45
+                ],
+                "to": [
+                  40,
+                  -45
+                ],
+                "stroke": "#23344b",
+                "width": 3
+              },
+              {
+                "id": "grip",
+                "kind": "line",
+                "from": [
+                  25,
+                  -35
+                ],
+                "to": [
+                  25,
+                  -4
+                ],
+                "stroke": "#23344b",
+                "width": 5
+              }
+            ]
+          }
+        ],
+        "normalizedDimensions": {
+          "width": 100,
+          "height": 100
+        },
+        "material": "flat",
+        "paint": {},
+        "palette": [],
+        "facialComponents": [],
+        "apparel": [],
+        "accessories": [],
+        "decorativeMarks": [],
+        "proceduralComponents": [],
+        "motionAnchors": [],
+        "zIndex": 0
+      },
+      "id": "fridge",
+      "name": "Refrigerator",
+      "type": "drawing",
+      "color": "#b3bda3",
+      "nodes": []
+    }
+  ],
+  "scenes": [
+    {
+      "id": "lift",
+      "summary": "The excavator lifts the fridge while a green superhero reacts.",
+      "duration": 10,
+      "background": "street",
+      "backgroundNodes": [],
+      "motions": [],
+      "cast": [
+        {
+          "characterId": "hero",
+          "x": 60,
+          "y": 780,
+          "scale": 0.55,
+          "facing": 1,
+          "rigVersion": 2
+        }
+      ],
+      "props": [
+        {
+          "designId": "excavator",
+          "open": 0,
+          "angle": 0,
+          "x": 260,
+          "y": 760,
+          "scale": 1
+        },
+        {
+          "partAttachment": {
+            "targetId": "excavator",
+            "nodeId": "bucket",
+            "start": 0,
+            "end": 8,
+            "offset": [
+              18,
+              -28
+            ],
+            "angle": 0
+          },
+          "designId": "fridge",
+          "open": 0,
+          "angle": 0,
+          "x": 410,
+          "y": 630,
+          "scale": 0.4
+        }
+      ],
+      "beats": [
+        {
+          "actorId": "hero",
+          "kind": "perform",
+          "start": 0,
+          "duration": 10,
+          "hand": "right",
+          "amount": 1,
+          "keyframes": [
+            {
+              "at": 0,
+              "pose": {
+                "eyeOpen": 1,
+                "mouthAperture": 0
+              }
+            },
+            {
+              "at": 0.3,
+              "pose": {
+                "mouthAperture": 1,
+                "browHeight": [
+                  -10,
+                  -10
+                ],
+                "headAngle": 12
+              }
+            },
+            {
+              "at": 0.6,
+              "pose": {
+                "mouthAperture": 0.3,
+                "headAngle": -8
+              }
+            },
+            {
+              "at": 1,
+              "pose": {
+                "mouthAperture": 0,
+                "headAngle": 0
+              }
+            }
+          ],
+          "intent": "Watch the articulated lift with changing eyes and mouth"
+        }
+      ],
+      "shots": [
+        {
+          "start": 0,
+          "end": 10,
+          "focus": [
+            270,
+            585
+          ],
+          "zoom": 1,
+          "detail": "full"
+        }
+      ],
+      "sounds": [],
+      "dialogue": [],
+      "sceneSeed": 2701806187,
+      "canonicalFrame": {
+        "fps": 60,
+        "startFrame": 0,
+        "endFrame": 600,
+        "interval": "[startFrame,endFrame)"
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "storyEvent": "The excavator lifts and lowers the refrigerator while the hero reacts",
+      "sceneId": "lift",
+      "beatIndices": [
+        0
+      ]
+    }
+  ],
+  "seo": {
+    "titles": [
+      "The floating fridge"
+    ],
+    "description": "An authored technical fixture showing nested joints and carried object continuity.",
+    "tags": [
+      "animation"
+    ],
+    "hashtags": [],
+    "pinnedComment": "",
+    "thumbnailText": "Careful!"
+  },
+  "blockedReasons": [],
+  "version": 1,
+  "format": "landscape",
+  "language": "en",
+  "comedySettings": {
+    "innuendo": "off",
+    "profanity": "off",
+    "physicalIntensity": "medium"
+  },
+  "seed": 429867875,
+  "provenance": {
+    "origin": "legacy-migration",
+    "sourceSchemaVersion": 1,
+    "generator": "legacy-import"
+  },
+  "replay": {
+    "schemaVersion": 1,
+    "planHash": "686c520df9e64f445f3a4b4055859868faea5109c036b2fa8b7b6d60e045f3b5",
+    "seed": 429867875,
+    "fps": 60,
+    "totalFrames": 600,
+    "frameRounding": "nearest",
+    "evaluator": "sticklaugh-frame-evaluator-v1"
+  }
+}

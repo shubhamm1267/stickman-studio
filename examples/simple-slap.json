@@ -1,0 +1,1393 @@
+{
+  "humorProfile": "clean",
+  "hook": {
+    "sceneId": "swat",
+    "beatIndices": [
+      0,
+      1,
+      2
+    ],
+    "start": 0,
+    "end": 2.6,
+    "evidence": "The insect visibly lands on the cheek; he notices it and begins the palm swing within the first two seconds."
+  },
+  "comedy": {
+    "hook": "A tiny mosquito sits on the cheek of a man who thinks one slap will solve it.",
+    "goal": "Hit the mosquito.",
+    "escalation": [
+      "The first slap hits only his own cheek.",
+      "Changing hands produces the same painful result.",
+      "Using both hands only squashes his own face."
+    ],
+    "payoff": "He folds his hands in surrender while the mosquito sits on his head.",
+    "callback": "The tiny unhurt opponent returns while the man has two red cheeks."
+  },
+  "title": "Machhar Bacha, Thappad Khud Ko",
+  "story": "A mosquito sits on a man’s right cheek. He smiles, aims carefully and slaps, but the mosquito flies away first. His own slap squashes his face. It lands on his other cheek; the same thing happens with the other hand. Angry now, he prepares to squash it between both palms on his nose. It escapes again, and his face squashes between his own hands. He opens his empty hands, then folds them in surrender. The mosquito calmly sits on his head while he gives the viewer a defeated stare.",
+  "characters": [
+    {
+      "id": "man",
+      "name": "Raghu",
+      "kind": "man",
+      "artStyle": "pencil",
+      "hairStyle": "sidepart",
+      "faceShape": "long",
+      "wardrobe": "default",
+      "skin": "#eee8cc",
+      "outfit": "#9ab4a4",
+      "hair": "#565846",
+      "headWidth": 1.05,
+      "headHeight": 0.92
+    }
+  ],
+  "propDesigns": [
+    {
+      "id": "mosquito",
+      "name": "A very smug mosquito",
+      "type": "drawing",
+      "color": "#a5b293",
+      "nodes": [
+        {
+          "kind": "ellipse",
+          "motion": "flutter",
+          "center": [
+            -7,
+            -8
+          ],
+          "radius": [
+            14,
+            6
+          ],
+          "fill": "#e3e9d1",
+          "width": 1.4
+        },
+        {
+          "kind": "ellipse",
+          "motion": "flutter",
+          "center": [
+            8,
+            -10
+          ],
+          "radius": [
+            14,
+            7
+          ],
+          "fill": "#e3e9d1",
+          "width": 1.4
+        },
+        {
+          "kind": "ellipse",
+          "center": [
+            0,
+            8
+          ],
+          "radius": [
+            6,
+            13
+          ],
+          "fill": "#a5b293",
+          "width": 1.8
+        },
+        {
+          "kind": "line",
+          "from": [
+            -4,
+            12
+          ],
+          "to": [
+            -13,
+            22
+          ],
+          "width": 1.2
+        },
+        {
+          "kind": "line",
+          "from": [
+            3,
+            12
+          ],
+          "to": [
+            11,
+            23
+          ],
+          "width": 1.2
+        },
+        {
+          "kind": "path",
+          "d": "M-5 4 L-15 -1 L-13 -8 M5 4 L15 -1 L13 -8",
+          "width": 1.5
+        },
+        {
+          "kind": "ellipse",
+          "center": [
+            0,
+            -3
+          ],
+          "radius": [
+            10,
+            10
+          ],
+          "fill": "#f6f1da",
+          "width": 1.5
+        },
+        {
+          "kind": "ellipse",
+          "center": [
+            -4,
+            -6
+          ],
+          "radius": [
+            4,
+            5
+          ],
+          "fill": "#ffffff",
+          "width": 1
+        },
+        {
+          "kind": "ellipse",
+          "center": [
+            4,
+            -6
+          ],
+          "radius": [
+            4,
+            5
+          ],
+          "fill": "#ffffff",
+          "width": 1
+        },
+        {
+          "kind": "ellipse",
+          "center": [
+            -3,
+            -6
+          ],
+          "radius": [
+            1.3,
+            2
+          ],
+          "fill": "#293329",
+          "width": 0
+        },
+        {
+          "kind": "ellipse",
+          "center": [
+            5,
+            -6
+          ],
+          "radius": [
+            1.3,
+            2
+          ],
+          "fill": "#293329",
+          "width": 0
+        },
+        {
+          "kind": "line",
+          "from": [
+            6,
+            1
+          ],
+          "to": [
+            21,
+            5
+          ],
+          "width": 1.5
+        },
+        {
+          "kind": "path",
+          "d": "M-4 4 Q0 8 5 4 M-6 -12 L-10 -18 M5 -12 L9 -18",
+          "width": 1.2
+        }
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "id": "swat",
+      "summary": "Three attempts to hit a mosquito become three self-slaps; he folds his hands in surrender and the mosquito perches on his head.",
+      "duration": 20,
+      "background": "custom",
+      "backgroundNodes": [],
+      "motions": [
+        {
+          "targetId": "mosquito",
+          "start": 0,
+          "duration": 0.7,
+          "to": [
+            297.5,
+            419
+          ],
+          "arc": 30,
+          "angle": 0
+        },
+        {
+          "targetId": "mosquito",
+          "start": 2.3,
+          "duration": 0.14,
+          "to": [
+            390,
+            340
+          ],
+          "arc": 45,
+          "angle": 0
+        },
+        {
+          "targetId": "mosquito",
+          "start": 4.55,
+          "duration": 0.45,
+          "to": [
+            202.5,
+            419
+          ],
+          "arc": 50,
+          "angle": 0
+        },
+        {
+          "targetId": "mosquito",
+          "start": 6,
+          "duration": 0.14,
+          "to": [
+            116,
+            330
+          ],
+          "arc": 45,
+          "angle": 0
+        },
+        {
+          "targetId": "mosquito",
+          "start": 8.15,
+          "duration": 0.5,
+          "to": [
+            253,
+            399
+          ],
+          "arc": 45,
+          "angle": 0
+        },
+        {
+          "targetId": "mosquito",
+          "start": 10.42,
+          "duration": 0.12,
+          "to": [
+            250,
+            253
+          ],
+          "arc": 30,
+          "angle": 0
+        },
+        {
+          "targetId": "mosquito",
+          "start": 12.6,
+          "duration": 0.7,
+          "to": [
+            315,
+            314
+          ],
+          "arc": 25,
+          "angle": 0
+        },
+        {
+          "targetId": "mosquito",
+          "start": 15.6,
+          "duration": 0.7,
+          "to": [
+            250,
+            287
+          ],
+          "arc": 20,
+          "angle": 0
+        }
+      ],
+      "cast": [
+        {
+          "characterId": "man",
+          "initialPose": {
+            "headScale": [
+              1,
+              1
+            ],
+            "mouthOpen": 1,
+            "handScale": 1.4,
+            "head": [
+              0,
+              -405
+            ],
+            "hip": [
+              0,
+              -160
+            ],
+            "leftHand": [
+              -60,
+              -130
+            ],
+            "rightHand": [
+              60,
+              -130
+            ],
+            "headAngle": 0
+          },
+          "emotion": "curious",
+          "x": 250,
+          "y": 780,
+          "scale": 0.95,
+          "facing": 1
+        }
+      ],
+      "props": [
+        {
+          "designId": "mosquito",
+          "open": 0,
+          "angle": 0,
+          "x": 397,
+          "y": 367,
+          "scale": 0.75
+        }
+      ],
+      "beats": [
+        {
+          "timing": "smooth",
+          "actorId": "man",
+          "kind": "perform",
+          "start": 0,
+          "duration": 1.3,
+          "hand": "right",
+          "amount": 1,
+          "keyframes": [
+            {
+              "at": 0,
+              "pose": {
+                "eyeOpen": 1,
+                "gaze": [
+                  10,
+                  -3
+                ],
+                "headAngle": -5
+              },
+              "emotion": "curious"
+            },
+            {
+              "at": 0.5,
+              "pose": {
+                "gaze": [
+                  12,
+                  8
+                ],
+                "headAngle": 3
+              }
+            },
+            {
+              "at": 1,
+              "pose": {
+                "eyeOpen": 0.55,
+                "headAngle": 0
+              },
+              "emotion": "smug"
+            }
+          ],
+          "intent": "A tiny mosquito lands on his cheek; his eyes track it before he forms an overconfident smile."
+        },
+        {
+          "timing": "smooth",
+          "actorId": "man",
+          "kind": "swat",
+          "start": 1.75,
+          "duration": 1.15,
+          "targetId": "mosquito",
+          "to": [
+            297.5,
+            419
+          ],
+          "hand": "right",
+          "emotion": "strain",
+          "amount": 1,
+          "intent": "He swats his right cheek; the insect leaves before contact, so only his own face gets slapped."
+        },
+        {
+          "timing": "smooth",
+          "actorId": "man",
+          "kind": "perform",
+          "start": 2.486,
+          "duration": 1.5,
+          "hand": "right",
+          "amount": 1,
+          "keyframes": [
+            {
+              "at": 0,
+              "pose": {
+                "headScale": [
+                  1,
+                  1
+                ],
+                "eyeOpen": 1,
+                "mouthOpen": 1,
+                "head": [
+                  0,
+                  -405
+                ],
+                "headAngle": 0
+              },
+              "emotion": "shock"
+            },
+            {
+              "at": 0.065,
+              "pose": {
+                "blush": 0.55,
+                "headScale": [
+                  1.22,
+                  0.78
+                ],
+                "eyeOpen": 0,
+                "mouthOpen": 1.2,
+                "head": [
+                  -18,
+                  -401
+                ],
+                "headAngle": -16
+              },
+              "emotion": "jawdrop"
+            },
+            {
+              "at": 0.23,
+              "pose": {
+                "headScale": [
+                  0.94,
+                  1.06
+                ],
+                "eyeOpen": 0.6,
+                "mouthOpen": 1,
+                "head": [
+                  -6,
+                  -405
+                ],
+                "headAngle": -5
+              }
+            },
+            {
+              "at": 0.46,
+              "pose": {
+                "headScale": [
+                  1,
+                  1
+                ],
+                "eyeOpen": 1,
+                "mouthOpen": 0.85,
+                "head": [
+                  0,
+                  -405
+                ],
+                "headAngle": 0
+              }
+            },
+            {
+              "at": 0.68,
+              "pose": {
+                "eyeOpen": 0,
+                "mouthOpen": 0.65
+              },
+              "emotion": "defeat"
+            },
+            {
+              "at": 0.82,
+              "pose": {
+                "eyeOpen": 0.5
+              }
+            },
+            {
+              "at": 1,
+              "pose": {
+                "eyeOpen": 0.5,
+                "mouthOpen": 0.55
+              }
+            }
+          ],
+          "intent": "The missed swat lands on his own cheek; a fast squash settles into a stunned blink."
+        },
+        {
+          "timing": "smooth",
+          "actorId": "man",
+          "kind": "custom",
+          "start": 4.25,
+          "duration": 0.45,
+          "hand": "right",
+          "emotion": "defeat",
+          "amount": 1,
+          "pose": {
+            "eyeOpen": 0.45,
+            "rightHand": [
+              55,
+              -375
+            ],
+            "headAngle": -6
+          },
+          "intent": "He cautiously touches the cheek he just slapped."
+        },
+        {
+          "timing": "smooth",
+          "actorId": "man",
+          "kind": "custom",
+          "start": 4.9,
+          "duration": 0.4,
+          "hand": "right",
+          "emotion": "annoyed",
+          "amount": 1,
+          "pose": {
+            "eyeOpen": 1,
+            "gaze": [
+              -12,
+              6
+            ],
+            "rightHand": [
+              65,
+              -130
+            ],
+            "headAngle": 0
+          },
+          "intent": "The mosquito settles on his other cheek and he stares across at it."
+        },
+        {
+          "timing": "smooth",
+          "actorId": "man",
+          "kind": "swat",
+          "start": 5.45,
+          "duration": 1.15,
+          "targetId": "mosquito",
+          "to": [
+            202.5,
+            419
+          ],
+          "hand": "left",
+          "emotion": "extreme",
+          "amount": 1,
+          "intent": "He tries his left palm, hits his own left cheek and misses the escaping mosquito."
+        },
+        {
+          "timing": "smooth",
+          "actorId": "man",
+          "kind": "perform",
+          "start": 6.186,
+          "duration": 1.5,
+          "hand": "right",
+          "amount": 1,
+          "keyframes": [
+            {
+              "at": 0,
+              "pose": {
+                "headScale": [
+                  1,
+                  1
+                ],
+                "eyeOpen": 1,
+                "mouthOpen": 1,
+                "head": [
+                  0,
+                  -405
+                ],
+                "headAngle": 0
+              },
+              "emotion": "shock"
+            },
+            {
+              "at": 0.065,
+              "pose": {
+                "blush": 0.55,
+                "headScale": [
+                  1.22,
+                  0.78
+                ],
+                "eyeOpen": 0,
+                "mouthOpen": 1.2,
+                "head": [
+                  18,
+                  -401
+                ],
+                "headAngle": 16
+              },
+              "emotion": "jawdrop"
+            },
+            {
+              "at": 0.23,
+              "pose": {
+                "headScale": [
+                  0.94,
+                  1.06
+                ],
+                "eyeOpen": 0.6,
+                "mouthOpen": 1,
+                "head": [
+                  6,
+                  -405
+                ],
+                "headAngle": 5
+              }
+            },
+            {
+              "at": 0.46,
+              "pose": {
+                "headScale": [
+                  1,
+                  1
+                ],
+                "eyeOpen": 1,
+                "mouthOpen": 0.85,
+                "head": [
+                  0,
+                  -405
+                ],
+                "headAngle": 0
+              }
+            },
+            {
+              "at": 0.68,
+              "pose": {
+                "eyeOpen": 0,
+                "mouthOpen": 0.65
+              },
+              "emotion": "defeat"
+            },
+            {
+              "at": 0.82,
+              "pose": {
+                "eyeOpen": 0.5
+              }
+            },
+            {
+              "at": 1,
+              "pose": {
+                "eyeOpen": 0.5,
+                "mouthOpen": 0.55
+              }
+            }
+          ],
+          "intent": "The missed swat lands on his own cheek; a fast squash settles into a stunned blink."
+        },
+        {
+          "timing": "smooth",
+          "actorId": "man",
+          "kind": "custom",
+          "start": 7.85,
+          "duration": 0.45,
+          "hand": "right",
+          "emotion": "shock",
+          "amount": 1,
+          "pose": {
+            "eyeOpen": 1,
+            "gaze": [
+              -8,
+              10
+            ],
+            "leftHand": [
+              -80,
+              -290
+            ],
+            "rightHand": [
+              80,
+              -290
+            ],
+            "headAngle": -8
+          },
+          "intent": "He inspects both guilty palms after the second self-slap."
+        },
+        {
+          "timing": "smooth",
+          "actorId": "man",
+          "kind": "perform",
+          "start": 8.6,
+          "duration": 1.6,
+          "hand": "right",
+          "amount": 1,
+          "keyframes": [
+            {
+              "at": 0,
+              "pose": {
+                "eyeOpen": 1,
+                "gaze": [
+                  0,
+                  11
+                ],
+                "headAngle": 0
+              },
+              "emotion": "annoyed"
+            },
+            {
+              "at": 0.5,
+              "pose": {
+                "eyeOpen": 0.4,
+                "mouthOpen": 0.8,
+                "head": [
+                  0,
+                  -412
+                ],
+                "leftHand": [
+                  -145,
+                  -380
+                ],
+                "rightHand": [
+                  145,
+                  -380
+                ]
+              },
+              "emotion": "strain",
+              "leftHandShape": "open",
+              "rightHandShape": "open"
+            },
+            {
+              "at": 0.82,
+              "pose": {
+                "eyeOpen": 0.2,
+                "head": [
+                  0,
+                  -412
+                ],
+                "leftHand": [
+                  -145,
+                  -405
+                ],
+                "rightHand": [
+                  145,
+                  -405
+                ]
+              }
+            },
+            {
+              "at": 1,
+              "pose": {
+                "leftHand": [
+                  -145,
+                  -405
+                ],
+                "rightHand": [
+                  145,
+                  -405
+                ]
+              }
+            }
+          ],
+          "intent": "It lands on his nose. He slowly opens both palms to make an enormous trap."
+        },
+        {
+          "timing": "smooth",
+          "actorId": "man",
+          "kind": "perform",
+          "start": 10.3,
+          "duration": 1.4,
+          "hand": "right",
+          "amount": 1,
+          "contactAt": 0.19,
+          "keyframes": [
+            {
+              "at": 0,
+              "pose": {
+                "headScale": [
+                  1,
+                  1
+                ],
+                "eyeOpen": 0.2,
+                "head": [
+                  0,
+                  -412
+                ],
+                "leftHand": [
+                  -145,
+                  -405
+                ],
+                "rightHand": [
+                  145,
+                  -405
+                ]
+              },
+              "emotion": "strain",
+              "leftHandShape": "open",
+              "rightHandShape": "open"
+            },
+            {
+              "at": 0.19,
+              "pose": {
+                "blush": 1,
+                "headScale": [
+                  0.72,
+                  1.22
+                ],
+                "eyeOpen": 0,
+                "mouthOpen": 0.6,
+                "leftHand": [
+                  -25,
+                  -405
+                ],
+                "rightHand": [
+                  25,
+                  -405
+                ]
+              },
+              "emotion": "extreme",
+              "timing": "snappy"
+            },
+            {
+              "at": 0.4,
+              "pose": {
+                "headScale": [
+                  0.72,
+                  1.22
+                ],
+                "eyeOpen": 0,
+                "leftHand": [
+                  -25,
+                  -405
+                ],
+                "rightHand": [
+                  25,
+                  -405
+                ]
+              }
+            },
+            {
+              "at": 0.66,
+              "pose": {
+                "headScale": [
+                  1.08,
+                  0.95
+                ],
+                "eyeOpen": 1,
+                "mouthOpen": 1.2,
+                "head": [
+                  0,
+                  -405
+                ],
+                "leftHand": [
+                  -72,
+                  -370
+                ],
+                "rightHand": [
+                  72,
+                  -370
+                ]
+              },
+              "emotion": "jawdrop"
+            },
+            {
+              "at": 1,
+              "pose": {
+                "headScale": [
+                  1,
+                  1
+                ],
+                "eyeOpen": 1,
+                "mouthOpen": 1,
+                "leftHand": [
+                  -95,
+                  -345
+                ],
+                "rightHand": [
+                  95,
+                  -345
+                ]
+              }
+            }
+          ],
+          "intent": "Both palms squash his own face while the mosquito escapes upward; release slowly enough to read the mistake."
+        },
+        {
+          "timing": "smooth",
+          "actorId": "man",
+          "kind": "perform",
+          "start": 12,
+          "duration": 1.5,
+          "hand": "right",
+          "amount": 1,
+          "keyframes": [
+            {
+              "at": 0,
+              "pose": {
+                "gaze": [
+                  -12,
+                  9
+                ],
+                "headAngle": -10
+              },
+              "emotion": "shock",
+              "leftHandShape": "open",
+              "rightHandShape": "open"
+            },
+            {
+              "at": 0.45,
+              "pose": {
+                "gaze": [
+                  12,
+                  9
+                ],
+                "headAngle": 10
+              }
+            },
+            {
+              "at": 0.8,
+              "pose": {
+                "gaze": [
+                  0,
+                  -10
+                ],
+                "headAngle": 0
+              },
+              "emotion": "jawdrop"
+            },
+            {
+              "at": 1,
+              "pose": {
+                "mouthOpen": 0.7,
+                "gaze": [
+                  0,
+                  -10
+                ]
+              }
+            }
+          ],
+          "intent": "He checks the empty palms one at a time, unable to believe he missed again."
+        },
+        {
+          "timing": "smooth",
+          "actorId": "man",
+          "kind": "perform",
+          "start": 14,
+          "duration": 1.8,
+          "hand": "right",
+          "amount": 1,
+          "keyframes": [
+            {
+              "at": 0,
+              "pose": {
+                "leftHand": [
+                  -95,
+                  -345
+                ],
+                "rightHand": [
+                  95,
+                  -345
+                ]
+              },
+              "emotion": "defeat",
+              "leftHandShape": "open",
+              "rightHandShape": "open"
+            },
+            {
+              "at": 0.5,
+              "pose": {
+                "eyeOpen": 0.5,
+                "mouthOpen": 0.6,
+                "leftHand": [
+                  -5,
+                  -210
+                ],
+                "rightHand": [
+                  5,
+                  -210
+                ]
+              }
+            },
+            {
+              "at": 0.8,
+              "pose": {
+                "gaze": [
+                  0,
+                  -10
+                ],
+                "headAngle": 8
+              }
+            },
+            {
+              "at": 1,
+              "pose": {
+                "eyeOpen": 0.5,
+                "gaze": [
+                  0,
+                  2
+                ],
+                "headAngle": 0
+              }
+            }
+          ],
+          "intent": "He gives up and folds both hands in a pleading namaste to the tiny winner."
+        },
+        {
+          "timing": "smooth",
+          "actorId": "man",
+          "kind": "perform",
+          "start": 16.3,
+          "duration": 1.25,
+          "hand": "right",
+          "amount": 1,
+          "keyframes": [
+            {
+              "at": 0,
+              "pose": {
+                "eyeOpen": 1,
+                "gaze": [
+                  0,
+                  -12
+                ]
+              },
+              "emotion": "shock"
+            },
+            {
+              "at": 0.35,
+              "pose": {
+                "eyeOpen": 0.45,
+                "mouthOpen": 0.6,
+                "gaze": [
+                  0,
+                  2
+                ]
+              },
+              "emotion": "defeat"
+            },
+            {
+              "at": 0.58,
+              "pose": {
+                "eyeOpen": 0
+              }
+            },
+            {
+              "at": 0.77,
+              "pose": {
+                "eyeOpen": 0.45
+              }
+            },
+            {
+              "at": 1,
+              "pose": {
+                "eyeOpen": 0.45,
+                "headAngle": -5
+              }
+            }
+          ],
+          "intent": "The mosquito sits calmly on his head. He slowly looks at the audience with red cheeks and a defeated blink."
+        },
+        {
+          "timing": "smooth",
+          "actorId": "man",
+          "kind": "perform",
+          "start": 18.25,
+          "duration": 1.4,
+          "hand": "right",
+          "amount": 1,
+          "keyframes": [
+            {
+              "at": 0,
+              "pose": {
+                "eyeOpen": 0.45,
+                "headAngle": -5
+              },
+              "emotion": "defeat"
+            },
+            {
+              "at": 0.35,
+              "pose": {
+                "eyeOpen": 0.2,
+                "headAngle": 0
+              }
+            },
+            {
+              "at": 0.6,
+              "pose": {
+                "eyeOpen": 0
+              }
+            },
+            {
+              "at": 0.83,
+              "pose": {
+                "eyeOpen": 0.35
+              }
+            },
+            {
+              "at": 1,
+              "pose": {
+                "eyeOpen": 0.35,
+                "mouthOpen": 0.5
+              }
+            }
+          ],
+          "intent": "He maintains the surrender pose; one last slow eyelid drop completes the silent punchline."
+        }
+      ],
+      "shots": [
+        {
+          "start": 0,
+          "end": 1.3,
+          "focus": [
+            280,
+            515
+          ],
+          "zoom": 1.12,
+          "detail": "full"
+        },
+        {
+          "start": 1.3,
+          "end": 3.8,
+          "focus": [
+            270,
+            420
+          ],
+          "zoom": 1.65,
+          "detail": "full"
+        },
+        {
+          "start": 3.8,
+          "end": 5.3,
+          "focus": [
+            265,
+            410
+          ],
+          "zoom": 1.9,
+          "detail": "full"
+        },
+        {
+          "start": 5.3,
+          "end": 7.8,
+          "focus": [
+            245,
+            420
+          ],
+          "zoom": 1.65,
+          "detail": "full"
+        },
+        {
+          "start": 7.8,
+          "end": 12,
+          "focus": [
+            250,
+            420
+          ],
+          "zoom": 1.55,
+          "detail": "full"
+        },
+        {
+          "start": 12,
+          "end": 15.6,
+          "focus": [
+            260,
+            420
+          ],
+          "zoom": 1.65,
+          "detail": "full"
+        },
+        {
+          "start": 15.6,
+          "end": 20,
+          "focus": [
+            250,
+            425
+          ],
+          "zoom": 1.75,
+          "detail": "full"
+        }
+      ],
+      "sounds": [
+        {
+          "playbackRate": 1,
+          "trimSilence": false,
+          "start": 0,
+          "query": "single mosquito buzz",
+          "volume": 0.09,
+          "duration": 0.7,
+          "required": true,
+          "sourceStart": 2,
+          "pan": 0,
+          "fixture": "buzz"
+        },
+        {
+          "beatIndex": 1,
+          "syncTo": "contact",
+          "playbackRate": 1,
+          "trimSilence": false,
+          "start": 0,
+          "query": "cartoon slap",
+          "volume": 0.26,
+          "duration": 0.24,
+          "required": true,
+          "sourceStart": 0.17,
+          "pan": 0,
+          "fixture": "slap"
+        },
+        {
+          "playbackRate": 1,
+          "trimSilence": false,
+          "start": 2.3,
+          "query": "single mosquito buzz",
+          "volume": 0.1,
+          "duration": 0.45,
+          "required": true,
+          "sourceStart": 4,
+          "pan": 0,
+          "fixture": "buzz"
+        },
+        {
+          "playbackRate": 1,
+          "trimSilence": false,
+          "start": 4.55,
+          "query": "single mosquito buzz",
+          "volume": 0.1,
+          "duration": 0.5,
+          "required": true,
+          "sourceStart": 6,
+          "pan": 0,
+          "fixture": "buzz"
+        },
+        {
+          "beatIndex": 5,
+          "syncTo": "contact",
+          "playbackRate": 1,
+          "trimSilence": false,
+          "start": 0,
+          "query": "cartoon slap",
+          "volume": 0.27,
+          "duration": 0.24,
+          "required": true,
+          "sourceStart": 0.17,
+          "pan": 0,
+          "fixture": "slap"
+        },
+        {
+          "playbackRate": 1,
+          "trimSilence": false,
+          "start": 6,
+          "query": "single mosquito buzz",
+          "volume": 0.1,
+          "duration": 0.45,
+          "required": true,
+          "sourceStart": 8,
+          "pan": 0,
+          "fixture": "buzz"
+        },
+        {
+          "playbackRate": 1,
+          "trimSilence": false,
+          "start": 8.15,
+          "query": "single mosquito buzz",
+          "volume": 0.09,
+          "duration": 0.55,
+          "required": true,
+          "sourceStart": 10,
+          "pan": 0,
+          "fixture": "buzz"
+        },
+        {
+          "beatIndex": 9,
+          "syncTo": "contact",
+          "playbackRate": 1,
+          "trimSilence": false,
+          "start": 0,
+          "query": "cartoon slap",
+          "volume": 0.29,
+          "duration": 0.3,
+          "required": true,
+          "sourceStart": 0.17,
+          "pan": 0,
+          "fixture": "slap"
+        },
+        {
+          "playbackRate": 1,
+          "trimSilence": false,
+          "start": 10.42,
+          "query": "single mosquito buzz",
+          "volume": 0.11,
+          "duration": 0.35,
+          "required": true,
+          "sourceStart": 12,
+          "pan": 0,
+          "fixture": "buzz"
+        },
+        {
+          "playbackRate": 1,
+          "trimSilence": false,
+          "start": 12.6,
+          "query": "single mosquito buzz",
+          "volume": 0.08,
+          "duration": 0.7,
+          "required": true,
+          "sourceStart": 14,
+          "pan": 0,
+          "fixture": "buzz"
+        },
+        {
+          "playbackRate": 1,
+          "trimSilence": false,
+          "start": 15.6,
+          "query": "single mosquito buzz",
+          "volume": 0.08,
+          "duration": 0.7,
+          "required": true,
+          "sourceStart": 16,
+          "pan": 0,
+          "fixture": "buzz"
+        }
+      ],
+      "dialogue": []
+    }
+  ],
+  "coverage": [
+    {
+      "storyEvent": "A mosquito lands; his first slap hits his own right cheek.",
+      "sceneId": "swat",
+      "beatIndices": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "storyEvent": "His left-hand attempt also hits only his own cheek.",
+      "sceneId": "swat",
+      "beatIndices": [
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "storyEvent": "His two-handed trap squashes his own face while the insect escapes.",
+      "sceneId": "swat",
+      "beatIndices": [
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "storyEvent": "He surrenders and the unhurt mosquito sits on his head.",
+      "sceneId": "swat",
+      "beatIndices": [
+        11,
+        12,
+        13
+      ]
+    }
+  ],
+  "seo": {
+    "titles": [
+      "Machhar Bacha, Thappad Khud Ko",
+      "One Mosquito. Three Self-Slaps."
+    ],
+    "description": "One tiny mosquito. Three careful attempts. Every slap lands on the wrong target. An original 20-second silent pencil cartoon using the reusable StickLaugh Studio v6 motion engine.",
+    "tags": [
+      "mosquito comedy",
+      "silent cartoon",
+      "self slap",
+      "visual comedy"
+    ],
+    "hashtags": [
+      "#CartoonComedy",
+      "#SilentComedy"
+    ],
+    "pinnedComment": "Machhar ko maarte hue kabhi khud ko thappad maara hai?",
+    "thumbnailText": "GALAT TARGET!"
+  },
+  "blockedReasons": [],
+  "review": {
+    "method": "authored-example",
+    "planHash": "fbf27e73557f9ff910b955cb813e702e3c507085e33bd8890b543b46e35d693c",
+    "summary": "Manually authored single-premise visual gag. Fixed cheek strike points, insect dodges before contact, frame-based pose performance, continuous contact sound anchors and explicit surrender ending. Human visual QA; no live Gemini call claimed."
+  },
+  "version": 1,
+  "format": "shorts",
+  "language": "hi"
+}

@@ -1,0 +1,1187 @@
+{
+  "humorProfile": "adult-relatable",
+  "hook": {
+    "sceneId": "waiting",
+    "beatIndices": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "start": 0,
+    "end": 2,
+    "evidence": "A fart puff moves from the headphone wearer towards the shaking newspaper, followed by a glare above its edge."
+  },
+  "comedy": {
+    "hook": "A fart shakes the newspaper of the woman beside a smug headphone wearer.",
+    "goal": "He wants to enjoy his music without embarrassment.",
+    "escalation": [
+      "He assumes tapping the ear cup fixes the problem.",
+      "A bigger fart reveals that grandma was already wearing a gas mask.",
+      "He copies her with a useless red ear cup over his nose."
+    ],
+    "payoff": "She farts back, protected, while his headphone respirator fails.",
+    "callback": "She returns to her newspaper while he is stuck holding the ridiculous filter."
+  },
+  "title": "Headphones Smell Cancel Nahi Karte",
+  "story": "Bunty wears bright red headphones in a waiting room and lets out a fart beside an older woman reading a newspaper. He thinks the headphones make everything private. She glares over the paper. He taps his ear cup and smugly releases a much bigger fart. She slowly lowers the newspaper to reveal a green gas mask she was already wearing. Bunty copies the idea by holding a red headphone cup over his nose. She farts back, perfectly protected, while his improvised mask fails. She returns to reading and he stares at the viewer in defeat.",
+  "characters": [
+    {
+      "id": "Bunty",
+      "name": "Bunty",
+      "kind": "man",
+      "artStyle": "pencil",
+      "hairStyle": "tuft",
+      "faceShape": "round",
+      "wardrobe": "shirt",
+      "skin": "#efeccf",
+      "outfit": "#a9bdb4",
+      "hair": "#443f31",
+      "headWidth": 1,
+      "headHeight": 1
+    },
+    {
+      "id": "Dadi",
+      "name": "Mrs Deshpande",
+      "kind": "grandma",
+      "artStyle": "pencil",
+      "hairStyle": "bob",
+      "faceShape": "long",
+      "skin": "#e6dfc2",
+      "outfit": "#b4a6bd",
+      "hair": "#827e70",
+      "headWidth": 0.93,
+      "headHeight": 1
+    }
+  ],
+  "propDesigns": [
+    {
+      "id": "chairB",
+      "name": "Waiting room chair",
+      "type": "chair",
+      "color": "#87998e",
+      "nodes": []
+    },
+    {
+      "id": "chairD",
+      "name": "Waiting room chair",
+      "type": "chair",
+      "color": "#87998e",
+      "nodes": []
+    },
+    {
+      "id": "phones",
+      "name": "Bright red over-ear headphones",
+      "type": "headphones",
+      "color": "#d76c54",
+      "nodes": []
+    },
+    {
+      "id": "mask",
+      "name": "Green protective gas mask",
+      "type": "gasMask",
+      "color": "#719a77",
+      "nodes": []
+    },
+    {
+      "id": "paper",
+      "name": "Folded newspaper",
+      "label": "NEWS",
+      "type": "newspaper",
+      "color": "#ede9d1",
+      "nodes": []
+    }
+  ],
+  "scenes": [
+    {
+      "id": "waiting",
+      "summary": "A smug headphone wearer discovers that grandma’s gas mask beats his improvised ear-cup respirator.",
+      "duration": 22,
+      "background": "room",
+      "backgroundNodes": [],
+      "motions": [],
+      "cast": [
+        {
+          "characterId": "Bunty",
+          "initialPose": {
+            "head": [
+              0,
+              -350
+            ],
+            "hip": [
+              0,
+              -100
+            ],
+            "leftFoot": [
+              -55,
+              0
+            ],
+            "rightFoot": [
+              60,
+              0
+            ]
+          },
+          "emotion": "smug",
+          "x": 145,
+          "y": 800,
+          "scale": 0.92,
+          "facing": 1
+        },
+        {
+          "characterId": "Dadi",
+          "initialPose": {
+            "head": [
+              0,
+              -350
+            ],
+            "hip": [
+              0,
+              -100
+            ],
+            "leftHand": [
+              -85,
+              -305
+            ],
+            "rightHand": [
+              85,
+              -305
+            ],
+            "leftFoot": [
+              -55,
+              0
+            ],
+            "rightFoot": [
+              60,
+              0
+            ]
+          },
+          "emotion": "calm",
+          "x": 400,
+          "y": 800,
+          "scale": 0.88,
+          "facing": -1
+        }
+      ],
+      "props": [
+        {
+          "designId": "chairB",
+          "open": 0,
+          "angle": 0,
+          "x": 145,
+          "y": 710,
+          "scale": 0.92
+        },
+        {
+          "designId": "chairD",
+          "open": 0,
+          "angle": 0,
+          "x": 400,
+          "y": 712,
+          "scale": 0.88
+        },
+        {
+          "attachment": {
+            "actorId": "Bunty",
+            "bone": "head",
+            "offset": [
+              0,
+              0
+            ]
+          },
+          "designId": "phones",
+          "open": 0,
+          "angle": 0,
+          "x": 145,
+          "y": 478,
+          "scale": 0.95
+        },
+        {
+          "attachment": {
+            "actorId": "Dadi",
+            "bone": "head",
+            "offset": [
+              0,
+              18
+            ]
+          },
+          "designId": "mask",
+          "open": 0,
+          "angle": 0,
+          "x": 400,
+          "y": 518,
+          "scale": 0.92
+        },
+        {
+          "attachment": {
+            "actorId": "Dadi",
+            "bone": "leftHand",
+            "offset": [
+              85,
+              -30
+            ]
+          },
+          "designId": "paper",
+          "open": 0,
+          "angle": 0,
+          "x": 400,
+          "y": 505,
+          "scale": 1
+        }
+      ],
+      "beats": [
+        {
+          "timing": "snappy",
+          "actorId": "Bunty",
+          "kind": "fart",
+          "start": 0.35,
+          "duration": 0.85,
+          "to": [
+            380,
+            505
+          ],
+          "hand": "right",
+          "emotion": "smug",
+          "amount": 0.7,
+          "intent": "A headphone-wearing man lets out a fart; the newspaper next to him shakes."
+        },
+        {
+          "timing": "snappy",
+          "actorId": "Dadi",
+          "kind": "custom",
+          "start": 0.6,
+          "duration": 0.16,
+          "hand": "right",
+          "emotion": "annoyed",
+          "amount": 1,
+          "pose": {
+            "leftHand": [
+              -80,
+              -300
+            ],
+            "rightHand": [
+              83,
+              -310
+            ]
+          },
+          "intent": "The first noise makes the paper twitch in her hands."
+        },
+        {
+          "timing": "snappy",
+          "actorId": "Dadi",
+          "kind": "custom",
+          "start": 0.8,
+          "duration": 0.2,
+          "hand": "right",
+          "amount": 1,
+          "pose": {
+            "leftHand": [
+              -85,
+              -305
+            ],
+            "rightHand": [
+              85,
+              -305
+            ]
+          },
+          "intent": "She steadies the paper."
+        },
+        {
+          "timing": "gentle",
+          "actorId": "Dadi",
+          "kind": "custom",
+          "start": 1.35,
+          "duration": 0.5,
+          "hand": "right",
+          "emotion": "annoyed",
+          "amount": 1,
+          "pose": {
+            "gaze": [
+              -10,
+              1
+            ],
+            "head": [
+              0,
+              -430
+            ]
+          },
+          "intent": "She raises her eyes above the newspaper and glares; the mask remains hidden."
+        },
+        {
+          "timing": "snappy",
+          "actorId": "Bunty",
+          "kind": "custom",
+          "start": 2.25,
+          "duration": 0.4,
+          "hand": "right",
+          "emotion": "smug",
+          "amount": 1,
+          "pose": {
+            "leftHand": [
+              -65,
+              -140
+            ],
+            "rightHand": [
+              65,
+              -140
+            ],
+            "headAngle": -9
+          },
+          "intent": "He enjoys his private music, unaware the headphones cannot hide his smell."
+        },
+        {
+          "timing": "snappy",
+          "actorId": "Bunty",
+          "kind": "custom",
+          "start": 2.8,
+          "duration": 0.4,
+          "hand": "right",
+          "emotion": "smug",
+          "amount": 1,
+          "pose": {
+            "headAngle": 8
+          },
+          "intent": "He bobs to the imaginary beat."
+        },
+        {
+          "timing": "snappy",
+          "actorId": "Bunty",
+          "kind": "custom",
+          "start": 3.35,
+          "duration": 0.4,
+          "hand": "right",
+          "amount": 1,
+          "pose": {
+            "headAngle": 0
+          },
+          "intent": "One satisfied nod completes his little groove."
+        },
+        {
+          "timing": "snappy",
+          "actorId": "Dadi",
+          "kind": "custom",
+          "start": 3.9,
+          "duration": 0.35,
+          "hand": "right",
+          "emotion": "annoyed",
+          "amount": 1,
+          "pose": {
+            "gaze": [
+              -11,
+              3
+            ],
+            "headAngle": -5
+          },
+          "intent": "Her deadpan stare says she heard every bit of it."
+        },
+        {
+          "timing": "snappy",
+          "actorId": "Bunty",
+          "kind": "custom",
+          "start": 4.8,
+          "duration": 0.5,
+          "hand": "right",
+          "emotion": "curious",
+          "amount": 1,
+          "pose": {
+            "gaze": [
+              9,
+              4
+            ],
+            "rightHand": [
+              65,
+              -350
+            ]
+          },
+          "intent": "He taps the headphone cup, assuming that fixes everything."
+        },
+        {
+          "timing": "snappy",
+          "actorId": "Bunty",
+          "kind": "custom",
+          "start": 5.45,
+          "duration": 0.4,
+          "hand": "right",
+          "emotion": "smug",
+          "amount": 1,
+          "pose": {
+            "rightHand": [
+              65,
+              -140
+            ],
+            "headAngle": -5
+          },
+          "intent": "He gives her an innocent smile and lowers his hand."
+        },
+        {
+          "timing": "gentle",
+          "actorId": "Bunty",
+          "kind": "custom",
+          "start": 6.15,
+          "duration": 0.55,
+          "hand": "right",
+          "emotion": "extreme",
+          "amount": 1,
+          "pose": {
+            "head": [
+              0,
+              -338
+            ],
+            "hip": [
+              0,
+              -92
+            ],
+            "leftHand": [
+              -50,
+              -155
+            ],
+            "rightHand": [
+              50,
+              -155
+            ],
+            "headAngle": 0
+          },
+          "intent": "A second fart builds: cheeks inflate and his whole pose tightens."
+        },
+        {
+          "timing": "snappy",
+          "actorId": "Bunty",
+          "kind": "custom",
+          "start": 6.9,
+          "duration": 0.35,
+          "hand": "right",
+          "emotion": "extreme",
+          "amount": 1,
+          "pose": {
+            "head": [
+              5,
+              -330
+            ]
+          },
+          "intent": "He squeezes his eyes shut, trying to act casual."
+        },
+        {
+          "timing": "snappy",
+          "actorId": "Bunty",
+          "kind": "fart",
+          "start": 7.45,
+          "duration": 1.65,
+          "to": [
+            390,
+            490
+          ],
+          "hand": "right",
+          "emotion": "extreme",
+          "amount": 1.7,
+          "intent": "A much larger fart travels directly towards her newspaper."
+        },
+        {
+          "timing": "snappy",
+          "actorId": "Bunty",
+          "kind": "custom",
+          "start": 9.2,
+          "duration": 0.35,
+          "hand": "right",
+          "emotion": "smug",
+          "amount": 1,
+          "pose": {
+            "gaze": [
+              9,
+              3
+            ],
+            "head": [
+              0,
+              -350
+            ],
+            "hip": [
+              0,
+              -100
+            ]
+          },
+          "intent": "He relaxes into a smug smile, certain his headphones solved it."
+        },
+        {
+          "timing": "snappy",
+          "actorId": "Dadi",
+          "kind": "custom",
+          "start": 9.65,
+          "duration": 0.3,
+          "hand": "right",
+          "emotion": "calm",
+          "amount": 1,
+          "pose": {
+            "headAngle": 0
+          },
+          "intent": "A final slow blink holds the suspense before the reveal."
+        },
+        {
+          "timing": "gentle",
+          "actorId": "Dadi",
+          "kind": "custom",
+          "start": 10.2,
+          "duration": 0.85,
+          "hand": "right",
+          "emotion": "calm",
+          "amount": 1,
+          "pose": {
+            "gaze": [
+              -9,
+              1
+            ],
+            "head": [
+              0,
+              -405
+            ],
+            "leftHand": [
+              -85,
+              -125
+            ],
+            "rightHand": [
+              85,
+              -125
+            ]
+          },
+          "intent": "She slowly lowers the newspaper, revealing a real green gas mask."
+        },
+        {
+          "timing": "snappy",
+          "actorId": "Bunty",
+          "kind": "custom",
+          "start": 11.3,
+          "duration": 0.25,
+          "hand": "right",
+          "emotion": "jawdrop",
+          "amount": 1,
+          "pose": {
+            "gaze": [
+              11,
+              2
+            ],
+            "leftHand": [
+              -80,
+              -235
+            ],
+            "rightHand": [
+              80,
+              -235
+            ],
+            "headAngle": 0
+          },
+          "intent": "His jaw drops when he realizes she has better equipment."
+        },
+        {
+          "timing": "gentle",
+          "actorId": "Dadi",
+          "kind": "custom",
+          "start": 12.3,
+          "duration": 0.4,
+          "hand": "right",
+          "emotion": "smug",
+          "amount": 1,
+          "pose": {
+            "gaze": [
+              -9,
+              3
+            ],
+            "headAngle": -8
+          },
+          "intent": "She tilts her masked face with a tiny triumphant look."
+        },
+        {
+          "timing": "snappy",
+          "actorId": "Bunty",
+          "kind": "pick",
+          "start": 13.45,
+          "duration": 0.65,
+          "targetId": "phones",
+          "hand": "right",
+          "emotion": "curious",
+          "amount": 1,
+          "intent": "He grips and removes his own headphones from their actual head attachment."
+        },
+        {
+          "timing": "gentle",
+          "actorId": "Bunty",
+          "kind": "custom",
+          "start": 14.25,
+          "duration": 0.6,
+          "hand": "right",
+          "emotion": "strain",
+          "amount": 1,
+          "pose": {
+            "gaze": [
+              0,
+              7
+            ],
+            "leftHand": [
+              -70,
+              -180
+            ],
+            "rightHand": [
+              0,
+              -345
+            ],
+            "wristAngle": -90
+          },
+          "intent": "He rotates one red ear cup onto his nose as an improvised gas mask."
+        },
+        {
+          "timing": "snappy",
+          "actorId": "Bunty",
+          "kind": "custom",
+          "start": 15.2,
+          "duration": 0.35,
+          "hand": "right",
+          "emotion": "smug",
+          "amount": 1,
+          "pose": {
+            "headAngle": 0
+          },
+          "intent": "He tries to look pleased with the ridiculous solution."
+        },
+        {
+          "timing": "snappy",
+          "actorId": "Dadi",
+          "kind": "fart",
+          "start": 16.05,
+          "duration": 1.15,
+          "to": [
+            160,
+            480
+          ],
+          "hand": "right",
+          "emotion": "calm",
+          "amount": 1.1,
+          "intent": "The perfectly protected grandma releases a small answer of her own."
+        },
+        {
+          "timing": "snappy",
+          "actorId": "Bunty",
+          "kind": "custom",
+          "start": 16.65,
+          "duration": 0.3,
+          "hand": "right",
+          "emotion": "shock",
+          "amount": 1,
+          "pose": {
+            "gaze": [
+              0,
+              6
+            ],
+            "head": [
+              0,
+              -350
+            ]
+          },
+          "intent": "His eyes widen: an ear cup cannot filter a smell."
+        },
+        {
+          "timing": "snappy",
+          "actorId": "Bunty",
+          "kind": "custom",
+          "start": 17.2,
+          "duration": 0.3,
+          "hand": "right",
+          "emotion": "extreme",
+          "amount": 1,
+          "pose": {
+            "headAngle": 0
+          },
+          "intent": "He puffs his cheeks and clings to his useless red nose filter."
+        },
+        {
+          "timing": "gentle",
+          "actorId": "Dadi",
+          "kind": "custom",
+          "start": 18,
+          "duration": 0.8,
+          "hand": "right",
+          "emotion": "calm",
+          "amount": 1,
+          "pose": {
+            "head": [
+              0,
+              -350
+            ],
+            "leftHand": [
+              -85,
+              -305
+            ],
+            "rightHand": [
+              85,
+              -305
+            ],
+            "headAngle": 0
+          },
+          "intent": "Grandma calmly raises the newspaper and returns to reading."
+        },
+        {
+          "timing": "snappy",
+          "actorId": "Bunty",
+          "kind": "custom",
+          "start": 19.1,
+          "duration": 0.3,
+          "hand": "right",
+          "emotion": "defeat",
+          "amount": 1,
+          "pose": {
+            "gaze": [
+              0,
+              2
+            ],
+            "headAngle": 0
+          },
+          "intent": "He looks straight at the viewer in total defeat, red ear cup still on his nose."
+        },
+        {
+          "timing": "snappy",
+          "actorId": "Bunty",
+          "kind": "custom",
+          "start": 20.3,
+          "duration": 0.4,
+          "hand": "right",
+          "emotion": "cry",
+          "amount": 1,
+          "pose": {
+            "leftHand": [
+              -80,
+              -220
+            ]
+          },
+          "intent": "One last watery blink makes the failed invention obvious."
+        },
+        {
+          "timing": "snappy",
+          "actorId": "Bunty",
+          "kind": "idle",
+          "start": 21.6,
+          "duration": 0.1,
+          "hand": "right",
+          "emotion": "defeat",
+          "amount": 1,
+          "intent": "Hold the ridiculous ear-cup respirator beside the unbothered reader."
+        }
+      ],
+      "shots": [
+        {
+          "start": 0,
+          "end": 1.35,
+          "focus": [
+            275,
+            590
+          ],
+          "zoom": 1.12,
+          "detail": "full"
+        },
+        {
+          "start": 1.35,
+          "end": 2.25,
+          "focus": [
+            400,
+            430
+          ],
+          "zoom": 1.75,
+          "detail": "full",
+          "actorIds": [
+            "Dadi"
+          ]
+        },
+        {
+          "start": 2.25,
+          "end": 3.9,
+          "focus": [
+            145,
+            470
+          ],
+          "zoom": 1.75,
+          "detail": "full",
+          "actorIds": [
+            "Bunty"
+          ]
+        },
+        {
+          "start": 3.9,
+          "end": 4.8,
+          "focus": [
+            400,
+            420
+          ],
+          "zoom": 1.85,
+          "detail": "full",
+          "actorIds": [
+            "Dadi"
+          ]
+        },
+        {
+          "start": 4.8,
+          "end": 6.15,
+          "focus": [
+            145,
+            480
+          ],
+          "zoom": 1.6,
+          "detail": "full",
+          "actorIds": [
+            "Bunty"
+          ]
+        },
+        {
+          "start": 6.15,
+          "end": 7.45,
+          "focus": [
+            145,
+            475
+          ],
+          "zoom": 1.85,
+          "detail": "full",
+          "actorIds": [
+            "Bunty"
+          ]
+        },
+        {
+          "start": 7.45,
+          "end": 9.65,
+          "focus": [
+            275,
+            580
+          ],
+          "zoom": 1.12,
+          "detail": "full"
+        },
+        {
+          "start": 9.65,
+          "end": 11.3,
+          "focus": [
+            400,
+            460
+          ],
+          "zoom": 1.65,
+          "detail": "full",
+          "actorIds": [
+            "Dadi"
+          ]
+        },
+        {
+          "start": 11.3,
+          "end": 12.3,
+          "focus": [
+            145,
+            475
+          ],
+          "zoom": 1.85,
+          "detail": "full",
+          "actorIds": [
+            "Bunty"
+          ]
+        },
+        {
+          "start": 12.3,
+          "end": 13.45,
+          "focus": [
+            400,
+            450
+          ],
+          "zoom": 1.8,
+          "detail": "full",
+          "actorIds": [
+            "Dadi"
+          ]
+        },
+        {
+          "start": 13.45,
+          "end": 15.2,
+          "focus": [
+            145,
+            470
+          ],
+          "zoom": 1.55,
+          "detail": "full",
+          "actorIds": [
+            "Bunty"
+          ]
+        },
+        {
+          "start": 15.2,
+          "end": 18,
+          "focus": [
+            275,
+            560
+          ],
+          "zoom": 1.12,
+          "detail": "full"
+        },
+        {
+          "start": 18,
+          "end": 19.1,
+          "focus": [
+            400,
+            480
+          ],
+          "zoom": 1.65,
+          "detail": "full",
+          "actorIds": [
+            "Dadi"
+          ]
+        },
+        {
+          "start": 19.1,
+          "end": 22,
+          "focus": [
+            145,
+            475
+          ],
+          "zoom": 1.9,
+          "detail": "full",
+          "actorIds": [
+            "Bunty"
+          ]
+        }
+      ],
+      "sounds": [
+        {
+          "beatIndex": 0,
+          "syncTo": "contact",
+          "playbackRate": 1,
+          "trimSilence": true,
+          "start": 0,
+          "query": "short cartoon fart",
+          "volume": 0.29,
+          "duration": 0.4,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "fartshort"
+        },
+        {
+          "playbackRate": 1,
+          "trimSilence": true,
+          "start": 0.65,
+          "query": "newspaper rustle",
+          "volume": 0.16,
+          "duration": 0.4,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "paper"
+        },
+        {
+          "playbackRate": 1,
+          "trimSilence": true,
+          "start": 1.45,
+          "query": "newspaper rustle",
+          "volume": 0.12,
+          "duration": 0.4,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "paper"
+        },
+        {
+          "playbackRate": 1,
+          "trimSilence": true,
+          "start": 4.98,
+          "query": "cartoon pop",
+          "volume": 0.1,
+          "duration": 0.14,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "pop"
+        },
+        {
+          "playbackRate": 1,
+          "trimSilence": true,
+          "start": 6.35,
+          "query": "effort grunt",
+          "volume": 0.14,
+          "duration": 0.55,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "strain"
+        },
+        {
+          "beatIndex": 12,
+          "syncTo": "contact",
+          "playbackRate": 1,
+          "trimSilence": true,
+          "start": 0,
+          "query": "long cartoon fart",
+          "volume": 0.31,
+          "duration": 1.4,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "fartlong"
+        },
+        {
+          "playbackRate": 1,
+          "trimSilence": true,
+          "start": 10.35,
+          "query": "newspaper rustle",
+          "volume": 0.15,
+          "duration": 0.55,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "paper"
+        },
+        {
+          "playbackRate": 1,
+          "trimSilence": true,
+          "start": 11.45,
+          "query": "surprised gulp",
+          "volume": 0.21,
+          "duration": 0.4,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "gulp"
+        },
+        {
+          "playbackRate": 1,
+          "trimSilence": true,
+          "start": 13.6,
+          "query": "newspaper rustle",
+          "volume": 0.08,
+          "duration": 0.25,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "paper"
+        },
+        {
+          "beatIndex": 21,
+          "syncTo": "contact",
+          "playbackRate": 1,
+          "trimSilence": true,
+          "start": 0,
+          "query": "short cartoon fart",
+          "volume": 0.29,
+          "duration": 0.5,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "fartshort"
+        },
+        {
+          "playbackRate": 1,
+          "trimSilence": true,
+          "start": 16.9,
+          "query": "surprised gulp",
+          "volume": 0.16,
+          "duration": 0.4,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "gulp"
+        },
+        {
+          "playbackRate": 1,
+          "trimSilence": true,
+          "start": 18.2,
+          "query": "newspaper rustle",
+          "volume": 0.15,
+          "duration": 0.65,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "paper"
+        }
+      ],
+      "dialogue": []
+    }
+  ],
+  "coverage": [
+    {
+      "storyEvent": "The first fart shakes the paper; grandma glares.",
+      "sceneId": "waiting",
+      "beatIndices": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "storyEvent": "He taps his headphones and releases a bigger fart.",
+      "sceneId": "waiting",
+      "beatIndices": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "storyEvent": "She lowers the paper and reveals her gas mask.",
+      "sceneId": "waiting",
+      "beatIndices": [
+        14,
+        15,
+        16,
+        17
+      ]
+    },
+    {
+      "storyEvent": "He turns his headphones into a useless nose filter.",
+      "sceneId": "waiting",
+      "beatIndices": [
+        18,
+        19,
+        20
+      ]
+    },
+    {
+      "storyEvent": "She farts back and returns to reading, leaving him defeated.",
+      "sceneId": "waiting",
+      "beatIndices": [
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ]
+    }
+  ],
+  "seo": {
+    "titles": [
+      "Headphones Smell Cancel Nahi Karte 😂",
+      "Noise Cancelling vs Grandma’s Gas Mask",
+      "He Brought Headphones. Grandma Came Prepared."
+    ],
+    "description": "He thought noise cancelling headphones made everything private. Grandma had already upgraded her equipment. An original silent cartoon about one very useless invention. Procedural Remotion animation with Freesound effects; no dialogue or captions.",
+    "tags": [
+      "silent cartoon",
+      "headphone comedy",
+      "grandma comedy",
+      "fart cartoon",
+      "original animation",
+      "funny shorts",
+      "visual comedy"
+    ],
+    "hashtags": [
+      "#Shorts",
+      "#CartoonComedy",
+      "#SilentComedy"
+    ],
+    "pinnedComment": "Headphones ya gas mask — kaun zyada prepared tha? 😂",
+    "thumbnailText": "WRONG EQUIPMENT!"
+  },
+  "blockedReasons": [],
+  "review": {
+    "method": "authored-example",
+    "planHash": "222c9c505054742e1b7c4c29affffa05a1b2ffc4ed77ca4e388640ed21796d47",
+    "summary": "Authored visual comedy example, actual reusable scene data; manually staged mask/newspaper reveal and body-bone attachments. No live Gemini call claimed."
+  },
+  "version": 1,
+  "format": "shorts",
+  "language": "hi"
+}

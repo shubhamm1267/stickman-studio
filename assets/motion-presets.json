@@ -1,0 +1,13 @@
+{
+  "sideLanding": {
+    "keyframes": [
+      {"at":0,"pose":{"bodyAngle":0}},
+      {"at":0.16,"pose":{"bodyAngle":-9,"hip":[-8,-133],"head":[-14,-374],"leftHand":[-105,-245],"rightHand":[105,-260],"leftFoot":[-38,0],"rightFoot":[40,0]}},
+      {"at":0.42,"pose":{"bodyAngle":24,"hip":[0,-102],"head":[-12,-326],"leftHand":[-120,-265],"rightHand":[115,-210],"leftFoot":[-65,0],"rightFoot":[65,-35]}},
+      {"at":0.76,"pose":{"bodyAngle":76,"hip":[0,0],"head":[-20,-245],"leftHand":[-65,-140],"rightHand":[29,-110],"leftFoot":[-65,0],"rightFoot":[0,-95]}},
+      {"at":0.88,"pose":{"bodyAngle":69,"hip":[0,-8],"head":[-25,-251],"leftHand":[-65,-140],"rightHand":[42,-110],"leftFoot":[-65,0],"rightFoot":[0,-95]}},
+      {"at":1,"pose":{"bodyAngle":73,"hip":[0,0],"head":[-20,-245],"leftHand":[-65,-140],"rightHand":[33,-110],"leftFoot":[-65,0],"rightFoot":[0,-95]}}
+    ],
+    "groundPoints":["hip","leftFoot","rightFoot","rightHand"]
+  }
+}

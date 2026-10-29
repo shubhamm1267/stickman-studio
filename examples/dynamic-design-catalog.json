@@ -1,0 +1,3117 @@
+{
+  "note": "Authored examples; generic stylized designs, not verified exact brand replicas. Arbitrary new designs come from Gemini geometry.",
+  "designs": [
+    {
+      "id": "sedan",
+      "name": "sedan",
+      "type": "drawing",
+      "visualSpec": {
+        "renderMode": "replace",
+        "geometryRecipe": [
+          {
+            "id": "body",
+            "kind": "roundedRect",
+            "rect": [
+              -100,
+              -42,
+              200,
+              45
+            ],
+            "cornerRadius": 5,
+            "fill": "#3e8dc5",
+            "stroke": "#23344b",
+            "width": 2
+          },
+          {
+            "id": "roof",
+            "kind": "path",
+            "d": "M-65 -42 L-35 -78 L28 -78 L65 -42 Z",
+            "fill": "#3e8dc5",
+            "stroke": "#23344b",
+            "width": 3
+          },
+          {
+            "id": "window",
+            "kind": "roundedRect",
+            "rect": [
+              -30,
+              -72,
+              48,
+              25
+            ],
+            "cornerRadius": 5,
+            "fill": "#b9e4ef",
+            "stroke": "#23344b",
+            "width": 2
+          },
+          {
+            "id": "headlight",
+            "kind": "roundedRect",
+            "rect": [
+              82,
+              -32,
+              15,
+              12
+            ],
+            "cornerRadius": 5,
+            "fill": "#ffe8a8",
+            "stroke": "#23344b",
+            "width": 2
+          },
+          {
+            "id": "rear",
+            "kind": "group",
+            "children": [
+              {
+                "id": "rearTire",
+                "kind": "ellipse",
+                "center": [
+                  0,
+                  0
+                ],
+                "radius": [
+                  25,
+                  25
+                ],
+                "fill": "#23344b",
+                "stroke": "#23344b",
+                "width": 2
+              },
+              {
+                "id": "rearRim",
+                "kind": "ellipse",
+                "center": [
+                  0,
+                  0
+                ],
+                "radius": [
+                  15.5,
+                  15.5
+                ],
+                "fill": "#dce4e9",
+                "stroke": "#23344b",
+                "width": 2
+              },
+              {
+                "id": "rearSpoke",
+                "kind": "line",
+                "from": [
+                  -12.5,
+                  0
+                ],
+                "to": [
+                  12.5,
+                  0
+                ],
+                "width": 3,
+                "stroke": "#23344b"
+              },
+              {
+                "id": "rearSpoke2",
+                "kind": "line",
+                "from": [
+                  0,
+                  -12.5
+                ],
+                "to": [
+                  0,
+                  12.5
+                ],
+                "width": 3,
+                "stroke": "#23344b"
+              }
+            ],
+            "position": [
+              -65,
+              5
+            ],
+            "animation": [
+              {
+                "playback": "loop",
+                "keys": [
+                  {
+                    "at": 0,
+                    "rotation": 0,
+                    "easing": "linear"
+                  },
+                  {
+                    "at": 2,
+                    "rotation": 360,
+                    "easing": "linear"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "front",
+            "kind": "group",
+            "children": [
+              {
+                "id": "frontTire",
+                "kind": "ellipse",
+                "center": [
+                  0,
+                  0
+                ],
+                "radius": [
+                  25,
+                  25
+                ],
+                "fill": "#23344b",
+                "stroke": "#23344b",
+                "width": 2
+              },
+              {
+                "id": "frontRim",
+                "kind": "ellipse",
+                "center": [
+                  0,
+                  0
+                ],
+                "radius": [
+                  15.5,
+                  15.5
+                ],
+                "fill": "#dce4e9",
+                "stroke": "#23344b",
+                "width": 2
+              },
+              {
+                "id": "frontSpoke",
+                "kind": "line",
+                "from": [
+                  -12.5,
+                  0
+                ],
+                "to": [
+                  12.5,
+                  0
+                ],
+                "width": 3,
+                "stroke": "#23344b"
+              },
+              {
+                "id": "frontSpoke2",
+                "kind": "line",
+                "from": [
+                  0,
+                  -12.5
+                ],
+                "to": [
+                  0,
+                  12.5
+                ],
+                "width": 3,
+                "stroke": "#23344b"
+              }
+            ],
+            "position": [
+              65,
+              5
+            ],
+            "animation": [
+              {
+                "playback": "loop",
+                "keys": [
+                  {
+                    "at": 0,
+                    "rotation": 0,
+                    "easing": "linear"
+                  },
+                  {
+                    "at": 2,
+                    "rotation": 360,
+                    "easing": "linear"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "door",
+            "kind": "group",
+            "children": [
+              {
+                "id": "panel",
+                "kind": "roundedRect",
+                "rect": [
+                  -30,
+                  -40,
+                  50,
+                  38
+                ],
+                "cornerRadius": 5,
+                "fill": "#3e8dc5",
+                "stroke": "#23344b",
+                "width": 2
+              },
+              {
+                "id": "handle",
+                "kind": "line",
+                "from": [
+                  2,
+                  -29
+                ],
+                "to": [
+                  12,
+                  -29
+                ],
+                "width": 3,
+                "stroke": "#23344b"
+              }
+            ],
+            "pivot": [
+              -30,
+              -40
+            ],
+            "animation": [
+              {
+                "playback": "once",
+                "keys": [
+                  {
+                    "at": 0,
+                    "scale": [
+                      1,
+                      1
+                    ]
+                  },
+                  {
+                    "at": 3,
+                    "scale": [
+                      0.3,
+                      1
+                    ]
+                  },
+                  {
+                    "at": 5,
+                    "scale": [
+                      1,
+                      1
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "grilleLeft",
+            "kind": "roundedRect",
+            "rect": [
+              87,
+              -12,
+              4,
+              14
+            ],
+            "cornerRadius": 5,
+            "fill": "#23344b",
+            "stroke": "#23344b",
+            "width": 2
+          },
+          {
+            "id": "grilleRight",
+            "kind": "roundedRect",
+            "rect": [
+              94,
+              -12,
+              4,
+              14
+            ],
+            "cornerRadius": 5,
+            "fill": "#23344b",
+            "stroke": "#23344b",
+            "width": 2
+          }
+        ],
+        "normalizedDimensions": {
+          "width": 100,
+          "height": 100
+        }
+      }
+    },
+    {
+      "id": "jeep",
+      "name": "jeep",
+      "type": "drawing",
+      "visualSpec": {
+        "renderMode": "replace",
+        "geometryRecipe": [
+          {
+            "id": "body",
+            "kind": "roundedRect",
+            "rect": [
+              -100,
+              -42,
+              200,
+              45
+            ],
+            "cornerRadius": 5,
+            "fill": "#638d54",
+            "stroke": "#23344b",
+            "width": 2
+          },
+          {
+            "id": "roof",
+            "kind": "path",
+            "d": "M-65 -42 L-65 -90 L55 -90 L65 -42 Z",
+            "fill": "#313b49",
+            "stroke": "#23344b",
+            "width": 3
+          },
+          {
+            "id": "window",
+            "kind": "roundedRect",
+            "rect": [
+              -30,
+              -72,
+              48,
+              25
+            ],
+            "cornerRadius": 5,
+            "fill": "#b9e4ef",
+            "stroke": "#23344b",
+            "width": 2
+          },
+          {
+            "id": "headlight",
+            "kind": "roundedRect",
+            "rect": [
+              82,
+              -32,
+              15,
+              12
+            ],
+            "cornerRadius": 5,
+            "fill": "#ffe8a8",
+            "stroke": "#23344b",
+            "width": 2
+          },
+          {
+            "id": "rear",
+            "kind": "group",
+            "children": [
+              {
+                "id": "rearTire",
+                "kind": "ellipse",
+                "center": [
+                  0,
+                  0
+                ],
+                "radius": [
+                  25,
+                  25
+                ],
+                "fill": "#23344b",
+                "stroke": "#23344b",
+                "width": 2
+              },
+              {
+                "id": "rearRim",
+                "kind": "ellipse",
+                "center": [
+                  0,
+                  0
+                ],
+                "radius": [
+                  15.5,
+                  15.5
+                ],
+                "fill": "#dce4e9",
+                "stroke": "#23344b",
+                "width": 2
+              },
+              {
+                "id": "rearSpoke",
+                "kind": "line",
+                "from": [
+                  -12.5,
+                  0
+                ],
+                "to": [
+                  12.5,
+                  0
+                ],
+                "width": 3,
+                "stroke": "#23344b"
+              },
+              {
+                "id": "rearSpoke2",
+                "kind": "line",
+                "from": [
+                  0,
+                  -12.5
+                ],
+                "to": [
+                  0,
+                  12.5
+                ],
+                "width": 3,
+                "stroke": "#23344b"
+              }
+            ],
+            "position": [
+              -65,
+              5
+            ],
+            "animation": [
+              {
+                "playback": "loop",
+                "keys": [
+                  {
+                    "at": 0,
+                    "rotation": 0,
+                    "easing": "linear"
+                  },
+                  {
+                    "at": 2,
+                    "rotation": 360,
+                    "easing": "linear"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "front",
+            "kind": "group",
+            "children": [
+              {
+                "id": "frontTire",
+                "kind": "ellipse",
+                "center": [
+                  0,
+                  0
+                ],
+                "radius": [
+                  25,
+                  25
+                ],
+                "fill": "#23344b",
+                "stroke": "#23344b",
+                "width": 2
+              },
+              {
+                "id": "frontRim",
+                "kind": "ellipse",
+                "center": [
+                  0,
+                  0
+                ],
+                "radius": [
+                  15.5,
+                  15.5
+                ],
+                "fill": "#dce4e9",
+                "stroke": "#23344b",
+                "width": 2
+              },
+              {
+                "id": "frontSpoke",
+                "kind": "line",
+                "from": [
+                  -12.5,
+                  0
+                ],
+                "to": [
+                  12.5,
+                  0
+                ],
+                "width": 3,
+                "stroke": "#23344b"
+              },
+              {
+                "id": "frontSpoke2",
+                "kind": "line",
+                "from": [
+                  0,
+                  -12.5
+                ],
+                "to": [
+                  0,
+                  12.5
+                ],
+                "width": 3,
+                "stroke": "#23344b"
+              }
+            ],
+            "position": [
+              65,
+              5
+            ],
+            "animation": [
+              {
+                "playback": "loop",
+                "keys": [
+                  {
+                    "at": 0,
+                    "rotation": 0,
+                    "easing": "linear"
+                  },
+                  {
+                    "at": 2,
+                    "rotation": 360,
+                    "easing": "linear"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "door",
+            "kind": "group",
+            "children": [
+              {
+                "id": "panel",
+                "kind": "roundedRect",
+                "rect": [
+                  -30,
+                  -40,
+                  50,
+                  38
+                ],
+                "cornerRadius": 5,
+                "fill": "#dca347",
+                "stroke": "#23344b",
+                "width": 2
+              },
+              {
+                "id": "handle",
+                "kind": "line",
+                "from": [
+                  2,
+                  -29
+                ],
+                "to": [
+                  12,
+                  -29
+                ],
+                "width": 3,
+                "stroke": "#23344b"
+              }
+            ],
+            "pivot": [
+              -30,
+              -40
+            ],
+            "animation": [
+              {
+                "playback": "once",
+                "keys": [
+                  {
+                    "at": 0,
+                    "scale": [
+                      1,
+                      1
+                    ]
+                  },
+                  {
+                    "at": 3,
+                    "scale": [
+                      0.3,
+                      1
+                    ]
+                  },
+                  {
+                    "at": 5,
+                    "scale": [
+                      1,
+                      1
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "spare",
+            "kind": "ellipse",
+            "center": [
+              -103,
+              -37
+            ],
+            "radius": [
+              10,
+              23
+            ],
+            "fill": "#23344b",
+            "stroke": "#23344b",
+            "width": 2
+          }
+        ],
+        "normalizedDimensions": {
+          "width": 100,
+          "height": 100
+        }
+      }
+    },
+    {
+      "id": "thar",
+      "name": "thar",
+      "type": "drawing",
+      "visualSpec": {
+        "renderMode": "replace",
+        "geometryRecipe": [
+          {
+            "id": "body",
+            "kind": "roundedRect",
+            "rect": [
+              -100,
+              -42,
+              200,
+              45
+            ],
+            "cornerRadius": 5,
+            "fill": "#dca347",
+            "stroke": "#23344b",
+            "width": 2
+          },
+          {
+            "id": "roof",
+            "kind": "path",
+            "d": "M-65 -42 L-65 -90 L55 -90 L65 -42 Z",
+            "fill": "#313b49",
+            "stroke": "#23344b",
+            "width": 3
+          },
+          {
+            "id": "window",
+            "kind": "roundedRect",
+            "rect": [
+              -30,
+              -72,
+              48,
+              25
+            ],
+            "cornerRadius": 5,
+            "fill": "#b9e4ef",
+            "stroke": "#23344b",
+            "width": 2
+          },
+          {
+            "id": "headlight",
+            "kind": "roundedRect",
+            "rect": [
+              82,
+              -32,
+              15,
+              12
+            ],
+            "cornerRadius": 5,
+            "fill": "#ffe8a8",
+            "stroke": "#23344b",
+            "width": 2
+          },
+          {
+            "id": "rear",
+            "kind": "group",
+            "children": [
+              {
+                "id": "rearTire",
+                "kind": "ellipse",
+                "center": [
+                  0,
+                  0
+                ],
+                "radius": [
+                  25,
+                  25
+                ],
+                "fill": "#23344b",
+                "stroke": "#23344b",
+                "width": 2
+              },
+              {
+                "id": "rearRim",
+                "kind": "ellipse",
+                "center": [
+                  0,
+                  0
+                ],
+                "radius": [
+                  15.5,
+                  15.5
+                ],
+                "fill": "#dce4e9",
+                "stroke": "#23344b",
+                "width": 2
+              },
+              {
+                "id": "rearSpoke",
+                "kind": "line",
+                "from": [
+                  -12.5,
+                  0
+                ],
+                "to": [
+                  12.5,
+                  0
+                ],
+                "width": 3,
+                "stroke": "#23344b"
+              },
+              {
+                "id": "rearSpoke2",
+                "kind": "line",
+                "from": [
+                  0,
+                  -12.5
+                ],
+                "to": [
+                  0,
+                  12.5
+                ],
+                "width": 3,
+                "stroke": "#23344b"
+              }
+            ],
+            "position": [
+              -65,
+              5
+            ],
+            "animation": [
+              {
+                "playback": "loop",
+                "keys": [
+                  {
+                    "at": 0,
+                    "rotation": 0,
+                    "easing": "linear"
+                  },
+                  {
+                    "at": 2,
+                    "rotation": 360,
+                    "easing": "linear"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "front",
+            "kind": "group",
+            "children": [
+              {
+                "id": "frontTire",
+                "kind": "ellipse",
+                "center": [
+                  0,
+                  0
+                ],
+                "radius": [
+                  25,
+                  25
+                ],
+                "fill": "#23344b",
+                "stroke": "#23344b",
+                "width": 2
+              },
+              {
+                "id": "frontRim",
+                "kind": "ellipse",
+                "center": [
+                  0,
+                  0
+                ],
+                "radius": [
+                  15.5,
+                  15.5
+                ],
+                "fill": "#dce4e9",
+                "stroke": "#23344b",
+                "width": 2
+              },
+              {
+                "id": "frontSpoke",
+                "kind": "line",
+                "from": [
+                  -12.5,
+                  0
+                ],
+                "to": [
+                  12.5,
+                  0
+                ],
+                "width": 3,
+                "stroke": "#23344b"
+              },
+              {
+                "id": "frontSpoke2",
+                "kind": "line",
+                "from": [
+                  0,
+                  -12.5
+                ],
+                "to": [
+                  0,
+                  12.5
+                ],
+                "width": 3,
+                "stroke": "#23344b"
+              }
+            ],
+            "position": [
+              65,
+              5
+            ],
+            "animation": [
+              {
+                "playback": "loop",
+                "keys": [
+                  {
+                    "at": 0,
+                    "rotation": 0,
+                    "easing": "linear"
+                  },
+                  {
+                    "at": 2,
+                    "rotation": 360,
+                    "easing": "linear"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "door",
+            "kind": "group",
+            "children": [
+              {
+                "id": "panel",
+                "kind": "roundedRect",
+                "rect": [
+                  -30,
+                  -40,
+                  50,
+                  38
+                ],
+                "cornerRadius": 5,
+                "fill": "#dca347",
+                "stroke": "#23344b",
+                "width": 2
+              },
+              {
+                "id": "handle",
+                "kind": "line",
+                "from": [
+                  2,
+                  -29
+                ],
+                "to": [
+                  12,
+                  -29
+                ],
+                "width": 3,
+                "stroke": "#23344b"
+              }
+            ],
+            "pivot": [
+              -30,
+              -40
+            ],
+            "animation": [
+              {
+                "playback": "once",
+                "keys": [
+                  {
+                    "at": 0,
+                    "scale": [
+                      1,
+                      1
+                    ]
+                  },
+                  {
+                    "at": 3,
+                    "scale": [
+                      0.3,
+                      1
+                    ]
+                  },
+                  {
+                    "at": 5,
+                    "scale": [
+                      1,
+                      1
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "spare",
+            "kind": "ellipse",
+            "center": [
+              -103,
+              -37
+            ],
+            "radius": [
+              10,
+              23
+            ],
+            "fill": "#23344b",
+            "stroke": "#23344b",
+            "width": 2
+          }
+        ],
+        "normalizedDimensions": {
+          "width": 100,
+          "height": 100
+        }
+      }
+    },
+    {
+      "id": "tractor",
+      "name": "tractor",
+      "type": "drawing",
+      "visualSpec": {
+        "renderMode": "replace",
+        "geometryRecipe": [
+          {
+            "id": "hood",
+            "kind": "roundedRect",
+            "rect": [
+              -2,
+              -55,
+              80,
+              45
+            ],
+            "cornerRadius": 5,
+            "fill": "#419a61",
+            "stroke": "#23344b",
+            "width": 2
+          },
+          {
+            "id": "cab",
+            "kind": "roundedRect",
+            "rect": [
+              -60,
+              -95,
+              60,
+              75
+            ],
+            "cornerRadius": 5,
+            "fill": "#419a61",
+            "stroke": "#23344b",
+            "width": 2
+          },
+          {
+            "id": "glass",
+            "kind": "roundedRect",
+            "rect": [
+              -51,
+              -88,
+              42,
+              38
+            ],
+            "cornerRadius": 5,
+            "fill": "#b9e4ef",
+            "stroke": "#23344b",
+            "width": 2
+          },
+          {
+            "id": "chimney",
+            "kind": "roundedRect",
+            "rect": [
+              38,
+              -91,
+              9,
+              40
+            ],
+            "cornerRadius": 5,
+            "fill": "#23344b",
+            "stroke": "#23344b",
+            "width": 2
+          },
+          {
+            "id": "rear",
+            "kind": "group",
+            "children": [
+              {
+                "id": "rearTire",
+                "kind": "ellipse",
+                "center": [
+                  0,
+                  0
+                ],
+                "radius": [
+                  37,
+                  37
+                ],
+                "fill": "#23344b",
+                "stroke": "#23344b",
+                "width": 2
+              },
+              {
+                "id": "rearRim",
+                "kind": "ellipse",
+                "center": [
+                  0,
+                  0
+                ],
+                "radius": [
+                  22.94,
+                  22.94
+                ],
+                "fill": "#dce4e9",
+                "stroke": "#23344b",
+                "width": 2
+              },
+              {
+                "id": "rearSpoke",
+                "kind": "line",
+                "from": [
+                  -18.5,
+                  0
+                ],
+                "to": [
+                  18.5,
+                  0
+                ],
+                "width": 3,
+                "stroke": "#23344b"
+              },
+              {
+                "id": "rearSpoke2",
+                "kind": "line",
+                "from": [
+                  0,
+                  -18.5
+                ],
+                "to": [
+                  0,
+                  18.5
+                ],
+                "width": 3,
+                "stroke": "#23344b"
+              }
+            ],
+            "position": [
+              -50,
+              0
+            ],
+            "animation": [
+              {
+                "playback": "loop",
+                "keys": [
+                  {
+                    "at": 0,
+                    "rotation": 0,
+                    "easing": "linear"
+                  },
+                  {
+                    "at": 2,
+                    "rotation": 360,
+                    "easing": "linear"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "front",
+            "kind": "group",
+            "children": [
+              {
+                "id": "frontTire",
+                "kind": "ellipse",
+                "center": [
+                  0,
+                  0
+                ],
+                "radius": [
+                  23,
+                  23
+                ],
+                "fill": "#23344b",
+                "stroke": "#23344b",
+                "width": 2
+              },
+              {
+                "id": "frontRim",
+                "kind": "ellipse",
+                "center": [
+                  0,
+                  0
+                ],
+                "radius": [
+                  14.26,
+                  14.26
+                ],
+                "fill": "#dce4e9",
+                "stroke": "#23344b",
+                "width": 2
+              },
+              {
+                "id": "frontSpoke",
+                "kind": "line",
+                "from": [
+                  -11.5,
+                  0
+                ],
+                "to": [
+                  11.5,
+                  0
+                ],
+                "width": 3,
+                "stroke": "#23344b"
+              },
+              {
+                "id": "frontSpoke2",
+                "kind": "line",
+                "from": [
+                  0,
+                  -11.5
+                ],
+                "to": [
+                  0,
+                  11.5
+                ],
+                "width": 3,
+                "stroke": "#23344b"
+              }
+            ],
+            "position": [
+              63,
+              7
+            ],
+            "animation": [
+              {
+                "playback": "loop",
+                "keys": [
+                  {
+                    "at": 0,
+                    "rotation": 0,
+                    "easing": "linear"
+                  },
+                  {
+                    "at": 2,
+                    "rotation": 360,
+                    "easing": "linear"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "normalizedDimensions": {
+          "width": 100,
+          "height": 100
+        }
+      }
+    },
+    {
+      "id": "truck",
+      "name": "truck",
+      "type": "drawing",
+      "visualSpec": {
+        "renderMode": "replace",
+        "geometryRecipe": [
+          {
+            "id": "cargo",
+            "kind": "roundedRect",
+            "rect": [
+              -100,
+              -100,
+              130,
+              92
+            ],
+            "cornerRadius": 5,
+            "fill": "#3e8dc5",
+            "stroke": "#23344b",
+            "width": 2
+          },
+          {
+            "id": "cab",
+            "kind": "roundedRect",
+            "rect": [
+              35,
+              -70,
+              65,
+              65
+            ],
+            "cornerRadius": 5,
+            "fill": "#f7b731",
+            "stroke": "#23344b",
+            "width": 2
+          },
+          {
+            "id": "glass",
+            "kind": "roundedRect",
+            "rect": [
+              48,
+              -61,
+              40,
+              30
+            ],
+            "cornerRadius": 5,
+            "fill": "#b9e4ef",
+            "stroke": "#23344b",
+            "width": 2
+          },
+          {
+            "id": "rearA",
+            "kind": "group",
+            "children": [
+              {
+                "id": "rearATire",
+                "kind": "ellipse",
+                "center": [
+                  0,
+                  0
+                ],
+                "radius": [
+                  23,
+                  23
+                ],
+                "fill": "#23344b",
+                "stroke": "#23344b",
+                "width": 2
+              },
+              {
+                "id": "rearARim",
+                "kind": "ellipse",
+                "center": [
+                  0,
+                  0
+                ],
+                "radius": [
+                  14.26,
+                  14.26
+                ],
+                "fill": "#dce4e9",
+                "stroke": "#23344b",
+                "width": 2
+              },
+              {
+                "id": "rearASpoke",
+                "kind": "line",
+                "from": [
+                  -11.5,
+                  0
+                ],
+                "to": [
+                  11.5,
+                  0
+                ],
+                "width": 3,
+                "stroke": "#23344b"
+              },
+              {
+                "id": "rearASpoke2",
+                "kind": "line",
+                "from": [
+                  0,
+                  -11.5
+                ],
+                "to": [
+                  0,
+                  11.5
+                ],
+                "width": 3,
+                "stroke": "#23344b"
+              }
+            ],
+            "position": [
+              -73,
+              0
+            ],
+            "animation": [
+              {
+                "playback": "loop",
+                "keys": [
+                  {
+                    "at": 0,
+                    "rotation": 0,
+                    "easing": "linear"
+                  },
+                  {
+                    "at": 2,
+                    "rotation": 360,
+                    "easing": "linear"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "rearB",
+            "kind": "group",
+            "children": [
+              {
+                "id": "rearBTire",
+                "kind": "ellipse",
+                "center": [
+                  0,
+                  0
+                ],
+                "radius": [
+                  23,
+                  23
+                ],
+                "fill": "#23344b",
+                "stroke": "#23344b",
+                "width": 2
+              },
+              {
+                "id": "rearBRim",
+                "kind": "ellipse",
+                "center": [
+                  0,
+                  0
+                ],
+                "radius": [
+                  14.26,
+                  14.26
+                ],
+                "fill": "#dce4e9",
+                "stroke": "#23344b",
+                "width": 2
+              },
+              {
+                "id": "rearBSpoke",
+                "kind": "line",
+                "from": [
+                  -11.5,
+                  0
+                ],
+                "to": [
+                  11.5,
+                  0
+                ],
+                "width": 3,
+                "stroke": "#23344b"
+              },
+              {
+                "id": "rearBSpoke2",
+                "kind": "line",
+                "from": [
+                  0,
+                  -11.5
+                ],
+                "to": [
+                  0,
+                  11.5
+                ],
+                "width": 3,
+                "stroke": "#23344b"
+              }
+            ],
+            "position": [
+              -22,
+              0
+            ],
+            "animation": [
+              {
+                "playback": "loop",
+                "keys": [
+                  {
+                    "at": 0,
+                    "rotation": 0,
+                    "easing": "linear"
+                  },
+                  {
+                    "at": 2,
+                    "rotation": 360,
+                    "easing": "linear"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "front",
+            "kind": "group",
+            "children": [
+              {
+                "id": "frontTire",
+                "kind": "ellipse",
+                "center": [
+                  0,
+                  0
+                ],
+                "radius": [
+                  23,
+                  23
+                ],
+                "fill": "#23344b",
+                "stroke": "#23344b",
+                "width": 2
+              },
+              {
+                "id": "frontRim",
+                "kind": "ellipse",
+                "center": [
+                  0,
+                  0
+                ],
+                "radius": [
+                  14.26,
+                  14.26
+                ],
+                "fill": "#dce4e9",
+                "stroke": "#23344b",
+                "width": 2
+              },
+              {
+                "id": "frontSpoke",
+                "kind": "line",
+                "from": [
+                  -11.5,
+                  0
+                ],
+                "to": [
+                  11.5,
+                  0
+                ],
+                "width": 3,
+                "stroke": "#23344b"
+              },
+              {
+                "id": "frontSpoke2",
+                "kind": "line",
+                "from": [
+                  0,
+                  -11.5
+                ],
+                "to": [
+                  0,
+                  11.5
+                ],
+                "width": 3,
+                "stroke": "#23344b"
+              }
+            ],
+            "position": [
+              73,
+              0
+            ],
+            "animation": [
+              {
+                "playback": "loop",
+                "keys": [
+                  {
+                    "at": 0,
+                    "rotation": 0,
+                    "easing": "linear"
+                  },
+                  {
+                    "at": 2,
+                    "rotation": 360,
+                    "easing": "linear"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "normalizedDimensions": {
+          "width": 100,
+          "height": 100
+        }
+      }
+    },
+    {
+      "id": "cycle",
+      "name": "cycle",
+      "type": "drawing",
+      "visualSpec": {
+        "renderMode": "replace",
+        "geometryRecipe": [
+          {
+            "id": "rear",
+            "kind": "group",
+            "children": [
+              {
+                "id": "rearTire",
+                "kind": "ellipse",
+                "center": [
+                  0,
+                  0
+                ],
+                "radius": [
+                  30,
+                  30
+                ],
+                "fill": "#23344b",
+                "stroke": "#23344b",
+                "width": 2
+              },
+              {
+                "id": "rearRim",
+                "kind": "ellipse",
+                "center": [
+                  0,
+                  0
+                ],
+                "radius": [
+                  18.6,
+                  18.6
+                ],
+                "fill": "#dce4e9",
+                "stroke": "#23344b",
+                "width": 2
+              },
+              {
+                "id": "rearSpoke",
+                "kind": "line",
+                "from": [
+                  -15,
+                  0
+                ],
+                "to": [
+                  15,
+                  0
+                ],
+                "width": 3,
+                "stroke": "#23344b"
+              },
+              {
+                "id": "rearSpoke2",
+                "kind": "line",
+                "from": [
+                  0,
+                  -15
+                ],
+                "to": [
+                  0,
+                  15
+                ],
+                "width": 3,
+                "stroke": "#23344b"
+              }
+            ],
+            "position": [
+              -65,
+              0
+            ],
+            "animation": [
+              {
+                "playback": "loop",
+                "keys": [
+                  {
+                    "at": 0,
+                    "rotation": 0,
+                    "easing": "linear"
+                  },
+                  {
+                    "at": 2,
+                    "rotation": 360,
+                    "easing": "linear"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "front",
+            "kind": "group",
+            "children": [
+              {
+                "id": "frontTire",
+                "kind": "ellipse",
+                "center": [
+                  0,
+                  0
+                ],
+                "radius": [
+                  30,
+                  30
+                ],
+                "fill": "#23344b",
+                "stroke": "#23344b",
+                "width": 2
+              },
+              {
+                "id": "frontRim",
+                "kind": "ellipse",
+                "center": [
+                  0,
+                  0
+                ],
+                "radius": [
+                  18.6,
+                  18.6
+                ],
+                "fill": "#dce4e9",
+                "stroke": "#23344b",
+                "width": 2
+              },
+              {
+                "id": "frontSpoke",
+                "kind": "line",
+                "from": [
+                  -15,
+                  0
+                ],
+                "to": [
+                  15,
+                  0
+                ],
+                "width": 3,
+                "stroke": "#23344b"
+              },
+              {
+                "id": "frontSpoke2",
+                "kind": "line",
+                "from": [
+                  0,
+                  -15
+                ],
+                "to": [
+                  0,
+                  15
+                ],
+                "width": 3,
+                "stroke": "#23344b"
+              }
+            ],
+            "position": [
+              65,
+              0
+            ],
+            "animation": [
+              {
+                "playback": "loop",
+                "keys": [
+                  {
+                    "at": 0,
+                    "rotation": 0,
+                    "easing": "linear"
+                  },
+                  {
+                    "at": 2,
+                    "rotation": 360,
+                    "easing": "linear"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "frameA",
+            "kind": "line",
+            "from": [
+              -65,
+              0
+            ],
+            "to": [
+              -15,
+              -45
+            ],
+            "width": 5,
+            "stroke": "#df5863"
+          },
+          {
+            "id": "frameB",
+            "kind": "line",
+            "from": [
+              -15,
+              -45
+            ],
+            "to": [
+              12,
+              0
+            ],
+            "width": 5,
+            "stroke": "#df5863"
+          },
+          {
+            "id": "frameC",
+            "kind": "line",
+            "from": [
+              12,
+              0
+            ],
+            "to": [
+              -65,
+              0
+            ],
+            "width": 5,
+            "stroke": "#df5863"
+          },
+          {
+            "id": "frameD",
+            "kind": "line",
+            "from": [
+              12,
+              0
+            ],
+            "to": [
+              47,
+              -45
+            ],
+            "width": 5,
+            "stroke": "#df5863"
+          },
+          {
+            "id": "fork",
+            "kind": "line",
+            "from": [
+              47,
+              -45
+            ],
+            "to": [
+              65,
+              0
+            ],
+            "width": 5,
+            "stroke": "#23344b"
+          },
+          {
+            "id": "seat",
+            "kind": "line",
+            "from": [
+              -30,
+              -48
+            ],
+            "to": [
+              -5,
+              -48
+            ],
+            "width": 5,
+            "stroke": "#23344b"
+          },
+          {
+            "id": "handle",
+            "kind": "line",
+            "from": [
+              43,
+              -52
+            ],
+            "to": [
+              68,
+              -55
+            ],
+            "width": 4,
+            "stroke": "#23344b"
+          },
+          {
+            "id": "pedal",
+            "kind": "group",
+            "children": [
+              {
+                "id": "crank",
+                "kind": "line",
+                "from": [
+                  -12,
+                  0
+                ],
+                "to": [
+                  12,
+                  0
+                ],
+                "width": 4,
+                "stroke": "#23344b"
+              }
+            ],
+            "position": [
+              12,
+              0
+            ],
+            "animation": [
+              {
+                "playback": "loop",
+                "keys": [
+                  {
+                    "at": 0,
+                    "rotation": 0,
+                    "easing": "linear"
+                  },
+                  {
+                    "at": 1,
+                    "rotation": 360,
+                    "easing": "linear"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "normalizedDimensions": {
+          "width": 100,
+          "height": 100
+        }
+      }
+    },
+    {
+      "id": "bike",
+      "name": "bike",
+      "type": "drawing",
+      "visualSpec": {
+        "renderMode": "replace",
+        "geometryRecipe": [
+          {
+            "id": "rear",
+            "kind": "group",
+            "children": [
+              {
+                "id": "rearTire",
+                "kind": "ellipse",
+                "center": [
+                  0,
+                  0
+                ],
+                "radius": [
+                  30,
+                  30
+                ],
+                "fill": "#23344b",
+                "stroke": "#23344b",
+                "width": 2
+              },
+              {
+                "id": "rearRim",
+                "kind": "ellipse",
+                "center": [
+                  0,
+                  0
+                ],
+                "radius": [
+                  18.6,
+                  18.6
+                ],
+                "fill": "#dce4e9",
+                "stroke": "#23344b",
+                "width": 2
+              },
+              {
+                "id": "rearSpoke",
+                "kind": "line",
+                "from": [
+                  -15,
+                  0
+                ],
+                "to": [
+                  15,
+                  0
+                ],
+                "width": 3,
+                "stroke": "#23344b"
+              },
+              {
+                "id": "rearSpoke2",
+                "kind": "line",
+                "from": [
+                  0,
+                  -15
+                ],
+                "to": [
+                  0,
+                  15
+                ],
+                "width": 3,
+                "stroke": "#23344b"
+              }
+            ],
+            "position": [
+              -65,
+              0
+            ],
+            "animation": [
+              {
+                "playback": "loop",
+                "keys": [
+                  {
+                    "at": 0,
+                    "rotation": 0,
+                    "easing": "linear"
+                  },
+                  {
+                    "at": 2,
+                    "rotation": 360,
+                    "easing": "linear"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "front",
+            "kind": "group",
+            "children": [
+              {
+                "id": "frontTire",
+                "kind": "ellipse",
+                "center": [
+                  0,
+                  0
+                ],
+                "radius": [
+                  30,
+                  30
+                ],
+                "fill": "#23344b",
+                "stroke": "#23344b",
+                "width": 2
+              },
+              {
+                "id": "frontRim",
+                "kind": "ellipse",
+                "center": [
+                  0,
+                  0
+                ],
+                "radius": [
+                  18.6,
+                  18.6
+                ],
+                "fill": "#dce4e9",
+                "stroke": "#23344b",
+                "width": 2
+              },
+              {
+                "id": "frontSpoke",
+                "kind": "line",
+                "from": [
+                  -15,
+                  0
+                ],
+                "to": [
+                  15,
+                  0
+                ],
+                "width": 3,
+                "stroke": "#23344b"
+              },
+              {
+                "id": "frontSpoke2",
+                "kind": "line",
+                "from": [
+                  0,
+                  -15
+                ],
+                "to": [
+                  0,
+                  15
+                ],
+                "width": 3,
+                "stroke": "#23344b"
+              }
+            ],
+            "position": [
+              65,
+              0
+            ],
+            "animation": [
+              {
+                "playback": "loop",
+                "keys": [
+                  {
+                    "at": 0,
+                    "rotation": 0,
+                    "easing": "linear"
+                  },
+                  {
+                    "at": 2,
+                    "rotation": 360,
+                    "easing": "linear"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "frameA",
+            "kind": "line",
+            "from": [
+              -65,
+              0
+            ],
+            "to": [
+              -15,
+              -45
+            ],
+            "width": 5,
+            "stroke": "#df5863"
+          },
+          {
+            "id": "frameB",
+            "kind": "line",
+            "from": [
+              -15,
+              -45
+            ],
+            "to": [
+              12,
+              0
+            ],
+            "width": 5,
+            "stroke": "#df5863"
+          },
+          {
+            "id": "frameC",
+            "kind": "line",
+            "from": [
+              12,
+              0
+            ],
+            "to": [
+              -65,
+              0
+            ],
+            "width": 5,
+            "stroke": "#df5863"
+          },
+          {
+            "id": "frameD",
+            "kind": "line",
+            "from": [
+              12,
+              0
+            ],
+            "to": [
+              47,
+              -45
+            ],
+            "width": 5,
+            "stroke": "#df5863"
+          },
+          {
+            "id": "fork",
+            "kind": "line",
+            "from": [
+              47,
+              -45
+            ],
+            "to": [
+              65,
+              0
+            ],
+            "width": 5,
+            "stroke": "#23344b"
+          },
+          {
+            "id": "seat",
+            "kind": "line",
+            "from": [
+              -30,
+              -48
+            ],
+            "to": [
+              -5,
+              -48
+            ],
+            "width": 5,
+            "stroke": "#23344b"
+          },
+          {
+            "id": "handle",
+            "kind": "line",
+            "from": [
+              43,
+              -52
+            ],
+            "to": [
+              68,
+              -55
+            ],
+            "width": 4,
+            "stroke": "#23344b"
+          },
+          {
+            "id": "pedal",
+            "kind": "group",
+            "children": [
+              {
+                "id": "crank",
+                "kind": "line",
+                "from": [
+                  -12,
+                  0
+                ],
+                "to": [
+                  12,
+                  0
+                ],
+                "width": 4,
+                "stroke": "#23344b"
+              }
+            ],
+            "position": [
+              12,
+              0
+            ],
+            "animation": [
+              {
+                "playback": "loop",
+                "keys": [
+                  {
+                    "at": 0,
+                    "rotation": 0,
+                    "easing": "linear"
+                  },
+                  {
+                    "at": 1,
+                    "rotation": 360,
+                    "easing": "linear"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "engine",
+            "kind": "roundedRect",
+            "rect": [
+              -25,
+              -29,
+              45,
+              24
+            ],
+            "cornerRadius": 5,
+            "fill": "#23344b",
+            "stroke": "#23344b",
+            "width": 2
+          },
+          {
+            "id": "tank",
+            "kind": "roundedRect",
+            "rect": [
+              -30,
+              -53,
+              60,
+              20
+            ],
+            "cornerRadius": 5,
+            "fill": "#3e8dc5",
+            "stroke": "#23344b",
+            "width": 2
+          },
+          {
+            "id": "exhaust",
+            "kind": "line",
+            "from": [
+              -50,
+              -10
+            ],
+            "to": [
+              5,
+              -10
+            ],
+            "width": 7,
+            "stroke": "#23344b"
+          }
+        ],
+        "normalizedDimensions": {
+          "width": 100,
+          "height": 100
+        }
+      }
+    },
+    {
+      "id": "jcb",
+      "name": "jcb",
+      "type": "drawing",
+      "visualSpec": {
+        "renderMode": "replace",
+        "geometryRecipe": [
+          {
+            "id": "base",
+            "kind": "roundedRect",
+            "rect": [
+              -100,
+              -30,
+              132,
+              35
+            ],
+            "cornerRadius": 5,
+            "fill": "#f7b731",
+            "stroke": "#23344b",
+            "width": 2
+          },
+          {
+            "id": "cab",
+            "kind": "roundedRect",
+            "rect": [
+              -75,
+              -100,
+              66,
+              75
+            ],
+            "cornerRadius": 5,
+            "fill": "#f7b731",
+            "stroke": "#23344b",
+            "width": 2
+          },
+          {
+            "id": "glass",
+            "kind": "roundedRect",
+            "rect": [
+              -66,
+              -90,
+              46,
+              48
+            ],
+            "cornerRadius": 5,
+            "fill": "#b9e4ef",
+            "stroke": "#23344b",
+            "width": 2
+          },
+          {
+            "id": "rear",
+            "kind": "group",
+            "children": [
+              {
+                "id": "rearTire",
+                "kind": "ellipse",
+                "center": [
+                  0,
+                  0
+                ],
+                "radius": [
+                  30,
+                  30
+                ],
+                "fill": "#23344b",
+                "stroke": "#23344b",
+                "width": 2
+              },
+              {
+                "id": "rearRim",
+                "kind": "ellipse",
+                "center": [
+                  0,
+                  0
+                ],
+                "radius": [
+                  18.6,
+                  18.6
+                ],
+                "fill": "#dce4e9",
+                "stroke": "#23344b",
+                "width": 2
+              },
+              {
+                "id": "rearSpoke",
+                "kind": "line",
+                "from": [
+                  -15,
+                  0
+                ],
+                "to": [
+                  15,
+                  0
+                ],
+                "width": 3,
+                "stroke": "#23344b"
+              },
+              {
+                "id": "rearSpoke2",
+                "kind": "line",
+                "from": [
+                  0,
+                  -15
+                ],
+                "to": [
+                  0,
+                  15
+                ],
+                "width": 3,
+                "stroke": "#23344b"
+              }
+            ],
+            "position": [
+              -75,
+              8
+            ],
+            "animation": [
+              {
+                "playback": "loop",
+                "keys": [
+                  {
+                    "at": 0,
+                    "rotation": 0,
+                    "easing": "linear"
+                  },
+                  {
+                    "at": 2,
+                    "rotation": 360,
+                    "easing": "linear"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "front",
+            "kind": "group",
+            "children": [
+              {
+                "id": "frontTire",
+                "kind": "ellipse",
+                "center": [
+                  0,
+                  0
+                ],
+                "radius": [
+                  25,
+                  25
+                ],
+                "fill": "#23344b",
+                "stroke": "#23344b",
+                "width": 2
+              },
+              {
+                "id": "frontRim",
+                "kind": "ellipse",
+                "center": [
+                  0,
+                  0
+                ],
+                "radius": [
+                  15.5,
+                  15.5
+                ],
+                "fill": "#dce4e9",
+                "stroke": "#23344b",
+                "width": 2
+              },
+              {
+                "id": "frontSpoke",
+                "kind": "line",
+                "from": [
+                  -12.5,
+                  0
+                ],
+                "to": [
+                  12.5,
+                  0
+                ],
+                "width": 3,
+                "stroke": "#23344b"
+              },
+              {
+                "id": "frontSpoke2",
+                "kind": "line",
+                "from": [
+                  0,
+                  -12.5
+                ],
+                "to": [
+                  0,
+                  12.5
+                ],
+                "width": 3,
+                "stroke": "#23344b"
+              }
+            ],
+            "position": [
+              11,
+              8
+            ],
+            "animation": [
+              {
+                "playback": "loop",
+                "keys": [
+                  {
+                    "at": 0,
+                    "rotation": 0,
+                    "easing": "linear"
+                  },
+                  {
+                    "at": 2,
+                    "rotation": 360,
+                    "easing": "linear"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "boom",
+            "kind": "group",
+            "children": [
+              {
+                "id": "arm",
+                "kind": "roundedRect",
+                "rect": [
+                  0,
+                  -9,
+                  95,
+                  18
+                ],
+                "cornerRadius": 5,
+                "fill": "#f7b731",
+                "stroke": "#23344b",
+                "width": 2
+              },
+              {
+                "id": "stick",
+                "kind": "group",
+                "children": [
+                  {
+                    "id": "stickMetal",
+                    "kind": "roundedRect",
+                    "rect": [
+                      0,
+                      -7,
+                      65,
+                      14
+                    ],
+                    "cornerRadius": 5,
+                    "fill": "#f7b731",
+                    "stroke": "#23344b",
+                    "width": 2
+                  },
+                  {
+                    "id": "bucket",
+                    "kind": "group",
+                    "children": [
+                      {
+                        "id": "bucketShape",
+                        "kind": "path",
+                        "d": "M-8 -8 L35 -8 L45 20 L-8 20 Z",
+                        "fill": "#f7b731",
+                        "stroke": "#23344b",
+                        "width": 3
+                      }
+                    ],
+                    "position": [
+                      65,
+                      0
+                    ],
+                    "animation": [
+                      {
+                        "playback": "once",
+                        "keys": [
+                          {
+                            "at": 0,
+                            "rotation": 20
+                          },
+                          {
+                            "at": 3,
+                            "rotation": -20
+                          },
+                          {
+                            "at": 6,
+                            "rotation": 30
+                          },
+                          {
+                            "at": 10,
+                            "rotation": 20
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "position": [
+                  95,
+                  0
+                ],
+                "rotation": 45,
+                "animation": [
+                  {
+                    "playback": "once",
+                    "keys": [
+                      {
+                        "at": 0,
+                        "rotation": 45
+                      },
+                      {
+                        "at": 3,
+                        "rotation": 80
+                      },
+                      {
+                        "at": 6,
+                        "rotation": 35
+                      },
+                      {
+                        "at": 10,
+                        "rotation": 45
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "position": [
+              15,
+              -50
+            ],
+            "rotation": -30,
+            "animation": [
+              {
+                "playback": "once",
+                "keys": [
+                  {
+                    "at": 0,
+                    "rotation": -30
+                  },
+                  {
+                    "at": 3,
+                    "rotation": -85
+                  },
+                  {
+                    "at": 6,
+                    "rotation": -45
+                  },
+                  {
+                    "at": 10,
+                    "rotation": -30
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "normalizedDimensions": {
+          "width": 100,
+          "height": 100
+        }
+      }
+    },
+    {
+      "id": "fridge",
+      "name": "fridge",
+      "type": "drawing",
+      "visualSpec": {
+        "renderMode": "replace",
+        "geometryRecipe": [
+          {
+            "id": "shell",
+            "kind": "roundedRect",
+            "rect": [
+              -43,
+              -100,
+              86,
+              150
+            ],
+            "cornerRadius": 5,
+            "fill": "#dce4e9",
+            "stroke": "#23344b",
+            "width": 2
+          },
+          {
+            "id": "inside",
+            "kind": "roundedRect",
+            "rect": [
+              -35,
+              -90,
+              70,
+              130
+            ],
+            "cornerRadius": 5,
+            "fill": "#91b7c5",
+            "stroke": "#23344b",
+            "width": 2
+          },
+          {
+            "id": "shelf",
+            "kind": "line",
+            "from": [
+              -34,
+              -25
+            ],
+            "to": [
+              34,
+              -25
+            ],
+            "width": 3,
+            "stroke": "#23344b"
+          },
+          {
+            "id": "food",
+            "kind": "roundedRect",
+            "rect": [
+              -25,
+              -65,
+              20,
+              35
+            ],
+            "cornerRadius": 5,
+            "fill": "#f29f55",
+            "stroke": "#23344b",
+            "width": 2
+          },
+          {
+            "id": "door",
+            "kind": "group",
+            "children": [
+              {
+                "id": "doorPanel",
+                "kind": "roundedRect",
+                "rect": [
+                  -42,
+                  -99,
+                  84,
+                  148
+                ],
+                "cornerRadius": 5,
+                "fill": "#e9f1f5",
+                "stroke": "#23344b",
+                "width": 2
+              },
+              {
+                "id": "seam",
+                "kind": "line",
+                "from": [
+                  -40,
+                  -45
+                ],
+                "to": [
+                  40,
+                  -45
+                ],
+                "width": 3,
+                "stroke": "#23344b"
+              },
+              {
+                "id": "grip",
+                "kind": "line",
+                "from": [
+                  25,
+                  -35
+                ],
+                "to": [
+                  25,
+                  -4
+                ],
+                "width": 5,
+                "stroke": "#23344b"
+              }
+            ],
+            "pivot": [
+              -42,
+              0
+            ],
+            "animation": [
+              {
+                "playback": "once",
+                "keys": [
+                  {
+                    "at": 0,
+                    "scale": [
+                      1,
+                      1
+                    ]
+                  },
+                  {
+                    "at": 2,
+                    "scale": [
+                      0.08,
+                      1
+                    ]
+                  },
+                  {
+                    "at": 5,
+                    "scale": [
+                      0.08,
+                      1
+                    ]
+                  },
+                  {
+                    "at": 7,
+                    "scale": [
+                      1,
+                      1
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "normalizedDimensions": {
+          "width": 100,
+          "height": 100
+        }
+      }
+    },
+    {
+      "id": "ac",
+      "name": "ac",
+      "type": "drawing",
+      "visualSpec": {
+        "renderMode": "replace",
+        "geometryRecipe": [
+          {
+            "id": "shell",
+            "kind": "roundedRect",
+            "rect": [
+              -100,
+              -40,
+              200,
+              80
+            ],
+            "cornerRadius": 5,
+            "fill": "#edf4f7",
+            "stroke": "#23344b",
+            "width": 2
+          },
+          {
+            "id": "vent",
+            "kind": "roundedRect",
+            "rect": [
+              -88,
+              4,
+              176,
+              22
+            ],
+            "cornerRadius": 5,
+            "fill": "#23344b",
+            "stroke": "#23344b",
+            "width": 2
+          },
+          {
+            "id": "louver",
+            "kind": "group",
+            "children": [
+              {
+                "id": "slat",
+                "kind": "roundedRect",
+                "rect": [
+                  -85,
+                  9,
+                  170,
+                  8
+                ],
+                "cornerRadius": 5,
+                "fill": "#91b7c5",
+                "stroke": "#23344b",
+                "width": 2
+              }
+            ],
+            "pivot": [
+              0,
+              12
+            ],
+            "animation": [
+              {
+                "playback": "loop",
+                "keys": [
+                  {
+                    "at": 0,
+                    "scale": [
+                      1,
+                      0.2
+                    ]
+                  },
+                  {
+                    "at": 2,
+                    "scale": [
+                      1,
+                      1
+                    ]
+                  },
+                  {
+                    "at": 4,
+                    "scale": [
+                      1,
+                      0.2
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "wind0",
+            "kind": "group",
+            "children": [
+              {
+                "id": "flow0",
+                "kind": "curve",
+                "curveType": "quadratic",
+                "from": [
+                  -50,
+                  45
+                ],
+                "to": [
+                  -42,
+                  100
+                ],
+                "control1": [
+                  -20,
+                  65
+                ],
+                "stroke": "#8ac9dc",
+                "width": 4
+              }
+            ],
+            "animation": [
+              {
+                "playback": "loop",
+                "keys": [
+                  {
+                    "at": 0,
+                    "opacity": 0,
+                    "position": [
+                      0,
+                      0
+                    ]
+                  },
+                  {
+                    "at": 1,
+                    "opacity": 1,
+                    "position": [
+                      0,
+                      12
+                    ]
+                  },
+                  {
+                    "at": 2,
+                    "opacity": 0,
+                    "position": [
+                      0,
+                      25
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "wind1",
+            "kind": "group",
+            "children": [
+              {
+                "id": "flow1",
+                "kind": "curve",
+                "curveType": "quadratic",
+                "from": [
+                  0,
+                  45
+                ],
+                "to": [
+                  8,
+                  100
+                ],
+                "control1": [
+                  30,
+                  65
+                ],
+                "stroke": "#8ac9dc",
+                "width": 4
+              }
+            ],
+            "animation": [
+              {
+                "playback": "loop",
+                "keys": [
+                  {
+                    "at": 0,
+                    "opacity": 0,
+                    "position": [
+                      0,
+                      0
+                    ]
+                  },
+                  {
+                    "at": 1,
+                    "opacity": 1,
+                    "position": [
+                      0,
+                      12
+                    ]
+                  },
+                  {
+                    "at": 2,
+                    "opacity": 0,
+                    "position": [
+                      0,
+                      25
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "wind2",
+            "kind": "group",
+            "children": [
+              {
+                "id": "flow2",
+                "kind": "curve",
+                "curveType": "quadratic",
+                "from": [
+                  50,
+                  45
+                ],
+                "to": [
+                  58,
+                  100
+                ],
+                "control1": [
+                  80,
+                  65
+                ],
+                "stroke": "#8ac9dc",
+                "width": 4
+              }
+            ],
+            "animation": [
+              {
+                "playback": "loop",
+                "keys": [
+                  {
+                    "at": 0,
+                    "opacity": 0,
+                    "position": [
+                      0,
+                      0
+                    ]
+                  },
+                  {
+                    "at": 1,
+                    "opacity": 1,
+                    "position": [
+                      0,
+                      12
+                    ]
+                  },
+                  {
+                    "at": 2,
+                    "opacity": 0,
+                    "position": [
+                      0,
+                      25
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "normalizedDimensions": {
+          "width": 100,
+          "height": 100
+        }
+      }
+    },
+    {
+      "id": "tv",
+      "name": "tv",
+      "type": "drawing",
+      "visualSpec": {
+        "renderMode": "replace",
+        "geometryRecipe": [
+          {
+            "id": "case",
+            "kind": "roundedRect",
+            "rect": [
+              -85,
+              -55,
+              170,
+              105
+            ],
+            "cornerRadius": 5,
+            "fill": "#23344b",
+            "stroke": "#23344b",
+            "width": 2
+          },
+          {
+            "id": "screen",
+            "kind": "group",
+            "children": [
+              {
+                "id": "screenGlass",
+                "kind": "roundedRect",
+                "rect": [
+                  -76,
+                  -46,
+                  152,
+                  87
+                ],
+                "cornerRadius": 5,
+                "fill": "#467dd0",
+                "stroke": "#23344b",
+                "width": 2
+              },
+              {
+                "id": "sun",
+                "kind": "ellipse",
+                "center": [
+                  25,
+                  -20
+                ],
+                "radius": [
+                  15,
+                  15
+                ],
+                "fill": "#ffd369",
+                "stroke": "#23344b",
+                "width": 2
+              },
+              {
+                "id": "hill",
+                "kind": "polygon",
+                "points": [
+                  [
+                    -76,
+                    41
+                  ],
+                  [
+                    -10,
+                    -15
+                  ],
+                  [
+                    76,
+                    41
+                  ]
+                ],
+                "fill": "#62b8a3"
+              }
+            ],
+            "animation": [
+              {
+                "playback": "loop",
+                "keys": [
+                  {
+                    "at": 0,
+                    "opacity": 0.2
+                  },
+                  {
+                    "at": 1,
+                    "opacity": 1
+                  },
+                  {
+                    "at": 7,
+                    "opacity": 1
+                  },
+                  {
+                    "at": 8,
+                    "opacity": 0.2
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "stand",
+            "kind": "line",
+            "from": [
+              0,
+              50
+            ],
+            "to": [
+              0,
+              70
+            ],
+            "width": 8,
+            "stroke": "#23344b"
+          },
+          {
+            "id": "foot",
+            "kind": "line",
+            "from": [
+              -35,
+              70
+            ],
+            "to": [
+              35,
+              70
+            ],
+            "width": 6,
+            "stroke": "#23344b"
+          }
+        ],
+        "normalizedDimensions": {
+          "width": 100,
+          "height": 100
+        }
+      }
+    }
+  ]
+}

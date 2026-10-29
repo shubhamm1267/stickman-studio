@@ -1,0 +1,1063 @@
+{
+  "humorProfile": "adult-relatable",
+  "hook": {
+    "sceneId": "office",
+    "beatIndices": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "start": 0,
+    "end": 2.2,
+    "evidence": "A formal seated interview is interrupted by a visible fart puff; the boss immediately reacts and pinches his nose."
+  },
+  "comedy": {
+    "hook": "An embarrassing fart interrupts a formal interview in the first second.",
+    "goal": "The candidate wants to hide his mistake and keep the interview going.",
+    "escalation": [
+      "He blames a squeaky chair.",
+      "A second fart ruins the excuse.",
+      "The angry boss turns out to have the same problem."
+    ],
+    "payoff": "The boss steals the chair excuse he was about to condemn.",
+    "callback": "One last tiny fart leaves both adults equally guilty."
+  },
+  "title": "Interview Ki Kursi",
+  "story": "A nervous adult candidate farts during a formal interview. The boss notices the smell. The candidate points to his chair and rocks it to make a matching squeak. The excuse works briefly. A second louder fart angers the boss, but then the boss farts even louder. The boss sits and copies the candidate’s chair excuse. They share an embarrassed laugh, until one final tiny fart makes both look guilty.",
+  "characters": [
+    {
+      "id": "hero",
+      "name": "Nandu",
+      "kind": "man",
+      "wardrobe": "shirt",
+      "accessory": "none",
+      "skin": "#f6f1da",
+      "outfit": "#c58e78",
+      "hair": "#655f4d",
+      "headWidth": 1,
+      "headHeight": 1
+    },
+    {
+      "id": "boss",
+      "name": "Mr. Khanna",
+      "kind": "man",
+      "wardrobe": "suit",
+      "accessory": "glasses",
+      "skin": "#f6f1da",
+      "outfit": "#899a96",
+      "hair": "#655f4d",
+      "headWidth": 0.94,
+      "headHeight": 0.97
+    }
+  ],
+  "propDesigns": [
+    {
+      "id": "chairA",
+      "name": "Candidate chair",
+      "type": "chair",
+      "color": "#b7c39e",
+      "nodes": []
+    },
+    {
+      "id": "chairB",
+      "name": "Boss chair",
+      "type": "chair",
+      "color": "#9eaea1",
+      "nodes": []
+    },
+    {
+      "id": "desk",
+      "name": "Interview table",
+      "type": "table",
+      "color": "#c5ad8b",
+      "nodes": []
+    },
+    {
+      "id": "application",
+      "name": "Application papers",
+      "type": "drawing",
+      "color": "#ffffff",
+      "nodes": [
+        {
+          "kind": "path",
+          "d": "M-22 -7 L20 -7 L24 8 L-19 8Z",
+          "fill": "#f9f7e8",
+          "width": 1
+        },
+        {
+          "kind": "line",
+          "from": [
+            -13,
+            -1
+          ],
+          "to": [
+            12,
+            -1
+          ],
+          "width": 1
+        },
+        {
+          "kind": "line",
+          "from": [
+            -10,
+            3
+          ],
+          "to": [
+            8,
+            3
+          ],
+          "width": 1
+        }
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "id": "office",
+      "summary": "A candidate covers a fart with a chair squeak, only for the boss to steal the same excuse.",
+      "duration": 28,
+      "background": "office",
+      "backgroundNodes": [],
+      "motions": [],
+      "cast": [
+        {
+          "characterId": "hero",
+          "initialPose": {
+            "head": [
+              0,
+              -350
+            ],
+            "hip": [
+              0,
+              -100
+            ],
+            "leftFoot": [
+              -55,
+              0
+            ],
+            "rightFoot": [
+              60,
+              0
+            ]
+          },
+          "x": 140,
+          "y": 780,
+          "scale": 0.9,
+          "facing": 1
+        },
+        {
+          "characterId": "boss",
+          "initialPose": {
+            "head": [
+              0,
+              -350
+            ],
+            "hip": [
+              0,
+              -100
+            ],
+            "leftFoot": [
+              -55,
+              0
+            ],
+            "rightFoot": [
+              60,
+              0
+            ]
+          },
+          "x": 400,
+          "y": 780,
+          "scale": 0.85,
+          "facing": -1
+        }
+      ],
+      "props": [
+        {
+          "designId": "chairA",
+          "open": 0,
+          "angle": 0,
+          "x": 140,
+          "y": 690,
+          "scale": 0.9
+        },
+        {
+          "designId": "chairB",
+          "open": 0,
+          "angle": 0,
+          "x": 400,
+          "y": 695,
+          "scale": 0.85
+        },
+        {
+          "designId": "desk",
+          "open": 0,
+          "angle": 0,
+          "x": 280,
+          "y": 630,
+          "scale": 0.8
+        },
+        {
+          "designId": "application",
+          "open": 0,
+          "angle": 0,
+          "x": 280,
+          "y": 622,
+          "scale": 1
+        }
+      ],
+      "beats": [
+        {
+          "actorId": "hero",
+          "kind": "fart",
+          "start": 0.3,
+          "duration": 0.8,
+          "to": [
+            335,
+            520
+          ],
+          "hand": "right",
+          "emotion": "strain",
+          "amount": 0.65,
+          "intent": "A candidate accidentally farts during a formal interview."
+        },
+        {
+          "actorId": "boss",
+          "kind": "react",
+          "start": 0.7,
+          "duration": 0.25,
+          "hand": "right",
+          "emotion": "shock",
+          "amount": 1,
+          "intent": "The interviewer immediately hears the embarrassing noise."
+        },
+        {
+          "actorId": "boss",
+          "kind": "nosePinch",
+          "start": 1,
+          "duration": 0.35,
+          "hand": "left",
+          "emotion": "annoyed",
+          "amount": 1,
+          "intent": "He pinches his nose at the smell."
+        },
+        {
+          "actorId": "hero",
+          "kind": "react",
+          "start": 1.4,
+          "duration": 0.25,
+          "hand": "right",
+          "emotion": "shock",
+          "amount": 1,
+          "intent": "The candidate realizes he has been caught."
+        },
+        {
+          "actorId": "hero",
+          "kind": "point",
+          "start": 2.25,
+          "duration": 0.4,
+          "to": [
+            -42,
+            -95
+          ],
+          "hand": "left",
+          "emotion": "curious",
+          "amount": 1,
+          "intent": "He blames the chair by pointing directly at its seat."
+        },
+        {
+          "actorId": "hero",
+          "kind": "scoot",
+          "start": 3.05,
+          "duration": 1.15,
+          "hand": "right",
+          "emotion": "confident",
+          "amount": 1.3,
+          "intent": "He rocks the chair to provide a plausible squeaking excuse."
+        },
+        {
+          "actorId": "boss",
+          "kind": "react",
+          "start": 4.15,
+          "duration": 0.35,
+          "hand": "right",
+          "emotion": "curious",
+          "amount": 1,
+          "intent": "The boss considers the chair explanation."
+        },
+        {
+          "actorId": "boss",
+          "kind": "custom",
+          "start": 4.6,
+          "duration": 0.35,
+          "hand": "right",
+          "amount": 1,
+          "pose": {
+            "gaze": [
+              7,
+              10
+            ],
+            "headAngle": 10
+          },
+          "intent": "The boss looks down toward the suspect chair."
+        },
+        {
+          "actorId": "hero",
+          "kind": "custom",
+          "start": 5.15,
+          "duration": 0.3,
+          "hand": "right",
+          "emotion": "smug",
+          "amount": 1,
+          "pose": {
+            "gaze": [
+              4,
+              2
+            ],
+            "headAngle": -7
+          },
+          "intent": "The candidate quietly celebrates getting away with it."
+        },
+        {
+          "actorId": "boss",
+          "kind": "custom",
+          "start": 5.6,
+          "duration": 0.3,
+          "hand": "right",
+          "emotion": "calm",
+          "amount": 1,
+          "pose": {
+            "gaze": [
+              7,
+              3
+            ],
+            "headAngle": 0
+          },
+          "intent": "The boss returns to the interview."
+        },
+        {
+          "actorId": "boss",
+          "kind": "point",
+          "start": 6.25,
+          "duration": 0.4,
+          "to": [
+            -83,
+            -175
+          ],
+          "hand": "right",
+          "emotion": "annoyed",
+          "amount": 1,
+          "intent": "The boss points to the candidate’s application on the table."
+        },
+        {
+          "actorId": "hero",
+          "kind": "panic",
+          "start": 7.4,
+          "duration": 1.15,
+          "hand": "right",
+          "emotion": "strain",
+          "amount": 1,
+          "intent": "The candidate feels another fart coming and freezes."
+        },
+        {
+          "actorId": "hero",
+          "kind": "scoot",
+          "start": 8.65,
+          "duration": 0.9,
+          "hand": "right",
+          "emotion": "strain",
+          "amount": 0.7,
+          "intent": "He tries making another chair squeak first."
+        },
+        {
+          "actorId": "hero",
+          "kind": "fart",
+          "start": 9.55,
+          "duration": 1.1,
+          "to": [
+            355,
+            495
+          ],
+          "hand": "right",
+          "emotion": "extreme",
+          "amount": 1.1,
+          "intent": "A much louder fart ruins his cover."
+        },
+        {
+          "actorId": "boss",
+          "kind": "react",
+          "start": 10.05,
+          "duration": 0.25,
+          "hand": "right",
+          "emotion": "jawdrop",
+          "amount": 1,
+          "intent": "The boss recognizes the same noise again."
+        },
+        {
+          "actorId": "boss",
+          "kind": "stand",
+          "start": 11.5,
+          "duration": 0.45,
+          "hand": "right",
+          "emotion": "annoyed",
+          "amount": 1,
+          "intent": "The boss rises angrily from his chair."
+        },
+        {
+          "actorId": "hero",
+          "kind": "custom",
+          "start": 11.9,
+          "duration": 0.45,
+          "hand": "right",
+          "emotion": "defeat",
+          "amount": 1,
+          "pose": {
+            "leftHand": [
+              -85,
+              -270
+            ],
+            "rightHand": [
+              85,
+              -270
+            ]
+          },
+          "intent": "The candidate raises his palms in an embarrassed apology."
+        },
+        {
+          "actorId": "boss",
+          "kind": "panic",
+          "start": 13.2,
+          "duration": 0.9,
+          "hand": "right",
+          "emotion": "strain",
+          "amount": 1,
+          "intent": "Then the boss suddenly has his own stomach problem."
+        },
+        {
+          "actorId": "boss",
+          "kind": "fart",
+          "start": 14.2,
+          "duration": 1.65,
+          "to": [
+            205,
+            490
+          ],
+          "hand": "right",
+          "emotion": "extreme",
+          "amount": 1.9,
+          "intent": "The boss releases an even larger fart."
+        },
+        {
+          "actorId": "hero",
+          "kind": "nosePinch",
+          "start": 14.9,
+          "duration": 0.35,
+          "hand": "right",
+          "emotion": "shock",
+          "amount": 1,
+          "intent": "The candidate now has to pinch his nose."
+        },
+        {
+          "actorId": "boss",
+          "kind": "sit",
+          "start": 16.1,
+          "duration": 0.5,
+          "hand": "right",
+          "emotion": "curious",
+          "amount": 1,
+          "intent": "The boss hastily sits down and hides his embarrassment."
+        },
+        {
+          "actorId": "boss",
+          "kind": "point",
+          "start": 16.9,
+          "duration": 0.4,
+          "to": [
+            -40,
+            -90
+          ],
+          "hand": "right",
+          "emotion": "smug",
+          "amount": 1,
+          "intent": "The boss copies the same excuse, blaming his own chair."
+        },
+        {
+          "actorId": "boss",
+          "kind": "scoot",
+          "start": 17.45,
+          "duration": 0.85,
+          "hand": "right",
+          "emotion": "smug",
+          "amount": 1.1,
+          "intent": "He demonstrates his own squeaky chair."
+        },
+        {
+          "actorId": "hero",
+          "kind": "react",
+          "start": 18.3,
+          "duration": 0.3,
+          "hand": "right",
+          "emotion": "jawdrop",
+          "amount": 1,
+          "intent": "The candidate cannot believe the boss stole his excuse."
+        },
+        {
+          "actorId": "hero",
+          "kind": "custom",
+          "start": 19.8,
+          "duration": 0.4,
+          "hand": "right",
+          "emotion": "smug",
+          "amount": 1,
+          "pose": {
+            "gaze": [
+              8,
+              2
+            ],
+            "headAngle": -8
+          },
+          "intent": "An incredulous look turns into a knowing smile."
+        },
+        {
+          "actorId": "boss",
+          "kind": "laugh",
+          "start": 20.7,
+          "duration": 1.15,
+          "hand": "right",
+          "emotion": "laugh",
+          "amount": 1,
+          "intent": "The boss and candidate acknowledge the ridiculous shared secret."
+        },
+        {
+          "actorId": "hero",
+          "kind": "laugh",
+          "start": 21,
+          "duration": 0.95,
+          "hand": "right",
+          "emotion": "laugh",
+          "amount": 1,
+          "intent": "The candidate joins the embarrassed silent chuckle."
+        },
+        {
+          "actorId": "hero",
+          "kind": "scoot",
+          "start": 22.5,
+          "duration": 0.9,
+          "hand": "right",
+          "emotion": "confident",
+          "amount": 0.8,
+          "intent": "Both return to their chair excuse at the same time."
+        },
+        {
+          "actorId": "boss",
+          "kind": "scoot",
+          "start": 22.7,
+          "duration": 0.9,
+          "hand": "right",
+          "emotion": "confident",
+          "amount": 0.8,
+          "intent": "The boss makes the matching chair movement."
+        },
+        {
+          "actorId": "hero",
+          "kind": "fart",
+          "start": 23.5,
+          "duration": 0.65,
+          "to": [
+            260,
+            550
+          ],
+          "hand": "right",
+          "emotion": "shock",
+          "amount": 0.45,
+          "intent": "One final tiny fart punctures their dignity."
+        },
+        {
+          "actorId": "boss",
+          "kind": "react",
+          "start": 24.05,
+          "duration": 0.25,
+          "hand": "right",
+          "emotion": "annoyed",
+          "amount": 1,
+          "intent": "The boss gives the candidate a deadpan look."
+        },
+        {
+          "actorId": "hero",
+          "kind": "custom",
+          "start": 25.2,
+          "duration": 0.3,
+          "hand": "right",
+          "emotion": "defeat",
+          "amount": 1,
+          "pose": {
+            "gaze": [
+              0,
+              2
+            ],
+            "headAngle": 0
+          },
+          "intent": "Both look toward the viewer with guilty faces."
+        },
+        {
+          "actorId": "boss",
+          "kind": "custom",
+          "start": 25.25,
+          "duration": 0.3,
+          "hand": "right",
+          "emotion": "smug",
+          "amount": 1,
+          "pose": {
+            "gaze": [
+              0,
+              2
+            ],
+            "headAngle": 0
+          },
+          "intent": "A final guilty glance makes the shared excuse clear."
+        },
+        {
+          "actorId": "hero",
+          "kind": "idle",
+          "start": 27,
+          "duration": 0.15,
+          "hand": "right",
+          "emotion": "curious",
+          "amount": 1,
+          "intent": "Hold the last awkward reaction for the callback."
+        }
+      ],
+      "shots": [
+        {
+          "start": 0,
+          "end": 2.25,
+          "focus": [
+            270,
+            560
+          ],
+          "endZoom": 1.12,
+          "zoom": 1.08,
+          "detail": "full"
+        },
+        {
+          "start": 2.25,
+          "end": 4.25,
+          "focus": [
+            145,
+            565
+          ],
+          "zoom": 1.25,
+          "detail": "full",
+          "actorIds": [
+            "hero"
+          ]
+        },
+        {
+          "start": 4.25,
+          "end": 5.15,
+          "focus": [
+            395,
+            490
+          ],
+          "zoom": 1.75,
+          "detail": "full",
+          "actorIds": [
+            "boss"
+          ]
+        },
+        {
+          "start": 5.15,
+          "end": 5.7,
+          "focus": [
+            140,
+            490
+          ],
+          "zoom": 1.8,
+          "detail": "full",
+          "actorIds": [
+            "hero"
+          ]
+        },
+        {
+          "start": 5.7,
+          "end": 7.4,
+          "focus": [
+            270,
+            555
+          ],
+          "zoom": 1.08,
+          "detail": "full"
+        },
+        {
+          "start": 7.4,
+          "end": 9.55,
+          "focus": [
+            143,
+            490
+          ],
+          "zoom": 1.8,
+          "detail": "full",
+          "actorIds": [
+            "hero"
+          ]
+        },
+        {
+          "start": 9.55,
+          "end": 11.5,
+          "focus": [
+            270,
+            555
+          ],
+          "zoom": 1.08,
+          "detail": "full"
+        },
+        {
+          "start": 11.5,
+          "end": 12.15,
+          "focus": [
+            390,
+            465
+          ],
+          "zoom": 1.5,
+          "detail": "full",
+          "actorIds": [
+            "boss"
+          ]
+        },
+        {
+          "start": 12.15,
+          "end": 13.1,
+          "focus": [
+            140,
+            490
+          ],
+          "zoom": 1.6,
+          "detail": "full",
+          "actorIds": [
+            "hero"
+          ]
+        },
+        {
+          "start": 13.1,
+          "end": 16.5,
+          "focus": [
+            270,
+            540
+          ],
+          "zoom": 1.08,
+          "detail": "full"
+        },
+        {
+          "start": 16.5,
+          "end": 18.3,
+          "focus": [
+            396,
+            565
+          ],
+          "zoom": 1.23,
+          "detail": "full",
+          "actorIds": [
+            "boss"
+          ]
+        },
+        {
+          "start": 18.3,
+          "end": 20.5,
+          "focus": [
+            140,
+            490
+          ],
+          "zoom": 1.95,
+          "detail": "full",
+          "actorIds": [
+            "hero"
+          ]
+        },
+        {
+          "start": 20.5,
+          "end": 28,
+          "focus": [
+            270,
+            555
+          ],
+          "endZoom": 1.14,
+          "zoom": 1.08,
+          "detail": "full"
+        }
+      ],
+      "sounds": [
+        {
+          "beatIndex": 0,
+          "syncTo": "contact",
+          "playbackRate": 1,
+          "trimSilence": true,
+          "start": 0,
+          "query": "short cartoon fart",
+          "volume": 0.3,
+          "duration": 0.38,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "fartshort"
+        },
+        {
+          "playbackRate": 1,
+          "trimSilence": true,
+          "start": 1.45,
+          "query": "surprised gulp",
+          "volume": 0.12,
+          "duration": 0.35,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "gulp"
+        },
+        {
+          "beatIndex": 5,
+          "syncTo": "contact",
+          "playbackRate": 1,
+          "trimSilence": true,
+          "start": 0,
+          "query": "chair squeak",
+          "volume": 0.26,
+          "duration": 0.65,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "chair"
+        },
+        {
+          "beatIndex": 12,
+          "syncTo": "contact",
+          "playbackRate": 1,
+          "trimSilence": true,
+          "start": 0,
+          "query": "chair squeak",
+          "volume": 0.19,
+          "duration": 0.45,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "chair"
+        },
+        {
+          "beatIndex": 13,
+          "syncTo": "contact",
+          "playbackRate": 1,
+          "trimSilence": true,
+          "start": 0,
+          "query": "short bass fart",
+          "volume": 0.33,
+          "duration": 0.58,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "fartbass"
+        },
+        {
+          "playbackRate": 1,
+          "trimSilence": true,
+          "start": 10.6,
+          "query": "cartoon boing",
+          "volume": 0.12,
+          "duration": 0.55,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "boing"
+        },
+        {
+          "playbackRate": 1,
+          "trimSilence": true,
+          "start": 13.4,
+          "query": "male effort grunt",
+          "volume": 0.13,
+          "duration": 0.4,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "grunt"
+        },
+        {
+          "beatIndex": 18,
+          "syncTo": "contact",
+          "playbackRate": 1,
+          "trimSilence": true,
+          "start": 0,
+          "query": "long cartoon fart",
+          "volume": 0.35,
+          "duration": 1.6,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "fartlong"
+        },
+        {
+          "beatIndex": 22,
+          "syncTo": "contact",
+          "playbackRate": 1,
+          "trimSilence": true,
+          "start": 0,
+          "query": "chair squeak",
+          "volume": 0.23,
+          "duration": 0.7,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "chair"
+        },
+        {
+          "playbackRate": 1,
+          "trimSilence": true,
+          "start": 18.45,
+          "query": "cartoon boing",
+          "volume": 0.12,
+          "duration": 0.5,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "boing"
+        },
+        {
+          "beatIndex": 27,
+          "syncTo": "contact",
+          "playbackRate": 1,
+          "trimSilence": true,
+          "start": 0,
+          "query": "chair squeak",
+          "volume": 0.18,
+          "duration": 0.65,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "chair"
+        },
+        {
+          "beatIndex": 28,
+          "syncTo": "contact",
+          "playbackRate": 1,
+          "trimSilence": true,
+          "start": 0,
+          "query": "chair squeak",
+          "volume": 0.16,
+          "duration": 0.6,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "chair"
+        },
+        {
+          "beatIndex": 29,
+          "syncTo": "contact",
+          "playbackRate": 1,
+          "trimSilence": true,
+          "start": 0,
+          "query": "short cartoon fart",
+          "volume": 0.28,
+          "duration": 0.38,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "fartshort"
+        }
+      ],
+      "dialogue": []
+    }
+  ],
+  "coverage": [
+    {
+      "storyEvent": "An accidental fart interrupts the interview; the boss notices.",
+      "sceneId": "office",
+      "beatIndices": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "storyEvent": "The candidate blames the squeaky chair and temporarily gets away with it.",
+      "sceneId": "office",
+      "beatIndices": [
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "storyEvent": "A second louder fart angers the boss.",
+      "sceneId": "office",
+      "beatIndices": [
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "storyEvent": "The boss farts and steals the chair excuse.",
+      "sceneId": "office",
+      "beatIndices": [
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ]
+    },
+    {
+      "storyEvent": "They share a laugh, then a final fart restores the awkwardness.",
+      "sceneId": "office",
+      "beatIndices": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32
+      ]
+    }
+  ],
+  "seo": {
+    "titles": [
+      "Interview Mein Kursi Ka Bahana 😂",
+      "The Boss Stole His Fart Excuse 💀",
+      "गलती मेरी नहीं… कुर्सी की है!"
+    ],
+    "description": "An awkward interview. One squeaky chair. Two very guilty adults. A silent original cartoon about the excuse everyone suddenly understands. Adult toilet humour, visual storytelling and perfectly unfortunate timing.",
+    "tags": [
+      "adult cartoon comedy",
+      "office comedy",
+      "interview funny",
+      "chair excuse",
+      "fart cartoon",
+      "silent comedy",
+      "animated shorts"
+    ],
+    "hashtags": [
+      "#CartoonComedy",
+      "#SilentComedy",
+      "#Shorts"
+    ],
+    "pinnedComment": "Tum hote toh kya karte? 😂",
+    "thumbnailText": "KURSI KI GALTI?"
+  },
+  "blockedReasons": [],
+  "review": {
+    "method": "authored-example",
+    "planHash": "521e078d53ce01759447767ecaa78e1af62e68cd0a6811c86565a367abc62064",
+    "summary": "Authored offline example for the same reusable engine and app pipeline. Story events and opening hook link to real beats. No live Gemini generation is claimed."
+  },
+  "version": 1,
+  "format": "shorts",
+  "language": "hi"
+}

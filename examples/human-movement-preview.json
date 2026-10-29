@@ -1,0 +1,657 @@
+{
+  "schemaVersion": 2,
+  "seed": 429867875,
+  "provenance": {
+    "origin": "legacy-migration",
+    "sourceSchemaVersion": 1,
+    "generator": "legacy-import"
+  },
+  "generatedAssetRefs": [],
+  "replay": {
+    "schemaVersion": 1,
+    "planHash": "d8200d15dc32f624349b9138c0e992ccd7cf28f0579234828f3d88e93a7c3adc",
+    "seed": 429867875,
+    "fps": 60,
+    "totalFrames": 600,
+    "frameRounding": "nearest",
+    "evaluator": "sticklaugh-frame-evaluator-v1"
+  },
+  "renderFps": 60,
+  "planningMode": "dynamic",
+  "productionMode": "silent-sfx",
+  "category": "slapstick",
+  "comedySettings": {
+    "innuendo": "off",
+    "profanity": "off",
+    "physicalIntensity": "medium"
+  },
+  "title": "The floating fridge",
+  "story": "A woman walks toward her friend, waves, then jogs back. Her friend waves back.",
+  "sourceIdea": "A woman walks toward her friend, waves, then jogs back. Her friend waves back.",
+  "characters": [
+    {
+      "id": "woman",
+      "name": "Maya",
+      "rigVersion": 2,
+      "shoulderWidth": 28,
+      "kind": "woman",
+      "visualSpec": {
+        "renderMode": "overlay",
+        "silhouetteFamily": "custom-vector",
+        "geometryRecipe": [
+          {
+            "id": "leftUpperArm",
+            "kind": "group",
+            "bone": "leftUpperArm",
+            "children": [
+              {
+                "kind": "line",
+                "from": [
+                  0,
+                  0
+                ],
+                "to": [
+                  0,
+                  100
+                ],
+                "stroke": "#386fa4",
+                "width": 16
+              }
+            ]
+          },
+          {
+            "id": "leftForearm",
+            "kind": "group",
+            "bone": "leftForearm",
+            "children": [
+              {
+                "kind": "line",
+                "from": [
+                  0,
+                  0
+                ],
+                "to": [
+                  0,
+                  100
+                ],
+                "stroke": "#dca37e",
+                "width": 11
+              }
+            ]
+          },
+          {
+            "id": "rightUpperArm",
+            "kind": "group",
+            "bone": "rightUpperArm",
+            "children": [
+              {
+                "kind": "line",
+                "from": [
+                  0,
+                  0
+                ],
+                "to": [
+                  0,
+                  100
+                ],
+                "stroke": "#386fa4",
+                "width": 16
+              }
+            ]
+          },
+          {
+            "id": "rightForearm",
+            "kind": "group",
+            "bone": "rightForearm",
+            "children": [
+              {
+                "kind": "line",
+                "from": [
+                  0,
+                  0
+                ],
+                "to": [
+                  0,
+                  100
+                ],
+                "stroke": "#dca37e",
+                "width": 11
+              }
+            ]
+          },
+          {
+            "id": "leftThigh",
+            "kind": "group",
+            "bone": "leftThigh",
+            "children": [
+              {
+                "kind": "line",
+                "from": [
+                  0,
+                  0
+                ],
+                "to": [
+                  0,
+                  100
+                ],
+                "stroke": "#394153",
+                "width": 14
+              }
+            ]
+          },
+          {
+            "id": "leftShin",
+            "kind": "group",
+            "bone": "leftShin",
+            "children": [
+              {
+                "kind": "line",
+                "from": [
+                  0,
+                  0
+                ],
+                "to": [
+                  0,
+                  100
+                ],
+                "stroke": "#394153",
+                "width": 14
+              }
+            ]
+          },
+          {
+            "id": "rightThigh",
+            "kind": "group",
+            "bone": "rightThigh",
+            "children": [
+              {
+                "kind": "line",
+                "from": [
+                  0,
+                  0
+                ],
+                "to": [
+                  0,
+                  100
+                ],
+                "stroke": "#394153",
+                "width": 14
+              }
+            ]
+          },
+          {
+            "id": "rightShin",
+            "kind": "group",
+            "bone": "rightShin",
+            "children": [
+              {
+                "kind": "line",
+                "from": [
+                  0,
+                  0
+                ],
+                "to": [
+                  0,
+                  100
+                ],
+                "stroke": "#394153",
+                "width": 14
+              }
+            ]
+          }
+        ],
+        "normalizedDimensions": {
+          "width": 100,
+          "height": 100
+        },
+        "material": "flat",
+        "paint": {},
+        "palette": [],
+        "facialComponents": [],
+        "apparel": [],
+        "accessories": [],
+        "decorativeMarks": [],
+        "proceduralComponents": [],
+        "motionAnchors": [],
+        "zIndex": 0
+      },
+      "ageYears": 30,
+      "artStyle": "toon",
+      "hairStyle": "ponytail",
+      "costume": "everyday",
+      "build": "average",
+      "wardrobe": "shirt",
+      "skin": "#dca37e",
+      "outfit": "#386fa4",
+      "hair": "#302825",
+      "headWidth": 0.8,
+      "headHeight": 0.85
+    },
+    {
+      "id": "man",
+      "name": "Aman",
+      "rigVersion": 2,
+      "shoulderWidth": 28,
+      "kind": "man",
+      "visualSpec": {
+        "renderMode": "overlay",
+        "silhouetteFamily": "custom-vector",
+        "geometryRecipe": [
+          {
+            "id": "leftUpperArm",
+            "kind": "group",
+            "bone": "leftUpperArm",
+            "children": [
+              {
+                "kind": "line",
+                "from": [
+                  0,
+                  0
+                ],
+                "to": [
+                  0,
+                  100
+                ],
+                "stroke": "#d87b41",
+                "width": 16
+              }
+            ]
+          },
+          {
+            "id": "leftForearm",
+            "kind": "group",
+            "bone": "leftForearm",
+            "children": [
+              {
+                "kind": "line",
+                "from": [
+                  0,
+                  0
+                ],
+                "to": [
+                  0,
+                  100
+                ],
+                "stroke": "#bd805e",
+                "width": 11
+              }
+            ]
+          },
+          {
+            "id": "rightUpperArm",
+            "kind": "group",
+            "bone": "rightUpperArm",
+            "children": [
+              {
+                "kind": "line",
+                "from": [
+                  0,
+                  0
+                ],
+                "to": [
+                  0,
+                  100
+                ],
+                "stroke": "#d87b41",
+                "width": 16
+              }
+            ]
+          },
+          {
+            "id": "rightForearm",
+            "kind": "group",
+            "bone": "rightForearm",
+            "children": [
+              {
+                "kind": "line",
+                "from": [
+                  0,
+                  0
+                ],
+                "to": [
+                  0,
+                  100
+                ],
+                "stroke": "#bd805e",
+                "width": 11
+              }
+            ]
+          },
+          {
+            "id": "leftThigh",
+            "kind": "group",
+            "bone": "leftThigh",
+            "children": [
+              {
+                "kind": "line",
+                "from": [
+                  0,
+                  0
+                ],
+                "to": [
+                  0,
+                  100
+                ],
+                "stroke": "#394153",
+                "width": 14
+              }
+            ]
+          },
+          {
+            "id": "leftShin",
+            "kind": "group",
+            "bone": "leftShin",
+            "children": [
+              {
+                "kind": "line",
+                "from": [
+                  0,
+                  0
+                ],
+                "to": [
+                  0,
+                  100
+                ],
+                "stroke": "#394153",
+                "width": 14
+              }
+            ]
+          },
+          {
+            "id": "rightThigh",
+            "kind": "group",
+            "bone": "rightThigh",
+            "children": [
+              {
+                "kind": "line",
+                "from": [
+                  0,
+                  0
+                ],
+                "to": [
+                  0,
+                  100
+                ],
+                "stroke": "#394153",
+                "width": 14
+              }
+            ]
+          },
+          {
+            "id": "rightShin",
+            "kind": "group",
+            "bone": "rightShin",
+            "children": [
+              {
+                "kind": "line",
+                "from": [
+                  0,
+                  0
+                ],
+                "to": [
+                  0,
+                  100
+                ],
+                "stroke": "#394153",
+                "width": 14
+              }
+            ]
+          }
+        ],
+        "normalizedDimensions": {
+          "width": 100,
+          "height": 100
+        },
+        "material": "flat",
+        "paint": {},
+        "palette": [],
+        "facialComponents": [],
+        "apparel": [],
+        "accessories": [],
+        "decorativeMarks": [],
+        "proceduralComponents": [],
+        "motionAnchors": [],
+        "zIndex": 0
+      },
+      "ageYears": 30,
+      "artStyle": "toon",
+      "hairStyle": "curly",
+      "costume": "everyday",
+      "build": "broad",
+      "wardrobe": "shirt",
+      "skin": "#bd805e",
+      "outfit": "#d87b41",
+      "hair": "#302825",
+      "headWidth": 0.85,
+      "headHeight": 0.9
+    }
+  ],
+  "propDesigns": [],
+  "scenes": [
+    {
+      "sceneSeed": 2701806187,
+      "canonicalFrame": {
+        "fps": 60,
+        "startFrame": 0,
+        "endFrame": 600,
+        "interval": "[startFrame,endFrame)"
+      },
+      "id": "movement",
+      "summary": "A woman walks toward her friend, waves, then jogs back. Her friend waves back.",
+      "duration": 10,
+      "background": "street",
+      "backgroundNodes": [],
+      "motions": [],
+      "cast": [
+        {
+          "characterId": "woman",
+          "x": 100,
+          "y": 780,
+          "scale": 0.6,
+          "facing": 1,
+          "rigVersion": 2,
+          "shoulderWidth": 28
+        },
+        {
+          "characterId": "man",
+          "x": 410,
+          "y": 780,
+          "scale": 0.6,
+          "facing": -1,
+          "rigVersion": 2,
+          "shoulderWidth": 28
+        }
+      ],
+      "props": [],
+      "beats": [
+        {
+          "actorId": "woman",
+          "kind": "walk",
+          "start": 0,
+          "duration": 3,
+          "to": [
+            275,
+            780
+          ],
+          "hand": "right",
+          "amount": 1,
+          "intent": "Walk toward her friend"
+        },
+        {
+          "actorId": "woman",
+          "kind": "perform",
+          "start": 3,
+          "duration": 2,
+          "hand": "right",
+          "emotion": "confident",
+          "amount": 1,
+          "rightHandShape": "open",
+          "keyframes": [
+            {
+              "at": 0,
+              "pose": {
+                "rightHand": [
+                  60,
+                  -130
+                ]
+              }
+            },
+            {
+              "at": 0.25,
+              "pose": {
+                "rightHand": [
+                  95,
+                  -390
+                ],
+                "wristAngle": 15
+              }
+            },
+            {
+              "at": 0.5,
+              "pose": {
+                "rightHand": [
+                  135,
+                  -370
+                ],
+                "wristAngle": -15
+              }
+            },
+            {
+              "at": 0.75,
+              "pose": {
+                "rightHand": [
+                  95,
+                  -390
+                ],
+                "wristAngle": 15
+              }
+            },
+            {
+              "at": 1,
+              "pose": {
+                "rightHand": [
+                  60,
+                  -130
+                ]
+              }
+            }
+          ],
+          "intent": "Wave hello with an open hand"
+        },
+        {
+          "actorId": "woman",
+          "kind": "run",
+          "start": 5,
+          "duration": 3,
+          "to": [
+            100,
+            780
+          ],
+          "hand": "right",
+          "amount": 1,
+          "intent": "Jog back to starting position"
+        },
+        {
+          "actorId": "man",
+          "kind": "perform",
+          "start": 3.5,
+          "duration": 2.5,
+          "hand": "right",
+          "emotion": "confident",
+          "amount": 1,
+          "leftHandShape": "open",
+          "keyframes": [
+            {
+              "at": 0,
+              "pose": {
+                "leftHand": [
+                  -60,
+                  -130
+                ]
+              }
+            },
+            {
+              "at": 0.25,
+              "pose": {
+                "leftHand": [
+                  -95,
+                  -390
+                ]
+              }
+            },
+            {
+              "at": 0.5,
+              "pose": {
+                "leftHand": [
+                  -135,
+                  -370
+                ]
+              }
+            },
+            {
+              "at": 0.75,
+              "pose": {
+                "leftHand": [
+                  -95,
+                  -390
+                ]
+              }
+            },
+            {
+              "at": 1,
+              "pose": {
+                "leftHand": [
+                  -60,
+                  -130
+                ]
+              }
+            }
+          ],
+          "intent": "Wave hello with an open hand"
+        }
+      ],
+      "shots": [
+        {
+          "start": 0,
+          "end": 10,
+          "focus": [
+            270,
+            585
+          ],
+          "zoom": 1,
+          "detail": "full"
+        }
+      ],
+      "sounds": [],
+      "dialogue": []
+    }
+  ],
+  "coverage": [
+    {
+      "storyEvent": "A woman walks toward her friend, waves, then jogs back. Her friend waves back.",
+      "sceneId": "movement",
+      "beatIndices": [
+        0,
+        1,
+        2,
+        3
+      ]
+    }
+  ],
+  "seo": {
+    "titles": [
+      "Human movement and joint skinning"
+    ],
+    "description": "Authored engine regression preview, not an AI-generated story.",
+    "tags": [
+      "animation"
+    ],
+    "hashtags": [],
+    "pinnedComment": "",
+    "thumbnailText": ""
+  },
+  "blockedReasons": [],
+  "version": 1,
+  "format": "landscape",
+  "language": "en"
+}

@@ -1,0 +1,36 @@
+LATEST: Pehle README-THREE-STYLES-HINDI.md padhein. Teen styles Gemini + Freesound par bina spoken dialogue/Cartesia ke chalte hain. Nayi files extract karke build aur server restart karein. Neeche purane release ke notes hain.
+
+StickLaugh Studio 9.0
+
+1. ZIP extract karke StickLaughStudio folder kholo.
+2. Node.js24, Chrome aur FFmpeg/ffprobe install hone chahiye.
+3. Windows: START_WINDOWS.bat. Mac/Linux: bash start.sh
+4. http://127.0.0.1:3001 kholo.
+5. Nayi story mein Automatic length default hai: Gemini story ke beats ke hisaab
+   se duration chunta hai. Manual choose karke target seconds bhi de sakte ho.
+6. 60 fps ya120 fps choose karo; director mein export se pehle badal bhi sakte ho.
+7. Reference-style radio buttons se silent/selective colour ya coloured cartoon
+   choose karo. Try the tested demo bundled plan load karta hai, nayi story nahi.
+8. Listen to this scene's sounds se actual clips suno. Preview aur scenes dekho,
+   phir Render dabao. Bundled sample ko API keys nahi chahiye.
+
+Ready videos:
+- deliverables/superhero-v9/video.mp4 :16.5s,60fps, wind, wet plop, punches, gibberish.
+- deliverables/cool-cap-v9/video.mp4 :17.6s,120fps, coloured joke, fixed egg-pick arm.
+
+Forearm ab reach ke dauran visible hai. Apne sir se cheez uthate waqt haath
+chehre ke bahar se aata hai. Custom prop ka gripOffset handle/edge define karta
+hai. Flight wind, gravity fall, landing particles aur cheek contact effects
+story ke scene/action fields ke hisaab se lagte hain.
+
+Nayi story ke liye Gemini key chahiye. Curated sounds bina Freesound key ke
+chalenge; unresolved effects search ke liye Freesound key chahiye.
+Cartesia dialogue ke liye key aur har speaker ka alag voice ID do, phir live
+Cartesia checkbox tick karo. Ready samples recorded CC0 gibberish use karte
+hain. Samples live Gemini/Cartesia outputs nahi hain; authored plans ko isi
+project ke API/Remotion pipeline se render kiya gaya hai.
+
+6,211 tests +48 limb raster checks ke results docs/V9-VALIDATION.md mein hain.
+Yeh supported character/action engine hai; koi bhi arbitrary story perfect
+reference quality mein hamesha banne ka claim nahi. Unsupported events ko
+block/repair karna chahiye. Export dekhkar comic timing bhi review karo.

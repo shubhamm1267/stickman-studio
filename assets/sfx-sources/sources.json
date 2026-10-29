@@ -1,0 +1,42 @@
+[
+  {
+    "name": "mumble",
+    "urls": [
+      "https://cdn.freesound.org/previews/346/346638_2196245-lq.mp3",
+      "https://cdn.freesound.org/previews/346/346638_2196245-hq.mp3"
+    ],
+    "cc0": true,
+    "downloaded": true,
+    "page": "https://freesound.org/people/frosthardr/sounds/346638/"
+  },
+  {
+    "name": "angry",
+    "urls": [
+      "https://cdn.freesound.org/previews/343/343977_950925-lq.mp3",
+      "https://cdn.freesound.org/previews/343/343977_950925-hq.mp3"
+    ],
+    "cc0": true,
+    "downloaded": true,
+    "page": "https://freesound.org/people/Reitanna/sounds/343977/"
+  },
+  {
+    "name": "whoosh",
+    "urls": [
+      "https://cdn.freesound.org/previews/733/733905_6703998-lq.mp3",
+      "https://cdn.freesound.org/previews/733/733905_6703998-hq.mp3"
+    ],
+    "cc0": true,
+    "downloaded": true,
+    "page": "https://freesound.org/people/velcronator/sounds/733905/"
+  },
+  {
+    "name": "punch",
+    "urls": [
+      "https://cdn.freesound.org/previews/322/322250_2971294-lq.mp3",
+      "https://cdn.freesound.org/previews/322/322250_2971294-hq.mp3"
+    ],
+    "cc0": true,
+    "downloaded": true,
+    "page": "https://freesound.org/people/Paul368/sounds/322250/"
+  }
+]

@@ -1,0 +1,1179 @@
+{
+  "comedy": {
+    "hook": "A tiny mosquito challenges an enormous bodybuilder.",
+    "goal": "Nandu wants the buzzing insect to go away.",
+    "escalation": [
+      "Showing his muscles has no effect.",
+      "Two attempted swats produce two self-slaps.",
+      "A careful two-handed trap and a huge sneeze still fail."
+    ],
+    "payoff": "The bodybuilder loses his muscles and runs from the smallest opponent.",
+    "callback": "The mosquito flies back toward its original position, ready to repeat the prank."
+  },
+  "title": "Bodybuilder vs Machhar — Size Does Not Matter",
+  "story": "A tiny mosquito interrupts a proud bodybuilder in the park. He flexes to scare it. It lands on his right cheek: he slaps himself, missing the bug. It lands on the left: another self-slap. He tries trapping it with both hands near his nose, but it escapes. A giant sneeze also fails. The mosquito returns untouched; his muscles deflate in defeat and he runs away. The tiny mosquito takes over the close-up, then buzzes back toward the opening position.",
+  "characters": [
+    {
+      "id": "nandu",
+      "name": "Nandu",
+      "kind": "man",
+      "skin": "#f6f1da",
+      "outfit": "#a2b6a6",
+      "hair": "#655f4d",
+      "headWidth": 1,
+      "headHeight": 1
+    }
+  ],
+  "propDesigns": [
+    {
+      "id": "mosquito",
+      "name": "A very smug mosquito",
+      "type": "drawing",
+      "color": "#a5b293",
+      "nodes": [
+        {
+          "kind": "ellipse",
+          "motion": "flutter",
+          "center": [
+            -7,
+            -8
+          ],
+          "radius": [
+            14,
+            6
+          ],
+          "fill": "#e3e9d1",
+          "width": 1.4
+        },
+        {
+          "kind": "ellipse",
+          "motion": "flutter",
+          "center": [
+            8,
+            -10
+          ],
+          "radius": [
+            14,
+            7
+          ],
+          "fill": "#e3e9d1",
+          "width": 1.4
+        },
+        {
+          "kind": "ellipse",
+          "center": [
+            0,
+            8
+          ],
+          "radius": [
+            6,
+            13
+          ],
+          "fill": "#a5b293",
+          "width": 1.8
+        },
+        {
+          "kind": "line",
+          "from": [
+            -4,
+            12
+          ],
+          "to": [
+            -13,
+            22
+          ],
+          "width": 1.2
+        },
+        {
+          "kind": "line",
+          "from": [
+            3,
+            12
+          ],
+          "to": [
+            11,
+            23
+          ],
+          "width": 1.2
+        },
+        {
+          "kind": "path",
+          "d": "M-5 4 L-15 -1 L-13 -8 M5 4 L15 -1 L13 -8",
+          "width": 1.5
+        },
+        {
+          "kind": "ellipse",
+          "center": [
+            0,
+            -3
+          ],
+          "radius": [
+            10,
+            10
+          ],
+          "fill": "#f6f1da",
+          "width": 1.5
+        },
+        {
+          "kind": "ellipse",
+          "center": [
+            -4,
+            -6
+          ],
+          "radius": [
+            4,
+            5
+          ],
+          "fill": "#ffffff",
+          "width": 1
+        },
+        {
+          "kind": "ellipse",
+          "center": [
+            4,
+            -6
+          ],
+          "radius": [
+            4,
+            5
+          ],
+          "fill": "#ffffff",
+          "width": 1
+        },
+        {
+          "kind": "ellipse",
+          "center": [
+            -3,
+            -6
+          ],
+          "radius": [
+            1.3,
+            2
+          ],
+          "fill": "#293329",
+          "width": 0
+        },
+        {
+          "kind": "ellipse",
+          "center": [
+            5,
+            -6
+          ],
+          "radius": [
+            1.3,
+            2
+          ],
+          "fill": "#293329",
+          "width": 0
+        },
+        {
+          "kind": "line",
+          "from": [
+            6,
+            1
+          ],
+          "to": [
+            21,
+            5
+          ],
+          "width": 1.5
+        },
+        {
+          "kind": "path",
+          "d": "M-4 4 Q0 8 5 4 M-6 -12 L-10 -18 M5 -12 L9 -18",
+          "width": 1.2
+        }
+      ]
+    },
+    {
+      "id": "cheekR",
+      "name": "Right cheek contact marker (invisible)",
+      "type": "drawing",
+      "color": "#ffffff",
+      "nodes": []
+    },
+    {
+      "id": "cheekL",
+      "name": "Left cheek contact marker (invisible)",
+      "type": "drawing",
+      "color": "#ffffff",
+      "nodes": []
+    }
+  ],
+  "scenes": [
+    {
+      "id": "park",
+      "summary": "A proud bodybuilder cannot defeat a tiny mosquito; every attempt backfires until he runs away.",
+      "duration": 28,
+      "background": "park",
+      "backgroundNodes": [],
+      "motions": [
+        {
+          "targetId": "mosquito",
+          "start": 0,
+          "duration": 1.1,
+          "to": [
+            300,
+            365
+          ],
+          "arc": 35,
+          "angle": 0
+        },
+        {
+          "targetId": "mosquito",
+          "start": 1.1,
+          "duration": 1,
+          "to": [
+            350,
+            480
+          ],
+          "arc": -25,
+          "angle": 0
+        },
+        {
+          "targetId": "mosquito",
+          "start": 3.8,
+          "duration": 0.8,
+          "to": [
+            263,
+            389
+          ],
+          "arc": 35,
+          "angle": 0
+        },
+        {
+          "targetId": "mosquito",
+          "start": 5.83,
+          "duration": 0.25,
+          "to": [
+            345,
+            340
+          ],
+          "arc": 30,
+          "angle": 0
+        },
+        {
+          "targetId": "mosquito",
+          "start": 7.8,
+          "duration": 0.8,
+          "to": [
+            207,
+            389
+          ],
+          "arc": 50,
+          "angle": 0
+        },
+        {
+          "targetId": "mosquito",
+          "start": 9.9,
+          "duration": 0.22,
+          "to": [
+            155,
+            337
+          ],
+          "arc": 30,
+          "angle": 0
+        },
+        {
+          "targetId": "mosquito",
+          "start": 10.65,
+          "duration": 0.8,
+          "to": [
+            263,
+            390
+          ],
+          "arc": 20,
+          "angle": 0
+        },
+        {
+          "targetId": "mosquito",
+          "start": 13.03,
+          "duration": 0.18,
+          "to": [
+            270,
+            300
+          ],
+          "arc": 20,
+          "angle": 0
+        },
+        {
+          "targetId": "mosquito",
+          "start": 14.3,
+          "duration": 1.2,
+          "to": [
+            265,
+            390
+          ],
+          "arc": 40,
+          "angle": 0
+        },
+        {
+          "targetId": "mosquito",
+          "start": 17.48,
+          "duration": 0.35,
+          "to": [
+            410,
+            320
+          ],
+          "arc": 70,
+          "angle": 0
+        },
+        {
+          "targetId": "mosquito",
+          "start": 18.5,
+          "duration": 0.8,
+          "to": [
+            265,
+            389
+          ],
+          "arc": 40,
+          "angle": 0
+        },
+        {
+          "targetId": "mosquito",
+          "start": 21.6,
+          "duration": 0.7,
+          "to": [
+            315,
+            400
+          ],
+          "arc": 35,
+          "angle": 0
+        },
+        {
+          "targetId": "mosquito",
+          "start": 24.1,
+          "duration": 0.9,
+          "to": [
+            270,
+            440
+          ],
+          "arc": 25,
+          "angle": 0,
+          "scale": 1.4
+        },
+        {
+          "targetId": "mosquito",
+          "start": 26.8,
+          "duration": 1.2,
+          "to": [
+            390,
+            400
+          ],
+          "arc": 30,
+          "angle": 0,
+          "scale": 0.7
+        }
+      ],
+      "cast": [
+        {
+          "characterId": "nandu",
+          "x": 235,
+          "y": 780,
+          "scale": 1,
+          "facing": 1
+        }
+      ],
+      "props": [
+        {
+          "designId": "mosquito",
+          "open": 0,
+          "angle": 0,
+          "x": 390,
+          "y": 400,
+          "scale": 0.7
+        },
+        {
+          "designId": "cheekR",
+          "open": 0,
+          "angle": 0,
+          "x": 263,
+          "y": 389,
+          "scale": 1
+        },
+        {
+          "designId": "cheekL",
+          "open": 0,
+          "angle": 0,
+          "x": 207,
+          "y": 389,
+          "scale": 1
+        }
+      ],
+      "beats": [
+        {
+          "actorId": "nandu",
+          "kind": "react",
+          "start": 0,
+          "duration": 0.35,
+          "hand": "right",
+          "emotion": "curious",
+          "amount": 1,
+          "intent": "A buzz interrupts Nandu; he spots the tiny mosquito."
+        },
+        {
+          "actorId": "nandu",
+          "kind": "custom",
+          "start": 0.5,
+          "duration": 0.3,
+          "hand": "right",
+          "amount": 1,
+          "pose": {
+            "gaze": [
+              10,
+              -1
+            ],
+            "headAngle": -4
+          },
+          "intent": "His eyes track the mosquito."
+        },
+        {
+          "actorId": "nandu",
+          "kind": "flex",
+          "start": 2.1,
+          "duration": 0.7,
+          "hand": "right",
+          "emotion": "smug",
+          "amount": 1.15,
+          "intent": "He shows off huge muscles to intimidate one tiny bug."
+        },
+        {
+          "actorId": "nandu",
+          "kind": "custom",
+          "start": 3.45,
+          "duration": 0.3,
+          "hand": "right",
+          "emotion": "kiss",
+          "amount": 1,
+          "pose": {
+            "headAngle": -17
+          },
+          "intent": "He kisses his own enormous bicep."
+        },
+        {
+          "actorId": "nandu",
+          "kind": "react",
+          "start": 4.25,
+          "duration": 0.3,
+          "hand": "right",
+          "emotion": "annoyed",
+          "amount": 1,
+          "intent": "The mosquito ignores his muscles and lands on his cheek."
+        },
+        {
+          "actorId": "nandu",
+          "kind": "custom",
+          "start": 4.6,
+          "duration": 0.25,
+          "hand": "right",
+          "amount": 1,
+          "pose": {
+            "gaze": [
+              8,
+              5
+            ],
+            "headAngle": 0
+          },
+          "intent": "He watches his cheek and prepares to swat."
+        },
+        {
+          "actorId": "nandu",
+          "kind": "swat",
+          "start": 5.25,
+          "duration": 1.1,
+          "targetId": "cheekR",
+          "hand": "right",
+          "emotion": "strain",
+          "amount": 1,
+          "intent": "He slaps his own right cheek; the mosquito dodges."
+        },
+        {
+          "actorId": "nandu",
+          "kind": "custom",
+          "start": 5.96,
+          "duration": 0.16,
+          "hand": "right",
+          "emotion": "shock",
+          "amount": 1,
+          "pose": {
+            "head": [
+              -10,
+              -402
+            ],
+            "headAngle": -15
+          },
+          "intent": "His head recoils from his own slap."
+        },
+        {
+          "actorId": "nandu",
+          "kind": "stand",
+          "start": 6.6,
+          "duration": 0.25,
+          "hand": "right",
+          "emotion": "defeat",
+          "amount": 1,
+          "intent": "Recover after the slap."
+        },
+        {
+          "actorId": "nandu",
+          "kind": "custom",
+          "start": 7.05,
+          "duration": 0.3,
+          "hand": "right",
+          "emotion": "jawdrop",
+          "amount": 1,
+          "pose": {
+            "gaze": [
+              -9,
+              -2
+            ]
+          },
+          "intent": "Stunned blinking pause after hitting himself."
+        },
+        {
+          "actorId": "nandu",
+          "kind": "react",
+          "start": 8.6,
+          "duration": 0.3,
+          "hand": "right",
+          "emotion": "annoyed",
+          "amount": 1,
+          "intent": "The mosquito lands on his other cheek."
+        },
+        {
+          "actorId": "nandu",
+          "kind": "swat",
+          "start": 9.35,
+          "duration": 1.05,
+          "targetId": "cheekL",
+          "hand": "left",
+          "emotion": "extreme",
+          "amount": 1,
+          "intent": "He tries the other hand and slaps the other cheek."
+        },
+        {
+          "actorId": "nandu",
+          "kind": "custom",
+          "start": 10.03,
+          "duration": 0.16,
+          "hand": "right",
+          "emotion": "shock",
+          "amount": 1,
+          "pose": {
+            "head": [
+              10,
+              -401
+            ],
+            "headAngle": 15
+          },
+          "intent": "The second self-slap snaps his head the other way."
+        },
+        {
+          "actorId": "nandu",
+          "kind": "stand",
+          "start": 10.75,
+          "duration": 0.3,
+          "hand": "right",
+          "emotion": "defeat",
+          "amount": 1,
+          "intent": "Recover again, trying to hide embarrassment."
+        },
+        {
+          "actorId": "nandu",
+          "kind": "custom",
+          "start": 11.3,
+          "duration": 0.35,
+          "hand": "right",
+          "emotion": "curious",
+          "amount": 1,
+          "pose": {
+            "gaze": [
+              2,
+              11
+            ]
+          },
+          "intent": "His eyes follow the insect sitting on his nose."
+        },
+        {
+          "actorId": "nandu",
+          "kind": "custom",
+          "start": 12.2,
+          "duration": 0.45,
+          "hand": "right",
+          "emotion": "strain",
+          "amount": 1,
+          "pose": {
+            "leftHand": [
+              -70,
+              -395
+            ],
+            "rightHand": [
+              83,
+              -395
+            ]
+          },
+          "intent": "He slowly brings both palms close to his nose."
+        },
+        {
+          "actorId": "nandu",
+          "kind": "custom",
+          "start": 13.05,
+          "duration": 0.15,
+          "hand": "right",
+          "emotion": "shock",
+          "amount": 1,
+          "pose": {
+            "leftHand": [
+              5,
+              -395
+            ],
+            "rightHand": [
+              28,
+              -395
+            ]
+          },
+          "intent": "Both palms clap around his nose, but the insect escapes upwards."
+        },
+        {
+          "actorId": "nandu",
+          "kind": "custom",
+          "start": 13.65,
+          "duration": 0.35,
+          "hand": "right",
+          "emotion": "jawdrop",
+          "amount": 1,
+          "pose": {
+            "leftHand": [
+              -85,
+              -350
+            ],
+            "rightHand": [
+              100,
+              -350
+            ]
+          },
+          "intent": "He opens his hands to discover they are empty."
+        },
+        {
+          "actorId": "nandu",
+          "kind": "react",
+          "start": 14.8,
+          "duration": 0.35,
+          "hand": "right",
+          "emotion": "annoyed",
+          "amount": 1,
+          "intent": "The insect circles back, tickling his nose again."
+        },
+        {
+          "actorId": "nandu",
+          "kind": "sneeze",
+          "start": 16.1,
+          "duration": 2.1,
+          "hand": "right",
+          "emotion": "strain",
+          "amount": 1,
+          "intent": "He inhales enormously, then sneezes at the insect."
+        },
+        {
+          "actorId": "nandu",
+          "kind": "react",
+          "start": 18.35,
+          "duration": 0.3,
+          "hand": "right",
+          "emotion": "smug",
+          "amount": 1,
+          "intent": "He thinks the sneeze finally worked."
+        },
+        {
+          "actorId": "nandu",
+          "kind": "react",
+          "start": 19.4,
+          "duration": 0.25,
+          "hand": "right",
+          "emotion": "shock",
+          "amount": 1,
+          "intent": "The mosquito lands again, completely unharmed."
+        },
+        {
+          "actorId": "nandu",
+          "kind": "deflate",
+          "start": 20.25,
+          "duration": 1.25,
+          "hand": "right",
+          "emotion": "defeat",
+          "amount": 1,
+          "intent": "His muscles deflate as he realizes he has lost."
+        },
+        {
+          "actorId": "nandu",
+          "kind": "custom",
+          "start": 21.7,
+          "duration": 0.2,
+          "hand": "right",
+          "emotion": "jawdrop",
+          "amount": 1,
+          "pose": {
+            "gaze": [
+              9,
+              -5
+            ]
+          },
+          "intent": "One last fearful glance at the tiny opponent."
+        },
+        {
+          "actorId": "nandu",
+          "kind": "run",
+          "start": 22.3,
+          "duration": 1.85,
+          "to": [
+            -260,
+            780
+          ],
+          "hand": "right",
+          "emotion": "shock",
+          "amount": 1,
+          "intent": "He runs away from one tiny mosquito."
+        }
+      ],
+      "shots": [
+        {
+          "start": 0,
+          "end": 2.1,
+          "focus": [
+            280,
+            405
+          ],
+          "endZoom": 1.8,
+          "zoom": 1.65,
+          "detail": "full"
+        },
+        {
+          "start": 2.1,
+          "end": 4.25,
+          "focus": [
+            245,
+            505
+          ],
+          "endZoom": 1.18,
+          "zoom": 1.13,
+          "detail": "full"
+        },
+        {
+          "start": 4.25,
+          "end": 6.5,
+          "focus": [
+            257,
+            394
+          ],
+          "zoom": 1.95,
+          "detail": "full"
+        },
+        {
+          "start": 6.5,
+          "end": 8.6,
+          "focus": [
+            253,
+            397
+          ],
+          "endZoom": 2.08,
+          "zoom": 1.95,
+          "detail": "full"
+        },
+        {
+          "start": 8.6,
+          "end": 10.65,
+          "focus": [
+            225,
+            394
+          ],
+          "zoom": 1.95,
+          "detail": "full"
+        },
+        {
+          "start": 10.65,
+          "end": 14.8,
+          "focus": [
+            248,
+            400
+          ],
+          "endZoom": 2.05,
+          "zoom": 1.86,
+          "detail": "full"
+        },
+        {
+          "start": 14.8,
+          "end": 18.3,
+          "focus": [
+            275,
+            450
+          ],
+          "zoom": 1.45,
+          "detail": "full"
+        },
+        {
+          "start": 18.3,
+          "end": 20.25,
+          "focus": [
+            258,
+            400
+          ],
+          "zoom": 1.85,
+          "detail": "full"
+        },
+        {
+          "start": 20.25,
+          "end": 22.3,
+          "focus": [
+            250,
+            510
+          ],
+          "zoom": 1.12,
+          "detail": "full"
+        },
+        {
+          "start": 22.3,
+          "end": 24.2,
+          "focus": [
+            175,
+            520
+          ],
+          "endFocus": [
+            110,
+            520
+          ],
+          "zoom": 1.02,
+          "detail": "full"
+        },
+        {
+          "start": 24.2,
+          "end": 28,
+          "focus": [
+            275,
+            440
+          ],
+          "endZoom": 2.2,
+          "zoom": 1.85,
+          "detail": "full"
+        }
+      ],
+      "sounds": [
+        {
+          "playbackRate": 1,
+          "trimSilence": false,
+          "start": 0,
+          "query": "single mosquito buzz",
+          "volume": 0.12,
+          "duration": 1.9,
+          "required": true,
+          "sourceStart": 2,
+          "pan": 0.3,
+          "fixture": "buzz"
+        },
+        {
+          "playbackRate": 1,
+          "trimSilence": false,
+          "start": 2.1,
+          "query": "cartoon pop",
+          "volume": 0.12,
+          "duration": 0.2,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "pop"
+        },
+        {
+          "playbackRate": 1,
+          "trimSilence": false,
+          "start": 2.5,
+          "query": "cartoon boing",
+          "volume": 0.18,
+          "duration": 0.7,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "boing"
+        },
+        {
+          "playbackRate": 1,
+          "trimSilence": false,
+          "start": 3.85,
+          "query": "single mosquito buzz",
+          "volume": 0.12,
+          "duration": 1.3,
+          "required": true,
+          "sourceStart": 5,
+          "pan": 0,
+          "fixture": "buzz"
+        },
+        {
+          "beatIndex": 6,
+          "syncTo": "contact",
+          "playbackRate": 1,
+          "trimSilence": false,
+          "start": 5.954,
+          "query": "cartoon slap",
+          "volume": 0.35,
+          "duration": 0.35,
+          "required": true,
+          "sourceStart": 0.17,
+          "pan": 0,
+          "fixture": "slap"
+        },
+        {
+          "playbackRate": 1,
+          "trimSilence": false,
+          "start": 6.7,
+          "query": "cartoon boing",
+          "volume": 0.13,
+          "duration": 0.6,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "boing"
+        },
+        {
+          "playbackRate": 1,
+          "trimSilence": false,
+          "start": 7.8,
+          "query": "single mosquito buzz",
+          "volume": 0.12,
+          "duration": 1.25,
+          "required": true,
+          "sourceStart": 9,
+          "pan": -0.35,
+          "fixture": "buzz"
+        },
+        {
+          "beatIndex": 11,
+          "syncTo": "contact",
+          "playbackRate": 1,
+          "trimSilence": false,
+          "start": 10.022,
+          "query": "cartoon slap",
+          "volume": 0.35,
+          "duration": 0.35,
+          "required": true,
+          "sourceStart": 0.17,
+          "pan": 0,
+          "fixture": "slap"
+        },
+        {
+          "playbackRate": 1,
+          "trimSilence": false,
+          "start": 11.45,
+          "query": "surprised gulp",
+          "volume": 0.13,
+          "duration": 0.45,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "gulp"
+        },
+        {
+          "playbackRate": 1,
+          "trimSilence": false,
+          "start": 11.7,
+          "query": "single mosquito buzz",
+          "volume": 0.1,
+          "duration": 1.05,
+          "required": true,
+          "sourceStart": 13,
+          "pan": 0,
+          "fixture": "buzz"
+        },
+        {
+          "beatIndex": 16,
+          "playbackRate": 1,
+          "trimSilence": false,
+          "start": 13.16,
+          "query": "cartoon slap",
+          "volume": 0.25,
+          "duration": 0.35,
+          "required": true,
+          "sourceStart": 0.17,
+          "pan": 0,
+          "fixture": "slap"
+        },
+        {
+          "playbackRate": 1,
+          "trimSilence": false,
+          "start": 13.3,
+          "query": "single mosquito buzz",
+          "volume": 0.1,
+          "duration": 0.85,
+          "required": true,
+          "sourceStart": 17,
+          "pan": 0,
+          "fixture": "buzz"
+        },
+        {
+          "playbackRate": 1,
+          "trimSilence": false,
+          "start": 16.3,
+          "query": "male effort grunt",
+          "volume": 0.14,
+          "duration": 0.65,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "grunt"
+        },
+        {
+          "beatIndex": 19,
+          "syncTo": "contact",
+          "playbackRate": 1,
+          "trimSilence": false,
+          "start": 16.6,
+          "query": "male sneeze",
+          "volume": 0.32,
+          "duration": 0.65,
+          "required": true,
+          "sourceStart": 0.35,
+          "pan": 0,
+          "fixture": "sneeze"
+        },
+        {
+          "playbackRate": 1,
+          "trimSilence": false,
+          "start": 18.55,
+          "query": "single mosquito buzz",
+          "volume": 0.12,
+          "duration": 1.2,
+          "required": true,
+          "sourceStart": 3,
+          "pan": 0,
+          "fixture": "buzz"
+        },
+        {
+          "playbackRate": 1,
+          "trimSilence": false,
+          "start": 19.46,
+          "query": "cartoon boing",
+          "volume": 0.12,
+          "duration": 0.55,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "boing"
+        },
+        {
+          "playbackRate": 1,
+          "trimSilence": false,
+          "start": 20.25,
+          "query": "balloon deflate",
+          "volume": 0.27,
+          "duration": 1.6,
+          "required": true,
+          "sourceStart": 0.8,
+          "pan": 0,
+          "fixture": "deflate"
+        },
+        {
+          "playbackRate": 1,
+          "trimSilence": false,
+          "start": 24.2,
+          "query": "single mosquito buzz",
+          "volume": 0.13,
+          "duration": 3.8,
+          "required": true,
+          "sourceStart": 8,
+          "pan": 0,
+          "fixture": "buzz"
+        },
+        {
+          "beatIndex": 24,
+          "syncTo": "footfalls",
+          "playbackRate": 1,
+          "trimSilence": false,
+          "start": 22.3,
+          "query": "running footsteps",
+          "volume": 0.18,
+          "duration": 0.18,
+          "required": true,
+          "sourceStart": 2.15,
+          "pan": 0,
+          "fixture": "steps"
+        }
+      ],
+      "dialogue": []
+    }
+  ],
+  "coverage": [
+    {
+      "storyEvent": "A mosquito interrupts the bodybuilder; flexing fails to scare it.",
+      "sceneId": "park",
+      "beatIndices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "storyEvent": "Two swats miss the bug and slap his own cheeks.",
+      "sceneId": "park",
+      "beatIndices": [
+        6,
+        7,
+        11,
+        12
+      ]
+    },
+    {
+      "storyEvent": "The two-handed trap and sneeze fail.",
+      "sceneId": "park",
+      "beatIndices": [
+        15,
+        16,
+        17,
+        19,
+        20,
+        21
+      ]
+    },
+    {
+      "storyEvent": "His muscles deflate and he runs away; the mosquito wins.",
+      "sceneId": "park",
+      "beatIndices": [
+        22,
+        23,
+        24
+      ]
+    }
+  ],
+  "seo": {
+    "titles": [
+      "Bodybuilder vs 1 Machhar 😂 Kaun Jeetega?",
+      "इतनी Muscles… एक मच्छर से हार गया!",
+      "One Tiny Mosquito. One Very Scared Bodybuilder."
+    ],
+    "description": "A bodybuilder brings huge muscles to a tiny mosquito problem. Two self-slaps, one desperate trap and one enormous sneeze later… the smallest opponent is still winning. Original silent visual cartoon comedy: no captions or dialogue needed.",
+    "tags": [
+      "bodybuilder vs mosquito",
+      "machhar comedy",
+      "funny cartoon",
+      "stickman comedy",
+      "silent comedy",
+      "animated comedy",
+      "Hindi cartoon shorts",
+      "visual comedy"
+    ],
+    "hashtags": [
+      "#CartoonComedy",
+      "#Funny",
+      "#Shorts"
+    ],
+    "pinnedComment": "Machhar 1 — Muscles 0 😂 Tumhara solution kya hota?",
+    "thumbnailText": "1 MACHHAR > MUSCLES"
+  },
+  "blockedReasons": [],
+  "review": {
+    "method": "authored-example",
+    "planHash": "fe854114ddf7cd344674c0e85bdc45553797adc4b79d4d6b5978e49826032d56",
+    "summary": "Authored offline example. Story events are mapped to actual beats. Geometry preflight passed; review contact sheets and final video. This sample does not call Gemini."
+  },
+  "version": 1,
+  "format": "shorts",
+  "language": "hi"
+}

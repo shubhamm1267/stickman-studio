@@ -1,0 +1,75 @@
+{
+  "date": "2026-10-28",
+  "node": {
+    "tests": 6402,
+    "failures": 0,
+    "errors": 0
+  },
+  "python": {
+    "tests": 10,
+    "exitCode": 0
+  },
+  "frontendBuild": "passed",
+  "browserWorkflow": {
+    "passed": true,
+    "styles": [
+      "silent-slapstick",
+      "coloured-cartoon",
+      "elastic-meme"
+    ],
+    "automaticPlanRender": true,
+    "automaticDownload": true,
+    "manualDownloadUsesPreparedBlob": true,
+    "pageErrors": [],
+    "limits": "Provider and renderer responses are mocked in this browser workflow check; rendering and live provider verification are separate."
+  },
+  "liveGeminiPlanning": {
+    "elastic-meme": true
+  },
+  "liveFreesoundRender": {
+    "passed": true,
+    "rendered": true,
+    "cartesiaCredentialsProvided": false,
+    "dialogueLines": 0,
+    "soundSources": 2,
+    "allSoundsCC0": true,
+    "referenceStyle": "elastic-meme",
+    "limits": "A successful example does not prove arbitrary story fidelity or exact branded likeness."
+  },
+  "encodedSample": {
+    "ok": true,
+    "fullDecode": true,
+    "frames": 600,
+    "fps": 60,
+    "width": 960,
+    "height": 540,
+    "duration": 10,
+    "clippedSamples": 0,
+    "audioPeak": 0.1422194391489029,
+    "minFrameStdDev": 10.240013656266795,
+    "changedPairs": 2,
+    "changedWindowPairs": 269,
+    "limits": "Technical checks do not prove comedy quality, arbitrary story fidelity or perceptual sound suitability."
+  },
+  "sampleSha256": "9b76e7d911a2f956b62ff63cb2b566e2c2488de2ff41c53230b244c0e0d6b72a",
+  "authoredMovementPreview": {
+    "ok": true,
+    "fullDecode": true,
+    "frames": 600,
+    "fps": 60,
+    "width": 960,
+    "height": 540,
+    "duration": 10,
+    "clippedSamples": 0,
+    "audioPeak": 0,
+    "minFrameStdDev": 12.964133493365708,
+    "changedPairs": 30,
+    "changedWindowPairs": 435,
+    "limits": "Technical checks do not prove comedy quality, arbitrary story fidelity or perceptual sound suitability."
+  },
+  "referenceReview": {
+    "providedClips": 6,
+    "method": "Duration metadata and evenly sampled visual contact sheets; general style and action staging analysis."
+  },
+  "scope": "Browser provider/render responses are mocked; live planning and Freesound/Remotion checks are separate. This is evidence for these examples, not a guarantee of arbitrary stories, exact branded likeness or subjective comedy quality."
+}

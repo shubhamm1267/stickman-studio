@@ -1,0 +1,18 @@
+import 'dotenv/config';
+import path from 'node:path';
+import {mkdir,readFile,writeFile} from 'node:fs/promises';
+import {validatePlan} from '../shared/schema.mjs';
+import {canonicalizePlan} from '../shared/canonical-story-ir.mjs';
+import {assertRenderable} from '../server/inspect.mjs';
+import {buildAudio} from '../server/media.mjs';
+import {renderFilm} from '../server/render.mjs';
+const plan=canonicalizePlan(validatePlan(JSON.parse(await readFile(process.argv[2],'utf8')))).plan;
+if(plan.productionMode!=='silent-sfx'||plan.scenes.some(s=>s.dialogue.length))throw Error('This proof accepts SFX-only stories.');
+const dir=path.resolve(process.argv[3]||'deliverables/two-key-proof');await mkdir(dir,{recursive:true});
+const credentials={gemini:process.env.GEMINI_API_KEY,freesound:process.env.FREESOUND_API_KEY};
+const quality=assertRenderable(plan);await writeFile(path.join(dir,'quality-report.json'),JSON.stringify(quality,null,2));
+const {audio,credits}=await buildAudio(plan,dir,credentials,undefined,{progress:console.log});
+await writeFile(path.join(dir,'plan.json'),JSON.stringify(plan,null,2));
+await renderFilm(plan,dir,audio,{quality:'draft',progress:(message,percent)=>console.log(percent,message)});
+await writeFile(path.join(dir,'two-key-proof.json'),JSON.stringify({passed:true,rendered:true,cartesiaCredentialsProvided:false,dialogueLines:0,soundSources:credits.length,allSoundsCC0:credits.every(c=>String(c.license).includes('/publicdomain/zero/')),referenceStyle:plan.referenceStyle||'legacy-style',limits:'A successful example does not prove arbitrary story fidelity or exact branded likeness.'},null,2));
+console.log('PASS: rendered with Freesound and no Cartesia credentials');

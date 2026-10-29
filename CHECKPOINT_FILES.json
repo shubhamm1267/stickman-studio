@@ -1,0 +1,1790 @@
+{
+  "StickLaughStudio/.env": {
+    "bytes": 305,
+    "sha256": "4f0705a004ef77fda1fe75adeefd95bf6d2b13d5b2b7efe9c8f1d0a284cc73f6"
+  },
+  "StickLaughStudio/.gitignore": {
+    "bytes": 98,
+    "sha256": "9af94e1d6d371c9d7319516d54f3700ff75ee7ed2df9813222f6b6ec3ff9f686"
+  },
+  "StickLaughStudio/CHECKPOINT.md": {
+    "bytes": 448,
+    "sha256": "3984f88d797d4dde3b1ea972a2e73aa9c0a37ac7f68058f9657c0113b275cdde"
+  },
+  "StickLaughStudio/README-DYNAMIC-RELIABILITY.md": {
+    "bytes": 900,
+    "sha256": "e4cf4e405d052d5d3d7861e4d40e1a95cfa34a10c798bb215b1184b73c3974de"
+  },
+  "StickLaughStudio/README-DYNAMIC-UPDATE-HINDI.md": {
+    "bytes": 2953,
+    "sha256": "d7989c4f374f0bfbfa1c9888545a7c03208dd2c9c4bc75eab4885a19ae4527b4"
+  },
+  "StickLaughStudio/README-THREE-STYLES-HINDI.md": {
+    "bytes": 3588,
+    "sha256": "f497de810063a0cb36f09956a0bb30874a5239bea7fb7376204d364a39adb41b"
+  },
+  "StickLaughStudio/README-V9.1-HINDI.md": {
+    "bytes": 3574,
+    "sha256": "fdac826f014727f254c6eaa7902b373bf029777d3ec3343f15c37b258d88e159"
+  },
+  "StickLaughStudio/README-V9.md": {
+    "bytes": 3984,
+    "sha256": "f9eed1675be422364dce94dc29e47dabe26f7b9ad1976e4f64f1c9fc4b00499c"
+  },
+  "StickLaughStudio/README.md": {
+    "bytes": 7109,
+    "sha256": "4b9bd545b3e82b20c362be1056288bcd38de87a174a0f237d5e1aa9a701f898c"
+  },
+  "StickLaughStudio/START-UPDATE-HINDI.txt": {
+    "bytes": 795,
+    "sha256": "173355dcba0fc7395cff5f30783e02acb726653a96ef89639c7862db18fe9a65"
+  },
+  "StickLaughStudio/START_HERE_HINDI.txt": {
+    "bytes": 2213,
+    "sha256": "5a4efe0c7e5e6993958800916b2fd781b292333d0ad28c18209323e6897f0150"
+  },
+  "StickLaughStudio/START_WINDOWS.bat": {
+    "bytes": 379,
+    "sha256": "96440c974bbd6c698813f2c0936a740b90186f053f5efdb47e82c9d7eb4963c1"
+  },
+  "StickLaughStudio/UPDATE-START-HERE.md": {
+    "bytes": 3234,
+    "sha256": "48a91939e758bb2e71453b6ecf59e3b84acfb14f14309a24f94d87c7276ec2be"
+  },
+  "StickLaughStudio/assets/motion-presets.json": {
+    "bytes": 942,
+    "sha256": "73ff924ba346adaf0765baf31b772cfb513261f42f3e7a0eaae664c2556e52ae"
+  },
+  "StickLaughStudio/assets/sfx/air-swish.wav": {
+    "bytes": 25038,
+    "sha256": "b0a0afd136161daca8e645d548e9a125433d62e355000f5e050fd699a5a6fb6e"
+  },
+  "StickLaughStudio/assets/sfx/angry-babble.wav": {
+    "bytes": 77054,
+    "sha256": "6802c4ad0b936b0d3d14552c5c8ed4c0f93fe5b5e16d78b05801a17b554635d6"
+  },
+  "StickLaughStudio/assets/sfx/boing.mp3": {
+    "bytes": 15072,
+    "sha256": "0d6f93d1d7f792df3a3de27ba49a05ea015beb9665b9eec07a240a632e090483"
+  },
+  "StickLaughStudio/assets/sfx/buzz-435650.mp3": {
+    "bytes": 691920,
+    "sha256": "2f319d250765e152ed934a82f08f25ec079d4b769c66e498f31b033385714269"
+  },
+  "StickLaughStudio/assets/sfx/chair-117289.mp3": {
+    "bytes": 22960,
+    "sha256": "1dba5f2676a7b5a23b1356a9279abb6478f03df715bebf631b003133e1bdafac"
+  },
+  "StickLaughStudio/assets/sfx/deflate.mp3": {
+    "bytes": 18072,
+    "sha256": "bf5335fd6e3ab0e7811a65742cc55b1530cb1db4871b681484e3612ec82b91ae"
+  },
+  "StickLaughStudio/assets/sfx/fartbass-326143.mp3": {
+    "bytes": 16597,
+    "sha256": "9874fb9954bc1ccb7c115822eb6e45ecbe25c2fe6e27f761dc4c9cd22a016a01"
+  },
+  "StickLaughStudio/assets/sfx/fartlong-187621.mp3": {
+    "bytes": 173545,
+    "sha256": "ae345bae6f87728249e9d93367b47081541ddaa64de28e65812a16235968883d"
+  },
+  "StickLaughStudio/assets/sfx/fartshort-789839.mp3": {
+    "bytes": 13824,
+    "sha256": "0d84c1d14f58974cc4727829b2131966a0502e65efc7121d60d218307c046ef2"
+  },
+  "StickLaughStudio/assets/sfx/flight-wind.wav": {
+    "bytes": 595278,
+    "sha256": "64a99de17d6670ed872e9bae85971ccdf10de12b78de64bc717cfb535e589467"
+  },
+  "StickLaughStudio/assets/sfx/grunt.mp3": {
+    "bytes": 3504,
+    "sha256": "75c2b6d7284e1c45baa2786ce5ada9618bcc9da45ad04a4149d397971d12a266"
+  },
+  "StickLaughStudio/assets/sfx/gulp.mp3": {
+    "bytes": 9768,
+    "sha256": "aee8c26438584dd1257fefe822380c9b4673c5080685f5ecb6022e24938f2a14"
+  },
+  "StickLaughStudio/assets/sfx/impact.wav": {
+    "bytes": 60558,
+    "sha256": "c2d9fbde592c94971ed525077065438a52642c0dc67b7a75aeaf0c4b59eaaa72"
+  },
+  "StickLaughStudio/assets/sfx/jar.mp3": {
+    "bytes": 33425,
+    "sha256": "944d00b1ca39d16c91eaabd84072d0a0890dbca8c379d102ceaf38cb3415c437"
+  },
+  "StickLaughStudio/assets/sfx/manifest.json": {
+    "bytes": 8714,
+    "sha256": "de03aa18ed07993e0e4b9cb35bb40282c66a90b957b53e2bd0e5da72ca6f0263"
+  },
+  "StickLaughStudio/assets/sfx/mutter-a.wav": {
+    "bytes": 132960,
+    "sha256": "0eddc1668c6ac7c440e53eb52e1cdc90456c0f22dc08ed3eba40e3820a84f363"
+  },
+  "StickLaughStudio/assets/sfx/mutter-b.wav": {
+    "bytes": 114702,
+    "sha256": "1f5f7e9050046363f9afdf452dec7b90053648169f9e35eb83b16e9a466c6bf8"
+  },
+  "StickLaughStudio/assets/sfx/paper-233060.mp3": {
+    "bytes": 51291,
+    "sha256": "89113cba31d95f54bceff60b2f5ddb16afde132651892fdd580ac9a686bb33a5"
+  },
+  "StickLaughStudio/assets/sfx/pop.mp3": {
+    "bytes": 2064,
+    "sha256": "b814158b67ee9fbdee8a68203dc5795f4d9cc1de74529e747cc176f212b80874"
+  },
+  "StickLaughStudio/assets/sfx/preview-mina.wav": {
+    "bytes": 232878,
+    "sha256": "802c0c10a52672f9c4daf9260723275972bd15cc0dde8d8e547240698238d2dc"
+  },
+  "StickLaughStudio/assets/sfx/preview-raju.wav": {
+    "bytes": 285822,
+    "sha256": "cdeb71d067c8e701aafac1e5d3f7f1d9c79a151c8a5bfe8bbe94a06e02426513"
+  },
+  "StickLaughStudio/assets/sfx/rip-10428.mp3": {
+    "bytes": 14506,
+    "sha256": "5ea7ba263d663d24f829ef49024de389c6a8ba05cc87bf8c7c7812b9661edb3e"
+  },
+  "StickLaughStudio/assets/sfx/scolding.wav": {
+    "bytes": 296658,
+    "sha256": "b9f6774783750ce66430f45b0be7d7e1504c8dca3e6888a9fb68e82b5b4ceb95"
+  },
+  "StickLaughStudio/assets/sfx/slap-667099.mp3": {
+    "bytes": 25935,
+    "sha256": "207ee946b8e3103272c7bc2bdc92d3370b1cb264136832f56b7e2e40227a5be3"
+  },
+  "StickLaughStudio/assets/sfx/sneeze-171519.mp3": {
+    "bytes": 44977,
+    "sha256": "8cc60e9c006404e8af4ef828ede699925cad700fada7eb8af776327b3d5ebd64"
+  },
+  "StickLaughStudio/assets/sfx/steps.mp3": {
+    "bytes": 524472,
+    "sha256": "3da7e7f09ed465a9d26859b2c3a704dfdbc0a36493d4f7dc113667945e1b7af1"
+  },
+  "StickLaughStudio/assets/sfx/strain.mp3": {
+    "bytes": 5640,
+    "sha256": "d76911120a151f43fe31984c3edc4f9cf5cd04460c7b6c061c9ac40ab91956a2"
+  },
+  "StickLaughStudio/assets/sfx/stretch.mp3": {
+    "bytes": 27288,
+    "sha256": "e296b4d8e709cebe2cca7f25fece3b3d156ba6ad203f8f4000a1f25029756630"
+  },
+  "StickLaughStudio/assets/sfx/tap.mp3": {
+    "bytes": 3168,
+    "sha256": "90182a1db448ba59b068512a969197e5e0485115deb356d6b7435985c1a09115"
+  },
+  "StickLaughStudio/assets/sfx/tissue-320153.mp3": {
+    "bytes": 246637,
+    "sha256": "c76a0da0f150e1964a8a892fa7d00cde9e766e81ca272d5388b7473bc0e9e40a"
+  },
+  "StickLaughStudio/assets/sfx/wet-plop.wav": {
+    "bytes": 92238,
+    "sha256": "69c236186f124e745ac468ea106691a43355520f39a444be1f2a00b45242dae0"
+  },
+  "StickLaughStudio/assets/sfx-sources/angry.mp3": {
+    "bytes": 22128,
+    "sha256": "3f62dabd25b13edf12efaacb29ed0357f02a25baabe5bab797a9cbd76701eb0f"
+  },
+  "StickLaughStudio/assets/sfx-sources/mumble.mp3": {
+    "bytes": 1027918,
+    "sha256": "dee4f7ca0f0f19056f28874cccaaa643cb583ff7f551239a923361ddad10c7ca"
+  },
+  "StickLaughStudio/assets/sfx-sources/punch.mp3": {
+    "bytes": 28805,
+    "sha256": "b54b3ef200f9ff845eb57c1c39026cdc91bc9815d14a7af7392c43959334522e"
+  },
+  "StickLaughStudio/assets/sfx-sources/sources.json": {
+    "bytes": 1198,
+    "sha256": "310418089b86deae833c9bf854926b17aaf6021e57ab5f337ea45cfadb66654f"
+  },
+  "StickLaughStudio/assets/sfx-sources/wet-plop-source.json": {
+    "bytes": 250,
+    "sha256": "8d8cdf1d706852b5cb2a2d807f02ea65a9f6bf904fe053a1ac1f48fb271a964c"
+  },
+  "StickLaughStudio/assets/sfx-sources/wet-plop.mp3": {
+    "bytes": 297292,
+    "sha256": "c57ff06a2ce47471e42ed60f4fa9076ce0f8ad46c332a482a24838a0118ae0e7"
+  },
+  "StickLaughStudio/assets/sfx-sources/whoosh.mp3": {
+    "bytes": 14278,
+    "sha256": "3e53c9bf4db38259929d5cbd705f3674a9d9b0fcfc5bb31597010b4878a7e8da"
+  },
+  "StickLaughStudio/assets/sfx-sources/wind-source.json": {
+    "bytes": 259,
+    "sha256": "e153486e48a05548376a9866e338fa722db5c6f3c76879902c3a978cc0476070"
+  },
+  "StickLaughStudio/assets/sfx-sources/wind.mp3": {
+    "bytes": 66576,
+    "sha256": "eea3edaebcb053e57b12eda3b64c811b00674faee4bbd68086ae630ed02e029f"
+  },
+  "StickLaughStudio/deliverables/VIDEO-SAMPLES.md": {
+    "bytes": 2179,
+    "sha256": "4c4e88139b6ae6f982d5b4c334f69765a8a63a33bec76fc36fd0069ea5d1525b"
+  },
+  "StickLaughStudio/deliverables/comparison-coloured-cartoon/asset-coverage.json": {
+    "bytes": 105139,
+    "sha256": "adf60da22a29eb730f81e4509e8cfe505d64d32951e0b8ffb5c389cc6e9a62b2"
+  },
+  "StickLaughStudio/deliverables/comparison-coloured-cartoon/creator-pack.json": {
+    "bytes": 4670,
+    "sha256": "52d1a8ff1609b7b28bb7be376e91b671ae1ae0f438cc12819e8eb8a05fc85009"
+  },
+  "StickLaughStudio/deliverables/comparison-coloured-cartoon/description.txt": {
+    "bytes": 1691,
+    "sha256": "1e664e5001192dad9914b8d3834fc8e7bde7cb358496f43e7a7d13f3e998880c"
+  },
+  "StickLaughStudio/deliverables/comparison-coloured-cartoon/encoded-quality-report.json": {
+    "bytes": 391,
+    "sha256": "772e6d067138c919dfe1da643c43577b1af77bc6dab842498931c6110d81e5e3"
+  },
+  "StickLaughStudio/deliverables/comparison-coloured-cartoon/plan.json": {
+    "bytes": 28448,
+    "sha256": "51e29f93a361d1490b01fc92f8cdd22f567c22f0db598e5455c5255fb4bb5a2c"
+  },
+  "StickLaughStudio/deliverables/comparison-coloured-cartoon/quality-report.json": {
+    "bytes": 1063,
+    "sha256": "6e6966b4be5b9d26d4ac5393e599e4306036437f5b49dfb09a32c74a611a40f6"
+  },
+  "StickLaughStudio/deliverables/comparison-coloured-cartoon/render-report.json": {
+    "bytes": 566,
+    "sha256": "56ba070bd1e7eb16170dacb7faebf9960fb632b27bc026c6e60adf9360f0a71a"
+  },
+  "StickLaughStudio/deliverables/comparison-coloured-cartoon/sound-credits.json": {
+    "bytes": 1948,
+    "sha256": "1f6b050e330c1093eed4c19e98bd086e4e8be686db7220c9edfc3584dd604b48"
+  },
+  "StickLaughStudio/deliverables/comparison-coloured-cartoon/sound-warnings.json": {
+    "bytes": 2,
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  },
+  "StickLaughStudio/deliverables/comparison-coloured-cartoon/story-ir.json": {
+    "bytes": 99280,
+    "sha256": "f4563791b368ff54252eedb90d7d446ba5ced7c4c2f1569a133d9e0e7e728773"
+  },
+  "StickLaughStudio/deliverables/comparison-coloured-cartoon/thumbnail.png": {
+    "bytes": 127999,
+    "sha256": "5389eb33180bda0632a1a2dbe83d8e8b654b2680c32685ec4c9f8b452d6d8009"
+  },
+  "StickLaughStudio/deliverables/comparison-coloured-cartoon/video.mp4": {
+    "bytes": 2047532,
+    "sha256": "a39d6657df15bfd61a81726594d469dd865a017ec541bdeb02ef3642bd086020"
+  },
+  "StickLaughStudio/deliverables/comparison-elastic-meme/creator-pack.json": {
+    "bytes": 4670,
+    "sha256": "52d1a8ff1609b7b28bb7be376e91b671ae1ae0f438cc12819e8eb8a05fc85009"
+  },
+  "StickLaughStudio/deliverables/comparison-elastic-meme/description.txt": {
+    "bytes": 1691,
+    "sha256": "1e664e5001192dad9914b8d3834fc8e7bde7cb358496f43e7a7d13f3e998880c"
+  },
+  "StickLaughStudio/deliverables/comparison-elastic-meme/encoded-quality-report.json": {
+    "bytes": 391,
+    "sha256": "9c421c4f6e128afed71e5fe5e7f446758836fb945fb0793a079f142538930f82"
+  },
+  "StickLaughStudio/deliverables/comparison-elastic-meme/plan.json": {
+    "bytes": 25455,
+    "sha256": "3c5943b682d5739c8b62202153dc2e12f1f292303dd21f81b01e30a4767d0873"
+  },
+  "StickLaughStudio/deliverables/comparison-elastic-meme/quality-report.json": {
+    "bytes": 1030,
+    "sha256": "310517bde57510b29d3aa914a04c33510f38ec2f81f19a24f34b1d23f2f0d32c"
+  },
+  "StickLaughStudio/deliverables/comparison-elastic-meme/render-report.json": {
+    "bytes": 566,
+    "sha256": "5c320d186bf53be6402a85b82fbf665c4e4c46bc3146240904b9fb1a2544bee5"
+  },
+  "StickLaughStudio/deliverables/comparison-elastic-meme/sound-credits.json": {
+    "bytes": 1948,
+    "sha256": "1f6b050e330c1093eed4c19e98bd086e4e8be686db7220c9edfc3584dd604b48"
+  },
+  "StickLaughStudio/deliverables/comparison-elastic-meme/sound-warnings.json": {
+    "bytes": 2,
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  },
+  "StickLaughStudio/deliverables/comparison-elastic-meme/thumbnail.png": {
+    "bytes": 130437,
+    "sha256": "abd9454aae3db02c4c7692fc84803a077722008d2c8013c6bf2109e774bfd152"
+  },
+  "StickLaughStudio/deliverables/comparison-elastic-meme/video-observations.json": {
+    "bytes": 1182,
+    "sha256": "cbdf0f582af8960afff48f6fc57ed0f4e7cf590bb15bfedc778377254a271659"
+  },
+  "StickLaughStudio/deliverables/comparison-elastic-meme/video-review.json": {
+    "bytes": 1751,
+    "sha256": "f9c4e64196d5d8a76da8deb9b22a3bcaf85a6398e5924c8b1d0104886a7b749f"
+  },
+  "StickLaughStudio/deliverables/comparison-elastic-meme/video.mp4": {
+    "bytes": 2213429,
+    "sha256": "5f55203d242b22b7a3bb32f83481cc9a2b5f303c8f39052f898785d7c135a18e"
+  },
+  "StickLaughStudio/deliverables/comparison-elastic-meme-r2/asset-coverage.json": {
+    "bytes": 105139,
+    "sha256": "adf60da22a29eb730f81e4509e8cfe505d64d32951e0b8ffb5c389cc6e9a62b2"
+  },
+  "StickLaughStudio/deliverables/comparison-elastic-meme-r2/creator-pack.json": {
+    "bytes": 4670,
+    "sha256": "52d1a8ff1609b7b28bb7be376e91b671ae1ae0f438cc12819e8eb8a05fc85009"
+  },
+  "StickLaughStudio/deliverables/comparison-elastic-meme-r2/description.txt": {
+    "bytes": 1691,
+    "sha256": "1e664e5001192dad9914b8d3834fc8e7bde7cb358496f43e7a7d13f3e998880c"
+  },
+  "StickLaughStudio/deliverables/comparison-elastic-meme-r2/encoded-quality-report.json": {
+    "bytes": 391,
+    "sha256": "0f6507228edf5dfce38643c6141e203d1bb9aae370fc067685f8952fd610600a"
+  },
+  "StickLaughStudio/deliverables/comparison-elastic-meme-r2/plan.json": {
+    "bytes": 28453,
+    "sha256": "f65db22c0075937072f0e5d06d155aaf7bab923fe0c9cda55d01ddf10bd494fe"
+  },
+  "StickLaughStudio/deliverables/comparison-elastic-meme-r2/quality-report.json": {
+    "bytes": 1063,
+    "sha256": "c55027a38e127db8009b7197c90f9812a9c4cae7463bf53c774a3b865c6c3625"
+  },
+  "StickLaughStudio/deliverables/comparison-elastic-meme-r2/render-report.json": {
+    "bytes": 566,
+    "sha256": "326e1131bb98c328fb54027e792a9d80166cd1f2333b3cc7b507249813cdeb6f"
+  },
+  "StickLaughStudio/deliverables/comparison-elastic-meme-r2/sound-credits.json": {
+    "bytes": 1948,
+    "sha256": "1f6b050e330c1093eed4c19e98bd086e4e8be686db7220c9edfc3584dd604b48"
+  },
+  "StickLaughStudio/deliverables/comparison-elastic-meme-r2/sound-warnings.json": {
+    "bytes": 2,
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  },
+  "StickLaughStudio/deliverables/comparison-elastic-meme-r2/story-ir.json": {
+    "bytes": 99290,
+    "sha256": "23f5b316afdf27581cd81b7ce897bf5d0a869a297a90b8c9ce831ccb36e38935"
+  },
+  "StickLaughStudio/deliverables/comparison-elastic-meme-r2/thumbnail.png": {
+    "bytes": 130437,
+    "sha256": "abd9454aae3db02c4c7692fc84803a077722008d2c8013c6bf2109e774bfd152"
+  },
+  "StickLaughStudio/deliverables/comparison-elastic-meme-r2/video.mp4": {
+    "bytes": 2202079,
+    "sha256": "4eec5c935cf3c9f7f3b5d788968555728a6a62b9a9c2328c39787eff73b93671"
+  },
+  "StickLaughStudio/deliverables/comparison-silent-slapstick/creator-pack.json": {
+    "bytes": 4670,
+    "sha256": "52d1a8ff1609b7b28bb7be376e91b671ae1ae0f438cc12819e8eb8a05fc85009"
+  },
+  "StickLaughStudio/deliverables/comparison-silent-slapstick/description.txt": {
+    "bytes": 1691,
+    "sha256": "1e664e5001192dad9914b8d3834fc8e7bde7cb358496f43e7a7d13f3e998880c"
+  },
+  "StickLaughStudio/deliverables/comparison-silent-slapstick/encoded-quality-report.json": {
+    "bytes": 390,
+    "sha256": "bf4a1d2fc53ec340a6e288d0edfe828f61f5cf4a9ddab95b9e630fa40d51f074"
+  },
+  "StickLaughStudio/deliverables/comparison-silent-slapstick/plan.json": {
+    "bytes": 25456,
+    "sha256": "db0058af2dfc203bfa95da09de482ecd34ddadf8a0b2ce2d38d8212af5c3a06b"
+  },
+  "StickLaughStudio/deliverables/comparison-silent-slapstick/quality-report.json": {
+    "bytes": 1030,
+    "sha256": "605851d2d49801b0f9b8f9c0ce260d7fabe6666f319cf177c4347dec171f8c03"
+  },
+  "StickLaughStudio/deliverables/comparison-silent-slapstick/render-report.json": {
+    "bytes": 565,
+    "sha256": "72626737f6699901fc855854ae5693cfcbc280c15c401a2ac5cddfb221b40884"
+  },
+  "StickLaughStudio/deliverables/comparison-silent-slapstick/sound-credits.json": {
+    "bytes": 1948,
+    "sha256": "1f6b050e330c1093eed4c19e98bd086e4e8be686db7220c9edfc3584dd604b48"
+  },
+  "StickLaughStudio/deliverables/comparison-silent-slapstick/sound-warnings.json": {
+    "bytes": 2,
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  },
+  "StickLaughStudio/deliverables/comparison-silent-slapstick/thumbnail.png": {
+    "bytes": 126578,
+    "sha256": "81905f21f0d2b4648709b5d9152b8b821599d62f617a0ccce1e37ab03c4bcf2a"
+  },
+  "StickLaughStudio/deliverables/comparison-silent-slapstick/video.mp4": {
+    "bytes": 2094901,
+    "sha256": "27e4199726670374b6c48458ebd83e482376226acccd50101cf36b9d615668a1"
+  },
+  "StickLaughStudio/deliverables/eight-arm-creature/asset-coverage.json": {
+    "bytes": 10970,
+    "sha256": "e4938bd993f3056c0f24d3dee58ad87e1568efe692a0e2fb3c72e9f5188223f2"
+  },
+  "StickLaughStudio/deliverables/eight-arm-creature/creator-pack.json": {
+    "bytes": 1054,
+    "sha256": "95a438a2a9de21bd8a04a5683294d715a602f3d97b43c53f64a97cc1f7cabc45"
+  },
+  "StickLaughStudio/deliverables/eight-arm-creature/description.txt": {
+    "bytes": 317,
+    "sha256": "75f7ce03ad6076777b176a8d22c40ffff8b0cbaf601e191595c26d3f1dae3183"
+  },
+  "StickLaughStudio/deliverables/eight-arm-creature/encoded-quality-report.json": {
+    "bytes": 370,
+    "sha256": "63adaebf9d1e3221cb188eed36bb350470f7f0601cb045b5a85ebc564b335d67"
+  },
+  "StickLaughStudio/deliverables/eight-arm-creature/plan.json": {
+    "bytes": 22080,
+    "sha256": "c6d7564706e2afafb211211afa4b8ec87cc2c68362b9b4ddd60c2255d29138a5"
+  },
+  "StickLaughStudio/deliverables/eight-arm-creature/quality-report.json": {
+    "bytes": 829,
+    "sha256": "d7eb0bcdb8ff389527ab3f130c1a55a1605f6462388e9202edf8a130609ef1e0"
+  },
+  "StickLaughStudio/deliverables/eight-arm-creature/render-report.json": {
+    "bytes": 545,
+    "sha256": "0af62a4e9ff79617a02735cf5d891b58da29536b707848011f5347d687ef7aee"
+  },
+  "StickLaughStudio/deliverables/eight-arm-creature/sound-credits.json": {
+    "bytes": 2,
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  },
+  "StickLaughStudio/deliverables/eight-arm-creature/sound-warnings.json": {
+    "bytes": 2,
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  },
+  "StickLaughStudio/deliverables/eight-arm-creature/story-ir.json": {
+    "bytes": 55289,
+    "sha256": "fd11b8095415d5f267e7cf3859c68a1a0f7a35aa5d8a217262723a6e64526aed"
+  },
+  "StickLaughStudio/deliverables/eight-arm-creature/thumbnail.png": {
+    "bytes": 59923,
+    "sha256": "858b8ff1637023635e634bd4f70d561fc270fc89e86150f614abdbda14f82e27"
+  },
+  "StickLaughStudio/deliverables/eight-arm-creature/video.mp4": {
+    "bytes": 191841,
+    "sha256": "2c3ad5dca6ebb6120e838220053f7b3c23c111b6b9d98a6f31e696910af23546"
+  },
+  "StickLaughStudio/deliverables/live-sound/audio.wav": {
+    "bytes": 1152078,
+    "sha256": "d0c70e43fd1bf31b944abf17f9299ce439814c40bba2ef5418596a41ac94e81b"
+  },
+  "StickLaughStudio/deliverables/live-sound/live-sound-report.json": {
+    "bytes": 348,
+    "sha256": "ce7c71fdcf92122e2d0fd81b20cb44d692e05af330b17f787cd9474b5541a11c"
+  },
+  "StickLaughStudio/deliverables/live-sound/plan.json": {
+    "bytes": 12772,
+    "sha256": "80e6322996c5de86afc5b1514c4dbcdedbeed0a9bff481d8c9d18c0c4698f5c2"
+  },
+  "StickLaughStudio/deliverables/live-sound/sound-credits.json": {
+    "bytes": 216,
+    "sha256": "4ac57b75474c7b38630d0d1559ed5885e06e724bd91e23402335ca504329613e"
+  },
+  "StickLaughStudio/deliverables/live-sound/sound-warnings.json": {
+    "bytes": 2,
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  },
+  "StickLaughStudio/deliverables/live-workflow/workflow-report.json": {
+    "bytes": 616,
+    "sha256": "e5413c2cd75dcd941aa49142d0eb4da38bb3f8dd39b8a922d34886688518b7c8"
+  },
+  "StickLaughStudio/deliverables/mechanical-interaction/creator-pack.json": {
+    "bytes": 693,
+    "sha256": "52c4af7e1459b3296450391444bb026ccb30a2a52c589fa85eac0c1d2ef46fbe"
+  },
+  "StickLaughStudio/deliverables/mechanical-interaction/description.txt": {
+    "bytes": 184,
+    "sha256": "213bb6260c7572c792ed1745f47d45ea1b8e51a656a4c51396441d620f5ee435"
+  },
+  "StickLaughStudio/deliverables/mechanical-interaction/encoded-quality-report.json": {
+    "bytes": 371,
+    "sha256": "10859d53bcbd0a480b53f0826f51a792774acc5c6b9614db0093c7f073ba2e0e"
+  },
+  "StickLaughStudio/deliverables/mechanical-interaction/plan.json": {
+    "bytes": 17891,
+    "sha256": "422a0075ff19717b61612a26acdcc0331cdc9d783f7a6b40020c6e39a1a108eb"
+  },
+  "StickLaughStudio/deliverables/mechanical-interaction/quality-report.json": {
+    "bytes": 797,
+    "sha256": "bf51ec72639c66222536bfa9b6a7e3f74485d25843aa9b124a90b5bad5e95008"
+  },
+  "StickLaughStudio/deliverables/mechanical-interaction/render-report.json": {
+    "bytes": 546,
+    "sha256": "a9d989a15c5a5301cdf5995ac6240ffdd38536a23e4ed7a2b3ed8a637ddf9765"
+  },
+  "StickLaughStudio/deliverables/mechanical-interaction/sound-credits.json": {
+    "bytes": 2,
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  },
+  "StickLaughStudio/deliverables/mechanical-interaction/sound-warnings.json": {
+    "bytes": 2,
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  },
+  "StickLaughStudio/deliverables/mechanical-interaction/thumbnail.png": {
+    "bytes": 89801,
+    "sha256": "62db5e209aaba22973908719cf1b3c11a8f0a32aaae0ed57aea3322581be6dc0"
+  },
+  "StickLaughStudio/deliverables/mechanical-interaction/video.mp4": {
+    "bytes": 755323,
+    "sha256": "acc66eebe274aff7f19f7708e5650a37bcfc01421d8cc730210105f6063a8296"
+  },
+  "StickLaughStudio/deliverables/production-sample-results.json": {
+    "bytes": 280,
+    "sha256": "041772f486eec563f752e0719c253d40c2968e2b2fcb1b7e6857774d0f1448d3"
+  },
+  "StickLaughStudio/deliverables/production-supported-acting/RESULT.txt": {
+    "bytes": 163,
+    "sha256": "2870db21ede45c5a5ec47b64379273c089affb78535ad3f500b11a6e70d497af"
+  },
+  "StickLaughStudio/deliverables/production-supported-acting/encoded-quality-report.json": {
+    "bytes": 372,
+    "sha256": "9c748d33121e3f544a21f01f925bf9e58edf4152f3c215156de595f04528576a"
+  },
+  "StickLaughStudio/deliverables/production-supported-acting/plan.json": {
+    "bytes": 14038,
+    "sha256": "72766ecf08dea7bfa2f373e7bf48122d0154af5fb56a0191c2cebbb71edc08ff"
+  },
+  "StickLaughStudio/deliverables/production-supported-acting/quality-report.json": {
+    "bytes": 859,
+    "sha256": "536fd8d012ddb9c8c346c66c7c78a25b60d62e7188290d07839ec57814e40093"
+  },
+  "StickLaughStudio/deliverables/production-supported-acting/render-report.json": {
+    "bytes": 547,
+    "sha256": "fc064cfcd61652d83f671e28fd9e5f5514659972106423195f1261df2ca57ae5"
+  },
+  "StickLaughStudio/deliverables/production-supported-acting/sound-credits.json": {
+    "bytes": 2,
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  },
+  "StickLaughStudio/deliverables/production-supported-acting/story-ir.json": {
+    "bytes": 38180,
+    "sha256": "07d1997e40e8bcfb2b7bf4e4f731697051d380f8b0aad789184fef37010b8397"
+  },
+  "StickLaughStudio/deliverables/production-supported-acting/video-observations.json": {
+    "bytes": 1319,
+    "sha256": "669debdb21c5f01d4394bec119765ddb93e1723213a7e0f3342f4d069c524d25"
+  },
+  "StickLaughStudio/deliverables/production-supported-acting/video-review.json": {
+    "bytes": 1777,
+    "sha256": "45daa212489ca9172ab3f3e912fa458c3f9b8ad50c9cd0720cede19c585ee52f"
+  },
+  "StickLaughStudio/deliverables/production-supported-acting/video.mp4": {
+    "bytes": 777052,
+    "sha256": "a773ca13ad01449f79977fbab081fc83a6d792c162347e2d6a6d17b67b23e7da"
+  },
+  "StickLaughStudio/deliverables/supported-acting/asset-coverage.json": {
+    "bytes": 16666,
+    "sha256": "3bac50e123103a6cd2ce4595c9ff9e29f0171eeabbfb34d6259b9cfca51c886e"
+  },
+  "StickLaughStudio/deliverables/supported-acting/creator-pack.json": {
+    "bytes": 1054,
+    "sha256": "0075613426d3192e6e82cf9840aa9137c762dba8b5d5a92abfb3f32faa6696d2"
+  },
+  "StickLaughStudio/deliverables/supported-acting/description.txt": {
+    "bytes": 317,
+    "sha256": "fe83d1aad00456a902cb9e6dc8956d0366f0eb218986fee17e5992fcec93159c"
+  },
+  "StickLaughStudio/deliverables/supported-acting/encoded-quality-report.json": {
+    "bytes": 372,
+    "sha256": "cd00b368e52896f9163a67deb18c6f9b0de83521d73d4965d8bf9ee341135a54"
+  },
+  "StickLaughStudio/deliverables/supported-acting/plan.json": {
+    "bytes": 13160,
+    "sha256": "230c8fe863d2e2227756ab4fa06667a099cf889999385963a5f1e162415dc84d"
+  },
+  "StickLaughStudio/deliverables/supported-acting/quality-report.json": {
+    "bytes": 829,
+    "sha256": "c941573a56da20982998a3542f1e4a428ad49cb7c228cdb5f91c668773753c81"
+  },
+  "StickLaughStudio/deliverables/supported-acting/render-report.json": {
+    "bytes": 547,
+    "sha256": "d1a227a7fa56ab0af5c290521b9cf3a30e9ba0e1e7909aef1c57f26fdd39a4e8"
+  },
+  "StickLaughStudio/deliverables/supported-acting/sound-credits.json": {
+    "bytes": 2,
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  },
+  "StickLaughStudio/deliverables/supported-acting/sound-warnings.json": {
+    "bytes": 2,
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  },
+  "StickLaughStudio/deliverables/supported-acting/story-ir.json": {
+    "bytes": 35909,
+    "sha256": "b4df71584cccc0651ae5a6eb9cf662b38391a0c7568d8c5f8eabfe7efea158ad"
+  },
+  "StickLaughStudio/deliverables/supported-acting/thumbnail.png": {
+    "bytes": 75345,
+    "sha256": "6cae96b681f7d29b53fc379c8e003c90cbef3caf33370581df339ffcb0ae4152"
+  },
+  "StickLaughStudio/deliverables/supported-acting/video.mp4": {
+    "bytes": 753906,
+    "sha256": "2abb2b06aede4eb60acf296fd96e2986b32f2822fe36db5c2337e098f18d9d58"
+  },
+  "StickLaughStudio/deliverables/verification/acting-first-visual-review.json": {
+    "bytes": 2128,
+    "sha256": "057eebc1fb45b47d05ea0118aab4ff4beec2dc78e2f08cc010970240cadab673"
+  },
+  "StickLaughStudio/deliverables/verification/acting-intermediate-observations.json": {
+    "bytes": 1991,
+    "sha256": "d7d092fc6f19198eeb6b00c2dab59b7653b940655a5ec749f4f34e26d942b6ff"
+  },
+  "StickLaughStudio/deliverables/verification/acting-intermediate-visual-review.json": {
+    "bytes": 1656,
+    "sha256": "caedd1e6c30fe523e0dda2e07d8cf01a192279009fb095da96a7e7366ed41eb4"
+  },
+  "StickLaughStudio/deliverables/verification/acting-regression-tests.txt": {
+    "bytes": 1689,
+    "sha256": "0aa2fcccb7cebf10b041fb3efd42e7d48282e61ad311fc61632ef4c4c7cf6935"
+  },
+  "StickLaughStudio/deliverables/verification/baseline-bow.json": {
+    "bytes": 238,
+    "sha256": "16aa15a624e8b121f15f8487828b614ff60d4c1c6e7a0e054746527d10a1ae87"
+  },
+  "StickLaughStudio/deliverables/verification/build.txt": {
+    "bytes": 788,
+    "sha256": "d21854322af486317294a111c7ea890e46acbf431816b14fd99435d849e84b8b"
+  },
+  "StickLaughStudio/deliverables/verification/contact-diagnostics.json": {
+    "bytes": 521,
+    "sha256": "33dd62ce9bc7c6a2e4b8a96e74356fb5a346bb8a50e63ecbe716568bcfcff057"
+  },
+  "StickLaughStudio/deliverables/verification/dependency-check.txt": {
+    "bytes": 163,
+    "sha256": "4e34290d66319bb08d69c46ff7e54e311cd0f914accf269d932b1b670e5b2c10"
+  },
+  "StickLaughStudio/deliverables/verification/encoded-samples.json": {
+    "bytes": 1461,
+    "sha256": "f259a1048cacbe3eed6d9e0ac99a2584a8a57293b885bded32371cce7f8634ef"
+  },
+  "StickLaughStudio/deliverables/verification/package-checks.json": {
+    "bytes": 198,
+    "sha256": "47623b4acf665a9712f467860cbbfddc0dc6e20034c7760b04ab73ceb497ebde"
+  },
+  "StickLaughStudio/deliverables/verification/production-first-attempt.json": {
+    "bytes": 221,
+    "sha256": "aa971465c392ce23f751ecd1aaa1ada35e10cc76700b6a64f091fdedbc3147ba"
+  },
+  "StickLaughStudio/deliverables/verification/production-second-attempt.json": {
+    "bytes": 137,
+    "sha256": "6c7d837318e143e18dc1b4d8aa48569c2e11e1b97178f045342775f0eea48b68"
+  },
+  "StickLaughStudio/deliverables/verification/providers-retry.json": {
+    "bytes": 655,
+    "sha256": "4a257bff3fd6aca52085d216a573861f26c92d107bf52a26cb36ad09455be76b"
+  },
+  "StickLaughStudio/deliverables/verification/providers.json": {
+    "bytes": 573,
+    "sha256": "58617810821ea493e7ee0490245dae92b2f5fd1cdbe1bf6fd875704c55f68d21"
+  },
+  "StickLaughStudio/deliverables/verification/repair-regression-tests.txt": {
+    "bytes": 2157,
+    "sha256": "1440a4965ebaf925b80efcb28dfbc7a832efe73dba33fff15ebca9e73e62994c"
+  },
+  "StickLaughStudio/deliverables/verification/scene-review-tests.txt": {
+    "bytes": 510,
+    "sha256": "c08b467fac7b6591d2f6a69fd5824c2cc4751f1c692ce34dae7f804d880f7445"
+  },
+  "StickLaughStudio/deliverables/verification/tests.txt": {
+    "bytes": 442214,
+    "sha256": "3190e36308265dbd50f5cfbfcfd5d002ac8753777fef7d8efd29af8b846b089f"
+  },
+  "StickLaughStudio/deliverables/verification/verification-summary.json": {
+    "bytes": 579,
+    "sha256": "39d6df6ac54af90b7d7295a2c6142ddc3f90682bef526a4322b7bce801a5f938"
+  },
+  "StickLaughStudio/docs/ANIMATION-IR.md": {
+    "bytes": 11689,
+    "sha256": "2dc6de683a57cdca0e4dc520f2a401cdc523b648d55e27a292baa25c89494bfd"
+  },
+  "StickLaughStudio/docs/CURRENT-AUDIT.md": {
+    "bytes": 16522,
+    "sha256": "68674ec9c519e741e48683a8c9d130eae2949f09d5b3ff33c146aa80bb93f3e8"
+  },
+  "StickLaughStudio/docs/DYNAMIC-ROADMAP.md": {
+    "bytes": 1568,
+    "sha256": "171999307fb230c7b84dbde9d42f11139994933b912fe8317beea1b0f3cd3b81"
+  },
+  "StickLaughStudio/docs/POINT1-VERIFICATION.md": {
+    "bytes": 6531,
+    "sha256": "46a141ce33ee55504341c032967f07880b0aa54acb4bf440683b8a077717d409"
+  },
+  "StickLaughStudio/docs/POINT10-STRUCTURED-VISUAL-GEOMETRY.md": {
+    "bytes": 2852,
+    "sha256": "08d5d084cb5ec0f5545c9e7153eb5b22536eab3cbd17e958c599b44c567ee9e0"
+  },
+  "StickLaughStudio/docs/POINT11-PARAMETRIC-SHAPE-COMPONENTS.md": {
+    "bytes": 2970,
+    "sha256": "ce4d40356eadcb32057693e250d998043d2340ac7ae9aa100d71d197e6c4fb8a"
+  },
+  "StickLaughStudio/docs/POINT12-ASSET-READY-SCHEMA-VALIDATION.md": {
+    "bytes": 4825,
+    "sha256": "2b65d7fefaf78ac699ac72c7f011683d6c8fc54fc591c21781efce01e343b90a"
+  },
+  "StickLaughStudio/docs/POINT13-ASSET-FACTORY-PIPELINE.md": {
+    "bytes": 3952,
+    "sha256": "fe530ec881f311665aad825e19c5681f4f6304fa506f2adc3865b20503c70a71"
+  },
+  "StickLaughStudio/docs/POINT14-PROVIDER-RESOLUTION.md": {
+    "bytes": 1847,
+    "sha256": "022afb8a7aa83ecc58e31d4160e9e871ab92dd12bb8ac9297b4ef00c4e3cfe67"
+  },
+  "StickLaughStudio/docs/POINT2-FIXED-NOUN-RESTRICTIONS-AUDIT.md": {
+    "bytes": 21009,
+    "sha256": "21d53ac9b6a22f6219aeee599c29ffd9913d5d196a1aed66c572676e9b9d42fc"
+  },
+  "StickLaughStudio/docs/POINT5-CANONICAL-PIPELINE.md": {
+    "bytes": 7059,
+    "sha256": "e89bc3ff4baf21bb870e4c10687e9c052fbe17b429d247404f92fe2a0d0ea723"
+  },
+  "StickLaughStudio/docs/POINT6-FRAME-IR.md": {
+    "bytes": 4131,
+    "sha256": "3308e115171574cd2cd0354012a1edb20a2dd8e18053b432a8cf47568d6e431d"
+  },
+  "StickLaughStudio/docs/POINT7-CAPABILITY-COMPILER.md": {
+    "bytes": 3165,
+    "sha256": "28bec86526209a899bb453fe7849fef6b64a152371ced1784cfc7c2a7ac113b7"
+  },
+  "StickLaughStudio/docs/POINT8-LEGACY-REPLAY.md": {
+    "bytes": 3508,
+    "sha256": "9443eca3601c7f3f6b7d5ea4546576024f87b9c08e1652560a9d1565976824f3"
+  },
+  "StickLaughStudio/docs/POINT9-ENTITY-SCENE-GRAPH.md": {
+    "bytes": 3162,
+    "sha256": "6412411003ef3ce2f5e5eb0dad7bd5c06f5eb5a3dec7f85bb99e9fef30804e09"
+  },
+  "StickLaughStudio/docs/THIRD-STYLE-REFERENCE-STUDY.md": {
+    "bytes": 4958,
+    "sha256": "0cab9f1b8c7a524cf92b3da91a1a50893a57cf77865a49e6581f0b13eb6643de"
+  },
+  "StickLaughStudio/docs/THREE-STYLES-VERIFICATION.json": {
+    "bytes": 2354,
+    "sha256": "0aa735e525a1ceb31accb77a2a29cbc96579ae7c992b10d99b806f6015f5aea8"
+  },
+  "StickLaughStudio/docs/UPDATE-STATUS.md": {
+    "bytes": 7392,
+    "sha256": "a350e3c13170d508d8ab176f33568ac91f839bf4ae4443f98a8d41be19cbf4ba"
+  },
+  "StickLaughStudio/examples/banana-bin.json": {
+    "bytes": 24430,
+    "sha256": "a2def6c32f163028518b2ce0895cb60640dd2d664e8278712e8b6a3201d1ea9c"
+  },
+  "StickLaughStudio/examples/banana-karma-25s.json": {
+    "bytes": 25317,
+    "sha256": "5e9d283ec783d5d88a1471d243a868e18125602edec27cc9a9651f8b80a62d24"
+  },
+  "StickLaughStudio/examples/comparison-coloured-cartoon.json": {
+    "bytes": 25450,
+    "sha256": "004633fb9d78253697de8337fb895c7a8a4dee18e4e032e1109ea729f628fa56"
+  },
+  "StickLaughStudio/examples/comparison-elastic-meme.json": {
+    "bytes": 25455,
+    "sha256": "13456305a70c4344cf82bd57165e3bb0f7f018f7b5f75ebe69f587c8f832e9fe"
+  },
+  "StickLaughStudio/examples/comparison-silent-slapstick.json": {
+    "bytes": 25456,
+    "sha256": "e84d3e9b42205c0495b0921f8036bd6220bc4870bca3ad42027102a430dcfd38"
+  },
+  "StickLaughStudio/examples/cool-cap-v8.json": {
+    "bytes": 30089,
+    "sha256": "ae8ba86d739b3a7680011623bfa41bdf26b4a58657d53e084ab76906261403a7"
+  },
+  "StickLaughStudio/examples/cool-cap-v9.json": {
+    "bytes": 30248,
+    "sha256": "5e939dae35a5e15b5f1f430b2034d98e856ffbe0f19b6ec637371eb8fcf665b9"
+  },
+  "StickLaughStudio/examples/cool-cap.json": {
+    "bytes": 30605,
+    "sha256": "50789651339be94d93c2ba88e31365fc9a6d7429e4e056346acbc3db2b10ae2e"
+  },
+  "StickLaughStudio/examples/dadi-jar.json": {
+    "bytes": 17736,
+    "sha256": "d6c1e2d5a9cc46ca7b66fc1a12f84b36dbafb623cd033e212655cb3b5452169a"
+  },
+  "StickLaughStudio/examples/dynamic-design-catalog.json": {
+    "bytes": 73940,
+    "sha256": "820298640bdf52626e4fde358eec68051027a2af6de0af94a589c0b46c473f12"
+  },
+  "StickLaughStudio/examples/dynamic-excavator-fridge.json": {
+    "bytes": 17691,
+    "sha256": "b4bcd3552e37f78d779901b80fabae824a2ee7e1737242445575b692a6ae5d5e"
+  },
+  "StickLaughStudio/examples/eight-arm-creature.json": {
+    "bytes": 21812,
+    "sha256": "b5beaade9d6b60568763a498108c5069d7669a7e11ec8200ec82256d0533c662"
+  },
+  "StickLaughStudio/examples/headphone-mask.json": {
+    "bytes": 28317,
+    "sha256": "8dc6f67b4bd2d57fa49223013eb9d817b6e4e2fc7298db7fbe8cb0fafdc19862"
+  },
+  "StickLaughStudio/examples/hero-poop.json": {
+    "bytes": 50214,
+    "sha256": "938903bb14d80a930f38e8ab06bde72b26782a827cc3522a10dc1995e30cf013"
+  },
+  "StickLaughStudio/examples/hero-silent.json": {
+    "bytes": 50214,
+    "sha256": "938903bb14d80a930f38e8ab06bde72b26782a827cc3522a10dc1995e30cf013"
+  },
+  "StickLaughStudio/examples/human-movement-preview.json": {
+    "bytes": 15149,
+    "sha256": "6f56c7d7b0eebcc1baa28e3048cd0865bfe8303d0c912457405720e324a7d083"
+  },
+  "StickLaughStudio/examples/interview-chair.json": {
+    "bytes": 25580,
+    "sha256": "be49e67426c8ca97b243e94305dba0613f70250a03bd485b767e4845dfa067be"
+  },
+  "StickLaughStudio/examples/lion-balloon.json": {
+    "bytes": 22051,
+    "sha256": "c7b3e24c31279f187eb623f4638b9b62f553f3a0fbb85433e6ecd30de63e853b"
+  },
+  "StickLaughStudio/examples/make-adult-demos.mjs": {
+    "bytes": 24740,
+    "sha256": "18e8f7498993787c73d18186aaa7f5fa694fd9964bbf7bd6e0fae39a360afdfd"
+  },
+  "StickLaughStudio/examples/make-demo.mjs": {
+    "bytes": 4814,
+    "sha256": "bc176d692a0197a2b017e219fa67ae83fc4adba7dc8df9bdd5ff8d32d0cef288"
+  },
+  "StickLaughStudio/examples/make-headphone-demo.mjs": {
+    "bytes": 10487,
+    "sha256": "15b694da8ed175ba3b8415c2e656d151e29e2b9078231e1c8605ee54c5975ecc"
+  },
+  "StickLaughStudio/examples/make-hero-poop.mjs": {
+    "bytes": 222,
+    "sha256": "5289ab932c6bd72446d818e4a52293b3f90230d4cda58a3a2c796364d8050b3f"
+  },
+  "StickLaughStudio/examples/make-mosquito.mjs": {
+    "bytes": 9839,
+    "sha256": "62910995e068d89ab9b26c4c50c2c0a306bfc19b575085ab7d708301b52436b1"
+  },
+  "StickLaughStudio/examples/make-simple-slap.mjs": {
+    "bytes": 9287,
+    "sha256": "fdba027a05842f86004a00071e3dbe4917bbef07e70a8142bfe12ecd82971ef8"
+  },
+  "StickLaughStudio/examples/make-v4-demos.mjs": {
+    "bytes": 14128,
+    "sha256": "aa93fa962a166c0b184eaa7142806abcd83ee38739b1fad232dfd01ab52c38b6"
+  },
+  "StickLaughStudio/examples/make-v7.mjs": {
+    "bytes": 13205,
+    "sha256": "5bf5c6879bf55791c09a3264f29c27de204b63dba55d03fff99983f13dab5bed"
+  },
+  "StickLaughStudio/examples/make-v8.mjs": {
+    "bytes": 11161,
+    "sha256": "09af554c5e3e7d43b66bfdebdb611074d481ef95750beeabdd2fc5bfeb758ac2"
+  },
+  "StickLaughStudio/examples/make-v9.mjs": {
+    "bytes": 1923,
+    "sha256": "e4411e6f39c8af06e132d56badb297f1548db92e829b9c32aaa6fa74e19853d4"
+  },
+  "StickLaughStudio/examples/mosquito.json": {
+    "bytes": 27549,
+    "sha256": "704a00da4ae8d825bc11bcd7d6a6418015c2cf66b277f10e1d5769bcc12b490c"
+  },
+  "StickLaughStudio/examples/motion-ir-lantern.json": {
+    "bytes": 8155,
+    "sha256": "15a0df25d44809abccef23392b77723c80e96b2c649ae15bdb65516f3c0bb4c6"
+  },
+  "StickLaughStudio/examples/point12-asset-ready-visuals.json": {
+    "bytes": 10763,
+    "sha256": "dcb8023d5e81713a44e7c611621639de73044877fe4736d80cc96e9e7bf6e832"
+  },
+  "StickLaughStudio/examples/point12-raster-fixtures/appleFixture.png": {
+    "bytes": 7870,
+    "sha256": "5bfa880aced3e54922768702e235462ff3fbcbabe5ea751e16e02a8a064b16e9"
+  },
+  "StickLaughStudio/examples/point12-raster-fixtures/arrowSignFixture.png": {
+    "bytes": 5293,
+    "sha256": "7f0d1fd1b0750e2bdf39173206fa06d23c81490e3a4d72c1537c7e7dfe7f2345"
+  },
+  "StickLaughStudio/examples/point12-raster-fixtures/basketFixture.png": {
+    "bytes": 7408,
+    "sha256": "050d79b482b73d8fd78210909a42dd580d18fb64d3cc8e8de175637fb14d3b34"
+  },
+  "StickLaughStudio/examples/point12-raster-fixtures/lampFixture.png": {
+    "bytes": 6533,
+    "sha256": "a877ade1a61a9b3610b1938e15fba08c0dae0290df78669c5cf23e8d82d01ae7"
+  },
+  "StickLaughStudio/examples/point12-raster-fixtures/manifest.json": {
+    "bytes": 4211,
+    "sha256": "3d38b1f33dc31510b05d486f6aa7c9a873bc27eedae27f5375d3d4cff430b84f"
+  },
+  "StickLaughStudio/examples/point12-raster-fixtures/pearFixture.png": {
+    "bytes": 7987,
+    "sha256": "1e9ee22ec1932b2895798975aa57fd44057ade6ebfdf5ce25112a3efd47d629e"
+  },
+  "StickLaughStudio/examples/point12-raster-fixtures/sandwichFixture.png": {
+    "bytes": 9530,
+    "sha256": "9742dab456a5a02877536cc7e977fa321103b05dd34f0de4c1e41f29323080a3"
+  },
+  "StickLaughStudio/examples/point12-raster-fixtures/stopMarkerFixture.png": {
+    "bytes": 6604,
+    "sha256": "4a86b9b21967ef6588502ccf1d70c65db2fae87fd28976ac7d515c8b99a2ed4a"
+  },
+  "StickLaughStudio/examples/point12-raster-fixtures/teapotFixture.png": {
+    "bytes": 9762,
+    "sha256": "06473953a907af0e129cddd2d353767489d50964064c34dbe0952f19290c3df9"
+  },
+  "StickLaughStudio/examples/prop-exchange.json": {
+    "bytes": 6274,
+    "sha256": "f9bb246467d2b2fd278bc25d0066d487cfffb50baf0e61ed50bd95ebf6317236"
+  },
+  "StickLaughStudio/examples/simple-slap.json": {
+    "bytes": 32916,
+    "sha256": "9363e345c1388a3fffcb4505384da5e19f073df4b54712a35511db67574e4a17"
+  },
+  "StickLaughStudio/examples/superhero-return.json": {
+    "bytes": 38917,
+    "sha256": "fccfae258860b9b1074a3c18991097a5c6b90d6b8f5bfa923d4e3c1ac0bf2e36"
+  },
+  "StickLaughStudio/examples/superhero-v9.json": {
+    "bytes": 39374,
+    "sha256": "24de0ceb8aee9048930ba845b573633f19817e18a411a607617444c8be218457"
+  },
+  "StickLaughStudio/examples/supported-acting.json": {
+    "bytes": 12470,
+    "sha256": "5a9574fb09767d8ef457a97247a824ddc0c8e01c1775cf8117b8e876014755c4"
+  },
+  "StickLaughStudio/examples/toilet-roll.json": {
+    "bytes": 25538,
+    "sha256": "d3c322c3e28b1d31c70e7dfcd361ede59f6ec42ae9b2636ff0d88bc6999c3b2b"
+  },
+  "StickLaughStudio/package-lock.json": {
+    "bytes": 367948,
+    "sha256": "5348ea13537c3cc4d7b1f0158a15efa4d1a4e091bd40c51c84eb55e6fe5297ad"
+  },
+  "StickLaughStudio/package.json": {
+    "bytes": 3032,
+    "sha256": "2a97f76ad1195fef3b7eec30337f5754339f063f1cdef12c3a34a9c84ec88fb5"
+  },
+  "StickLaughStudio/prompts/action-reference.md": {
+    "bytes": 10646,
+    "sha256": "6d11c10d1671440f1b1894b037f20c8ea65f03a0e0c15fbd1cc898a03ea1b255"
+  },
+  "StickLaughStudio/prompts/adult-relatable.md": {
+    "bytes": 1928,
+    "sha256": "09ea86124a497c6d5c579f53736512f4eb49772a6fe2300b1981d07d5269ec33"
+  },
+  "StickLaughStudio/prompts/comedy-director.md": {
+    "bytes": 9190,
+    "sha256": "afbd39c0276a92d01ed1d7027d00807d51d9c8e5e560e1e1d3a193c4094cf900"
+  },
+  "StickLaughStudio/prompts/dynamic-director.md": {
+    "bytes": 8297,
+    "sha256": "90220361ebdc42ed7763da9cb195fda9bda071a67408e01213bcab51571ebf90"
+  },
+  "StickLaughStudio/prompts/reference-modes.md": {
+    "bytes": 6214,
+    "sha256": "86cfb8c4652970db1b6a7572eb9563344087b774f1741d614fbdd9ced0f54cde"
+  },
+  "StickLaughStudio/prompts/semantic-director.md": {
+    "bytes": 8118,
+    "sha256": "e081bd0437e4cd8393a031879e602066edfcd5188e0c28b5e32e698ecb9fb011"
+  },
+  "StickLaughStudio/prompts/visual-style.md": {
+    "bytes": 3833,
+    "sha256": "c17705d2f4464c28de15da86e6dce9707dcc990d7f4c0102ea8b779a52226cbe"
+  },
+  "StickLaughStudio/renderer/draw.mjs": {
+    "bytes": 61540,
+    "sha256": "8d7a62389356c33db557e69a5b74d85f09f9bd0d7c5e7aa8a04fb730d15a7a96"
+  },
+  "StickLaughStudio/renderer/engine.mjs": {
+    "bytes": 38767,
+    "sha256": "18df32632ea092eb58997a91b6c645c4a2b11dd6dd9cc1c67029688c214a7412"
+  },
+  "StickLaughStudio/renderer/index.tsx": {
+    "bytes": 1882,
+    "sha256": "aa4e2a90ed92bc957b966069f1a2a373bdadf83b5bbbe7225dc43e001f0ce08a"
+  },
+  "StickLaughStudio/samples/banana-karma-25s-plan.json": {
+    "bytes": 25296,
+    "sha256": "d0dfef67949679af59d77431a6d604f311d21af141d613e3aa95172c92ecdb8d"
+  },
+  "StickLaughStudio/samples/banana-karma-25s.mp4": {
+    "bytes": 4308398,
+    "sha256": "c8f72ab97f7e7a2fc47d6470ee81f4ae8ad64fe32efe89873debcb3eb6974d57"
+  },
+  "StickLaughStudio/samples/banana-karma-sound-credits.json": {
+    "bytes": 1948,
+    "sha256": "1f6b050e330c1093eed4c19e98bd086e4e8be686db7220c9edfc3584dd604b48"
+  },
+  "StickLaughStudio/samples/banana-karma-video-checks.json": {
+    "bytes": 391,
+    "sha256": "afa56d03d087712c0df0aaf0fe0f9bf546c5daf7a9d5d87506b15364c80a5596"
+  },
+  "StickLaughStudio/samples/elastic-meme-live-10s.mp4": {
+    "bytes": 1068412,
+    "sha256": "9b76e7d911a2f956b62ff63cb2b566e2c2488de2ff41c53230b244c0e0d6b72a"
+  },
+  "StickLaughStudio/samples/elastic-meme-live-plan.json": {
+    "bytes": 19719,
+    "sha256": "8a2b38fbfb1656884bcf02a73b0b605d6d739a5a75ac947b3a34291fd1f26c07"
+  },
+  "StickLaughStudio/samples/elastic-meme-live-proof.json": {
+    "bytes": 286,
+    "sha256": "1d41f8216cd59a44b8be7cc8fc3a3acd97fa1dc5e7eb1046a470c58aa45b37db"
+  },
+  "StickLaughStudio/samples/elastic-meme-live-sound-credits.json": {
+    "bytes": 462,
+    "sha256": "7a887031e8d3cba5259c2d9b782eb64c76b3930f9944bfcce024d2c8cfc913b3"
+  },
+  "StickLaughStudio/samples/elastic-meme-live-video-checks.json": {
+    "bytes": 386,
+    "sha256": "21ebeb420c3fbd2d42cf7cc4727bd9ac7533edcd747c35feb14c365acefcb4f9"
+  },
+  "StickLaughStudio/samples/human-movement-10s.mp4": {
+    "bytes": 823514,
+    "sha256": "04bc20ff51f704e2d3bfcbecc5bb5a8bc68386c8d851b5c4d98717d105adb909"
+  },
+  "StickLaughStudio/samples/human-movement-plan.json": {
+    "bytes": 15349,
+    "sha256": "eae52d9245b54d6e6f5ce983259d0df55c8d5619b97d37938f582aa5390445be"
+  },
+  "StickLaughStudio/samples/human-movement-video-checks.json": {
+    "bytes": 370,
+    "sha256": "5a2028be10a23a609a31e046e9533e5b5eeed3b25f9c66a601cafeefb6bdbbac"
+  },
+  "StickLaughStudio/scripts/audit-reference.py": {
+    "bytes": 2575,
+    "sha256": "2de1369a99ad7f759e00f24382a968ae4bf0819fac9ade9020e33cf14ca86f2f"
+  },
+  "StickLaughStudio/scripts/check-dialogue-prerequisites.mjs": {
+    "bytes": 1631,
+    "sha256": "b013676bc6916aa38f3f4d28070affaa00641d478bcb244ceb6900871a9901df"
+  },
+  "StickLaughStudio/scripts/check-encoded-v9.py": {
+    "bytes": 3613,
+    "sha256": "b16ec83924bc97f4076b3225a4b4431c2431e09524fc34e60bc1cfd295d20d74"
+  },
+  "StickLaughStudio/scripts/check-geometry-v9.mjs": {
+    "bytes": 1206,
+    "sha256": "bc23397eee9075802346f8be543b6ffac9f2991457e24793db1d40916ad18cd7"
+  },
+  "StickLaughStudio/scripts/check-limb-pixels-v9.mjs": {
+    "bytes": 2246,
+    "sha256": "d08a270bf34bfddaa63dbf979ab2f169ed36e14508a53166b1f43b232e73fec4"
+  },
+  "StickLaughStudio/scripts/check-point12-raster.py": {
+    "bytes": 2379,
+    "sha256": "5f1044b575bb85b3d691b7ed539a7a6c5bf273dfb6d64f71c2ee76c5235f5239"
+  },
+  "StickLaughStudio/scripts/check-studio-ui.mjs": {
+    "bytes": 4937,
+    "sha256": "dee2be7e6b9934cbbd2f2da78f4be6e1e22339d584fb6a4a36be484aeed81075"
+  },
+  "StickLaughStudio/scripts/check-ui-v7.mjs": {
+    "bytes": 2462,
+    "sha256": "f48b18e28a03154756fdb54bf1393cdb6c7c707e5477c49fde8790d34537990d"
+  },
+  "StickLaughStudio/scripts/check-ui-v8.mjs": {
+    "bytes": 2700,
+    "sha256": "52862cb5418001f57c33146449c8234bd835070d40683c851cab921a6ed5c18f"
+  },
+  "StickLaughStudio/scripts/check-ui-v9.mjs": {
+    "bytes": 2213,
+    "sha256": "e9ea494b43e0bbfd15310bda9e7816a07cb25318acc4b0e27d86cc93cbaee653"
+  },
+  "StickLaughStudio/scripts/contact-diagnostics.mjs": {
+    "bytes": 1504,
+    "sha256": "5dd1d36b095843de9d3b59d2e5dcf25dbaa9aed1c16d8779f0799031c48daf7d"
+  },
+  "StickLaughStudio/scripts/doctor.mjs": {
+    "bytes": 759,
+    "sha256": "6fb9604c357fc2b596d627d3a7664cb5ec65706d8e81ddac9c53bc59857aa007"
+  },
+  "StickLaughStudio/scripts/finalize-sample-metadata.mjs": {
+    "bytes": 1551,
+    "sha256": "3fc69a78d36309755444e51b27ca36321da2f3fab388300ef5cf8903a86a4f54"
+  },
+  "StickLaughStudio/scripts/integration-render.mjs": {
+    "bytes": 3571,
+    "sha256": "242d5d4b5a3f71bdd64ebe8b498e43b320217fe9cf37780b3f95ca7ad418b9bf"
+  },
+  "StickLaughStudio/scripts/live-sample.mjs": {
+    "bytes": 1677,
+    "sha256": "00e2f5db0cd166861edb75c4bd0f12bb09a914007dab5f953e3c2f24bb5d4bdf"
+  },
+  "StickLaughStudio/scripts/live-website-test.mjs": {
+    "bytes": 6221,
+    "sha256": "38a0fedc8e94750a82c8795f24e768b49d683a91f57ab5e8b48955de679f78f9"
+  },
+  "StickLaughStudio/scripts/make-creature-demo.mjs": {
+    "bytes": 2348,
+    "sha256": "f531c8e3010299216039015d705c02a2634b6dcac2b7e198f4f6fe38cecb0003"
+  },
+  "StickLaughStudio/scripts/make-dynamic-fixtures.mjs": {
+    "bytes": 7946,
+    "sha256": "2287e5fe69e6df69c322b60d0b813e8567efc379f6a8a8d0d679b3cdf12369f8"
+  },
+  "StickLaughStudio/scripts/make-expressive-demos.mjs": {
+    "bytes": 3343,
+    "sha256": "ca00bb6060145650bc77bc68bef13f21e8e47adbd8001be9d0cc50b8d2597a77"
+  },
+  "StickLaughStudio/scripts/make-locomotion-sample.mjs": {
+    "bytes": 2593,
+    "sha256": "07567b3658cc4b9b7c8717d94f544dc74dd5c6e663c083adb80a0012a553aa29"
+  },
+  "StickLaughStudio/scripts/make-motion-ir-fixture.mjs": {
+    "bytes": 2841,
+    "sha256": "d65cb29829e2c0d42071922ac5658b50b7fed49a289d9fee2635ca332c32c2e5"
+  },
+  "StickLaughStudio/scripts/make-prop-exchange-fixture.mjs": {
+    "bytes": 3400,
+    "sha256": "bf42e0b2f6d970dd1a4846d5dae98a227e47a9ca44cd7589dad468062cd3d51a"
+  },
+  "StickLaughStudio/scripts/package-checkpoint.py": {
+    "bytes": 10390,
+    "sha256": "0ebe396434b64f17c628d56eef08b2aa6a45020ddcb2cda557600d72eb91c8f8"
+  },
+  "StickLaughStudio/scripts/package-expressive-update.py": {
+    "bytes": 3139,
+    "sha256": "a30fb993e76e2281593e0b85d996e7ceddada7f957c323ba7d6c7a04e71ee68b"
+  },
+  "StickLaughStudio/scripts/prepare-sfx-v8.py": {
+    "bytes": 2825,
+    "sha256": "7b41c7b52ef5bf3ad13e58a21e4c85c8463581eb09646246712022a424ea9656"
+  },
+  "StickLaughStudio/scripts/prepare-sfx-v9.py": {
+    "bytes": 758,
+    "sha256": "95fd6569094d7cbc584c90e95695208e3db76b53cb1c8613dae5b1355ab0becc"
+  },
+  "StickLaughStudio/scripts/preview-arms-fall.mjs": {
+    "bytes": 1463,
+    "sha256": "4bd4e461e58cf97c5dc3db37a7860cd09b97d0fb0591b4c3f43793792e0f235c"
+  },
+  "StickLaughStudio/scripts/prototype-v8.mjs": {
+    "bytes": 1299,
+    "sha256": "ae71f53cfa84ead110e716facac1d71b4a4d869626afbdf990fd8d51cbc5c1b0"
+  },
+  "StickLaughStudio/scripts/provider-smoke.mjs": {
+    "bytes": 381,
+    "sha256": "444c9b9d348433f8b1b67a3d5e7ef5ed3312f7c37394c504c420d32bcfde1930"
+  },
+  "StickLaughStudio/scripts/refresh-sample-audio-v9.mjs": {
+    "bytes": 2761,
+    "sha256": "e24bf09efd1044e27dcdbcc84a39fca6a5a6bee6386c7e7b4e2858abd8e6fd99"
+  },
+  "StickLaughStudio/scripts/render-adult-samples.mjs": {
+    "bytes": 2621,
+    "sha256": "65ff86b4e6828910313ed1e2789b53dda6a34c602e33abd72d3fac06bba2deb4"
+  },
+  "StickLaughStudio/scripts/render-hero-sample.mjs": {
+    "bytes": 2607,
+    "sha256": "4c24b00c92cf49b3dd85876fba56bce65db0302af676edd1d71c130320c5799c"
+  },
+  "StickLaughStudio/scripts/render-motion-ir-proof.mjs": {
+    "bytes": 1056,
+    "sha256": "5b34b933a6d087367a128d020833a2b440b38c86fb4f507348089cc95cc5fcc3"
+  },
+  "StickLaughStudio/scripts/render-plan.mjs": {
+    "bytes": 1620,
+    "sha256": "371854b5332e51594ebf7beb6eca40fa505845e29fe7f403b0cb8f1b7ba58cac"
+  },
+  "StickLaughStudio/scripts/render-point12-fixtures.mjs": {
+    "bytes": 3638,
+    "sha256": "d392eea3ce5b35b3b54b0603b9cb485231cd08b062474105c9da58bd2ed140ea"
+  },
+  "StickLaughStudio/scripts/render-production-samples.mjs": {
+    "bytes": 2186,
+    "sha256": "82b955ce87258136c985d99320477aed832e3dfd5caedf5a3ad0c1c741764bcb"
+  },
+  "StickLaughStudio/scripts/render-two-key-proof.mjs": {
+    "bytes": 1701,
+    "sha256": "265733a55f6a4f760ada7279d5ba9509b2c3e7838a88797bdb4e2c9dd06f0b35"
+  },
+  "StickLaughStudio/scripts/render-v4-samples.mjs": {
+    "bytes": 2650,
+    "sha256": "dcd0153400aa7ed3ab0d9c0edb279cd1cb48c5fe93e5346615b7bce2a6545678"
+  },
+  "StickLaughStudio/scripts/render-v5-sample.mjs": {
+    "bytes": 2589,
+    "sha256": "c029f9d4a40def7beabb5e90fa217eef651d731e38bf76dd26f14233ffa789b1"
+  },
+  "StickLaughStudio/scripts/render-v6-sample.mjs": {
+    "bytes": 2586,
+    "sha256": "ef306b4e9ba59a2c44d976952b2619718de24967aa961fdb5c3d2edd9e93fe50"
+  },
+  "StickLaughStudio/scripts/render-v7-samples.mjs": {
+    "bytes": 2766,
+    "sha256": "106dda4bc7d5dd75b40ddde10b876266d07112bb3be1035b1de64d81cd7d238e"
+  },
+  "StickLaughStudio/scripts/render-v8-samples.mjs": {
+    "bytes": 3003,
+    "sha256": "f97d246247e55a00a83a8b99309412de93c6a19eeef2be0aa4044ef9964447a7"
+  },
+  "StickLaughStudio/scripts/render-v9-samples.mjs": {
+    "bytes": 3000,
+    "sha256": "0f4660f1ce8d809b05dfcb48cf57bdfe957e0c359abe0e48516c462a46e46743"
+  },
+  "StickLaughStudio/scripts/replace-sample-scene-v9.mjs": {
+    "bytes": 4634,
+    "sha256": "e1c2a0964126cc2c10f8d8b6481d315cac28ee61bebce7303b14c5dbc4f2f66c"
+  },
+  "StickLaughStudio/scripts/review-deliverable.mjs": {
+    "bytes": 858,
+    "sha256": "a7ad8bcb8294e543370e7d36306cb64b2d999f5436092f8b6f74e1298ae5f67e"
+  },
+  "StickLaughStudio/scripts/review-frames.mjs": {
+    "bytes": 1139,
+    "sha256": "e6951b66a2117a43e541aeda3b47f8301875fa3a9aa7d88ef6abc2f289f8997e"
+  },
+  "StickLaughStudio/scripts/review-hero.mjs": {
+    "bytes": 937,
+    "sha256": "06c79431795500be3c4047909b96753f45020e99e61ea2f731f766fc56eaa3d2"
+  },
+  "StickLaughStudio/scripts/review-saved-video.mjs": {
+    "bytes": 845,
+    "sha256": "f6734eff4a6eb116ea8358e1fda64072e9d54db346f1386ab7b6add6146c0da2"
+  },
+  "StickLaughStudio/scripts/review-v4.mjs": {
+    "bytes": 1155,
+    "sha256": "1584e4b134fae11fa04dab143fba634e0995dbdffc6d14320e0b1e4122b97f49"
+  },
+  "StickLaughStudio/scripts/review-v5.mjs": {
+    "bytes": 1247,
+    "sha256": "f9ca0b3cba68adc093b3bd12e3e1c439b15355f981edcef14b7cf5b74916cfb3"
+  },
+  "StickLaughStudio/scripts/review-v6.mjs": {
+    "bytes": 958,
+    "sha256": "85a17f480ae07fe665fe36973897cb31c094fd129858147a0a456ee9b4a7665f"
+  },
+  "StickLaughStudio/scripts/review-v7.mjs": {
+    "bytes": 1098,
+    "sha256": "09c9f3d850c21db5f236faf1e579f41983964da89d7066c09ce5208b5b57d657"
+  },
+  "StickLaughStudio/scripts/review-v8.mjs": {
+    "bytes": 1253,
+    "sha256": "18148559de8583cdc5c6c945a960142847f05425e4ba698ecb7f69c956eb007c"
+  },
+  "StickLaughStudio/scripts/review-v9.mjs": {
+    "bytes": 1238,
+    "sha256": "56d09a6939ff2b34be30b0ac1c5a7eb1ab526ef728982c1c30615632cd92d457"
+  },
+  "StickLaughStudio/scripts/sample.mjs": {
+    "bytes": 1160,
+    "sha256": "b66a9c4fe4d60c3cfd4832a856095807c09c09fb58c9d32a9d82ab4aa407006d"
+  },
+  "StickLaughStudio/scripts/serve-checkpoints.py": {
+    "bytes": 982,
+    "sha256": "0939aec606a6f062066b653e69f62759c617b01c09292ed7824cb8079d87837e"
+  },
+  "StickLaughStudio/scripts/setup.mjs": {
+    "bytes": 902,
+    "sha256": "664f55213dbe0987945429a6744e40b06a70b99922a6a0f9c1dde6998c90e43b"
+  },
+  "StickLaughStudio/scripts/smoke-audio-clock.mjs": {
+    "bytes": 1124,
+    "sha256": "f1bac49a17ed56ae2fe0a0d58f19a8a1245ac5133fef3bad79d2dfb1c6eee77e"
+  },
+  "StickLaughStudio/scripts/smoke-dynamic-live.mjs": {
+    "bytes": 1977,
+    "sha256": "f8c2989c19b2bf4905971f25eedf6c74cad3c476daf8447f92a979d1c670362d"
+  },
+  "StickLaughStudio/scripts/smoke-point13-assets.mjs": {
+    "bytes": 3167,
+    "sha256": "5f45edc984e24902fb966f08bcf5f17125c05b943a6666904d62cdf668d984f3"
+  },
+  "StickLaughStudio/scripts/smoke-point14-assets.mjs": {
+    "bytes": 3054,
+    "sha256": "195259ae9a61c2a3b7db9833ceeaeb1ebbd8b2769043e6821791cd9955754669"
+  },
+  "StickLaughStudio/scripts/smoke-render.mjs": {
+    "bytes": 1713,
+    "sha256": "e456e0c5ed28a270baaf4058ee87de6bff2416f9d78440d49ae9deae147fcc4b"
+  },
+  "StickLaughStudio/scripts/smoke-story-download.mjs": {
+    "bytes": 3739,
+    "sha256": "9f8c957e02fa1505e7c9c4505dcc2bedea1caee2aaa9fb1911b9fe05ef03c0b2"
+  },
+  "StickLaughStudio/scripts/ui-autoflow-check.mjs": {
+    "bytes": 2494,
+    "sha256": "72fc8830aa63e3f56b40ddd01ef2aef464d1a98e923f3fa4e42a7eb35c35d96d"
+  },
+  "StickLaughStudio/scripts/ui-check.mjs": {
+    "bytes": 1823,
+    "sha256": "388163cae2a83fe9d424b2fbe9a9bdff7e6dafa457d00cb71c1c27008d490dbd"
+  },
+  "StickLaughStudio/scripts/ui-hero-check.mjs": {
+    "bytes": 1885,
+    "sha256": "766cd59f2163eaf7ea1da0f3114804dfcd2221a96c97f9cd65aee752563a5805"
+  },
+  "StickLaughStudio/scripts/validate_checkpoint.py": {
+    "bytes": 17261,
+    "sha256": "1febcb7adde14e4950e9e9c7e13e200dabbf8654e5c4df85c3ec79adf0ff2dba"
+  },
+  "StickLaughStudio/scripts/verify-live-sound.mjs": {
+    "bytes": 1103,
+    "sha256": "af2b25b0d30479ae7a37188d3c54b4de3d4dc2320ed397f2d2acae53ea398ecb"
+  },
+  "StickLaughStudio/scripts/verify-live-workflow.mjs": {
+    "bytes": 2401,
+    "sha256": "8567cdd8641bd96a857dc63a2f1724273c08c7ce30ee7b5a465c907f6a4fa2c1"
+  },
+  "StickLaughStudio/scripts/verify-v4-release.mjs": {
+    "bytes": 2151,
+    "sha256": "d9ff566ce7216b1d7e4f6f3ca9e403e336ca4533cb10b28318b6845f21b904a4"
+  },
+  "StickLaughStudio/server/asset-factory.mjs": {
+    "bytes": 32555,
+    "sha256": "d3b86e26110f8abc20aad7cd12bd515a9f778aeab186ee4b3f7fff250112b15e"
+  },
+  "StickLaughStudio/server/asset-providers.mjs": {
+    "bytes": 13916,
+    "sha256": "594c83b4d084313ce6aca02276b6bd95fd42a01394e11dcb79eba8b4ada3abb0"
+  },
+  "StickLaughStudio/server/browser.mjs": {
+    "bytes": 2535,
+    "sha256": "11e156a74d987ef062ae463f960970f9ec2ccb921980706ca24165dc7c8e5b23"
+  },
+  "StickLaughStudio/server/capability-discovery.mjs": {
+    "bytes": 1787,
+    "sha256": "508ed9d605f1b5526e157a42b0cbde1c9a0ee5cb493f61449dde8345af4080b9"
+  },
+  "StickLaughStudio/server/choreographer.mjs": {
+    "bytes": 26030,
+    "sha256": "7bda7e011ed03f286317990305a398c9cd2e6ffe68611399dee37e3d89115da9"
+  },
+  "StickLaughStudio/server/creator.mjs": {
+    "bytes": 1458,
+    "sha256": "09128cbd149be2735802e6235da81907ea1a89781f87f09fe2bea56baaf66c4f"
+  },
+  "StickLaughStudio/server/dynamic-checkpoints.mjs": {
+    "bytes": 1080,
+    "sha256": "6a67e223dd2b354dae40c93b80447f039bd7639a92c96271c05f525a6ed7e90e"
+  },
+  "StickLaughStudio/server/dynamic-director.mjs": {
+    "bytes": 21922,
+    "sha256": "58f43a1643096f55b006b5f62e9bfd4f411c3379848697f897c199b64f6d8be8"
+  },
+  "StickLaughStudio/server/encoded-quality.mjs": {
+    "bytes": 3289,
+    "sha256": "6bdbbb01fa0ae426046ac25660f6cd64fd1095360a290ec3619d927a94b112eb"
+  },
+  "StickLaughStudio/server/export-settings.mjs": {
+    "bytes": 507,
+    "sha256": "0a8de40eadeec471287900d4da8a75470860c7251549fa907d66ed6faf4d3835"
+  },
+  "StickLaughStudio/server/files.mjs": {
+    "bytes": 863,
+    "sha256": "a4196d437eec1f960f48182a488fe975a958e1c4ef4396914c89c134da81321e"
+  },
+  "StickLaughStudio/server/index.mjs": {
+    "bytes": 18925,
+    "sha256": "c6ce40aa5cbfff31f24b4cdf55a39496d21a2f638c5ee6953f782598b0768b8a"
+  },
+  "StickLaughStudio/server/inspect.mjs": {
+    "bytes": 27285,
+    "sha256": "a5f0d70dfd6b445b304f9a7961b387b8b2093b069471b5384ab0631c11ee7c6d"
+  },
+  "StickLaughStudio/server/media.mjs": {
+    "bytes": 9240,
+    "sha256": "00f5b7f6c5216cba7d36b298b38ff8258aade974a71ecf155c2b6a47b191f52f"
+  },
+  "StickLaughStudio/server/production.mjs": {
+    "bytes": 3490,
+    "sha256": "d07dbe62e8ceecbc53f001c088c4643cfb3ea64aecd935247c55c7e859aec5c6"
+  },
+  "StickLaughStudio/server/provider-smoke.mjs": {
+    "bytes": 9609,
+    "sha256": "119f10f6d93efea30255ee2621b45f06ddcce8174c7cc79b237253cfce1fb87c"
+  },
+  "StickLaughStudio/server/providers.mjs": {
+    "bytes": 34571,
+    "sha256": "0af47e62d6a5ebe9d31bfdbeed8d136f3f175f6cc4333027d120d608a2d609e2"
+  },
+  "StickLaughStudio/server/queue.mjs": {
+    "bytes": 8059,
+    "sha256": "b5b4f6e8392ff263c5ad7dc40981600eee82e143be94a9a917edb05ae7333c9e"
+  },
+  "StickLaughStudio/server/render.mjs": {
+    "bytes": 5987,
+    "sha256": "43e1b9b0db1d5f7660aefedf2a068c1807a698f0b7c17e7f3bf3086877c81b01"
+  },
+  "StickLaughStudio/server/scene-compile.mjs": {
+    "bytes": 1218,
+    "sha256": "af3b2977fd62b50f080eac1e0b05263411db850222787a3262fb06fb75be669e"
+  },
+  "StickLaughStudio/server/semantic-director.mjs": {
+    "bytes": 18224,
+    "sha256": "5d4b2ec9a86c6eeedb0c04c3e16064f4375a4726a975c5e5f413d67798ce97b6"
+  },
+  "StickLaughStudio/server/sound-director.mjs": {
+    "bytes": 2721,
+    "sha256": "e6160dd20388880a805e98934b1929a081430c00cc4d7875accb7ad80a7c2150"
+  },
+  "StickLaughStudio/server/story-contract.mjs": {
+    "bytes": 4580,
+    "sha256": "503e0ad7bbd7c1f42bc0f492a0c83d7e945fc383967adda20af4a22b4955134b"
+  },
+  "StickLaughStudio/server/svg-render.mjs": {
+    "bytes": 3133,
+    "sha256": "4e77e442dc449ca211f3d2aa41ab06ce8ed5a2cc4ea314e636207ec71dfb6c1a"
+  },
+  "StickLaughStudio/server/svg-worker.mjs": {
+    "bytes": 711,
+    "sha256": "1ed0ed7aa66f4dadda8733f93a57fb5af9f09cdc5a98cf0523c483282bf679a4"
+  },
+  "StickLaughStudio/server/timing.mjs": {
+    "bytes": 1278,
+    "sha256": "f9b9f4ed2febad1aaed0987b5d9d3da8046357d7504be66f83a346cac0b97b72"
+  },
+  "StickLaughStudio/server/video-review.mjs": {
+    "bytes": 11476,
+    "sha256": "69a668486996eeede30f8b8a93f460f763499f1a841547080cca5de29440411f"
+  },
+  "StickLaughStudio/shared/action-time.mjs": {
+    "bytes": 969,
+    "sha256": "10daba2765acdf567b2f14d1ebe297a328fcd89c360049cee3e4cf08a6980be9"
+  },
+  "StickLaughStudio/shared/asset-ready-visual.mjs": {
+    "bytes": 4335,
+    "sha256": "1569267fa56c2ff4d1191781ada66d25a218fbd83721ca3d8ee16921b4364f83"
+  },
+  "StickLaughStudio/shared/canonical-story-ir.mjs": {
+    "bytes": 35631,
+    "sha256": "3edfcfeb8d9420e454edd27f86c6bfde5be1efea53c90b50818b4b4cb9a25e6e"
+  },
+  "StickLaughStudio/shared/capability-compiler.mjs": {
+    "bytes": 16204,
+    "sha256": "190434912b050e9c9ba9e5948235215306d11a5fb9e53294def9130e3418602f"
+  },
+  "StickLaughStudio/shared/character-design.mjs": {
+    "bytes": 850,
+    "sha256": "a011c52066f62d7d4676a0a387fe53b9db3339bea5016ccf939f117ecb358f0f"
+  },
+  "StickLaughStudio/shared/choreography.mjs": {
+    "bytes": 881,
+    "sha256": "f7a45ebbe8afdf5153ce67f49f3c95e9d2abd56173b4a4e77e52d74d82a3be16"
+  },
+  "StickLaughStudio/shared/comedy-category.mjs": {
+    "bytes": 7644,
+    "sha256": "48fa5572b6d2631c4343ca05f9696c399216fe276397a400527b64760936fb48"
+  },
+  "StickLaughStudio/shared/director-score.mjs": {
+    "bytes": 2543,
+    "sha256": "398103ae2397aa04b5e8969add56f7bc94d9eae9c6adad631ccbebac262daec6"
+  },
+  "StickLaughStudio/shared/duration.mjs": {
+    "bytes": 1112,
+    "sha256": "8219392a5d8aca982d52fa293fde1621f33e7f53c6b77a7ca8eb853f122ee26a"
+  },
+  "StickLaughStudio/shared/dynamic-framing.mjs": {
+    "bytes": 1875,
+    "sha256": "cea471efe443ea827a6e288e71a2ee1316ce85b2306c9d22fa1fe78af563c144"
+  },
+  "StickLaughStudio/shared/frame-clock.mjs": {
+    "bytes": 2751,
+    "sha256": "25decb46deb3ab5f7a0c5b68df03587d51032b877d6b6eddb2fb08e247ed7188"
+  },
+  "StickLaughStudio/shared/geometry-library.mjs": {
+    "bytes": 14358,
+    "sha256": "59aa7c09806e9751bc3f63a929b3f4640255122b84fcf9bb0067a2aac3e33f5e"
+  },
+  "StickLaughStudio/shared/locomotion.mjs": {
+    "bytes": 2123,
+    "sha256": "c34d95ce720156258f73cbb1b5b0fdcf6580c6688fdb212e829cd0bc83dfadcf"
+  },
+  "StickLaughStudio/shared/math.mjs": {
+    "bytes": 1657,
+    "sha256": "8acfbefe3fe703350a505892e7ecfb8f77e5ddc1c462d93a71702b4985ac905e"
+  },
+  "StickLaughStudio/shared/motion-ir.mjs": {
+    "bytes": 9257,
+    "sha256": "83be0fce7cd3a6b5d0fb2e816f4a56d153ef7036632d194b9f2e2b9affdccd9b"
+  },
+  "StickLaughStudio/shared/motion-path.mjs": {
+    "bytes": 1722,
+    "sha256": "6a4c8cf0a1c18a9106335a5a6de4afccb493c8846493b2b9a94a096126bc7710"
+  },
+  "StickLaughStudio/shared/motion-presets.mjs": {
+    "bytes": 919,
+    "sha256": "99e73bf3ed197060e64de0c0f1cb46d1f46b29b3b37a0f96a16b7cbb3f364723"
+  },
+  "StickLaughStudio/shared/normalize-art.mjs": {
+    "bytes": 998,
+    "sha256": "135471eae52ebac58ff215617b0dca87913cf03e6208f89ed0028e5103e611a3"
+  },
+  "StickLaughStudio/shared/normalize-directed-scene.mjs": {
+    "bytes": 2807,
+    "sha256": "3ca78e16b9c2e4a527ffbd5c6c41718f5a36bb57d384a9c5b73a7e3d3582b20e"
+  },
+  "StickLaughStudio/shared/occlusion.mjs": {
+    "bytes": 865,
+    "sha256": "f55fb90027cf850258358a4e4d95695ca8134e1f73becb3bc7c083eaf5f04475"
+  },
+  "StickLaughStudio/shared/part-attachments.mjs": {
+    "bytes": 3666,
+    "sha256": "5f57e22e2a173e45978b82920948bfb65d57ce5a155dace8ad1742923cde388b"
+  },
+  "StickLaughStudio/shared/part-motion.mjs": {
+    "bytes": 3664,
+    "sha256": "80d9888e42e091281bd84eac2e159281928f5f02be55992e9b6355909f8796d7"
+  },
+  "StickLaughStudio/shared/performance.mjs": {
+    "bytes": 1075,
+    "sha256": "738a1119310e78ba85f0c521e2b1a63029160416e5d34826e68498570a18b1c7"
+  },
+  "StickLaughStudio/shared/raster-asset-schema.mjs": {
+    "bytes": 1655,
+    "sha256": "927badd83a671fec5a359f76f14279daca1126465abc1f4d46cf77030f7e4a51"
+  },
+  "StickLaughStudio/shared/raster-asset.mjs": {
+    "bytes": 5366,
+    "sha256": "3c3f12f8ac3ce04424f99ad0a24dcd0b3ddfd6f8f23b3326d4f8827eb6d5ee0f"
+  },
+  "StickLaughStudio/shared/reference-style.mjs": {
+    "bytes": 1891,
+    "sha256": "718f4a24f270e67707812aa4c4c3d5f8c84752372f71484acacb782f2ed7e0f2"
+  },
+  "StickLaughStudio/shared/replay.mjs": {
+    "bytes": 1670,
+    "sha256": "c1f2afb50f3f8c7c8b7077585e957241f47420022793e620b42911d50313407a"
+  },
+  "StickLaughStudio/shared/rig.mjs": {
+    "bytes": 1702,
+    "sha256": "96648056100a720f24abc623c6147195d7386f48a6b5ae94f9b0bedb5fffb7eb"
+  },
+  "StickLaughStudio/shared/scene-graph.mjs": {
+    "bytes": 19358,
+    "sha256": "65049a13deba55fb64db2cbdead50d1fcc0e42306010147197252cf8710bb99d"
+  },
+  "StickLaughStudio/shared/schema.mjs": {
+    "bytes": 39444,
+    "sha256": "3d5684f0b6c87ed5f6aa0b9e101d652b34e81d4dadb720cc3e9250bdc35d60f0"
+  },
+  "StickLaughStudio/shared/secondary-motion.mjs": {
+    "bytes": 433,
+    "sha256": "cb3fd4351e4b5a7a3cf084c8430e9d639d74b5675b27619cc7f6cf49344b95d2"
+  },
+  "StickLaughStudio/shared/style-performance.mjs": {
+    "bytes": 1098,
+    "sha256": "dd0b2022552ea0abcb38c152b3bcf50af702de5dc5b74d4f98cf53033eeec562"
+  },
+  "StickLaughStudio/shared/svg-path.mjs": {
+    "bytes": 4973,
+    "sha256": "1010c8ef231912e133aff47e1a1bb2cb47d7c5d079ddac85e1c7028ac4083418"
+  },
+  "StickLaughStudio/shared/timeline.mjs": {
+    "bytes": 1756,
+    "sha256": "3a4f6c9e78d07719bf9cae3c1fbf570dd0cfd40aa773b3cae7c1e5ab7c270586"
+  },
+  "StickLaughStudio/shared/visual-capability-manifest.mjs": {
+    "bytes": 6143,
+    "sha256": "c9ef529d652e98d6016ce5dbd5ac05a4cc0214ca95764c1218a068264ca6306d"
+  },
+  "StickLaughStudio/shared/visual-spec-schema.mjs": {
+    "bytes": 13421,
+    "sha256": "fae0d15abbb7de99d1e28dc9f1c226289014312cd5f93571400f2a696ba76cda"
+  },
+  "StickLaughStudio/shared/voice-cast.mjs": {
+    "bytes": 571,
+    "sha256": "ebb408d1c0ca4bee212624c15ee12b415ffec402f56e78107f8a20fe1d1d58ce"
+  },
+  "StickLaughStudio/tests/adult-comedy.test.mjs": {
+    "bytes": 8389,
+    "sha256": "203220b24382bdcac807668437a0418fc90729f3b550d688fd34f2eb5610a999"
+  },
+  "StickLaughStudio/tests/api-queue.test.mjs": {
+    "bytes": 4294,
+    "sha256": "35f394221c82dd65dedc527d240955a44fc05b2109d875ffea10f0788b93e53c"
+  },
+  "StickLaughStudio/tests/canonical-story-ir.test.mjs": {
+    "bytes": 10189,
+    "sha256": "3e1f1be2b58c5c07fd3b9dfb428de08d6be67f2b0a71d3c5dfde1f1bfc408626"
+  },
+  "StickLaughStudio/tests/capability-compiler.test.mjs": {
+    "bytes": 8906,
+    "sha256": "ab9a67bbd683d9d2ff4349ec4fbf3895a97a106e11b91255779c2e83b3d6fc73"
+  },
+  "StickLaughStudio/tests/capability-discovery.test.mjs": {
+    "bytes": 5390,
+    "sha256": "bad58b99d3a152cee89c65cf6e535645110320d4a650acf18692d93281328411"
+  },
+  "StickLaughStudio/tests/choreographer.test.mjs": {
+    "bytes": 12454,
+    "sha256": "b007579d0f862e382714cfd5aeda3de9847a0f162d488730924012e38eae6f69"
+  },
+  "StickLaughStudio/tests/comedy-category.test.mjs": {
+    "bytes": 2808,
+    "sha256": "01b18f4d43cd3edfe8a2f7f44ba13d5da82c6c3d3b350addd58ba045ab502460"
+  },
+  "StickLaughStudio/tests/creator.test.mjs": {
+    "bytes": 901,
+    "sha256": "5ba716b0b341e944937ff0bc8f2fa55f3f28f78e15ddfdf1282e5a72d455d296"
+  },
+  "StickLaughStudio/tests/direction-resume.test.mjs": {
+    "bytes": 2596,
+    "sha256": "741a344329c20219921f0d71c3c53c44665e5770242b78998b517018738fb1f7"
+  },
+  "StickLaughStudio/tests/dynamic-checkpoints.test.mjs": {
+    "bytes": 924,
+    "sha256": "132ff0f73f8cddd6ec285da120f0a1886b131e4eab970106e167c0430cc6d639"
+  },
+  "StickLaughStudio/tests/dynamic-director.test.mjs": {
+    "bytes": 7371,
+    "sha256": "3c052243aeb6cdec2125c1506a165a977c5dab68957567874a07d39302f23e4b"
+  },
+  "StickLaughStudio/tests/dynamic-parts.test.mjs": {
+    "bytes": 5988,
+    "sha256": "438e24984d302b5b963c4a485ec13b9cec21f72de6bd70db532edad4dc35003e"
+  },
+  "StickLaughStudio/tests/dynamic-sounds.test.mjs": {
+    "bytes": 2416,
+    "sha256": "c1bc28af68099e057b62ddaff885b7e48c9d343c4c540c765fa549bae799c048"
+  },
+  "StickLaughStudio/tests/encoded-quality.test.mjs": {
+    "bytes": 2037,
+    "sha256": "a99871f3565758551ca51b3accc3232927bbdc3aa14ce8b3a6ceba0c3987ffab"
+  },
+  "StickLaughStudio/tests/expressive-acting.test.mjs": {
+    "bytes": 4569,
+    "sha256": "ab8da3d7fb9e536a412906445d60814d5250b4cb0dff4cfb8c30e69842a7a3a4"
+  },
+  "StickLaughStudio/tests/fall-visibility.test.mjs": {
+    "bytes": 1660,
+    "sha256": "3996bb4d90b35035444e07263cf279d5b8abc1e07a809a59879a8b570d91a949"
+  },
+  "StickLaughStudio/tests/hero.test.mjs": {
+    "bytes": 4002,
+    "sha256": "3194324e73167dce4aa7442ff505e189b5a9a1642f9303c5d2cb9ee13ebcf528"
+  },
+  "StickLaughStudio/tests/inspection.test.mjs": {
+    "bytes": 5734,
+    "sha256": "de2a5420e9d439c49cfd74319e892bd20225805b63e739db7808a14b6d933d14"
+  },
+  "StickLaughStudio/tests/interaction-anchors.test.mjs": {
+    "bytes": 6110,
+    "sha256": "510b84624d283d8d47a4fd0a736a49e24fe821b76b0fce984607435cf402a95f"
+  },
+  "StickLaughStudio/tests/locomotion-skinning.test.mjs": {
+    "bytes": 5648,
+    "sha256": "3187f2585c5b4a62902ad9675b419d86ddd1c3060a23c94d41accb1de9fe1db2"
+  },
+  "StickLaughStudio/tests/motion-ir.test.mjs": {
+    "bytes": 9839,
+    "sha256": "67be09c90d7ee0d4e5f1700ab8f3cae45de0bf541e9039666007f2bee286dc83"
+  },
+  "StickLaughStudio/tests/motion-path.test.mjs": {
+    "bytes": 1673,
+    "sha256": "1b2847af468adcdf589510934a5000e6fcf69d5e940f4882ba9f6f003ee0246e"
+  },
+  "StickLaughStudio/tests/point12-asset-ready.test.mjs": {
+    "bytes": 11193,
+    "sha256": "e31df01e6b3281e9c43549bdea2c46350dc37ffc3ff4dd6e708f8af97ade8947"
+  },
+  "StickLaughStudio/tests/point13-asset-factory.test.mjs": {
+    "bytes": 6888,
+    "sha256": "5d427d77bd9db3471d57741696b8164b288518de7842e91d6d2590179b7c6662"
+  },
+  "StickLaughStudio/tests/point13-png-fixture.mjs": {
+    "bytes": 1281,
+    "sha256": "f2a7a184baa56f17e2552a1690f285de86f246998150c0c5eb571ea3584047fa"
+  },
+  "StickLaughStudio/tests/point14-asset-providers.test.mjs": {
+    "bytes": 4725,
+    "sha256": "1ef9dd1b407e78c614110ef1ba1d3a916c1a1758a0bc8842cda93b2d5a9bb834"
+  },
+  "StickLaughStudio/tests/point4-baseline-compatibility.test.mjs": {
+    "bytes": 4294,
+    "sha256": "a968170a9ad657036b451b89ea445ca0db0766a7586d2699d38f10e50c70c48a"
+  },
+  "StickLaughStudio/tests/point8-replay.test.mjs": {
+    "bytes": 8425,
+    "sha256": "736f9e8eef29041320777a5a4d77d30bc0a1a490ed60ef40a03bdc1057ad781e"
+  },
+  "StickLaughStudio/tests/production.test.mjs": {
+    "bytes": 2498,
+    "sha256": "37a8ee5f3cef51a551a7e96b58921a3141adbf47a4122009776ee1e25099361c"
+  },
+  "StickLaughStudio/tests/provider-smoke.test.mjs": {
+    "bytes": 5534,
+    "sha256": "8e358cb27b50a6b4000d65f4b838a5cdaf22ae740b9921bcc4951a75e9506c59"
+  },
+  "StickLaughStudio/tests/providers.test.mjs": {
+    "bytes": 11376,
+    "sha256": "d60d23d04a51e11f1d84c4a5dec762b9349ed51d1eb3e64baedbd40b08af5ded"
+  },
+  "StickLaughStudio/tests/retention.test.mjs": {
+    "bytes": 4593,
+    "sha256": "57083c8a26feda5bf9e4ddc73e288e8c36420a2dfcc4367a8a9e68e87afedabe"
+  },
+  "StickLaughStudio/tests/scene-graph.test.mjs": {
+    "bytes": 10227,
+    "sha256": "179e55136bdf721dc418c4bea75186ea65cd447e7b91889d9c62f1f25b8b4ddf"
+  },
+  "StickLaughStudio/tests/schema-engine.test.mjs": {
+    "bytes": 3844,
+    "sha256": "ca4bbc98a24284d876ae9e5a71a284edbc0f1db1c6bf4e6993a5d116891d9553"
+  },
+  "StickLaughStudio/tests/story-contract.test.mjs": {
+    "bytes": 4074,
+    "sha256": "689809071777332a618b289274d02cf41baf9e68840acaadbfb14ac25e9340ed"
+  },
+  "StickLaughStudio/tests/test_validate_checkpoint.py": {
+    "bytes": 6404,
+    "sha256": "5242b3cf4d118149dbe9fd63ecb0026c111f1af4a5f9e85bf431118983685fe5"
+  },
+  "StickLaughStudio/tests/v4.test.mjs": {
+    "bytes": 7259,
+    "sha256": "1c2a722a2bfe5911977d966cb4d8360fbc2d4d5545d303151b5b0da465691c65"
+  },
+  "StickLaughStudio/tests/v5.test.mjs": {
+    "bytes": 5228,
+    "sha256": "8607585f785f6fcdc6d0406892ad6b1bae5e84d737536ac630f51f637daf509c"
+  },
+  "StickLaughStudio/tests/v6-motion.test.mjs": {
+    "bytes": 5740,
+    "sha256": "936cffa30c74ca2901e6af0ee2ca6dcac69c3cf255481a886f3293028543a3c0"
+  },
+  "StickLaughStudio/tests/v7-api.test.mjs": {
+    "bytes": 7939,
+    "sha256": "29bdaf88eed5ce7a747aced57b59cdc9eef143849927d39a792438da29901a40"
+  },
+  "StickLaughStudio/tests/v7.test.mjs": {
+    "bytes": 11093,
+    "sha256": "8d6d9d4e2c0a696dc8e3407b721559fd6ed51cca3927771f994ba07470bcc045"
+  },
+  "StickLaughStudio/tests/v8.test.mjs": {
+    "bytes": 9627,
+    "sha256": "82e885d67db0f7f6ad0fd007ebcc62feb93a819997967f92c32aa26b8a302018"
+  },
+  "StickLaughStudio/tests/v9-api.test.mjs": {
+    "bytes": 1821,
+    "sha256": "6d5361611598ad8a8adc5f1f7e9641661538baee64a8065c25d3151e72112890"
+  },
+  "StickLaughStudio/tests/v9.test.mjs": {
+    "bytes": 8310,
+    "sha256": "5a60001a7c082aa6b0f6e97d35aa4a1e1aa743c1b09bf867db392d050b606a1c"
+  },
+  "StickLaughStudio/tests/v91.test.mjs": {
+    "bytes": 5016,
+    "sha256": "02cb4be9b5c233f1ed6672a6b4ca2f9c589adf3cad4e811c659bb9b32cb1328c"
+  },
+  "StickLaughStudio/tests/video-review.test.mjs": {
+    "bytes": 4836,
+    "sha256": "03ff096b42671729ba0c8c6342c4505aa0145bc23f26043b054c17da1573f54e"
+  },
+  "StickLaughStudio/tests/visual-geometry.test.mjs": {
+    "bytes": 11952,
+    "sha256": "4f7916e4abda97f3476fe85832cc98683ff9b292b31ef738246786deface8669"
+  },
+  "StickLaughStudio/web/angular.json": {
+    "bytes": 1162,
+    "sha256": "79d938c69122d96756a22f1e2a5430c14e9a814c4bfa0366ac8eed6f7442faec"
+  },
+  "StickLaughStudio/web/package.json": {
+    "bytes": 472,
+    "sha256": "7c6c3257476626ae22a58fe5dcf4891bcf25ae04384f0d88c47f43f779dc8346"
+  },
+  "StickLaughStudio/web/proxy.json": {
+    "bytes": 59,
+    "sha256": "dcd2af9b08e995ae0d719e5497e68f9c1c0d966712a038c83126e299361ca81b"
+  },
+  "StickLaughStudio/web/src/app.html": {
+    "bytes": 16836,
+    "sha256": "66f50b851bd33de1d73f5e9d5bdacd0ca90461d9594fa04b5ee8b13f5cc17f8c"
+  },
+  "StickLaughStudio/web/src/index.html": {
+    "bytes": 284,
+    "sha256": "e45da13703917d3ff1c6de3c4d3f712d7bf474aee1a11b5d280b9cc1ff922c12"
+  },
+  "StickLaughStudio/web/src/main.ts": {
+    "bytes": 15579,
+    "sha256": "52941c4a00b8c935d054d4b34900eaf2b3670099856719e513a0bab616221935"
+  },
+  "StickLaughStudio/web/src/styles.css": {
+    "bytes": 9679,
+    "sha256": "bc087d4cf48cba52302154685081ee92c70a761f9996c82f409aa634ec7c5fc2"
+  },
+  "StickLaughStudio/web/tsconfig.json": {
+    "bytes": 280,
+    "sha256": "eadefd7eccaaae60610ce706a156a411f24d0498db2f3f0aa074d1e47b798382"
+  }
+}

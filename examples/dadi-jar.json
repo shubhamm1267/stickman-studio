@@ -1,0 +1,752 @@
+{
+  "title": "Dadi vs Bodybuilder — The Impossible Jar",
+  "story": "Nandu cannot open a pickle jar. He inflates his muscles and tries again, but fails. Dadi walks in carrying tea, sets it down, taps the lid twice and opens it. Nandu is stunned; his muscles deflate. Dadi calmly sips her tea.",
+  "characters": [
+    {
+      "id": "nandu",
+      "name": "Nandu",
+      "kind": "man",
+      "skin": "#f6f1da",
+      "outfit": "#a2b6a6",
+      "hair": "#655f4d",
+      "headWidth": 1,
+      "headHeight": 1
+    },
+    {
+      "id": "dadi",
+      "name": "Dadi",
+      "kind": "grandma",
+      "skin": "#f6f1da",
+      "outfit": "#a2b6a6",
+      "hair": "#8e998c",
+      "headWidth": 1,
+      "headHeight": 1
+    }
+  ],
+  "propDesigns": [
+    {
+      "id": "pickle",
+      "name": "Pickle jar",
+      "type": "jar",
+      "color": "#c78f78",
+      "nodes": []
+    },
+    {
+      "id": "tea",
+      "name": "Dadi’s tea",
+      "type": "cup",
+      "color": "#d5b08b",
+      "nodes": []
+    },
+    {
+      "id": "table",
+      "name": "Kitchen table",
+      "type": "table",
+      "color": "#d3b58c",
+      "nodes": []
+    }
+  ],
+  "scenes": [
+    {
+      "id": "kitchen",
+      "summary": "A stubborn pickle jar defeats a bodybuilder. Dadi opens it and calmly drinks tea.",
+      "duration": 26,
+      "background": "kitchen",
+      "backgroundNodes": [],
+      "motions": [],
+      "cast": [
+        {
+          "characterId": "nandu",
+          "x": 190,
+          "y": 780,
+          "scale": 1,
+          "facing": 1
+        },
+        {
+          "characterId": "dadi",
+          "x": 620,
+          "y": 780,
+          "scale": 0.76,
+          "facing": -1
+        }
+      ],
+      "props": [
+        {
+          "designId": "table",
+          "open": 0,
+          "angle": 0,
+          "x": 310,
+          "y": 600,
+          "scale": 1
+        },
+        {
+          "designId": "pickle",
+          "open": 0,
+          "angle": 0,
+          "x": 310,
+          "y": 570,
+          "scale": 1
+        },
+        {
+          "designId": "tea",
+          "open": 0,
+          "angle": 0,
+          "x": 570,
+          "y": 605,
+          "scale": 1
+        }
+      ],
+      "beats": [
+        {
+          "actorId": "nandu",
+          "kind": "hold",
+          "start": 0,
+          "duration": 0.6,
+          "targetId": "pickle",
+          "hand": "both",
+          "emotion": "confident",
+          "amount": 1,
+          "intent": "hold in the jar comedy"
+        },
+        {
+          "actorId": "nandu",
+          "kind": "struggle",
+          "start": 0.8,
+          "duration": 2.4,
+          "targetId": "pickle",
+          "hand": "right",
+          "emotion": "strain",
+          "amount": 0.6,
+          "intent": "struggle in the jar comedy"
+        },
+        {
+          "actorId": "nandu",
+          "kind": "react",
+          "start": 3.25,
+          "duration": 0.4,
+          "hand": "right",
+          "emotion": "annoyed",
+          "amount": 1,
+          "intent": "react in the jar comedy"
+        },
+        {
+          "actorId": "nandu",
+          "kind": "flex",
+          "start": 3.8,
+          "duration": 0.8,
+          "hand": "right",
+          "emotion": "smug",
+          "amount": 1,
+          "intent": "flex in the jar comedy"
+        },
+        {
+          "actorId": "nandu",
+          "kind": "custom",
+          "start": 5.55,
+          "duration": 0.25,
+          "hand": "right",
+          "emotion": "kiss",
+          "amount": 1,
+          "pose": {
+            "headAngle": -16
+          },
+          "intent": "custom in the jar comedy"
+        },
+        {
+          "actorId": "nandu",
+          "kind": "custom",
+          "start": 6.2,
+          "duration": 0.25,
+          "hand": "right",
+          "emotion": "smug",
+          "amount": 1,
+          "pose": {
+            "headAngle": -5
+          },
+          "intent": "custom in the jar comedy"
+        },
+        {
+          "actorId": "nandu",
+          "kind": "hold",
+          "start": 6.8,
+          "duration": 0.4,
+          "targetId": "pickle",
+          "hand": "both",
+          "amount": 1,
+          "intent": "hold in the jar comedy"
+        },
+        {
+          "actorId": "nandu",
+          "kind": "struggle",
+          "start": 7.4,
+          "duration": 3.1,
+          "targetId": "pickle",
+          "hand": "right",
+          "emotion": "extreme",
+          "amount": 1,
+          "intent": "struggle in the jar comedy"
+        },
+        {
+          "actorId": "nandu",
+          "kind": "react",
+          "start": 10.6,
+          "duration": 0.55,
+          "hand": "right",
+          "emotion": "defeat",
+          "amount": 1,
+          "intent": "react in the jar comedy"
+        },
+        {
+          "actorId": "nandu",
+          "kind": "react",
+          "start": 16.9,
+          "duration": 0.25,
+          "hand": "right",
+          "emotion": "shock",
+          "amount": 1,
+          "intent": "react in the jar comedy"
+        },
+        {
+          "actorId": "nandu",
+          "kind": "react",
+          "start": 18.05,
+          "duration": 0.2,
+          "hand": "right",
+          "emotion": "jawdrop",
+          "amount": 1,
+          "intent": "react in the jar comedy"
+        },
+        {
+          "actorId": "nandu",
+          "kind": "deflate",
+          "start": 21.4,
+          "duration": 1.3,
+          "hand": "right",
+          "amount": 1,
+          "intent": "deflate in the jar comedy"
+        },
+        {
+          "actorId": "dadi",
+          "kind": "idle",
+          "start": 0,
+          "duration": 0.1,
+          "hand": "right",
+          "emotion": "calm",
+          "amount": 1,
+          "intent": "idle in the jar comedy"
+        },
+        {
+          "actorId": "dadi",
+          "kind": "pick",
+          "start": 0.1,
+          "duration": 0.4,
+          "targetId": "tea",
+          "hand": "left",
+          "amount": 1,
+          "intent": "pick in the jar comedy"
+        },
+        {
+          "actorId": "dadi",
+          "kind": "walk",
+          "start": 11.6,
+          "duration": 2.8,
+          "to": [
+            405,
+            780
+          ],
+          "hand": "right",
+          "emotion": "calm",
+          "amount": 1,
+          "intent": "walk in the jar comedy"
+        },
+        {
+          "actorId": "dadi",
+          "kind": "place",
+          "start": 14.4,
+          "duration": 0.3,
+          "targetId": "tea",
+          "to": [
+            355,
+            580
+          ],
+          "hand": "left",
+          "amount": 1,
+          "intent": "place in the jar comedy"
+        },
+        {
+          "actorId": "dadi",
+          "kind": "tap",
+          "start": 15.1,
+          "duration": 1.1,
+          "targetId": "pickle",
+          "hand": "right",
+          "emotion": "calm",
+          "amount": 2,
+          "intent": "tap in the jar comedy"
+        },
+        {
+          "actorId": "dadi",
+          "kind": "open",
+          "start": 16.5,
+          "duration": 0.4,
+          "targetId": "pickle",
+          "hand": "right",
+          "emotion": "smug",
+          "amount": 1,
+          "intent": "open in the jar comedy"
+        },
+        {
+          "actorId": "dadi",
+          "kind": "pick",
+          "start": 22.7,
+          "duration": 0.3,
+          "targetId": "tea",
+          "hand": "left",
+          "amount": 1,
+          "intent": "pick in the jar comedy"
+        },
+        {
+          "actorId": "dadi",
+          "kind": "custom",
+          "start": 23,
+          "duration": 0.55,
+          "hand": "right",
+          "emotion": "kiss",
+          "amount": 1,
+          "pose": {
+            "leftHand": [
+              -9,
+              -346
+            ]
+          },
+          "intent": "custom in the jar comedy"
+        },
+        {
+          "actorId": "dadi",
+          "kind": "custom",
+          "start": 24.2,
+          "duration": 0.4,
+          "hand": "right",
+          "emotion": "smug",
+          "amount": 1,
+          "pose": {
+            "leftHand": [
+              -50,
+              -260
+            ]
+          },
+          "intent": "custom in the jar comedy"
+        }
+      ],
+      "shots": [
+        {
+          "start": 0,
+          "end": 0.9,
+          "focus": [
+            260,
+            535
+          ],
+          "zoom": 1.08,
+          "detail": "full"
+        },
+        {
+          "start": 0.9,
+          "end": 3.2,
+          "focus": [
+            310,
+            555
+          ],
+          "zoom": 2.5,
+          "detail": "hands",
+          "actorIds": [
+            "nandu"
+          ]
+        },
+        {
+          "start": 3.2,
+          "end": 3.8,
+          "focus": [
+            194,
+            385
+          ],
+          "zoom": 1.9,
+          "detail": "full"
+        },
+        {
+          "start": 3.8,
+          "end": 7.1,
+          "focus": [
+            190,
+            530
+          ],
+          "zoom": 1.14,
+          "detail": "full"
+        },
+        {
+          "start": 7.1,
+          "end": 10.6,
+          "focus": [
+            235,
+            473
+          ],
+          "zoom": 1.35,
+          "detail": "full"
+        },
+        {
+          "start": 10.6,
+          "end": 11.6,
+          "focus": [
+            186,
+            395
+          ],
+          "zoom": 1.8,
+          "detail": "full"
+        },
+        {
+          "start": 11.6,
+          "end": 15,
+          "focus": [
+            292,
+            540
+          ],
+          "zoom": 1.04,
+          "detail": "full"
+        },
+        {
+          "start": 15,
+          "end": 17.15,
+          "focus": [
+            300,
+            555
+          ],
+          "zoom": 2.8,
+          "detail": "hands",
+          "actorIds": [
+            "dadi"
+          ]
+        },
+        {
+          "start": 17.15,
+          "end": 18.05,
+          "focus": [
+            290,
+            540
+          ],
+          "zoom": 1.12,
+          "detail": "full"
+        },
+        {
+          "start": 18.05,
+          "end": 20.25,
+          "focus": [
+            192,
+            405
+          ],
+          "zoom": 1.9,
+          "detail": "full"
+        },
+        {
+          "start": 20.25,
+          "end": 26,
+          "focus": [
+            288,
+            535
+          ],
+          "zoom": 1.08,
+          "detail": "full"
+        }
+      ],
+      "sounds": [
+        {
+          "trimSilence": true,
+          "start": 0.95,
+          "query": "male effort grunt",
+          "volume": 0.28,
+          "duration": 0.7,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "grunt"
+        },
+        {
+          "trimSilence": true,
+          "start": 1.55,
+          "query": "rubber stretch",
+          "volume": 0.16,
+          "duration": 1.2,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "stretch"
+        },
+        {
+          "trimSilence": true,
+          "start": 2.55,
+          "query": "male effort grunt",
+          "volume": 0.24,
+          "duration": 0.65,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "grunt"
+        },
+        {
+          "trimSilence": true,
+          "start": 3.85,
+          "query": "cartoon pop",
+          "volume": 0.13,
+          "duration": 0.24,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "pop"
+        },
+        {
+          "trimSilence": true,
+          "start": 4.25,
+          "query": "cartoon boing",
+          "volume": 0.22,
+          "duration": 1.5,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "boing"
+        },
+        {
+          "trimSilence": true,
+          "start": 7.65,
+          "query": "strain",
+          "volume": 0.3,
+          "duration": 0.65,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "strain"
+        },
+        {
+          "trimSilence": true,
+          "start": 8.25,
+          "query": "rubber stretch",
+          "volume": 0.2,
+          "duration": 1.5,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "stretch"
+        },
+        {
+          "trimSilence": true,
+          "start": 9.55,
+          "query": "male effort grunt",
+          "volume": 0.3,
+          "duration": 0.8,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "grunt"
+        },
+        {
+          "trimSilence": true,
+          "start": 10.66,
+          "query": "cartoon boing",
+          "volume": 0.18,
+          "duration": 0.8,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "boing"
+        },
+        {
+          "trimSilence": true,
+          "start": 12.2,
+          "query": "footsteps",
+          "volume": 0.1,
+          "duration": 0.18,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "steps"
+        },
+        {
+          "trimSilence": true,
+          "start": 12.62,
+          "query": "footsteps",
+          "volume": 0.1,
+          "duration": 0.18,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "steps"
+        },
+        {
+          "trimSilence": true,
+          "start": 13.04,
+          "query": "footsteps",
+          "volume": 0.1,
+          "duration": 0.18,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "steps"
+        },
+        {
+          "trimSilence": true,
+          "start": 13.459999999999999,
+          "query": "footsteps",
+          "volume": 0.1,
+          "duration": 0.18,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "steps"
+        },
+        {
+          "trimSilence": true,
+          "start": 13.879999999999999,
+          "query": "footsteps",
+          "volume": 0.1,
+          "duration": 0.18,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "steps"
+        },
+        {
+          "trimSilence": true,
+          "start": 14.7,
+          "query": "glass tap",
+          "volume": 0.1,
+          "duration": 0.3,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "tap"
+        },
+        {
+          "trimSilence": true,
+          "start": 15.45,
+          "query": "glass tap",
+          "volume": 0.22,
+          "duration": 0.35,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "tap"
+        },
+        {
+          "trimSilence": true,
+          "start": 15.95,
+          "query": "glass tap",
+          "volume": 0.22,
+          "duration": 0.35,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "tap"
+        },
+        {
+          "trimSilence": true,
+          "start": 16.5,
+          "query": "glass jar lid opening",
+          "volume": 0.21,
+          "duration": 0.85,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "jar"
+        },
+        {
+          "trimSilence": true,
+          "start": 16.9,
+          "query": "cartoon pop",
+          "volume": 0.15,
+          "duration": 0.24,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "pop"
+        },
+        {
+          "trimSilence": true,
+          "start": 18.1,
+          "query": "cartoon boing",
+          "volume": 0.18,
+          "duration": 1.3,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "boing"
+        },
+        {
+          "trimSilence": true,
+          "start": 20.3,
+          "query": "cartoon gulp",
+          "volume": 0.2,
+          "duration": 0.9,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "gulp"
+        },
+        {
+          "trimSilence": true,
+          "start": 21.4,
+          "query": "balloon deflate",
+          "volume": 0.3,
+          "duration": 2.5,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "deflate"
+        },
+        {
+          "trimSilence": true,
+          "start": 23.75,
+          "query": "cartoon gulp",
+          "volume": 0.12,
+          "duration": 0.55,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "gulp"
+        }
+      ],
+      "dialogue": []
+    }
+  ],
+  "coverage": [
+    {
+      "storyEvent": "Strong man fails, granny opens the jar and drinks tea",
+      "sceneId": "kitchen"
+    }
+  ],
+  "seo": {
+    "titles": [
+      "Bodybuilder Ki Taaqat vs Dadi Ka Jugaad 😂",
+      "इतनी Muscles… फिर भी ढक्कन नहीं खुला!",
+      "Dadi Opened It in Two Taps 😭"
+    ],
+    "description": "Nandu brings all his strength to a stubborn pickle jar. Dadi brings experience… and her tea. Watch this original visual cartoon comedy for the tiny twist at the end. Animated with procedural vector characters in StickLaugh Studio.",
+    "tags": [
+      "funny cartoon",
+      "Hindi comedy",
+      "dadi comedy",
+      "bodybuilder",
+      "pickle jar",
+      "stickman animation",
+      "visual comedy",
+      "animated shorts"
+    ],
+    "hashtags": [
+      "#CartoonComedy",
+      "#Dadi",
+      "#Shorts"
+    ],
+    "pinnedComment": "Muscles ya Dadi ka experience — kaun jeeta? 😂",
+    "thumbnailText": "DADI WINS?!"
+  },
+  "blockedReasons": [],
+  "version": 1,
+  "format": "shorts",
+  "language": "hi"
+}

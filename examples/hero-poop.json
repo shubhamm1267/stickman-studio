@@ -1,0 +1,2101 @@
+{
+  "productionMode": "silent-sfx",
+  "humorProfile": "adult-relatable",
+  "hook": {
+    "sceneId": "flight",
+    "beatIndices": [
+      0
+    ],
+    "start": 0,
+    "end": 2.6,
+    "evidence": "The blue muscular figure with a red cape flies above a pedestrian, strains visibly and releases the cartoon lump by2.5s."
+  },
+  "comedy": {
+    "hook": "A proudly flying muscular superhero strains while a man stands unknowingly below.",
+    "goal": "The man wants the irresponsible flying culprit to answer for the mess.",
+    "escalation": [
+      "A cartoon lump falls from the hero onto the man.",
+      "The furious man scolds through universal pointing and nonverbal cartoon bursts.",
+      "The enormous caped hero lands beside him and takes the insult personally."
+    ],
+    "payoff": "Three real synchronized impact sounds and delayed squash/recoil lead to a comic fall.",
+    "callback": "The ridiculous brown bonnet remains visible even after the superhero’s triumphant pose."
+  },
+  "title": "Captain Udaan: silent slapstick",
+  "story": "A muscular blue-suited, red-caped hero poops while flying. It lands on a man. He angrily points and scolds in incomprehensible cartoon grunts. The hero lands, punches him three times with real impact SFX, and poses while the man blinks on the floor.",
+  "characters": [
+    {
+      "id": "Hero",
+      "name": "Captain Udaan",
+      "kind": "man",
+      "artStyle": "pencil",
+      "hairStyle": "sidepart",
+      "faceShape": "square",
+      "costume": "superhero",
+      "capeColor": "#c95047",
+      "bootColor": "#bf4640",
+      "wardrobe": "shirt",
+      "skin": "#e9d8b9",
+      "outfit": "#387fae",
+      "hair": "#343b39",
+      "headWidth": 0.98,
+      "headHeight": 0.95
+    },
+    {
+      "id": "Man",
+      "name": "Sharma ji",
+      "kind": "man",
+      "artStyle": "pencil",
+      "hairStyle": "bald",
+      "faceShape": "long",
+      "wardrobe": "shirt",
+      "accessory": "moustache",
+      "skin": "#e1d2b1",
+      "outfit": "#b6a17b",
+      "hair": "#61533c",
+      "headWidth": 0.95,
+      "headHeight": 1.04
+    }
+  ],
+  "propDesigns": [
+    {
+      "id": "poop",
+      "name": "Non-graphic brown cartoon poop",
+      "type": "drawing",
+      "color": "#8b6244",
+      "nodes": [
+        {
+          "kind": "ellipse",
+          "center": [
+            0,
+            -3
+          ],
+          "radius": [
+            31,
+            8
+          ],
+          "fill": "#8b6244",
+          "stroke": "#3f4939",
+          "width": 2
+        },
+        {
+          "kind": "path",
+          "d": "M-27 -7 C-37 -24 -17 -27 -12 -27 C-22 -39 -2 -42 4 -39 Q-2 -47 7 -52 Q13 -35 22 -30 C41 -26 32 -14 27 -11 Q34 0 0 2 Q-29 2 -27 -7Z",
+          "fill": "#926747",
+          "stroke": "#3f4939",
+          "width": 2
+        },
+        {
+          "kind": "path",
+          "d": "M-22 -17 Q1 -9 24 -18 M-10 -30 Q3 -25 16 -31",
+          "fill": "none",
+          "stroke": "#6b4b37",
+          "width": 2
+        }
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "id": "flight",
+      "summary": "A muscular caped hero poops while flying; the cartoon lump falls onto the man beneath him.",
+      "duration": 6,
+      "background": "custom",
+      "backgroundNodes": [
+        {
+          "kind": "path",
+          "d": "M-180 788 L900 788",
+          "fill": "none",
+          "stroke": "#b5bba2",
+          "width": 2
+        },
+        {
+          "kind": "path",
+          "d": "M-150 560 L-150 450 L-10 450 L-10 788 M-10 560 L110 560 L110 788 M450 788 L450 530 L650 530 L650 788",
+          "fill": "none",
+          "stroke": "#c3c8b2",
+          "width": 1.2
+        }
+      ],
+      "motions": [
+        {
+          "targetId": "poop",
+          "timing": "linear",
+          "start": 2.5,
+          "duration": 1.3,
+          "to": [
+            350,
+            380.8
+          ],
+          "arc": 15,
+          "angle": 0
+        }
+      ],
+      "cast": [
+        {
+          "shadow": false,
+          "characterId": "Hero",
+          "initialPose": {
+            "position": [
+              40,
+              230
+            ],
+            "headScale": [
+              1,
+              1
+            ],
+            "handScale": 1.35,
+            "head": [
+              -76,
+              -405
+            ],
+            "hip": [
+              0,
+              -160
+            ],
+            "leftHand": [
+              -60,
+              -300
+            ],
+            "rightHand": [
+              0,
+              -565
+            ],
+            "leftFoot": [
+              -30,
+              0
+            ],
+            "rightFoot": [
+              35,
+              -10
+            ],
+            "bodyAngle": 90,
+            "headAngle": -90,
+            "muscle": 0.95
+          },
+          "emotion": "confident",
+          "x": 40,
+          "y": 780,
+          "scale": 0.55,
+          "facing": 1
+        },
+        {
+          "characterId": "Man",
+          "emotion": "calm",
+          "x": 350,
+          "y": 780,
+          "scale": 0.8,
+          "facing": -1
+        }
+      ],
+      "props": [
+        {
+          "appearAt": 2.5,
+          "attachAt": 3.8,
+          "attachment": {
+            "actorId": "Man",
+            "bone": "head",
+            "offset": [
+              0,
+              -94
+            ]
+          },
+          "designId": "poop",
+          "open": 0,
+          "angle": 0,
+          "x": 188,
+          "y": 260,
+          "scale": 0.8125
+        }
+      ],
+      "beats": [
+        {
+          "timing": "smooth",
+          "actorId": "Hero",
+          "kind": "perform",
+          "start": 0,
+          "duration": 5,
+          "hand": "right",
+          "amount": 1,
+          "keyframes": [
+            {
+              "at": 0,
+              "pose": {
+                "position": [
+                  40,
+                  230
+                ],
+                "headScale": [
+                  1,
+                  1
+                ],
+                "handScale": 1.35,
+                "head": [
+                  -76,
+                  -405
+                ],
+                "hip": [
+                  0,
+                  -160
+                ],
+                "leftHand": [
+                  -60,
+                  -300
+                ],
+                "rightHand": [
+                  0,
+                  -565
+                ],
+                "leftFoot": [
+                  -30,
+                  0
+                ],
+                "rightFoot": [
+                  35,
+                  -10
+                ],
+                "bodyAngle": 90,
+                "headAngle": -90,
+                "muscle": 0.95
+              },
+              "emotion": "confident"
+            },
+            {
+              "at": 0.35,
+              "pose": {
+                "position": [
+                  75,
+                  220
+                ],
+                "eyeOpen": 0.2,
+                "mouthOpen": 0.65
+              },
+              "emotion": "strain"
+            },
+            {
+              "at": 0.5,
+              "pose": {
+                "position": [
+                  100,
+                  230
+                ],
+                "eyeOpen": 0
+              },
+              "emotion": "extreme"
+            },
+            {
+              "at": 0.65,
+              "pose": {
+                "position": [
+                  128,
+                  230
+                ],
+                "eyeOpen": 0.6,
+                "mouthOpen": 1
+              },
+              "emotion": "smug"
+            },
+            {
+              "at": 1,
+              "pose": {
+                "position": [
+                  180,
+                  200
+                ],
+                "eyeOpen": 1
+              },
+              "emotion": "confident"
+            }
+          ],
+          "intent": "The caped hero flies horizontally above the street, strains briefly, releases a cartoon lump and cruises on."
+        },
+        {
+          "timing": "smooth",
+          "actorId": "Man",
+          "kind": "perform",
+          "start": 3.8,
+          "duration": 1.1,
+          "hand": "right",
+          "amount": 1,
+          "keyframes": [
+            {
+              "at": 0,
+              "pose": {
+                "head": [
+                  0,
+                  -405
+                ],
+                "headAngle": 0
+              },
+              "emotion": "shock"
+            },
+            {
+              "at": 0.14,
+              "pose": {
+                "headScale": [
+                  1.15,
+                  0.85
+                ],
+                "eyeOpen": 0,
+                "head": [
+                  0,
+                  -395
+                ]
+              },
+              "emotion": "strain"
+            },
+            {
+              "at": 0.5,
+              "pose": {
+                "headScale": [
+                  1,
+                  1
+                ],
+                "eyeOpen": 1,
+                "head": [
+                  0,
+                  -405
+                ]
+              },
+              "emotion": "jawdrop"
+            },
+            {
+              "at": 1,
+              "pose": {
+                "mouthOpen": 0.8,
+                "gaze": [
+                  0,
+                  -10
+                ]
+              },
+              "emotion": "annoyed"
+            }
+          ],
+          "intent": "The lump lands directly on his head. He flinches, freezes, then realizes what landed."
+        },
+        {
+          "timing": "smooth",
+          "actorId": "Man",
+          "kind": "perform",
+          "start": 5,
+          "duration": 0.8,
+          "hand": "right",
+          "amount": 1,
+          "keyframes": [
+            {
+              "at": 0,
+              "pose": {
+                "gaze": [
+                  0,
+                  -10
+                ],
+                "headAngle": 0
+              },
+              "emotion": "annoyed"
+            },
+            {
+              "at": 1,
+              "pose": {
+                "eyeOpen": 1,
+                "gaze": [
+                  -10,
+                  -10
+                ],
+                "headAngle": -8
+              },
+              "emotion": "annoyed"
+            }
+          ],
+          "intent": "He slowly looks upward at the flying culprit, becoming furious."
+        }
+      ],
+      "shots": [
+        {
+          "start": 0,
+          "end": 2.3,
+          "focus": [
+            280,
+            410
+          ],
+          "zoom": 1,
+          "detail": "full"
+        },
+        {
+          "start": 2.3,
+          "end": 3.85,
+          "focus": [
+            290,
+            345
+          ],
+          "zoom": 1.05,
+          "detail": "full"
+        },
+        {
+          "start": 3.85,
+          "end": 6,
+          "focus": [
+            350,
+            450
+          ],
+          "zoom": 1.75,
+          "detail": "full",
+          "actorIds": [
+            "Man"
+          ]
+        }
+      ],
+      "sounds": [
+        {
+          "playbackRate": 1,
+          "trimSilence": true,
+          "start": 0.1,
+          "query": "boing cartoon effect",
+          "volume": 0.1,
+          "duration": 0.45,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "boing"
+        },
+        {
+          "playbackRate": 1,
+          "trimSilence": true,
+          "start": 1.8,
+          "query": "strain cartoon effect",
+          "volume": 0.13,
+          "duration": 0.45,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "strain"
+        },
+        {
+          "playbackRate": 1,
+          "trimSilence": true,
+          "start": 2.45,
+          "query": "fartshort cartoon effect",
+          "volume": 0.24,
+          "duration": 0.45,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "fartshort"
+        },
+        {
+          "playbackRate": 1,
+          "trimSilence": false,
+          "start": 3.8,
+          "query": "cartoon punch impact",
+          "volume": 0.15,
+          "duration": 0.23,
+          "required": true,
+          "sourceStart": 0.17,
+          "pan": 0,
+          "fixture": "slap"
+        },
+        {
+          "playbackRate": 1,
+          "trimSilence": true,
+          "start": 4.55,
+          "query": "gulp cartoon effect",
+          "volume": 0.15,
+          "duration": 0.3,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "gulp"
+        }
+      ],
+      "dialogue": []
+    },
+    {
+      "id": "complaint",
+      "summary": "The furious man points upward and scolds through nonverbal cartoon bursts. The hero hears him and gets angry.",
+      "duration": 7,
+      "background": "custom",
+      "backgroundNodes": [
+        {
+          "kind": "path",
+          "d": "M-180 788 L900 788",
+          "fill": "none",
+          "stroke": "#b5bba2",
+          "width": 2
+        },
+        {
+          "kind": "path",
+          "d": "M-150 560 L-150 450 L-10 450 L-10 788 M-10 560 L110 560 L110 788 M450 788 L450 530 L650 530 L650 788",
+          "fill": "none",
+          "stroke": "#c3c8b2",
+          "width": 1.2
+        }
+      ],
+      "motions": [],
+      "cast": [
+        {
+          "shadow": false,
+          "characterId": "Hero",
+          "initialPose": {
+            "position": [
+              180,
+              200
+            ],
+            "headScale": [
+              1,
+              1
+            ],
+            "handScale": 1.35,
+            "head": [
+              -76,
+              -405
+            ],
+            "hip": [
+              0,
+              -160
+            ],
+            "leftHand": [
+              -60,
+              -300
+            ],
+            "rightHand": [
+              0,
+              -565
+            ],
+            "leftFoot": [
+              -30,
+              0
+            ],
+            "rightFoot": [
+              35,
+              -10
+            ],
+            "bodyAngle": 90,
+            "headAngle": -90,
+            "muscle": 0.95
+          },
+          "emotion": "confident",
+          "x": 180,
+          "y": 780,
+          "scale": 0.55,
+          "facing": 1
+        },
+        {
+          "characterId": "Man",
+          "emotion": "annoyed",
+          "x": 350,
+          "y": 780,
+          "scale": 0.8,
+          "facing": -1
+        }
+      ],
+      "props": [
+        {
+          "attachment": {
+            "actorId": "Man",
+            "bone": "head",
+            "offset": [
+              0,
+              -94
+            ]
+          },
+          "designId": "poop",
+          "open": 0,
+          "angle": 0,
+          "x": 350,
+          "y": 380.8,
+          "scale": 0.8125
+        }
+      ],
+      "beats": [
+        {
+          "timing": "smooth",
+          "actorId": "Man",
+          "kind": "perform",
+          "start": 0,
+          "duration": 0.7,
+          "hand": "right",
+          "amount": 1,
+          "keyframes": [
+            {
+              "at": 0,
+              "pose": {
+                "gaze": [
+                  -10,
+                  -10
+                ],
+                "headAngle": -8
+              },
+              "emotion": "annoyed",
+              "rightHandShape": "point"
+            },
+            {
+              "at": 1,
+              "pose": {
+                "rightHand": [
+                  -45,
+                  -450
+                ],
+                "headAngle": -10
+              },
+              "emotion": "annoyed"
+            }
+          ],
+          "intent": "He raises a pointing finger toward the superhero above."
+        },
+        {
+          "timing": "smooth",
+          "actorId": "Man",
+          "kind": "perform",
+          "start": 1,
+          "duration": 4.6,
+          "hand": "right",
+          "amount": 1,
+          "keyframes": [
+            {
+              "at": 0,
+              "pose": {
+                "mouthOpen": 0.4,
+                "leftHand": [
+                  -75,
+                  -190
+                ],
+                "rightHand": [
+                  -45,
+                  -450
+                ],
+                "headAngle": -10
+              },
+              "emotion": "annoyed"
+            },
+            {
+              "at": 0.15,
+              "pose": {
+                "mouthOpen": 1.15,
+                "rightHand": [
+                  -70,
+                  -420
+                ],
+                "headAngle": -3
+              }
+            },
+            {
+              "at": 0.23,
+              "pose": {
+                "mouthOpen": 0.4,
+                "rightHand": [
+                  -35,
+                  -450
+                ],
+                "headAngle": -13
+              }
+            },
+            {
+              "at": 0.42,
+              "pose": {
+                "mouthOpen": 1.1,
+                "leftHand": [
+                  -100,
+                  -280
+                ],
+                "headAngle": -5
+              }
+            },
+            {
+              "at": 0.5,
+              "pose": {
+                "mouthOpen": 0.3,
+                "headAngle": -12
+              }
+            },
+            {
+              "at": 0.68,
+              "pose": {
+                "mouthOpen": 1.2,
+                "rightHand": [
+                  -60,
+                  -420
+                ],
+                "headAngle": -4
+              }
+            },
+            {
+              "at": 0.8,
+              "pose": {
+                "mouthOpen": 0.3,
+                "headAngle": -12
+              }
+            },
+            {
+              "at": 1,
+              "pose": {
+                "mouthOpen": 0.7,
+                "leftHand": [
+                  -75,
+                  -190
+                ],
+                "rightHand": [
+                  -45,
+                  -450
+                ],
+                "headAngle": -8
+              }
+            }
+          ],
+          "intent": "He angrily scolds the airborne hero while keeping the poop bonnet in view."
+        },
+        {
+          "timing": "smooth",
+          "actorId": "Hero",
+          "kind": "perform",
+          "start": 6,
+          "duration": 0.8,
+          "hand": "right",
+          "amount": 1,
+          "keyframes": [
+            {
+              "at": 0,
+              "pose": {
+                "eyeOpen": 1,
+                "gaze": [
+                  0,
+                  4
+                ]
+              },
+              "emotion": "curious"
+            },
+            {
+              "at": 1,
+              "pose": {
+                "eyeOpen": 0.5,
+                "gaze": [
+                  -7,
+                  11
+                ]
+              },
+              "emotion": "annoyed"
+            }
+          ],
+          "intent": "The hero hears the insult, lowers his gaze and gets angry."
+        }
+      ],
+      "shots": [
+        {
+          "start": 0,
+          "end": 6,
+          "focus": [
+            350,
+            465
+          ],
+          "zoom": 1.65,
+          "detail": "full",
+          "actorIds": [
+            "Man"
+          ]
+        },
+        {
+          "start": 6,
+          "end": 7,
+          "focus": [
+            395,
+            168
+          ],
+          "zoom": 1.7,
+          "detail": "full",
+          "actorIds": [
+            "Hero"
+          ]
+        }
+      ],
+      "sounds": [
+        {
+          "playbackRate": 1.3,
+          "role": "nonverbal",
+          "trimSilence": true,
+          "start": 0.6,
+          "query": "grunt cartoon",
+          "volume": 0.2,
+          "duration": 0.3,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "grunt"
+        },
+        {
+          "playbackRate": 1.6,
+          "role": "nonverbal",
+          "trimSilence": true,
+          "start": 1.05,
+          "query": "grunt cartoon",
+          "volume": 0.18,
+          "duration": 0.25,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "grunt"
+        },
+        {
+          "playbackRate": 1.2,
+          "role": "nonverbal",
+          "trimSilence": true,
+          "start": 1.6,
+          "query": "strain cartoon",
+          "volume": 0.16,
+          "duration": 0.4,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "strain"
+        },
+        {
+          "playbackRate": 1.5,
+          "role": "nonverbal",
+          "trimSilence": true,
+          "start": 2.2,
+          "query": "grunt cartoon",
+          "volume": 0.2,
+          "duration": 0.25,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "grunt"
+        },
+        {
+          "playbackRate": 1.25,
+          "role": "nonverbal",
+          "trimSilence": true,
+          "start": 3,
+          "query": "grunt cartoon",
+          "volume": 0.2,
+          "duration": 0.3,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "grunt"
+        },
+        {
+          "playbackRate": 1.7,
+          "role": "nonverbal",
+          "trimSilence": true,
+          "start": 4,
+          "query": "grunt cartoon",
+          "volume": 0.18,
+          "duration": 0.23,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "grunt"
+        }
+      ],
+      "dialogue": []
+    },
+    {
+      "id": "landing",
+      "summary": "The powerful caped hero drops from the sky, lands beside the man and stares him down.",
+      "duration": 3,
+      "background": "custom",
+      "backgroundNodes": [
+        {
+          "kind": "path",
+          "d": "M-180 788 L900 788",
+          "fill": "none",
+          "stroke": "#b5bba2",
+          "width": 2
+        },
+        {
+          "kind": "path",
+          "d": "M-150 560 L-150 450 L-10 450 L-10 788 M-10 560 L110 560 L110 788 M450 788 L450 530 L650 530 L650 788",
+          "fill": "none",
+          "stroke": "#c3c8b2",
+          "width": 1.2
+        }
+      ],
+      "motions": [],
+      "cast": [
+        {
+          "characterId": "Hero",
+          "initialPose": {
+            "position": [
+              200,
+              400
+            ],
+            "headScale": [
+              1,
+              1
+            ],
+            "handScale": 1.35,
+            "head": [
+              0,
+              -405
+            ],
+            "hip": [
+              0,
+              -160
+            ],
+            "leftHand": [
+              -70,
+              -170
+            ],
+            "rightHand": [
+              65,
+              -150
+            ],
+            "leftFoot": [
+              -30,
+              0
+            ],
+            "rightFoot": [
+              35,
+              0
+            ],
+            "bodyAngle": 0,
+            "headAngle": 0,
+            "muscle": 0.95
+          },
+          "emotion": "annoyed",
+          "x": 200,
+          "y": 780,
+          "scale": 0.88,
+          "facing": 1
+        },
+        {
+          "characterId": "Man",
+          "emotion": "annoyed",
+          "x": 350,
+          "y": 780,
+          "scale": 0.8,
+          "facing": -1
+        }
+      ],
+      "props": [
+        {
+          "attachment": {
+            "actorId": "Man",
+            "bone": "head",
+            "offset": [
+              0,
+              -94
+            ]
+          },
+          "designId": "poop",
+          "open": 0,
+          "angle": 0,
+          "x": 350,
+          "y": 380.8,
+          "scale": 0.8125
+        }
+      ],
+      "beats": [
+        {
+          "timing": "smooth",
+          "actorId": "Hero",
+          "kind": "perform",
+          "start": 0,
+          "duration": 2.5,
+          "hand": "right",
+          "amount": 1,
+          "contactAt": 0.72,
+          "keyframes": [
+            {
+              "at": 0,
+              "pose": {
+                "position": [
+                  200,
+                  400
+                ],
+                "head": [
+                  0,
+                  -405
+                ],
+                "hip": [
+                  0,
+                  -160
+                ],
+                "leftHand": [
+                  -75,
+                  -230
+                ],
+                "rightHand": [
+                  75,
+                  -230
+                ]
+              },
+              "emotion": "annoyed"
+            },
+            {
+              "at": 0.62,
+              "pose": {
+                "position": [
+                  200,
+                  730
+                ],
+                "head": [
+                  0,
+                  -405
+                ]
+              }
+            },
+            {
+              "at": 0.72,
+              "pose": {
+                "position": [
+                  200,
+                  780
+                ],
+                "eyeOpen": 0.4,
+                "head": [
+                  0,
+                  -355
+                ],
+                "hip": [
+                  0,
+                  -125
+                ],
+                "leftFoot": [
+                  -45,
+                  0
+                ],
+                "rightFoot": [
+                  45,
+                  0
+                ]
+              },
+              "emotion": "strain"
+            },
+            {
+              "at": 0.88,
+              "pose": {
+                "eyeOpen": 1,
+                "head": [
+                  0,
+                  -405
+                ],
+                "hip": [
+                  0,
+                  -160
+                ],
+                "leftFoot": [
+                  -30,
+                  0
+                ],
+                "rightFoot": [
+                  35,
+                  0
+                ]
+              },
+              "emotion": "annoyed"
+            },
+            {
+              "at": 1,
+              "pose": {
+                "leftHand": [
+                  -70,
+                  -170
+                ],
+                "rightHand": [
+                  65,
+                  -150
+                ]
+              }
+            }
+          ],
+          "intent": "He descends vertically, plants both boots, compresses into a landing crouch and rises to full muscular height."
+        },
+        {
+          "timing": "smooth",
+          "actorId": "Man",
+          "kind": "perform",
+          "start": 2.1,
+          "duration": 0.75,
+          "hand": "right",
+          "amount": 1,
+          "keyframes": [
+            {
+              "at": 0,
+              "pose": {
+                "gaze": [
+                  -12,
+                  2
+                ],
+                "headAngle": 0
+              },
+              "emotion": "annoyed"
+            },
+            {
+              "at": 0.4,
+              "pose": {
+                "eyeOpen": 1,
+                "mouthOpen": 1.1
+              },
+              "emotion": "shock"
+            },
+            {
+              "at": 1,
+              "pose": {
+                "leftHand": [
+                  -60,
+                  -130
+                ],
+                "rightHand": [
+                  65,
+                  -150
+                ]
+              },
+              "emotion": "shock"
+            }
+          ],
+          "intent": "The man sees the enormous chest and starts regretting the insult."
+        }
+      ],
+      "shots": [
+        {
+          "start": 0,
+          "end": 2.1,
+          "focus": [
+            270,
+            450
+          ],
+          "zoom": 0.94,
+          "detail": "full"
+        },
+        {
+          "start": 2.1,
+          "end": 3,
+          "focus": [
+            275,
+            540
+          ],
+          "zoom": 1.1,
+          "detail": "full"
+        }
+      ],
+      "sounds": [
+        {
+          "playbackRate": 1,
+          "trimSilence": true,
+          "start": 0.5,
+          "query": "boing cartoon effect",
+          "volume": 0.12,
+          "duration": 0.5,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "boing"
+        },
+        {
+          "beatIndex": 0,
+          "syncTo": "contact",
+          "playbackRate": 1,
+          "trimSilence": false,
+          "start": 0,
+          "query": "cartoon punch impact",
+          "volume": 0.25,
+          "duration": 0.25,
+          "required": true,
+          "sourceStart": 0.17,
+          "pan": 0,
+          "fixture": "slap"
+        },
+        {
+          "playbackRate": 1,
+          "trimSilence": true,
+          "start": 2.5,
+          "query": "gulp cartoon effect",
+          "volume": 0.2,
+          "duration": 0.35,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "gulp"
+        }
+      ],
+      "dialogue": []
+    },
+    {
+      "id": "dishoom",
+      "summary": "Three synchronized cartoon punches follow the complaint; the man falls while the muscular hero poses beside him.",
+      "duration": 9,
+      "background": "custom",
+      "backgroundNodes": [
+        {
+          "kind": "path",
+          "d": "M-180 788 L900 788",
+          "fill": "none",
+          "stroke": "#b5bba2",
+          "width": 2
+        },
+        {
+          "kind": "path",
+          "d": "M-150 560 L-150 450 L-10 450 L-10 788 M-10 560 L110 560 L110 788 M450 788 L450 530 L650 530 L650 788",
+          "fill": "none",
+          "stroke": "#c3c8b2",
+          "width": 1.2
+        }
+      ],
+      "motions": [],
+      "cast": [
+        {
+          "characterId": "Hero",
+          "initialPose": {
+            "headScale": [
+              1,
+              1
+            ],
+            "handScale": 1.35,
+            "head": [
+              0,
+              -405
+            ],
+            "hip": [
+              0,
+              -160
+            ],
+            "leftHand": [
+              -70,
+              -170
+            ],
+            "rightHand": [
+              65,
+              -150
+            ],
+            "leftFoot": [
+              -30,
+              0
+            ],
+            "rightFoot": [
+              35,
+              0
+            ],
+            "bodyAngle": 0,
+            "headAngle": 0,
+            "muscle": 0.95
+          },
+          "emotion": "annoyed",
+          "x": 200,
+          "y": 780,
+          "scale": 0.88,
+          "facing": 1
+        },
+        {
+          "characterId": "Man",
+          "emotion": "shock",
+          "x": 350,
+          "y": 780,
+          "scale": 0.8,
+          "facing": -1
+        }
+      ],
+      "props": [
+        {
+          "attachment": {
+            "actorId": "Man",
+            "bone": "head",
+            "offset": [
+              0,
+              -94
+            ]
+          },
+          "designId": "poop",
+          "open": 0,
+          "angle": 0,
+          "x": 350,
+          "y": 380.8,
+          "scale": 0.8125
+        }
+      ],
+      "beats": [
+        {
+          "accent": "impact",
+          "timing": "smooth",
+          "actorId": "Hero",
+          "kind": "perform",
+          "start": 0.5,
+          "duration": 0.95,
+          "hand": "right",
+          "amount": 1,
+          "contactAt": 0.5,
+          "keyframes": [
+            {
+              "at": 0,
+              "pose": {
+                "rightHand": [
+                  65,
+                  -150
+                ],
+                "headAngle": 0
+              },
+              "emotion": "annoyed",
+              "rightHandShape": "fist"
+            },
+            {
+              "at": 0.25,
+              "pose": {
+                "eyeOpen": 0.5,
+                "rightHand": [
+                  -110,
+                  -280
+                ],
+                "headAngle": -7
+              },
+              "emotion": "strain"
+            },
+            {
+              "at": 0.5,
+              "pose": {
+                "eyeOpen": 1,
+                "rightHand": [
+                  136.363636,
+                  -352.272727
+                ],
+                "headAngle": 0
+              },
+              "emotion": "annoyed",
+              "timing": "snappy"
+            },
+            {
+              "at": 0.62,
+              "pose": {
+                "rightHand": [
+                  136.363636,
+                  -352.272727
+                ]
+              }
+            },
+            {
+              "at": 0.82,
+              "pose": {
+                "rightHand": [
+                  85,
+                  -235
+                ]
+              }
+            },
+            {
+              "at": 1,
+              "pose": {
+                "rightHand": [
+                  65,
+                  -150
+                ]
+              }
+            }
+          ],
+          "intent": "He winds up and lands a clearly visible comic fist on the man’s cheek, then retracts."
+        },
+        {
+          "timing": "smooth",
+          "actorId": "Man",
+          "kind": "perform",
+          "start": 0.975,
+          "duration": 0.75,
+          "hand": "right",
+          "amount": 1,
+          "keyframes": [
+            {
+              "at": 0,
+              "pose": {
+                "headScale": [
+                  1,
+                  1
+                ],
+                "eyeOpen": 1,
+                "head": [
+                  0,
+                  -405
+                ],
+                "headAngle": 0
+              },
+              "emotion": "shock"
+            },
+            {
+              "at": 0.1,
+              "pose": {
+                "blush": 0.65,
+                "headScale": [
+                  1.19,
+                  0.8
+                ],
+                "eyeOpen": 0,
+                "mouthOpen": 1.15,
+                "head": [
+                  28,
+                  -399
+                ],
+                "headAngle": 15
+              },
+              "emotion": "jawdrop"
+            },
+            {
+              "at": 0.4,
+              "pose": {
+                "headScale": [
+                  0.94,
+                  1.06
+                ],
+                "eyeOpen": 1,
+                "head": [
+                  12,
+                  -405
+                ],
+                "headAngle": 6
+              }
+            },
+            {
+              "at": 0.7,
+              "pose": {
+                "headScale": [
+                  1,
+                  1
+                ],
+                "head": [
+                  0,
+                  -405
+                ],
+                "headAngle": 0
+              },
+              "emotion": "cry"
+            },
+            {
+              "at": 1,
+              "pose": {
+                "eyeOpen": 0.3,
+                "mouthOpen": 0.65
+              }
+            }
+          ],
+          "intent": "His face squashes at contact and rebounds; the brown poop hat stays attached to his head."
+        },
+        {
+          "accent": "impact",
+          "timing": "smooth",
+          "actorId": "Hero",
+          "kind": "perform",
+          "start": 2,
+          "duration": 0.95,
+          "hand": "right",
+          "amount": 1,
+          "contactAt": 0.5,
+          "keyframes": [
+            {
+              "at": 0,
+              "pose": {
+                "rightHand": [
+                  65,
+                  -150
+                ],
+                "headAngle": 0
+              },
+              "emotion": "annoyed",
+              "rightHandShape": "fist"
+            },
+            {
+              "at": 0.25,
+              "pose": {
+                "eyeOpen": 0.5,
+                "rightHand": [
+                  -110,
+                  -280
+                ],
+                "headAngle": -7
+              },
+              "emotion": "strain"
+            },
+            {
+              "at": 0.5,
+              "pose": {
+                "eyeOpen": 1,
+                "rightHand": [
+                  136.363636,
+                  -352.272727
+                ],
+                "headAngle": 0
+              },
+              "emotion": "annoyed",
+              "timing": "snappy"
+            },
+            {
+              "at": 0.62,
+              "pose": {
+                "rightHand": [
+                  136.363636,
+                  -352.272727
+                ]
+              }
+            },
+            {
+              "at": 0.82,
+              "pose": {
+                "rightHand": [
+                  85,
+                  -235
+                ]
+              }
+            },
+            {
+              "at": 1,
+              "pose": {
+                "rightHand": [
+                  65,
+                  -150
+                ]
+              }
+            }
+          ],
+          "intent": "He winds up and lands a clearly visible comic fist on the man’s cheek, then retracts."
+        },
+        {
+          "timing": "smooth",
+          "actorId": "Man",
+          "kind": "perform",
+          "start": 2.475,
+          "duration": 0.75,
+          "hand": "right",
+          "amount": 1,
+          "keyframes": [
+            {
+              "at": 0,
+              "pose": {
+                "headScale": [
+                  1,
+                  1
+                ],
+                "eyeOpen": 1,
+                "head": [
+                  0,
+                  -405
+                ],
+                "headAngle": 0
+              },
+              "emotion": "shock"
+            },
+            {
+              "at": 0.1,
+              "pose": {
+                "blush": 0.65,
+                "headScale": [
+                  1.19,
+                  0.8
+                ],
+                "eyeOpen": 0,
+                "mouthOpen": 1.15,
+                "head": [
+                  28,
+                  -399
+                ],
+                "headAngle": 15
+              },
+              "emotion": "jawdrop"
+            },
+            {
+              "at": 0.4,
+              "pose": {
+                "headScale": [
+                  0.94,
+                  1.06
+                ],
+                "eyeOpen": 1,
+                "head": [
+                  12,
+                  -405
+                ],
+                "headAngle": 6
+              }
+            },
+            {
+              "at": 0.7,
+              "pose": {
+                "headScale": [
+                  1,
+                  1
+                ],
+                "head": [
+                  0,
+                  -405
+                ],
+                "headAngle": 0
+              },
+              "emotion": "cry"
+            },
+            {
+              "at": 1,
+              "pose": {
+                "eyeOpen": 0.3,
+                "mouthOpen": 0.65
+              }
+            }
+          ],
+          "intent": "His face squashes at contact and rebounds; the brown poop hat stays attached to his head."
+        },
+        {
+          "accent": "impact",
+          "timing": "smooth",
+          "actorId": "Hero",
+          "kind": "perform",
+          "start": 3.5,
+          "duration": 1,
+          "hand": "right",
+          "amount": 1,
+          "contactAt": 0.5,
+          "keyframes": [
+            {
+              "at": 0,
+              "pose": {
+                "rightHand": [
+                  65,
+                  -150
+                ],
+                "headAngle": 0
+              },
+              "emotion": "annoyed",
+              "rightHandShape": "fist"
+            },
+            {
+              "at": 0.25,
+              "pose": {
+                "eyeOpen": 0.5,
+                "rightHand": [
+                  -110,
+                  -280
+                ],
+                "headAngle": -7
+              },
+              "emotion": "strain"
+            },
+            {
+              "at": 0.5,
+              "pose": {
+                "eyeOpen": 1,
+                "rightHand": [
+                  136.363636,
+                  -352.272727
+                ],
+                "headAngle": 0
+              },
+              "emotion": "annoyed",
+              "timing": "snappy"
+            },
+            {
+              "at": 0.62,
+              "pose": {
+                "rightHand": [
+                  136.363636,
+                  -352.272727
+                ]
+              }
+            },
+            {
+              "at": 0.82,
+              "pose": {
+                "rightHand": [
+                  85,
+                  -235
+                ]
+              }
+            },
+            {
+              "at": 1,
+              "pose": {
+                "rightHand": [
+                  65,
+                  -150
+                ]
+              }
+            }
+          ],
+          "intent": "He winds up and lands a clearly visible comic fist on the man’s cheek, then retracts."
+        },
+        {
+          "timing": "smooth",
+          "actorId": "Man",
+          "kind": "perform",
+          "start": 4,
+          "duration": 0.75,
+          "hand": "right",
+          "amount": 1,
+          "keyframes": [
+            {
+              "at": 0,
+              "pose": {
+                "headScale": [
+                  1,
+                  1
+                ],
+                "eyeOpen": 1,
+                "head": [
+                  0,
+                  -405
+                ],
+                "headAngle": 0
+              },
+              "emotion": "shock"
+            },
+            {
+              "at": 0.1,
+              "pose": {
+                "blush": 0.65,
+                "headScale": [
+                  1.19,
+                  0.8
+                ],
+                "eyeOpen": 0,
+                "mouthOpen": 1.15,
+                "head": [
+                  28,
+                  -399
+                ],
+                "headAngle": 15
+              },
+              "emotion": "jawdrop"
+            },
+            {
+              "at": 0.4,
+              "pose": {
+                "headScale": [
+                  0.94,
+                  1.06
+                ],
+                "eyeOpen": 1,
+                "head": [
+                  12,
+                  -405
+                ],
+                "headAngle": 6
+              }
+            },
+            {
+              "at": 0.7,
+              "pose": {
+                "headScale": [
+                  1,
+                  1
+                ],
+                "head": [
+                  0,
+                  -405
+                ],
+                "headAngle": 0
+              },
+              "emotion": "cry"
+            },
+            {
+              "at": 1,
+              "pose": {
+                "eyeOpen": 0.3,
+                "mouthOpen": 0.65
+              }
+            }
+          ],
+          "intent": "His face squashes at contact and rebounds; the brown poop hat stays attached to his head."
+        },
+        {
+          "timing": "smooth",
+          "actorId": "Man",
+          "kind": "fall",
+          "start": 4.8,
+          "duration": 0.8,
+          "hand": "right",
+          "emotion": "defeat",
+          "amount": 1,
+          "intent": "After the third comic hit he tumbles sideways onto the street, with no blood or realistic injury."
+        },
+        {
+          "timing": "smooth",
+          "actorId": "Hero",
+          "kind": "perform",
+          "start": 6,
+          "duration": 0.9,
+          "hand": "right",
+          "amount": 1,
+          "keyframes": [
+            {
+              "at": 0,
+              "pose": {
+                "leftHand": [
+                  -70,
+                  -170
+                ],
+                "rightHand": [
+                  65,
+                  -150
+                ]
+              },
+              "emotion": "annoyed"
+            },
+            {
+              "at": 1,
+              "pose": {
+                "leftHand": [
+                  -72,
+                  -180
+                ],
+                "rightHand": [
+                  72,
+                  -180
+                ],
+                "headAngle": -5
+              },
+              "emotion": "smug"
+            }
+          ],
+          "intent": "He plants his hands on his hips, cape moving behind his broad chest."
+        },
+        {
+          "timing": "smooth",
+          "actorId": "Man",
+          "kind": "perform",
+          "start": 6.7,
+          "duration": 1.2,
+          "hand": "right",
+          "amount": 1,
+          "keyframes": [
+            {
+              "at": 0,
+              "pose": {
+                "eyeOpen": 0.4,
+                "mouthOpen": 0.6
+              },
+              "emotion": "defeat"
+            },
+            {
+              "at": 0.35,
+              "pose": {
+                "eyeOpen": 0
+              }
+            },
+            {
+              "at": 0.6,
+              "pose": {
+                "eyeOpen": 0.4
+              }
+            },
+            {
+              "at": 1,
+              "pose": {
+                "eyeOpen": 0.35,
+                "mouthOpen": 0.5
+              }
+            }
+          ],
+          "intent": "The flattened man blinks in disbelief, still wearing the ridiculous poop bonnet."
+        }
+      ],
+      "shots": [
+        {
+          "start": 0,
+          "end": 0.65,
+          "focus": [
+            280,
+            535
+          ],
+          "zoom": 1.05,
+          "detail": "full"
+        },
+        {
+          "start": 0.65,
+          "end": 1.7,
+          "focus": [
+            305,
+            470
+          ],
+          "zoom": 1.6,
+          "detail": "full"
+        },
+        {
+          "start": 1.7,
+          "end": 3.1,
+          "focus": [
+            285,
+            520
+          ],
+          "zoom": 1.18,
+          "detail": "full"
+        },
+        {
+          "start": 3.1,
+          "end": 4.7,
+          "focus": [
+            307,
+            470
+          ],
+          "zoom": 1.55,
+          "detail": "full"
+        },
+        {
+          "start": 4.7,
+          "end": 6.25,
+          "focus": [
+            425,
+            635
+          ],
+          "zoom": 0.75,
+          "detail": "full"
+        },
+        {
+          "start": 6.25,
+          "end": 7.2,
+          "focus": [
+            200,
+            480
+          ],
+          "zoom": 1.25,
+          "detail": "full",
+          "actorIds": [
+            "Hero"
+          ]
+        },
+        {
+          "start": 7.2,
+          "end": 9,
+          "focus": [
+            655,
+            675
+          ],
+          "zoom": 1.55,
+          "detail": "full",
+          "actorIds": [
+            "Man"
+          ]
+        }
+      ],
+      "sounds": [
+        {
+          "beatIndex": 0,
+          "syncTo": "contact",
+          "playbackRate": 1,
+          "trimSilence": false,
+          "start": 0,
+          "query": "cartoon punch impact",
+          "volume": 0.3,
+          "duration": 0.28,
+          "required": true,
+          "sourceStart": 0.17,
+          "pan": 0,
+          "fixture": "slap"
+        },
+        {
+          "beatIndex": 2,
+          "syncTo": "contact",
+          "playbackRate": 1,
+          "trimSilence": false,
+          "start": 0,
+          "query": "cartoon punch impact",
+          "volume": 0.3,
+          "duration": 0.28,
+          "required": true,
+          "sourceStart": 0.17,
+          "pan": 0,
+          "fixture": "slap"
+        },
+        {
+          "beatIndex": 4,
+          "syncTo": "contact",
+          "playbackRate": 1,
+          "trimSilence": false,
+          "start": 0,
+          "query": "cartoon punch impact",
+          "volume": 0.3,
+          "duration": 0.28,
+          "required": true,
+          "sourceStart": 0.17,
+          "pan": 0,
+          "fixture": "slap"
+        },
+        {
+          "playbackRate": 1,
+          "trimSilence": false,
+          "start": 5.36,
+          "query": "cartoon punch impact",
+          "volume": 0.2,
+          "duration": 0.3,
+          "required": true,
+          "sourceStart": 0.17,
+          "pan": 0,
+          "fixture": "slap"
+        },
+        {
+          "playbackRate": 1,
+          "trimSilence": true,
+          "start": 5.4,
+          "query": "boing cartoon effect",
+          "volume": 0.13,
+          "duration": 0.55,
+          "required": true,
+          "sourceStart": 0,
+          "pan": 0,
+          "fixture": "boing"
+        }
+      ],
+      "dialogue": []
+    }
+  ],
+  "coverage": [
+    {
+      "storyEvent": "A muscular caped hero poops while flying; the cartoon lump falls onto the man beneath him.",
+      "sceneId": "flight",
+      "beatIndices": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "storyEvent": "The furious man points upward and scolds through nonverbal cartoon bursts. The hero hears him and gets angry.",
+      "sceneId": "complaint",
+      "beatIndices": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "storyEvent": "The powerful caped hero drops from the sky, lands beside the man and stares him down.",
+      "sceneId": "landing",
+      "beatIndices": [
+        0,
+        1
+      ]
+    },
+    {
+      "storyEvent": "Three synchronized cartoon punches follow the complaint; the man falls while the muscular hero poses beside him.",
+      "sceneId": "dishoom",
+      "beatIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    }
+  ],
+  "seo": {
+    "titles": [
+      "Udta Superhero, Neeche Sharma Ji",
+      "Superhero Hai Ya Udta Toilet?"
+    ],
+    "description": "Original SFX-only slapstick sample. CC0 Freesound effects and nonverbal grunts, no intelligible speech or spoken impact words.",
+    "tags": [
+      "superhero cartoon",
+      "slapstick comedy",
+      "Hindi cartoon",
+      "dishoom",
+      "flying hero"
+    ],
+    "hashtags": [
+      "#CartoonComedy",
+      "#Slapstick"
+    ],
+    "pinnedComment": "Sharma ji ki galti sirf complaint karna thi?",
+    "thumbnailText": "UDTA TOILET?!"
+  },
+  "blockedReasons": [],
+  "version": 1,
+  "format": "shorts",
+  "language": "hi",
+  "review": {
+    "method": "authored-example",
+    "planHash": "91468b1c1b52340ea9001d790ade294ca3320b35c468cf5adb7bd78c5b77e666",
+    "summary": "Manually authored silent version: no dialogue, only CC0 effects and nonverbal grunts; generic costume, world-root flight, head-attached lump, contact accents and three synchronized punch impacts. Not a live Gemini generation."
+  }
+}

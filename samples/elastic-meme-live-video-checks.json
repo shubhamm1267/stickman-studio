@@ -1,0 +1,15 @@
+{
+  "ok": true,
+  "fullDecode": true,
+  "frames": 600,
+  "fps": 60,
+  "width": 960,
+  "height": 540,
+  "duration": 10,
+  "clippedSamples": 0,
+  "audioPeak": 0.1422194391489029,
+  "minFrameStdDev": 10.240013656266795,
+  "changedPairs": 2,
+  "changedWindowPairs": 269,
+  "limits": "Technical checks do not prove comedy quality, arbitrary story fidelity or perceptual sound suitability."
+}
