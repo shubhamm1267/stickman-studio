@@ -94,7 +94,7 @@
                         [(ngModel)]="keys.geminiModel"></label></div><label>Freesound API key<input type="password"
                     autocomplete="off" [(ngModel)]="keys.freesound"></label>
             <label>Studio access token (if configured)<input type="password" [(ngModel)]="token"></label><label
-                class="check"><input type="checkbox" [(ngModel)]="remember"> Remember keys on this device
+                class="check"><input type="checkbox" [(ngModel)]="remember"> Remember keys and studio token on this device
                 (localStorage)</label>
             <div class="actions"><button class="primary" (click)="saveKeys()">Save connections</button><button
                     class="secondary" (click)="clearKeys()">Forget keys</button></div>

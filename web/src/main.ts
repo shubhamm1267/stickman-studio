@@ -71,6 +71,7 @@ class App {
   constructor(private sanitizer: DomSanitizer) {
     setInterval(()=>this.now.set(Date.now()),1000);
     try {
+      this.token = localStorage.getItem("sticklaugh-studio-token") || "";
       let s = localStorage.getItem("sticklaugh-keys");
       if (s) {
         this.keys = JSON.parse(s);
@@ -106,16 +107,41 @@ class App {
     }
   }
   saveKeys() {
-    try {
-      if (this.remember)
-        localStorage.setItem("sticklaugh-keys", JSON.stringify(this.keys));
-      else localStorage.removeItem("sticklaugh-keys");
-      this.notice.set("Settings saved.");
-    } catch {
-      this.error.set("Could not save settings.");
+  try {
+    this.token = this.token.trim();
+
+    if (this.remember) {
+      localStorage.setItem(
+        "sticklaugh-keys",
+        JSON.stringify(this.keys)
+      );
+
+      if (this.token) {
+        localStorage.setItem(
+          "sticklaugh-studio-token",
+          this.token
+        );
+      } else {
+        localStorage.removeItem("sticklaugh-studio-token");
+      }
+
+    } else {
+      localStorage.removeItem("sticklaugh-keys");
+      localStorage.removeItem("sticklaugh-studio-token");
     }
+
+    this.notice.set("Settings saved successfully.");
+
+    // Token ke saath API connection dobara check karo
+    void this.refresh();
+
+  } catch {
+    this.error.set("Could not save settings.");
   }
+}
   clearKeys() {
+    localStorage.removeItem("sticklaugh-studio-token");
+    this.token = "";
     localStorage.removeItem("sticklaugh-keys");
     this.keys = {
       ...this.keys,
