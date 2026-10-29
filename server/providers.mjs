@@ -60,6 +60,56 @@ export async function request(
   }
   throw last;
 }
+
+async function geminiRequestWithBackup(
+  url,
+  options,
+  credentials,
+  fetcher = fetch
+) {
+  try {
+    // Primary key already has automatic retries
+    return await request(url, options, fetcher);
+
+  } catch (error) {
+
+    const backupKey =
+      process.env.GEMINI_API_KEY_BACKUP?.trim();
+
+    const primaryKey = credentials.gemini?.trim();
+
+    // Backup only for temporary provider failures
+    const temporaryFailure =
+      /^Provider HTTP (502|503|504):/.test(error.message);
+
+    // No backup, same key, or non-retryable error
+    if (
+      !backupKey ||
+      backupKey === primaryKey ||
+      !temporaryFailure
+    ) {
+      throw error;
+    }
+
+    console.warn(
+      "Gemini primary failed after retries. Switching to backup key."
+    );
+
+    // Retry the SAME request using backup key
+    return await request(
+      url,
+      {
+        ...options,
+        headers: {
+          ...options.headers,
+          "x-goog-api-key": backupKey,
+        },
+      },
+      fetcher
+    );
+  }
+}
+
 export async function geminiJSON(
   prompt,
   schema,
@@ -75,7 +125,7 @@ export async function geminiJSON(
   if (!/^[a-zA-Z0-9._-]+$/.test(model)) throw Error("Invalid Gemini model ID.");
   // Complex animation schemas exceed provider grammar limits. JSON mode plus
   // the complete schema in the prompt keeps local Zod validation authoritative.
-  let r = await request(
+  let r = await geminiRequestWithBackup(
     `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`,
     {
       method: "POST",
@@ -84,7 +134,7 @@ export async function geminiJSON(
         contents: [{role:"user",parts:[...mediaParts,{text:prompt+"\nReturn one JSON object matching this JSON Schema exactly. Omit optional fields when unused; never use null unless permitted.\n"+JSON.stringify(jsonSchema(schema))}]}],
         generationConfig: {responseMimeType:"application/json",maxOutputTokens:32768},
       }), signal,
-    }, fetcher,
+    }, credentials, fetcher,
   );
   let body = await r.json();
   if (body.candidates?.[0]?.finishReason === "MAX_TOKENS")
