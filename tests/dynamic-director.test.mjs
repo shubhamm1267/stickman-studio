@@ -22,6 +22,9 @@ test('generated native actions cannot silently ignore missing destinations or pe
  const value={scene:structuredClone(scene),coverage:[{eventIndex:0,beatIndices:[0]}],partTracks:[]};
  value.scene.beats=[{actorId:'hero',kind:'walk',start:0,duration:2,intent:'Walk towards the excavator'}];
  assert.throws(()=>schema.parse(value),/world destination/);
+ const repaired=schema.normalizeGeneratedValue(value);
+ assert.ok(Array.isArray(repaired.scene.beats[0].to));
+ assert.ok(schema.parse(repaired));
  value.scene.beats[0].to=[120,780];assert.ok(schema.parse(value));
  value.scene.beats[0].keyframes=[{at:0,pose:{headAngle:0}},{at:1,pose:{headAngle:10}}];
  assert.throws(()=>schema.parse(value),/does not execute performance keys/);

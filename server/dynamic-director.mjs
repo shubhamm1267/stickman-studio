@@ -490,6 +490,7 @@ export async function planDynamicStory(
   const guide = (await dynamicGuide()) +
     "\n" +
     referenceStyleInstructions(options.referenceStyle) +
+    "\nNATIVE MOVEMENT CONTRACT: EVERY walk and run beat MUST specify to:[worldX,worldY], the actor ROOT destination, with floor y matching its cast placement (usually 780). A walk/run without to cannot travel. If the scene says chase, flee or move toward an object, derive a specific world x from the scene's cast and props positions. Do not substitute foot, hand, hip or pose keyframes for this root destination. Also specify to for slip, throw and place; retain each action kind.\n" +
     `\nACTUAL beat.kind values: ${ACTIONS.join(", ")}. Never use watch, smile, surprised, spin, startFan as kind. Opening a mouth is a pose mouthAperture, never the jar-only open action. A fan starts through a blade rotation partTrack, not open/hold/tap. Watching/smiling use react with emotion/pose, custom with pose, or perform with real normalized pose keys. Machinery movements belong in partTracks and are paired with a timed actor reaction/performance beat.`;
 
   let category = options.category === 'auto'
@@ -777,9 +778,10 @@ export async function planDynamicStory(
 
           if (directed.scene.dialogue.length) {
             throw Error(
-              'Two-key mode must not generate dialogue'            );
+              'Two-key mode must not generate dialogue'
+            );
           }
-
+          
           directed.scene=normalizeDirectedScene({scene:directed.scene}).scene;
           assertEventMechanics(directed.scene, requiredEvents);
           if(performance){

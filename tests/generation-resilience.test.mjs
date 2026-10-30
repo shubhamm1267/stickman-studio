@@ -33,3 +33,28 @@ test('scene normalization preserves native actions and strips ignored generated 
   assert.deepEqual(result.partTracks[0].animation.keys.map(k=>k.easing),['smooth','hold']);
   assert.equal(input.scene.beats[0].keyframes.length,2,'normalizer does not mutate the original');
 });
+
+test('missing run and walk destinations are repaired in world coordinates with actor continuity',()=>{
+  const input={scene:{
+    cast:[{characterId:'hero',x:160,y:780,facing:1}],
+    props:[{designId:'door',x:400,y:640}],sounds:[],
+    beats:[
+      {kind:'run',actorId:'hero',start:0,duration:2,targetId:'door',intent:'He runs toward the door.'},
+      {kind:'walk',actorId:'hero',start:2,duration:1,intent:'He walks left.'},
+      {kind:'run',actorId:'hero',start:3,duration:1,to:[420,780],intent:'He runs right.'},
+    ]
+  }};
+  const output=normalizeDirectedScene(input).scene.beats;
+  assert.deepEqual(output[0].to,[340,780]);
+  assert.deepEqual(output[1].to,[250,780]);
+  assert.deepEqual(output[2].to,[420,780]);
+  assert.equal(input.scene.beats[0].to,undefined);
+});
+
+test('a missing run destination near a stage edge moves safely inward',()=>{
+  const output=normalizeDirectedScene({scene:{
+    cast:[{characterId:'hero',x:480,y:780,facing:1}],props:[],sounds:[],
+    beats:[{kind:'run',actorId:'hero',start:0,duration:1,intent:'He runs off in a panic.'}]
+  }}).scene.beats[0];
+  assert.deepEqual(output.to,[330,780]);
+});

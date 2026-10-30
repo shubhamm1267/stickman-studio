@@ -284,6 +284,54 @@ function normalizePlacementIds(scene) {
   }
 }
 
+// Keep locomotion executable even when Gemini omits its world-space end point.
+// An actor has an existing root and facing, so this completes a missing
+// locomotion parameter without inventing an additional story action.
+function normalizeLocomotionDestinations(scene) {
+  const locations = new Map((scene?.cast || []).map(actor => [actor.characterId, {
+    x: actor.x, y: actor.y, facing: actor.facing === -1 ? -1 : 1
+  }]));
+  const props = new Map((scene?.props || []).map(prop => [prop.designId, prop]));
+  const beats = [...(scene?.beats || [])].sort((a, b) => a.start - b.start);
+  for (const beat of beats) {
+    if (beat.kind !== 'walk' && beat.kind !== 'run') continue;
+    const actor = locations.get(beat.actorId);
+    if (!actor || !Number.isFinite(actor.x) || !Number.isFinite(actor.y)) continue;
+
+    if (Array.isArray(beat.to) && beat.to.length === 2 && beat.to.every(Number.isFinite)) {
+      if (beat.to[0] !== actor.x) actor.facing = Math.sign(beat.to[0] - actor.x);
+      [actor.x, actor.y] = beat.to;
+      continue;
+    }
+    const intent = (beat.intent || '').toLowerCase();
+    let direction = /\b(left|leftward|west)\b/.test(intent) ? -1
+      : /\b(right|rightward|east)\b/.test(intent) ? 1 : actor.facing;
+    const target = props.get(beat.targetId) || locations.get(beat.targetActorId);
+    const targetX = Number.isFinite(target?.x) ? target.x : undefined;
+    const toward = /\b(toward|towards|approach|chase|follow|reach)\b/.test(intent);
+    const away = /\b(away|escape|flee|retreat)\b/.test(intent);
+    if (targetX !== undefined && targetX !== actor.x && (toward || away)) {
+      direction = Math.sign(targetX - actor.x) * (away ? -1 : 1);
+    }
+    // The renderer's stage spans x=0..540; leave visual room at the edges.
+    const distance = beat.kind === 'run' ? 150 : 90;
+    const clampX = x => Math.max(45, Math.min(495, x));
+    let x = targetX !== undefined && toward
+      ? clampX(targetX - direction * 60)
+      : clampX(actor.x + direction * distance);
+    if (Math.abs(x - actor.x) < 20) {
+      direction = -direction;
+      x = clampX(actor.x + direction * distance);
+    }
+    // An already offstage actor or a stationary direction cannot be repaired
+    // by guessing: keep the validation error for a genuine model retry.
+    if (Math.abs(x - actor.x) < 20) continue;
+    beat.to = [Math.round(x), actor.y];
+    actor.facing = direction;
+    actor.x = beat.to[0];
+  }
+}
+
 
 // ======================================================
 // 6. MAIN DIRECTED SCENE NORMALIZER
@@ -320,6 +368,10 @@ export function normalizeDirectedScene(input) {
   // --------------------------------------------------
 
   normalizePlacementIds(value?.scene);
+
+  // Supply a real world destination for an otherwise valid walk/run. The
+  // schema and independent quality inspector both require this parameter.
+  normalizeLocomotionDestinations(value?.scene);
 
   // --------------------------------------------------
   // Normalize every scene beat
