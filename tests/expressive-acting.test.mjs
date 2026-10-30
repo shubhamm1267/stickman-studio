@@ -4,7 +4,13 @@ import {evaluateMotion} from '../shared/motion-ir.mjs';
 import {localToWorld,ik} from '../shared/math.mjs';
 import {neckOf} from '../shared/rig.mjs';
 import {elasticFace} from '../renderer/draw.mjs';
+import {compileStylePerformance} from '../shared/style-performance.mjs';
 const initial={rigVersion:2,position:[220,780],scale:.8,hip:[0,-160],head:[0,-405],headAngle:0,bodyAngle:0,leftFoot:[-30,0],rightFoot:[35,0],rightHand:[60,-130]};
+test('elastic paper-face correction handles generated ink fill and preserves explicit complexion',()=>{
+ const p={referenceStyle:'elastic-meme',sourceIdea:'A stickman reacts to a sound',characters:[{id:'a',kind:'man',skin:'#20251f'}],scenes:[]};
+ assert.equal(compileStylePerformance(p).characters[0].skin,'#bfc1a2');assert.equal(p.characters[0].skin,'#20251f');
+ p.sourceIdea='A person with dark skin reacts to a sound';assert.equal(compileStylePerformance(p).characters[0].skin,'#20251f');
+});
 test('standalone perform pose executes while independent channels animate',()=>{
  const result=evaluateMotion(initial,{pose:{mouthOpen:.8},keyframes:[{at:0,pose:{headAngle:0}},{at:1,pose:{headAngle:20}}]},.5);
  assert.equal(result.mouthOpen,.8);assert.equal(result.headAngle,10);

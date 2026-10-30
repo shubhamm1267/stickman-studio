@@ -1,0 +1,159 @@
+{
+  "visualSpec": {
+    "renderMode": "replace",
+    "silhouetteFamily": "custom-vector",
+    "geometryRecipe": [
+      {
+        "id": "body",
+        "kind": "group",
+        "position": [
+          -22.5,
+          -51.5
+        ],
+        "children": [
+          {
+            "kind": "path",
+            "d": "M 0 50 C -70 50 -100 10 -100 -50 C -100 -120 -40 -160 0 -180 C 40 -160 100 -120 100 -50 C 100 10 70 50 0 50 Z",
+            "fill": "#e6ebf0",
+            "stroke": "#222222",
+            "width": 3
+          }
+        ]
+      },
+      {
+        "id": "spout",
+        "kind": "group",
+        "position": [
+          -22.5,
+          -51.5
+        ],
+        "children": [
+          {
+            "kind": "path",
+            "d": "M 35 -60 L 130 -90 L 145 -75 L 50 -30 Z",
+            "fill": "#e6ebf0",
+            "stroke": "#222222",
+            "width": 3
+          },
+          {
+            "kind": "path",
+            "d": "M 130 -90 L 145 -75",
+            "fill": "none",
+            "stroke": "#222222",
+            "width": 3
+          }
+        ]
+      },
+      {
+        "id": "handle",
+        "kind": "group",
+        "position": [
+          -22.5,
+          -51.5
+        ],
+        "children": [
+          {
+            "kind": "path",
+            "d": "M -50 -130 C -50 -190 20 -180 50 -130 L 40 -115 C 20 -150 -30 -155 -40 -130 Z",
+            "fill": "#d0d8e4",
+            "stroke": "#222222",
+            "width": 3
+          }
+        ]
+      },
+      {
+        "id": "lid",
+        "kind": "group",
+        "position": [
+          -22.5,
+          -51.5
+        ],
+        "children": [
+          {
+            "kind": "path",
+            "d": "M -45 -130 L 45 -130 L 35 -140 L -35 -140 Z",
+            "fill": "#e6ebf0",
+            "stroke": "#222222",
+            "width": 3
+          },
+          {
+            "kind": "ellipse",
+            "center": [
+              0,
+              -145
+            ],
+            "radius": [
+              12,
+              6
+            ],
+            "fill": "#d0d8e4",
+            "stroke": "#222222",
+            "width": 2.5
+          }
+        ]
+      }
+    ],
+    "normalizedDimensions": {
+      "width": 100,
+      "height": 100
+    },
+    "material": "flat",
+    "paint": {},
+    "palette": [],
+    "facialComponents": [],
+    "apparel": [],
+    "accessories": [],
+    "decorativeMarks": [],
+    "proceduralComponents": [],
+    "motionAnchors": [
+      {
+        "id": "grip",
+        "position": [
+          -27.5,
+          -216.5
+        ]
+      },
+      {
+        "id": "base",
+        "position": [
+          -22.5,
+          -1.5
+        ]
+      },
+      {
+        "id": "support",
+        "position": [
+          -22.5,
+          -231.5
+        ]
+      }
+    ],
+    "zIndex": 0
+  },
+  "features": [
+    {
+      "featureIndex": 0,
+      "feature": "Upward curving spout positioned on the side",
+      "nodeIds": [
+        "spout"
+      ],
+      "nativeProperties": []
+    },
+    {
+      "featureIndex": 1,
+      "feature": "Arched handle spanning over the top center",
+      "nodeIds": [
+        "handle"
+      ],
+      "nativeProperties": []
+    },
+    {
+      "featureIndex": 2,
+      "feature": "Fitted lid with a central lifting knob",
+      "nodeIds": [
+        "lid"
+      ],
+      "nativeProperties": []
+    }
+  ]
+}

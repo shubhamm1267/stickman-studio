@@ -472,6 +472,12 @@ export async function reviewAndRepair(
   }
   throw Error("Story fidelity review failed.");
 }
+export function soundMatchesRole(item,role){
+  const text=[item.name,...(item.tags||[]),item.description].filter(Boolean).join(' ');
+  if(role==='effect')return !/\b(speech|dialogue|narration|lyrics|conversation|voice|vocal|grunt|gasp|scream|singing|music)\b/i.test(text);
+  if(role==='nonverbal')return !/\b(music|song|lyrics|narration|sentence|conversation|speech|dialogue)\b/i.test(text);
+  return true;
+}
 export async function searchSound(query, key, signal, fetcher = fetch, selection={}) {
   if (!key)
     throw Error("Freesound API key is required to resolve new sound effects.");
@@ -494,10 +500,14 @@ export async function searchSound(query, key, signal, fetcher = fetch, selection
     [/laugh|chuckl|giggl/i, 'laughter'],
     [/grunt|effort|strain/i, 'grunt'],
     [/boing|bounce/i, 'boing'],
-    [/squeak|rubber.*duck|toy.*squeal/i, 'squeak'],
+    [/\b(?:slip|skid|sliding)\b/i, 'shoe squeak'],
+    [/\b(?:slip|skid|sliding)\b/i, 'shoe skid'],
+    [/\bsqueak\b|rubber.*duck|toy.*squeal/i, 'squeak'],
+    [/\bsqueak\b|rubber.*duck|toy.*squeal/i, 'rubber squeak'],
+    [/\bsqueak\b|rubber.*duck|toy.*squeal/i, 'rubber toy'],
     [/pop|burst/i, 'pop'],
     [/creak/i, 'creak'],
-    [/jar|lid|bottle.*open/i, 'jar open'],
+    [/\b(?:jar|lid)\b|\bbottle\b.*\bopen/i, 'jar open'],
     [/clink|glass|cup/i, 'clink'],
     [/crash|fall|thud/i, 'thud'],
     [/splash|water/i, 'splash'],
@@ -514,7 +524,9 @@ export async function searchSound(query, key, signal, fetcher = fetch, selection
   ];
   for (const [pattern, term] of synonyms)
     if (pattern.test(query) && !alternatives.includes(term)) alternatives.push(term);
-  for (const search of alternatives) {
+  const offset=Number.isInteger(selection.retry)&&selection.retry>0?Math.min(selection.retry,alternatives.length-1):0;
+  const ordered=[...alternatives.slice(offset),...alternatives.slice(0,offset)];
+  for (const search of ordered) {
     const u = new URL("https://freesound.org/apiv2/search/text/");
     u.searchParams.set("query", search);
     u.searchParams.set("filter", 'license:"Creative Commons 0" duration:[0.05 TO 20]');
@@ -523,7 +535,8 @@ export async function searchSound(query, key, signal, fetcher = fetch, selection
     const r = await request(u, {headers:{Authorization:`Token ${key}`},signal}, fetcher);
     const j = await r.json();
     const words=query.toLowerCase().split(/[^a-z0-9]+/).filter(w=>w.length>2&&!['sound','effect','cartoon','funny'].includes(w));
-    const candidates=(j.results||[]).filter(x=>String(x.license).includes('/publicdomain/zero/')&&x.previews?.['preview-hq-mp3']).filter(x=>selection.role!=='nonverbal'||!/\b(music|song|lyrics|narration|sentence|conversation)\b/i.test(x.name||'')).map(item=>{
+    const excluded=new Set((selection.excludeIds||[]).map(String));
+    const candidates=(j.results||[]).filter(x=>!excluded.has(String(x.id))&&String(x.license).includes('/publicdomain/zero/')&&x.previews?.['preview-hq-mp3']).filter(x=>soundMatchesRole(x,selection.role)).map(item=>{
       const name=(item.name||'').toLowerCase(),tags=(item.tags||[]).join(' ').toLowerCase();
       let score=words.reduce((n,w)=>n+(name.includes(w)?4:tags.includes(w)?2:0),0);
       if(selection.duration&&item.duration)score-=Math.abs(Math.log(item.duration/selection.duration))*.3;

@@ -1,0 +1,33 @@
+{
+  "objectState": "whole",
+  "silhouette": "Stout cylindrical body with a prominent protruding loop on the right and an open top ellipse defining the cavity.",
+  "viewpoint": "three-quarter view",
+  "parts": [
+    {
+      "name": "cylindrical body",
+      "shape": "wide vertical cylinder with straight parallel sides and flat bottom base",
+      "connection": "forms the main structural volume of the mug"
+    },
+    {
+      "name": "hollow oval opening",
+      "shape": "slanting ellipse positioned at the top rim, showing thickness of the ceramic wall and hollow interior",
+      "connection": "merged seamlessly with the top edge of the cylindrical body"
+    },
+    {
+      "name": "curved handle",
+      "shape": "large C-shaped strap with uniform thickness",
+      "connection": "attached securely at two points along the right vertical side of the cylindrical body"
+    }
+  ],
+  "recognitionCues": [
+    "visible hollow interior depth defined by the top oval rim",
+    "large ergonomic side handle sized for fingers",
+    "stout proportions clearly identifying a standard drinking vessel"
+  ],
+  "avoid": [
+    "featureless blobs",
+    "disconnected repeated teardrops",
+    "flat two-dimensional outlines without volume",
+    "banana anatomy"
+  ]
+}

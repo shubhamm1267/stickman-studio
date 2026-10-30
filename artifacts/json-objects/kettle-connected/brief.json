@@ -1,0 +1,42 @@
+{
+  "objectState": "whole",
+  "silhouette": "Compact rounded bulbous body with a high arching top handle and a sharp diagonal projecting spout",
+  "viewpoint": "Three-quarter view",
+  "parts": [
+    {
+      "name": "body",
+      "shape": "Spherical flattened sphere with a flat circular base and narrower top opening rim",
+      "connection": "Central foundation element to which all other components attach"
+    },
+    {
+      "name": "spout",
+      "shape": "Tapered conical tube curving upward and outward with an angled open mouth at the tip",
+      "connection": "Weld-joined to the lower side of the rounded body"
+    },
+    {
+      "name": "handle",
+      "shape": "Semi-circular arched strap with flattened ends",
+      "connection": "Attached at two opposite points on the upper shoulder of the body"
+    },
+    {
+      "name": "lid",
+      "shape": "Stepped circular disc with a matching inner flange",
+      "connection": "Placed loosely into the top opening rim of the body"
+    },
+    {
+      "name": "knob",
+      "shape": "Small spherical sphere or truncated cone",
+      "connection": "Fixed to the exact center of the top surface of the lid"
+    }
+  ],
+  "recognitionCues": [
+    "Upward curving spout positioned on the side",
+    "Arched handle spanning over the top center",
+    "Fitted lid with a central lifting knob"
+  ],
+  "avoid": [
+    "Banana skin anatomy",
+    "Disconnected teardrop shapes",
+    "Featureless blob silhouettes"
+  ]
+}

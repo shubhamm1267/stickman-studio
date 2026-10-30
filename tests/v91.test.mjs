@@ -40,9 +40,15 @@ test('download sends attachment disposition and preview stays inline',async()=>{
  const srv=app.listen(0,'127.0.0.1');await new Promise(r=>srv.once('listening',r));
  try{const job=await queue.add('render',async()=>({}),{},{});await fs.mkdir(path.join(dir,job.id),{recursive:true});await fs.writeFile(path.join(dir,job.id,'video.mp4'),'test bytes');
  const url=`http://127.0.0.1:${srv.address().port}/api/files/${job.id}/video.mp4`;
- const inline=await fetch(url);assert.equal(inline.status,200);assert.equal(inline.headers.get('content-disposition'),null);
- const download=await fetch(url+'?download=1');assert.equal(download.status,200);assert.match(download.headers.get('content-disposition'),/attachment; filename="video.mp4"/);
- }finally{await new Promise(r=>srv.close(r));await fs.rm(dir,{recursive:true,force:true});}
+ const inline=await fetch(url);assert.equal(inline.status,200);assert.equal(inline.headers.get('content-disposition'),null);assert.equal(await inline.text(),'test bytes');
+ const download=await fetch(url+'?download=1');assert.equal(download.status,200);assert.match(download.headers.get('content-disposition'),/attachment; filename="video.mp4"/);assert.equal(await download.text(),'test bytes');
+ }finally{
+  await new Promise(r=>srv.close(r));
+  const deadline=Date.now()+5000;
+  while(queue.busy&&Date.now()<deadline)await new Promise(r=>setTimeout(r,5));
+  assert.equal(queue.busy,false,'Download fixture job must finish before removing its directory');
+  await queue.close();await fs.rm(dir,{recursive:true,force:true,maxRetries:3,retryDelay:50});
+ }
 });
 test('camera cut compilation fills gaps without changing camera positions',async()=>{
  const {compileScene}=await import('../server/scene-compile.mjs');const scene={duration:10,shots:[{start:0.2,end:2,focus:[200,400],zoom:1},{start:4,end:8,focus:[300,350],zoom:1.5}]};

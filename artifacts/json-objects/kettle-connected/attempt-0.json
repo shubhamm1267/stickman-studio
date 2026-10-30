@@ -1,0 +1,168 @@
+{
+  "visualSpec": {
+    "renderMode": "replace",
+    "silhouetteFamily": "custom-vector",
+    "geometryRecipe": [
+      {
+        "id": "body",
+        "kind": "group",
+        "position": [
+          -16.75,
+          -86
+        ],
+        "children": [
+          {
+            "kind": "path",
+            "d": "M -40,10 C -50,45 -30,80 0,85 C 30,80 50,45 40,10 C 35,0 25,-20 0,-20 C -25,-20 -35,0 -40,10 Z",
+            "fill": "#e6e6e6",
+            "stroke": "#1a1a1a",
+            "width": 2
+          },
+          {
+            "kind": "ellipse",
+            "center": [
+              0,
+              -20
+            ],
+            "radius": [
+              25,
+              6
+            ],
+            "fill": "#cccccc",
+            "stroke": "#1a1a1a",
+            "width": 1.5
+          },
+          {
+            "id": "spout",
+            "kind": "group",
+            "children": [
+              {
+                "kind": "path",
+                "d": "M 35,20 C 50,15 65,5 75,-10 C 78,-15 75,-18 70,-15 C 60,0 45,10 30,12 Z",
+                "fill": "#dedede",
+                "stroke": "#1a1a1a",
+                "width": 2
+              }
+            ]
+          },
+          {
+            "id": "handle",
+            "kind": "group",
+            "children": [
+              {
+                "kind": "path",
+                "d": "M -30,-5 C -45,-5 -50,-40 -25,-55 C -15,-60 10,-60 20,-50 C 30,-40 25,-5 20,-5 C 20,-5 23,-35 15,-45 C 5,-55 -15,-55 -22,-45 C -35,-30 -30,-5 -30,-5 Z",
+                "fill": "#cccccc",
+                "stroke": "#1a1a1a",
+                "width": 2
+              }
+            ]
+          },
+          {
+            "id": "lid",
+            "kind": "group",
+            "children": [
+              {
+                "kind": "ellipse",
+                "center": [
+                  0,
+                  -23
+                ],
+                "radius": [
+                  22,
+                  5
+                ],
+                "fill": "#f0f0f0",
+                "stroke": "#1a1a1a",
+                "width": 1.5
+              },
+              {
+                "id": "knob",
+                "kind": "group",
+                "children": [
+                  {
+                    "kind": "ellipse",
+                    "center": [
+                      0,
+                      -30
+                    ],
+                    "radius": [
+                      6,
+                      4
+                    ],
+                    "fill": "#d4d4d4",
+                    "stroke": "#1a1a1a",
+                    "width": 1.5
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "normalizedDimensions": {
+      "width": 100,
+      "height": 100
+    },
+    "material": "flat",
+    "paint": {},
+    "palette": [],
+    "facialComponents": [],
+    "apparel": [],
+    "accessories": [],
+    "decorativeMarks": [],
+    "proceduralComponents": [],
+    "motionAnchors": [
+      {
+        "id": "grip",
+        "position": [
+          -21.75,
+          -136
+        ]
+      },
+      {
+        "id": "base",
+        "position": [
+          -16.75,
+          -1
+        ]
+      },
+      {
+        "id": "support",
+        "position": [
+          -16.75,
+          -106
+        ]
+      }
+    ],
+    "zIndex": 0
+  },
+  "features": [
+    {
+      "featureIndex": 0,
+      "feature": "Upward curving spout positioned on the side",
+      "nodeIds": [
+        "spout"
+      ],
+      "nativeProperties": []
+    },
+    {
+      "featureIndex": 1,
+      "feature": "Arched handle spanning over the top center",
+      "nodeIds": [
+        "handle"
+      ],
+      "nativeProperties": []
+    },
+    {
+      "featureIndex": 2,
+      "feature": "Fitted lid with a central lifting knob",
+      "nodeIds": [
+        "lid",
+        "knob"
+      ],
+      "nativeProperties": []
+    }
+  ]
+}

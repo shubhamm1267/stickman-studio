@@ -1,4 +1,5 @@
 import {locomotionPose} from "../shared/locomotion.mjs";
+import {reachPhase,crouchForTarget,reachHand} from '../shared/reach-performance.mjs';
 import {resolvePartAttachments} from "../shared/part-attachments.mjs";
 import{foregroundLimbs}from"../shared/occlusion.mjs";
 import {sampleMotionPreset} from "../shared/motion-presets.mjs";
@@ -9,7 +10,7 @@ import{settle,impactJolt}from"../shared/secondary-motion.mjs";
 import {performancePose} from "../shared/performance.mjs";
 import { locateFrame } from "../shared/timeline.mjs";
 import { ease, lerp, add, ik, clamp, motionEase, localToWorld, worldToLocal } from "../shared/math.mjs";
-import { group, actor, prop, background, path, effect, animal, groundShadow, visualSpec as renderVisualSpec } from "./draw.mjs";
+import { group, actor, prop, background, path, effect, animal, groundShadow, blinkOpenness, visualSpec as renderVisualSpec } from "./draw.mjs";
 import { compileSceneGraph } from "../shared/scene-graph.mjs";
 export function locate(plan, t) {
   let off = 0;
@@ -151,6 +152,12 @@ export function evaluate(scene, t, designs, memo = new Map()) {
       move(s, "leftHand", target(p, -26, 8, s), u);
       move(s, "rightHand", target(p, 15, -38, s), u);
     };
+    const groundReach = () => {
+      if (!p || ["dog", "cat", "lion"].includes(s.species)) return;
+      const local = target(p, 0, 0, s);
+      const phase=reachPhase(t-b.start,b.duration);
+      crouchForTarget(s,local,phase.approach*(1-phase.recovery));
+    };
     if (["walk", "run"].includes(kind)) {
       let from = [...s.position],
         to = b.to || from,
@@ -206,7 +213,9 @@ export function evaluate(scene, t, designs, memo = new Map()) {
     }
     if (["hold", "reach", "struggle"].includes(kind)) {
       if (kind === "reach") {
-        move(s, hand, target(p, 0, 0, s), u);
+        const home=[...s[hand]],phase=reachPhase(t-b.start,b.duration);
+        groundReach();
+        s[hand]=reachHand(home,target(p,0,0,s),phase);
         s[hand === "leftHand" ? "leftType" : "rightType"] = "open";
       } else reachJar();
       if (kind === "struggle") {
@@ -355,6 +364,8 @@ export function evaluate(scene, t, designs, memo = new Map()) {
       s[hand === "leftHand" ? "leftType" : "rightType"] = "point";
     }
     if (kind === "pick") {
+      const home=[...s[hand]],phase=reachPhase(t-b.start,b.duration);
+      groundReach();
       let d = designs.find((x) => x.id === b.targetId),
         off = d?.gripOffset || (d?.type === "cup" ? [12, 2] : d?.type === "headphones" ? [65,0] : d?.type === "cap" ? [82,3] : [0, 0]);
       if(p.owner?.hand==='head'&&p.owner.actorId===b.actorId){
@@ -363,7 +374,7 @@ export function evaluate(scene, t, designs, memo = new Map()) {
         const side=hand==='leftHand'?-1:1,sh=add(neckOf(s),[side*8,24]),way=add(sh,[side*200,0]),end=target(p,...off,s);
         s[hand]=u<.5?lerp(s[hand],way,ease(u*2)):lerp(way,end,ease((u-.5)*2));
         s[hand==='leftHand'?'leftElbowSide':'rightElbowSide']=u<.5?-side:side;
-      }else move(s, hand, target(p, ...off, s), u);
+      }else s[hand]=reachHand(home,target(p,...off,s),phase);
       s[hand === "leftHand" ? "leftType" : "rightType"] = "grip";
       if (u > 0.98)
         p.ownerChangedAt=b.start+b.duration*.98;
@@ -543,10 +554,23 @@ export function evaluate(scene, t, designs, memo = new Map()) {
        }
       }
     }
-    if (kind === "perform") Object.assign(s,evaluateMotion(s,performanceTrack(scene,b),clamp((t-b.start)/b.duration)));
+    if (kind === "perform" && b.semanticAction!=='direction-acting') Object.assign(s,evaluateMotion(s,performanceTrack(scene,b),clamp((t-b.start)/b.duration)));
     if (kind === "custom") {
       for (const [k, v] of Object.entries(b.pose)) move(s, k, v, u);
       if(b.pose.spineAngle!==undefined&&!b.pose.head){const a=s.spineAngle*Math.PI/180;s.head=[s.hip[0]+245*Math.sin(a),s.hip[1]-245*Math.cos(a)];s.headAngle=s.spineAngle+(b.pose.headAngle||0);}
+    }
+  }
+  // Directed face-only acting owns the face after body actions; a later native
+  // react/idle beat must not overwrite a timed reaction from the acting score.
+  for(const beat of [...scene.beats].sort((a,b)=>a.start-b.start)){
+    if(beat.kind!=='perform'||beat.semanticAction!=='direction-acting'||t<beat.start)continue;
+    const state=states[beat.actorId];
+    Object.assign(state,evaluateMotion(state,performanceTrack(scene,beat),clamp((t-beat.start)/beat.duration)));
+    if(!['shock','jawdrop'].includes(state.face)){
+      const blink=blinkOpenness(beat.actorId,t);
+      state.eyeOpen=Math.min(state.eyeOpen??1,blink);
+      if(state.eyeOpenLeft!==undefined)state.eyeOpenLeft=Math.min(state.eyeOpenLeft,blink);
+      if(state.eyeOpenRight!==undefined)state.eyeOpenRight=Math.min(state.eyeOpenRight,blink);
     }
   }
   // Ownership events happen on the timeline, after older persistent pick/place poses.
@@ -761,6 +785,25 @@ function renderSceneFrame(plan, scene, time, { format, thumbnail }) {
   }
   for(const p of propOrder)if(propEntity(p)?.layering.band==="back")d+=drawing(p);
   for(const [index,e] of effects.entries())if(e.kind!=="impact"&&graphEffects[index]?.visible)d+=`<g data-scene-entity-category="effect" data-scene-entity-id="${graphEffects[index].id}">${effect(e,time)}</g>`;
+  // Velocity-driven accents also support directed motion IR, not only punches.
+  // Sample inside this scene so a camera cut cannot create a false streak.
+  if(plan.referenceStyle==='elastic-meme' && time>=1/60){
+    const previous=evaluate(scene,time-1/60,plan.propDesigns);
+    for(const c of castOrder.filter(shown)){
+      const state=states[c.characterId],old=previous.states[c.characterId];
+      const design=plan.characters.find(a=>a.id===c.characterId);
+      if(design?.visualSpec?.renderMode==='replace'||['dog','cat','lion'].includes(design?.kind))continue;
+      for(const bone of ['leftHand','rightHand']){
+        // Held objects retain their clear silhouette and precise contact.
+        if(Object.values(props).some(p=>p.owner?.actorId===c.characterId&&p.owner.hand===bone))continue;
+        const from=localToWorld(old,old[bone]),to=localToWorld(state,state[bone]);
+        const distance=Math.hypot(to[0]-from[0],to[1]-from[1]);
+        if(distance<12||distance>140)continue;
+        const alpha=Math.min(.32,(distance-12)/100),width=Math.max(2,Math.min(9,state.scale*7));
+        d+=`<g data-elastic-motion-trail="${bone}" opacity="${alpha.toFixed(3)}">${path(`M${from[0]} ${from[1]} L${to[0]} ${to[1]}`,"none",width,"#535b4c")}</g>`;
+      }
+    }
+  }
   // Selective trails on fast hands, not ghosting the whole character or camera.
   if(scene.beats.some(b=>b.kind==='punch'&&time>b.start+b.duration*.25&&time<b.start+b.duration*.52)){
     for(const lag of[1/60,2/60]){const previous=evaluate(scene,Math.max(0,time-lag),plan.propDesigns);
@@ -794,7 +837,7 @@ function renderSceneFrame(plan, scene, time, { format, thumbnail }) {
   for(const p of propOrder)if(propEntity(p)?.layering.band==="world")d+=drawing(p);
 
   for(const c of castOrder.filter(shown)){
-    const a=plan.characters.find(q=>q.id===c.characterId);
+    const a={...plan.characters.find(q=>q.id===c.characterId),referenceStyle:plan.referenceStyle};
     const {hands,forearms}=foregroundLimbs(scene,time,states,props,c.characterId);
     if(a.visualSpec?.renderMode!=='replace' && hands.length && !["dog","cat","lion"].includes(a.kind))d+=`<g data-grip-overlay="${c.characterId}">${actor(a,{...states[c.characterId],overlayHands:hands,overlayForearms:forearms},time,shot.detail,true)}</g>`;
   }

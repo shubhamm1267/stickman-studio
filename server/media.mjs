@@ -13,6 +13,8 @@ import {
 import path from "node:path";
 import { ROOT, DATA, json, atomic } from "./files.mjs";
 import { searchSound, cartesiaBytes, request } from "./providers.mjs";
+import {createHash} from 'node:crypto';
+import {reviewSoundForCue,resolveSoundWithFallback,planSoundFallback} from './sfx-review.mjs';
 export function command(exe, args, { signal, binary=false, ...options } = {}) {
   return new Promise((resolve, reject) => {
     let p = spawn(exe, args, {
@@ -59,13 +61,13 @@ export async function buildAudio(
   const frameClock=timeline(plan),outputDuration=frameClock.durationInFrames/frameClock.fps;
   let manifest = await json(path.join(ROOT, "assets/sfx/manifest.json")),
     inputs = [],
-    credits = [],warnings=[];
+    credits = [],warnings=[],selections=[];
   for (let [si, s] of plan.scenes.entries()) {
     const range=frameClock.scenes[si],sceneStart=range.from/frameClock.fps,
       sceneEnd=(range.from+range.durationInFrames)/frameClock.fps;
     for (let {cue,index:cueIndex} of expandIndexedCues(s, plan.propDesigns)) {
       signal?.throwIfAborted();
-      let item, file;
+      let item, file,reviewedStart;
       try {
       if (bundled && cue.fixture && manifest.some(x=>x.name===cue.fixture)) {
         item = manifest.find((x) => x.name === cue.fixture);
@@ -73,8 +75,9 @@ export async function buildAudio(
         file = path.join(ROOT, "assets/sfx", item.file);
       } else {
         progress("Finding sound: " + cue.query);
-        item = await searchSound(cue.query, keys.freesound, signal,fetch,{duration:cue.duration,role:cue.role,seed:path.basename(dir)+':'+(cue.actorId||'effect')+':'+cue.query});
-        file = path.join(DATA, "sound-cache", `${item.id}.mp3`);
+        const search=selection=>searchSound(selection.queryOverride||cue.query, keys.freesound, signal,fetch,{duration:cue.duration,role:cue.role,seed:path.basename(dir)+':'+(cue.actorId||'effect')+':'+(selection.queryOverride||cue.query),...selection});
+        const load=async item=>{
+        const file = path.join(DATA, "sound-cache", `${item.id}.mp3`);
         try {
           await stat(file);
         } catch {
@@ -88,28 +91,49 @@ export async function buildAudio(
             throw Error("Sound preview too large");
           await writeFile(file, b);
         }
+        return {file,duration:Number((await probe(file)).format.duration)};
+        };
+        if(plan.planningMode==='dynamic'&&keys.gemini){
+          const reviewDir=path.join(DATA,'sound-reviews');await mkdir(reviewDir,{recursive:true});
+          const review=async(loaded,spec)=>{
+            const bytes=await readFile(loaded.file);
+            const key=createHash('sha256').update(bytes).update(JSON.stringify({version:3,...spec,rate:cue.playbackRate||1,trimSilence:cue.trimSilence!==false,model:keys.geminiModel||process.env.GEMINI_MODEL})).digest('hex');
+            const saved=path.join(reviewDir,key+'.json');
+            try{const cached=await json(saved);if(cached.version===3&&cached.verdict)return cached.verdict;}catch{}
+            const renderSlice=start=>command(process.env.FFMPEG_PATH||'ffmpeg',['-v','error','-i',loaded.file,'-af',`atrim=start=${start},${cue.trimSilence!==false?'silenceremove=start_periods=1:start_duration=0.005:start_threshold=-40dB:start_silence=0.005,':''}atrim=duration=${cue.duration},asetpts=PTS-STARTPTS,aresample=48000,asetrate=${48000*(cue.playbackRate||1)},aresample=48000,apad,atrim=duration=${cue.duration}`,'-ac','1','-f','mp3','pipe:1'],{signal,binary:true});
+            const verdict=await reviewSoundForCue(bytes,spec,keys,signal,fetch,renderSlice);
+            await atomic(saved,{version:3,verdict});return verdict;
+          };
+          const resolved=await resolveSoundWithFallback({query:cue.query,role:cue.role,duration:cue.duration,sourceStart:cue.sourceStart||0,signal,search,load,review,progress,maxAttempts:6},reports=>planSoundFallback({query:cue.query,role:cue.role,story:plan.sourceIdea||plan.story,scene:s.summary,intents:s.beats.filter(b=>b.start<=cue.start+cue.duration&&b.start+b.duration>=cue.start).map(b=>b.intent),reports},keys,signal));
+          item=resolved.item;file=resolved.file;reviewedStart=resolved.sourceStart;
+          await atomic(path.join(dir,`sound-review-${si}-${cueIndex}.json`),{query:cue.query,selectedQuery:resolved.selectedQuery||cue.query,substitutionReason:resolved.substitutionReason,sourceStart:reviewedStart,reports:resolved.reports});
+        }else{item=await search({});file=(await load(item)).file;}
       }
       }catch(error){
-        if(signal?.aborted||cue.required!==false||!/No CC0 Freesound match/.test(error.message))throw error;
+        if(error.soundReviews)await atomic(path.join(dir,`sound-review-${si}-${cueIndex}.json`),{query:cue.query,reports:error.soundReviews,accepted:false});
+        if(signal?.aborted||cue.required!==false||!/No (?:CC0 Freesound match|acoustically matching CC0 Freesound recording)/.test(error.message))throw error;
         warnings.push({sceneId:s.id,query:cue.query,reason:'No matching CC0 recording'});progress('Optional sound unavailable: '+cue.query);continue;
       }
       assertSfxLicense(plan,item);
       let prepared=false;
       if(cue.actorId && cue.role==='nonverbal'){
         const processed=path.join(dir,`vocal-${si}-${cueIndex}.wav`);
-        await command(process.env.FFMPEG_PATH||'ffmpeg',['-y','-v','error','-i',file,'-af',`atrim=start=${cue.sourceStart||0},${cue.trimSilence!==false?'silenceremove=start_periods=1:start_threshold=-40dB,':''}asetpts=PTS-STARTPTS,aresample=48000,asetrate=${48000*(cue.playbackRate||1)},aresample=48000,apad,atrim=duration=${cue.duration}`,'-ac','1',processed],{signal});
+        await command(process.env.FFMPEG_PATH||'ffmpeg',['-y','-v','error','-i',file,'-af',`atrim=start=${reviewedStart??cue.sourceStart??0},${cue.trimSilence!==false?'silenceremove=start_periods=1:start_threshold=-40dB,':''}asetpts=PTS-STARTPTS,aresample=48000,asetrate=${48000*(cue.playbackRate||1)},aresample=48000,apad,atrim=duration=${cue.duration}`,'-ac','1',processed],{signal});
         file=processed;prepared=true;s.sounds[cueIndex].mouthCues=await audioEnvelope(file,signal);
       }
       const cueStart=sceneFrameTime(plan,si,cue.start),
         cueDuration=Math.min(cue.duration,Math.max(0,sceneEnd-cueStart));
       if(cueDuration<=0)continue;
+      selections.push({sceneId:s.id,cueIndex,query:cue.query,role:cue.role||'effect',actorId:cue.actorId,
+        source:bundled&&cue.fixture?'bundled-freesound':'live-freesound',id:item.id,page:item.url||item.page,license:item.license,
+        sourceStart:reviewedStart??cue.sourceStart??0,start:cueStart,duration:cueDuration,playbackRate:cue.playbackRate||1,volume:cue.volume,trimSilence:cue.trimSilence!==false});
       inputs.push({
         file,
         start: cueStart,
         duration: cueDuration,
         volume: cue.volume,
         playbackRate:prepared?1:cue.playbackRate||1,
-        sourceStart: prepared?0:cue.sourceStart || 0,
+        sourceStart: prepared?0:reviewedStart??cue.sourceStart??0,
         pan: cue.pan || 0,
         trimSilence: prepared?false:cue.trimSilence !== false,
       });
@@ -193,6 +217,7 @@ export async function buildAudio(
   credits = [...new Map(credits.map((c) => [c.id || c.page, c])).values()];
   await atomic(path.join(dir, "sound-credits.json"), credits);
   await atomic(path.join(dir,"sound-warnings.json"),warnings);
+  await atomic(path.join(dir,'sound-selection.json'),selections);
   return { audio: output, credits, warnings };
 }
 

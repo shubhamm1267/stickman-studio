@@ -183,7 +183,7 @@
                         download>Thumbnail</a></div><img *ngIf="!videoExpired()" class="thumbnail"
                     [src]="file('thumbnail.png')" alt="Generated thumbnail">
                 <div class="downloads"><a
-                        *ngFor="let f of ['creator-pack.json','description.txt','plan.json','sound-credits.json','render-report.json','encoded-quality-report.json','video-review.json','quality-report.json']"
+                        *ngFor="let f of ['creator-pack.json','description.txt','plan.json','sound-credits.json','sound-selection.json','production-state.json','render-report.json','encoded-quality-report.json','video-review.json','quality-report.json']"
                         [href]="downloadFile(f)" download>{{f}} ↓</a></div>
             </article>
             <article class="panel" *ngIf="active()?.result?.seo as seo">

@@ -1,0 +1,147 @@
+{
+  "visualSpec": {
+    "renderMode": "replace",
+    "silhouetteFamily": "custom-vector",
+    "geometryRecipe": [
+      {
+        "id": "centralStem",
+        "kind": "group",
+        "children": [
+          {
+            "kind": "path",
+            "d": "M -5,10 C -8,15 -6,22 0,20 C 6,22 8,15 5,10 C 3,5 -3,5 -5,10 Z",
+            "fill": "#8B5A2B",
+            "stroke": "#222222",
+            "width": 1.5
+          }
+        ]
+      },
+      {
+        "id": "firstSkinFlap",
+        "kind": "group",
+        "children": [
+          {
+            "kind": "path",
+            "d": "M -5,10 C -20,12 -50,5 -70,-10 C -60,-5 -30,2 -5,10 Z",
+            "fill": "#FFFDD0",
+            "stroke": "#222222",
+            "width": 1.5
+          },
+          {
+            "kind": "path",
+            "d": "M -5,10 C -20,18 -55,10 -70,-10 C -55,-2 -20,5 -5,10 Z",
+            "fill": "#FFDB58",
+            "stroke": "#222222",
+            "width": 1.5
+          }
+        ]
+      },
+      {
+        "id": "secondSkinFlap",
+        "kind": "group",
+        "children": [
+          {
+            "kind": "path",
+            "d": "M 5,10 C 25,20 60,35 75,20 C 65,15 40,10 5,10 Z",
+            "fill": "#FFFDD0",
+            "stroke": "#222222",
+            "width": 1.5
+          },
+          {
+            "kind": "path",
+            "d": "M 5,10 C 30,30 70,45 75,20 C 70,5 35,5 5,10 Z",
+            "fill": "#FFDB58",
+            "stroke": "#222222",
+            "width": 1.5
+          }
+        ]
+      },
+      {
+        "id": "thirdSkinFlap",
+        "kind": "group",
+        "children": [
+          {
+            "kind": "path",
+            "d": "M 0,10 C -5,-20 0,-50 15,-70 C 10,-45 5,-20 0,10 Z",
+            "fill": "#FFFDD0",
+            "stroke": "#222222",
+            "width": 1.5
+          },
+          {
+            "kind": "path",
+            "d": "M 0,10 C 10,-25 15,-55 15,-70 C 5,-45 -5,-20 0,10 Z",
+            "fill": "#FFDB58",
+            "stroke": "#222222",
+            "width": 1.5
+          }
+        ]
+      }
+    ],
+    "normalizedDimensions": {
+      "width": 100,
+      "height": 100
+    },
+    "material": "flat",
+    "paint": {},
+    "palette": [],
+    "facialComponents": [],
+    "apparel": [],
+    "accessories": [],
+    "decorativeMarks": [],
+    "proceduralComponents": [],
+    "motionAnchors": [
+      {
+        "id": "grip",
+        "position": [
+          0,
+          15
+        ]
+      },
+      {
+        "id": "base",
+        "position": [
+          0,
+          -10
+        ]
+      },
+      {
+        "id": "support",
+        "position": [
+          0,
+          10
+        ]
+      }
+    ],
+    "zIndex": 0
+  },
+  "features": [
+    {
+      "featureIndex": 0,
+      "feature": "Contrasting pale cream inner surfaces against textured outer yellow skin",
+      "nodeIds": [
+        "firstSkinFlap",
+        "secondSkinFlap",
+        "thirdSkinFlap"
+      ],
+      "nativeProperties": []
+    },
+    {
+      "featureIndex": 1,
+      "feature": "Curling tapering tips that twist toward the floor",
+      "nodeIds": [
+        "firstSkinFlap",
+        "secondSkinFlap",
+        "thirdSkinFlap"
+      ],
+      "nativeProperties": []
+    },
+    {
+      "featureIndex": 2,
+      "feature": "Connected sturdy brown stem at the center junction",
+      "nodeIds": [
+        "centralStem"
+      ],
+      "nativeProperties": []
+    }
+  ]
+}

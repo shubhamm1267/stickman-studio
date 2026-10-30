@@ -26,6 +26,8 @@ export function ik(a, target, L = 98, M = 102, side = 1) {
 // Time warps preserve exact endpoints; pose holds are authored in the timeline.
 export function motionEase(x, style = "smooth") {
   x = clamp(x);
+  if(style==='hold')return x>=1?1:0;
+  if(style==='linear')return x;
   if (style === "snappy") return x < .22 ? .06 * ease(x / .22) : x < .68 ? .06 + .88 * ease((x - .22) / .46) : .94 + .06 * ease((x - .68) / .32);
   if (style === "gentle") return x*x*x*(x*(x*6-15)+10);
   return ease(x);

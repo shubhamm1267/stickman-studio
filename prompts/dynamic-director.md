@@ -7,6 +7,14 @@ brand-accurate or photorealistic result without visual evidence. Do not silently
 substitute an existing car, man, or animal for an explicitly requested design.
 
 Design uses VisualSpec geometryRecipe with path, ellipse, roundedRect, polygon,
+For every object, first establish its recognizable outer silhouette, then its
+distinctive structural features, then sparse interior detail. Color alone is
+not identity. Preserve the requested object state: whole fruit, peeled fruit
+and discarded skin are separate designs. Avoid featureless blobs, unrelated
+triangles or circles that require a label to explain them. Handles, openings,
+hinges, rims, seams and proportions must match the described object. Keep
+essential details readable at the final on-screen size. Use a consistent ink
+outline with restrained shading and original artwork.
 line, curve and nested group nodes. Use explicit identifiable features and stable
 unique part IDs. No executable JS, URLs, raw SVG, text pretending to be geometry,
 or image-generation API. At most 100 total nodes per visual, 4 nested group levels.
@@ -16,6 +24,14 @@ hip -170, shoulders about -280, head -405. Stage is x0..540, floor y780.
 
 renderMode=overlay decorates the existing human/animal/prop renderer.
 renderMode=replace hides the native drawing and renders your complete geometry.
+For ordinary human silhouettes, prefer overlay with geometryRecipe:[] and map
+native appearance features through nativeProperties. The native rig already
+draws a complete face/body and supplies continuous gaze, eyelids and mouth acting.
+Empty geometry is valid when native properties supply the required appearance.
+Add geometry only for requested clothing/accessories or distinguishing marks.
+Do not switch a normal human to static replacement art to evade duplicate-body
+checks: replacement faces require real animated parts for every requested facial
+change. Custom silhouettes/creatures may use replacement art with those tracks.
 For replacement humans, root/head/torso/leftHand/rightHand/leftFoot/rightFoot group
 bone bindings follow the evaluated native pose. A bone-bound group uses offsets
 relative to that bone; do not double-add root/head coordinates. For a custom
@@ -39,6 +55,18 @@ Scene-specific tracks override an unscoped default. Avoid ambiguous duplicate tr
 For each scene return its ordinary Scene plus partTracks entries linking entityId
 and nodeId to one animation track. Never rename part IDs during choreography.
 Whole actor motion uses perform keyframes; their at values ARE normalized 0..1.
+Treat every interaction as approach, contact, ownership change, release and
+settle. Use pick to actually acquire an object; reach only touches it. A flying
+prop must release its hand ownership before its free motion starts. Head landing
+requires a timed head attachment and an approach arc ending at that same point.
+Show the cause before the consequence. Keep the second trap visible to the
+audience while the actor looks at the first. Do not replace visible mechanics
+with a beat intent or a reaction pose.
+For human acting, lead with the eyes, then head, then torso. Use asymmetric
+brows, a readable anticipation hold, fast contact, and a delayed reaction.
+Reserve large squash and mouth shapes for impacts and surprise; allow quiet
+holds between them. Do not move every control in every frame. Keep support
+feet planted during a reach and avoid simultaneous contradictory actions.
 Whole prop movement uses scene.motions; part motion uses group animation. These
 are different channels. Include actual motion for every physical event; intention
 or labels are not execution. Scene beats must still account for the event timing.
@@ -94,6 +122,24 @@ Requirements without action codes describe visible states; they do not require
 an object or character to move merely to prove that it is present.
 
 SUPPORTED ACTING CONTRACT (degrees, actor-local points, stage-y-down floor):
+Background presets are drawable scenery, not plain colors: room/kitchen add
+windows and furniture, and office adds windows and a clock. For an explicitly
+blank or empty backdrop choose background:"custom" with backgroundNodes:[],
+which retains only the stage floor. Never invent room decorations for a blank
+paper setting. Keep plain character clothing when no costume is requested.
+The performance direction supplied with a scene is an executable contract, not
+optional prose. Keep event actor/prop references, action windows and ownership
+results. Use supported equivalent pose/face keys for idle/react states; a pickup
+still needs a real grip and a drop needs a release. Match native contact phases
+to the action duration. Do not declare planted support during a slip or jump.
+Carry the supplied actual end-state receipt across continuous cuts. Do not
+invent a time jump merely to hide a discontinuity. Camera contact and reaction
+intents must retain their planned order. Supplied object behavior limits apply
+to the existing named parts; do not redraw the object to evade a motion limit.
+For elastic ink style, use a paper-colored face interior and dark outlines by
+default, preserving any explicitly requested skin/complexion. Dark ink is not
+the default human skin fill. Expressiveness must come from poses, gaze, eyelids,
+brows and mouth shapes, with a readable delayed reaction and a final hold.
 For supported bows use perform keyframes with spineAngle -75..75, hip weight shifts and constraints:[{kind:"plant",points:["leftFoot","rightFoot"],floorY:<world floor>}]. bodyAngle rotates the global root and is for airborne/falling actions, never a planted bow. spineAngle moves the torso neck and implicit head together. Do not also author head positions unless deliberate. Plant constraints lock horizontal world foot anchors and floor height; hip-to-foot distance must remain below 172 actor-local units. Hand reach is at most 200 local units. Use stable bend directions and avoid targets passing directly through a shoulder. perform.pose supplies static channels; never duplicate their ownership in keyframes or combine pose with motionTrackId. mouthOpen is a legacy alias for absolute mouthAperture (0 closed, 1 open), not a multiplicative scale. Prefer mouthAperture; do not supply both. Keep anticipation, contact, recoil and recovery as separate normalized key times; hold intentional expressions with repeated values. Elastic meme: use strong face shapes, open/point hands, headScale within [.7,1.3], eye lead, snappy action segments, and deliberate holds. Plan a full-body establishing/contact shot followed by a face reaction close-up, keeping critical contacts visible. Native humanoid drawing has a dedicated elastic face. Use custom replacement geometry only for genuinely different anatomy; preserve its design across scenes.
 
 Shots may specify intent: establishing, contact, reaction, payoff. For a native elastic reaction shot set actorIds to the single reacting character; the compiler centers the face while preserving shot timing and zoom. Contact shots should focus on actual contact, not a face. Explicit key timing is preserved; unspecified elastic performance segments compile to snappy easing. Repeated identical keys remain holds.

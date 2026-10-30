@@ -21,9 +21,11 @@ test("browser discovery searches PATH for an executable Chromium command", async
       mkdir(first, {recursive: true}),
       mkdir(second, {recursive: true}),
     ]);
-    const notExecutable = path.join(first, "chromium");
-    const executable = path.join(second, "chromium");
-    await writeFile(notExecutable, "not executable");
+    const command = process.platform === "win32" ? "chromium.exe" : "chromium";
+    const notExecutable = path.join(first, command);
+    const executable = path.join(second, command);
+    if(process.platform === 'win32')await mkdir(notExecutable);
+    else await writeFile(notExecutable, "not executable");
     await writeFile(executable, "chromium test stub");
     await chmod(executable, 0o755);
     assert.equal(findBrowserOnPath(`${first}${path.delimiter}${second}`), executable);

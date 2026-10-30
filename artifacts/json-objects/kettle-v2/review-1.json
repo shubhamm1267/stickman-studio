@@ -1,0 +1,27 @@
+{
+  "recognizable": true,
+  "missingDetails": [],
+  "repair": "",
+  "featureEvidence": [
+    {
+      "featureIndex": 0,
+      "visible": true,
+      "evidence": "Horizontal white decorative stripes across the body following its curvature are present."
+    },
+    {
+      "featureIndex": 1,
+      "visible": true,
+      "evidence": "There is a clear junction where the upward-angled spout meets the right side of the body."
+    },
+    {
+      "featureIndex": 2,
+      "visible": true,
+      "evidence": "A closed fitted lid with a centered small spherical knob sits on top of the kettle."
+    },
+    {
+      "featureIndex": 3,
+      "visible": true,
+      "evidence": "An arched structural handle is positioned on the left side, opposite the pouring spout."
+    }
+  ]
+}

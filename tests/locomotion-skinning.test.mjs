@@ -56,6 +56,23 @@ test('generated reactions with executable keys become performances, empty metada
  const scene=normalizeDirectedScene(raw).scene;
  assert.equal(scene.cast[0].id,undefined);assert.equal(scene.beats[0].kind,'perform');assert.equal(scene.beats[0].keyframes[0].pose.eyeOpen,1);assert.equal(scene.beats[1].keyframes,undefined);assert.equal(scene.beats[1].constraints,undefined);assert.equal(raw.scene.beats[0].kind,'react');
 });
+test('generated contact metadata on native actions and empty performances remain executable',async()=>{
+ const {normalizeDirectedScene}=await import('../shared/normalize-directed-scene.mjs');
+ const raw={scene:{cast:[{characterId:'ramesh',x:300,y:780,facing:1}],beats:[
+   {kind:'pick',actorId:'ramesh',targetActorId:'ramesh',contactAt:.5,duration:1},
+   {kind:'perform',contactAt:.7,duration:1,keyframes:[],pose:{headAngle:10}},
+   {kind:'perform',duration:1,keyframes:[{at:.5,pose:{headAngle:0}},{at:.5,pose:{headAngle:10}}]},
+   {kind:'slip',actorId:'ramesh',start:1,duration:1,intent:'He steps on the peel behind him and slips.'}
+ ],sounds:[{beatIndex:0,syncTo:'contact',start:.7,query:'rustle'}]}};
+ const scene=normalizeDirectedScene(raw).scene,beats=scene.beats;
+ assert.equal(beats[0].kind,'pick');assert.equal(beats[0].contactAt,undefined);assert.equal(beats[0].targetActorId,undefined);
+ assert.equal(beats[1].kind,'custom');assert.equal(beats[1].contactAt,undefined);
+ assert.equal(beats[1].pose.headAngle,10);
+ assert.deepEqual(beats[2].keyframes.map(k=>k.at),[0,.5,1]);
+ assert.deepEqual(beats[3].to,[200,780]);
+ assert.equal(scene.sounds[0].beatIndex,undefined);assert.equal(scene.sounds[0].syncTo,undefined);assert.equal(scene.sounds[0].start,.7);
+ assert.equal(raw.scene.beats[0].contactAt,.5);
+});
 test('dynamic camera fitting keeps native heads inside the frame while preserving shot timing and focus',async()=>{
  const {fitDynamicCameras}=await import('../shared/dynamic-framing.mjs');
  const p=dynamicFixture();p.scenes[0].cast[0].scale=1;p.scenes[0].shots=[{start:0,end:10,focus:[60,720],zoom:1}];

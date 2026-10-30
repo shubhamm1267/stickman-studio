@@ -1,0 +1,27 @@
+{
+  "recognizable": false,
+  "missingDetails": [
+    "Contrasting pale cream inner surfaces against textured outer yellow skin",
+    "Curling tapering tips that twist toward the floor",
+    "Required visible feature 0: Contrasting pale cream inner surfaces against textured outer yellow skin",
+    "Required visible feature 1: Curling tapering tips that twist toward the floor"
+  ],
+  "repair": "Redraw the object as a discarded banana peel with a central brown stem and three thick, curved peeling strips showing inner pale flesh rather than flat maple samara wings.",
+  "featureEvidence": [
+    {
+      "featureIndex": 0,
+      "visible": false,
+      "evidence": "The flaps are rendered as flat yellow planar samara wings rather than thick banana peel skin with distinct pale inner surfaces."
+    },
+    {
+      "featureIndex": 1,
+      "visible": false,
+      "evidence": "The tips are simple pointed shapes rather than natural curling, twisting banana skin flaps pointing downward."
+    },
+    {
+      "featureIndex": 2,
+      "visible": true,
+      "evidence": "A brown central seed/stem-like body connects the three wing structures at the center."
+    }
+  ]
+}

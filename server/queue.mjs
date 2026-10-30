@@ -110,6 +110,17 @@ export class JobQueue {
     j.status='queued';j.message='Queued for detailed video review';j.progress=0;j.controller=new AbortController();j.task=task;j.keys=keys;j.reviewAttempts=(j.reviewAttempts||0)+1;delete j.error;delete j.result;delete j.finishedAt;
     await this.save(j);this.pending.push(j);void this.run();return this.public(id);
   }
+  async retryRender(id,task,keys={},request={}){
+    const j=this.jobs.get(id);
+    if(!j||j.kind!=='render'||!['failed','interrupted','cancelled'].includes(j.status))throw Error('Only an unsuccessful render can be resumed.');
+    if(this.pending.length>=8)throw Error('Queue is full.');
+    await this.cleanupTasks.get(id);
+    clearTimeout(this.expiryTimers.get(id));this.expiryTimers.delete(id);
+    delete j.videoExpiresAt;
+    Object.assign(j,{status:'queued',message:'Resuming saved render stages',progress:0,request,controller:new AbortController(),task,keys,attempts:(j.attempts||1)+1});
+    delete j.error;delete j.result;delete j.finishedAt;
+    await this.save(j);this.pending.push(j);void this.run();return this.public(id);
+  }
   async run() {
     if (this.busy) return;
     this.busy = true;
@@ -138,6 +149,7 @@ export class JobQueue {
           j.progress = j.status === "completed" ? 100 : j.progress;
           j.message = j.status === "completed" ? "Ready" : "Cancelled";
         } catch (e) {
+          if(e.generatedValue)await atomic(path.join(this.root,j.id,'generation-failure.json'),{message:redact(e.message,j.keys),issues:e.validationIssues||e.issues||[],generatedValue:e.generatedValue});
           if(e.generatedScore)await atomic(path.join(this.root,j.id,'direction-failure.json'),e.generatedScore);
           j.status = j.controller.signal.aborted ? "cancelled" : "failed";
           j.error = redact(e.message, j.keys);

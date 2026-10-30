@@ -326,6 +326,16 @@ export function normalizeDirectedScene(input) {
   // --------------------------------------------------
 
   for (const beat of value?.scene?.beats || []) {
+    // A model sometimes writes the acting character into targetActorId when
+    // it means a nearby prop. Self-targeting has no valid renderer meaning.
+    if (beat.targetActorId === beat.actorId) delete beat.targetActorId;
+    if (beat.kind === 'slip' && !beat.to) {
+      const actor = value.scene.cast?.find(c => c.characterId === beat.actorId);
+      const direction = /\b(back|backward|behind)\b/i.test(beat.intent || '') ? -1
+        : /\b(forward|ahead)\b/i.test(beat.intent || '') ? 1 : 0;
+      if (actor && Number.isFinite(actor.x) && Number.isFinite(actor.y) && direction)
+        beat.to = [actor.x + direction * (actor.facing === -1 ? -100 : 100), actor.y];
+    }
     // Normalize standalone pose values.
 
     normalizePoseValues(beat.pose);
@@ -341,33 +351,35 @@ export function normalizeDirectedScene(input) {
     // -----------------------------------------------
 
     if (beat.kind !== "perform") {
-      // Remove empty keyframe arrays.
-
-      if (
-        Array.isArray(beat.keyframes) &&
-        beat.keyframes.length === 0
-      ) {
-        delete beat.keyframes;
-      }
-
-      // Remove empty constraint arrays.
-
-      if (
-        Array.isArray(beat.constraints) &&
-        beat.constraints.length === 0
-      ) {
-        delete beat.constraints;
-      }
-
-      // Beats with actual performance keyframes
-      // must be handled as perform beats.
-
-      if (
-        ["react", "idle", "custom"].includes(beat.kind) &&
-        beat.keyframes?.length
-      ) {
+      // These three gestures can execute explicit generated acting keys.
+      // Native actions (walk, jump, slip, pick...) already have their own
+      // animation and must retain their actual action identity.
+      const canBecomePerformance = ["react", "idle", "custom"].includes(beat.kind);
+      const hasKeys = Array.isArray(beat.keyframes) && beat.keyframes.length > 0;
+      if (canBecomePerformance && hasKeys) {
         beat.kind = "perform";
+      } else {
+        // Generated motion fields on a native beat have no executable effect.
+        // Remove those unsupported extras instead of changing or dropping
+        // the actual native story action.
+        delete beat.keyframes;
+        delete beat.constraints;
+        delete beat.motionTrackId;
       }
+      // Native actions already define their own contact timing. A generated
+      // contactAt on one of those beats has no executable performance meaning.
+      if (beat.kind !== "perform") delete beat.contactAt;
+    }
+
+    // An empty generated performance is a pose/hold, not a motion track.
+    // Keep its visible pose and let coverage review request real motion when
+    // the story event actually needs it.
+    if (beat.kind === "perform" && !beat.motionTrackId &&
+        (!Array.isArray(beat.keyframes) || beat.keyframes.length === 0)) {
+      beat.kind = beat.pose ? "custom" : "idle";
+      delete beat.keyframes;
+      delete beat.constraints;
+      delete beat.contactAt;
     }
 
     // -----------------------------------------------
@@ -375,6 +387,27 @@ export function normalizeDirectedScene(input) {
     // -----------------------------------------------
 
     normalizePerformanceKeyframes(beat);
+    // A duplicate baseline matching the first animated value has one clear
+    // owner. Remove only that redundant standalone channel; conflicting
+    // initial values still require explicit repair rather than guessing.
+    if(beat.kind==='perform'&&beat.pose&&beat.keyframes?.[0]?.at===0){
+      const first=beat.keyframes[0].pose;
+      for(const channel of Object.keys(beat.pose))if(Object.hasOwn(first,channel)&&JSON.stringify(first[channel])===JSON.stringify(beat.pose[channel]))delete beat.pose[channel];
+      if(!Object.keys(beat.pose).length)delete beat.pose;
+    }
+  }
+
+  // Keep the explicit cue time when the chosen beat has no engine contact
+  // event. A fabricated contact would move the SFX to an unrelated frame.
+  const contactKinds = new Set(['punch','drink','perform','throw','pawPress','slip','roar','swat','tap','sneeze','fart','scoot','pullPaper','wrap','tearFree','openDoor']);
+  for (const cue of value?.scene?.sounds || []) {
+    if (cue.syncTo !== 'contact' || !Number.isInteger(cue.beatIndex)) continue;
+    const beat = value.scene.beats?.[cue.beatIndex];
+    if (beat && (!contactKinds.has(beat.kind) ||
+        (beat.kind === 'perform' && beat.contactAt === undefined))) {
+      delete cue.syncTo;
+      delete cue.beatIndex;
+    }
   }
 
   return value;

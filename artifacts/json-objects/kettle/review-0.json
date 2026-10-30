@@ -1,0 +1,27 @@
+{
+  "recognizable": true,
+  "missingDetails": [],
+  "repair": "",
+  "featureEvidence": [
+    {
+      "featureIndex": 0,
+      "visible": true,
+      "evidence": "Distinct curved spout projects from the right side with an open angled tip."
+    },
+    {
+      "featureIndex": 1,
+      "visible": true,
+      "evidence": "High arching metal handle spans overhead above the lid."
+    },
+    {
+      "featureIndex": 2,
+      "visible": true,
+      "evidence": "Removable lid with a central lifting knob is visible on the top surface."
+    },
+    {
+      "featureIndex": 3,
+      "visible": true,
+      "evidence": "Curved white highlight lines indicate a rounded, reflective metallic body."
+    }
+  ]
+}

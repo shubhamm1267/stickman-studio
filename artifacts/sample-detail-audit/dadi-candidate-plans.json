@@ -1,0 +1,2248 @@
+[
+  {
+    "file": "C:\\Users\\Shree\\Downloads\\StickLaugh_Studio_V9.1_Fixed\\StickLaughStudio\\data\\jobs\\1b573478-5ad2-45cb-9ba4-3f78ea2ae680\\plan.json",
+    "title": "Superman vs. The Jar #Shorts",
+    "story": "Superman hai woh bodybuilder hai lekin woh jar kholne ki soshish kar raha hai lekin nahi khul raha tha ok phir ek budha aya aur usne turant jar khol diya aur hasne laga uspr aur kuch usko bola bhi majak udhaya superman ka superman ne phir ek puch diya usko woh budha pant mai hi hag diya.",
+    "seconds": 12,
+    "fps": 60,
+    "characters": [
+      {
+        "id": "superman",
+        "name": "Superman",
+        "rigVersion": 2,
+        "kind": "man",
+        "artStyle": "toon",
+        "hairStyle": "tuft",
+        "faceShape": "square",
+        "costume": "superhero",
+        "build": "broad",
+        "capeColor": "#cc2222",
+        "bootColor": "#cc2222",
+        "wardrobe": "suit",
+        "accessory": "none",
+        "skin": "#fbe5c8",
+        "outfit": "#2b4c7e",
+        "hair": "#222222",
+        "headWidth": 1.1,
+        "headHeight": 1,
+        "voiceId": "en-US-Standard-B"
+      },
+      {
+        "id": "oldman",
+        "name": "Old Man",
+        "rigVersion": 2,
+        "kind": "grandma",
+        "artStyle": "toon",
+        "hairStyle": "bald",
+        "faceShape": "round",
+        "costume": "everyday",
+        "build": "slim",
+        "wardrobe": "shirt",
+        "accessory": "glasses",
+        "skin": "#f3dec9",
+        "outfit": "#888888",
+        "hair": "#dddddd",
+        "headWidth": 0.9,
+        "headHeight": 1,
+        "voiceId": "en-US-Standard-C"
+      }
+    ],
+    "props": [
+      {
+        "id": "jamJar",
+        "type": "jar"
+      }
+    ],
+    "beatCount": 7,
+    "shots": 3,
+    "review": {
+      "method": "gemini",
+      "planHash": "1f3d25507b0b5a01171a0376b0b878c4b496e02fd055c6f452d43590f9649ee2",
+      "summary": "Superman struggles with all his might to open a stubborn jam jar, but fails completely. An old man walks up, effortlessly opens it with a single twist, and mocks Superman. In retaliation, Superman unleashes a powerful fart, leaving the old man in shock and soiling his pants."
+    },
+    "request": {
+      "options": {
+        "productionMode": "dialogue-toon",
+        "strictStoryAudit": true,
+        "directionMode": "semantic",
+        "artStyle": "toon",
+        "story": "superman hai woh bodybuilder hai lekin woh jar kholne ki soshish kar raha hai lekin nahi khul raha tha ok phir ek budha aya aur usne turant jar khol diya aur hasne laga uspr aur kuch usko bola bhi majak udhaya superman ka superman ne phir ek puch diya usko woh budha pant mai hi hag diya",
+        "format": "shorts",
+        "duration": 20,
+        "durationMode": "auto",
+        "renderFps": 60,
+        "language": "hi",
+        "voice": true,
+        "humorProfile": "clean"
+      }
+    },
+    "createdAt": "2026-10-23T10:34:48.189Z"
+  },
+  {
+    "file": "C:\\Users\\Shree\\Downloads\\StickLaugh_Studio_V9.1_Fixed\\StickLaughStudio\\data\\jobs\\2a616b0a-5330-4afd-9690-a386e0195b48\\plan.json",
+    "title": "Superman vs The Apple Jar #Shorts",
+    "story": "Superman, a mighty bodybuilder superhero, tries desperately to open a jar filled with apples. Despite his immense strength, the lid won't budge at all. Suddenly, an old man walks by, easily opens the jar with a single casual touch, and mocks Superman, laughing at his failure. Angered by the mockery, Superman punches the old man, causing him to instantly poop his pants.",
+    "seconds": 12,
+    "fps": 60,
+    "characters": [
+      {
+        "id": "superman",
+        "name": "Superman",
+        "rigVersion": 2,
+        "kind": "man",
+        "artStyle": "toon",
+        "hairStyle": "sidepart",
+        "faceShape": "square",
+        "costume": "superhero",
+        "build": "broad",
+        "capeColor": "#e74c3c",
+        "bootColor": "#2980b9",
+        "wardrobe": "suit",
+        "accessory": "none",
+        "skin": "#fbe7c6",
+        "outfit": "#3498db",
+        "hair": "#2c3e50",
+        "headWidth": 1,
+        "headHeight": 1,
+        "voiceId": "en-US-Standard-B"
+      },
+      {
+        "id": "oldMan",
+        "name": "Old Man",
+        "rigVersion": 2,
+        "kind": "man",
+        "artStyle": "toon",
+        "hairStyle": "bald",
+        "faceShape": "round",
+        "costume": "everyday",
+        "build": "slim",
+        "wardrobe": "shirt",
+        "accessory": "glasses",
+        "skin": "#f5cba7",
+        "outfit": "#7f8c8d",
+        "hair": "#bdc3c7",
+        "headWidth": 1.1,
+        "headHeight": 0.9,
+        "voiceId": "en-US-Standard-C"
+      }
+    ],
+    "props": [
+      {
+        "id": "appleJar",
+        "type": "jar"
+      }
+    ],
+    "beatCount": 11,
+    "shots": 6,
+    "review": {
+      "method": "gemini",
+      "planHash": "91d068a8864cd749b6a074a92dc3a97291b21e0d4a216eab63a8b1855ea06f13",
+      "summary": "Superman fails to open an apple jar despite his mighty superhero strength. An old man easily pops it open with one finger and mocks him, leading Superman to punch the old man and cause him to soil his pants."
+    },
+    "request": {
+      "plan": {
+        "durationMode": "auto",
+        "renderFps": 60,
+        "productionMode": "dialogue-toon",
+        "humorProfile": "clean",
+        "hook": {
+          "sceneId": "scene1",
+          "beatIndices": [
+            0,
+            1
+          ],
+          "start": 0,
+          "end": 2,
+          "evidence": "Superman strains with all his might trying to open a simple apple jar, his muscles bulging uselessly."
+        },
+        "comedy": {
+          "hook": "Superman, the ultimate bodybuilder hero, struggles fiercely to open an apple-filled jar.",
+          "goal": "Superman wants to open the apple jar to eat its contents.",
+          "escalation": [
+            "Superman pulls and twists the jar lid with maximum superhero strength, but it refuses to budge.",
+            "An old man wanders over casually, chuckles at the struggling hero, and effortlessly pops the lid open with one bare finger.",
+            "The old man mocks Superman openly, laughing right in his face."
+          ],
+          "payoff": "Humiliated, Superman delivers a sudden punch to the old man, causing the old man to instantly poop his pants from the shock.",
+          "callback": "The mighty hero stands victorious over a very embarrassed, pants-soiled old man with the opened apple jar."
+        },
+        "title": "Superman vs The Apple Jar #Shorts",
+        "story": "Superman, a mighty bodybuilder superhero, tries desperately to open a jar filled with apples. Despite his immense strength, the lid won't budge at all. Suddenly, an old man walks by, easily opens the jar with a single casual touch, and mocks Superman, laughing at his failure. Angered by the mockery, Superman punches the old man, causing him to instantly poop his pants.",
+        "sourceIdea": "superman hai woh bodybuilder hai lekin woh apple se bhara hua jar kholne ki koshish kar raha hai lekin nahi khul raha tha ok phir ek budha aya aur usne turant jar khol diya aur hasne laga uspr aur kuch usko bola bhi majak udhaya superman ka superman ne phir ek punch diya budhe ko aur woh budha pant mai hi hag diya",
+        "requirements": [
+          {
+            "description": "Superman tries to open the apple jar using brute force",
+            "sceneId": "scene1",
+            "characterId": "superman",
+            "propId": "appleJar",
+            "color": "#e74c3c",
+            "action": "struggle"
+          },
+          {
+            "description": "Old man walks to Superman",
+            "sceneId": "scene2",
+            "characterId": "oldMan",
+            "action": "walk"
+          },
+          {
+            "description": "Old man opens the jar easily",
+            "sceneId": "scene2",
+            "characterId": "oldMan",
+            "propId": "appleJar",
+            "color": "#e74c3c",
+            "action": "open"
+          },
+          {
+            "description": "Old man laughs at Superman",
+            "sceneId": "scene2",
+            "characterId": "oldMan",
+            "action": "laugh"
+          },
+          {
+            "description": "Old man talks to mock Superman",
+            "sceneId": "scene2",
+            "characterId": "oldMan",
+            "action": "talk"
+          },
+          {
+            "description": "Superman punches the old man",
+            "sceneId": "scene3",
+            "characterId": "superman",
+            "action": "punch"
+          },
+          {
+            "description": "Old man farts from the punch impact",
+            "sceneId": "scene3",
+            "characterId": "oldMan",
+            "action": "fart"
+          }
+        ],
+        "characters": [
+          {
+            "id": "superman",
+            "name": "Superman",
+            "rigVersion": 2,
+            "kind": "man",
+            "artStyle": "toon",
+            "hairStyle": "sidepart",
+            "faceShape": "square",
+            "costume": "superhero",
+            "build": "broad",
+            "capeColor": "#e74c3c",
+            "bootColor": "#2980b9",
+            "wardrobe": "suit",
+            "accessory": "none",
+            "skin": "#fbe7c6",
+            "outfit": "#3498db",
+            "hair": "#2c3e50",
+            "headWidth": 1,
+            "headHeight": 1,
+            "voiceId": "en-US-Standard-B"
+          },
+          {
+            "id": "oldMan",
+            "name": "Old Man",
+            "rigVersion": 2,
+            "kind": "man",
+            "artStyle": "toon",
+            "hairStyle": "bald",
+            "faceShape": "round",
+            "costume": "everyday",
+            "build": "slim",
+            "wardrobe": "shirt",
+            "accessory": "glasses",
+            "skin": "#f5cba7",
+            "outfit": "#7f8c8d",
+            "hair": "#bdc3c7",
+            "headWidth": 1.1,
+            "headHeight": 0.9,
+            "voiceId": "en-US-Standard-C"
+          }
+        ],
+        "propDesigns": [
+          {
+            "gripOffset": [
+              0,
+              10
+            ],
+            "id": "appleJar",
+            "name": "Apple Jar",
+            "type": "jar",
+            "color": "#e74c3c",
+            "nodes": [
+              {
+                "kind": "ellipse",
+                "center": [
+                  0,
+                  0
+                ],
+                "radius": [
+                  30,
+                  45
+                ],
+                "fill": "#f39c12",
+                "stroke": "#c0392b",
+                "width": 2
+              }
+            ]
+          }
+        ],
+        "scenes": [
+          {
+            "id": "scene1",
+            "summary": "Superman strains and flexes, desperately trying to open a stubborn apple jar.",
+            "duration": 4,
+            "background": "gym",
+            "backgroundNodes": [],
+            "motions": [],
+            "cast": [
+              {
+                "rigVersion": 2,
+                "shadow": true,
+                "species": "man",
+                "characterId": "superman",
+                "initialPose": {
+                  "position": [
+                    270,
+                    780
+                  ],
+                  "muscle": 0.5
+                },
+                "emotion": "strain",
+                "x": 270,
+                "y": 780,
+                "scale": 1,
+                "facing": 1
+              }
+            ],
+            "props": [
+              {
+                "designId": "appleJar",
+                "open": 0,
+                "angle": 0,
+                "x": 270,
+                "y": 600,
+                "scale": 1
+              }
+            ],
+            "beats": [
+              {
+                "actorId": "superman",
+                "kind": "flex",
+                "start": 0,
+                "duration": 1,
+                "hand": "right",
+                "emotion": "strain",
+                "amount": 1,
+                "intent": "Superman flexes his muscles, preparing to open the jar."
+              },
+              {
+                "actorId": "superman",
+                "kind": "struggle",
+                "start": 1,
+                "duration": 2.5,
+                "targetId": "appleJar",
+                "hand": "both",
+                "emotion": "strain",
+                "amount": 1,
+                "intent": "Superman strains with all his might trying to open the apple jar."
+              },
+              {
+                "actorId": "superman",
+                "kind": "react",
+                "start": 3.5,
+                "duration": 0.5,
+                "hand": "right",
+                "emotion": "defeat",
+                "amount": 1,
+                "intent": "Superman reacts in frustration as the lid refuses to budge."
+              }
+            ],
+            "shots": [
+              {
+                "start": 0,
+                "end": 2,
+                "focus": [
+                  270,
+                  530
+                ],
+                "zoom": 1,
+                "detail": "full",
+                "actorIds": [
+                  "superman"
+                ]
+              },
+              {
+                "start": 2,
+                "end": 4,
+                "focus": [
+                  270,
+                  570
+                ],
+                "zoom": 1.7,
+                "detail": "hands",
+                "actorIds": [
+                  "superman"
+                ]
+              }
+            ],
+            "sounds": [
+              {
+                "playbackRate": 1,
+                "category": "mutter",
+                "role": "nonverbal",
+                "trimSilence": false,
+                "start": 1,
+                "query": "strain effort grunt",
+                "volume": 0.3,
+                "duration": 2.5,
+                "required": true,
+                "sourceStart": 0,
+                "pan": 0,
+                "fixture": "mutter-a"
+              },
+              {
+                "playbackRate": 1,
+                "actorId": "superman",
+                "role": "nonverbal",
+                "trimSilence": true,
+                "start": 1.1,
+                "query": "effort grunt",
+                "volume": 0.3,
+                "duration": 2.4,
+                "required": true,
+                "sourceStart": 0,
+                "pan": 0,
+                "fixture": "grunt"
+              }
+            ],
+            "dialogue": []
+          },
+          {
+            "id": "scene2",
+            "summary": "An old man walks up, pops the jar open instantly with one finger, and laughs mockingly.",
+            "duration": 4,
+            "background": "street",
+            "backgroundNodes": [],
+            "motions": [],
+            "cast": [
+              {
+                "rigVersion": 2,
+                "shadow": true,
+                "species": "man",
+                "characterId": "superman",
+                "initialPose": {
+                  "position": [
+                    270,
+                    780
+                  ],
+                  "sweat": 0,
+                  "blush": 0,
+                  "headScale": [
+                    1,
+                    1
+                  ],
+                  "eyeOpen": 1,
+                  "mouthOpen": 1,
+                  "handScale": 1,
+                  "leftWristAngle": 0,
+                  "gaze": [
+                    7,
+                    4
+                  ],
+                  "head": [
+                    0,
+                    -405
+                  ],
+                  "hip": [
+                    0,
+                    -160
+                  ],
+                  "leftHand": [
+                    -62,
+                    -130
+                  ],
+                  "rightHand": [
+                    62,
+                    -130
+                  ],
+                  "leftFoot": [
+                    -30,
+                    0
+                  ],
+                  "rightFoot": [
+                    35,
+                    0
+                  ],
+                  "wristAngle": 0,
+                  "bodyAngle": 0,
+                  "headAngle": -6,
+                  "muscle": 1
+                },
+                "emotion": "defeat",
+                "x": 270,
+                "y": 780,
+                "scale": 1,
+                "facing": 1
+              },
+              {
+                "rigVersion": 2,
+                "shadow": true,
+                "species": "man",
+                "characterId": "oldMan",
+                "initialPose": {
+                  "position": [
+                    50,
+                    780
+                  ],
+                  "sweat": 0,
+                  "blush": 0,
+                  "headScale": [
+                    1,
+                    1
+                  ],
+                  "eyeOpen": 1,
+                  "mouthOpen": 0,
+                  "handScale": 1,
+                  "leftWristAngle": 0,
+                  "gaze": [
+                    0,
+                    0
+                  ],
+                  "head": [
+                    0,
+                    -405
+                  ],
+                  "hip": [
+                    0,
+                    -160
+                  ],
+                  "leftHand": [
+                    -50,
+                    -100
+                  ],
+                  "rightHand": [
+                    50,
+                    -100
+                  ],
+                  "leftFoot": [
+                    -20,
+                    0
+                  ],
+                  "rightFoot": [
+                    20,
+                    0
+                  ],
+                  "wristAngle": 0,
+                  "bodyAngle": 0,
+                  "headAngle": 0,
+                  "muscle": 0.2
+                },
+                "emotion": "smug",
+                "x": 50,
+                "y": 780,
+                "scale": 1,
+                "facing": 1
+              }
+            ],
+            "props": [
+              {
+                "appearAt": 0,
+                "disappearAt": 4,
+                "designId": "appleJar",
+                "layer": "front",
+                "open": 0,
+                "angle": 0,
+                "x": 270,
+                "y": 600,
+                "scale": 1
+              }
+            ],
+            "beats": [
+              {
+                "actorId": "oldMan",
+                "kind": "walk",
+                "start": 0,
+                "duration": 1.2,
+                "to": [
+                  220,
+                  780
+                ],
+                "hand": "right",
+                "amount": 1,
+                "intent": "Old man walks casually toward Superman."
+              },
+              {
+                "actorId": "oldMan",
+                "kind": "open",
+                "start": 1.5,
+                "duration": 0.8,
+                "targetId": "appleJar",
+                "hand": "right",
+                "emotion": "smug",
+                "amount": 1,
+                "intent": "Old man effortlessly pops the jar open with one finger."
+              },
+              {
+                "actorId": "oldMan",
+                "kind": "laugh",
+                "start": 2.5,
+                "duration": 1.5,
+                "hand": "right",
+                "emotion": "laugh",
+                "amount": 1,
+                "intent": "Old man laughs mockingly at Superman's failure."
+              },
+              {
+                "actorId": "oldMan",
+                "kind": "talk",
+                "start": 2.5,
+                "duration": 1.5,
+                "hand": "right",
+                "emotion": "smug",
+                "amount": 1,
+                "intent": "Old man mocks Superman openly."
+              },
+              {
+                "actorId": "superman",
+                "kind": "react",
+                "start": 1.5,
+                "duration": 2.5,
+                "hand": "right",
+                "emotion": "shock",
+                "amount": 1,
+                "intent": "Superman watches in utter disbelief as the old man opens the jar instantly."
+              }
+            ],
+            "shots": [
+              {
+                "start": 0,
+                "end": 1.2,
+                "focus": [
+                  160,
+                  530
+                ],
+                "zoom": 1.2,
+                "detail": "full",
+                "actorIds": [
+                  "superman",
+                  "oldMan"
+                ]
+              },
+              {
+                "start": 1.2,
+                "end": 2.5,
+                "focus": [
+                  270,
+                  570
+                ],
+                "zoom": 1.8,
+                "detail": "hands",
+                "actorIds": [
+                  "superman",
+                  "oldMan"
+                ]
+              },
+              {
+                "start": 2.5,
+                "end": 4,
+                "focus": [
+                  160,
+                  530
+                ],
+                "zoom": 1.3,
+                "detail": "full",
+                "actorIds": [
+                  "superman",
+                  "oldMan"
+                ]
+              }
+            ],
+            "sounds": [
+              {
+                "playbackRate": 1,
+                "category": "steps",
+                "trimSilence": false,
+                "start": 0,
+                "query": "footsteps sidewalk",
+                "volume": 0.2,
+                "duration": 1.2,
+                "required": true,
+                "sourceStart": 0,
+                "pan": 0,
+                "fixture": "steps"
+              },
+              {
+                "playbackRate": 1,
+                "category": "plop",
+                "trimSilence": false,
+                "start": 1.5,
+                "query": "pop cork lid open",
+                "volume": 0.3,
+                "duration": 0.5,
+                "required": true,
+                "sourceStart": 0,
+                "pan": 0,
+                "fixture": "wet-plop"
+              },
+              {
+                "playbackRate": 1,
+                "category": "gibberish",
+                "trimSilence": false,
+                "start": 2.5,
+                "query": "evil chuckle laugh cartoon",
+                "volume": 0.25,
+                "duration": 1.5,
+                "required": true,
+                "sourceStart": 0,
+                "pan": 0,
+                "fixture": "scolding"
+              },
+              {
+                "playbackRate": 1,
+                "actorId": "oldMan",
+                "role": "nonverbal",
+                "trimSilence": true,
+                "start": 2.6,
+                "query": "cartoon laughter",
+                "volume": 0.3,
+                "duration": 1.4,
+                "required": true,
+                "sourceStart": 0,
+                "pan": 0
+              }
+            ],
+            "dialogue": [
+              {
+                "actorId": "oldMan",
+                "start": 2.6,
+                "text": "Ho ho! Even a baby could open this!"
+              }
+            ]
+          },
+          {
+            "id": "scene3",
+            "summary": "Superman punches the old man in retaliation, causing the old man to soil his pants.",
+            "duration": 4,
+            "background": "street",
+            "backgroundNodes": [],
+            "motions": [],
+            "cast": [
+              {
+                "rigVersion": 2,
+                "shadow": true,
+                "species": "man",
+                "characterId": "superman",
+                "initialPose": {
+                  "position": [
+                    270,
+                    780
+                  ],
+                  "sweat": 0,
+                  "blush": 0,
+                  "headScale": [
+                    1,
+                    1
+                  ],
+                  "eyeOpen": 1,
+                  "mouthOpen": 1,
+                  "handScale": 1,
+                  "leftWristAngle": 0,
+                  "gaze": [
+                    7,
+                    4
+                  ],
+                  "head": [
+                    0,
+                    -405
+                  ],
+                  "hip": [
+                    0,
+                    -160
+                  ],
+                  "leftHand": [
+                    -62,
+                    -130
+                  ],
+                  "rightHand": [
+                    62,
+                    -130
+                  ],
+                  "leftFoot": [
+                    -30,
+                    0
+                  ],
+                  "rightFoot": [
+                    35,
+                    0
+                  ],
+                  "wristAngle": 0,
+                  "bodyAngle": 0,
+                  "headAngle": -6,
+                  "muscle": 1
+                },
+                "emotion": "strain",
+                "x": 270,
+                "y": 780,
+                "scale": 1,
+                "facing": 1
+              },
+              {
+                "rigVersion": 2,
+                "shadow": true,
+                "species": "man",
+                "characterId": "oldMan",
+                "initialPose": {
+                  "position": [
+                    220,
+                    780
+                  ],
+                  "sweat": 0,
+                  "blush": 0,
+                  "headScale": [
+                    1,
+                    1
+                  ],
+                  "eyeOpen": 1,
+                  "mouthOpen": 0,
+                  "handScale": 1,
+                  "leftWristAngle": 0,
+                  "gaze": [
+                    0,
+                    0
+                  ],
+                  "head": [
+                    0,
+                    -405
+                  ],
+                  "hip": [
+                    0,
+                    -160
+                  ],
+                  "leftHand": [
+                    24,
+                    -172
+                  ],
+                  "rightHand": [
+                    81,
+                    -274
+                  ],
+                  "leftFoot": [
+                    -20,
+                    0
+                  ],
+                  "rightFoot": [
+                    20,
+                    0
+                  ],
+                  "wristAngle": 0,
+                  "bodyAngle": 0,
+                  "headAngle": 0,
+                  "muscle": 0.2
+                },
+                "emotion": "smug",
+                "x": 220,
+                "y": 780,
+                "scale": 1,
+                "facing": 1
+              }
+            ],
+            "props": [
+              {
+                "designId": "appleJar",
+                "open": 1,
+                "angle": 0,
+                "x": 270,
+                "y": 600,
+                "scale": 1
+              }
+            ],
+            "beats": [
+              {
+                "actorId": "superman",
+                "targetActorId": "oldMan",
+                "hit": true,
+                "kind": "punch",
+                "start": 0,
+                "duration": 1.2,
+                "hand": "right",
+                "emotion": "extreme",
+                "amount": 1,
+                "intent": "Superman delivers a sudden punch to the old man in retaliation."
+              },
+              {
+                "actorId": "oldMan",
+                "kind": "fart",
+                "start": 1.2,
+                "duration": 1.5,
+                "hand": "right",
+                "emotion": "shock",
+                "amount": 1,
+                "intent": "The old man instantly poops his pants from the shock of the punch."
+              },
+              {
+                "actorId": "oldMan",
+                "kind": "react",
+                "start": 2.7,
+                "duration": 1.3,
+                "hand": "right",
+                "emotion": "defeat",
+                "amount": 1,
+                "intent": "The old man stands shocked and humiliated."
+              }
+            ],
+            "shots": [
+              {
+                "start": 0,
+                "end": 4,
+                "focus": [
+                  245,
+                  650
+                ],
+                "zoom": 1.3,
+                "detail": "full",
+                "actorIds": [
+                  "superman",
+                  "oldMan"
+                ]
+              }
+            ],
+            "sounds": [
+              {
+                "playbackRate": 1,
+                "category": "punch",
+                "trimSilence": false,
+                "start": 0.4,
+                "query": "whoosh punch impact",
+                "volume": 0.3,
+                "duration": 0.8,
+                "required": true,
+                "sourceStart": 0,
+                "pan": 0,
+                "fixture": "impact"
+              },
+              {
+                "playbackRate": 1,
+                "category": "plop",
+                "trimSilence": false,
+                "start": 1.2,
+                "query": "fart plop sound",
+                "volume": 0.25,
+                "duration": 1.2,
+                "required": true,
+                "sourceStart": 0,
+                "pan": 0,
+                "fixture": "wet-plop"
+              },
+              {
+                "beatIndex": 0,
+                "syncTo": "contact",
+                "playbackRate": 1,
+                "category": "punch",
+                "trimSilence": false,
+                "start": 0.504,
+                "query": "cartoon fist body impact",
+                "volume": 0.24,
+                "duration": 0.38,
+                "required": true,
+                "sourceStart": 0,
+                "pan": 0,
+                "fixture": "impact"
+              },
+              {
+                "beatIndex": 0,
+                "playbackRate": 1,
+                "category": "whoosh",
+                "trimSilence": false,
+                "start": 0.354,
+                "query": "fast fist swish",
+                "volume": 0.14,
+                "duration": 0.2,
+                "required": true,
+                "sourceStart": 0,
+                "pan": 0,
+                "fixture": "air-swish"
+              }
+            ],
+            "dialogue": []
+          }
+        ],
+        "coverage": [
+          {
+            "storyEvent": "Superman tries to open the apple jar with his bodybuilding strength",
+            "sceneId": "scene1",
+            "beatIndices": [
+              0,
+              1
+            ]
+          },
+          {
+            "storyEvent": "An old man effortlessly opens the jar and mocks Superman",
+            "sceneId": "scene2",
+            "beatIndices": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "storyEvent": "Superman punches the old man and the old man poops his pants",
+            "sceneId": "scene3",
+            "beatIndices": [
+              0,
+              1
+            ]
+          },
+          {
+            "storyEvent": "Superman tries to open the apple jar using brute force",
+            "sceneId": "scene1",
+            "beatIndices": [
+              1
+            ]
+          },
+          {
+            "storyEvent": "Old man walks to Superman",
+            "sceneId": "scene2",
+            "beatIndices": [
+              0
+            ]
+          },
+          {
+            "storyEvent": "Old man opens the jar easily",
+            "sceneId": "scene2",
+            "beatIndices": [
+              1
+            ]
+          },
+          {
+            "storyEvent": "Old man laughs at Superman",
+            "sceneId": "scene2",
+            "beatIndices": [
+              2
+            ]
+          },
+          {
+            "storyEvent": "Old man talks to mock Superman",
+            "sceneId": "scene2",
+            "beatIndices": [
+              3
+            ]
+          },
+          {
+            "storyEvent": "Superman punches the old man",
+            "sceneId": "scene3",
+            "beatIndices": [
+              0
+            ]
+          },
+          {
+            "storyEvent": "Old man farts from the punch impact",
+            "sceneId": "scene3",
+            "beatIndices": [
+              1
+            ]
+          }
+        ],
+        "seo": {
+          "titles": [
+            "Superman Fails At Opening A Jar!",
+            "When Superman Gets Mocked By An Old Man",
+            "The Ultimate Jar Opening Fail #Shorts"
+          ],
+          "description": "Superman tries to show off his superhero strength by opening an apple jar, but fails miserably. An old man shows him how it's done and laughs, leading to an instant hilarious retaliation!",
+          "tags": [
+            "Superman",
+            "Funny",
+            "Comedy",
+            "Animation",
+            "JarFail",
+            "Shorts"
+          ],
+          "hashtags": [
+            "#Shorts",
+            "#Superman",
+            "#Funny",
+            "#Animation",
+            "#Comedy"
+          ],
+          "pinnedComment": "Even the Man of Steel has weaknesses... like tight jar lids! 😂",
+          "thumbnailText": "SUPERMAN VS JAR!"
+        },
+        "blockedReasons": [],
+        "review": {
+          "method": "gemini",
+          "planHash": "91d068a8864cd749b6a074a92dc3a97291b21e0d4a216eab63a8b1855ea06f13",
+          "summary": "Successfully validated all story events, hook beat indices, and structural requirements for the Superman vs The Apple Jar short."
+        },
+        "version": 1,
+        "format": "shorts",
+        "language": "hi"
+      }
+    },
+    "createdAt": "2026-10-23T11:36:19.747Z"
+  },
+  {
+    "file": "C:\\Users\\Shree\\Downloads\\StickLaugh_Studio_V9.1_Fixed\\StickLaughStudio\\data\\jobs\\8d3f577d-e19c-45f4-8073-d0512553f389\\plan.json",
+    "title": "Superman vs The Apple Jar #Shorts",
+    "story": "Superman, a mighty bodybuilder superhero, tries desperately to open a jar filled with apples. Despite his immense strength, the lid won't budge at all. Suddenly, an old man walks by, easily opens the jar with a single casual touch, and mocks Superman, laughing at his failure. Angered by the mockery, Superman punches the old man, causing him to instantly poop his pants.",
+    "seconds": 12,
+    "fps": 60,
+    "characters": [
+      {
+        "id": "superman",
+        "name": "Superman",
+        "rigVersion": 2,
+        "kind": "man",
+        "artStyle": "toon",
+        "hairStyle": "sidepart",
+        "faceShape": "square",
+        "costume": "superhero",
+        "build": "broad",
+        "capeColor": "#e74c3c",
+        "bootColor": "#2980b9",
+        "wardrobe": "suit",
+        "accessory": "none",
+        "skin": "#fbe7c6",
+        "outfit": "#3498db",
+        "hair": "#2c3e50",
+        "headWidth": 1,
+        "headHeight": 1,
+        "voiceId": "en-US-Standard-B"
+      },
+      {
+        "id": "oldMan",
+        "name": "Old Man",
+        "rigVersion": 2,
+        "kind": "man",
+        "artStyle": "toon",
+        "hairStyle": "bald",
+        "faceShape": "round",
+        "costume": "everyday",
+        "build": "slim",
+        "wardrobe": "shirt",
+        "accessory": "glasses",
+        "skin": "#f5cba7",
+        "outfit": "#7f8c8d",
+        "hair": "#bdc3c7",
+        "headWidth": 1.1,
+        "headHeight": 0.9,
+        "voiceId": "en-US-Standard-C"
+      }
+    ],
+    "props": [
+      {
+        "id": "appleJar",
+        "type": "jar"
+      }
+    ],
+    "beatCount": 11,
+    "shots": 6,
+    "review": {
+      "method": "gemini",
+      "planHash": "91d068a8864cd749b6a074a92dc3a97291b21e0d4a216eab63a8b1855ea06f13",
+      "summary": "Superman fails to open an apple jar despite his superhero strength. An old man casually pops it open and mocks him, leading to a punch and an immediate, comical pants-soiling reaction."
+    },
+    "request": {
+      "plan": {
+        "durationMode": "auto",
+        "renderFps": 60,
+        "productionMode": "dialogue-toon",
+        "humorProfile": "clean",
+        "hook": {
+          "sceneId": "scene1",
+          "beatIndices": [
+            0,
+            1
+          ],
+          "start": 0,
+          "end": 2,
+          "evidence": "Superman strains with all his might trying to open a simple apple jar, his muscles bulging uselessly."
+        },
+        "comedy": {
+          "hook": "Superman, the ultimate bodybuilder hero, struggles fiercely to open an apple-filled jar.",
+          "goal": "Superman wants to open the apple jar to eat its contents.",
+          "escalation": [
+            "Superman pulls and twists the jar lid with maximum superhero strength, but it refuses to budge.",
+            "An old man wanders over casually, chuckles at the struggling hero, and effortlessly pops the lid open with one bare finger.",
+            "The old man mocks Superman openly, laughing right in his face."
+          ],
+          "payoff": "Humiliated, Superman delivers a sudden punch to the old man, causing the old man to instantly poop his pants from the shock.",
+          "callback": "The mighty hero stands victorious over a very embarrassed, pants-soiled old man with the opened apple jar."
+        },
+        "title": "Superman vs The Apple Jar #Shorts",
+        "story": "Superman, a mighty bodybuilder superhero, tries desperately to open a jar filled with apples. Despite his immense strength, the lid won't budge at all. Suddenly, an old man walks by, easily opens the jar with a single casual touch, and mocks Superman, laughing at his failure. Angered by the mockery, Superman punches the old man, causing him to instantly poop his pants.",
+        "sourceIdea": "superman hai woh bodybuilder hai lekin woh apple se bhara hua jar kholne ki koshish kar raha hai lekin nahi khul raha tha ok phir ek budha aya aur usne turant jar khol diya aur hasne laga uspr aur kuch usko bola bhi majak udhaya superman ka superman ne phir ek punch diya budhe ko aur woh budha pant mai hi hag diya",
+        "requirements": [
+          {
+            "description": "Superman tries to open the apple jar using brute force",
+            "sceneId": "scene1",
+            "characterId": "superman",
+            "propId": "appleJar",
+            "color": "#e74c3c",
+            "action": "struggle"
+          },
+          {
+            "description": "Old man walks to Superman",
+            "sceneId": "scene2",
+            "characterId": "oldMan",
+            "action": "walk"
+          },
+          {
+            "description": "Old man opens the jar easily",
+            "sceneId": "scene2",
+            "characterId": "oldMan",
+            "propId": "appleJar",
+            "color": "#e74c3c",
+            "action": "open"
+          },
+          {
+            "description": "Old man laughs at Superman",
+            "sceneId": "scene2",
+            "characterId": "oldMan",
+            "action": "laugh"
+          },
+          {
+            "description": "Old man talks to mock Superman",
+            "sceneId": "scene2",
+            "characterId": "oldMan",
+            "action": "talk"
+          },
+          {
+            "description": "Superman punches the old man",
+            "sceneId": "scene3",
+            "characterId": "superman",
+            "action": "punch"
+          },
+          {
+            "description": "Old man farts from the punch impact",
+            "sceneId": "scene3",
+            "characterId": "oldMan",
+            "action": "fart"
+          }
+        ],
+        "characters": [
+          {
+            "id": "superman",
+            "name": "Superman",
+            "rigVersion": 2,
+            "kind": "man",
+            "artStyle": "toon",
+            "hairStyle": "sidepart",
+            "faceShape": "square",
+            "costume": "superhero",
+            "build": "broad",
+            "capeColor": "#e74c3c",
+            "bootColor": "#2980b9",
+            "wardrobe": "suit",
+            "accessory": "none",
+            "skin": "#fbe7c6",
+            "outfit": "#3498db",
+            "hair": "#2c3e50",
+            "headWidth": 1,
+            "headHeight": 1,
+            "voiceId": "en-US-Standard-B"
+          },
+          {
+            "id": "oldMan",
+            "name": "Old Man",
+            "rigVersion": 2,
+            "kind": "man",
+            "artStyle": "toon",
+            "hairStyle": "bald",
+            "faceShape": "round",
+            "costume": "everyday",
+            "build": "slim",
+            "wardrobe": "shirt",
+            "accessory": "glasses",
+            "skin": "#f5cba7",
+            "outfit": "#7f8c8d",
+            "hair": "#bdc3c7",
+            "headWidth": 1.1,
+            "headHeight": 0.9,
+            "voiceId": "en-US-Standard-C"
+          }
+        ],
+        "propDesigns": [
+          {
+            "gripOffset": [
+              0,
+              10
+            ],
+            "id": "appleJar",
+            "name": "Apple Jar",
+            "type": "jar",
+            "color": "#e74c3c",
+            "nodes": [
+              {
+                "kind": "ellipse",
+                "center": [
+                  0,
+                  0
+                ],
+                "radius": [
+                  30,
+                  45
+                ],
+                "fill": "#f39c12",
+                "stroke": "#c0392b",
+                "width": 2
+              }
+            ]
+          }
+        ],
+        "scenes": [
+          {
+            "id": "scene1",
+            "summary": "Superman strains and flexes, desperately trying to open a stubborn apple jar.",
+            "duration": 4,
+            "background": "gym",
+            "backgroundNodes": [],
+            "motions": [],
+            "cast": [
+              {
+                "rigVersion": 2,
+                "shadow": true,
+                "species": "man",
+                "characterId": "superman",
+                "initialPose": {
+                  "position": [
+                    270,
+                    780
+                  ],
+                  "muscle": 0.5
+                },
+                "emotion": "strain",
+                "x": 270,
+                "y": 780,
+                "scale": 1,
+                "facing": 1
+              }
+            ],
+            "props": [
+              {
+                "designId": "appleJar",
+                "open": 0,
+                "angle": 0,
+                "x": 270,
+                "y": 600,
+                "scale": 1
+              }
+            ],
+            "beats": [
+              {
+                "actorId": "superman",
+                "kind": "flex",
+                "start": 0,
+                "duration": 1,
+                "hand": "right",
+                "emotion": "strain",
+                "amount": 1,
+                "intent": "Superman flexes his muscles, preparing to open the jar."
+              },
+              {
+                "actorId": "superman",
+                "kind": "struggle",
+                "start": 1,
+                "duration": 2.5,
+                "targetId": "appleJar",
+                "hand": "both",
+                "emotion": "strain",
+                "amount": 1,
+                "intent": "Superman strains with all his might trying to open the apple jar."
+              },
+              {
+                "actorId": "superman",
+                "kind": "react",
+                "start": 3.5,
+                "duration": 0.5,
+                "hand": "right",
+                "emotion": "defeat",
+                "amount": 1,
+                "intent": "Superman reacts in frustration as the lid refuses to budge."
+              }
+            ],
+            "shots": [
+              {
+                "start": 0,
+                "end": 2,
+                "focus": [
+                  270,
+                  530
+                ],
+                "zoom": 1,
+                "detail": "full",
+                "actorIds": [
+                  "superman"
+                ]
+              },
+              {
+                "start": 2,
+                "end": 4,
+                "focus": [
+                  270,
+                  570
+                ],
+                "zoom": 1.7,
+                "detail": "hands",
+                "actorIds": [
+                  "superman"
+                ]
+              }
+            ],
+            "sounds": [
+              {
+                "playbackRate": 1,
+                "category": "mutter",
+                "role": "nonverbal",
+                "trimSilence": false,
+                "start": 1,
+                "query": "strain effort grunt",
+                "volume": 0.3,
+                "duration": 2.5,
+                "required": true,
+                "sourceStart": 0,
+                "pan": 0,
+                "fixture": "mutter-a"
+              },
+              {
+                "playbackRate": 1,
+                "actorId": "superman",
+                "role": "nonverbal",
+                "trimSilence": true,
+                "start": 1.1,
+                "query": "effort grunt",
+                "volume": 0.3,
+                "duration": 2.4,
+                "required": true,
+                "sourceStart": 0,
+                "pan": 0,
+                "fixture": "grunt"
+              }
+            ],
+            "dialogue": []
+          },
+          {
+            "id": "scene2",
+            "summary": "An old man walks up, pops the jar open instantly with one finger, and laughs mockingly.",
+            "duration": 4,
+            "background": "street",
+            "backgroundNodes": [],
+            "motions": [],
+            "cast": [
+              {
+                "rigVersion": 2,
+                "shadow": true,
+                "species": "man",
+                "characterId": "superman",
+                "initialPose": {
+                  "position": [
+                    270,
+                    780
+                  ],
+                  "sweat": 0,
+                  "blush": 0,
+                  "headScale": [
+                    1,
+                    1
+                  ],
+                  "eyeOpen": 1,
+                  "mouthOpen": 1,
+                  "handScale": 1,
+                  "leftWristAngle": 0,
+                  "gaze": [
+                    7,
+                    4
+                  ],
+                  "head": [
+                    0,
+                    -405
+                  ],
+                  "hip": [
+                    0,
+                    -160
+                  ],
+                  "leftHand": [
+                    -62,
+                    -130
+                  ],
+                  "rightHand": [
+                    62,
+                    -130
+                  ],
+                  "leftFoot": [
+                    -30,
+                    0
+                  ],
+                  "rightFoot": [
+                    35,
+                    0
+                  ],
+                  "wristAngle": 0,
+                  "bodyAngle": 0,
+                  "headAngle": -6,
+                  "muscle": 1
+                },
+                "emotion": "defeat",
+                "x": 270,
+                "y": 780,
+                "scale": 1,
+                "facing": 1
+              },
+              {
+                "rigVersion": 2,
+                "shadow": true,
+                "species": "man",
+                "characterId": "oldMan",
+                "initialPose": {
+                  "position": [
+                    50,
+                    780
+                  ],
+                  "sweat": 0,
+                  "blush": 0,
+                  "headScale": [
+                    1,
+                    1
+                  ],
+                  "eyeOpen": 1,
+                  "mouthOpen": 0,
+                  "handScale": 1,
+                  "leftWristAngle": 0,
+                  "gaze": [
+                    0,
+                    0
+                  ],
+                  "head": [
+                    0,
+                    -405
+                  ],
+                  "hip": [
+                    0,
+                    -160
+                  ],
+                  "leftHand": [
+                    -50,
+                    -100
+                  ],
+                  "rightHand": [
+                    50,
+                    -100
+                  ],
+                  "leftFoot": [
+                    -20,
+                    0
+                  ],
+                  "rightFoot": [
+                    20,
+                    0
+                  ],
+                  "wristAngle": 0,
+                  "bodyAngle": 0,
+                  "headAngle": 0,
+                  "muscle": 0.2
+                },
+                "emotion": "smug",
+                "x": 50,
+                "y": 780,
+                "scale": 1,
+                "facing": 1
+              }
+            ],
+            "props": [
+              {
+                "appearAt": 0,
+                "disappearAt": 4,
+                "designId": "appleJar",
+                "layer": "front",
+                "open": 0,
+                "angle": 0,
+                "x": 270,
+                "y": 600,
+                "scale": 1
+              }
+            ],
+            "beats": [
+              {
+                "actorId": "oldMan",
+                "kind": "walk",
+                "start": 0,
+                "duration": 1.2,
+                "to": [
+                  220,
+                  780
+                ],
+                "hand": "right",
+                "amount": 1,
+                "intent": "Old man walks casually toward Superman."
+              },
+              {
+                "actorId": "oldMan",
+                "kind": "open",
+                "start": 1.5,
+                "duration": 0.8,
+                "targetId": "appleJar",
+                "hand": "right",
+                "emotion": "smug",
+                "amount": 1,
+                "intent": "Old man effortlessly pops the jar open with one finger."
+              },
+              {
+                "actorId": "oldMan",
+                "kind": "laugh",
+                "start": 2.5,
+                "duration": 1.5,
+                "hand": "right",
+                "emotion": "laugh",
+                "amount": 1,
+                "intent": "Old man laughs mockingly at Superman's failure."
+              },
+              {
+                "actorId": "oldMan",
+                "kind": "talk",
+                "start": 2.5,
+                "duration": 1.5,
+                "hand": "right",
+                "emotion": "smug",
+                "amount": 1,
+                "intent": "Old man mocks Superman openly."
+              },
+              {
+                "actorId": "superman",
+                "kind": "react",
+                "start": 1.5,
+                "duration": 2.5,
+                "hand": "right",
+                "emotion": "shock",
+                "amount": 1,
+                "intent": "Superman watches in utter disbelief as the old man opens the jar instantly."
+              }
+            ],
+            "shots": [
+              {
+                "start": 0,
+                "end": 1.2,
+                "focus": [
+                  160,
+                  530
+                ],
+                "zoom": 1.2,
+                "detail": "full",
+                "actorIds": [
+                  "superman",
+                  "oldMan"
+                ]
+              },
+              {
+                "start": 1.2,
+                "end": 2.5,
+                "focus": [
+                  270,
+                  570
+                ],
+                "zoom": 1.8,
+                "detail": "hands",
+                "actorIds": [
+                  "superman",
+                  "oldMan"
+                ]
+              },
+              {
+                "start": 2.5,
+                "end": 4,
+                "focus": [
+                  160,
+                  530
+                ],
+                "zoom": 1.3,
+                "detail": "full",
+                "actorIds": [
+                  "superman",
+                  "oldMan"
+                ]
+              }
+            ],
+            "sounds": [
+              {
+                "playbackRate": 1,
+                "category": "steps",
+                "trimSilence": false,
+                "start": 0,
+                "query": "footsteps sidewalk",
+                "volume": 0.2,
+                "duration": 1.2,
+                "required": true,
+                "sourceStart": 0,
+                "pan": 0,
+                "fixture": "steps"
+              },
+              {
+                "playbackRate": 1,
+                "category": "plop",
+                "trimSilence": false,
+                "start": 1.5,
+                "query": "pop cork lid open",
+                "volume": 0.3,
+                "duration": 0.5,
+                "required": true,
+                "sourceStart": 0,
+                "pan": 0,
+                "fixture": "wet-plop"
+              },
+              {
+                "playbackRate": 1,
+                "category": "gibberish",
+                "trimSilence": false,
+                "start": 2.5,
+                "query": "evil chuckle laugh cartoon",
+                "volume": 0.25,
+                "duration": 1.5,
+                "required": true,
+                "sourceStart": 0,
+                "pan": 0,
+                "fixture": "scolding"
+              },
+              {
+                "playbackRate": 1,
+                "actorId": "oldMan",
+                "role": "nonverbal",
+                "trimSilence": true,
+                "start": 2.6,
+                "query": "cartoon laughter",
+                "volume": 0.3,
+                "duration": 1.4,
+                "required": true,
+                "sourceStart": 0,
+                "pan": 0
+              }
+            ],
+            "dialogue": [
+              {
+                "actorId": "oldMan",
+                "start": 2.6,
+                "text": "Ho ho! Even a baby could open this!"
+              }
+            ]
+          },
+          {
+            "id": "scene3",
+            "summary": "Superman punches the old man in retaliation, causing the old man to soil his pants.",
+            "duration": 4,
+            "background": "street",
+            "backgroundNodes": [],
+            "motions": [],
+            "cast": [
+              {
+                "rigVersion": 2,
+                "shadow": true,
+                "species": "man",
+                "characterId": "superman",
+                "initialPose": {
+                  "position": [
+                    270,
+                    780
+                  ],
+                  "sweat": 0,
+                  "blush": 0,
+                  "headScale": [
+                    1,
+                    1
+                  ],
+                  "eyeOpen": 1,
+                  "mouthOpen": 1,
+                  "handScale": 1,
+                  "leftWristAngle": 0,
+                  "gaze": [
+                    7,
+                    4
+                  ],
+                  "head": [
+                    0,
+                    -405
+                  ],
+                  "hip": [
+                    0,
+                    -160
+                  ],
+                  "leftHand": [
+                    -62,
+                    -130
+                  ],
+                  "rightHand": [
+                    62,
+                    -130
+                  ],
+                  "leftFoot": [
+                    -30,
+                    0
+                  ],
+                  "rightFoot": [
+                    35,
+                    0
+                  ],
+                  "wristAngle": 0,
+                  "bodyAngle": 0,
+                  "headAngle": -6,
+                  "muscle": 1
+                },
+                "emotion": "strain",
+                "x": 270,
+                "y": 780,
+                "scale": 1,
+                "facing": 1
+              },
+              {
+                "rigVersion": 2,
+                "shadow": true,
+                "species": "man",
+                "characterId": "oldMan",
+                "initialPose": {
+                  "position": [
+                    220,
+                    780
+                  ],
+                  "sweat": 0,
+                  "blush": 0,
+                  "headScale": [
+                    1,
+                    1
+                  ],
+                  "eyeOpen": 1,
+                  "mouthOpen": 0,
+                  "handScale": 1,
+                  "leftWristAngle": 0,
+                  "gaze": [
+                    0,
+                    0
+                  ],
+                  "head": [
+                    0,
+                    -405
+                  ],
+                  "hip": [
+                    0,
+                    -160
+                  ],
+                  "leftHand": [
+                    24,
+                    -172
+                  ],
+                  "rightHand": [
+                    81,
+                    -274
+                  ],
+                  "leftFoot": [
+                    -20,
+                    0
+                  ],
+                  "rightFoot": [
+                    20,
+                    0
+                  ],
+                  "wristAngle": 0,
+                  "bodyAngle": 0,
+                  "headAngle": 0,
+                  "muscle": 0.2
+                },
+                "emotion": "smug",
+                "x": 220,
+                "y": 780,
+                "scale": 1,
+                "facing": 1
+              }
+            ],
+            "props": [
+              {
+                "designId": "appleJar",
+                "open": 1,
+                "angle": 0,
+                "x": 270,
+                "y": 600,
+                "scale": 1
+              }
+            ],
+            "beats": [
+              {
+                "actorId": "superman",
+                "targetActorId": "oldMan",
+                "hit": true,
+                "kind": "punch",
+                "start": 0,
+                "duration": 1.2,
+                "hand": "right",
+                "emotion": "extreme",
+                "amount": 1,
+                "intent": "Superman delivers a sudden punch to the old man in retaliation."
+              },
+              {
+                "actorId": "oldMan",
+                "kind": "fart",
+                "start": 1.2,
+                "duration": 1.5,
+                "hand": "right",
+                "emotion": "shock",
+                "amount": 1,
+                "intent": "The old man instantly poops his pants from the shock of the punch."
+              },
+              {
+                "actorId": "oldMan",
+                "kind": "react",
+                "start": 2.7,
+                "duration": 1.3,
+                "hand": "right",
+                "emotion": "defeat",
+                "amount": 1,
+                "intent": "The old man stands shocked and humiliated."
+              }
+            ],
+            "shots": [
+              {
+                "start": 0,
+                "end": 4,
+                "focus": [
+                  245,
+                  650
+                ],
+                "zoom": 1.3,
+                "detail": "full",
+                "actorIds": [
+                  "superman",
+                  "oldMan"
+                ]
+              }
+            ],
+            "sounds": [
+              {
+                "playbackRate": 1,
+                "category": "punch",
+                "trimSilence": false,
+                "start": 0.4,
+                "query": "whoosh punch impact",
+                "volume": 0.3,
+                "duration": 0.8,
+                "required": true,
+                "sourceStart": 0,
+                "pan": 0,
+                "fixture": "impact"
+              },
+              {
+                "playbackRate": 1,
+                "category": "plop",
+                "trimSilence": false,
+                "start": 1.2,
+                "query": "fart plop sound",
+                "volume": 0.25,
+                "duration": 1.2,
+                "required": true,
+                "sourceStart": 0,
+                "pan": 0,
+                "fixture": "wet-plop"
+              },
+              {
+                "beatIndex": 0,
+                "syncTo": "contact",
+                "playbackRate": 1,
+                "category": "punch",
+                "trimSilence": false,
+                "start": 0.504,
+                "query": "cartoon fist body impact",
+                "volume": 0.24,
+                "duration": 0.38,
+                "required": true,
+                "sourceStart": 0,
+                "pan": 0,
+                "fixture": "impact"
+              },
+              {
+                "beatIndex": 0,
+                "playbackRate": 1,
+                "category": "whoosh",
+                "trimSilence": false,
+                "start": 0.354,
+                "query": "fast fist swish",
+                "volume": 0.14,
+                "duration": 0.2,
+                "required": true,
+                "sourceStart": 0,
+                "pan": 0,
+                "fixture": "air-swish"
+              }
+            ],
+            "dialogue": []
+          }
+        ],
+        "coverage": [
+          {
+            "storyEvent": "Superman tries to open the apple jar with his bodybuilding strength",
+            "sceneId": "scene1",
+            "beatIndices": [
+              0,
+              1
+            ]
+          },
+          {
+            "storyEvent": "An old man effortlessly opens the jar and mocks Superman",
+            "sceneId": "scene2",
+            "beatIndices": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "storyEvent": "Superman punches the old man and the old man poops his pants",
+            "sceneId": "scene3",
+            "beatIndices": [
+              0,
+              1
+            ]
+          },
+          {
+            "storyEvent": "Superman tries to open the apple jar using brute force",
+            "sceneId": "scene1",
+            "beatIndices": [
+              1
+            ]
+          },
+          {
+            "storyEvent": "Old man walks to Superman",
+            "sceneId": "scene2",
+            "beatIndices": [
+              0
+            ]
+          },
+          {
+            "storyEvent": "Old man opens the jar easily",
+            "sceneId": "scene2",
+            "beatIndices": [
+              1
+            ]
+          },
+          {
+            "storyEvent": "Old man laughs at Superman",
+            "sceneId": "scene2",
+            "beatIndices": [
+              2
+            ]
+          },
+          {
+            "storyEvent": "Old man talks to mock Superman",
+            "sceneId": "scene2",
+            "beatIndices": [
+              3
+            ]
+          },
+          {
+            "storyEvent": "Superman punches the old man",
+            "sceneId": "scene3",
+            "beatIndices": [
+              0
+            ]
+          },
+          {
+            "storyEvent": "Old man farts from the punch impact",
+            "sceneId": "scene3",
+            "beatIndices": [
+              1
+            ]
+          }
+        ],
+        "seo": {
+          "titles": [
+            "Superman Fails At Opening A Jar!",
+            "When Superman Gets Mocked By An Old Man",
+            "The Ultimate Jar Opening Fail #Shorts"
+          ],
+          "description": "Superman tries to show off his superhero strength by opening an apple jar, but fails miserably. An old man shows him how it's done and laughs, leading to an instant hilarious retaliation!",
+          "tags": [
+            "Superman",
+            "Funny",
+            "Comedy",
+            "Animation",
+            "JarFail",
+            "Shorts"
+          ],
+          "hashtags": [
+            "#Shorts",
+            "#Superman",
+            "#Funny",
+            "#Animation",
+            "#Comedy"
+          ],
+          "pinnedComment": "Even the Man of Steel has weaknesses... like tight jar lids! 😂",
+          "thumbnailText": "SUPERMAN VS JAR!"
+        },
+        "blockedReasons": [],
+        "review": {
+          "method": "gemini",
+          "planHash": "91d068a8864cd749b6a074a92dc3a97291b21e0d4a216eab63a8b1855ea06f13",
+          "summary": "Superman fails to open an apple jar despite his mighty superhero strength. An old man easily pops it open with one finger and mocks him, leading Superman to punch the old man and cause him to soil his pants."
+        },
+        "version": 1,
+        "format": "shorts",
+        "language": "hi"
+      }
+    },
+    "createdAt": "2026-10-23T11:36:32.742Z"
+  },
+  {
+    "file": "C:\\Users\\Shree\\Downloads\\StickLaugh_Studio_V9.1_Fixed\\StickLaughStudio\\data\\jobs\\a6c9f4d7-e680-4307-9271-ca15e6dfc92d\\plan.json",
+    "title": "Superman vs The Apple Jar #Shorts",
+    "story": "Superman, a mighty bodybuilder superhero, tries desperately to open a jar filled with apples. Despite his immense strength, the lid won't budge at all. Suddenly, an old man walks by, easily opens the jar with a single casual touch, and mocks Superman, laughing at his failure. Angered by the mockery, Superman punches the old man, causing him to instantly poop his pants.",
+    "seconds": 12,
+    "fps": 60,
+    "characters": [
+      {
+        "id": "superman",
+        "name": "Superman",
+        "rigVersion": 2,
+        "kind": "man",
+        "artStyle": "toon",
+        "hairStyle": "sidepart",
+        "faceShape": "square",
+        "costume": "superhero",
+        "build": "broad",
+        "capeColor": "#e74c3c",
+        "bootColor": "#2980b9",
+        "wardrobe": "suit",
+        "accessory": "none",
+        "skin": "#fbe7c6",
+        "outfit": "#3498db",
+        "hair": "#2c3e50",
+        "headWidth": 1,
+        "headHeight": 1,
+        "voiceId": "en-US-Standard-B"
+      },
+      {
+        "id": "oldMan",
+        "name": "Old Man",
+        "rigVersion": 2,
+        "kind": "man",
+        "artStyle": "toon",
+        "hairStyle": "bald",
+        "faceShape": "round",
+        "costume": "everyday",
+        "build": "slim",
+        "wardrobe": "shirt",
+        "accessory": "glasses",
+        "skin": "#f5cba7",
+        "outfit": "#7f8c8d",
+        "hair": "#bdc3c7",
+        "headWidth": 1.1,
+        "headHeight": 0.9,
+        "voiceId": "en-US-Standard-C"
+      }
+    ],
+    "props": [
+      {
+        "id": "appleJar",
+        "type": "jar"
+      }
+    ],
+    "beatCount": 11,
+    "shots": 6,
+    "review": {
+      "method": "gemini",
+      "planHash": "91d068a8864cd749b6a074a92dc3a97291b21e0d4a216eab63a8b1855ea06f13",
+      "summary": "Successfully validated all story events, hook beat indices, and structural requirements for the Superman vs The Apple Jar short."
+    },
+    "request": {
+      "options": {
+        "productionMode": "dialogue-toon",
+        "strictStoryAudit": true,
+        "directionMode": "semantic",
+        "artStyle": "toon",
+        "story": "superman hai woh bodybuilder hai lekin woh apple se bhara hua jar kholne ki koshish kar raha hai lekin nahi khul raha tha ok phir ek budha aya aur usne turant jar khol diya aur hasne laga uspr aur kuch usko bola bhi majak udhaya superman ka superman ne phir ek punch diya budhe ko aur woh budha pant mai hi hag diya",
+        "format": "shorts",
+        "duration": 20,
+        "durationMode": "auto",
+        "renderFps": 60,
+        "language": "hi",
+        "voice": true,
+        "humorProfile": "clean"
+      }
+    },
+    "createdAt": "2026-10-23T11:31:25.519Z"
+  },
+  {
+    "file": "C:\\Users\\Shree\\Downloads\\StickLaugh_Studio_V9.1_Fixed\\StickLaughStudio\\data\\jobs\\d58a6a30-3d5a-414a-803e-b2c391eda83e\\plan.json",
+    "title": "Superman vs The Jar #Shorts",
+    "story": "Superman is a powerful bodybuilder superhero, but he is struggling to open a stubborn jar in the kitchen. He tries everything with his superhuman strength, but it refuses to open. Suddenly, an elderly man walks up, takes the jar, and opens it instantly with a tiny twist. The old man laughs mockingly at Superman and makes fun of his weakness. Frustrated, Superman lets out a mighty fart right at him. The shock causes the old man to immediately poop his pants, reversing the power balance entirely.",
+    "seconds": 12,
+    "fps": 60,
+    "characters": [
+      {
+        "id": "superman",
+        "name": "Superman",
+        "rigVersion": 2,
+        "kind": "man",
+        "artStyle": "toon",
+        "hairStyle": "tuft",
+        "faceShape": "square",
+        "costume": "superhero",
+        "build": "broad",
+        "shirtLabel": "S",
+        "capeColor": "#cc2222",
+        "bootColor": "#cc2222",
+        "wardrobe": "suit",
+        "accessory": "none",
+        "skin": "#f8e2c0",
+        "outfit": "#2255cc",
+        "hair": "#111111",
+        "headWidth": 1,
+        "headHeight": 1,
+        "voiceId": "cartesia-male-1"
+      },
+      {
+        "id": "oldman",
+        "name": "Old Man",
+        "rigVersion": 2,
+        "kind": "grandma",
+        "artStyle": "toon",
+        "hairStyle": "bald",
+        "faceShape": "round",
+        "costume": "everyday",
+        "build": "slim",
+        "wardrobe": "shirt",
+        "accessory": "glasses",
+        "skin": "#f2e1cc",
+        "outfit": "#888888",
+        "hair": "#ffffff",
+        "headWidth": 1.1,
+        "headHeight": 0.9,
+        "voiceId": "cartesia-male-2"
+      }
+    ],
+    "props": [
+      {
+        "id": "testJar",
+        "type": "jar"
+      }
+    ],
+    "beatCount": 9,
+    "shots": 4,
+    "review": {
+      "method": "gemini",
+      "planHash": "0aad8f894122ff0ccd6c2fb583ea9ae93b6f07ad3c9317484d31901ed03e4b19",
+      "summary": "Verified plan completeness, correct hook beat indices for Superman's jar struggle, and mapped required coverage events to all scenes."
+    },
+    "request": {
+      "options": {
+        "productionMode": "dialogue-toon",
+        "strictStoryAudit": true,
+        "directionMode": "semantic",
+        "artStyle": "toon",
+        "story": "superman hai woh bodybuilder hai lekin woh jar kholne ki soshish kar raha hai lekin nahi khul raha tha ok phir ek budha aya aur usne turant jar khol diya aur hasne laga uspr aur kuch usko bola bhi majak udhaya superman ka superman ne phir ek puch diya usko woh budha pant mai hi hag diya",
+        "format": "shorts",
+        "duration": 20,
+        "durationMode": "auto",
+        "renderFps": 60,
+        "language": "hi",
+        "voice": true,
+        "humorProfile": "clean"
+      }
+    },
+    "createdAt": "2026-10-23T11:24:59.393Z"
+  }
+]

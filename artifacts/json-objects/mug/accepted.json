@@ -1,0 +1,199 @@
+{
+  "design": {
+    "id": "object",
+    "name": "A ceramic coffee mug with hollow oval opening, wide cylindrical body and large curved handle attached to the right",
+    "type": "drawing",
+    "visualAssetRequest": {
+      "description": "A ceramic coffee mug with hollow oval opening, wide cylindrical body and large curved handle attached to the right",
+      "requiredFeatures": [
+        "visible hollow interior depth defined by the top oval rim",
+        "large ergonomic side handle sized for fingers",
+        "stout proportions clearly identifying a standard drinking vessel"
+      ]
+    }
+  },
+  "brief": {
+    "objectState": "whole",
+    "silhouette": "Stout cylindrical body with a prominent protruding loop on the right and an open top ellipse defining the cavity.",
+    "viewpoint": "three-quarter view",
+    "parts": [
+      {
+        "name": "cylindrical body",
+        "shape": "wide vertical cylinder with straight parallel sides and flat bottom base",
+        "connection": "forms the main structural volume of the mug"
+      },
+      {
+        "name": "hollow oval opening",
+        "shape": "slanting ellipse positioned at the top rim, showing thickness of the ceramic wall and hollow interior",
+        "connection": "merged seamlessly with the top edge of the cylindrical body"
+      },
+      {
+        "name": "curved handle",
+        "shape": "large C-shaped strap with uniform thickness",
+        "connection": "attached securely at two points along the right vertical side of the cylindrical body"
+      }
+    ],
+    "recognitionCues": [
+      "visible hollow interior depth defined by the top oval rim",
+      "large ergonomic side handle sized for fingers",
+      "stout proportions clearly identifying a standard drinking vessel"
+    ],
+    "avoid": [
+      "featureless blobs",
+      "disconnected repeated teardrops",
+      "flat two-dimensional outlines without volume",
+      "banana anatomy"
+    ]
+  },
+  "asset": {
+    "visualSpec": {
+      "renderMode": "replace",
+      "silhouetteFamily": "custom-vector",
+      "geometryRecipe": [
+        {
+          "id": "body",
+          "kind": "group",
+          "position": [
+            -14.25,
+            -11.5
+          ],
+          "children": [
+            {
+              "kind": "path",
+              "d": "M -40,-120 C -40,-130 40,-130 40,-120 L 50,-10 C 50,0 45,10 35,10 L -35,10 C -45,10 -50,0 -50,-10 Z",
+              "fill": "#ffffff",
+              "stroke": "#111111",
+              "width": 2.5
+            },
+            {
+              "kind": "ellipse",
+              "center": [
+                0,
+                -120
+              ],
+              "radius": [
+                40,
+                12
+              ],
+              "fill": "#f0f0f0",
+              "stroke": "#111111",
+              "width": 2.5
+            },
+            {
+              "kind": "ellipse",
+              "center": [
+                0,
+                -122
+              ],
+              "radius": [
+                32,
+                8
+              ],
+              "fill": "#e0e0e0",
+              "stroke": "#111111",
+              "width": 1.5
+            },
+            {
+              "id": "handle",
+              "kind": "group",
+              "children": [
+                {
+                  "kind": "path",
+                  "d": "M 46,-90 C 75,-90 85,-40 75,-20 C 70,-10 50,-5 44,-15 C 55,-25 60,-65 46,-75 Z",
+                  "fill": "#ffffff",
+                  "stroke": "#111111",
+                  "width": 2.5
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "normalizedDimensions": {
+        "width": 100,
+        "height": 100
+      },
+      "material": "flat",
+      "paint": {},
+      "palette": [],
+      "facialComponents": [],
+      "apparel": [],
+      "accessories": [],
+      "decorativeMarks": [],
+      "proceduralComponents": [],
+      "motionAnchors": [
+        {
+          "id": "grip",
+          "position": [
+            45.75,
+            -61.5
+          ]
+        },
+        {
+          "id": "base",
+          "position": [
+            -14.25,
+            -1.5
+          ]
+        },
+        {
+          "id": "support",
+          "position": [
+            -14.25,
+            -131.5
+          ]
+        }
+      ],
+      "zIndex": 0
+    },
+    "features": [
+      {
+        "featureIndex": 0,
+        "feature": "visible hollow interior depth defined by the top oval rim",
+        "nodeIds": [
+          "body"
+        ],
+        "nativeProperties": []
+      },
+      {
+        "featureIndex": 1,
+        "feature": "large ergonomic side handle sized for fingers",
+        "nodeIds": [
+          "handle"
+        ],
+        "nativeProperties": []
+      },
+      {
+        "featureIndex": 2,
+        "feature": "stout proportions clearly identifying a standard drinking vessel",
+        "nodeIds": [
+          "body",
+          "handle"
+        ],
+        "nativeProperties": []
+      }
+    ]
+  },
+  "review": {
+    "recognizable": true,
+    "missingDetails": [],
+    "repair": "none",
+    "featureEvidence": [
+      {
+        "featureIndex": 0,
+        "visible": true,
+        "evidence": "The top of the mug features an oval rim showing a hollow interior depth."
+      },
+      {
+        "featureIndex": 1,
+        "visible": true,
+        "evidence": "A large curved handle is attached to the right side of the body."
+      },
+      {
+        "featureIndex": 2,
+        "visible": true,
+        "evidence": "The stout, tapered cylindrical proportions clearly identify a standard drinking mug."
+      }
+    ]
+  }
+}

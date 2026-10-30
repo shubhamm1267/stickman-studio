@@ -1,0 +1,37 @@
+{
+  "objectState": "open and fully expanded",
+  "silhouette": "Dome-shaped top with a vertical hanging line ending in a distinct hook at the bottom",
+  "viewpoint": "three-quarter view from a slightly elevated angle",
+  "parts": [
+    {
+      "name": "canopy",
+      "shape": "hemispherical scalloped dome with curved triangular green fabric panels",
+      "connection": "stitched along its seams to the tips of the supporting ribs"
+    },
+    {
+      "name": "supporting ribs",
+      "shape": "radiating thin linear struts curving inward along the underside of the canopy",
+      "connection": "hinged to the upper runner near the shaft and fitted into pocket tips on the canopy"
+    },
+    {
+      "name": "central shaft",
+      "shape": "long straight rigid vertical cylinder passing through the center of the canopy",
+      "connection": "fixed firmly through the apex of the canopy and joined to the top runner"
+    },
+    {
+      "name": "hooked handle",
+      "shape": "J-shaped curved cylindrical grip at the base",
+      "connection": "attached securely to the bottom end of the central shaft"
+    }
+  ],
+  "recognitionCues": [
+    "distinct curved green dome shape of the fabric canopy",
+    "visible structural ribs radiating symmetrically from the center",
+    "characteristic J-shaped hooked handle at the base"
+  ],
+  "avoid": [
+    "banana anatomy or tapering yellow flaps",
+    "featureless blobs",
+    "disconnected floating shapes"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "recognizable": false,
+  "missingDetails": [
+    "Arched handle spanning over the top center",
+    "Fitted lid with a central lifting knob",
+    "Required visible feature 1: Arched handle spanning over the top center",
+    "Required visible feature 2: Fitted lid with a central lifting knob"
+  ],
+  "repair": "Replace the abstract cap structure on top with a proper arched handle spanning over the top center, and add a fitted lid with a central lifting knob.",
+  "featureEvidence": [
+    {
+      "featureIndex": 0,
+      "visible": true,
+      "evidence": "An upward curving spout-like rectangular extrusion is positioned on the right side."
+    },
+    {
+      "featureIndex": 1,
+      "visible": false,
+      "evidence": "There is no arched handle spanning over the top center; instead there is a cap-like helmet structure."
+    },
+    {
+      "featureIndex": 2,
+      "visible": false,
+      "evidence": "There is no fitted lid with a central lifting knob; the top feature is a decorative helmet visor with an oval graphic."
+    }
+  ]
+}

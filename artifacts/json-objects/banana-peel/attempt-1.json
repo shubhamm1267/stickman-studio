@@ -1,0 +1,163 @@
+{
+  "visualSpec": {
+    "renderMode": "replace",
+    "silhouetteFamily": "custom-vector",
+    "geometryRecipe": [
+      {
+        "id": "centralStem",
+        "kind": "group",
+        "pivot": [
+          0,
+          -50
+        ],
+        "children": [
+          {
+            "kind": "path",
+            "d": "M -10 -40 C -15 -60 15 -60 10 -40 C 15 -30 10 -20 0 -20 C -10 -20 -15 -30 -10 -40 Z",
+            "fill": "#8B5A2B",
+            "stroke": "#2C2C2C",
+            "width": 3
+          }
+        ]
+      },
+      {
+        "id": "skinFlapUp",
+        "kind": "group",
+        "pivot": [
+          0,
+          -40
+        ],
+        "children": [
+          {
+            "kind": "path",
+            "d": "M -6 -40 C -12 20 -3 80 0 140 C 3 80 12 20 6 -40 Z",
+            "fill": "#FDE992",
+            "stroke": "#2C2C2C",
+            "width": 3
+          },
+          {
+            "kind": "path",
+            "d": "M -1 -35 C -3 30 -1 90 0 130 C 1 90 3 30 1 -35 Z",
+            "fill": "#FFFDD0",
+            "stroke": "#2C2C2C",
+            "width": 1.5
+          }
+        ]
+      },
+      {
+        "id": "skinFlapLeft",
+        "kind": "group",
+        "pivot": [
+          -10,
+          -50
+        ],
+        "children": [
+          {
+            "kind": "path",
+            "d": "M -10 -45 C -50 -20 -100 -5 -140 -20 C -110 5 -60 0 -10 -55 Z",
+            "fill": "#FDE992",
+            "stroke": "#2C2C2C",
+            "width": 3
+          },
+          {
+            "kind": "path",
+            "d": "M -12 -48 C -45 -22 -95 -8 -130 -18 C -100 -2 -55 -2 -12 -51 Z",
+            "fill": "#FFFDD0",
+            "stroke": "#2C2C2C",
+            "width": 1.5
+          }
+        ]
+      },
+      {
+        "id": "skinFlapRight",
+        "kind": "group",
+        "pivot": [
+          10,
+          -50
+        ],
+        "children": [
+          {
+            "kind": "path",
+            "d": "M 10 -45 C 50 -30 90 -40 130 -20 C 110 5 60 10 10 -35 Z",
+            "fill": "#FDE992",
+            "stroke": "#2C2C2C",
+            "width": 3
+          },
+          {
+            "kind": "path",
+            "d": "M 12 -42 C 45 -28 85 -36 120 -18 C 102 1 55 7 12 -33 Z",
+            "fill": "#FFFDD0",
+            "stroke": "#2C2C2C",
+            "width": 1.5
+          }
+        ]
+      }
+    ],
+    "normalizedDimensions": {
+      "width": 100,
+      "height": 100
+    },
+    "material": "flat",
+    "paint": {},
+    "palette": [],
+    "facialComponents": [],
+    "apparel": [],
+    "accessories": [],
+    "decorativeMarks": [],
+    "proceduralComponents": [],
+    "motionAnchors": [
+      {
+        "id": "grip",
+        "position": [
+          0,
+          -40
+        ]
+      },
+      {
+        "id": "base",
+        "position": [
+          0,
+          50
+        ]
+      },
+      {
+        "id": "support",
+        "position": [
+          0,
+          50
+        ]
+      }
+    ],
+    "zIndex": 0
+  },
+  "features": [
+    {
+      "featureIndex": 0,
+      "feature": "Contrasting pale cream inner surfaces against textured outer yellow skin",
+      "nodeIds": [
+        "skinFlapUp",
+        "skinFlapLeft",
+        "skinFlapRight"
+      ],
+      "nativeProperties": []
+    },
+    {
+      "featureIndex": 1,
+      "feature": "Curling tapering tips that twist toward the floor",
+      "nodeIds": [
+        "skinFlapUp",
+        "skinFlapLeft",
+        "skinFlapRight"
+      ],
+      "nativeProperties": []
+    },
+    {
+      "featureIndex": 2,
+      "feature": "Connected sturdy brown stem at the center junction",
+      "nodeIds": [
+        "centralStem"
+      ],
+      "nativeProperties": []
+    }
+  ]
+}

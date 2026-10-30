@@ -1,4 +1,5 @@
 import {validatePartNodes} from "./part-motion.mjs";
+import {ObjectBehaviorSchema} from './performance-direction.mjs';
 import {validatePartAttachments} from "./part-attachments.mjs";
 import { z } from "zod";
 import {createMotionSchemas,describeMotionCapabilities,validateMotionIR,validateKeys,performanceTrack} from "./motion-ir.mjs";
@@ -155,6 +156,7 @@ export const PropSchema = z
       "roll", "attach", "drink-from", "pull", "tear",
     ])).max(20).optional(),
     contactEventIds: z.array(id).max(100).optional(),
+    objectBehaviors:z.array(ObjectBehaviorSchema).max(30).optional(),
     optionalSourceAsset: z.object({
       assetId: id,
       sha256: hash256,
@@ -352,6 +354,7 @@ export const SceneSchema = z
             end: num.min(0.1),
             focus: point,
             intent: z.enum(["establishing","contact","reaction","payoff"]).optional(),
+            framing: z.enum(["full-body","medium","close-up"]).optional(),
             endFocus: point.optional(),
             endZoom: num.min(0.4).max(6).optional(),
             zoom: num.min(0.4).max(6),
@@ -594,7 +597,15 @@ export function validatePlan(input) {
   for(const design of [...p.characters,...p.propDesigns]){
     const spec=design.visualSpec;
     const lists=spec?['geometryRecipe','facialComponents','apparel','accessories','decorativeMarks'].flatMap(k=>spec[k]||[]):[];
-    validatePartNodes([...lists,...(design.nodes||[])],{sceneIds:scenes,owner:design.id,allowBones:characters.has(design.id)});
+    const nodeIds=validatePartNodes([...lists,...(design.nodes||[])],{sceneIds:scenes,owner:design.id,allowBones:characters.has(design.id)});
+    for(const behavior of design.objectBehaviors||[]){
+      if(!nodeIds.has(behavior.partId))throw Error(`Object behavior references missing part ${behavior.partId} on ${design.id}`);
+      if(behavior.rotationLimits&&behavior.rotationLimits[0]>behavior.rotationLimits[1])throw Error('Object rotation limits are reversed');
+      const check=items=>{for(const node of items){
+        if(node.id===behavior.partId&&behavior.rotationLimits&&node.animation?.some(track=>track.keys.some(k=>k.rotation!==undefined&&(k.rotation<behavior.rotationLimits[0]||k.rotation>behavior.rotationLimits[1]))))throw Error(`Animated part ${node.id} exceeds declared rotation limits`);
+        check(node.children||[]);
+      }};check(lists);
+    }
     if(spec?.renderMode==='replace'&&!lists.length&&!spec.proceduralComponents.length)throw Error(`Replacement visual ${design.id} requires visible geometry`);
   }
   for(const scene of p.scenes){validatePartAttachments(scene,p.propDesigns);validatePartNodes(scene.backgroundNodes,{sceneIds:scenes,owner:scene.id});}
@@ -821,7 +832,9 @@ export function validatePlan(input) {
     }
     if(req.color && (d||a)?.[d?"color":"outfit"].toLowerCase()!==req.color.toLowerCase())throw Error("Required colour changed: "+req.description);
     if(req.label && (d?.label||a?.shirtLabel)!==req.label)throw Error("Required physical label changed: "+req.description);
-    if(req.worn && !s.props.some(q=>q.designId===req.propId && ((q.attachment?.actorId===req.characterId && q.attachment?.bone==="head") || q.attachmentEvents?.some(e=>e.at<s.duration && e.attachment?.actorId===req.characterId && e.attachment?.bone==="head"))))throw Error("Required headwear is not attached: "+req.description);
+    // `worn` with no propId describes clothing rendered by the character rig;
+    // only a placed prop can be checked for an attachment to the head.
+    if(req.worn && req.propId && !s.props.some(q=>q.designId===req.propId && ((q.attachment?.actorId===req.characterId && q.attachment?.bone==="head") || q.attachmentEvents?.some(e=>e.at<s.duration && e.attachment?.actorId===req.characterId && e.attachment?.bone==="head"))))throw Error("Required headwear is not attached: "+req.description);
     if(req.action && !s.beats.some(b=>b.kind===req.action && (!req.characterId||b.actorId===req.characterId) && (!req.propId||b.targetId===req.propId)))throw Error("Required action has no actual beat: "+req.description+"; expected "+JSON.stringify(req)+"; actual beats "+JSON.stringify(s.beats.map(b=>({kind:b.kind,actorId:b.actorId,targetId:b.targetId}))));
   }
   for (const character of p.characters) {

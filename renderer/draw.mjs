@@ -1,4 +1,5 @@
 import {samplePart} from "../shared/part-motion.mjs";
+import {propConstruction} from '../shared/prop-construction.mjs';
 import{neckOf,armRoot,wristDirection,SEGMENT_BONES,segmentAnchor}from"../shared/rig.mjs";
 import { clamp, lerp, ease, ik, add } from "../shared/math.mjs";
 import { validateSvgPathData } from "../shared/svg-path.mjs";
@@ -327,12 +328,16 @@ function controlledMouth(s, emotion, ink, y = 42, depth = 38) {
   const lower = y + 4 + aperture * depth;
   return `<g data-dynamic-mouth="true">${path(`M${-width} ${y} Q0 ${y-curve*8} ${width} ${y} Q0 ${lower+curve*7} ${-width} ${y}Z`,"#542e2a",2,ink)}${aperture>.18?path(`M${-width*.78} ${y+2} Q0 ${y+5+aperture*3} ${width*.78} ${y+2} L${width*.7} ${y+8+aperture*4} Q0 ${y+11+aperture*5} ${-width*.7} ${y+8+aperture*4}Z`,"#fff7df",.8,ink):""}</g>`;
 }
+const seniorFace = a => a.kind==='grandma'||(['man','woman'].includes(a.kind)&&a.ageYears>=65);
+function ageLines(a,ink){
+  return seniorFace(a)?`<g data-age-cues="senior">${path('M-28 -76 Q-3 -84 24 -77 M-44 12 L-34 18 M-46 22 L-36 27 M37 16 L47 10 M37 27 L48 22 M-34 48 L-29 58 M32 47 L36 57','none',1.5,ink)}</g>`:'';
+}
 function face(a, s, t) {
   if(a.referenceStyle === "elastic-meme") return elasticFace(a,s,t);
   if(a.artStyle === "toon") return toonFace(a,s,t);
   if(a.artStyle === "pencil") return pencilFace(a,s,t);
   let q = s.face,
-    old = a.kind === "grandma",
+    old = seniorFace(a),
     female = ["grandma", "woman"].includes(a.kind),
     jaw = q === "jawdrop" && !s.coveredMouth ? 52 : q === "shock" ? 15 : 0,
     puff = q === "extreme" ? 14 : q === "strain" ? 7 : 0,
@@ -373,13 +378,12 @@ function face(a, s, t) {
     : ["smug", "calm", "defeat"].includes(q)
       ? 0.5
       : 1;
-  if (Math.sin(t * 2.1 + a.id.length) > 0.995) lid = 0.025;
+  lid=Math.min(lid,blinkOpenness(a.id,t));
   let wide = ["shock", "jawdrop", "idea"].includes(q),
     g = s.gaze || (q === "defeat" ? [0, 9] : [7, 4]);
-  const blinking = Math.sin(t * 2.1 + a.id.length) > 0.995;
   d +=
-    eye([-24, -29], [wide ? 25 : 21, wide ? 34 : 28], eyeOpen(s,"left",blinking?.025:lid), g, a.id + "e1") +
-    eye([18, -33], [wide ? 28 : 24, wide ? 39 : 32], eyeOpen(s,"right",blinking?.025:lid), g, a.id + "e2");
+    eye([-24, -29], [wide ? 25 : 21, wide ? 34 : 28], eyeOpen(s,"left",lid), g, a.id + "e1") +
+    eye([18, -33], [wide ? 28 : 24, wide ? 39 : 32], eyeOpen(s,"right",lid), g, a.id + "e2");
   if (old || a.accessory === "glasses")
     d +=
       ellipse([-24, -29], [25, 23], "none", 1.7) +
@@ -566,7 +570,7 @@ export function prop(design, p) {
   }
   if(design.type === "bottle")d=path("M-8 -62 L8 -62 L9 -40 Q25 -31 24 -17 L24 37 Q0 48 -24 37 L-24 -17 Q-25 -31 -9 -40Z",c,2.3)+path("M-11 -67 L11 -67 L11 -59 L-11 -59Z","#b73535",1.6)+path("M-23 -8 L23 -8 L23 22 L-23 22Z","#fff5d4",1)+label(design.label||"",[0,12],11,"#245d7b");
   if (design.type === "banana" || design.type === "peel") {
-    d = design.type === "banana" ? path("M-43 -28 Q-17 32 47 -13 Q28 45 -8 34 Q-43 25 -43 -28Z",c,2.4) + path("M-43 -28 L-45 -37 L-36 -35 L-35 -24", "#78513a",2) : path("M0 -8 Q-18 18 -48 13 Q-23 39 1 7 Q20 42 51 21 Q27 19 7 -10 Q6 -25 0 -8Z",c,2.4) + path("M0 -9 L3 20", "none",1.4,"#bd8123");
+    d = visualSpec(propConstruction(design.type));
   }
   if (design.type === "dustbin") {
     d = path("M-65 -157 L65 -157 L51 0 Q0 13 -51 0Z", c,2.8) + path("M-52 -142 L-41 -4 M52 -142 L41 -4", "none",2,"#27756e") + group([-66,-158],-open*100,1,path("M0 -4 Q65 -24 132 -4 L132 8 L0 8Z","#2d6b62",2.5)+path("M52 -15 L52 -26 L80 -26 L80 -15","none",4));
@@ -1042,7 +1046,7 @@ export function groundShadow(a,s) {
 
 export function pencilFace(a,s,t) {
  const q=s.face,wide=["shock","jawdrop","idea"].includes(q),puff=q==="extreme"?22:q==="strain"?10:0,drop=q==="jawdrop"&&!s.coveredMouth?42:0,
- skin=s.red>.1?"#ead3aa":a.skin,female=["woman","grandma"].includes(a.kind),old=a.kind==="grandma",ink="#242a22";
+ skin=s.red>.1?"#ead3aa":a.skin,female=["woman","grandma"].includes(a.kind),old=seniorFace(a),ink="#242a22";
  let d="";
  if(female && !["bob","bald"].includes(a.hairStyle))d+=ellipse([44,-65],[24,28],a.hair,2);
  d+=path(female?`M-48 -48 C-51 -95 42 -99 49 -50 L51 -9 Q64 24 43 48 Q24 ${76+drop} 0 ${79+drop} Q-29 ${76+drop} -45 48 Q-62 23 -50 -8Z`:`M-52 -48 C-55 -95 42 -105 51 -52 L54 -12 C${82+puff} -5 ${83+puff} 34 51 40 Q52 ${83+drop} 1 ${84+drop} Q-47 ${85+drop} -49 42 C${-84-puff} 38 ${-86-puff} 4 -55 -6Z`,skin,2.5,ink);
@@ -1055,11 +1059,10 @@ export function pencilFace(a,s,t) {
  else if(hair==="ponytail")d+=path("M-51 -51 Q-58 -101 3 -101 Q58 -99 51 -50 Q76 -93 93 -44 Q99 -11 76 6 Q83 -35 51 -50 L33 -70 Q-3 -58 -51 -51Z",a.hair,2,ink);
  else if(hair!=="bald")d+=path("M-33 -79 Q-28 -104 -9 -87 Q1 -115 18 -88 Q33 -107 36 -79","none",2,ink);
  let op=["strain","extreme","laugh","cry"].includes(q)?.04:["smug","calm","defeat","annoyed"].includes(q)?.46:1;
- const blinking=Math.sin(t*2.1+a.id.length)>.997;
- if(blinking)op=.025;
+ op=Math.min(op,blinkOpenness(a.id,t));
  const g=s.gaze||[5,2];
  d+=eye([-23,-35],[25,wide?36:31],eyeOpen(s,"left",op),g,a.id+"pL")+eye([23,-38],[27,wide?38:33],eyeOpen(s,"right",op),g,a.id+"pR");
- if(old||a.accessory==="glasses")d+=ellipse([-23,-35],[28,27],"none",1.8)+ellipse([23,-38],[30,28],"none",1.8)+line([3,-35],[6,-36],2);
+ if(a.kind==="grandma"||a.accessory==="glasses")d+=ellipse([-23,-35],[28,27],"none",1.8)+ellipse([23,-38],[30,28],"none",1.8)+line([3,-35],[6,-36],2);
  const brows=controlledBrows(s,ink);
  d+=brows??path(["annoyed","strain","extreme"].includes(q)?"M-49 -72 L-6 -57 M7 -60 L47 -78":wide?"M-47 -81 Q-25 -105 -7 -82 M8 -85 Q27 -111 48 -86":"M-47 -74 Q-27 -90 -8 -76 M8 -79 Q28 -96 47 -81","none",2.5,ink);
  d+=female?path("M2 -9 Q-4 4 -1 10 Q8 17 16 8","none",1.8,ink):path("M-10 -5 Q-26 -1 -18 15 Q-9 23 2 16 Q16 27 30 14 Q37 1 25 -5 Q13 -13 3 -5Z",skin,2.1,ink)+ellipse([-9,13],[3,2],ink,0)+ellipse([23,12],[3,2],ink,0);
@@ -1074,7 +1077,7 @@ export function pencilFace(a,s,t) {
  d+="</g>";
  if(a.accessory==="moustache")d+=path("M-24 22 Q-11 11 0 20 Q15 10 29 21 Q17 36 1 27 Q-12 40 -24 22Z",a.hair,1);
  if(["strain","extreme","cry"].includes(q))d+=path("M-54 -39 Q-71 -17 -57 -10 Q-47 -8 -54 -39Z","#81bfc5",1);
- if(old)d+=path("M-45 16 L-35 20 M-47 25 L-37 28 M38 47 L46 51","none",1);
+ d+=ageLines(a,ink);
  const fx=a.faceShape==="long"?.9:a.faceShape==="square"?1.12:1,fy=a.faceShape==="long"?1.08:1;
  return `<g data-pencil-face="true" transform="scale(${s.facing*a.headWidth*fx} ${a.headHeight*fy})">${d}</g>`;
 }
@@ -1088,7 +1091,7 @@ export function toonFace(a,s,t){
  const hair={tuft:"M-48 -62 Q-37 -100 -22 -85 L-13 -107 L0 -88 L14 -106 L25 -86 L42 -94 L50 -62 Q8 -75 -48 -62Z",curly:"M-52 -46 Q-79 -61 -58 -82 Q-65 -104 -38 -99 Q-30 -124 -5 -107 Q13 -126 30 -105 Q60 -110 57 -84 Q80 -65 52 -45 L35 -73 Q-7 -58 -52 -46Z",sidepart:"M-54 -49 Q-64 -105 5 -101 Q62 -100 57 -48 L36 -75 Q4 -58 -43 -70Z",bob:"M-56 -13 Q-80 -105 0 -107 Q78 -109 61 -5 L42 -59 Q5 -56 -41 -72Z",ponytail:"M-54 -50 Q-60 -103 0 -104 Q64 -100 54 -48 Q78 -101 98 -42 L76 -20 Q70 -68 51 -49 L28 -73 Q-8 -56 -54 -50Z",bald:"M-29 -82 Q-17 -98 -5 -85 M21 -84 L31 -75"};
  d+=path(hair[a.hairStyle||(["woman","grandma"].includes(a.kind)?"bob":"tuft")],a.hairStyle==="bald"?"none":a.hair,2,ink);
  let op=["laugh","strain","extreme","cry"].includes(q)?.03:["calm","smug","defeat"].includes(q)?.6:1;
- if(Math.sin(t*1.73+a.id.length*.7)>.997)op=.02;
+ op=Math.min(op,blinkOpenness(a.id,t));
  d+=eye([-23,-26],[21,wide?32:27],eyeOpen(s,"left",op),s.gaze||[5,2],a.id+"tL")+eye([22,-28],[23,wide?34:29],eyeOpen(s,"right",op),s.gaze||[5,2],a.id+"tR");
  const brows=controlledBrows(s,ink);
  d+=brows??path(angry?"M-46 -61 L-5 -49 M8 -51 L46 -66":wide?"M-46 -74 Q-26 -96 -7 -73 M9 -76 Q31 -100 50 -76":"M-44 -63 Q-24 -81 -7 -65 M10 -67 Q32 -86 49 -67","none",2.7,ink);
@@ -1101,21 +1104,37 @@ export function toonFace(a,s,t){
  else d+=path(angry||q==="defeat"?"M-24 43 Q2 21 31 39":q==="kiss"?"M-6 33 Q5 22 13 34 Q8 45 -4 40":"M-25 31 Q4 53 33 27","none",2.1,ink);
  if(a.accessory==="moustache")d+=path("M-29 22 Q-12 8 0 20 Q17 7 34 21 Q20 39 0 29 Q-16 42 -29 22Z",a.hair,1.2,ink);
  if(s.sweat>0){for(let i=0;i<3;i++){const y=-52+((t*34+i*29)%85);d+=`<g opacity="${s.sweat*.85}">${path(`M${48+i*8} ${y} q-13 22 0 24 q12 -4 0 -24Z`,"#73becd",1,"#3e819a")}</g>`;}}
+ d+=ageLines(a,ink);
  return `<g data-toon-face="true" transform="scale(${s.facing*a.headWidth*fx} ${a.headHeight*fy})">${d}</g>`;
 }
 
 
 // Original asymmetric ink character: independently shaped cheeks, jaw and eyes.
+// Absolute-time sampling keeps random seeks and parallel export identical.
+// Hash the full identity: equally long names must not blink in lockstep.
+export function blinkOpenness(id, time) {
+ let seed=2166136261;
+ for(const char of String(id))seed=Math.imul(seed^char.charCodeAt(0),16777619)>>>0;
+ const period=3.2+(seed%1700)/1000,phase=(seed%1009)/1009*period;
+ const age=((time+phase)%period+period)%period;
+ if(age>=.18)return 1;
+ return age<.065?lerp(1,.025,ease(age/.065)):lerp(.025,1,ease((age-.065)/.115));
+}
+
 export function elasticFace(a,s,t){
  const ink='#20251f',skin=a.skin,q=s.face;
  const wide=['shock','jawdrop','idea'].includes(q),angry=['annoyed','strain','extreme'].includes(q),female=['woman','grandma'].includes(a.kind);
  const jaw=q==='jawdrop'?35:q==='shock'?12:0,cheek=angry?12:0;
  let d=path(`M-52 -57 C-40 -103 41 -100 54 -58 Q68 -32 53 -5 Q${79+cheek} 13 53 37 L48 ${67+jaw} Q8 ${91+jaw} -40 ${72+jaw} Q-60 54 -52 27 Q-79 11 -56 -10 Q-66 -37 -52 -57Z`,skin,3,ink);
  d+=ellipse([-57,1],[14,19],skin,2.5,ink)+path('M-62 -3 Q-48 -11 -51 10','none',1.7,ink);
- if(a.hairStyle!=='bald')d+=a.hairStyle==='bob'||female?path('M-57 -26 Q-80 -109 0 -105 Q78 -104 61 -17 L45 -64 Q5 -53 -43 -73Z',a.hair,2.6,ink):path('M-36 -79 Q-44 -109 -15 -88 Q0 -120 15 -88 Q39 -109 43 -74','none',3,ink);
+ const hair=a.hairStyle||(female?'bob':'tuft');
+ if(hair==='sidepart')d+=path('M-55 -55 Q-61 -103 3 -99 Q52 -102 55 -54 L32 -74 Q-4 -57 -43 -71Z',a.hair,2.6,ink);
+ else if(hair==='curly')d+=path('M-55 -58 C-80 -80 -54 -111 -36 -97 C-37 -123 -5 -117 0 -99 C24 -122 57 -104 52 -76 L54 -58 Q1 -83 -55 -58Z',a.hair,2.6,ink);
+ else if(hair==='bob')d+=path('M-57 -26 Q-80 -109 0 -105 Q78 -104 61 -17 L45 -64 Q5 -53 -43 -73Z',a.hair,2.6,ink);
+ else if(hair!=='bald')d+=path('M-36 -79 Q-44 -109 -15 -88 Q0 -120 15 -88 Q39 -109 43 -74','none',3,ink);
  if(a.hairStyle==='ponytail')d+=path('M51 -62 Q103 -111 94 -22 L69 -3 Q83 -53 51 -62Z',a.hair,2.6,ink);
  const op=angry?.2:['smug','calm','defeat'].includes(q)?.48:1;
- const blink=Math.sin(t*1.9+a.id.length)>.999?.03:op;
+ const blink=wide?op:Math.min(op,blinkOpenness(a.id,t));
  d+=eye([-23,-35],[26,wide?43:34],eyeOpen(s,'left',blink),s.gaze||[5,2],a.id+'eL')+eye([25,-39],[29,wide?45:36],eyeOpen(s,'right',blink),s.gaze||[5,2],a.id+'eR');
  if(female)d+=path('M-49 -56 L-57 -66 M49 -62 L59 -72','none',2.5,ink);
  d+=controlledBrows(s,ink)??path(angry?'M-51 -79 L-3 -62 M7 -65 L53 -87':wide?'M-50 -86 Q-25 -120 -4 -91 M9 -93 Q32 -122 54 -93':'M-48 -80 Q-27 -96 -7 -82 M9 -85 Q30 -102 52 -88','none',3,ink);
@@ -1123,7 +1142,9 @@ export function elasticFace(a,s,t){
  const named=q==='jawdrop'?1:q==='shock'?.8:q==='laugh'?.65:0;
  const aperture=Math.max(0,Math.min(1,s.mouthAperture??s.mouthOpen??named));
  if(!s.coveredMouth){
-  if(['jawdrop','shock'].includes(q)&&aperture>.025&&s.mouthCurve===undefined){
+  if(angry&&s.mouthAperture===undefined&&s.mouthOpen===undefined&&s.mouthCurve===undefined){
+   d+=`<g data-elastic-teeth="true">${path('M-36 31 Q0 22 38 29 L35 54 Q0 63 -34 55Z','#fff8df',2.4,ink)+path('M-34 42 L36 41 M-18 29 L-17 56 M1 26 L1 59 M20 28 L19 56','none',1.1,ink)}</g>`;
+  }else if(['jawdrop','shock'].includes(q)&&aperture>.025&&(s.mouthCurve===undefined||s.mouthCurve===0)){
    const center=48+jaw*.6,rx=(q==='jawdrop'?23:17)*(s.mouthWidth??1),ry=8+aperture*35;
    d+=ellipse([4,center],[rx,ry],'#542e2a',2.5,ink)+ellipse([6,center+ry*.65],[rx*.55,ry*.18],'#c98170',0);
   }else d+=controlledMouth({...s,mouthWidth:s.mouthWidth??(wide?1.3:1.15),mouthAperture:aperture},q,ink,36+jaw*.25,100);
@@ -1131,7 +1152,18 @@ export function elasticFace(a,s,t){
  if(q==='jawdrop')d+=path(`M-42 ${77+jaw} Q0 ${90+jaw} 39 ${76+jaw}`,'none',1.6,ink);
  if(angry)d+=path('M-49 20 L-35 26 M43 19 L54 24','none',2,ink);
  if(s.blush)d+=`<g opacity="${s.blush*.6}">${ellipse([-44,26],[15,8],'#c98170',0)+ellipse([45,24],[15,8],'#c98170',0)}</g>`;
+ if(s.sweat>0){
+  const amount=clamp(s.sweat);
+  d+=`<g data-elastic-sweat="true" opacity="${n(amount*.85)}">`;
+  for(let i=0;i<3;i++){
+   const x=63+i*9,y=-55+((t*42+i*27)%90+90)%90;
+   d+=path(`M${x} ${n(y)} q-10 17 0 20 q10 -3 0 -20Z`,'#83b9bf',1.3,'#477c80');
+  }
+  d+='</g>';
+ }
  if(a.accessory==='glasses')d+=ellipse([-23,-35],[29,30],'none',2,ink)+ellipse([25,-39],[31,32],'none',2,ink);
  if(a.accessory==='moustache')d+=path('M-24 24 Q-7 10 3 22 Q18 9 33 23 Q14 39 3 28 Q-9 42 -24 24Z',a.hair,1.5,ink);
- return `<g data-elastic-face="true" transform="scale(${s.facing*a.headWidth} ${a.headHeight})">${d}</g>`;
+ d+=ageLines(a,ink);
+ const fx=a.faceShape==='long'?.88:a.faceShape==='square'?1.12:1,fy=a.faceShape==='long'?1.1:1;
+ return `<g data-elastic-face="true" transform="scale(${s.facing*a.headWidth*fx} ${a.headHeight*fy})">${d}</g>`;
 }

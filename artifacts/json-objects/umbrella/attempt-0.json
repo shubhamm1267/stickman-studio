@@ -1,0 +1,178 @@
+{
+  "visualSpec": {
+    "renderMode": "replace",
+    "silhouetteFamily": "custom-vector",
+    "geometryRecipe": [
+      {
+        "id": "canopy",
+        "kind": "group",
+        "position": [
+          0,
+          -131.5
+        ],
+        "children": [
+          {
+            "kind": "path",
+            "d": "M 0 130 C -60 130 -110 100 -120 70 C -125 40 -80 30 0 20 C 80 30 125 40 120 70 C 110 100 60 130 0 130 Z",
+            "fill": "#4caf50",
+            "stroke": "#1b5e20",
+            "width": 2.5
+          },
+          {
+            "kind": "path",
+            "d": "M 0 20 C -40 50 -60 90 -120 70 C -90 110 -40 130 0 130",
+            "fill": "none",
+            "stroke": "#1b5e20",
+            "width": 1.5
+          },
+          {
+            "kind": "path",
+            "d": "M 0 20 C 40 50 60 90 120 70 C 90 110 40 130 0 130",
+            "fill": "none",
+            "stroke": "#1b5e20",
+            "width": 1.5
+          },
+          {
+            "id": "ribs",
+            "kind": "group",
+            "children": [
+              {
+                "kind": "path",
+                "d": "M 0 20 L -120 70",
+                "fill": "none",
+                "stroke": "#2e7d32",
+                "width": 1.5
+              },
+              {
+                "kind": "path",
+                "d": "M 0 20 L -60 110",
+                "fill": "none",
+                "stroke": "#2e7d32",
+                "width": 1.5
+              },
+              {
+                "kind": "path",
+                "d": "M 0 20 L 0 130",
+                "fill": "none",
+                "stroke": "#2e7d32",
+                "width": 1.5
+              },
+              {
+                "kind": "path",
+                "d": "M 0 20 L 60 110",
+                "fill": "none",
+                "stroke": "#2e7d32",
+                "width": 1.5
+              },
+              {
+                "kind": "path",
+                "d": "M 0 20 L 120 70",
+                "fill": "none",
+                "stroke": "#2e7d32",
+                "width": 1.5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "shaft",
+        "kind": "group",
+        "position": [
+          0,
+          -131.5
+        ],
+        "children": [
+          {
+            "kind": "line",
+            "from": [
+              0,
+              20
+            ],
+            "to": [
+              0,
+              -60
+            ],
+            "stroke": "#5d4037",
+            "width": 3
+          },
+          {
+            "id": "handle",
+            "kind": "group",
+            "children": [
+              {
+                "kind": "path",
+                "d": "M 0 -60 L 0 -80 C 0 -95 15 -95 15 -80 C 15 -72 8 -72 5 -72",
+                "fill": "none",
+                "stroke": "#3e2723",
+                "width": 3.5
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "normalizedDimensions": {
+      "width": 100,
+      "height": 100
+    },
+    "material": "flat",
+    "paint": {},
+    "palette": [],
+    "facialComponents": [],
+    "apparel": [],
+    "accessories": [],
+    "decorativeMarks": [],
+    "proceduralComponents": [],
+    "motionAnchors": [
+      {
+        "id": "grip",
+        "position": [
+          10,
+          -216.5
+        ]
+      },
+      {
+        "id": "base",
+        "position": [
+          0,
+          -226.5
+        ]
+      },
+      {
+        "id": "support",
+        "position": [
+          0,
+          -111.5
+        ]
+      }
+    ],
+    "zIndex": 0
+  },
+  "features": [
+    {
+      "featureIndex": 0,
+      "feature": "distinct curved green dome shape of the fabric canopy",
+      "nodeIds": [
+        "canopy"
+      ],
+      "nativeProperties": []
+    },
+    {
+      "featureIndex": 1,
+      "feature": "visible structural ribs radiating symmetrically from the center",
+      "nodeIds": [
+        "ribs"
+      ],
+      "nativeProperties": []
+    },
+    {
+      "featureIndex": 2,
+      "feature": "characteristic J-shaped hooked handle at the base",
+      "nodeIds": [
+        "handle"
+      ],
+      "nativeProperties": []
+    }
+  ]
+}

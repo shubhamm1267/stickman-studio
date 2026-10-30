@@ -1,0 +1,91 @@
+{
+  "id": "umbrella",
+  "name": "Open umbrella with curved canopy, ribs and hooked handle",
+  "type": "drawing",
+  "visualSpec": {
+    "renderMode": "replace",
+    "silhouetteFamily": "custom-vector",
+    "geometryRecipe": [
+      {
+        "id": "umbrella_canopy",
+        "kind": "path",
+        "d": "M -40 35 C -40 10, -20 -35, 0 -38 C 20 -35, 40 10, 40 35 C 30 45, 10 40, 0 40 C -10 40, -30 45, -40 35 Z",
+        "fill": "#e5c158",
+        "stroke": "#233027",
+        "width": 2.5
+      },
+      {
+        "id": "rib_left",
+        "kind": "path",
+        "d": "M 0 -38 C -15 -10, -30 15, -40 35",
+        "fill": "none",
+        "stroke": "#233027",
+        "width": 1.5
+      },
+      {
+        "id": "rib_mid",
+        "kind": "path",
+        "d": "M 0 -38 C 0 -5, 0 15, 0 40",
+        "fill": "none",
+        "stroke": "#233027",
+        "width": 1.5
+      },
+      {
+        "id": "rib_right",
+        "kind": "path",
+        "d": "M 0 -38 C 15 -10, 30 15, 40 35",
+        "fill": "none",
+        "stroke": "#233027",
+        "width": 1.5
+      },
+      {
+        "id": "central_shaft",
+        "kind": "line",
+        "from": [
+          0,
+          -45
+        ],
+        "to": [
+          0,
+          65
+        ],
+        "stroke": "#233027",
+        "width": 3
+      },
+      {
+        "id": "hooked_handle",
+        "kind": "path",
+        "d": "M 0 65 C 0 80, 12 80, 12 70 C 12 65, 8 62, 5 62",
+        "fill": "none",
+        "stroke": "#233027",
+        "width": 3
+      }
+    ],
+    "normalizedDimensions": {
+      "width": 100,
+      "height": 100
+    },
+    "material": "flat",
+    "paint": {
+      "fill": "none",
+      "stroke": "#233027",
+      "outlineThickness": 2
+    },
+    "palette": [
+      "#e5c158",
+      "#233027",
+      "#c49e38"
+    ],
+    "facialComponents": [],
+    "apparel": [],
+    "accessories": [],
+    "decorativeMarks": [],
+    "proceduralComponents": [],
+    "motionAnchors": [],
+    "zIndex": 0
+  },
+  "visualAssetRequest": {
+    "description": "Open umbrella with curved canopy, ribs and hooked handle",
+    "requiredFeatures": []
+  }
+}

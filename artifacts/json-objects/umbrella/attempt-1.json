@@ -1,0 +1,176 @@
+{
+  "visualSpec": {
+    "renderMode": "replace",
+    "silhouetteFamily": "custom-vector",
+    "geometryRecipe": [
+      {
+        "id": "canopy",
+        "kind": "group",
+        "position": [
+          0,
+          -61.5
+        ],
+        "children": [
+          {
+            "kind": "path",
+            "d": "M 0,-40 C -70,-40 -120,-30 -140,-10 C -120,35 -50,55 0,60 C 50,55 120,35 140,-10 C 120,-30 70,-40 0,-40 Z",
+            "fill": "#43a047",
+            "stroke": "#1b5e20",
+            "width": 2.5
+          },
+          {
+            "kind": "path",
+            "d": "M 0,-40 L 0,60",
+            "fill": "none",
+            "stroke": "#1b5e20",
+            "width": 1.5
+          },
+          {
+            "kind": "path",
+            "d": "M 0,-40 L -70,50",
+            "fill": "none",
+            "stroke": "#1b5e20",
+            "width": 1.5
+          },
+          {
+            "kind": "path",
+            "d": "M 0,-40 L 70,50",
+            "fill": "none",
+            "stroke": "#1b5e20",
+            "width": 1.5
+          },
+          {
+            "kind": "path",
+            "d": "M 0,-40 L -120,15",
+            "fill": "none",
+            "stroke": "#1b5e20",
+            "width": 1.5
+          },
+          {
+            "kind": "path",
+            "d": "M 0,-40 L 120,15",
+            "fill": "none",
+            "stroke": "#1b5e20",
+            "width": 1.5
+          },
+          {
+            "kind": "path",
+            "d": "M -140,-10 C -100,5 -50,15 0,60",
+            "fill": "none",
+            "stroke": "#1b5e20",
+            "width": 1.5
+          },
+          {
+            "kind": "path",
+            "d": "M 140,-10 C 100,5 50,15 0,60",
+            "fill": "none",
+            "stroke": "#1b5e20",
+            "width": 1.5
+          }
+        ]
+      },
+      {
+        "id": "shaft",
+        "kind": "group",
+        "position": [
+          0,
+          -61.5
+        ],
+        "children": [
+          {
+            "kind": "line",
+            "from": [
+              0,
+              -40
+            ],
+            "to": [
+              0,
+              -130
+            ],
+            "stroke": "#4e342e",
+            "width": 3
+          }
+        ]
+      },
+      {
+        "id": "handle",
+        "kind": "group",
+        "position": [
+          0,
+          -61.5
+        ],
+        "children": [
+          {
+            "kind": "path",
+            "d": "M 0,-130 C 15,-130 20,-150 15,-165 C 10,-175 -5,-175 -10,-160 C -12,-150 -10,-130 0,-130",
+            "fill": "none",
+            "stroke": "#4e342e",
+            "width": 3.5
+          }
+        ]
+      }
+    ],
+    "normalizedDimensions": {
+      "width": 100,
+      "height": 100
+    },
+    "material": "flat",
+    "paint": {},
+    "palette": [],
+    "facialComponents": [],
+    "apparel": [],
+    "accessories": [],
+    "decorativeMarks": [],
+    "proceduralComponents": [],
+    "motionAnchors": [
+      {
+        "id": "grip",
+        "position": [
+          0,
+          -226.5
+        ]
+      },
+      {
+        "id": "base",
+        "position": [
+          0,
+          -191.5
+        ]
+      },
+      {
+        "id": "support",
+        "position": [
+          0,
+          -101.5
+        ]
+      }
+    ],
+    "zIndex": 0
+  },
+  "features": [
+    {
+      "featureIndex": 0,
+      "feature": "distinct curved green dome shape of the fabric canopy",
+      "nodeIds": [
+        "canopy"
+      ],
+      "nativeProperties": []
+    },
+    {
+      "featureIndex": 1,
+      "feature": "visible structural ribs radiating symmetrically from the center",
+      "nodeIds": [
+        "canopy"
+      ],
+      "nativeProperties": []
+    },
+    {
+      "featureIndex": 2,
+      "feature": "characteristic J-shaped hooked handle at the base",
+      "nodeIds": [
+        "handle"
+      ],
+      "nativeProperties": []
+    }
+  ]
+}

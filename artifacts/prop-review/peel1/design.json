@@ -1,0 +1,116 @@
+{
+  "visualAssetRequest": {
+    "description": "A bright yellow curved banana peel lying open on the ground",
+    "requiredFeatures": [
+      "bright yellow",
+      "curved segments",
+      "flat on floor"
+    ],
+    "style": "2d-cartoon"
+  },
+  "objectAffordances": [
+    "grip",
+    "throw"
+  ],
+  "gripOffset": [
+    0,
+    0
+  ],
+  "visualSpec": {
+    "renderMode": "replace",
+    "silhouetteFamily": "organic",
+    "geometryRecipe": [
+      {
+        "id": "stem",
+        "kind": "path",
+        "d": "M -5 50 L -5 58 Q -5 62 0 62 Q 5 62 5 58 L 5 50 Z",
+        "fill": "#6b4423",
+        "stroke": "#332211"
+      },
+      {
+        "id": "flap_bottom",
+        "kind": "path",
+        "d": "M -8 58 Q -20 62 -25 70 Q -30 78 -15 82 Q 0 85 10 75 Q 15 65 8 58 Z",
+        "fill": "#ffe891",
+        "stroke": "#332211"
+      },
+      {
+        "id": "flap_bottom_outer",
+        "kind": "path",
+        "d": "M -8 58 Q -22 64 -27 72 Q -33 80 -16 85 Q 2 88 13 77 Q 19 66 10 58 Q 5 62 0 62 Q -5 62 -8 58 Z",
+        "fill": "#f4c430",
+        "stroke": "#332211"
+      },
+      {
+        "id": "flap_left",
+        "kind": "path",
+        "d": "M -10 54 Q -30 52 -50 56 Q -70 60 -75 68 Q -80 75 -65 77 Q -45 79 -25 70 Q -15 65 -10 58 Z",
+        "fill": "#ffe891",
+        "stroke": "#332211"
+      },
+      {
+        "id": "flap_left_outer",
+        "kind": "path",
+        "d": "M -10 52 Q -32 49 -53 54 Q -75 58 -80 67 Q -85 75 -67 79 Q -46 82 -23 72 Q -12 66 -8 58 Z",
+        "fill": "#f4c430",
+        "stroke": "#332211"
+      },
+      {
+        "id": "flap_right",
+        "kind": "path",
+        "d": "M 10 54 Q 30 52 50 56 Q 70 60 75 68 Q 80 75 65 77 Q 45 79 25 70 Q 15 65 10 58 Z",
+        "fill": "#ffe891",
+        "stroke": "#332211"
+      },
+      {
+        "id": "flap_right_outer",
+        "kind": "path",
+        "d": "M 10 52 Q 32 49 53 54 Q 75 58 80 67 Q 85 75 67 79 Q 46 82 23 72 Q 12 66 8 58 Z",
+        "fill": "#f4c430",
+        "stroke": "#332211"
+      },
+      {
+        "id": "flap_top",
+        "kind": "path",
+        "d": "M -5 48 Q -15 30 -22 15 Q -28 0 -20 -15 Q -15 -22 -10 -22 Q -5 -22 0 -15 Q 10 0 5 25 Q 2 40 5 48 Z",
+        "fill": "#ffe891",
+        "stroke": "#332211"
+      },
+      {
+        "id": "flap_top_outer",
+        "kind": "path",
+        "d": "M -5 48 Q -18 28 -25 12 Q -32 -3 -23 -18 Q -17 -26 -11 -26 Q -4 -26 2 -18 Q 12 -3 8 28 Q 5 42 8 48 Z",
+        "fill": "#f4c430",
+        "stroke": "#332211"
+      }
+    ],
+    "normalizedDimensions": {
+      "width": 100,
+      "height": 100
+    },
+    "material": "organic",
+    "paint": {
+      "fill": "none",
+      "stroke": "#332211",
+      "outlineThickness": 2
+    },
+    "palette": [
+      "#f4c430",
+      "#ffe891",
+      "#6b4423",
+      "#332211"
+    ],
+    "facialComponents": [],
+    "apparel": [],
+    "accessories": [],
+    "decorativeMarks": [],
+    "proceduralComponents": [],
+    "motionAnchors": [],
+    "zIndex": 0
+  },
+  "id": "peel1",
+  "name": "Banana Peel Front",
+  "type": "peel",
+  "color": "#e3bc42",
+  "nodes": []
+}

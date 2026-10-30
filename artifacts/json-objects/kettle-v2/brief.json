@@ -1,0 +1,39 @@
+{
+  "objectState": "whole",
+  "silhouette": "Stout rounded body with a flat circular base, tapering upward into a distinct neck, flanked by an arched side handle and an angled upward-pointing spout opposite.",
+  "viewpoint": "three-quarter perspective",
+  "parts": [
+    {
+      "name": "body",
+      "shape": "flattened sphere with a wide flat circular base and a short vertical collar at the top",
+      "connection": "seamlessly transitions downward to the base and upward to the collar"
+    },
+    {
+      "name": "spout",
+      "shape": "elongated tapered cylinder curving upward and outward with a diagonal opening at the tip",
+      "connection": "welded to the upper side of the main body"
+    },
+    {
+      "name": "handle",
+      "shape": "thick curved semi-circular strap with flattened ends",
+      "connection": "attached at two points vertically along the side of the body opposite the spout"
+    },
+    {
+      "name": "lid",
+      "shape": "domed circular disc featuring a central spherical knob and a stepped flange underneath",
+      "connection": "fitted snugly inside the vertical collar opening at the top of the body"
+    }
+  ],
+  "recognitionCues": [
+    "metallic sheen lines following the curvature of the spherical body",
+    "clear junction where the upward-angled spout meets the side",
+    "closed fitted lid with a centered knob indicating interior volume",
+    "arched structural handle positioned opposite the pouring spout"
+  ],
+  "avoid": [
+    "featureless blobs",
+    "disconnected repeated teardrops",
+    "banana anatomy characteristics",
+    "floating or unattached components"
+  ]
+}

@@ -8,6 +8,19 @@ import { createApp } from "../server/index.mjs";
 delete process.env.STUDIO_TOKEN;
 const wait = (ms) => new Promise((r) => setTimeout(r, ms));
 async function settled(q,id){const deadline=Date.now()+10000;while(Date.now()<deadline){if(!['queued','running'].includes(q.public(id)?.status)&&!q.busy){await q.writes.get(id);return;}await wait(25);}throw Error('Job did not settle before timeout');}
+
+test('render retry retains the job workspace, uses current keys and rejects a completed job',async()=>{
+ const root=await mkdtemp(path.join(os.tmpdir(),'sl-resume-')),q=new JobQueue(root);await q.init();
+ try{
+  const original=await q.add('render',async()=>{throw Error('temporary sound failure');},{},{quality:'full'});await settled(q,original.id);
+  const resumed=await q.retryRender(original.id,async(job,dir)=>{assert.equal(dir,path.join(root,original.id));assert.equal(job.keys.gemini,'current-private-key');return{resumed:true};},{gemini:'current-private-key'},{quality:'draft'});
+  assert.equal(resumed.id,original.id);await settled(q,original.id);
+  assert.equal(q.public(original.id).status,'completed');assert.equal(q.public(original.id).attempts,2);
+  assert.equal(q.public(original.id).request.quality,'draft');assert.equal(q.public(original.id).result.resumed,true);
+  assert.ok(!(await readFile(path.join(root,original.id,'job.json'),'utf8')).includes('current-private-key'));
+  await assert.rejects(q.retryRender(original.id,async()=>({})),/unsuccessful render/);
+ }finally{await q.close();await rm(root,{recursive:true,force:true});}
+});
 test("queue cancels work, redacts keys and persists jobs across restart", async () => {
   let root = await mkdtemp(path.join(os.tmpdir(), "sl-queue-")),
     q = new JobQueue(root);
@@ -68,7 +81,17 @@ test("HTTP plan pipeline, validation, untrusted origins and file traversal check
     await settled(q,j.id);
     const completed=(await(await fetch(url + "/api/jobs/" + j.id)).json());
     assert.equal(completed.status,"completed");
+    assert.match(completed.request.options.generationId,/^[0-9a-f-]{36}$/);
     assert.match(completed.result.plan.storyId,/^story_/);
+    // Separate Generate clicks must not share an old creative checkpoint key.
+    const fresh=await fetch(url + "/api/plan",{
+      method:"POST",headers:{"Content-Type":"application/json"},
+      body:JSON.stringify({options:{story:"",duration:20,durationMode:"auto",format:"shorts"},credentials:{gemini:"secret-test-key"}}),
+    });
+    assert.equal(fresh.status,202);
+    const next=await fresh.json();
+    assert.notEqual(next.request.options.generationId,completed.request.options.generationId);
+    await settled(q,next.id);
     const savedIR=JSON.parse(await readFile(path.join(root,j.id,"story-ir.json"),"utf8"));
     assert.equal(savedIR.schemaVersion,2);
     let demo = await (await fetch(url + "/api/example")).json();

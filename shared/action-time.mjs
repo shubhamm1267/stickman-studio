@@ -6,7 +6,6 @@ export function contactFractions(beat) {
   if (beat.kind === "perform" && beat.contactAt !== undefined)
     return [beat.contactAt];
   if (beat.contactAt !== undefined) return [beat.contactAt];
-  if (beat.accent === "impact") return [0.5];
   const phase = {
     throw: 0.4,
     pawPress: 0.5,
@@ -29,5 +28,6 @@ export function contactFractions(beat) {
         0.35 + (index * 0.45) / Math.max(1, count - 1),
     );
   }
+  if (beat.accent === "impact") return [0.5];
   return [];
 }

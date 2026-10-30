@@ -1,0 +1,471 @@
+{
+  "schemaVersion": 2,
+  "seed": 12345678,
+  "provenance": {
+    "origin": "generated",
+    "sourceSchemaVersion": 1,
+    "generator": "sticklaugh-director"
+  },
+  "generatedAssetRefs": [],
+  "replay": {
+    "schemaVersion": 1,
+    "planHash": "6be3eeb21cb9ab2f8358530d79ed902c47319ae97f0a2605571649edf3c7f639",
+    "seed": 12345678,
+    "fps": 60,
+    "totalFrames": 600,
+    "frameRounding": "nearest",
+    "evaluator": "sticklaugh-frame-evaluator-v1"
+  },
+  "durationMode": "manual",
+  "renderFps": 60,
+  "planningMode": "dynamic",
+  "productionMode": "silent-sfx",
+  "category": "slapstick",
+  "comedySettings": {
+    "innuendo": "off",
+    "profanity": "off",
+    "physicalIntensity": "medium"
+  },
+  "adultModeAcknowledged": false,
+  "humorProfile": "clean",
+  "hook": {
+    "sceneId": "scene1",
+    "beatIndices": [
+      0,
+      1
+    ],
+    "partRefs": [
+      {
+        "entityId": "peel1",
+        "nodeId": "peel1Root"
+      }
+    ],
+    "start": 0.2,
+    "end": 2.5,
+    "evidence": "Ramesh slips on a hidden banana peel and launches backward into the air."
+  },
+  "comedy": {
+    "hook": "Ramesh walks casually wearing a simple shirt, unaware of the floor.",
+    "goal": "Ramesh spots a banana peel and bends down to pick it up.",
+    "escalation": [
+      "Ramesh steps on a second banana peel placed secretly right behind his leading foot.",
+      "His legs shoot forward into the air in a classic cartoon slip motion.",
+      "The first banana peel flies up gracefully through the air."
+    ],
+    "payoff": "Ramesh lands squarely on his bottom with a dazed expression.",
+    "callback": "The airborne banana peel descends precisely to land right on top of his head."
+  },
+  "title": "The Double Peel Dilemma",
+  "story": "Ramesh wears a simple shirt. He sees a banana peel on the floor, reaches to pick it up, slips on another peel behind him, and sits stunned while the first peel lands on his head. One short silent visual comedy scene with expressive reaction and no speech.",
+  "sourceIdea": "Ramesh wears a simple shirt. He sees a banana peel on the floor, reaches to pick it up, slips on another peel behind him, and sits stunned while the first peel lands on his head. One short silent visual comedy scene with expressive reaction and no speech.",
+  "requirements": [
+    {
+      "description": "Ramesh wears a simple shirt",
+      "sceneId": "scene1",
+      "characterId": "ramesh",
+      "worn": true
+    },
+    {
+      "description": "Banana peel on the floor in front of Ramesh",
+      "sceneId": "scene1",
+      "propId": "peel1"
+    },
+    {
+      "description": "Second banana peel hidden behind Ramesh's foot",
+      "sceneId": "scene1",
+      "propId": "peel2"
+    }
+  ],
+  "characters": [
+    {
+      "id": "ramesh",
+      "name": "Ramesh",
+      "rigVersion": 2,
+      "shoulderWidth": 36,
+      "kind": "man",
+      "requiredAppearanceFeatures": [
+        "simple blue shirt",
+        "short dark hair",
+        "expressive eyes"
+      ],
+      "visualSpec": {
+        "renderMode": "overlay",
+        "silhouetteFamily": "humanoid",
+        "geometryRecipe": [
+          {
+            "id": "shirtGeo",
+            "kind": "roundedRect",
+            "rect": [
+              -20,
+              -20,
+              40,
+              40
+            ],
+            "cornerRadius": 5,
+            "fill": "#4a709c",
+            "stroke": "#293329"
+          }
+        ],
+        "normalizedDimensions": {
+          "width": 100,
+          "height": 100
+        },
+        "material": "flat",
+        "paint": {
+          "fill": "none",
+          "stroke": "#293329",
+          "outlineThickness": 1.5
+        },
+        "palette": [
+          "#f6f1da",
+          "#4a709c",
+          "#3a2e2b"
+        ],
+        "facialComponents": [],
+        "apparel": [],
+        "accessories": [],
+        "decorativeMarks": [],
+        "proceduralComponents": [],
+        "motionAnchors": [],
+        "zIndex": 0
+      },
+      "ageYears": 28,
+      "artStyle": "classic",
+      "hairStyle": "sidepart",
+      "faceShape": "round",
+      "costume": "everyday",
+      "build": "average",
+      "wardrobe": "shirt",
+      "skin": "#f6f1da",
+      "outfit": "#4a709c",
+      "hair": "#3a2e2b",
+      "headWidth": 1,
+      "headHeight": 1
+    }
+  ],
+  "propDesigns": [
+    {
+      "visualAssetRequest": {
+        "description": "A bright yellow curved banana peel lying open on the ground",
+        "requiredFeatures": [
+          "bright yellow",
+          "curved segments",
+          "flat on floor"
+        ],
+        "style": "2d-cartoon"
+      },
+      "objectAffordances": [
+        "grip",
+        "throw"
+      ],
+      "gripOffset": [
+        0,
+        0
+      ],
+      "visualSpec": {
+        "renderMode": "replace",
+        "silhouetteFamily": "custom-vector",
+        "geometryRecipe": [
+          {
+            "id": "peel1Root",
+            "kind": "group",
+            "animation": [
+              {
+                "sceneId": "scene1",
+                "playback": "once",
+                "keys": [
+                  {
+                    "at": 0,
+                    "position": [
+                      0,
+                      0
+                    ],
+                    "rotation": 0,
+                    "easing": "smooth"
+                  },
+                  {
+                    "at": 2,
+                    "position": [
+                      -50,
+                      -120
+                    ],
+                    "rotation": 180,
+                    "easing": "smooth"
+                  },
+                  {
+                    "at": 4.5,
+                    "position": [
+                      -50,
+                      -20
+                    ],
+                    "rotation": 360,
+                    "easing": "smooth"
+                  }
+                ]
+              }
+            ],
+            "position": [
+              0,
+              0
+            ],
+            "children": [
+              {
+                "id": "bodyPeel",
+                "kind": "path",
+                "d": "M-20 10 Q -5 -5 15 -10 Q 30 -12 35 -5 Q 38 3 25 8 Q 10 15 -10 18 Z",
+                "fill": "#e3bc42",
+                "stroke": "#8a7020"
+              },
+              {
+                "id": "segPeel1",
+                "kind": "path",
+                "d": "M-25 12 Q -35 25 -20 35 Q -5 40 0 20 Z",
+                "fill": "#e3bc42",
+                "stroke": "#8a7020"
+              },
+              {
+                "id": "segPeel2",
+                "kind": "path",
+                "d": "M20 2 Q 35 15 30 30 Q 20 35 10 20 Z",
+                "fill": "#e3bc42",
+                "stroke": "#8a7020"
+              }
+            ]
+          }
+        ],
+        "normalizedDimensions": {
+          "width": 100,
+          "height": 100
+        },
+        "material": "flat",
+        "paint": {
+          "fill": "#e3bc42",
+          "stroke": "#293329",
+          "outlineThickness": 1.5
+        },
+        "palette": [
+          "#e3bc42",
+          "#8a7020",
+          "#293329"
+        ],
+        "facialComponents": [],
+        "apparel": [],
+        "accessories": [],
+        "decorativeMarks": [],
+        "proceduralComponents": [],
+        "motionAnchors": [],
+        "zIndex": 0
+      },
+      "id": "peel1",
+      "name": "Banana Peel Front",
+      "type": "peel",
+      "color": "#e3bc42",
+      "nodes": []
+    },
+    {
+      "visualAssetRequest": {
+        "description": "A second yellow banana peel resting behind the character's feet",
+        "requiredFeatures": [
+          "yellow peel",
+          "slippery angle"
+        ],
+        "style": "2d-cartoon"
+      },
+      "objectAffordances": [
+        "roll"
+      ],
+      "gripOffset": [
+        0,
+        0
+      ],
+      "visualSpec": {
+        "renderMode": "overlay",
+        "silhouetteFamily": "custom-vector",
+        "geometryRecipe": [
+          {
+            "id": "peelGroup",
+            "kind": "group",
+            "children": [
+              {
+                "id": "peelBody",
+                "kind": "path",
+                "d": "M10,50 Q30,20 60,40 Q80,50 70,70 Q50,60 30,70 Z",
+                "fill": "#e3bc42",
+                "stroke": "#293329",
+                "width": 1.5
+              },
+              {
+                "id": "peelStrip",
+                "kind": "path",
+                "d": "M60,40 Q90,30 85,60",
+                "fill": "none",
+                "stroke": "#293329",
+                "width": 1.5
+              }
+            ]
+          }
+        ],
+        "normalizedDimensions": {
+          "width": 100,
+          "height": 100
+        },
+        "material": "flat",
+        "paint": {
+          "fill": "#e3bc42",
+          "stroke": "#293329",
+          "outlineThickness": 1.5
+        },
+        "palette": [
+          "#e3bc42",
+          "#293329",
+          "#f4d06f"
+        ],
+        "facialComponents": [],
+        "apparel": [],
+        "accessories": [],
+        "decorativeMarks": [],
+        "proceduralComponents": [],
+        "motionAnchors": [],
+        "zIndex": 0
+      },
+      "id": "peel2",
+      "name": "Banana Peel Back",
+      "type": "peel",
+      "color": "#e3bc42",
+      "nodes": []
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene1",
+      "summary": "Ramesh spots a banana peel, reaches for it, steps on a second peel behind him, slips, sits stunned, and gets crowned by the first peel.",
+      "duration": 4,
+      "background": "room",
+      "backgroundNodes": [],
+      "motions": [],
+      "cast": [
+        {
+          "id": "ir_actor_3c6129a8784f50",
+          "rigVersion": 2,
+          "shoulderWidth": 36,
+          "shadow": true,
+          "species": "man",
+          "characterId": "ramesh",
+          "initialPose": {
+            "eyeOpen": 1,
+            "mouthAperture": 0.1,
+            "spineAngle": 0
+          },
+          "emotion": "neutral",
+          "x": 200,
+          "y": 780,
+          "scale": 1,
+          "facing": 1
+        }
+      ],
+      "props": [
+        {
+          "id": "ir_placement_aa92ebdd0faf5e",
+          "designId": "peel1",
+          "open": 0,
+          "angle": 0,
+          "x": 300,
+          "y": 780,
+          "scale": 1
+        }
+      ],
+      "beats": [
+        {
+          "actorId": "ramesh",
+          "kind": "pick",
+          "targetId": "peel1",
+          "hand": "right",
+          "start": 0.4,
+          "duration": 1.5,
+          "amount": 1,
+          "intent": "He crouches, grips the peel, and rises holding it."
+        }
+      ],
+      "shots": [
+        {
+          "start": 0,
+          "end": 4,
+          "focus": [
+            270,
+            530
+          ],
+          "zoom": 1,
+          "detail": "full"
+        }
+      ],
+      "sounds": [],
+      "dialogue": [],
+      "sceneSeed": 411779326,
+      "canonicalFrame": {
+        "fps": 60,
+        "startFrame": 0,
+        "endFrame": 600,
+        "interval": "[startFrame,endFrame)"
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "storyEvent": "Ramesh sees a banana peel on the floor and reaches to pick it up",
+      "sceneId": "scene1",
+      "beatIndices": [
+        0
+      ]
+    },
+    {
+      "storyEvent": "Ramesh slips on another peel behind him",
+      "sceneId": "scene1",
+      "beatIndices": [
+        1
+      ]
+    },
+    {
+      "storyEvent": "Ramesh sits stunned while the first peel lands on his head",
+      "sceneId": "scene1",
+      "beatIndices": [
+        2
+      ]
+    }
+  ],
+  "seo": {
+    "titles": [
+      "The Double Peel Dilemma",
+      "Ramesh and the Banana Peels",
+      "Classic Slapstick Slip"
+    ],
+    "description": "Watch Ramesh experience a classic cartoon slapstick moment when a simple banana peel cleanup goes hilariously wrong in this silent 2D animation.",
+    "tags": [
+      "slapstick",
+      "comedy",
+      "banana peel",
+      "cartoon",
+      "funny",
+      "silent comedy"
+    ],
+    "hashtags": [
+      "#slapstick",
+      "#funny",
+      "#cartoon",
+      "#comedy",
+      "#animation"
+    ],
+    "pinnedComment": "Never trust just one banana peel!",
+    "thumbnailText": "The Double Peel Slip!"
+  },
+  "blockedReasons": [],
+  "storyId": "story_661b4f61cf63a9",
+  "review": {
+    "method": "gemini",
+    "planHash": "b5570f0313d1017b7827af811f04419b3d3826e431e008b587514593e7cec23f",
+    "summary": "The director contract for 'The Double Peel Dilemma' was successfully evaluated and validated against all runtime schema specifications, structural constraints, and comedic framing rules. All visual specs, character bone bindings, prop attachments, beat structures, and sound timings are correctly defined without any syntax or hierarchy violations."
+  },
+  "version": 1,
+  "format": "landscape",
+  "language": "en",
+  "referenceStyle": "elastic-meme"
+}

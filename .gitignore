@@ -8,3 +8,5 @@ public/
 web/dist/
 deliverables/
 *.log
+__pycache__/
+*.pyc

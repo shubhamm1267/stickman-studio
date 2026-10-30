@@ -39,7 +39,7 @@ test('oversized encoded video is observed scene-wise with globally unique eviden
  const {appendFile}=await import('node:fs/promises');
  const dir=await mkdtemp(path.join(os.tmpdir(),'stick-review-large-'));
  try{
-  await command('ffmpeg',['-y','-v','error','-f','lavfi','-i','color=c=blue:s=64x64:r=12:d=2','-f','lavfi','-i','anullsrc=r=48000:cl=stereo','-t','2','-c:v','libx264','-c:a','aac',path.join(dir,'video.mp4')]);
+  await command('ffmpeg',['-y','-v','error','-f','lavfi','-i','color=c=blue:s=54x96:r=12:d=2','-f','lavfi','-i','anullsrc=r=48000:cl=stereo','-t','2','-c:v','libx264','-c:a','aac',path.join(dir,'video.mp4')]);
   // Valid MP4 plus ignored trailing padding exercises the real size branch.
   await appendFile(path.join(dir,'video.mp4'),Buffer.alloc(19*1024*1024));let calls=0;
   const fake=async(url,init)=>{
@@ -52,5 +52,29 @@ test('oversized encoded video is observed scene-wise with globally unique eviden
   const result=await reviewRenderedVideo(dir,{story:'Both scenes appear.',scenes:[{duration:1},{duration:1}]},{gemini:'test-key'},undefined,fake);
   assert.equal(calls,3);assert.equal(result.passed,true);
   const observed=JSON.parse(await readFile(path.join(dir,'video-observations.json'),'utf8'));assert.deepEqual(observed.events.map(e=>e.time),[.5,1.5]);
+ }finally{await rm(dir,{recursive:true,force:true});}
+});
+
+test('a sparse whole-video observation receives independent ending evidence without supplying the requested ending',async()=>{
+ const {command}=await import('../server/media.mjs');
+ const dir=await mkdtemp(path.join(os.tmpdir(),'stick-review-tail-test-'));let calls=0;
+ try{
+  await command('ffmpeg',['-y','-v','error','-f','lavfi','-i','color=c=blue:s=54x96:r=12:d=4','-c:v','libx264',path.join(dir,'video.mp4')]);
+  const fake=async(url,init)=>{
+   const parts=JSON.parse(init.body).contents[0].parts;calls++;
+   let response;
+   if(calls<=2){
+    assert.ok(!parts.at(-1).text.includes('SECRET ENDING'));
+    response={objects:[],events:[{id:'e',time:0,action:calls===1?'A blue stage is visible at the beginning.':'The blue stage stays visible at the ending.'}],audio:[],problems:[],uncertainties:[]};
+   }else{
+    assert.match(parts[0].text,/tail_e/);
+    response={passed:true,summary:'The blue stage remains visible.',issues:[],observedEvents:[{checkId:'story',event:'The stage remains blue.',visible:true,time:1.5,evidenceIds:['tail_e']}]};
+   }
+   return Response.json({outputs:[{text:JSON.stringify(response)}]});
+  };
+  const result=await reviewRenderedVideo(dir,{story:'SECRET ENDING remains blue.',scenes:[{duration:4}]},{gemini:'test'},undefined,fake);
+  assert.equal(calls,3);assert.equal(result.passed,true);
+  const observation=JSON.parse(await readFile(path.join(dir,'video-observations.json'),'utf8'));
+  assert.deepEqual(observation.events.map(e=>[e.id,e.time]),[['e',0],['tail_e',1.5]]);
  }finally{await rm(dir,{recursive:true,force:true});}
 });

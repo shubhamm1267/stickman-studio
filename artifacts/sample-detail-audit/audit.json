@@ -1,0 +1,1075 @@
+{
+  "samples": [
+    {
+      "file": "examples/dadi-jar.json",
+      "title": "Dadi vs Bodybuilder — The Impossible Jar",
+      "seconds": 26,
+      "fps": "renderer default",
+      "mode": "not declared",
+      "referenceStyle": "not declared",
+      "review": "none",
+      "characters": [
+        {
+          "id": "nandu",
+          "kind": "man",
+          "headWidth": 1,
+          "headHeight": 1,
+          "customNodes": 0
+        },
+        {
+          "id": "dadi",
+          "kind": "grandma",
+          "headWidth": 1,
+          "headHeight": 1,
+          "customNodes": 0
+        }
+      ],
+      "props": [
+        {
+          "id": "pickle",
+          "type": "jar",
+          "customNodes": 0
+        },
+        {
+          "id": "tea",
+          "type": "cup",
+          "customNodes": 0
+        },
+        {
+          "id": "table",
+          "type": "table",
+          "customNodes": 0
+        }
+      ],
+      "sceneDetails": [
+        {
+          "id": "kitchen",
+          "seconds": 26,
+          "background": "kitchen",
+          "beats": 21,
+          "kinds": [
+            "hold",
+            "struggle",
+            "react",
+            "flex",
+            "custom",
+            "deflate",
+            "idle",
+            "pick",
+            "walk",
+            "place",
+            "tap",
+            "open"
+          ],
+          "emotions": [
+            "confident",
+            "strain",
+            "annoyed",
+            "smug",
+            "kiss",
+            "extreme",
+            "defeat",
+            "shock",
+            "jawdrop",
+            "calm"
+          ],
+          "inlineKeys": 0,
+          "shots": [
+            {
+              "start": 0,
+              "end": 0.9,
+              "focus": [
+                260,
+                535
+              ],
+              "zoom": 1.08,
+              "detail": "full"
+            },
+            {
+              "start": 0.9,
+              "end": 3.2,
+              "focus": [
+                310,
+                555
+              ],
+              "zoom": 2.5,
+              "detail": "hands"
+            },
+            {
+              "start": 3.2,
+              "end": 3.8,
+              "focus": [
+                194,
+                385
+              ],
+              "zoom": 1.9,
+              "detail": "full"
+            },
+            {
+              "start": 3.8,
+              "end": 7.1,
+              "focus": [
+                190,
+                530
+              ],
+              "zoom": 1.14,
+              "detail": "full"
+            },
+            {
+              "start": 7.1,
+              "end": 10.6,
+              "focus": [
+                235,
+                473
+              ],
+              "zoom": 1.35,
+              "detail": "full"
+            },
+            {
+              "start": 10.6,
+              "end": 11.6,
+              "focus": [
+                186,
+                395
+              ],
+              "zoom": 1.8,
+              "detail": "full"
+            },
+            {
+              "start": 11.6,
+              "end": 15,
+              "focus": [
+                292,
+                540
+              ],
+              "zoom": 1.04,
+              "detail": "full"
+            },
+            {
+              "start": 15,
+              "end": 17.15,
+              "focus": [
+                300,
+                555
+              ],
+              "zoom": 2.8,
+              "detail": "hands"
+            },
+            {
+              "start": 17.15,
+              "end": 18.05,
+              "focus": [
+                290,
+                540
+              ],
+              "zoom": 1.12,
+              "detail": "full"
+            },
+            {
+              "start": 18.05,
+              "end": 20.25,
+              "focus": [
+                192,
+                405
+              ],
+              "zoom": 1.9,
+              "detail": "full"
+            },
+            {
+              "start": 20.25,
+              "end": 26,
+              "focus": [
+                288,
+                535
+              ],
+              "zoom": 1.08,
+              "detail": "full"
+            }
+          ],
+          "freeMotions": 0,
+          "attachments": [],
+          "sfx": 23,
+          "fixtures": 23,
+          "actorSounds": 0
+        }
+      ],
+      "totals": {
+        "beats": 21,
+        "shots": 11,
+        "sfx": 23
+      }
+    },
+    {
+      "file": "examples/superhero-v9.json",
+      "title": "Superhero ka Return Gift",
+      "seconds": 16.5,
+      "fps": 60,
+      "mode": "not declared",
+      "referenceStyle": "not declared",
+      "review": "authored-example",
+      "characters": [
+        {
+          "id": "Hero",
+          "kind": "man",
+          "artStyle": "pencil",
+          "rigVersion": 2,
+          "faceShape": "square",
+          "hairStyle": "sidepart",
+          "wardrobe": "shirt",
+          "costume": "superhero",
+          "headWidth": 0.98,
+          "headHeight": 0.95,
+          "customNodes": 0
+        },
+        {
+          "id": "Man",
+          "kind": "man",
+          "artStyle": "pencil",
+          "rigVersion": 2,
+          "faceShape": "long",
+          "hairStyle": "bald",
+          "wardrobe": "shirt",
+          "accessory": "moustache",
+          "headWidth": 0.95,
+          "headHeight": 1.04,
+          "customNodes": 0
+        }
+      ],
+      "props": [
+        {
+          "id": "poop",
+          "type": "drawing",
+          "customNodes": 3
+        }
+      ],
+      "sceneDetails": [
+        {
+          "id": "flight_v8",
+          "seconds": 4.3,
+          "background": "custom",
+          "beats": 2,
+          "kinds": [
+            "perform"
+          ],
+          "emotions": [],
+          "inlineKeys": 11,
+          "shots": [
+            {
+              "start": 0,
+              "end": 1.2,
+              "focus": [
+                275,
+                390
+              ],
+              "zoom": 1.1,
+              "detail": "full"
+            },
+            {
+              "start": 1.2,
+              "end": 2.23,
+              "focus": [
+                300,
+                350
+              ],
+              "zoom": 1.35,
+              "detail": "full"
+            },
+            {
+              "start": 2.23,
+              "end": 2.8,
+              "focus": [
+                350,
+                430
+              ],
+              "zoom": 3.25,
+              "detail": "full"
+            },
+            {
+              "start": 2.8,
+              "end": 4.3,
+              "focus": [
+                350,
+                438
+              ],
+              "zoom": 4.1,
+              "detail": "full"
+            }
+          ],
+          "freeMotions": 1,
+          "attachments": [
+            {
+              "id": "poop",
+              "attachment": {
+                "actorId": "Man",
+                "bone": "head",
+                "offset": [
+                  0,
+                  -94
+                ]
+              },
+              "attachAt": 2.2
+            }
+          ],
+          "sfx": 3,
+          "fixtures": 3,
+          "actorSounds": 0
+        },
+        {
+          "id": "scold_v8",
+          "seconds": 3.4,
+          "background": "custom",
+          "beats": 2,
+          "kinds": [
+            "scold",
+            "perform"
+          ],
+          "emotions": [],
+          "inlineKeys": 3,
+          "shots": [
+            {
+              "start": 0,
+              "end": 1.2,
+              "focus": [
+                350,
+                490
+              ],
+              "zoom": 2.65,
+              "detail": "full"
+            },
+            {
+              "start": 1.2,
+              "end": 2.9,
+              "focus": [
+                350,
+                435
+              ],
+              "zoom": 3.7,
+              "detail": "full"
+            },
+            {
+              "start": 2.9,
+              "end": 3.4,
+              "focus": [
+                393,
+                205
+              ],
+              "zoom": 4.3,
+              "detail": "full"
+            }
+          ],
+          "freeMotions": 0,
+          "attachments": [
+            {
+              "id": "poop",
+              "attachment": {
+                "actorId": "Man",
+                "bone": "head",
+                "offset": [
+                  0,
+                  -94
+                ]
+              }
+            }
+          ],
+          "sfx": 2,
+          "fixtures": 2,
+          "actorSounds": 1
+        },
+        {
+          "id": "landing_v8",
+          "seconds": 2,
+          "background": "custom",
+          "beats": 2,
+          "kinds": [
+            "perform"
+          ],
+          "emotions": [],
+          "inlineKeys": 9,
+          "shots": [
+            {
+              "start": 0,
+              "end": 1.1,
+              "focus": [
+                285,
+                520
+              ],
+              "zoom": 1.15,
+              "detail": "full"
+            },
+            {
+              "start": 1.1,
+              "end": 2,
+              "focus": [
+                350,
+                445
+              ],
+              "zoom": 3.3,
+              "detail": "full"
+            }
+          ],
+          "freeMotions": 0,
+          "attachments": [
+            {
+              "id": "poop",
+              "attachment": {
+                "actorId": "Man",
+                "bone": "head",
+                "offset": [
+                  0,
+                  -94
+                ]
+              }
+            }
+          ],
+          "sfx": 2,
+          "fixtures": 2,
+          "actorSounds": 0
+        },
+        {
+          "id": "return_v8",
+          "seconds": 6.8,
+          "background": "custom",
+          "beats": 8,
+          "kinds": [
+            "punch",
+            "duck",
+            "perform",
+            "stand"
+          ],
+          "emotions": [
+            "shock",
+            "smug"
+          ],
+          "inlineKeys": 14,
+          "shots": [
+            {
+              "start": 0,
+              "end": 0.39,
+              "focus": [
+                285,
+                520
+              ],
+              "zoom": 1.5,
+              "detail": "full"
+            },
+            {
+              "start": 0.39,
+              "end": 1.1,
+              "focus": [
+                320,
+                440
+              ],
+              "zoom": 2.7,
+              "detail": "full"
+            },
+            {
+              "start": 1.1,
+              "end": 2.1,
+              "focus": [
+                305,
+                470
+              ],
+              "zoom": 2.05,
+              "detail": "full"
+            },
+            {
+              "start": 2.1,
+              "end": 2.74,
+              "focus": [
+                285,
+                515
+              ],
+              "zoom": 1.65,
+              "detail": "full"
+            },
+            {
+              "start": 2.74,
+              "end": 3.534,
+              "focus": [
+                285,
+                370
+              ],
+              "zoom": 1.7,
+              "detail": "full"
+            },
+            {
+              "start": 3.534,
+              "end": 4.25,
+              "focus": [
+                220,
+                405
+              ],
+              "zoom": 4,
+              "detail": "full"
+            },
+            {
+              "start": 4.25,
+              "end": 5.8,
+              "focus": [
+                350,
+                445
+              ],
+              "zoom": 3.5,
+              "detail": "full"
+            },
+            {
+              "start": 5.8,
+              "end": 6.8,
+              "focus": [
+                220,
+                410
+              ],
+              "zoom": 4.3,
+              "detail": "full"
+            }
+          ],
+          "freeMotions": 1,
+          "attachments": [
+            {
+              "id": "poop",
+              "attachment": {
+                "actorId": "Man",
+                "bone": "head",
+                "offset": [
+                  0,
+                  -94
+                ]
+              },
+              "events": [
+                {
+                  "at": 2.694,
+                  "attachment": null
+                },
+                {
+                  "at": 3.514,
+                  "attachment": {
+                    "actorId": "Hero",
+                    "bone": "head",
+                    "offset": [
+                      0,
+                      -94
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "sfx": 7,
+          "fixtures": 7,
+          "actorSounds": 0
+        }
+      ],
+      "totals": {
+        "beats": 14,
+        "shots": 17,
+        "sfx": 14
+      }
+    },
+    {
+      "file": "deliverables/directed-onset/plan.json",
+      "title": "The Mysterious Squeak",
+      "seconds": 10,
+      "fps": 60,
+      "mode": "dynamic",
+      "referenceStyle": "elastic-meme",
+      "review": "gemini",
+      "characters": [
+        {
+          "id": "stickman",
+          "kind": "man",
+          "artStyle": "classic",
+          "rigVersion": 2,
+          "faceShape": "round",
+          "hairStyle": "bald",
+          "wardrobe": "default",
+          "costume": "everyday",
+          "headWidth": 1.1,
+          "headHeight": 1.1,
+          "renderMode": "overlay",
+          "customNodes": 0
+        }
+      ],
+      "props": [],
+      "sceneDetails": [
+        {
+          "id": "scene1",
+          "seconds": 10,
+          "background": "custom",
+          "beats": 2,
+          "kinds": [
+            "idle",
+            "perform"
+          ],
+          "emotions": [
+            "shock"
+          ],
+          "inlineKeys": 7,
+          "shots": [
+            {
+              "start": 0,
+              "end": 3,
+              "focus": [
+                270,
+                513.4634146341463
+              ],
+              "zoom": 1.0623035769978166,
+              "detail": "full",
+              "framing": "full-body"
+            },
+            {
+              "start": 3,
+              "end": 7,
+              "focus": [
+                270,
+                378.7560975609756
+              ],
+              "zoom": 1.9694004625511472,
+              "detail": "full",
+              "framing": "close-up"
+            },
+            {
+              "start": 7,
+              "end": 10,
+              "focus": [
+                270,
+                446.8780487804878
+              ],
+              "zoom": 1.3754542913055632,
+              "detail": "full",
+              "framing": "medium"
+            }
+          ],
+          "freeMotions": 0,
+          "attachments": [],
+          "sfx": 1,
+          "fixtures": 0,
+          "actorSounds": 0
+        }
+      ],
+      "totals": {
+        "beats": 2,
+        "shots": 3,
+        "sfx": 1
+      }
+    }
+  ],
+  "rendererChecks": [
+    {
+      "renderer": "pencil",
+      "faceShapeChangesSVG": true,
+      "sidepartVsCurlyChangesSVG": true,
+      "grandmaVsWomanChangesSVG": true,
+      "strainRedChangesSVG": true
+    },
+    {
+      "renderer": "toon",
+      "faceShapeChangesSVG": true,
+      "sidepartVsCurlyChangesSVG": true,
+      "grandmaVsWomanChangesSVG": true,
+      "strainRedChangesSVG": false
+    },
+    {
+      "renderer": "elastic",
+      "faceShapeChangesSVG": false,
+      "sidepartVsCurlyChangesSVG": false,
+      "grandmaVsWomanChangesSVG": false,
+      "strainRedChangesSVG": false
+    }
+  ],
+  "renderRoute": {
+    "planningMode": "dynamic",
+    "directionVersion": null,
+    "hasDirectionScore": true,
+    "reviewHashCurrent": true,
+    "entersSemanticUpgrade": true,
+    "semanticSchemaAcceptsDynamicScore": false,
+    "semanticSchemaErrors": [
+      {
+        "path": [
+          "title"
+        ],
+        "message": "Invalid input: expected string, received undefined"
+      },
+      {
+        "path": [
+          "story"
+        ],
+        "message": "Invalid input: expected string, received undefined"
+      },
+      {
+        "path": [
+          "comedy"
+        ],
+        "message": "Invalid input: expected object, received undefined"
+      },
+      {
+        "path": [
+          "seo"
+        ],
+        "message": "Invalid input: expected object, received undefined"
+      },
+      {
+        "path": [
+          "characters"
+        ],
+        "message": "Invalid input: expected array, received undefined"
+      }
+    ],
+    "phase": "before dispatch guard fix"
+  },
+  "copies": [
+    {
+      "project": "StickLaugh_Dynamic_01_Core",
+      "sample": "dadi-jar",
+      "sha256": "d6c1e2d5a9cc46ca7b66fc1a12f84b36dbafb623cd033e212655cb3b5452169a",
+      "seconds": 26,
+      "characterAppearance": [
+        {
+          "kind": "man",
+          "skin": "#f6f1da",
+          "outfit": "#a2b6a6"
+        },
+        {
+          "kind": "grandma",
+          "skin": "#f6f1da",
+          "outfit": "#a2b6a6"
+        }
+      ]
+    },
+    {
+      "project": "StickLaugh_Dynamic_01_Core",
+      "sample": "superhero-v9",
+      "sha256": "24de0ceb8aee9048930ba845b573633f19817e18a411a607617444c8be218457",
+      "seconds": 16.5,
+      "characterAppearance": [
+        {
+          "kind": "man",
+          "skin": "#e9d8b9",
+          "outfit": "#387fae",
+          "artStyle": "pencil"
+        },
+        {
+          "kind": "man",
+          "skin": "#e1d2b1",
+          "outfit": "#b6a17b",
+          "artStyle": "pencil"
+        }
+      ]
+    },
+    {
+      "project": "StickLaugh_Dynamic_03_SceneGraphGroups_Partial",
+      "sample": "dadi-jar",
+      "sha256": "d6c1e2d5a9cc46ca7b66fc1a12f84b36dbafb623cd033e212655cb3b5452169a",
+      "seconds": 26,
+      "characterAppearance": [
+        {
+          "kind": "man",
+          "skin": "#f6f1da",
+          "outfit": "#a2b6a6"
+        },
+        {
+          "kind": "grandma",
+          "skin": "#f6f1da",
+          "outfit": "#a2b6a6"
+        }
+      ]
+    },
+    {
+      "project": "StickLaugh_Dynamic_03_SceneGraphGroups_Partial",
+      "sample": "superhero-v9",
+      "sha256": "24de0ceb8aee9048930ba845b573633f19817e18a411a607617444c8be218457",
+      "seconds": 16.5,
+      "characterAppearance": [
+        {
+          "kind": "man",
+          "skin": "#e9d8b9",
+          "outfit": "#387fae",
+          "artStyle": "pencil"
+        },
+        {
+          "kind": "man",
+          "skin": "#e1d2b1",
+          "outfit": "#b6a17b",
+          "artStyle": "pencil"
+        }
+      ]
+    },
+    {
+      "project": "StickLaugh_Dynamic_04_Point1_Baseline_20261026_WITH_ENV",
+      "sample": "dadi-jar",
+      "sha256": "d6c1e2d5a9cc46ca7b66fc1a12f84b36dbafb623cd033e212655cb3b5452169a",
+      "seconds": 26,
+      "characterAppearance": [
+        {
+          "kind": "man",
+          "skin": "#f6f1da",
+          "outfit": "#a2b6a6"
+        },
+        {
+          "kind": "grandma",
+          "skin": "#f6f1da",
+          "outfit": "#a2b6a6"
+        }
+      ]
+    },
+    {
+      "project": "StickLaugh_Dynamic_04_Point1_Baseline_20261026_WITH_ENV",
+      "sample": "superhero-v9",
+      "sha256": "24de0ceb8aee9048930ba845b573633f19817e18a411a607617444c8be218457",
+      "seconds": 16.5,
+      "characterAppearance": [
+        {
+          "kind": "man",
+          "skin": "#e9d8b9",
+          "outfit": "#387fae",
+          "artStyle": "pencil"
+        },
+        {
+          "kind": "man",
+          "skin": "#e1d2b1",
+          "outfit": "#b6a17b",
+          "artStyle": "pencil"
+        }
+      ]
+    },
+    {
+      "project": "StickLaugh_Point_02_Audit_Partial_20261026",
+      "sample": "dadi-jar",
+      "sha256": "d6c1e2d5a9cc46ca7b66fc1a12f84b36dbafb623cd033e212655cb3b5452169a",
+      "seconds": 26,
+      "characterAppearance": [
+        {
+          "kind": "man",
+          "skin": "#f6f1da",
+          "outfit": "#a2b6a6"
+        },
+        {
+          "kind": "grandma",
+          "skin": "#f6f1da",
+          "outfit": "#a2b6a6"
+        }
+      ]
+    },
+    {
+      "project": "StickLaugh_Point_02_Audit_Partial_20261026",
+      "sample": "superhero-v9",
+      "sha256": "24de0ceb8aee9048930ba845b573633f19817e18a411a607617444c8be218457",
+      "seconds": 16.5,
+      "characterAppearance": [
+        {
+          "kind": "man",
+          "skin": "#e9d8b9",
+          "outfit": "#387fae",
+          "artStyle": "pencil"
+        },
+        {
+          "kind": "man",
+          "skin": "#e1d2b1",
+          "outfit": "#b6a17b",
+          "artStyle": "pencil"
+        }
+      ]
+    },
+    {
+      "project": "StickLaugh_Studio_Dynamic_Update_Testing_Pending_WITH_ENV",
+      "sample": "dadi-jar",
+      "sha256": "d6c1e2d5a9cc46ca7b66fc1a12f84b36dbafb623cd033e212655cb3b5452169a",
+      "seconds": 26,
+      "characterAppearance": [
+        {
+          "kind": "man",
+          "skin": "#f6f1da",
+          "outfit": "#a2b6a6"
+        },
+        {
+          "kind": "grandma",
+          "skin": "#f6f1da",
+          "outfit": "#a2b6a6"
+        }
+      ]
+    },
+    {
+      "project": "StickLaugh_Studio_Dynamic_Update_Testing_Pending_WITH_ENV",
+      "sample": "superhero-v9",
+      "sha256": "24de0ceb8aee9048930ba845b573633f19817e18a411a607617444c8be218457",
+      "seconds": 16.5,
+      "characterAppearance": [
+        {
+          "kind": "man",
+          "skin": "#e9d8b9",
+          "outfit": "#387fae",
+          "artStyle": "pencil"
+        },
+        {
+          "kind": "man",
+          "skin": "#e1d2b1",
+          "outfit": "#b6a17b",
+          "artStyle": "pencil"
+        }
+      ]
+    },
+    {
+      "project": "StickLaugh_Studio_Expressive_Update_WITH_ENV",
+      "sample": "dadi-jar",
+      "sha256": "d6c1e2d5a9cc46ca7b66fc1a12f84b36dbafb623cd033e212655cb3b5452169a",
+      "seconds": 26,
+      "characterAppearance": [
+        {
+          "kind": "man",
+          "skin": "#f6f1da",
+          "outfit": "#a2b6a6"
+        },
+        {
+          "kind": "grandma",
+          "skin": "#f6f1da",
+          "outfit": "#a2b6a6"
+        }
+      ]
+    },
+    {
+      "project": "StickLaugh_Studio_Expressive_Update_WITH_ENV",
+      "sample": "superhero-v9",
+      "sha256": "24de0ceb8aee9048930ba845b573633f19817e18a411a607617444c8be218457",
+      "seconds": 16.5,
+      "characterAppearance": [
+        {
+          "kind": "man",
+          "skin": "#e9d8b9",
+          "outfit": "#387fae",
+          "artStyle": "pencil"
+        },
+        {
+          "kind": "man",
+          "skin": "#e1d2b1",
+          "outfit": "#b6a17b",
+          "artStyle": "pencil"
+        }
+      ]
+    },
+    {
+      "project": "StickLaugh_Studio_Point_010_Checkpoint_WITH_ENV",
+      "sample": "dadi-jar",
+      "sha256": "d6c1e2d5a9cc46ca7b66fc1a12f84b36dbafb623cd033e212655cb3b5452169a",
+      "seconds": 26,
+      "characterAppearance": [
+        {
+          "kind": "man",
+          "skin": "#f6f1da",
+          "outfit": "#a2b6a6"
+        },
+        {
+          "kind": "grandma",
+          "skin": "#f6f1da",
+          "outfit": "#a2b6a6"
+        }
+      ]
+    },
+    {
+      "project": "StickLaugh_Studio_Point_010_Checkpoint_WITH_ENV",
+      "sample": "superhero-v9",
+      "sha256": "24de0ceb8aee9048930ba845b573633f19817e18a411a607617444c8be218457",
+      "seconds": 16.5,
+      "characterAppearance": [
+        {
+          "kind": "man",
+          "skin": "#e9d8b9",
+          "outfit": "#387fae",
+          "artStyle": "pencil"
+        },
+        {
+          "kind": "man",
+          "skin": "#e1d2b1",
+          "outfit": "#b6a17b",
+          "artStyle": "pencil"
+        }
+      ]
+    },
+    {
+      "project": "StickLaugh_Studio_Updated_Repaired",
+      "sample": "dadi-jar",
+      "sha256": "d6c1e2d5a9cc46ca7b66fc1a12f84b36dbafb623cd033e212655cb3b5452169a",
+      "seconds": 26,
+      "characterAppearance": [
+        {
+          "kind": "man",
+          "skin": "#f6f1da",
+          "outfit": "#a2b6a6"
+        },
+        {
+          "kind": "grandma",
+          "skin": "#f6f1da",
+          "outfit": "#a2b6a6"
+        }
+      ]
+    },
+    {
+      "project": "StickLaugh_Studio_Updated_Repaired",
+      "sample": "superhero-v9",
+      "sha256": "24de0ceb8aee9048930ba845b573633f19817e18a411a607617444c8be218457",
+      "seconds": 16.5,
+      "characterAppearance": [
+        {
+          "kind": "man",
+          "skin": "#e9d8b9",
+          "outfit": "#387fae",
+          "artStyle": "pencil"
+        },
+        {
+          "kind": "man",
+          "skin": "#e1d2b1",
+          "outfit": "#b6a17b",
+          "artStyle": "pencil"
+        }
+      ]
+    },
+    {
+      "project": "StickLaugh_Studio_V9.1_Fixed",
+      "sample": "dadi-jar",
+      "sha256": "d6c1e2d5a9cc46ca7b66fc1a12f84b36dbafb623cd033e212655cb3b5452169a",
+      "seconds": 26,
+      "characterAppearance": [
+        {
+          "kind": "man",
+          "skin": "#f6f1da",
+          "outfit": "#a2b6a6"
+        },
+        {
+          "kind": "grandma",
+          "skin": "#f6f1da",
+          "outfit": "#a2b6a6"
+        }
+      ]
+    },
+    {
+      "project": "StickLaugh_Studio_V9.1_Fixed",
+      "sample": "superhero-v9",
+      "sha256": "24de0ceb8aee9048930ba845b573633f19817e18a411a607617444c8be218457",
+      "seconds": 16.5,
+      "characterAppearance": [
+        {
+          "kind": "man",
+          "skin": "#e9d8b9",
+          "outfit": "#387fae",
+          "artStyle": "pencil"
+        },
+        {
+          "kind": "man",
+          "skin": "#e1d2b1",
+          "outfit": "#b6a17b",
+          "artStyle": "pencil"
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "Dadi JSON is 26s; uploaded WhatsApp video is 20.832993s and has different character colours; exact export source not established.",
+    "Latest dynamic example is a deliberately simpler one-character 10s test, not a matched-story quality benchmark.",
+    "Renderer comparisons compare generated SVG strings; visual magnitude was not measured."
+  ],
+  "dispatchFix": {
+    "file": "server/index.mjs",
+    "dynamicExcludedFromSemanticUpgrade": true,
+    "regressionCases": 2,
+    "relevantTestsPassed": 32
+  }
+}

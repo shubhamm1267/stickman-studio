@@ -184,6 +184,8 @@ export async function createApp({
           directionMode:z.enum(['dynamic','semantic','legacy']).default('dynamic'),
           artStyle: z.enum(["pencil","classic","toon"]).default("pencil"),
           story: z.string().trim().max(15000).refine(s=>!s.length||s.length>=20, 'Story must be empty for an original comedy, or contain at least 20 characters.').default(''),
+          // A unique creative run keeps fresh clicks separate from resumable checkpoints.
+          generationId:z.string().uuid().optional(),
           format: z.enum(["shorts", "landscape", "square"]),
           duration: z.number().int().min(10).max(1200).default(20),
           durationMode:z.enum(["auto","manual"]).default("manual"),
@@ -195,6 +197,7 @@ export async function createApp({
             .default("clean"),
         })
         .parse(req.body.options);
+      opts.generationId ||= randomUUID();
       if(opts.referenceStyle)Object.assign(opts,studioStyleOptions(opts));
       if(!opts.category){
         if(opts.humorProfile!=="clean")throw Error("Choose an explicit comedy category. Legacy adult comedy profiles require the 18+ category and opt-in.");
@@ -284,6 +287,19 @@ export async function createApp({
     };
     try {
       let plan = canonicalizePlan(req.body.plan).plan;
+      const resumeId=req.body.resumeJobId===undefined?undefined:z.string().uuid().parse(req.body.resumeJobId);
+      if(resumeId){
+        const source=queue.public(resumeId);
+        if(!source||source.kind!=='render'||!['failed','interrupted','cancelled'].includes(source.status))throw Error('Only an unsuccessful render can be resumed.');
+        // Restore the last repaired plan only when the user has not edited
+        // the original request. Changed input must invalidate saved stages.
+        const original=canonicalizePlan(source.request.plan).plan;
+        if(original.replay?.planHash===plan.replay?.planHash&&existsSync(path.join(queue.root,resumeId,'plan.json'))){
+          const saved=await json(path.join(queue.root,resumeId,'plan.json'));
+          if(saved.replay&&!verifyReplayPlan(saved))throw Error('Saved replay metadata does not match the plan contents.');
+          plan=canonicalizePlan(saved).plan;
+        }
+      }
       if (plan.blockedReasons.length)
         throw Error(
           "Unresolved story requirements: " + plan.blockedReasons.join("; "),
@@ -302,10 +318,8 @@ export async function createApp({
         );
       if((!bundled||req.body.useCartesia===true) && plan.scenes.some(s=>s.dialogue.length))validateVoiceCast(plan,credentials);
       let quality = req.body.quality === "draft" ? "draft" : "full";
-      let j = await queue.add(
-        "render",
-        async (job, dir, signal, update) => {
-          if(!bundled&&plan.directionScore&&(plan.directionVersion||0)<3&&plan.review?.planHash===planHash(plan)){
+      const task=async (job, dir, signal, update) => {
+          if(!bundled&&plan.planningMode!=='dynamic'&&plan.directionScore&&(plan.directionVersion||0)<3&&plan.review?.planHash===planHash(plan)){
             update('Updating saved choreography for the current engine',2);
             plan=await (await import('./semantic-director.mjs')).upgradeSemanticPlan(plan,credentials,signal,update);
           }
@@ -316,8 +330,12 @@ export async function createApp({
             update("Reviewing changed story plan", 2);
             plan = await reviewAndRepair(plan, credentials, signal, update);
           }
-          const retainedRenderer=async(...args)=>{await queue.beginMediaRender(job.id);try{return await renderer(...args);}finally{await queue.markMediaReady(job.id);}};
-          const produced=await produceFilm(plan,dir,credentials,{signal,progress:update,quality,bundled,liveDialogue:req.body.useCartesia===true,audioBuilder,renderer:retainedRenderer});
+          const retainedRenderer=async(...args)=>{
+            // Preview media must not start or reset final-download retention.
+            if(path.resolve(args[1])!==path.resolve(dir))return renderer(...args);
+            await queue.beginMediaRender(job.id);try{return await renderer(...args);}finally{if(existsSync(path.join(dir,'video.mp4')))await queue.markMediaReady(job.id);}
+          };
+          const produced=await produceFilm(plan,dir,credentials,{signal,progress:update,quality,bundled,reuseExisting:!!resumeId,liveDialogue:req.body.useCartesia===true,audioBuilder,renderer:retainedRenderer});
           plan=produced.plan;
           const credits=produced.credits;
           let seo = creatorPack(plan, credits);
@@ -338,13 +356,14 @@ export async function createApp({
               "video-review.json",
               "video-observations.json",
               "quality-report.json",
+              "production-state.json",
+              "sound-selection.json",
             ],
             seo,
           };
-        },
-        credentials,
-        { plan, quality, useCartesia:req.body.useCartesia===true, mode: bundled ? "bundled" : "live" },
-      );
+        };
+      const request={plan,quality,useCartesia:req.body.useCartesia===true,mode:bundled?'bundled':'live'};
+      const j=resumeId?await queue.retryRender(resumeId,task,credentials,request):await queue.add('render',task,credentials,request);
       res.status(202).json(j);
     } catch (e) {
       next(Error(redact(e.message, credentials)));
@@ -364,6 +383,8 @@ export async function createApp({
     "video-review.json",
     "video-observations.json",
     "quality-report.json",
+    "production-state.json",
+    "sound-selection.json",
   ]);
   app.get("/api/files/:id/:name", async (req, res,next) => {
     try{

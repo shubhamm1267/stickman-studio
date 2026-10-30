@@ -37,7 +37,7 @@ export async function reviewRenderedVideo(dir,plan,credentials,signal,fetcher=fe
       for(const scene of plan.scenes){
         for(let local=0;local<scene.duration;local+=10){
           const start=offset+local,length=Math.min(10,scene.duration-local),file=path.join(temp,`clip-${index}.mp4`);
-          await command(process.env.FFMPEG_PATH||'ffmpeg',['-v','error','-i',path.join(dir,'video.mp4'),'-ss',String(start),'-t',String(length),'-vf','scale=1280:720:force_original_aspect_ratio=decrease','-c:v','libx264','-crf','23','-maxrate','8M','-bufsize','16M','-c:a','aac','-b:a','128k',file],{signal});
+          await command(process.env.FFMPEG_PATH||'ffmpeg',['-v','error','-i',path.join(dir,'video.mp4'),'-ss',String(start),'-t',String(length),'-vf','scale=1280:720:force_original_aspect_ratio=decrease:force_divisible_by=2','-c:v','libx264','-crf','23','-maxrate','8M','-bufsize','16M','-c:a','aac','-b:a','128k',file],{signal});
           const bytes=await readFile(file);
           if(bytes.length>18*1024*1024)throw Error('Review clip exceeds size limit; no observation skipped.');
           const clip=await observe(bytes);
@@ -50,6 +50,23 @@ export async function reviewRenderedVideo(dir,plan,credentials,signal,fetcher=fe
         }
         offset+=scene.duration;
       }
+    }finally{await rm(temp,{recursive:true,force:true});}
+  }
+  // A whole-video observer may describe the setup and miss the final hold.
+  // Supplement sparse ending evidence with a separate blind tail observation;
+  // neither observer receives the intended ending or story.
+  if(plan.scenes?.length&&seconds>=4&&!observations.events.some(e=>e.time>=seconds-2)){
+    const temp=await mkdtemp(path.join(os.tmpdir(),'sticklaugh-review-tail-'));
+    try{
+      const start=Math.max(0,seconds-2.5),length=seconds-start,file=path.join(temp,'tail.mp4');
+      await command(process.env.FFMPEG_PATH||'ffmpeg',['-v','error','-i',path.join(dir,'video.mp4'),'-ss',String(start),'-t',String(length),'-vf','scale=1280:720:force_original_aspect_ratio=decrease:force_divisible_by=2','-c:v','libx264','-crf','23','-c:a','aac',file],{signal});
+      const clip=await observe(await readFile(file));
+      if(clip.events.some(e=>e.time>length+.2)||new Set(clip.events.map(e=>e.id)).size!==clip.events.length)throw Error('Invalid ending observation timestamps or duplicate IDs');
+      observations.objects.push(...clip.objects);
+      observations.events.push(...clip.events.map(e=>({...e,id:'tail_'+e.id,time:start+e.time})));
+      observations.problems.push(...clip.problems.map(e=>({...e,time:start+e.time})));
+      observations.audio.push(...clip.audio.map(e=>`${start.toFixed(3)}s: ${e}`));
+      observations.uncertainties.push(...clip.uncertainties.map(e=>`${start.toFixed(3)}s: ${e}`));
     }finally{await rm(temp,{recursive:true,force:true});}
   }
   const ids=new Set();

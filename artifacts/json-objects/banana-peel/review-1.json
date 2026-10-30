@@ -1,0 +1,28 @@
+{
+  "recognizable": false,
+  "missingDetails": [
+    "Discarded empty banana peel shape, stem, and three long curled tapering skin flaps",
+    "Banana fruit absence feature is contradicted by maple samara structure (two wings and a seed body)",
+    "Required visible feature 0: Contrasting pale cream inner surfaces against textured outer yellow skin",
+    "Required visible feature 1: Curling tapering tips that twist toward the floor",
+    "Required visible feature 2: Connected sturdy brown stem at the center junction"
+  ],
+  "repair": "Redraw the object with a central brown stem and three long curled tapering banana skin flaps instead of a maple samara seed with two wings.",
+  "featureEvidence": [
+    {
+      "featureIndex": 0,
+      "visible": false,
+      "evidence": "The drawing shows pale cream inner surfaces outlined in dark lines, but these are maple samara wings rather than banana skin flaps."
+    },
+    {
+      "featureIndex": 1,
+      "visible": false,
+      "evidence": "The curling tips represent maple samara wing tips rather than curving banana skin flaps."
+    },
+    {
+      "featureIndex": 2,
+      "visible": false,
+      "evidence": "The central attachment head is a maple samara seed body rather than a connected sturdy brown banana stem junction."
+    }
+  ]
+}

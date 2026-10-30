@@ -1,0 +1,252 @@
+{
+  "design": {
+    "id": "object",
+    "name": "Three-quarter view metal whistling tea kettle, rounded body, separate curved spout with open mouth, arched top handle, lid and small knob",
+    "type": "drawing",
+    "visualAssetRequest": {
+      "description": "Three-quarter view metal whistling tea kettle, rounded body, separate curved spout with open mouth, arched top handle, lid and small knob",
+      "requiredFeatures": [
+        "Distinct curved spout projecting from the side with an open angled tip",
+        "High arching metal handle spanning overhead",
+        "Removable lid with a central lifting knob on the top surface",
+        "Metallic sheen lines indicating a rounded, reflective cylindrical body"
+      ]
+    }
+  },
+  "brief": {
+    "objectState": "whole",
+    "silhouette": "Asymmetrical bulbous mass with an overarching handle and a projecting curved spout on the right.",
+    "viewpoint": "Three-quarter view from the front-right to clearly display the spout, body volume, handle arch, and lid simultaneously.",
+    "parts": [
+      {
+        "name": "Rounded Body",
+        "shape": "Sphere-like bulbous cylinder with a flattened stable base and slightly tapered upper shoulder.",
+        "connection": "Serves as the central anchor to which the base, spout, handle brackets, and lid are directly attached."
+      },
+      {
+        "name": "Curved Spout",
+        "shape": "Elongated tapered conical tube curving upward and outward with an open diagonal cut mouth.",
+        "connection": "Welded seamlessly to the lower-right side of the rounded body."
+      },
+      {
+        "name": "Arched Top Handle",
+        "shape": "Thick semi-circular curved strap spanning across the top diameter of the kettle.",
+        "connection": "Anchored firmly by two vertical brackets on opposite sides of the kettle's upper shoulder."
+      },
+      {
+        "name": "Lid",
+        "shape": "Circular flanged disc fitting securely into the top opening of the rounded body.",
+        "connection": "Rests snugly inside the top collar of the rounded body with a stepped rim."
+      },
+      {
+        "name": "Small Knob",
+        "shape": "Small spherical or cylindrical grip positioned centrally on top of the lid.",
+        "connection": "Mounted to the exact center of the lid's top surface."
+      }
+    ],
+    "recognitionCues": [
+      "Distinct curved spout projecting from the side with an open angled tip",
+      "High arching metal handle spanning overhead",
+      "Removable lid with a central lifting knob on the top surface",
+      "Metallic sheen lines indicating a rounded, reflective cylindrical body"
+    ],
+    "avoid": [
+      "Disconnected floating teardrop shapes",
+      "Featureless blob-like body without structural seams",
+      "Banana-like elongated tapering flaps or peel anatomy",
+      "Improbable angles that hide the spout and handle simultaneously"
+    ]
+  },
+  "asset": {
+    "visualSpec": {
+      "renderMode": "replace",
+      "silhouetteFamily": "custom-vector",
+      "geometryRecipe": [
+        {
+          "id": "body",
+          "kind": "group",
+          "children": [
+            {
+              "kind": "path",
+              "d": "M -40,10 C -40,65 40,65 40,10 C 40,-35 -40,-35 -40,10 Z",
+              "fill": "#e0e4e8",
+              "stroke": "#111111",
+              "width": 2
+            },
+            {
+              "kind": "path",
+              "d": "M -25,0 C -25,25 25,25 25,0",
+              "fill": "none",
+              "stroke": "#ffffff",
+              "width": 1.5
+            },
+            {
+              "id": "spout",
+              "kind": "group",
+              "children": [
+                {
+                  "kind": "path",
+                  "d": "M 35,5 C 55,5 65,30 75,40 L 70,45 C 62,35 52,15 32,15 Z",
+                  "fill": "#d0d6dc",
+                  "stroke": "#111111",
+                  "width": 2
+                }
+              ]
+            },
+            {
+              "id": "handle",
+              "kind": "group",
+              "children": [
+                {
+                  "kind": "path",
+                  "d": "M -25,-30 C -25,-85 25,-85 25,-30 L 20,-30 C 20,-75 -20,-75 -20,-30 Z",
+                  "fill": "#c0c6cc",
+                  "stroke": "#111111",
+                  "width": 2
+                }
+              ]
+            },
+            {
+              "id": "lid",
+              "kind": "group",
+              "children": [
+                {
+                  "kind": "ellipse",
+                  "center": [
+                    0,
+                    -35
+                  ],
+                  "radius": [
+                    18,
+                    7
+                  ],
+                  "fill": "#d0d6dc",
+                  "stroke": "#111111",
+                  "width": 2
+                },
+                {
+                  "id": "knob",
+                  "kind": "group",
+                  "children": [
+                    {
+                      "kind": "ellipse",
+                      "center": [
+                        0,
+                        -42
+                      ],
+                      "radius": [
+                        6,
+                        4
+                      ],
+                      "fill": "#b0b6bc",
+                      "stroke": "#111111",
+                      "width": 2
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "normalizedDimensions": {
+        "width": 100,
+        "height": 100
+      },
+      "material": "flat",
+      "paint": {},
+      "palette": [],
+      "facialComponents": [],
+      "apparel": [],
+      "accessories": [],
+      "decorativeMarks": [],
+      "proceduralComponents": [],
+      "motionAnchors": [
+        {
+          "id": "grip",
+          "position": [
+            0,
+            -75
+          ]
+        },
+        {
+          "id": "base",
+          "position": [
+            0,
+            65
+          ]
+        },
+        {
+          "id": "support",
+          "position": [
+            0,
+            -35
+          ]
+        }
+      ],
+      "zIndex": 0
+    },
+    "features": [
+      {
+        "featureIndex": 0,
+        "feature": "Distinct curved spout projecting from the side with an open angled tip",
+        "nodeIds": [
+          "spout"
+        ],
+        "nativeProperties": []
+      },
+      {
+        "featureIndex": 1,
+        "feature": "High arching metal handle spanning overhead",
+        "nodeIds": [
+          "handle"
+        ],
+        "nativeProperties": []
+      },
+      {
+        "featureIndex": 2,
+        "feature": "Removable lid with a central lifting knob on the top surface",
+        "nodeIds": [
+          "lid",
+          "knob"
+        ],
+        "nativeProperties": []
+      },
+      {
+        "featureIndex": 3,
+        "feature": "Metallic sheen lines indicating a rounded, reflective cylindrical body",
+        "nodeIds": [
+          "body"
+        ],
+        "nativeProperties": []
+      }
+    ]
+  },
+  "review": {
+    "recognizable": true,
+    "missingDetails": [],
+    "repair": "",
+    "featureEvidence": [
+      {
+        "featureIndex": 0,
+        "visible": true,
+        "evidence": "Distinct curved spout projects from the right side with an open angled tip."
+      },
+      {
+        "featureIndex": 1,
+        "visible": true,
+        "evidence": "High arching metal handle spans overhead above the lid."
+      },
+      {
+        "featureIndex": 2,
+        "visible": true,
+        "evidence": "Removable lid with a central lifting knob is visible on the top surface."
+      },
+      {
+        "featureIndex": 3,
+        "visible": true,
+        "evidence": "Curved white highlight lines indicate a rounded, reflective metallic body."
+      }
+    ]
+  }
+}

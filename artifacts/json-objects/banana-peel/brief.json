@@ -1,0 +1,37 @@
+{
+  "objectState": "Discarded empty open peel lying flat on the floor",
+  "silhouette": "Asymmetrical star-like spread with one central node and three splayed, curling elongated points",
+  "viewpoint": "Slightly elevated three-quarter top-down view",
+  "parts": [
+    {
+      "name": "Central Stem",
+      "shape": "Short, stubby, irregularly textured cylinder with a flat broken end",
+      "connection": "Joins directly to the top convergence point of all three skin flaps"
+    },
+    {
+      "name": "First Skin Flap",
+      "shape": "Long, curved, tapering wedge with edges rolled inward and a pointed tip",
+      "connection": "Radiates outward from the central stem base, resting flat on the ground"
+    },
+    {
+      "name": "Second Skin Flap",
+      "shape": "Long, curving wedge with a sharp spiral curl at the tapering end",
+      "connection": "Extends outward from the central stem at an obtuse angle to the first flap"
+    },
+    {
+      "name": "Third Skin Flap",
+      "shape": "Broad, slightly twisted tapering flap with a bowed profile",
+      "connection": "Extends from the remaining side of the central stem opposite the other flaps"
+    }
+  ],
+  "recognitionCues": [
+    "Contrasting pale cream inner surfaces against textured outer yellow skin",
+    "Curling tapering tips that twist toward the floor",
+    "Connected sturdy brown stem at the center junction"
+  ],
+  "avoid": [
+    "Symmetrical flower-like petal arrangements",
+    "Disconnected teardrop shapes",
+    "Featureless rounded blobs without structural ridges"
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "visualSpec": {
+    "renderMode": "replace",
+    "silhouetteFamily": "custom-vector",
+    "geometryRecipe": [
+      {
+        "id": "body",
+        "kind": "group",
+        "position": [
+          -14.25,
+          -11.5
+        ],
+        "children": [
+          {
+            "kind": "path",
+            "d": "M -40,-120 C -40,-130 40,-130 40,-120 L 50,-10 C 50,0 45,10 35,10 L -35,10 C -45,10 -50,0 -50,-10 Z",
+            "fill": "#ffffff",
+            "stroke": "#111111",
+            "width": 2.5
+          },
+          {
+            "kind": "ellipse",
+            "center": [
+              0,
+              -120
+            ],
+            "radius": [
+              40,
+              12
+            ],
+            "fill": "#f0f0f0",
+            "stroke": "#111111",
+            "width": 2.5
+          },
+          {
+            "kind": "ellipse",
+            "center": [
+              0,
+              -122
+            ],
+            "radius": [
+              32,
+              8
+            ],
+            "fill": "#e0e0e0",
+            "stroke": "#111111",
+            "width": 1.5
+          },
+          {
+            "id": "handle",
+            "kind": "group",
+            "children": [
+              {
+                "kind": "path",
+                "d": "M 46,-90 C 75,-90 85,-40 75,-20 C 70,-10 50,-5 44,-15 C 55,-25 60,-65 46,-75 Z",
+                "fill": "#ffffff",
+                "stroke": "#111111",
+                "width": 2.5
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "normalizedDimensions": {
+      "width": 100,
+      "height": 100
+    },
+    "material": "flat",
+    "paint": {},
+    "palette": [],
+    "facialComponents": [],
+    "apparel": [],
+    "accessories": [],
+    "decorativeMarks": [],
+    "proceduralComponents": [],
+    "motionAnchors": [
+      {
+        "id": "grip",
+        "position": [
+          45.75,
+          -61.5
+        ]
+      },
+      {
+        "id": "base",
+        "position": [
+          -14.25,
+          -1.5
+        ]
+      },
+      {
+        "id": "support",
+        "position": [
+          -14.25,
+          -131.5
+        ]
+      }
+    ],
+    "zIndex": 0
+  },
+  "features": [
+    {
+      "featureIndex": 0,
+      "feature": "visible hollow interior depth defined by the top oval rim",
+      "nodeIds": [
+        "body"
+      ],
+      "nativeProperties": []
+    },
+    {
+      "featureIndex": 1,
+      "feature": "large ergonomic side handle sized for fingers",
+      "nodeIds": [
+        "handle"
+      ],
+      "nativeProperties": []
+    },
+    {
+      "featureIndex": 2,
+      "feature": "stout proportions clearly identifying a standard drinking vessel",
+      "nodeIds": [
+        "body",
+        "handle"
+      ],
+      "nativeProperties": []
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "recognizable": true,
+  "missingDetails": [],
+  "repair": "none",
+  "featureEvidence": [
+    {
+      "featureIndex": 0,
+      "visible": true,
+      "evidence": "The top of the mug features an oval rim showing a hollow interior depth."
+    },
+    {
+      "featureIndex": 1,
+      "visible": true,
+      "evidence": "A large curved handle is attached to the right side of the body."
+    },
+    {
+      "featureIndex": 2,
+      "visible": true,
+      "evidence": "The stout, tapered cylindrical proportions clearly identify a standard drinking mug."
+    }
+  ]
+}

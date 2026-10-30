@@ -1,0 +1,44 @@
+{
+  "objectState": "whole",
+  "silhouette": "Asymmetrical bulbous mass with an overarching handle and a projecting curved spout on the right.",
+  "viewpoint": "Three-quarter view from the front-right to clearly display the spout, body volume, handle arch, and lid simultaneously.",
+  "parts": [
+    {
+      "name": "Rounded Body",
+      "shape": "Sphere-like bulbous cylinder with a flattened stable base and slightly tapered upper shoulder.",
+      "connection": "Serves as the central anchor to which the base, spout, handle brackets, and lid are directly attached."
+    },
+    {
+      "name": "Curved Spout",
+      "shape": "Elongated tapered conical tube curving upward and outward with an open diagonal cut mouth.",
+      "connection": "Welded seamlessly to the lower-right side of the rounded body."
+    },
+    {
+      "name": "Arched Top Handle",
+      "shape": "Thick semi-circular curved strap spanning across the top diameter of the kettle.",
+      "connection": "Anchored firmly by two vertical brackets on opposite sides of the kettle's upper shoulder."
+    },
+    {
+      "name": "Lid",
+      "shape": "Circular flanged disc fitting securely into the top opening of the rounded body.",
+      "connection": "Rests snugly inside the top collar of the rounded body with a stepped rim."
+    },
+    {
+      "name": "Small Knob",
+      "shape": "Small spherical or cylindrical grip positioned centrally on top of the lid.",
+      "connection": "Mounted to the exact center of the lid's top surface."
+    }
+  ],
+  "recognitionCues": [
+    "Distinct curved spout projecting from the side with an open angled tip",
+    "High arching metal handle spanning overhead",
+    "Removable lid with a central lifting knob on the top surface",
+    "Metallic sheen lines indicating a rounded, reflective cylindrical body"
+  ],
+  "avoid": [
+    "Disconnected floating teardrop shapes",
+    "Featureless blob-like body without structural seams",
+    "Banana-like elongated tapering flaps or peel anatomy",
+    "Improbable angles that hide the spout and handle simultaneously"
+  ]
+}

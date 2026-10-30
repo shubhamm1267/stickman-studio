@@ -5,11 +5,11 @@ import {sampleMotionPath,validateMotionPath} from './motion-path.mjs';
 
 export const MOTION_IR_VERSION=1;
 const ANIMAL_CONTROLS=new Set(['position','bodyAngle','headAngle','eyeOpen','eyeOpenLeft','eyeOpenRight','gaze']);
-export function describeMotionCapabilities(pose){return{schemaVersion:MOTION_IR_VERSION,controls:Object.keys(pose.shape),rigControls:{humanoid:Object.keys(pose.shape),animal:[...ANIMAL_CONTROLS]},rigConstraints:{humanoid:['ground','plant'],animal:[]},humanoidFaceControls:['eyeOpen','eyeOpenLeft','eyeOpenRight','gaze','browHeight','browTilt','mouthWidth','mouthCurve','mouthAperture'],rigs:{humanoid:['classic','pencil','toon'],animal:['dog','cat','lion'],animalFaceControls:['eyeOpen','eyeOpenLeft','eyeOpenRight','gaze']},constraints:['ground','plant'],pathFollowing:{coordinateSpace:'stage-y-down',maxPoints:16,interpolation:['smooth','snappy','gentle']},interpolation:['smooth','snappy','gentle'],maxTracksPerScene:100,maxKeysPerTrack:24,conflictPolicy:'reject overlapping ownership of the same control',unsupported:['arbitrary executable expressions','arbitrary rig topology','additive layer blending','general rigid-body physics']};}
+export function describeMotionCapabilities(pose){return{schemaVersion:MOTION_IR_VERSION,controls:Object.keys(pose.shape),rigControls:{humanoid:Object.keys(pose.shape),animal:[...ANIMAL_CONTROLS]},rigConstraints:{humanoid:['ground','plant'],animal:[]},humanoidFaceControls:['eyeOpen','eyeOpenLeft','eyeOpenRight','gaze','browHeight','browTilt','mouthWidth','mouthCurve','mouthAperture'],rigs:{humanoid:['classic','pencil','toon'],animal:['dog','cat','lion'],animalFaceControls:['eyeOpen','eyeOpenLeft','eyeOpenRight','gaze']},constraints:['ground','plant'],pathFollowing:{coordinateSpace:'stage-y-down',maxPoints:16,interpolation:['smooth','snappy','gentle','linear','hold']},interpolation:['smooth','snappy','gentle','linear','hold'],maxTracksPerScene:100,maxKeysPerTrack:24,conflictPolicy:'reject overlapping ownership of the same control',unsupported:['arbitrary executable expressions','arbitrary rig topology','additive layer blending','general rigid-body physics']};}
 const units={space:'stage-y-down',time:'seconds',angle:'degrees',pose:'actor-local'};
 export function createMotionSchemas(pose,id,expressions){
- const keyframes=z.array(z.object({at:z.number().finite().min(0).max(1),pose,emotion:z.enum(expressions).optional(),timing:z.enum(['smooth','snappy','gentle']).optional(),leftHandShape:z.enum(['fist','grip','point','open']).optional(),rightHandShape:z.enum(['fist','grip','point','open']).optional()}).strict()).min(2).max(24);
- const pathPoint=z.object({at:z.number().finite().min(0).max(1),position:z.tuple([z.number().finite().min(-1500).max(1500),z.number().finite().min(-1500).max(1500)]),timing:z.enum(['smooth','snappy','gentle']).optional()}).strict();
+ const keyframes=z.array(z.object({at:z.number().finite().min(0).max(1),pose,emotion:z.enum(expressions).optional(),timing:z.enum(['smooth','snappy','gentle','linear','hold']).optional(),leftHandShape:z.enum(['fist','grip','point','open']).optional(),rightHandShape:z.enum(['fist','grip','point','open']).optional()}).strict()).min(2).max(24);
+ const pathPoint=z.object({at:z.number().finite().min(0).max(1),position:z.tuple([z.number().finite().min(-1500).max(1500),z.number().finite().min(-1500).max(1500)]),timing:z.enum(['smooth','snappy','gentle','linear','hold']).optional()}).strict();
  const path=z.array(pathPoint).min(2).max(16);
  const constraints=z.array(z.object({kind:z.enum(['ground','plant']),points:z.array(z.enum(['hip','leftFoot','rightFoot','leftHand','rightHand'])).min(1).max(5),floorY:z.number().finite().min(-1500).max(2000)}).strict()).max(1);
  const track=z.object({id,actorId:id,start:z.number().finite().min(0).max(60),duration:z.number().finite().min(.1).max(60),keyframes,path:path.optional(),constraints:constraints.default([])}).strict();
@@ -80,8 +80,16 @@ export function validateMotionIR(scene){
   for(const c of t.constraints)if(new Set(c.points).size!==c.points.length)throw Error(`Track ${t.id}: duplicate contact points`);
  }
  for(const b of scene.beats){
+  if(b.semanticAction==='direction-acting'){
+   if(b.kind!=='perform')throw Error('Directed acting requires a facial performance');
+   const track=performanceTrack(scene,b),allowed=new Set(['gaze','eyeOpen','eyeOpenLeft','eyeOpenRight','mouthAperture','mouthOpen','mouthWidth','mouthCurve','browHeight','browTilt','sweat','blush']);
+   if(Object.keys(track.pose||{}).some(c=>!allowed.has(c))||track.keyframes?.some(k=>Object.keys(k.pose).some(c=>!allowed.has(c)))||track.constraints?.length||track.path)throw Error('Directed facial acting cannot own body motion or contacts');
+  }
   if(b.kind==='perform'&&b.pose&&b.motionTrackId)throw Error('A motion track reference cannot also own a standalone pose');
-  if(b.kind==='perform'&&b.pose&&b.keyframes?.some(k=>Object.keys(k.pose).some(c=>Object.hasOwn(b.pose,c))))throw Error('Standalone pose and performance keys have conflicting control ownership');
+  if(b.kind==='perform'&&b.pose&&b.keyframes?.some(k=>Object.keys(k.pose).some(c=>Object.hasOwn(b.pose,c)))){
+   const channels=[...new Set(b.keyframes.flatMap(k=>Object.keys(k.pose).filter(c=>Object.hasOwn(b.pose,c))))];
+   throw Error(`Standalone pose and performance keys have conflicting control ownership: actor ${b.actorId}, beat ${b.start}..${b.start+b.duration}, channels ${channels.join(', ')}. Put animated controls only in keyframes, with an explicit at:0 value; omit those controls from standalone pose.`);
+  }
   if(b.kind==='perform'&&b.keyframes)assertRigControls(scene,b.actorId,[...(b.pose?[{pose:b.pose}]:[]),...b.keyframes],b.constraints||[]);
   if(!b.motionTrackId)continue;
   if(b.kind!=='perform'||b.keyframes||b.constraints)throw Error('A motion track reference must be the only performance source');

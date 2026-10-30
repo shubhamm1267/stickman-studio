@@ -1,0 +1,165 @@
+{
+  "visualSpec": {
+    "renderMode": "replace",
+    "silhouetteFamily": "custom-vector",
+    "geometryRecipe": [
+      {
+        "id": "body",
+        "kind": "group",
+        "children": [
+          {
+            "kind": "path",
+            "d": "M -40,10 C -40,65 40,65 40,10 C 40,-35 -40,-35 -40,10 Z",
+            "fill": "#e0e4e8",
+            "stroke": "#111111",
+            "width": 2
+          },
+          {
+            "kind": "path",
+            "d": "M -25,0 C -25,25 25,25 25,0",
+            "fill": "none",
+            "stroke": "#ffffff",
+            "width": 1.5
+          },
+          {
+            "id": "spout",
+            "kind": "group",
+            "children": [
+              {
+                "kind": "path",
+                "d": "M 35,5 C 55,5 65,30 75,40 L 70,45 C 62,35 52,15 32,15 Z",
+                "fill": "#d0d6dc",
+                "stroke": "#111111",
+                "width": 2
+              }
+            ]
+          },
+          {
+            "id": "handle",
+            "kind": "group",
+            "children": [
+              {
+                "kind": "path",
+                "d": "M -25,-30 C -25,-85 25,-85 25,-30 L 20,-30 C 20,-75 -20,-75 -20,-30 Z",
+                "fill": "#c0c6cc",
+                "stroke": "#111111",
+                "width": 2
+              }
+            ]
+          },
+          {
+            "id": "lid",
+            "kind": "group",
+            "children": [
+              {
+                "kind": "ellipse",
+                "center": [
+                  0,
+                  -35
+                ],
+                "radius": [
+                  18,
+                  7
+                ],
+                "fill": "#d0d6dc",
+                "stroke": "#111111",
+                "width": 2
+              },
+              {
+                "id": "knob",
+                "kind": "group",
+                "children": [
+                  {
+                    "kind": "ellipse",
+                    "center": [
+                      0,
+                      -42
+                    ],
+                    "radius": [
+                      6,
+                      4
+                    ],
+                    "fill": "#b0b6bc",
+                    "stroke": "#111111",
+                    "width": 2
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "normalizedDimensions": {
+      "width": 100,
+      "height": 100
+    },
+    "material": "flat",
+    "paint": {},
+    "palette": [],
+    "facialComponents": [],
+    "apparel": [],
+    "accessories": [],
+    "decorativeMarks": [],
+    "proceduralComponents": [],
+    "motionAnchors": [
+      {
+        "id": "grip",
+        "position": [
+          0,
+          -75
+        ]
+      },
+      {
+        "id": "base",
+        "position": [
+          0,
+          65
+        ]
+      },
+      {
+        "id": "support",
+        "position": [
+          0,
+          -35
+        ]
+      }
+    ],
+    "zIndex": 0
+  },
+  "features": [
+    {
+      "featureIndex": 0,
+      "feature": "Distinct curved spout projecting from the side with an open angled tip",
+      "nodeIds": [
+        "spout"
+      ],
+      "nativeProperties": []
+    },
+    {
+      "featureIndex": 1,
+      "feature": "High arching metal handle spanning overhead",
+      "nodeIds": [
+        "handle"
+      ],
+      "nativeProperties": []
+    },
+    {
+      "featureIndex": 2,
+      "feature": "Removable lid with a central lifting knob on the top surface",
+      "nodeIds": [
+        "lid",
+        "knob"
+      ],
+      "nativeProperties": []
+    },
+    {
+      "featureIndex": 3,
+      "feature": "Metallic sheen lines indicating a rounded, reflective cylindrical body",
+      "nodeIds": [
+        "body"
+      ],
+      "nativeProperties": []
+    }
+  ]
+}

@@ -4,6 +4,13 @@ import {directSceneSounds} from '../server/sound-director.mjs';
 import {readFile} from 'node:fs/promises';
 import {inspectPlan} from '../server/inspect.mjs';
 import {evaluate} from '../renderer/engine.mjs';
+import {soundMatchesRole} from '../server/providers.mjs';
+test('mechanical effects exclude human grunts and speech metadata while retaining toy squeaks',()=>{
+ assert.equal(soundMatchesRole({name:'rubber toy squeak',tags:['toy','rubber']},'effect'),true);
+ assert.equal(soundMatchesRole({name:'squeak',tags:['human','grunt']},'effect'),false);
+ assert.equal(soundMatchesRole({name:'goblin gibberish',tags:['nonverbal','vocal']},'nonverbal'),true);
+ assert.equal(soundMatchesRole({name:'mumble',description:'A spoken sentence'},'nonverbal'),false);
+});
 
 test('separate vocal reactions on one actor each get a cue without duplicating on repair',()=>{
   const scene={duration:5,motions:[],sounds:[],beats:[{actorId:'man',kind:'laugh',start:0,duration:1},{actorId:'man',kind:'cry',start:2,duration:1},{actorId:'man',kind:'scold',start:4,duration:.2}]};
